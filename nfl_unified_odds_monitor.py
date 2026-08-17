@@ -1,0 +1,1517 @@
+#!/usr/bin/env python3
+"""
+NFL Unified Odds Monitor v001
+Complete odds monitoring with 9-key API rotation, chart generation, and Discord posting.
+Replicates the MLB Unified Odds Monitor v007 pattern for the NFL.
+Generates moneyline, spread, and totals movement charts with stored averages.
+Single API call for all three market types — saves credits.
+
+Features:
+  - Self-running continuous loop (every 4 hours)
+  - Smart 9-key API rotation with credit tracking
+  - Single API fetch for all markets (h2h, spreads, totals)
+  - SQLite database with history tracking
+  - Averages stored in database at fetch time
+  - Moneyline movement charts with stored averages
+  - Spread movement charts for all lines
+  - Totals movement charts for all lines
+  - Discord posting to 3 separate channels
+  - Crash/shutdown Discord notifications
+  - Signal handling for graceful shutdown
+"""
+
+SCRIPT_VERSION = "001"
+SCRIPT_NAME = "NFL Unified Odds Monitor"
+
+import json
+import os
+import random
+import re
+import signal
+import sqlite3
+import sys
+import time
+import traceback
+from collections import defaultdict
+from datetime import datetime, timezone, timedelta
+from io import BytesIO
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple, Any
+import statistics
+
+import requests
+import pandas as pd
+import pytz
+
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+import matplotlib.patches as mpatches
+from matplotlib.ticker import FuncFormatter
+
+# Windows console safety — symbol glyphs (✓ ✗ ⚠ ℹ 📊) are not in cp1252
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
+# ==========================================================================
+# CONFIGURATION
+# ==========================================================================
+
+# Local standalone default: run from the script's own directory.
+# In HF Space deployments, set ABET_BASE_DIR explicitly.
+BASE_DIR = Path(os.environ.get("ABET_BASE_DIR") or Path(__file__).resolve().parent)
+LOG_DIR = BASE_DIR / "data" / "logs"
+DB_PATH = BASE_DIR / "data" / "database" / "odds_nfl.db"
+RAW_DIR = BASE_DIR / "data" / "runtime" / "nfl" / "raw_odds"
+RUNTIME_DIR = BASE_DIR / "data" / "runtime" / "nfl"
+CHARTS_DIR = RUNTIME_DIR / "charts"
+API_STATE_FILE = RUNTIME_DIR / "api_state.json"
+
+# Create directories
+for _d in [DB_PATH.parent, RAW_DIR, RUNTIME_DIR, CHARTS_DIR, LOG_DIR]:
+    _d.mkdir(parents=True, exist_ok=True)
+
+# File logger — writes to data/logs/ so the launcher dashboard picks it up
+import logging as _logging
+_file_logger = _logging.getLogger("nfl_odds_monitor")
+_file_logger.setLevel(_logging.DEBUG)
+_fh = _logging.FileHandler(LOG_DIR / "nfl_odds_monitor.log", encoding='utf-8')
+_fh.setFormatter(_logging.Formatter('[%(asctime)s] %(levelname)s: %(message)s',
+                                     datefmt='%Y-%m-%d %H:%M:%S'))
+_file_logger.addHandler(_fh)
+
+# Discord Webhooks — from environment (discordapp.com domain for HF compatibility)
+DISCORD_WEBHOOK_MONEYLINE = os.environ.get("DISCORD_WEBHOOK_NFL_MONEYLINE", "")
+DISCORD_WEBHOOK_SPREADS   = os.environ.get("DISCORD_WEBHOOK_NFL_SPREADS", "")
+DISCORD_WEBHOOK_TOTALS    = os.environ.get("DISCORD_WEBHOOK_NFL_TOTALS", "")
+
+# TheOddsAPI — 9 keys loaded from environment for rotation.
+# NOTE: shares the SAME key pool as the MLB suite (ODDS_API_KEY_1..9, MLB
+# v006/v007 rotation algorithm). NFL-dedicated keys can be swapped in later
+# by replacing the values — no code change needed.
+API_KEYS = []
+for _i in range(1, 10):
+    _k = os.environ.get(f"ODDS_API_KEY_{_i}", "")
+    if _k:
+        API_KEYS.append((_k, f"API_{_i}"))
+
+# Sport keys to try (in order of priority)
+# Preseason runs Aug-Sep (HOF game + 4 weeks); books carry both sets of lines
+# while preseason is underway, so try preseason key first, then regular season.
+_MONTH = datetime.now().month
+if _MONTH in (8, 9):
+    SPORT_KEYS = ["americanfootball_nfl_preseason", "americanfootball_nfl"]
+else:
+    SPORT_KEYS = ["americanfootball_nfl"]
+SPORT_KEY = SPORT_KEYS[0]  # Primary (used for logging)
+API_URL_BASE = "https://api.the-odds-api.com/v4/sports"
+REGIONS = 'us'
+MARKETS = 'h2h,spreads,totals'
+
+# Feature flags
+VERBOSE_LOGGING = True
+SEND_DISCORD = True
+GENERATE_CHARTS = True
+
+# Continuous running
+RUN_INTERVAL = 14400  # 4 hours
+
+# Team abbreviations (all 32 NFL teams)
+TEAM_ABBR = {
+    "Arizona Cardinals": "ARI", "Atlanta Falcons": "ATL", "Baltimore Ravens": "BAL",
+    "Buffalo Bills": "BUF", "Carolina Panthers": "CAR", "Chicago Bears": "CHI",
+    "Cincinnati Bengals": "CIN", "Cleveland Browns": "CLE", "Dallas Cowboys": "DAL",
+    "Denver Broncos": "DEN", "Detroit Lions": "DET", "Green Bay Packers": "GB",
+    "Houston Texans": "HOU", "Indianapolis Colts": "IND", "Jacksonville Jaguars": "JAX",
+    "Kansas City Chiefs": "KC", "Las Vegas Raiders": "LV", "Los Angeles Chargers": "LAC",
+    "Los Angeles Rams": "LAR", "Miami Dolphins": "MIA", "Minnesota Vikings": "MIN",
+    "New England Patriots": "NE", "New Orleans Saints": "NO", "New York Giants": "NYG",
+    "New York Jets": "NYJ", "Philadelphia Eagles": "PHI", "Pittsburgh Steelers": "PIT",
+    "San Francisco 49ers": "SF", "Seattle Seahawks": "SEA",
+    "Tampa Bay Buccaneers": "TB", "Tennessee Titans": "TEN",
+    "Washington Commanders": "WAS",
+}
+
+# Bookmaker colors for charts (keyed by bookmaker_key from API)
+BOOKMAKER_COLORS = {
+    'draftkings': '#53D337', 'fanduel': '#1A73E8', 'betmgm': '#FDB913',
+    'betrivers': '#003DA5', 'caesars': '#522398', 'pointsbet': '#00B5E2',
+    'pointsbetau': '#00B5E2', 'pinnacle': '#FF6600', 'bovada': '#CC0000',
+    'betonlineag': '#FF4500', 'mybookieag': '#800080', 'bet365': '#00A783',
+    'espnbet': '#F5342E', 'hardrockbet': '#C7A86B', 'betus': '#006400',
+    'lowvig': '#4B0082', 'fliff': '#00C4FF', 'windcreek': '#7CB342',
+    'underdog': '#FF9800',
+}
+
+# Configure requests session with User-Agent (required for Discord from HF)
+_session = requests.Session()
+_session.headers.update({"User-Agent": "Mozilla/5.0 (compatible; ABETMonitor/1.0)"})
+
+# Global shutdown flag
+shutdown_requested = False
+
+# ==========================================================================
+# LOGGING
+# ==========================================================================
+
+class Colors:
+    RESET = '\033[0m'; RED = '\033[91m'; GREEN = '\033[92m'; YELLOW = '\033[93m'
+    BLUE = '\033[94m'; MAGENTA = '\033[95m'; CYAN = '\033[96m'; GRAY = '\033[90m'
+    BOLD = '\033[1m'; DIM = '\033[2m'
+
+SYM = {'ok': '✓', 'err': '✗', 'warn': '⚠', 'info': 'ℹ', 'chart': '📊'}
+
+
+def _ts():
+    return datetime.now(timezone.utc).strftime('%H:%M:%S')
+
+
+def log_error(msg, exc=None, critical=False):
+    full = f"{msg} - {exc}" if exc else msg
+    print(f"{Colors.RED}{SYM['err']} [{_ts()}] ERROR: {msg}{Colors.RESET}")
+    if exc:
+        print(f"{Colors.RED}  Exception: {exc}{Colors.RESET}")
+    _file_logger.error(full)
+    if critical and SEND_DISCORD:
+        send_discord_alert(f"🚨 **CRITICAL**: {msg}", is_error=True)
+
+
+def log_ok(msg):
+    _file_logger.info(msg)
+    if VERBOSE_LOGGING:
+        print(f"{Colors.GREEN}{SYM['ok']} [{_ts()}] {msg}{Colors.RESET}")
+
+
+def log_warn(msg):
+    _file_logger.warning(msg)
+    if VERBOSE_LOGGING:
+        print(f"{Colors.YELLOW}{SYM['warn']} [{_ts()}] {msg}{Colors.RESET}")
+
+
+def log_info(msg):
+    _file_logger.info(msg)
+    if VERBOSE_LOGGING:
+        print(f"{Colors.CYAN}{SYM['info']} [{_ts()}] {msg}{Colors.RESET}")
+
+
+# ==========================================================================
+# ODDS MATH
+# ==========================================================================
+
+def decimal_to_american(d: float) -> int:
+    try:
+        return int((d - 1) * 100) if d >= 2.0 else int(-100 / (d - 1))
+    except Exception:
+        return 0
+
+
+def american_to_decimal(a: int) -> float:
+    try:
+        return (a / 100) + 1 if a > 0 else (100 / abs(a)) + 1
+    except Exception:
+        return 1.0
+
+
+def american_to_probability(odds: int) -> float:
+    if odds == 0:
+        return 0
+    return 100 / (odds + 100) * 100 if odds > 0 else abs(odds) / (abs(odds) + 100) * 100
+
+
+def probability_to_american(prob: float) -> int:
+    if prob <= 0 or prob >= 100:
+        return 0
+    return int(100 / (prob / 100) - 100) if prob < 50 else int(-(prob / (100 - prob)) * 100)
+
+
+def calculate_average_odds(odds_list: List[int]) -> int:
+    """Average American odds via implied probability (proper method)."""
+    probs = [american_to_probability(o) for o in odds_list if o != 0]
+    if not probs:
+        return 0
+    return probability_to_american(sum(probs) / len(probs))
+
+
+def abbreviate_team(name: str) -> str:
+    return TEAM_ABBR.get(name, name[:3].upper())
+
+
+def is_game_live(commence_time_str: str) -> bool:
+    try:
+        t = datetime.fromisoformat(commence_time_str.replace('Z', '+00:00'))
+        return datetime.now(timezone.utc) > t
+    except Exception:
+        return False
+
+
+# ==========================================================================
+# SUPABASE CLIENT (optional — mirrors mlb suite; disabled when absent)
+# ==========================================================================
+
+_sb_client = None
+try:
+    from supabase_client import SupabaseClient
+    _sb_client = SupabaseClient()
+    if not _sb_client.connected:
+        _sb_client = None
+except Exception:
+    pass
+
+
+# ==========================================================================
+# API KEY MANAGER — matches MLB v006/v007 algorithm
+# ==========================================================================
+
+class APIKeyManager:
+    """Smart API key rotation with actual credit tracking from API response headers.
+    Algorithm: sort by credits_remaining descending, pick randomly from
+    keys with >= 80% of average credits remaining."""
+
+    def __init__(self):
+        self.env_keys = API_KEYS          # [(key_str, "API_N"), ...] from env
+        self.state_file = API_STATE_FILE
+        self.selected_key = None
+        self.selected_id = None
+        self.state = self._load_state()
+
+    def _load_state(self) -> dict:
+        """Build state from env vars, merge with persisted credit data.
+        Priority: local file > Supabase > fresh defaults."""
+        # Build base from env vars
+        keys_list = []
+        for key_val, kid in self.env_keys:
+            keys_list.append({
+                "id": kid,
+                "key": key_val,
+                "active": True,
+                "credits_remaining": 500,
+                "credits_used": 0,
+                "total_requests": 0,
+                "last_used": None,
+            })
+
+        # Try to merge persisted credit data
+        persisted = None
+
+        # Local file first (fastest)
+        if self.state_file.exists():
+            try:
+                persisted = json.loads(self.state_file.read_text())
+            except Exception:
+                pass
+
+        # Supabase fallback (persistent across container restarts)
+        if not persisted and _sb_client:
+            try:
+                persisted = _sb_client.get_api_key_state()
+            except Exception:
+                pass
+
+        if persisted:
+            # Handle both list and dict formats for keys
+            p_keys = persisted.get("keys", [])
+            if isinstance(p_keys, list):
+                credit_map = {k["id"]: k for k in p_keys if isinstance(k, dict)}
+            elif isinstance(p_keys, dict):
+                credit_map = p_keys
+            else:
+                credit_map = {}
+
+            merged = 0
+            for key_data in keys_list:
+                kid = key_data["id"]
+                if kid in credit_map:
+                    p = credit_map[kid]
+                    key_data["credits_remaining"] = p.get(
+                        "credits_remaining", p.get("requests_remaining", 500))
+                    key_data["credits_used"] = p.get("credits_used", 0)
+                    key_data["total_requests"] = p.get("total_requests", 0)
+                    key_data["last_used"] = p.get("last_used")
+                    key_data["active"] = p.get("active", True)
+                    merged += 1
+
+            if merged > 0:
+                src = "file" if self.state_file.exists() else "Supabase"
+                log_info(f"Merged persisted credit data from {src} for {merged} keys")
+
+        state = {
+            "keys": keys_list,
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+        }
+        self._save_state(state)
+        return state
+
+    def _save_state(self, state=None):
+        """Save state to local JSON file."""
+        if state is None:
+            state = self.state
+        try:
+            state["updated_at"] = datetime.now(timezone.utc).isoformat()
+            self.state_file.write_text(json.dumps(state, indent=2, default=str))
+        except Exception:
+            pass
+
+    def get_key(self) -> Tuple[str, str]:
+        """Select best key: most credits remaining, random from top pool."""
+        all_keys = self.state.get("keys", [])
+
+        # Filter to active keys with credits
+        available = [k for k in all_keys
+                     if k.get("active", True) and k.get("credits_remaining", 0) > 0]
+
+        if not available:
+            log_warn("All keys exhausted or inactive — resetting credits to 500")
+            for k in all_keys:
+                if k.get("active", True):
+                    k["credits_remaining"] = 500
+                    k["credits_used"] = 0
+            available = [k for k in all_keys if k.get("active", True)]
+            self._save_state()
+
+        if not available:
+            log_error("No active API keys!", critical=True)
+            return "", ""
+
+        # Sort by credits_remaining descending (most credits first)
+        available.sort(key=lambda x: x.get("credits_remaining", 0), reverse=True)
+
+        # Pool: keys with >= 80% of average credits remaining
+        total_credits = sum(k["credits_remaining"] for k in available)
+        avg_credits = total_credits / len(available)
+        good_keys = [k for k in available
+                     if k["credits_remaining"] >= avg_credits * 0.8]
+        if not good_keys:
+            good_keys = available
+
+        selected = random.choice(good_keys)
+        self.selected_key = selected["key"]
+        self.selected_id = selected["id"]
+
+        log_info(f"API Key: {selected['id']} — "
+                 f"{selected['credits_remaining']} credits remaining "
+                 f"(pool: {total_credits} across {len(available)} active keys)")
+        return self.selected_key, self.selected_id
+
+    def update_credits(self, credits_remaining: int, credits_used: int = None):
+        """Update selected key with ACTUAL credits from x-requests-remaining header."""
+        if not self.selected_id:
+            return
+        for key_data in self.state.get("keys", []):
+            if key_data["id"] == self.selected_id:
+                old_remaining = key_data.get("credits_remaining", 500)
+                key_data["credits_remaining"] = credits_remaining
+                if credits_used is not None:
+                    key_data["credits_used"] = credits_used
+                else:
+                    key_data["credits_used"] = 500 - credits_remaining
+                key_data["last_used"] = datetime.now(timezone.utc).isoformat()
+                key_data["total_requests"] = key_data.get("total_requests", 0) + 1
+
+                delta = old_remaining - credits_remaining
+                if delta > 0:
+                    log_info(f"Credits consumed: {delta} "
+                             f"({old_remaining} → {credits_remaining})")
+                break
+        self._save_state()
+
+    def mark_dead(self, key_id: str = None):
+        """Mark a key as inactive (e.g., 401 unauthorized)."""
+        kid = key_id or self.selected_id
+        if not kid:
+            return
+        for key_data in self.state.get("keys", []):
+            if key_data["id"] == kid:
+                key_data["active"] = False
+                key_data["credits_remaining"] = 0
+                log_warn(f"Marked {kid} as INACTIVE (dead key)")
+                break
+        self._save_state()
+
+    def push_to_supabase(self):
+        """Push full key state to Supabase for persistence + dashboard."""
+        if not _sb_client:
+            return
+        try:
+            keys_info = []
+            for key_data in self.state.get("keys", []):
+                keys_info.append({
+                    "id": key_data["id"],
+                    "active": key_data.get("active", True),
+                    "credits_remaining": key_data.get("credits_remaining", 0),
+                    "credits_used": key_data.get("credits_used", 0),
+                    "total_requests": key_data.get("total_requests", 0),
+                    "last_used": key_data.get("last_used"),
+                })
+            active_keys = [k for k in keys_info if k["active"]]
+            state = {
+                "keys": keys_info,
+                "total_keys": len(keys_info),
+                "active_keys": len(active_keys),
+                "total_credits": sum(k["credits_remaining"] for k in active_keys),
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+            }
+            _sb_client.push_api_key_state(state)
+            log_info("API key state pushed to Supabase")
+        except Exception as e:
+            log_warn(f"Supabase key push failed: {e}")
+
+
+# ==========================================================================
+# DATABASE
+# ==========================================================================
+
+def setup_database() -> bool:
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+
+        c.execute("""CREATE TABLE IF NOT EXISTS games (
+            game_id TEXT PRIMARY KEY, sport_key TEXT, commence_time TEXT,
+            home_team TEXT, away_team TEXT, last_update TEXT
+        )""")
+
+        c.execute("""CREATE TABLE IF NOT EXISTS odds (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            game_id TEXT, timestamp TEXT, bookmaker_key TEXT, bookmaker_title TEXT,
+            market_key TEXT, outcome_name TEXT, price_decimal REAL,
+            price_american INTEGER, point REAL,
+            point_key REAL DEFAULT -999999,
+            UNIQUE(game_id, bookmaker_key, market_key, outcome_name, point_key)
+        )""")
+
+        c.execute("""CREATE TABLE IF NOT EXISTS odds_history (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            game_id TEXT, fetch_timestamp TEXT, bookmaker_key TEXT, bookmaker_title TEXT,
+            market_key TEXT, outcome_name TEXT, price_decimal REAL,
+            price_american INTEGER, point REAL, is_live_game BOOLEAN,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )""")
+
+        c.execute("""CREATE TABLE IF NOT EXISTS api_usage (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp TEXT, credits_used INTEGER, credits_remaining INTEGER,
+            api_key_used TEXT, games_count INTEGER
+        )""")
+
+        c.execute("CREATE INDEX IF NOT EXISTS idx_oh_game ON odds_history(game_id)")
+        c.execute("CREATE INDEX IF NOT EXISTS idx_oh_ts ON odds_history(fetch_timestamp)")
+        c.execute("CREATE INDEX IF NOT EXISTS idx_oh_mkt ON odds_history(market_key)")
+        c.execute("CREATE INDEX IF NOT EXISTS idx_odds_game ON odds(game_id)")
+
+        conn.commit()
+        conn.close()
+        log_ok("Database ready")
+        return True
+    except Exception as e:
+        log_error("Database setup failed", e)
+        return False
+
+
+# ==========================================================================
+# DISCORD
+# ==========================================================================
+
+def send_discord_alert(message: str, is_error: bool = False):
+    if not SEND_DISCORD:
+        return
+    color = 0xFF0000 if is_error else 0x00FF00
+    title = f"{'⚠️' if is_error else '🏈'} NFL Odds Monitor v{SCRIPT_VERSION}"
+    payload = {
+        "embeds": [{
+            "title": title,
+            "description": message,
+            "color": color,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "footer": {"text": "NFL Unified Odds Monitor"}
+        }]
+    }
+    try:
+        resp = _session.post(DISCORD_WEBHOOK_MONEYLINE, json=payload, timeout=10)
+        if resp.status_code in (200, 204):
+            try:
+                from discord_post_logger import log_post
+                log_post("nfl_odds_monitor", "#nfl-moneylines",
+                         "alert" if is_error else "text_embed",
+                         title=title, description=message, color=color,
+                         footer="NFL Unified Odds Monitor")
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+
+def post_chart_to_discord(chart_path: Path, title: str, webhook_url: str,
+                          game_info: dict = None) -> bool:
+    """Post chart to Discord with rich matchup text.
+    game_info: optional dict with away_team, home_team, commence_time
+    """
+    if not SEND_DISCORD or not webhook_url:
+        return False
+    try:
+        with open(chart_path, 'rb') as f:
+            files = {'file': (chart_path.name, f, 'image/png')}
+
+            # Build rich content text
+            now_et = datetime.now(timezone.utc).astimezone(pytz.timezone('US/Eastern'))
+            time_str = now_et.strftime('%I:%M %p ET').lstrip('0')
+
+            if game_info:
+                away = game_info.get('away_team', '?')
+                home = game_info.get('home_team', '?')
+                ct = game_info.get('commence_time', '')
+
+                # Format game time
+                try:
+                    gt = datetime.fromisoformat(ct.replace('Z', '+00:00'))
+                    gt_et = gt.astimezone(pytz.timezone('US/Eastern'))
+                    game_time = gt_et.strftime('%I:%M %p ET').lstrip('0')
+                except Exception:
+                    game_time = 'TBD'
+
+                content_text = (
+                    f"**{SYM['chart']} {away} @ {home}** — {game_time}\n"
+                    f"*{title}* • Updated {time_str}"
+                )
+            else:
+                content_text = f"**{SYM['chart']} {title}**\n`{time_str}`"
+
+            data = {"content": content_text}
+            resp = _session.post(webhook_url, files=files, data=data, timeout=15)
+            if resp.status_code in (200, 204):
+                log_ok(f"Posted: {chart_path.name}")
+                try:
+                    from discord_post_logger import log_post, save_image
+                    # Determine channel from webhook URL
+                    channel = "#nfl-moneylines"
+                    if webhook_url == os.getenv("DISCORD_WEBHOOK_NFL_SPREADS", ""):
+                        channel = "#nfl-spreads"
+                    elif webhook_url == os.getenv("DISCORD_WEBHOOK_NFL_TOTALS", ""):
+                        channel = "#nfl-totals"
+                    img_url = save_image("odds", str(chart_path), chart_path.stem)
+                    log_post("nfl_odds_monitor", channel, "chart",
+                             title=title, content=content_text,
+                             has_image=True, image_name=chart_path.name,
+                             image_url=img_url)
+                except Exception:
+                    pass
+                return True
+            else:
+                log_warn(f"Discord {resp.status_code} for {chart_path.name}")
+                return False
+    except Exception as e:
+        log_error("Discord post failed", e)
+        return False
+
+
+# ==========================================================================
+# FETCH AND STORE ODDS
+# ==========================================================================
+
+def _log_api_usage(key_id: str, credits_used: int, credits_remaining: int,
+                   games_count: int, bookmakers_count: int, sport_key: str):
+    """Log API usage to BOTH SQLite (ephemeral cache) and Supabase (persistent)."""
+    ts = datetime.now(timezone.utc).isoformat()
+
+    # SQLite (ephemeral in-container cache)
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        conn.execute("""INSERT INTO api_usage
+            (timestamp, credits_used, credits_remaining, api_key_used, games_count)
+            VALUES (?,?,?,?,?)""",
+            (ts, credits_used, credits_remaining, key_id, games_count))
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        log_warn(f"SQLite api_usage write failed: {e}")
+
+    # Supabase (persistent across restarts)
+    if _sb_client:
+        try:
+            _sb_client.record_api_usage(
+                api_key_id=key_id,
+                credits_used=credits_used,
+                credits_remaining=credits_remaining,
+                games_count=games_count,
+                bookmakers_count=bookmakers_count,
+                regions=REGIONS,
+                sport_key=sport_key,
+            )
+        except Exception as e:
+            log_warn(f"Supabase api_usage write failed: {e}")
+
+
+def fetch_odds(api_mgr: APIKeyManager) -> Tuple[Optional[list], Optional[int]]:
+    """Fetch ALL odds from TheOddsAPI — single call for h2h/spreads/totals.
+    Reads actual x-requests-remaining from headers.
+    Handles dead/depleted keys (401) by marking inactive and cycling through
+    ALL available keys until one works."""
+    global SPORT_KEY
+
+    # Try each sport key until we get games
+    for sport_key in SPORT_KEYS:
+        # Retry loop: cycle through keys on 401 (dead/depleted)
+        max_retries = len(API_KEYS)
+        for attempt in range(max_retries):
+            api_key, key_id = api_mgr.get_key()
+            if not api_key:
+                log_error("No active API keys remaining", critical=True)
+                return None, None
+
+            try:
+                url = f"{API_URL_BASE}/{sport_key}/odds"
+                params = {
+                    'apiKey': api_key,
+                    'regions': REGIONS,
+                    'markets': MARKETS,
+                    'oddsFormat': 'decimal',
+                    'dateFormat': 'iso'
+                }
+                log_info(f"Fetching odds ({sport_key}) with {key_id} "
+                         f"(attempt {attempt + 1}/{max_retries})...")
+                resp = _session.get(url, params=params, timeout=30)
+
+                # 401 = dead key or depleted credits — mark inactive, try next
+                if resp.status_code == 401:
+                    log_warn(f"{key_id} returned 401 — marking as inactive")
+                    api_mgr.mark_dead(key_id)
+                    continue  # Try next key
+
+                # Read ACTUAL credit info from API response headers
+                credits_remaining = int(resp.headers.get('x-requests-remaining', 0))
+                credits_used = int(resp.headers.get('x-requests-used', 0))
+
+                # Update key state with real header values
+                api_mgr.update_credits(credits_remaining, credits_used)
+
+                if resp.status_code == 200:
+                    data = resp.json()
+                    if not data and len(SPORT_KEYS) > 1 and sport_key != SPORT_KEYS[-1]:
+                        log_warn(f"{sport_key} returned 0 games — trying next sport key...")
+                        break  # Break retry loop, continue sport key loop
+
+                    # Count stats
+                    ml = sp = to = 0
+                    bookmaker_set = set()
+                    live_games = 0
+                    for g in data:
+                        if is_game_live(g.get('commence_time', '')):
+                            live_games += 1
+                        for bm in g.get('bookmakers', []):
+                            bookmaker_set.add(bm['key'])
+                            for mkt in bm.get('markets', []):
+                                n = len(mkt.get('outcomes', []))
+                                if mkt['key'] == 'h2h': ml += n
+                                elif mkt['key'] == 'spreads': sp += n
+                                elif mkt['key'] == 'totals': to += n
+
+                    SPORT_KEY = sport_key
+                    log_ok(f"Fetched {len(data)} games from {sport_key} — "
+                           f"ML:{ml} SP:{sp} TO:{to} — "
+                           f"{credits_remaining} credits left ({key_id})")
+
+                    # Save raw JSON with enriched metadata
+                    ts_str = datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')
+                    raw_file = RAW_DIR / f"raw_odds_unified_{ts_str}.json"
+                    save_data = {
+                        'fetch_timestamp': datetime.now(timezone.utc).isoformat(),
+                        'script_version': SCRIPT_VERSION,
+                        'sport_key': sport_key,
+                        'credits_remaining': credits_remaining,
+                        'credits_used': credits_used,
+                        'regions': REGIONS,
+                        'total_games': len(data),
+                        'live_games': live_games,
+                        'unique_bookmakers': sorted(list(bookmaker_set)),
+                        'bookmakers_count': len(bookmaker_set),
+                        'moneyline_count': ml,
+                        'spread_count': sp,
+                        'total_count': to,
+                        'api_key_used': key_id,
+                        'games': data,
+                    }
+                    with open(raw_file, 'w') as f:
+                        json.dump(save_data, f, indent=2)
+                    log_ok(f"Raw data saved: {raw_file.name}")
+
+                    # Log API usage to BOTH SQLite and Supabase
+                    _log_api_usage(key_id, credits_used, credits_remaining,
+                                   len(data), len(bookmaker_set), sport_key)
+
+                    return data, credits_remaining
+
+                elif resp.status_code == 422:
+                    log_warn(f"{sport_key} not available (422) — trying next...")
+                    break  # Break retry loop, continue sport key loop
+                else:
+                    log_error(f"API error for {sport_key}: {resp.status_code} — "
+                              f"{resp.text[:200]}")
+                    return None, None
+
+            except Exception as e:
+                log_error(f"Fetch failed for {sport_key} with {key_id}", e)
+                return None, None
+        else:
+            # All retries exhausted for this sport key
+            log_error(f"All {max_retries} API keys returned 401 for {sport_key}",
+                      critical=True)
+            return None, None
+
+    log_warn("All sport keys returned 0 games")
+    return [], 0
+
+
+def store_odds(data: list) -> int:
+    """Store all odds with calculated averages per market."""
+    if not data:
+        return 0
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    ts = datetime.now(timezone.utc).isoformat()
+    records = 0
+
+    # Collectors for averages
+    ml_coll = {}      # (game_id, team) -> [american_odds]
+    sp_coll = {}      # (game_id, team, point) -> [american_odds]
+    to_coll = {}      # (game_id, point) -> {'Over': [], 'Under': []}
+    live_map = {}      # game_id -> bool
+
+    try:
+        for game in data:
+            gid = game.get('id')
+            commence = game.get('commence_time', '')
+            is_live = is_game_live(commence)
+            live_map[gid] = is_live
+            home = game.get('home_team')
+            away = game.get('away_team')
+
+            c.execute("""INSERT OR REPLACE INTO games
+                (game_id, sport_key, commence_time, home_team, away_team, last_update)
+                VALUES (?,?,?,?,?,?)""",
+                (gid, game.get('sport_key', SPORT_KEY), commence, home, away, ts))
+
+            for bm in game.get('bookmakers', []):
+                bk = bm.get('key')
+                bt = bm.get('title')
+                for mkt in bm.get('markets', []):
+                    mk = mkt.get('key')
+                    for out in mkt.get('outcomes', []):
+                        pd_val = out.get('price', 1.0)
+                        pa = decimal_to_american(pd_val)
+                        pt = out.get('point')
+                        on = out.get('name')
+
+                        # Collect for averages
+                        if mk == 'h2h':
+                            ml_coll.setdefault((gid, on), []).append(pa)
+                        elif mk == 'spreads' and pt is not None:
+                            sp_coll.setdefault((gid, on, pt), []).append(pa)
+                        elif mk == 'totals' and pt is not None:
+                            to_coll.setdefault((gid, pt), {'Over': [], 'Under': []})
+                            if on in ('Over', 'Under'):
+                                to_coll[(gid, pt)][on].append(pa)
+
+                        # History
+                        c.execute("""INSERT INTO odds_history
+                            (game_id,fetch_timestamp,bookmaker_key,bookmaker_title,
+                             market_key,outcome_name,price_decimal,price_american,point,is_live_game)
+                            VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                            (gid, ts, bk, bt, mk, on, pd_val, pa, pt, is_live))
+
+                        # Upsert current odds (use point_key for UNIQUE constraint)
+                        pt_key = pt if pt is not None else -999999
+                        c.execute("""UPDATE odds SET price_decimal=?, price_american=?, timestamp=?, point=?
+                            WHERE game_id=? AND bookmaker_key=? AND market_key=?
+                            AND outcome_name=? AND point_key=?""",
+                            (pd_val, pa, ts, pt, gid, bk, mk, on, pt_key))
+
+                        if c.rowcount == 0:
+                            try:
+                                c.execute("""INSERT INTO odds
+                                    (game_id,timestamp,bookmaker_key,bookmaker_title,
+                                     market_key,outcome_name,price_decimal,price_american,point,point_key)
+                                    VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                                    (gid, ts, bk, bt, mk, on, pd_val, pa, pt, pt_key))
+                            except sqlite3.IntegrityError:
+                                pass
+                        records += 1
+
+        # Store averages as '_average' bookmaker in history
+        avg_count = 0
+
+        for (gid, team), odds_list in ml_coll.items():
+            if odds_list:
+                avg_am = calculate_average_odds(odds_list)
+                avg_dec = american_to_decimal(avg_am)
+                c.execute("""INSERT INTO odds_history
+                    (game_id,fetch_timestamp,bookmaker_key,bookmaker_title,
+                     market_key,outcome_name,price_decimal,price_american,point,is_live_game)
+                    VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                    (gid, ts, '_average', f'AVERAGE ({len(odds_list)} books)',
+                     'h2h', team, avg_dec, avg_am, None, live_map.get(gid, False)))
+                avg_count += 1
+
+        for (gid, team, pt), odds_list in sp_coll.items():
+            if odds_list:
+                avg_am = calculate_average_odds(odds_list)
+                avg_dec = american_to_decimal(avg_am)
+                c.execute("""INSERT INTO odds_history
+                    (game_id,fetch_timestamp,bookmaker_key,bookmaker_title,
+                     market_key,outcome_name,price_decimal,price_american,point,is_live_game)
+                    VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                    (gid, ts, '_average', f'AVERAGE ({len(odds_list)} books)',
+                     'spreads', team, avg_dec, avg_am, pt, live_map.get(gid, False)))
+                avg_count += 1
+
+        for (gid, pt), sides in to_coll.items():
+            for side_name in ('Over', 'Under'):
+                odds_list = sides[side_name]
+                if odds_list:
+                    avg_am = calculate_average_odds(odds_list)
+                    avg_dec = american_to_decimal(avg_am)
+                    c.execute("""INSERT INTO odds_history
+                        (game_id,fetch_timestamp,bookmaker_key,bookmaker_title,
+                         market_key,outcome_name,price_decimal,price_american,point,is_live_game)
+                        VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                        (gid, ts, '_average', f'AVERAGE ({len(odds_list)} books)',
+                         'totals', side_name, avg_dec, avg_am, pt, live_map.get(gid, False)))
+                    avg_count += 1
+
+        conn.commit()
+        log_ok(f"Stored {records} records + {avg_count} averages (SQLite)")
+
+        # ── Push to Supabase nfl_odds_history (persistent) ──
+        if _sb_client:
+            sb_records = []
+            for game in data:
+                gid = game.get('id')
+                for bm in game.get('bookmakers', []):
+                    bk = bm.get('key')
+                    for mkt in bm.get('markets', []):
+                        mk = mkt.get('key')
+                        for out in mkt.get('outcomes', []):
+                            pa = decimal_to_american(out.get('price', 1.0))
+                            sb_records.append({
+                                "game_id": gid,
+                                "bookmaker": bk,
+                                "market": mk,
+                                "outcome": out.get('name'),
+                                "price": pa,
+                                "point": out.get('point'),
+                            })
+            # Also store averages
+            for (gid, team), odds_list in ml_coll.items():
+                if odds_list:
+                    sb_records.append({
+                        "game_id": gid, "bookmaker": "_average",
+                        "market": "h2h", "outcome": team,
+                        "price": calculate_average_odds(odds_list), "point": None,
+                    })
+            for (gid, team, pt), odds_list in sp_coll.items():
+                if odds_list:
+                    sb_records.append({
+                        "game_id": gid, "bookmaker": "_average",
+                        "market": "spreads", "outcome": team,
+                        "price": calculate_average_odds(odds_list), "point": pt,
+                    })
+            for (gid, pt), sides in to_coll.items():
+                for side_name in ('Over', 'Under'):
+                    if sides[side_name]:
+                        sb_records.append({
+                            "game_id": gid, "bookmaker": "_average",
+                            "market": "totals", "outcome": side_name,
+                            "price": calculate_average_odds(sides[side_name]),
+                            "point": pt,
+                        })
+            try:
+                _sb_client.append_odds_history(sb_records)
+            except Exception as e:
+                log_warn(f"Supabase odds history push failed: {e}")
+
+    except Exception as e:
+        log_error("Store failed", e)
+        conn.rollback()
+    finally:
+        conn.close()
+    return records
+
+
+# ==========================================================================
+# CHART HELPERS
+# ==========================================================================
+
+def _setup_axes(ax):
+    """Common dark-theme axis styling."""
+    ax.set_facecolor('#1A1F2E')
+    ax.tick_params(axis='x', colors='#CCCCCC', which='both')
+    ax.tick_params(axis='y', colors='#CCCCCC', which='both')
+    for spine in ax.spines.values():
+        spine.set_edgecolor('#4A5568')
+    ax.grid(True, alpha=0.3, axis='y', color='#4A5568')
+    ax.grid(True, alpha=0.1, axis='x', color='#4A5568')
+
+
+def _format_x_axis(ax, book_df):
+    """Place x-axis ticks at each actual fetch timestamp so every data point
+    is labeled with the time it was obtained."""
+    if book_df.empty:
+        return
+    eastern = pytz.timezone('US/Eastern')
+    # Convert to datetime — book_df from SQL has raw strings
+    ts = pd.to_datetime(book_df['created_at'], utc=True).dt.tz_convert(eastern)
+
+    # Get unique fetch timestamps (rounded to the minute to collapse sub-second jitter)
+    unique_ts = ts.dt.floor('min').drop_duplicates().sort_values()
+
+    # If many fetch times (> 20), thin to avoid overlapping labels
+    if len(unique_ts) > 20:
+        step = max(1, len(unique_ts) // 15)
+        unique_ts = unique_ts.iloc[::step]
+
+    # Place ticks at the actual fetch times
+    tick_positions = [t.to_pydatetime() for t in unique_ts]
+    ax.set_xticks(tick_positions)
+
+    # Format: time on top, date below
+    time_range = ts.max() - ts.min()
+    if time_range < pd.Timedelta(days=1):
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%I:%M%p\n%m/%d', tz=eastern))
+    else:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d\n%I:%M%p', tz=eastern))
+
+
+def _american_formatter(y, pos):
+    """Y-axis formatter: decimal odds → American label."""
+    try:
+        if y >= 2.0:
+            return f"+{int((y-1)*100)}"
+        elif y > 1.0:
+            return f"{int(-100/(y-1))}"
+    except Exception:
+        pass
+    return ""
+
+
+def _plot_book_lines(ax, book_df, avg_df):
+    """Plot individual bookmaker lines + average line on an axis."""
+    eastern = pytz.timezone('US/Eastern')
+
+    # Average line
+    if not avg_df.empty:
+        avg_df = avg_df.copy()
+        avg_df['created_at'] = pd.to_datetime(avg_df['created_at'], utc=True).dt.tz_convert(eastern)
+        avg_df['price_decimal'] = avg_df['price_american'].apply(american_to_decimal)
+
+        match = re.search(r'\((\d+) books?\)', str(avg_df['bookmaker_title'].iloc[0]))
+        nbooks = match.group(1) if match else "?"
+
+        if len(avg_df) > 1:
+            ax.plot(avg_df['created_at'], avg_df['price_decimal'],
+                    label=f'AVERAGE ({nbooks} books)', color='#FFD700',
+                    linewidth=3.5, linestyle='--', alpha=0.9, zorder=10)
+            ax.scatter(avg_df['created_at'].iloc[0], avg_df['price_decimal'].iloc[0],
+                       color='#FFD700', s=150, zorder=20, edgecolor='white', linewidth=2, marker='s')
+            ax.scatter(avg_df['created_at'].iloc[-1], avg_df['price_decimal'].iloc[-1],
+                       color='#FFD700', s=150, zorder=20, edgecolor='yellow', linewidth=2, marker='^')
+        else:
+            ax.scatter(avg_df['created_at'].iloc[0], avg_df['price_decimal'].iloc[0],
+                       label=f'AVERAGE ({nbooks} books)', color='#FFD700',
+                       s=250, marker='D', edgecolor='white', linewidth=2, zorder=10)
+
+    # Individual bookmakers
+    if not book_df.empty:
+        book_df = book_df.copy()
+        book_df['created_at'] = pd.to_datetime(book_df['created_at'], utc=True).dt.tz_convert(eastern)
+        book_df['price_decimal'] = book_df['price_american'].apply(american_to_decimal)
+
+        for bk in book_df['bookmaker_key'].unique():
+            bd = book_df[book_df['bookmaker_key'] == bk].sort_values('created_at')
+            clr = BOOKMAKER_COLORS.get(bk, '#888888')
+            if len(bd) > 1:
+                ax.plot(bd['created_at'], bd['price_decimal'],
+                        label=bd['bookmaker_title'].iloc[0], color=clr,
+                        linewidth=2, marker='o', markersize=6, alpha=0.9, zorder=12,
+                        markeredgecolor='white', markeredgewidth=1)
+            else:
+                ax.scatter(bd['created_at'].iloc[0], bd['price_decimal'].iloc[0],
+                           label=bd['bookmaker_title'].iloc[0], color=clr,
+                           s=150, marker='o', edgecolor='white', linewidth=2, zorder=15)
+
+    # Y-axis range
+    all_dec = list(book_df['price_decimal']) if not book_df.empty else []
+    if not avg_df.empty:
+        all_dec.extend(list(avg_df['price_decimal']))
+    if all_dec:
+        ymin, ymax = min(all_dec), max(all_dec)
+        pad = abs(ymax - ymin) * 0.15 or 0.05
+        ax.set_ylim(ymax + pad, ymin - pad)
+
+    ax.yaxis.set_major_formatter(FuncFormatter(_american_formatter))
+    ax.yaxis.tick_right()
+    ax.yaxis.set_label_position('right')
+    ax.set_ylabel('American Odds', fontsize=10, color='#CCCCCC')
+
+
+def _add_odds_header(ax, book_df, avg_df, prefix: str = ""):
+    """Add MIN/AVG/MAX header text to chart panel."""
+    if book_df.empty:
+        return
+    latest = book_df[book_df['created_at'] == book_df['created_at'].max()]['price_american'].values
+    if len(latest) == 0:
+        return
+    lo, hi = min(latest), max(latest)
+    parts = [prefix] if prefix else []
+    parts.append(f"MIN: {lo:+d}")
+    if not avg_df.empty:
+        parts.append(f"AVG: {avg_df.iloc[-1]['price_american']:+d}")
+    parts.append(f"MAX: {hi:+d}")
+    txt = "  •  ".join(parts)
+    ax.text(0.5, 0.98, txt, transform=ax.transAxes, fontsize=11, color='#FFD700',
+            weight='bold', va='top', ha='center',
+            bbox=dict(boxstyle='round,pad=0.4', facecolor='#1A1F2E',
+                      edgecolor='#FFD700', linewidth=2, alpha=0.9))
+
+
+def _game_title(game_row) -> str:
+    """Format game date/time for chart title."""
+    try:
+        dt = pd.to_datetime(game_row['commence_time'])
+        if dt.tzinfo is None:
+            dt = pytz.UTC.localize(dt)
+        return dt.astimezone(pytz.timezone('US/Eastern')).strftime('%m/%d %I:%M%p ET')
+    except Exception:
+        return ""
+
+
+def _add_logo_title(fig, away_team: str, home_team: str, title_text: str, game_time: str):
+    """Plain-text title (NFL logo pipeline not yet wired; fallback path)."""
+    try:
+        fig.suptitle(title_text, fontsize=14, color='white', fontweight='bold')
+    except Exception:
+        pass
+
+
+# ==========================================================================
+# MONEYLINE CHARTS
+# ==========================================================================
+
+def generate_moneyline_charts() -> List[Tuple[Path, dict]]:
+    """Generate moneyline charts. Returns list of (path, game_info) tuples."""
+    log_info("Generating moneyline charts...")
+    charts = []
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        games = pd.read_sql_query("""
+            SELECT DISTINCT g.game_id, g.home_team, g.away_team, g.commence_time
+            FROM games g JOIN odds_history oh ON g.game_id = oh.game_id
+            WHERE g.last_update = (SELECT MAX(last_update) FROM games)
+            AND oh.market_key='h2h' AND oh.bookmaker_key != '_average'
+            GROUP BY g.game_id ORDER BY g.commence_time
+        """, conn)
+
+        for _, row in games.iterrows():
+            gid = row['game_id']
+            fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 9), sharex=True)
+            fig.patch.set_facecolor('#0F1419')
+
+            for ax, team in zip([ax1, ax2], [row['away_team'], row['home_team']]):
+                _setup_axes(ax)
+                bdf = pd.read_sql_query(
+                    "SELECT created_at, bookmaker_key, bookmaker_title, price_american "
+                    "FROM odds_history WHERE game_id=? AND outcome_name=? AND market_key='h2h' "
+                    "AND bookmaker_key!='_average' ORDER BY created_at",
+                    conn, params=(gid, team))
+                adf = pd.read_sql_query(
+                    "SELECT created_at, price_american, bookmaker_title "
+                    "FROM odds_history WHERE game_id=? AND outcome_name=? AND market_key='h2h' "
+                    "AND bookmaker_key='_average' ORDER BY created_at",
+                    conn, params=(gid, team))
+                _plot_book_lines(ax, bdf, adf)
+                _add_odds_header(ax, bdf, adf)
+                ax.set_title(f'{abbreviate_team(team)} MONEYLINE', fontsize=13, color='white', fontweight='bold')
+                if ax == ax1 and not bdf.empty:
+                    leg = ax.legend(loc='upper left', fontsize=8, ncol=2,
+                                    facecolor='#1A1F2E', edgecolor='#4A5568', framealpha=0.9)
+                    if leg:
+                        for t in leg.get_texts():
+                            t.set_color('#CCCCCC')
+                            if 'AVERAGE' in t.get_text():
+                                t.set_weight('bold'); t.set_color('#FFD700')
+                _format_x_axis(ax, bdf)
+
+            gt = _game_title(row)
+            # Enhanced title with team logos
+            title_text = f"{row['away_team']} @ {row['home_team']} MONEYLINE — {gt}"
+            _add_logo_title(fig, row['away_team'], row['home_team'], title_text, gt)
+
+            ax2.set_xlabel('Time', fontsize=10, color='#CCCCCC')
+            for lbl in ax2.xaxis.get_ticklabels():
+                lbl.set_rotation(45); lbl.set_ha('right'); lbl.set_color('#CCCCCC')
+            plt.tight_layout()
+
+            path = CHARTS_DIR / f"{gid[:8]}_ml_{datetime.now().strftime('%H%M%S')}.png"
+            plt.savefig(path, dpi=130, facecolor='#0F1419', bbox_inches='tight')
+            plt.close()
+
+            game_info = {
+                'away_team': row['away_team'], 'home_team': row['home_team'],
+                'commence_time': row['commence_time'],
+            }
+            charts.append((path, game_info))
+            log_ok(f"ML: {row['away_team']} @ {row['home_team']}")
+
+        conn.close()
+    except Exception as e:
+        log_error("Moneyline chart generation failed", e)
+        plt.close('all')
+    return charts
+
+
+# ==========================================================================
+# SPREAD CHARTS
+# ==========================================================================
+
+def generate_spread_charts() -> List[Tuple[Path, dict]]:
+    """Generate spread charts. Returns list of (path, game_info) tuples."""
+    log_info("Generating spread charts...")
+    charts = []
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        games = pd.read_sql_query("""
+            SELECT DISTINCT g.game_id, g.home_team, g.away_team, g.commence_time,
+                oh1.point as home_spread, oh2.point as away_spread
+            FROM games g
+            JOIN odds_history oh1 ON g.game_id=oh1.game_id AND oh1.outcome_name=g.home_team
+            JOIN odds_history oh2 ON g.game_id=oh2.game_id AND oh2.outcome_name=g.away_team
+            WHERE g.last_update=(SELECT MAX(last_update) FROM games)
+            AND oh1.market_key='spreads' AND oh2.market_key='spreads'
+            AND oh1.created_at=oh2.created_at AND oh1.bookmaker_key=oh2.bookmaker_key
+            AND oh1.bookmaker_key!='_average'
+            GROUP BY g.game_id, oh1.point, oh2.point
+            ORDER BY g.commence_time, oh1.point
+        """, conn)
+
+        for _, row in games.iterrows():
+            gid = row['game_id']
+            fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 9), sharex=True)
+            fig.patch.set_facecolor('#0F1419')
+
+            for ax, team, spread in zip([ax1, ax2],
+                                         [row['home_team'], row['away_team']],
+                                         [row['home_spread'], row['away_spread']]):
+                _setup_axes(ax)
+                bdf = pd.read_sql_query(
+                    "SELECT created_at, bookmaker_key, bookmaker_title, price_american "
+                    "FROM odds_history WHERE game_id=? AND outcome_name=? AND point=? "
+                    "AND market_key='spreads' AND bookmaker_key!='_average' ORDER BY created_at",
+                    conn, params=(gid, team, spread))
+                adf = pd.read_sql_query(
+                    "SELECT created_at, price_american, bookmaker_title "
+                    "FROM odds_history WHERE game_id=? AND outcome_name=? AND point=? "
+                    "AND market_key='spreads' AND bookmaker_key='_average' ORDER BY created_at",
+                    conn, params=(gid, team, spread))
+                _plot_book_lines(ax, bdf, adf)
+                sp_txt = f"+{spread}" if spread > 0 else str(spread)
+                _add_odds_header(ax, bdf, adf, prefix=f"SPREAD: {sp_txt}")
+                ax.set_title(f'{abbreviate_team(team)} ({sp_txt})', fontsize=13, color='white', fontweight='bold')
+                if ax == ax1 and not bdf.empty:
+                    leg = ax.legend(loc='upper left', fontsize=8, ncol=2,
+                                    facecolor='#1A1F2E', edgecolor='#4A5568', framealpha=0.9)
+                    if leg:
+                        for t in leg.get_texts():
+                            t.set_color('#CCCCCC')
+                            if 'AVERAGE' in t.get_text():
+                                t.set_weight('bold'); t.set_color('#FFD700')
+                _format_x_axis(ax, bdf)
+
+            hs = row['home_spread']
+            label = f"SPREAD {hs:+g}/{row['away_spread']:+g}"
+            gt = _game_title(row)
+            title_text = f"{row['away_team']} @ {row['home_team']} {label} — {gt}"
+            _add_logo_title(fig, row['away_team'], row['home_team'], title_text, gt)
+
+            ax2.set_xlabel('Time', fontsize=10, color='#CCCCCC')
+            for lbl in ax2.xaxis.get_ticklabels():
+                lbl.set_rotation(45); lbl.set_ha('right'); lbl.set_color('#CCCCCC')
+            plt.tight_layout()
+
+            hs_s = str(hs).replace('.', '_').replace('-', 'neg')
+            path = CHARTS_DIR / f"{gid[:8]}_sp_{hs_s}_{datetime.now().strftime('%H%M%S')}.png"
+            plt.savefig(path, dpi=130, facecolor='#0F1419', bbox_inches='tight')
+            plt.close()
+
+            game_info = {
+                'away_team': row['away_team'], 'home_team': row['home_team'],
+                'commence_time': row['commence_time'],
+            }
+            charts.append((path, game_info))
+            log_ok(f"SP: {row['away_team']} @ {row['home_team']} {label}")
+
+        conn.close()
+    except Exception as e:
+        log_error("Spread chart generation failed", e)
+        plt.close('all')
+    return charts
+
+
+# ==========================================================================
+# TOTALS CHARTS
+# ==========================================================================
+
+def generate_totals_charts() -> List[Tuple[Path, dict]]:
+    """Generate totals charts. Returns list of (path, game_info) tuples."""
+    log_info("Generating totals charts...")
+    charts = []
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        games = pd.read_sql_query("""
+            SELECT DISTINCT g.game_id, g.home_team, g.away_team, g.commence_time,
+                oh.point as total_line
+            FROM games g JOIN odds_history oh ON g.game_id=oh.game_id
+            WHERE g.last_update=(SELECT MAX(last_update) FROM games)
+            AND oh.market_key='totals' AND oh.bookmaker_key!='_average'
+            GROUP BY g.game_id, oh.point
+            ORDER BY g.commence_time, oh.point
+        """, conn)
+
+        for _, row in games.iterrows():
+            gid = row['game_id']
+            total = row['total_line']
+            fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 9), sharex=True)
+            fig.patch.set_facecolor('#0F1419')
+
+            for ax, outcome in zip([ax1, ax2], ['Over', 'Under']):
+                _setup_axes(ax)
+                bdf = pd.read_sql_query(
+                    "SELECT created_at, bookmaker_key, bookmaker_title, price_american "
+                    "FROM odds_history WHERE game_id=? AND outcome_name=? AND point=? "
+                    "AND market_key='totals' AND bookmaker_key!='_average' ORDER BY created_at",
+                    conn, params=(gid, outcome, total))
+                adf = pd.read_sql_query(
+                    "SELECT created_at, price_american, bookmaker_title "
+                    "FROM odds_history WHERE game_id=? AND outcome_name=? AND point=? "
+                    "AND market_key='totals' AND bookmaker_key='_average' ORDER BY created_at",
+                    conn, params=(gid, outcome, total))
+                _plot_book_lines(ax, bdf, adf)
+                _add_odds_header(ax, bdf, adf, prefix=f"TOTAL: {total}")
+                ax.set_title(f'{outcome} {total}', fontsize=13, color='white', fontweight='bold')
+                if ax == ax1 and not bdf.empty:
+                    leg = ax.legend(loc='upper left', fontsize=8, ncol=2,
+                                    facecolor='#1A1F2E', edgecolor='#4A5568', framealpha=0.9)
+                    if leg:
+                        for t in leg.get_texts():
+                            t.set_color('#CCCCCC')
+                            if 'AVERAGE' in t.get_text():
+                                t.set_weight('bold'); t.set_color('#FFD700')
+                _format_x_axis(ax, bdf)
+
+            gt = _game_title(row)
+            title_text = f"{row['away_team']} @ {row['home_team']} TOTAL {total} — {gt}"
+            _add_logo_title(fig, row['away_team'], row['home_team'], title_text, gt)
+
+            ax2.set_xlabel('Time', fontsize=10, color='#CCCCCC')
+            for lbl in ax2.xaxis.get_ticklabels():
+                lbl.set_rotation(45); lbl.set_ha('right'); lbl.set_color('#CCCCCC')
+            plt.tight_layout()
+
+            ts = str(total).replace('.', '_')
+            path = CHARTS_DIR / f"{gid[:8]}_tot_{ts}_{datetime.now().strftime('%H%M%S')}.png"
+            plt.savefig(path, dpi=130, facecolor='#0F1419', bbox_inches='tight')
+            plt.close()
+
+            game_info = {
+                'away_team': row['away_team'], 'home_team': row['home_team'],
+                'commence_time': row['commence_time'],
+            }
+            charts.append((path, game_info))
+            log_ok(f"TO: {row['away_team']} @ {row['home_team']} O/U {total}")
+
+        conn.close()
+    except Exception as e:
+        log_error("Totals chart generation failed", e)
+        plt.close('all')
+    return charts
+
+
+# ==========================================================================
+# MAIN ITERATION
+# ==========================================================================
+
+def run_iteration() -> int:
+    """Run one complete fetch→store→chart→post cycle."""
+    try:
+        if not setup_database():
+            return 1
+
+        api_mgr = APIKeyManager()
+        t0 = time.time()
+
+        # Fetch
+        data, credits = fetch_odds(api_mgr)
+        if data is None:
+            log_error("No odds data", critical=True)
+            return 1
+
+        # Store
+        records = store_odds(data)
+
+        # Movement charts (works with 1+ data points — single points render as dots)
+        ml_charts = sp_charts = to_charts = []
+        if GENERATE_CHARTS and records > 0:
+            ml_charts = generate_moneyline_charts()
+            sp_charts = generate_spread_charts()
+            to_charts = generate_totals_charts()
+
+            for ch_path, gi in ml_charts:
+                post_chart_to_discord(ch_path, "NFL Moneyline Movement", DISCORD_WEBHOOK_MONEYLINE, game_info=gi)
+                time.sleep(0.8)
+            for ch_path, gi in sp_charts:
+                post_chart_to_discord(ch_path, "NFL Spread Movement", DISCORD_WEBHOOK_SPREADS, game_info=gi)
+                time.sleep(0.8)
+            for ch_path, gi in to_charts:
+                post_chart_to_discord(ch_path, "NFL Totals Movement", DISCORD_WEBHOOK_TOTALS, game_info=gi)
+                time.sleep(0.8)
+
+        # Push API key state to Supabase (persistent across restarts + dashboard)
+        api_mgr.push_to_supabase()
+
+        elapsed = time.time() - t0
+        total_charts = len(ml_charts) + len(sp_charts) + len(to_charts)
+        log_ok(f"Iteration complete: {len(data)} games, {records} records, "
+               f"{total_charts} charts in {elapsed:.1f}s")
+
+        if SEND_DISCORD and records > 0:
+            # Build matchup listing with start times
+            matchup_lines = []
+            for g in sorted(data, key=lambda x: x.get('commence_time', '')):
+                away = g.get('away_team', '?')
+                home = g.get('home_team', '?')
+                aa = abbreviate_team(away)
+                ha = abbreviate_team(home)
+                ct = g.get('commence_time', '')
+                try:
+                    t = datetime.fromisoformat(ct.replace('Z', '+00:00'))
+                    et = t.astimezone(pytz.timezone('US/Eastern'))
+                    ts_str = et.strftime('%I:%M %p').lstrip('0')
+                except Exception:
+                    ts_str = 'TBD'
+                live = " 🔴" if is_game_live(ct) else ""
+                matchup_lines.append(f"🏈 `{ts_str}` **{aa} @ {ha}**{live}")
+
+            matchup_text = "\n".join(matchup_lines) if matchup_lines else "No games"
+
+            send_discord_alert(
+                f"✅ **Odds Update Complete**\n"
+                f"**{len(data)} Games** | {records} records | {elapsed:.1f}s\n"
+                f"Charts: ML={len(ml_charts)} SP={len(sp_charts)} TO={len(to_charts)}\n"
+                f"Credits remaining: {credits}\n\n"
+                f"{matchup_text}")
+        return 0
+
+    except KeyboardInterrupt:
+        raise
+    except Exception as e:
+        log_error(f"Iteration failed: {e}", e, critical=True)
+        traceback.print_exc()
+        return 1
+
+
+# ==========================================================================
+# CONTINUOUS LOOP
+# ==========================================================================
+
+def signal_handler(signum, frame):
+    global shutdown_requested
+    shutdown_requested = True
+    log_warn(f"Shutdown signal received ({signum})")
+
+
+def main():
+    global shutdown_requested
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
+
+    sport_str = " → ".join(SPORT_KEYS)
+    print(f"\n{Colors.CYAN}{'='*60}{Colors.RESET}")
+    print(f"{Colors.BOLD}  {SCRIPT_NAME} v{SCRIPT_VERSION}{Colors.RESET}")
+    print(f"{Colors.CYAN}  Sport keys: {sport_str} | Interval: {RUN_INTERVAL//60}min{Colors.RESET}")
+    print(f"{Colors.CYAN}  Markets: {MARKETS} | Keys: {len(API_KEYS)}{Colors.RESET}")
+    print(f"{Colors.CYAN}{'='*60}{Colors.RESET}\n")
+
+    if SEND_DISCORD:
+        send_discord_alert(
+            f"🚀 **Odds Monitor v{SCRIPT_VERSION} Started**\n"
+            f"Sport keys: {sport_str}\n"
+            f"Markets: {MARKETS}\n"
+            f"Interval: {RUN_INTERVAL//60} min\n"
+            f"Keys: {len(API_KEYS)}")
+
+    run_count = 0
+    consec_errors = 0
+
+    while not shutdown_requested:
+        run_count += 1
+        print(f"\n{Colors.BLUE}{'─'*50}{Colors.RESET}")
+        print(f"{Colors.BOLD}Run #{run_count} — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}{Colors.RESET}")
+        print(f"{Colors.BLUE}{'─'*50}{Colors.RESET}\n")
+
+        try:
+            code = run_iteration()
+            if code == 0:
+                consec_errors = 0
+            else:
+                consec_errors += 1
+        except KeyboardInterrupt:
+            shutdown_requested = True
+            break
+        except Exception as e:
+            consec_errors += 1
+            log_error(f"Run #{run_count} error", e)
+            if consec_errors >= 5:
+                log_error("Too many consecutive errors, stopping", critical=True)
+                break
+
+        if not shutdown_requested:
+            nxt = datetime.now() + timedelta(seconds=RUN_INTERVAL)
+            print(f"\n{Colors.DIM}Next run: {nxt.strftime('%H:%M:%S')} "
+                  f"(sleeping {RUN_INTERVAL//60} min){Colors.RESET}")
+
+            slept = 0
+            while slept < RUN_INTERVAL and not shutdown_requested:
+                chunk = min(30, RUN_INTERVAL - slept)
+                time.sleep(chunk)
+                slept += chunk
+
+    # Shutdown
+    print(f"\n{Colors.YELLOW}Shutting down...{Colors.RESET}")
+    if SEND_DISCORD:
+        send_discord_alert(f"🛑 **Odds Monitor Stopped**\nRan {run_count} iterations")
+    print(f"{Colors.GREEN}Shutdown complete{Colors.RESET}")
+
+
+if __name__ == "__main__":
+    try:
+        if len(sys.argv) > 1 and sys.argv[1] == "--once":
+            print(f"{Colors.YELLOW}Single iteration mode (--once){Colors.RESET}\n")
+            sys.exit(run_iteration())
+        else:
+            main()
+    except Exception as e:
+        # Module-level crash protection — catches errors during startup/init
+        import traceback as _tb
+        import datetime as _dt
+        ts = _dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"\n[{ts}] [FATAL] Odds Monitor crashed during startup: {e}", flush=True)
+        _tb.print_exc()
+        try:
+            if SEND_DISCORD:
+                send_discord_alert(
+                    f"🚨 **Odds Monitor FATAL CRASH**\n"
+                    f"Process crashed during startup/initialization:\n```{str(e)[:300]}```"
+                )
+        except Exception:
+            pass
+        sys.exit(1)

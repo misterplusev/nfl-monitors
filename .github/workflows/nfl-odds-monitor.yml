@@ -1,0 +1,36 @@
+name: NFL Odds Monitor
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run odds monitor (single iteration)
+        run: python nfl_unified_odds_monitor.py --once
+        env:
+          ODDS_API_KEY_1: ${{ secrets.ODDS_API_KEY_1 }}
+          ODDS_API_KEY_2: ${{ secrets.ODDS_API_KEY_2 }}
+          ODDS_API_KEY_3: ${{ secrets.ODDS_API_KEY_3 }}
+          ODDS_API_KEY_4: ${{ secrets.ODDS_API_KEY_4 }}
+          ODDS_API_KEY_5: ${{ secrets.ODDS_API_KEY_5 }}
+          ODDS_API_KEY_6: ${{ secrets.ODDS_API_KEY_6 }}
+          ODDS_API_KEY_7: ${{ secrets.ODDS_API_KEY_7 }}
+          ODDS_API_KEY_8: ${{ secrets.ODDS_API_KEY_8 }}
+          ODDS_API_KEY_9: ${{ secrets.ODDS_API_KEY_9 }}
+          DISCORD_WEBHOOK_NFL_MONEYLINE: ${{ secrets.DISCORD_WEBHOOK_NFL_MONEYLINE }}
+          DISCORD_WEBHOOK_NFL_SPREADS: ${{ secrets.DISCORD_WEBHOOK_NFL_SPREADS }}
+          DISCORD_WEBHOOK_NFL_TOTALS: ${{ secrets.DISCORD_WEBHOOK_NFL_TOTALS }}
