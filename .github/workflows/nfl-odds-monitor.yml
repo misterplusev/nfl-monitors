@@ -2,7 +2,7 @@ name: NFL Odds Monitor
 
 on:
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -19,7 +19,29 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Quota gate (sustain governor)
+        id: gate
+        continue-on-error: true
+        run: python quota_gate.py
+        env:
+          ODDS_API_KEY_1: ${{ secrets.ODDS_API_KEY_1 }}
+          ODDS_API_KEY_2: ${{ secrets.ODDS_API_KEY_2 }}
+          ODDS_API_KEY_3: ${{ secrets.ODDS_API_KEY_3 }}
+          ODDS_API_KEY_4: ${{ secrets.ODDS_API_KEY_4 }}
+          ODDS_API_KEY_5: ${{ secrets.ODDS_API_KEY_5 }}
+          ODDS_API_KEY_6: ${{ secrets.ODDS_API_KEY_6 }}
+          ODDS_API_KEY_7: ${{ secrets.ODDS_API_KEY_7 }}
+          ODDS_API_KEY_8: ${{ secrets.ODDS_API_KEY_8 }}
+          ODDS_API_KEY_9: ${{ secrets.ODDS_API_KEY_9 }}
+          QUOTA_RESET_DAY: ${{ vars.QUOTA_RESET_DAY || '7' }}
+          SAFETY_MARGIN: ${{ vars.SAFETY_MARGIN || '0.10' }}
+          MLB_CREDITS_PER_DAY: ${{ vars.MLB_CREDITS_PER_DAY || '72' }}
+          POLL_COST: ${{ vars.POLL_COST || '3' }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+
       - name: Run odds monitor (single iteration)
+        if: steps.gate.outcome == 'success'
         run: python nfl_unified_odds_monitor.py --once
         env:
           ODDS_API_KEY_1: ${{ secrets.ODDS_API_KEY_1 }}
@@ -34,3 +56,9 @@ jobs:
           DISCORD_WEBHOOK_NFL_MONEYLINE: ${{ secrets.DISCORD_WEBHOOK_NFL_MONEYLINE }}
           DISCORD_WEBHOOK_NFL_SPREADS: ${{ secrets.DISCORD_WEBHOOK_NFL_SPREADS }}
           DISCORD_WEBHOOK_NFL_TOTALS: ${{ secrets.DISCORD_WEBHOOK_NFL_TOTALS }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+
+      - name: Skipped by quota gate
+        if: steps.gate.outcome != 'success'
+        run: echo "Quota gate skipped this hour - pool budget reserved. Job OK."
