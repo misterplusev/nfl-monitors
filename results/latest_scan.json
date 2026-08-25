@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-08-25T18:41:46.921135+00:00",
+ "scanned_at": "2026-08-25T18:43:54.752188+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 28.1,
+ "loop_uptime_min": 30.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 58432,
+   "markets": 69464,
    "last_tick_age_s": 0.0
   },
   {
@@ -26,7 +26,7 @@
    "venue": "novig",
    "state": "OK",
    "markets": 253,
-   "last_tick_age_s": 12.0
+   "last_tick_age_s": 18.7
   },
   {
    "venue": "prophetx",
@@ -36,43 +36,43 @@
   }
  ],
  "totals": {
-  "markets_tracked": 66819,
+  "markets_tracked": 77851,
   "pairs_married": 8,
   "arbitrages": 8
  },
  "stats": {
-  "commits": 11,
-  "gist_errors": 25,
-  "kalshi.sweeps": 44,
-  "kalshi.ticks": 544206,
-  "kalshi.updates": 270626,
-  "kalshi.ws_ticks": 544206,
-  "kalshi.ws_trades": 115719,
-  "live_evals_fired": 57,
-  "novig.rest_updates": 1280,
-  "novig.sweeps": 43,
-  "novig.ticks": 10659,
-  "novig.updates": 1280,
-  "pairs_blocked_antonym_date": 557,
-  "pmglobal.rest_updates": 1608,
-  "pmglobal.sweeps": 43,
-  "pmglobal.ticks": 7194,
-  "pmglobal.updates": 3307,
+  "commits": 12,
+  "gist_errors": 27,
+  "kalshi.sweeps": 50,
+  "kalshi.ticks": 621592,
+  "kalshi.updates": 310269,
+  "kalshi.ws_ticks": 621592,
+  "kalshi.ws_trades": 130714,
+  "live_evals_fired": 58,
+  "novig.rest_updates": 1382,
+  "novig.sweeps": 49,
+  "novig.ticks": 12105,
+  "novig.updates": 1382,
+  "pairs_blocked_antonym_date": 627,
+  "pmglobal.rest_updates": 1761,
+  "pmglobal.sweeps": 49,
+  "pmglobal.ticks": 8145,
+  "pmglobal.updates": 3601,
   "pmglobal.ws_errors": 18,
-  "pmglobal.ws_msgs": 245123,
-  "pmglobal.ws_ticks": 2794,
-  "pmus.rest_updates": 12837,
-  "pmus.sweeps": 44,
-  "pmus.ticks": 359955,
-  "pmus.updates": 12837,
+  "pmglobal.ws_msgs": 330479,
+  "pmglobal.ws_ticks": 3145,
+  "pmus.rest_updates": 13237,
+  "pmus.sweeps": 50,
+  "pmus.ticks": 407949,
+  "pmus.updates": 13237,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 45,
-  "prophetx.ticks": 787,
-  "prophetx.updates": 552,
-  "prophetx.ws_errors": 45,
-  "px.evt_scanned": 13,
-  "pxboard.sweeps": 43,
-  "supa_pushes": 135
+  "pmus_x.sweeps": 51,
+  "prophetx.ticks": 862,
+  "prophetx.updates": 604,
+  "prophetx.ws_errors": 51,
+  "px.evt_scanned": 12,
+  "pxboard.sweeps": 49,
+  "supa_pushes": 153
  },
  "arbitrages": [
   {
@@ -146,26 +146,26 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "ask_cents": 22
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "f13dcb020ee1dd009d25f93f79159186"
     ],
     "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "no_cost_cents": 54
+    "ask_cents": 4
    },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-08-25T18:40:40.683262+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
+    ],
+    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
+    "no_cost_cents": 78
+   },
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-08-25T18:42:20.753823+00:00"
   },
   {
    "buy_yes": {
