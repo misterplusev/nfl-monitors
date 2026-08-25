@@ -33,6 +33,8 @@ jobs:
           SWEEP_EVERY_S: "1.0"
           MIN_EDGE_BPS: ${{ vars.MIN_EDGE_BPS || '30' }}
           DISCORD_WEBHOOK_ABET: ${{ secrets.DISCORD_WEBHOOK_ABET }}
+          KALSHI_API_KEY_ID: ${{ secrets.KALSHI_API_KEY_ID }}
+          KALSHI_PRIVATE_KEY_PEM: ${{ secrets.KALSHI_PRIVATE_KEY_PEM }}
           PROPHETX_JWT: ${{ secrets.PROPHETX_JWT }}
           NOVIG_CLIENT_ID: ${{ secrets.NOVIG_CLIENT_ID }}
           NOVIG_CLIENT_SECRET: ${{ secrets.NOVIG_CLIENT_SECRET }}
