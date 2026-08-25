@@ -56,6 +56,8 @@ PMUS_API = "https://api.polymarket.us"   # REAL CFTC exchange (Ed25519 auth)
 PX_WS = "wss://ws-cash.prophetx.co"
 PX_API = "https://cash.api.prophetx.co"
 NOVIG_API = "https://api.novig.us"
+NOVIG_GQL = "https://api.novig.us/v1/graphql"
+PX_PUBLIC = "https://cash.api.prophetx.co"   # consumer app backend (no-auth board)
 
 DEADLINE = time.time() + RUN_MINUTES * 60
 
@@ -517,6 +519,127 @@ def rest_px_sweep():
     return n
 
 
+def gql(query):
+    body = json.dumps({"query": query}).encode()
+    req = urllib.request.Request(NOVIG_GQL, data=body,
+                                 headers={"Content-Type": "application/json",
+                                          "User-Agent": UA["User-Agent"],
+                                          "Origin": "https://novig.com"})
+    with urllib.request.urlopen(req, timeout=25) as r:
+        return json.loads(r.read().decode())
+
+
+def rest_novig_public_sweep():
+    """Novig FULL BOARD via consumer GraphQL. Public, no auth, no geo-check.
+    available = best ask on that outcome (decimal 0-1)."""
+    q = """
+query {
+  market(where: {settled_at: {_is_null: true}}, limit: 250, order_by: {volume: desc}) {
+    id description league volume status
+    outcomes { index type last available altLast status }
+  }
+}"""
+    r = gql(q)
+    if r.get("errors"):
+        raise RuntimeError(str(r["errors"])[:120])
+    n = 0
+    for m in r.get("data", {}).get("market", []):
+        outs = m.get("outcomes") or []
+        if len(outs) < 2:
+            continue
+        home = next((o for o in outs if o.get("index") == 0), None)
+        away = next((o for o in outs if o.get("index") == 1), None)
+        if not home or not away:
+            continue
+        title = f"{m['description']} ({m['league']})"[:180]
+        try:
+            ask_yes = int(round(float(home.get("available") or 0) * 100))
+            bid_yes = int(round(float(away.get("available") or 0) * 100))
+            bid_yes = min(99, max(1, 100 - bid_yes))
+        except (TypeError, ValueError):
+            continue
+        if not (0 < ask_yes < 100):
+            continue
+        if put_book("novig", str(m["id"]), title, bid_yes or max(1, ask_yes - 1), ask_yes):
+            STATS["novig.rest_updates"] += 1
+        n += 1
+    LAST_TICK_TS["novig"] = time.time()
+    return n
+
+
+PX_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36",
+              "Accept": "application/json", "Origin": "https://www.prophetx.co"}
+
+
+def american_to_cents(odds):
+    """American odds -> implied probability in cents."""
+    try:
+        o = float(odds)
+    except (TypeError, ValueError):
+        return None
+    p = 100.0 / (o + 100) if o > 0 else (-o) / ((-o) + 100)
+    c = int(round(p * 100))
+    return c if 0 < c < 100 else None
+
+
+def _px_json(url):
+    req = urllib.request.Request(url, headers=PX_HEADERS)
+    with urllib.request.urlopen(req, timeout=25) as r:
+        return json.loads(r.read().decode())
+
+
+def rest_px_public_sweep():
+    """ProphetX FULL BOARD via consumer app endpoints. Public, no auth, no SMS.
+    Resting orders expose American odds -> implied best price."""
+    evs = _px_json(f"{PX_PUBLIC}/trade/public/api/v1/events/")["data"]
+    n = 0
+    for e in evs[:40]:
+        eid = e.get("id")
+        name = e.get("displayName") or e.get("name") or ""
+        if not eid:
+            continue
+        try:
+            d = _px_json(f"{PX_PUBLIC}/trade/public/api/v2/events/{eid}/markets")
+        except Exception:
+            continue
+        mkts = (d.get("data") or {}).get("markets") or []
+        sels_outer = None
+        for mkt in mkts:
+            if mkt.get("type") != "moneyline":
+                continue  # main board only; spreads/totals later
+            outs = mkt.get("outcomes") or []
+            sels_outer = mkt.get("selections")
+            for oi, out in enumerate(outs):
+                lid = out.get("lineID")
+                comp = str(out.get("competitorId") or "")
+                if not lid:
+                    continue
+                SLUGS[("prophetx", lid)] = f"{eid}#{oi}"
+                # resting orders for this outcome: selections[oi] = [orders]
+                grp = sels_outer[oi] if isinstance(sels_outer, list) and len(sels_outer) > oi else None
+                best_odds = None
+                if isinstance(grp, list):
+                    for od in grp:
+                        o_ = od.get("odds")
+                        if isinstance(o_, (int, float)):
+                            # best price to BUY this outcome = highest odds value (most negative)
+                            if best_odds is None or o_ > best_odds:
+                                best_odds = float(o_)
+                if best_odds is None:
+                    continue
+                cents = american_to_cents(best_odds)
+                if not cents:
+                    continue
+                oname = out.get("displayName") or ""
+                title = f"{name}"[:180]
+                SLUGS[("prophetx", lid + "#n")] = oname
+                TITLES[("prophetx", lid)] = title
+                put_book("prophetx", lid, title, max(1, cents - 1), cents)
+                n += 1
+        STATS["px.evt_scanned"] = n
+    return n
+
+
 def rest_novig_sweep():
     cid, sec = os.environ.get("NOVIG_CLIENT_ID","").strip(), os.environ.get("NOVIG_CLIENT_SECRET","").strip()
     if not (cid and sec):
@@ -547,8 +670,8 @@ def rest_novig_sweep():
 
 
 VENUE_SWEEPS = [("kalshi", rest_kalshi_sweep), ("pmus", rest_pmus_exchange_sweep),
-                ("pmglobal", rest_pmus_sweep), ("prophetx", rest_px_sweep),
-                ("novig", rest_novig_sweep)]
+                ("pmglobal", rest_pmus_sweep), ("novig", rest_novig_public_sweep),
+                ("pxboard", rest_px_public_sweep)]
 
 
 # ───────────────────── WebSocket feeds ─────────────────────
@@ -767,7 +890,7 @@ def write_state(arbs, hot=True):
     os.makedirs(RESULTS_DIR, exist_ok=True)
     now_iso = datetime.now(timezone.utc).isoformat()
     venues_status = []
-    for v in ["kalshi", "pmus", "pmglobal", "prophetx", "novig"]:
+    for v in ["kalshi", "pmus", "pmglobal", "novig", "prophetx"]:
         n = sum(1 for (vv, _k) in BOOKS if vv == v)
         lt = LAST_TICK_TS.get(v, 0)
         age = time.time() - lt if lt else None
