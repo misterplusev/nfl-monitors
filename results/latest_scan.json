@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-08-25T20:48:09.269350+00:00",
+ "scanned_at": "2026-08-25T20:50:11.555399+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 154.5,
+ "loop_uptime_min": 156.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 183238,
+   "markets": 184664,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 8020,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 11.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 136,
+   "markets": 143,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 296,
-   "last_tick_age_s": 13.0
+   "last_tick_age_s": 8.0
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 73,
-   "last_tick_age_s": 10.4
+   "last_tick_age_s": 0.2
   }
  ],
  "totals": {
-  "markets_tracked": 191763,
+  "markets_tracked": 193196,
   "pairs_married": 8,
   "arbitrages": 8
  },
  "stats": {
-  "commits": 70,
-  "gist_errors": 143,
-  "kalshi.sweeps": 368,
-  "kalshi.ticks": 5129651,
-  "kalshi.updates": 2299582,
-  "kalshi.ws_ticks": 5129651,
-  "kalshi.ws_trades": 1052600,
-  "live_evals_fired": 251,
-  "novig.rest_updates": 7031,
-  "novig.sweeps": 367,
-  "novig.ticks": 87000,
-  "novig.updates": 7031,
-  "pairs_blocked_antonym_date": 5389,
-  "pmglobal.rest_updates": 8090,
-  "pmglobal.sweeps": 367,
-  "pmglobal.ticks": 56099,
-  "pmglobal.updates": 17302,
+  "commits": 71,
+  "gist_errors": 145,
+  "kalshi.sweeps": 374,
+  "kalshi.ticks": 5209906,
+  "kalshi.updates": 2331916,
+  "kalshi.ws_ticks": 5209906,
+  "kalshi.ws_trades": 1069510,
+  "live_evals_fired": 259,
+  "novig.rest_updates": 7164,
+  "novig.sweeps": 374,
+  "novig.ticks": 88649,
+  "novig.updates": 7164,
+  "pairs_blocked_antonym_date": 5573,
+  "pmglobal.rest_updates": 8216,
+  "pmglobal.sweeps": 374,
+  "pmglobal.ticks": 57054,
+  "pmglobal.updates": 17507,
   "pmglobal.ws_errors": 75,
-  "pmglobal.ws_msgs": 2246281,
-  "pmglobal.ws_ticks": 19299,
-  "pmus.rest_updates": 34545,
-  "pmus.sweeps": 368,
-  "pmus.ticks": 2951625,
-  "pmus.updates": 34545,
+  "pmglobal.ws_msgs": 2270678,
+  "pmglobal.ws_ticks": 19554,
+  "pmus.rest_updates": 34879,
+  "pmus.sweeps": 374,
+  "pmus.ticks": 2999619,
+  "pmus.updates": 34879,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 369,
-  "prophetx.ticks": 2510,
-  "prophetx.updates": 1569,
-  "prophetx.ws_errors": 372,
-  "px.evt_scanned": 22,
-  "pxboard.sweeps": 367,
-  "supa_pushes": 1170
+  "pmus_x.sweeps": 375,
+  "prophetx.ticks": 2647,
+  "prophetx.updates": 1618,
+  "prophetx.ws_errors": 379,
+  "px.evt_scanned": 21,
+  "pxboard.sweeps": 374,
+  "supa_pushes": 1191
  },
  "arbitrages": [
   {
@@ -80,33 +80,10 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xe9c0b1446550b27270cbc2c7fcb42993c79867bdb5487667be7856fe605d5bdd"
+     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 0.5",
-    "ask_cents": 34
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ef75ca5d272ac2da5ce2db46eb05974e"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-08-25T20:47:23.238726+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe9c0b1446550b27270cbc2c7fcb42993c79867bdb5487667be7856fe605d5bdd"
-    ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 0.5",
-    "ask_cents": 34
+    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -117,42 +94,42 @@
     "title": "Real Betis Balompi\u00e9 at Valencia CF",
     "no_cost_cents": 2
    },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-08-25T20:47:22.737525+00:00"
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-08-25T20:50:11.555312+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xe9c0b1446550b27270cbc2c7fcb42993c79867bdb5487667be7856fe605d5bdd"
+     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 0.5",
-    "ask_cents": 34
+    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "90f275962b928b77e8184be47817931b"
+     "ef75ca5d272ac2da5ce2db46eb05974e"
     ],
     "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 15
+    "no_cost_cents": 2
    },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-08-25T20:47:58.439533+00:00"
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-08-25T20:50:11.555333+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xe9c0b1446550b27270cbc2c7fcb42993c79867bdb5487667be7856fe605d5bdd"
+     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 0.5",
-    "ask_cents": 34
+    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -161,11 +138,80 @@
      "a30d2845ddae42fd6ebe05dd7311bf32"
     ],
     "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 15
+    "no_cost_cents": 14
    },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-08-25T20:47:24.212670+00:00"
+   "total_cost_cents": 18,
+   "edge_bps": 8200,
+   "detected_at": "2026-08-25T20:50:10.935255+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
+    ],
+    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "90f275962b928b77e8184be47817931b"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Valencia CF",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 18,
+   "edge_bps": 8200,
+   "detected_at": "2026-08-25T20:50:11.555346+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
+    ],
+    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e1f92683b947250fd21599e911b31aab"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Valencia CF",
+    "no_cost_cents": 85
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-25T20:50:10.750012+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
+    ],
+    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d1ecf3e712c8fbd4b7595797972af20b"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Valencia CF",
+    "no_cost_cents": 87
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-08-25T20:49:30.611456+00:00"
   },
   {
    "buy_yes": {
@@ -181,14 +227,14 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xe9c0b1446550b27270cbc2c7fcb42993c79867bdb5487667be7856fe605d5bdd"
+     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 0.5",
-    "no_cost_cents": 66
+    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
+    "no_cost_cents": 96
    },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-08-25T20:46:43.799495+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-25T20:50:11.555340+00:00"
   },
   {
    "buy_yes": {
@@ -198,66 +244,20 @@
      "fa5105dcd31712346c93c7c294568576"
     ],
     "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "ask_cents": 2
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xe9c0b1446550b27270cbc2c7fcb42993c79867bdb5487667be7856fe605d5bdd"
+     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 0.5",
-    "no_cost_cents": 66
+    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
+    "no_cost_cents": 96
    },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-08-25T20:47:22.218781+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d1ecf3e712c8fbd4b7595797972af20b"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe9c0b1446550b27270cbc2c7fcb42993c79867bdb5487667be7856fe605d5bdd"
-    ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 0.5",
-    "no_cost_cents": 66
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-25T20:47:25.237454+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e1f92683b947250fd21599e911b31aab"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "ask_cents": 17
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe9c0b1446550b27270cbc2c7fcb42993c79867bdb5487667be7856fe605d5bdd"
-    ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 0.5",
-    "no_cost_cents": 66
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-08-25T20:47:58.261306+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-25T20:50:10.583181+00:00"
   }
  ]
 }
