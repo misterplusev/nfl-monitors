@@ -107,6 +107,42 @@ class SupabaseClient:
         if total > 0:
             print(f"[SUPABASE] Inserted {total} odds history records")
 
+    def get_odds_history(self, since_iso, limit=20000):
+        """Read back nfl_odds_history rows written since `since_iso`.
+
+        THE MISSING HALF. append_odds_history() has been writing ~1,000 rows an
+        hour since this monitor was built, and nothing ever read them back. The
+        charts are drawn from the LOCAL SQLite odds_history table, and this
+        monitor runs `--once` on a GitHub Actions runner whose disk is destroyed
+        when the job ends — so every hour started from an empty database, drew
+        each chart from the single snapshot it had just taken, and threw the
+        database away. That is the whole explanation for the one-datapoint NFL
+        charts.
+
+        Returns [] on any failure rather than raising: a Supabase blip must
+        degrade the chart to fewer points, never kill the run.
+
+        PostgREST params:
+          fetched_at_pt=gte.<iso>   only rows since the cutoff
+          order=fetched_at_pt.asc   chronological, so the replay is ordered
+          limit                     bounded so a long outage cannot OOM a runner
+        """
+        if not self.connected:
+            return []
+        try:
+            path = (f"nfl_odds_history"
+                    f"?fetched_at_pt=gte.{since_iso}"
+                    f"&order=fetched_at_pt.asc"
+                    f"&limit={int(limit)}")
+            rows = self._get(path)
+            if not isinstance(rows, list):
+                return []
+            print(f"[SUPABASE] Read {len(rows)} odds history rows since {since_iso}")
+            return rows
+        except Exception as e:
+            print(f"[SUPABASE] odds history read failed: {e}")
+            return []
+
     def record_api_usage(self, api_key_id, credits_used, credits_remaining,
                          games_count=0, bookmakers_count=0, regions="us",
                          sport_key="", request_type="unified_fetch"):

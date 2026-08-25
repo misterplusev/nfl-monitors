@@ -75,6 +75,38 @@ API_STATE_FILE = RUNTIME_DIR / "api_state.json"
 for _d in [DB_PATH.parent, RAW_DIR, RUNTIME_DIR, CHARTS_DIR, LOG_DIR]:
     _d.mkdir(parents=True, exist_ok=True)
 
+# ==========================================================================
+# DURABLE ODDS HISTORY
+# ==========================================================================
+# WHY THIS EXISTS. odds_nfl.db is written to the GitHub Actions runner's disk,
+# and that runner is DESTROYED when the job ends. Every hour this monitor
+# therefore started from an empty database, stored one snapshot, drew a chart
+# from a single point in time, and threw the database away. That is the whole
+# explanation for the one-datapoint NFL charts.
+#
+# MLB does not have this problem because its Space process lives for hours, and
+# because mlb_unified_odds_monitor snapshots to a HuggingFace Dataset and
+# replays it after an ephemeral wipe. We use the SAME mechanism and the SAME
+# dataset here — only the snapshot key differs, so NFL history is identifiable
+# and can never collide with MLB's.
+#
+# CRITICAL DIFFERENCE FROM MLB. MLB restores ONCE per process because its
+# process is long-lived. This monitor is invoked as `--once` from CI, so the
+# process IS the cycle: it must restore at the START and snapshot at the END of
+# every single run, or nothing ever accumulates.
+_HAS_DURABLE = False
+try:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import durable_state
+    _HAS_DURABLE = True
+except Exception as _e:                                    # pragma: no cover
+    print(f"[WARN] durable_state unavailable: {_e} — NFL odds history is "
+          f"EPHEMERAL and charts will show a single point", flush=True)
+
+# Same dataset as MLB (ABET_STATE_REPO), NFL-labelled key.
+HISTORY_SNAPSHOT = "nfl_odds_history_snapshot.json.gz"
+HISTORY_RETAIN_DAYS = int(os.getenv("ODDS_HISTORY_RETAIN_DAYS", "7"))
+
 # File logger — writes to data/logs/ so the launcher dashboard picks it up
 import logging as _logging
 _file_logger = _logging.getLogger("nfl_odds_monitor")
@@ -103,7 +135,7 @@ for _i in range(1, 10):
 # Preseason runs Aug-Sep (HOF game + 4 weeks); books carry both sets of lines
 # while preseason is underway, so try preseason key first, then regular season.
 _MONTH = datetime.now().month
-if _MONTH in (8, 9):
+if _MONTH in (8, 9) and os.getenv("ODDS_INCLUDE_NFL_PRESEASON", "1") == "1":
     SPORT_KEYS = ["americanfootball_nfl_preseason", "americanfootball_nfl"]
 else:
     SPORT_KEYS = ["americanfootball_nfl"]
@@ -1086,12 +1118,108 @@ def _game_title(game_row) -> str:
         return ""
 
 
-def _add_logo_title(fig, away_team: str, home_team: str, title_text: str, game_time: str):
-    """Plain-text title (NFL logo pipeline not yet wired; fallback path)."""
+# ==========================================================================
+# TEAM LOGOS — ported from mlb_unified_odds_monitor / mlb_daily
+# ==========================================================================
+# MLB resolves a logo through three tiers, verified at each step
+# (mlb_daily._fetch_logo_uncached):
+#   1. ESPN canonical  a.espncdn.com/i/teamlogos/mlb/500/{abbr}.png   <- primary
+#   2. MLB static      www.mlbstatic.com/team-logos/{team_id}.svg
+#   3. Supabase        mlb_team_assets.logo_espn_base64               <- last resort
+#
+# NFL has no numeric team_id scheme and no nfl_team_assets table exists, so tier
+# 1 is the whole chain here. That is not a downgrade: tier 1 is what actually
+# serves MLB logos in practice; 2 and 3 are fallbacks that rarely fire.
+#
+# TEAM_ABBR already holds all 32 NFL abbreviations and they ARE the ESPN
+# abbreviations, so no second mapping table is needed. All 32 URLs verified
+# reachable 2026-08-25 (32/32, every asset > 1 KB).
+_logo_cache_mpl = {}          # {team_name: ndarray | None}
+ESPN_NFL_LOGO = "https://a.espncdn.com/i/teamlogos/nfl/500/{abbr}.png"
+
+
+def _get_team_logo_for_chart(team_name: str, size: int = 36):
+    """Return an RGBA ndarray for matplotlib, or None. Never raises.
+
+    Cached per team_name for the life of the process — a chart run draws the
+    same handful of teams repeatedly and each miss is an HTTP round trip.
+    A None result is cached too, so a dead team never re-fetches every panel.
+    """
+    if team_name in _logo_cache_mpl:
+        return _logo_cache_mpl[team_name]
+
+    logo = None
     try:
-        fig.suptitle(title_text, fontsize=14, color='white', fontweight='bold')
-    except Exception:
-        pass
+        abbr = TEAM_ABBR.get(team_name)
+        if abbr:
+            import numpy as np
+            from PIL import Image
+            url = ESPN_NFL_LOGO.format(abbr=abbr.lower())
+            r = _session.get(url, timeout=8)
+            # Verify it is actually an image before trusting it. ESPN answers
+            # 200 with an HTML error page for an unknown abbreviation, which
+            # would otherwise be embedded as a broken smear in the title band.
+            if r.status_code == 200 and len(r.content) > 1000:
+                im = Image.open(BytesIO(r.content)).convert("RGBA")
+                im = im.resize((size, size), Image.LANCZOS)
+                logo = np.array(im)
+            else:
+                log_warn(f"Logo fetch for {team_name} ({abbr}): "
+                         f"HTTP {r.status_code}, {len(r.content)} bytes")
+    except Exception as e:
+        log_warn(f"Logo load failed for {team_name}: {e}")
+
+    _logo_cache_mpl[team_name] = logo
+    return logo
+
+
+def _add_logo_title(fig, away_team: str, home_team: str, title_text: str, game_time: str):
+    """Title band with both team logos embedded — mirrors MLB's implementation.
+
+    Geometry is copied exactly from mlb_unified_odds_monitor._add_logo_title so
+    NFL and MLB charts are visually interchangeable: a dedicated axes occupying
+    the top 8% of the figure, text centred, logos at x=0.32 and x=0.68.
+    That band is the 12% tight_layout already reserves via rect=[0,0,1,0.88].
+    """
+    try:
+        from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+
+        away_logo = _get_team_logo_for_chart(away_team, size=36)
+        home_logo = _get_team_logo_for_chart(home_team, size=36)
+
+        if away_logo is None and home_logo is None:
+            fig.suptitle(title_text, fontsize=14, color='white', fontweight='bold')
+            return
+
+        fig.suptitle('', fontsize=1)                      # clear the default
+        ax_title = fig.add_axes([0, 0.92, 1, 0.08])
+        ax_title.set_xlim(0, 1)
+        ax_title.set_ylim(0, 1)
+        ax_title.axis('off')
+
+        away_abbr = TEAM_ABBR.get(away_team, away_team)
+        home_abbr = TEAM_ABBR.get(home_team, home_team)
+        ax_title.text(0.5, 0.5,
+                      f"  {away_abbr}  @  {home_abbr}  — {game_time}  ",
+                      transform=ax_title.transAxes,
+                      fontsize=14, color='white', fontweight='bold',
+                      ha='center', va='center')
+
+        if away_logo is not None:
+            ax_title.add_artist(AnnotationBbox(
+                OffsetImage(away_logo, zoom=0.8), (0.32, 0.5),
+                frameon=False, xycoords='axes fraction'))
+        if home_logo is not None:
+            ax_title.add_artist(AnnotationBbox(
+                OffsetImage(home_logo, zoom=0.8), (0.68, 0.5),
+                frameon=False, xycoords='axes fraction'))
+    except Exception as e:
+        # Any failure falls back to the plain title rather than losing the chart.
+        log_warn(f"Logo title failed: {e}")
+        try:
+            fig.suptitle(title_text, fontsize=14, color='white', fontweight='bold')
+        except Exception:
+            pass
 
 
 # ==========================================================================
@@ -1340,11 +1468,133 @@ def generate_totals_charts() -> List[Tuple[Path, dict]]:
 # MAIN ITERATION
 # ==========================================================================
 
+def restore_from_supabase() -> int:
+    """Replay nfl_odds_history out of Supabase into the local SQLite. Never raises.
+
+    THIS IS THE PRIMARY RESTORE PATH, ahead of the HF Dataset snapshot, for one
+    practical reason: SUPABASE_URL and SUPABASE_KEY are ALREADY secrets on this
+    repo and HF_TOKEN is not. The rows are already being written every hour —
+    1,022 of them in the 2026-08-25T04:33 run — so the data exists and only the
+    read was missing.
+
+    Supabase stores the AMERICAN price and no bookmaker_title, so both are
+    reconstructed on the way in. price_decimal is derived because the chart
+    plots decimal and only labels American (see _american_formatter).
+    """
+    if not _sb_client:
+        return 0
+    conn = None
+    try:
+        cutoff = (datetime.now(timezone.utc)
+                  - timedelta(days=HISTORY_RETAIN_DAYS)).isoformat()
+        rows = _sb_client.get_odds_history(cutoff)
+        if not rows:
+            return 0
+
+        def to_decimal(am):
+            try:
+                a = float(am)
+            except (TypeError, ValueError):
+                return None
+            if a == 0:
+                return None
+            return a / 100.0 + 1.0 if a > 0 else 100.0 / abs(a) + 1.0
+
+        payload = []
+        for r in rows:
+            am = r.get("price")
+            payload.append((
+                r.get("game_id"),
+                r.get("fetched_at_pt") or r.get("created_at"),
+                r.get("bookmaker"),
+                r.get("bookmaker"),          # no title column upstream
+                r.get("market"),
+                r.get("outcome"),
+                to_decimal(am),
+                am,
+                r.get("point"),
+                0,
+            ))
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.executemany(
+            "INSERT OR IGNORE INTO odds_history (game_id, fetch_timestamp, "
+            "bookmaker_key, bookmaker_title, market_key, outcome_name, "
+            "price_decimal, price_american, point, is_live_game) "
+            "VALUES (?,?,?,?,?,?,?,?,?,?)", payload)
+        conn.commit()
+        n = c.execute("SELECT COUNT(*) FROM odds_history").fetchone()[0]
+        log_info(f"Restored {len(payload)} rows from Supabase "
+                 f"(odds_history now holds {n})")
+        return n
+    except Exception as e:
+        log_warn(f"Supabase odds history restore failed: {e}")
+        return 0
+    finally:
+        if conn is not None:
+            try:
+                conn.close()
+            except Exception:
+                pass
+
+
+def restore_odds_history() -> int:
+    """Repopulate games + odds_history from the snapshot. Never raises.
+
+    INSERT OR IGNORE on both tables. MLB carries a _RESTORED module guard
+    because its process loops for hours and replaying every cycle doubled the
+    table (10.5x over-count, fixed 2026-08-19). That guard is unnecessary here
+    while the entry point is `--once` — one process, one restore — but the
+    OR IGNORE is kept for the loop-mode path in main(), and because the guard
+    costs nothing if this ever becomes long-lived.
+    """
+    if not _HAS_DURABLE or not durable_state.enabled():
+        return 0
+    conn = None
+    try:
+        snap = durable_state.load_gz_json(HISTORY_SNAPSHOT, None)
+        if not snap:
+            log_info("No NFL odds history snapshot yet — first run seeds it")
+            return 0
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.executemany(
+            "INSERT OR IGNORE INTO games (game_id, sport_key, commence_time, "
+            "home_team, away_team, last_update) VALUES (?,?,?,?,?,?)",
+            snap.get("games", []))
+        c.executemany(
+            "INSERT OR IGNORE INTO odds_history (game_id, fetch_timestamp, "
+            "bookmaker_key, bookmaker_title, market_key, outcome_name, "
+            "price_decimal, price_american, point, is_live_game) "
+            "VALUES (?,?,?,?,?,?,?,?,?,?)",
+            snap.get("odds_history", []))
+        conn.commit()
+        n = c.execute("SELECT COUNT(*) FROM odds_history").fetchone()[0]
+        log_info(f"Restored NFL odds history: "
+                 f"{len(snap.get('odds_history', []))} rows (db now holds {n})")
+        return n
+    except Exception as e:
+        log_warn(f"NFL odds history restore failed: {e}")
+        return 0
+    finally:
+        if conn is not None:
+            try:
+                conn.close()
+            except Exception:
+                pass
+
+
 def run_iteration() -> int:
     """Run one complete fetch→store→chart→post cycle."""
     try:
         if not setup_database():
             return 1
+
+        restored = restore_from_supabase()
+        restored += restore_odds_history()
+        if not restored:
+            log_warn("No prior odds history restored - charts this run will "
+                     "show only points collected in this cycle.")
 
         api_mgr = APIKeyManager()
         t0 = time.time()
@@ -1409,6 +1659,7 @@ def run_iteration() -> int:
                 f"Charts: ML={len(ml_charts)} SP={len(sp_charts)} TO={len(to_charts)}\n"
                 f"Credits remaining: {credits}\n\n"
                 f"{matchup_text}")
+        snapshot_odds_history()
         return 0
 
     except KeyboardInterrupt:
