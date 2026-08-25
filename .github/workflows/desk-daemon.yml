@@ -1,0 +1,57 @@
+name: Desk Daemon (persistent loop)
+
+on:
+  schedule:
+    - cron: "30 */5 * * *"   # respawn every 5h — job runs ~5h40m, near-zero gap
+  workflow_dispatch:
+
+concurrency:
+  group: desk-daemon
+  cancel-in-progress: true   # new runner replaces old at handoff
+
+jobs:
+  daemon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install deps
+        run: pip install websockets
+
+      - name: Run persistent desk daemon (~5h40m tight loop)
+        run: python desk_daemon.py
+        env:
+          RUN_MINUTES: "335"
+          COMMIT_EVERY_S: "300"
+          SWEEP_EVERY_S: "1.0"
+          MIN_EDGE_BPS: ${{ vars.MIN_EDGE_BPS || '30' }}
+          DISCORD_WEBHOOK_ABET: ${{ secrets.DISCORD_WEBHOOK_ABET }}
+          PROPHETX_JWT: ${{ secrets.PROPHETX_JWT }}
+          NOVIG_CLIENT_ID: ${{ secrets.NOVIG_CLIENT_ID }}
+          NOVIG_CLIENT_SECRET: ${{ secrets.NOVIG_CLIENT_SECRET }}
+
+      - name: Upload final state (always, even on timeout)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: desk-state-${{ github.run_number }}
+          path: results/
+          retention-days: 90
+
+      - name: Final proof commit
+        if: always()
+        run: |
+          git config user.name "abet-desk-bot"
+          git config user.email "abet-desk-bot@users.noreply.github.com"
+          git add results/
+          if ! git diff --cached --quiet; then
+            git commit -m "desk final-state ${GITHUB_RUN_NUMBER}"
+            git push
+          fi
