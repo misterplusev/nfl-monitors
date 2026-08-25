@@ -2,13 +2,19 @@ name: Prediction Market Arb Scanner
 
 on:
   schedule:
-    - cron: "*/15 * * * *"    # every 15 minutes
+    - cron: "*/15 * * * *"    # every 15 minutes — perpetual loop
   workflow_dispatch:
+
+concurrency:
+  group: arb-scanner
+  cancel-in-progress: false
 
 jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -16,33 +22,54 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Run cross-venue arb scanner (single pass)
+      - name: Run unified 4-venue scanner (Kalshi | PM-US | ProphetX | Novig)
         id: scan
         continue-on-error: true
-        run: python prediction_market_scanner.py --once --json > scan_output.jsonl
+        run: |
+          mkdir -p results
+          python prediction_market_scanner.py --once --json > scan_output.jsonl || true
+          python unified_scanner.py || true
         env:
-          MIN_EDGE_BPS: ${{ vars.MIN_EDGE_BPS || '50' }}
-          SCAN_LIMIT: ${{ vars.SCAN_LIMIT || '500' }}
+          MIN_EDGE_BPS: ${{ vars.MIN_EDGE_BPS || '30' }}
+          SCAN_LIMIT: ${{ vars.SCAN_LIMIT || '400' }}
           DISCORD_WEBHOOK_ABET: ${{ secrets.DISCORD_WEBHOOK_ABET }}
+          PROPHETX_JWT: ${{ secrets.PROPHETX_JWT }}
+          NOVIG_CLIENT_ID: ${{ secrets.NOVIG_CLIENT_ID }}
+          NOVIG_CLIENT_SECRET: ${{ secrets.NOVIG_CLIENT_SECRET }}
 
-      - name: Upload scan results as artifact
+      - name: Commit proof trail (latest snapshot + append history)
+        run: |
+          git config user.name "abet-desk-bot"
+          git config user.email "abet-desk-bot@users.noreply.github.com"
+          git add results/latest_scan.json results/history.jsonl
+          if git diff --cached --quiet; then
+            echo "No change to results — skipping commit"
+          else
+            TS=$(date -u +%Y%m%dT%H%M%SZ)
+            MK=$(python -c "import json;print(json.load(open('results/latest_scan.json'))['totals']['markets_scanned'])" 2>/dev/null || echo "?")
+            PA=$(python -c "import json;print(json.load(open('results/latest_scan.json'))['totals']['pairs_married'])" 2>/dev/null || echo "?")
+            AR=$(python -c "import json;print(json.load(open('results/latest_scan.json'))['totals']['arbitrages'])" 2>/dev/null || echo "?")
+            git commit -m "scan ${TS}: mkts=${MK} pairs=${PA} arbs=${AR}"
+            git push
+          fi
+
+      - name: Upload raw artifacts (90d retention)
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: scan-results-${{ github.run_number }}
           path: |
             scan_output.jsonl
-            scan_results.json
+            results/latest_scan.json
+            results/history.jsonl
           retention-days: 90
 
       - name: Summary
         if: always()
         run: |
-          if [ -f scan_results.json ]; then
-            echo "## Scan Results" >> $GITHUB_STEP_SUMMARY
+          if [ -f results/latest_scan.json ]; then
+            echo "## Desk scan" >> $GITHUB_STEP_SUMMARY
             echo '```json' >> $GITHUB_STEP_SUMMARY
-            cat scan_results.json >> $GITHUB_STEP_SUMMARY
+            head -c 3000 results/latest_scan.json >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
-          else
-            echo "Scan did not produce results file." >> $GITHUB_STEP_SUMMARY
           fi
