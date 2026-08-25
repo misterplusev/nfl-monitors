@@ -1,42 +1,51 @@
 {
- "scanned_at": "2026-08-25T04:36:46.167558+00:00",
- "duration_s": 5.9,
+ "scanned_at": "2026-08-25T04:44:02.635803+00:00",
+ "engine": "desk_daemon (persistent loop)",
+ "loop_uptime_min": 5.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
-   "state": "OK",
+   "state": "OK_EMPTY",
    "markets": 0,
-   "latency_ms": 5901,
-   "detail": ""
+   "last_tick_age_s": null
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 100,
-   "latency_ms": 37,
-   "detail": ""
+   "markets": 101,
+   "last_tick_age_s": 1.0
   },
   {
    "venue": "prophetx",
    "state": "SKIPPED_NO_CREDENTIALS",
    "markets": 0,
-   "latency_ms": 0,
-   "detail": "add secret to enable"
+   "last_tick_age_s": null
   },
   {
    "venue": "novig",
    "state": "SKIPPED_NO_CREDENTIALS",
    "markets": 0,
-   "latency_ms": 0,
-   "detail": "add secret to enable"
+   "last_tick_age_s": null
   }
  ],
  "totals": {
-  "markets_scanned": 100,
+  "markets_tracked": 101,
   "pairs_married": 0,
   "arbitrages": 0
  },
- "arbitrages": [],
- "pairs_sample": []
+ "stats": {
+  "kalshi.sweeps": 66,
+  "kalshi.ws_noauth": 11,
+  "novig.sweeps_skipped": 66,
+  "pmus.rest_updates": 322,
+  "pmus.sweeps": 66,
+  "pmus.ticks": 7230,
+  "pmus.updates": 552,
+  "pmus.ws_msgs": 115181,
+  "pmus.ws_ticks": 530,
+  "prophetx.sweeps_skipped": 66,
+  "prophetx.ws_errors": 20
+ },
+ "arbitrages": []
 }
