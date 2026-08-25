@@ -293,15 +293,16 @@ VENUE_SWEEPS = [("kalshi", rest_kalshi_sweep), ("pmus", rest_pmus_sweep),
 # ───────────────────── Kalshi WS auth ─────────────────────
 def kalshi_ws_headers():
     """RSA-PSS signature over str(ts)+'GET'+'/trade-api/ws/v2' (proven rule)."""
-    import base64 as b64
-    from cryptography.hazmat.primitives import hashes, serialization
-    from cryptography.hazmat.primitives.asymmetric import padding
-    key_id = os.environ.get("KALSHI_API_KEY_ID", "").strip()
-    pem = os.environ.get("KALSHI_PRIVATE_KEY_PEM", "").strip()
-    path = os.environ.get("KALSHI_PRIVATE_KEY_PATH", "").strip()
-    if not key_id or not (pem or path):
-        return None
     try:
+        import base64 as b64
+        from cryptography.hazmat.primitives import hashes, serialization
+        from cryptography.hazmat.primitives.asymmetric import padding
+        key_id = os.environ.get("KALSHI_API_KEY_ID", "").strip()
+        pem = os.environ.get("KALSHI_PRIVATE_KEY_PEM", "").strip()
+        path = os.environ.get("KALSHI_PRIVATE_KEY_PATH", "").strip()
+        if not key_id or not (pem or path):
+            print("[kalshi-ws-auth] missing creds", flush=True)
+            return None
         if pem:
             key = serialization.load_pem_private_key(pem.encode(), password=None)
         else:
@@ -316,14 +317,20 @@ def kalshi_ws_headers():
                 "KALSHI-ACCESS-SIGNATURE": b64.b64encode(sig).decode(),
                 "KALSHI-ACCESS-TIMESTAMP": str(ts)}
     except Exception as e:
-        print(f"[kalshi-ws-auth] {str(e)[:90]}", flush=True)
+        print(f"[kalshi-ws-auth] FAILED: {str(e)[:120]}", flush=True)
+        STATS["kalshi.ws_auth_fail"] += 1
         return None
 
 
 async def ws_kalshi():
-    """Kalshi v2 WS: signed handshake, subscribe orderbook deltas for tracked tickers."""
+    """Kalshi v2 WS: signed handshake, public ticker+trade firehose (all markets)."""
     while time.time() < DEADLINE:
-        hdrs = kalshi_ws_headers()
+        try:
+            hdrs = kalshi_ws_headers()
+        except Exception as e:
+            print(f"[kalshi-ws-auth] crash: {str(e)[:100]}", flush=True)
+            STATS["kalshi.ws_auth_fail"] += 1
+            hdrs = None
         if not hdrs:
             STATS["kalshi.ws_noauth"] += 1
             await asyncio.sleep(30)

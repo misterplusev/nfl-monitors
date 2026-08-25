@@ -23,7 +23,7 @@ jobs:
           python-version: "3.13"
 
       - name: Install deps
-        run: pip install websockets
+        run: pip install websockets cryptography
 
       - name: Run persistent desk daemon (~5h40m tight loop)
         run: python desk_daemon.py
