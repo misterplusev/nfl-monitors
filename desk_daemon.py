@@ -760,16 +760,13 @@ def write_state(arbs, hot=True):
 
 
 def publish_hot(snap):
-    """Upsert compact hot-state to Supabase so the dashboard reads ~live data."""
-    url = os.environ.get("SUPABASE_URL", "").strip().rstrip("/")
-    key = os.environ.get("SUPABASE_KEY", "").strip()
-    if not url or not key:
-        STATS["hot_skipped"] += 1
-        return
+    """Push compact hot-state: PRIMARY=private gist (Vercel fn serves it),
+    SECONDARY=Supabase row (activates automatically once project restored)."""
     payload = {
         "ts": snap["scanned_at"],
         "engine": snap["engine"],
         "totals": snap["totals"],
+        "loop_uptime_min": snap.get("loop_uptime_min"),
         "venues": [{k: v.get(k) for k in ("venue", "state", "markets", "last_tick_age_s")}
                    for v in snap["venues"]],
         "arbitrages": [
@@ -777,16 +774,48 @@ def publish_hot(snap):
              "yes_v": a["buy_yes"]["venue"], "yes_c": a["buy_yes"]["ask_cents"],
              "yes_t": a["buy_yes"]["title"][:100],
              "yes_proof": a["buy_yes"].get("proof_url", ""),
-             "yes_page": a["buy_yes"].get("page_url", ""),
              "no_v": a["buy_no"]["venue"], "no_c": a["buy_no"]["no_cost_cents"],
              "no_t": a["buy_no"]["title"][:100],
-             "no_proof": a["buy_no"].get("proof_url", ""),
-             "no_page": a["buy_no"].get("page_url", "")}
+             "no_proof": a["buy_no"].get("proof_url", "")}
             for a in snap.get("arbitrages", [])[:10]
         ],
     }
+    if _push_gist(payload):
+        STATS["hot_pushes"] += 1
+    _push_supabase(snap)
+
+
+def _push_gist(payload):
+    tok = os.environ.get("GIST_TOKEN", "").strip()
+    gid = os.environ.get("GIST_ID", "").strip()
+    if not tok or not gid:
+        return False
+    body = json.dumps({"files": {"desk.json": {
+        "content": json.dumps(payload)}}}).encode()
+    req = urllib.request.Request(
+        f"https://api.github.com/gists/{gid}", data=body, method="PATCH",
+        headers={"Authorization": f"token {tok}",
+                 "Content-Type": "application/json",
+                 "User-Agent": "abet-desk/1.0"})
+    try:
+        urllib.request.urlopen(req, timeout=10)
+        return True
+    except Exception as e:
+        STATS["gist_errors"] += 1
+        if STATS["gist_errors"] <= 3:
+            print(f"[gist] {str(e)[:90]}", flush=True)
+        return False
+
+
+def _push_supabase(snap):
+    url = os.environ.get("SUPABASE_URL", "").strip().rstrip("/")
+    key = os.environ.get("SUPABASE_KEY", "").strip()
+    if not url or not key:
+        STATS["hot_skipped"] += 1
+        return
     body = json.dumps({"monitor_name": "abet_desk_hot",
-                       "last_state": json.dumps(payload),
+                       "last_state": json.dumps({"ts": snap["scanned_at"],
+                                                 "totals": snap["totals"]}),
                        "last_run_pt": snap["scanned_at"]}).encode()
     req = urllib.request.Request(
         f"{url}/rest/v1/nfl_monitor_state",
@@ -807,7 +836,7 @@ async def persistence_loop():
     last_commit = time.time()
     while time.time() < DEADLINE:
         arbs = evaluate_all()
-        snap = write_state(arbs, hot=(time.time() - getattr(write_state, "_last_hot", 0.0)) >= 3.0)
+        snap = write_state(arbs, hot=(time.time() - getattr(write_state, "_last_hot", 0.0)) >= 2.0)
         if arbs and os.environ.get("DISCORD_WEBHOOK_ABET"):
             try:
                 a = arbs[0]
