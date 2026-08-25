@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABET DESK — LIVE</title>
+<style>
+:root{--bg:#0a0e14;--panel:#111823;--panel2:#0d1420;--line:#1c2836;--txt:#c9d6e3;--dim:#5f7189;
+--green:#22d07a;--red:#ff5566;--yellow:#ffc857;--blue:#4aa3ff;--purple:#b48cff;--mono:'Consolas','SF Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--txt);font-family:var(--mono);font-size:13px;padding:16px;max-width:1280px;margin:auto}
+h1{font-size:15px;letter-spacing:2px;color:#fff}
+.hdr{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
+.pulse{width:9px;height:9px;border-radius:50%;background:var(--green);display:inline-block;margin-right:7px;animation:p 1.6s infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
+.age{font-size:26px;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px}
+.card .nm{font-size:11px;color:var(--dim);letter-spacing:1px;margin-bottom:8px}
+.card .st{font-size:12px;margin-top:6px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
+.g{background:var(--green)}.y{background:var(--yellow)}.r{background:var(--red)}
+.big{font-size:24px;font-weight:bold}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;margin-bottom:10px}
+.panel h2{font-size:11px;color:var(--dim);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;color:var(--dim);font-weight:normal;font-size:10px;letter-spacing:1px;padding:4px 8px;border-bottom:1px solid var(--line);text-transform:uppercase}
+td{padding:5px 8px;border-bottom:1px solid var(--panel2)}
+.arb-row td{color:var(--green)}
+.feed-item{padding:5px 0;border-bottom:1px solid var(--panel2);display:flex;gap:10px;font-size:12px}
+.feed-ts{color:var(--dim);min-width:150px}
+.tag{padding:1px 6px;border-radius:3px;font-size:10px}
+.tag-ok{background:#0e3324;color:var(--green)}
+.tag-warn{background:#3a2d0e;color:var(--yellow)}
+.tag-err{background:#3a1218;color:var(--red)}
+.muted{color:var(--dim)}
+a{color:var(--blue);text-decoration:none}
+.ftr{margin-top:14px;padding-top:10px;border-top:1px solid var(--line);font-size:11px;color:var(--dim);display:flex;justify-content:space-between}
+#refresh-in{color:var(--green)}
+.kv{display:flex;justify-content:space-between;padding:3px 0}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div><span class="pulse" id="pulse"></span><h1>ABET DESK &mdash; CROSS-VENUE MARRIAGE ENGINE</h1></div>
+  <div class="muted">auto-refresh in <span id="refresh-in">30</span>s &middot; <span id="clock"></span> UTC</div>
+</div>
+
+<div class="card" style="margin-bottom:14px;display:flex;gap:30px;align-items:center">
+  <div><div class="nm muted">LAST SCAN AGE</div><div class="age" id="age">&mdash;</div></div>
+  <div><div class="nm muted">MARKETS SCANNED</div><div class="big" id="mk">&mdash;</div></div>
+  <div><div class="nm muted">PAIRS MARRIED</div><div class="big" id="pairs">&mdash;</div></div>
+  <div><div class="nm muted">ARBS LIVE</div><div class="big" style="color:var(--green)" id="arbs">&mdash;</div></div>
+  <div><div class="nm muted">SCAN DURATION</div><div class="big" id="dur">&mdash;</div></div>
+</div>
+
+<div class="grid" id="venue-cards"></div>
+
+<div class="row">
+  <div class="panel"><h2>Scan Timeline (proof of perpetual loop)</h2><div id="feed"></div></div>
+  <div>
+    <div class="panel"><h2>Live Arbitrages (&ge;<span id="thr">30</span>bps fee-adjusted)</h2>
+      <table id="arb-table"><thead><tr><th>Buy YES</th><th>Buy NO</th><th>Cost</th><th>Edge</th></tr></thead><tbody></tbody></table>
+      <div id="no-arbs" class="muted" style="padding:8px"></div></div>
+    <div class="panel"><h2>Married Offer Pairs (cross-book entity resolution)</h2>
+      <table id="pair-table"><thead><tr><th>Venue A</th><th>Title A</th><th>Venue B</th><th>Title B</th><th>Conf</th></tr></thead><tbody></tbody></table>
+      <div id="no-pairs" class="muted" style="padding:8px"></div></div>
+    <div class="panel"><h2>Perpetual Engine &mdash; Actions Run Proof</h2><div id="runs-feed"></div></div>
+  </div>
+</div>
+
+<div class="ftr">
+  <span>engine: GitHub Actions cron */15min &middot; repo: nfl-monitors (public, unlimited minutes)</span>
+  <span><a href="https://github.com/misterplusev/nfl-monitors/actions/workflows/prediction-market-scanner.yml">workflow history</a> &middot; <a href="https://github.com/misterplusev/nfl-monitors/tree/main/results">raw proof artifacts</a></span>
+</div>
+
+<script>
+const RAW='https://raw.githubusercontent.com/misterplusev/nfl-monitors/main/results/';
+const GHAPI='https://api.github.com/repos/misterplusev/nfl-monitors/actions/workflows';
+const bust=()=>'?t='+Date.now();
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function ageStr(iso){if(!iso)return'\u2014';const s=(Date.now()-new Date(iso))/1000;
+ if(s<90)return Math.round(s)+'s';if(s<5400)return Math.round(s/60)+'m';return (s/3600).toFixed(1)+'h';}
+
+async function loadScan(){
+ try{
+  const r=await fetch(RAW+'latest_scan.json'+bust());if(!r.ok)throw r.status;
+  const d=await r.json();
+  document.getElementById('age').textContent=ageStr(d.scanned_at);
+  document.getElementById('age').style.color=(Date.now()-new Date(d.scanned_at))<20*60000?'var(--green)':'var(--red)';
+  document.getElementById('mk').textContent=d.totals.markets_scanned;
+  document.getElementById('pairs').textContent=d.totals.pairs_married;
+  document.getElementById('arbs').textContent=d.totals.arbitrages;
+  document.getElementById('arbs').style.color=d.totals.arbitrages>0?'var(--green)':'var(--dim)';
+  document.getElementById('dur').textContent=d.duration_s+'s';
+  document.getElementById('thr').textContent=d.min_edge_bps;
+  const vc=document.getElementById('venue-cards');vc.innerHTML='';
+  d.venues.forEach(v=>{
+   const cls=v.state==='OK'?'g':(v.state.startsWith('SKIPPED')?'y':'r');
+   const label=v.state==='OK'?'LIVE':(v.state==='SKIPPED_NO_CREDENTIALS'?'AWAITING CREDS':v.state);
+   vc.innerHTML+=`<div class="card"><div class="nm">${esc(v.venue.toUpperCase())}</div>
+    <div class="st"><span class="dot ${cls}"></span>${label}</div>
+    <div class="big">${v.markets}</div>
+    <div class="muted">${v.latency_ms}ms${v.detail?' \u00b7 '+esc(v.detail):''}</div></div>`;});
+  const at=document.querySelector('#arb-table tbody');at.innerHTML='';
+  document.getElementById('no-arbs').textContent=d.arbitrages.length?'':'No arb above threshold this cycle \u2014 gate correctly silent.';
+  d.arbitrages.slice(0,10).forEach(a=>{at.innerHTML+=`<tr class="arb-row">
+   <td>${esc(a.buy_yes.venue)} @${a.buy_yes.ask_cents}\u00a2<br><span class="muted">${esc(a.buy_yes.title.slice(0,50))}</span></td>
+   <td>${esc(a.buy_no.venue)} @${a.buy_no.no_cost_cents}\u00a2<br><span class="muted">${esc(a.buy_no.title.slice(0,50))}</span></td>
+   <td>${a.total_cost_cents}\u00a2</td><td>+${a.edge_bps}bps</td></tr>`;});
+  const pt=document.querySelector('#pair-table tbody');pt.innerHTML='';
+  document.getElementById('no-pairs').textContent=d.pairs_sample.length?'':'No cross-venue entity overlap this cycle (slate gap or venue boards disjoint).';
+  d.pairs_sample.slice(0,12).forEach(p=>{pt.innerHTML+=`<tr><td><span class="tag tag-ok">${esc(p.va)}</span></td>
+   <td title="${esc(p.a)}">${esc(p.a.slice(0,44))}</td>
+   <td><span class="tag tag-ok">${esc(p.vb)}</span></td>
+   <td title="${esc(p.b)}">${esc(p.b.slice(0,44))}</td><td>${Math.round(p.conf*100)}%</td></tr>`;});
+ }catch(e){document.getElementById('age').textContent='ERR '+e;document.getElementById('age').style.color='var(--red)';}
+}
+
+async function loadHistory(){
+ try{
+  const r=await fetch(RAW+'history.jsonl'+bust());if(!r.ok)throw 0;
+  const lines=(await r.text()).trim().split('\n').slice(-25).reverse();
+  const f=document.getElementById('feed');f.innerHTML='';
+  lines.forEach(l=>{try{const h=JSON.parse(l);
+   const ok=h.mk>0;const vstr=Object.entries(h.v||{}).map(([k,v])=>{
+    const st=v.split(':')[0];return `<span class="tag ${st==='OK'?'tag-ok':(st.startsWith('SKIPPED')?'tag-warn':'tag-err')}">${k}:${v.split(':')[1]}</span>`;}).join(' ');
+   f.innerHTML+=`<div class="feed-item"><span class="feed-ts">${h.ts.replace('T',' ').slice(0,19)}</span>
+    <span>${ok?`\u2713 ${h.mk} mkts`:''}</span><span>${h.pairs} pairs</span><span style="margin-left:auto">${vstr}</span></div>`;}catch(e){}});
+ }catch(e){document.getElementById('feed').innerHTML='<div class="muted" style="padding:6px">history loading\u2026</div>';}
+}
+
+async function loadRuns(){
+ try{
+  for(const [wf,el] of [['prediction-market-scanner.yml','runs-feed']]){
+   const r=await fetch(`${GHAPI}/${wf}/runs?per_page=8`);
+   const j=await r.json();const box=document.getElementById(el);box.innerHTML='';
+   (j.workflow_runs||[]).forEach(run=>{const ok=run.conclusion==='success';
+    box.innerHTML+=`<div class="feed-item"><span class="feed-ts">${run.created_at.replace('T',' ').slice(0,19)}</span>
+     <span class="tag ${ok?'tag-ok':'tag-err'}">${run.event}</span>
+     <span>${run.run_number}</span><span style="margin-left:auto">${((run.updated_at?new Date(run.updated_at)-new Date(run.created_at):0)/1000).toFixed(0)}s ${ok?'\u2713':'\u2717'}</span></div>`;});
+  }
+ }catch(e){}
+}
+
+setInterval(()=>{const el=document.getElementById('refresh-in');el.textContent=Math.max(0,+el.textContent-1);
+ if(el.textContent==='0'){el.textContent='30';loadScan();loadHistory();}},1000);
+setInterval(()=>{document.getElementById('clock').textContent=new Date().toISOString().slice(11,19)},1000);
+loadScan();loadHistory();loadRuns();loadRuns();
+</script>
+</body>
+</html>
