@@ -33,6 +33,8 @@ jobs:
           SWEEP_EVERY_S: "1.0"
           MIN_EDGE_BPS: ${{ vars.MIN_EDGE_BPS || '30' }}
           DISCORD_WEBHOOK_ABET: ${{ secrets.DISCORD_WEBHOOK_ABET }}
+          POLYMARKET_US_KEY_ID: ${{ secrets.POLYMARKET_US_KEY_ID }}
+          POLYMARKET_US_SECRET_KEY: ${{ secrets.POLYMARKET_US_SECRET_KEY }}
           KALSHI_API_KEY_ID: ${{ secrets.KALSHI_API_KEY_ID }}
           KALSHI_PRIVATE_KEY_PEM: ${{ secrets.KALSHI_PRIVATE_KEY_PEM }}
           PROPHETX_JWT: ${{ secrets.PROPHETX_JWT }}

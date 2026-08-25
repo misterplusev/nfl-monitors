@@ -19,6 +19,7 @@ Exit code 0 at deadline so Actions uploads state cleanly.
 """
 
 import asyncio
+import base64
 import contextlib
 import json
 import math
@@ -41,6 +42,7 @@ except ImportError:
 sys.stdout.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
 
 RUN_MINUTES = float(os.environ.get("RUN_MINUTES", "340"))
+UA = {"User-Agent": "abet-desk/1.0", "Accept": "application/json"}
 COMMIT_EVERY_S = int(os.environ.get("COMMIT_EVERY_S", "300"))
 SWEEP_EVERY_S = float(os.environ.get("SWEEP_EVERY_S", "1.0"))
 MIN_EDGE_BPS = int(os.environ.get("MIN_EDGE_BPS", "30"))
@@ -50,6 +52,7 @@ KALSHI_WS = "wss://external-api-ws.kalshi.com/trade-api/ws/v2"
 KALSHI_API = "https://api.elections.kalshi.com/trade-api/v2"
 PM_WS = "wss://ws-subscriptions-clob.polymarket.com/ws/market"
 PM_GAMMA = "https://gamma-api.polymarket.com"
+PMUS_API = "https://api.polymarket.us"   # REAL CFTC exchange (Ed25519 auth)
 PX_WS = "wss://ws-cash.prophetx.co"
 PX_API = "https://cash.api.prophetx.co"
 NOVIG_API = "https://api.novig.us"
@@ -89,6 +92,8 @@ def sim(t1, t2):
         return 0.0
     A, B = set(n1.split()), set(n2.split())
     j = len(A & B) / len(A | B)
+    if j < 0.25:            # cheap prefilter: skip SequenceMatcher on dud pairs
+        return 0.0
     return 0.6 * SequenceMatcher(None, n1, n2).ratio() + 0.4 * j
 
 
@@ -104,41 +109,133 @@ def put_book(venue, key, title, bid, ask, proxy=""):
     return changed
 
 
+ANTONYM_GROUPS = [
+    {"cut", "hike", "raise", "increase", "decrease", "reduce"},
+    {"closed", "close", "reopen", "open", "resume", "normal"},
+    {"above", "below", "under", "over"},
+    {"higher", "lower"},
+    {"win", "lose", "eliminated"},
+    {"before", "after"},
+]
+
+MONTHS = ["january","february","march","april","may","june","july",
+          "august","september","october","november","december"]
+
+def date_signature(s):
+    """Extract (month, day, year-ish) deadline hints for compatibility checks."""
+    s = s.lower()
+    sig = set()
+    for i, mn in enumerate(MONTHS):
+        if mn in s:
+            sig.add(("m", i))
+    m = re.search(r"\b(20\d{2})\b", s)
+    if m:
+        sig.add(("y", m.group(1)))
+    m = re.search(r"\b(?:by\s+)?(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?\b", s)
+    if m:
+        sig.add(("md", m.group(1) + "/" + m.group(2)))
+    return sig
+
+def incompatible(t1, t2):
+    """True if two titles refer to logically distinct events."""
+    a1 = {w for w in norm(t1).split()}
+    a2 = {w for w in norm(t2).split()}
+    for grp in ANTONYM_GROUPS:
+        hit1 = a1 & grp
+        hit2 = a2 & grp
+        if hit1 and hit2 and hit1 != hit2:
+            return True
+    # date/deadline mismatch: both mention months but different ones
+    d1, d2 = date_signature(t1), date_signature(t2)
+    m1 = {v for k, v in d1 if k == "m"}
+    m2 = {v for k, v in d2 if k == "m"}
+    if m1 and m2 and not (m1 & m2):
+        return True
+    y1 = {v for k, v in d1 if k == "y"}
+    y2 = {v for k, v in d2 if k == "y"}
+    if y1 and y2 and not (y1 & y2):
+        return True
+    md1 = {v for k, v in d1 if k == "md"}
+    md2 = {v for k, v in d2 if k == "md"}
+    if md1 and md2 and not (md1 & md2):
+        return True
+    # deadline ASYMMETRY: explicit month/day/month-day on one side only
+    # => different resolution criteria => never marry for arb purposes
+    hard1 = m1 | md1
+    hard2 = m2 | md2
+    if (hard1 and not hard2) or (hard2 and not hard1):
+        return True
+    return False
+
+
 def rebuild_pairs():
-    """Greedy cross-venue marriage. O(n^2) per venue-pair; fine for <=few k."""
+    """Inverted-index cross-venue marriage.
+    Candidates = title pairs sharing >=1 distinctive token (df<=3000, len>3),
+    then scored with sim(). Handles 10k x 5k boards cheaply."""
     global PAIRS_CACHE
-    by_venue = defaultdict(list)
+    normd = {}
     for (v, k), b in BOOKS.items():
         if b.ok():
-            by_venue[v].append((k, b.title))
-    venues = sorted(by_venue)
+            n = norm(b.title)
+            if n:
+                normd[(v, k)] = n
+    postings = defaultdict(list)
+    for key, n in normd.items():
+        for t in set(n.split()):
+            postings[t].append(key)
+    distinctive = [t for t, ps in postings.items() if 1 < len(ps) <= 3000 and len(t) > 3]
+    cand = set()
+    for t in distinctive:
+        ps = postings[t]
+        if len(ps) > 60:          # cap fan-out per token
+            continue
+        for i in range(len(ps)):
+            for jn in range(i + 1, len(ps)):
+                ka, kb = ps[i], ps[jn]
+                if ka[0] == kb[0]:
+                    continue
+                pair = (ka, kb) if ka[0] < kb[0] else (kb, ka)
+                cand.add(pair)
     pairs = []
-    for i, va in enumerate(venues):
-        for vb in venues[i + 1:]:
-            ka_list = by_venue[va]
-            for ka, ta in ka_list:
-                best, bs = None, 0.0
-                for kb, tb in by_venue[vb]:
-                    s = sim(TITLES[(va, ka)], TITLES[(vb, kb)])
-                    if s > bs:
-                        best, bs = kb, s
-                if best and bs >= 0.55:
-                    pairs.append(((va, ka), (vb, best)))
+    for a, b in cand:
+        ta = normd[a]
+        tb = normd[b]
+        # cheap guards before expensive scoring
+        ja = jaccard_raw(ta, tb)
+        if ja < 0.30:
+            continue
+        if incompatible(TITLES[a], TITLES[b]):
+            STATS["pairs_blocked_antonym_date"] += 1
+            continue
+        if sim(ta, tb) >= 0.70:
+            pairs.append((a, b))
     PAIRS_CACHE = pairs
 
 
+def jaccard_raw(n1, n2):
+    A, B = set(n1.split()), set(n2.split())
+    if not A or not B:
+        return 0.0
+    return len(A & B) / len(A | B)
+
+
 def evaluate_all():
-    """Fee-adjusted arb across every married pair. Returns sorted arbs."""
+    """Fee-adjusted arb across every married pair."""
+    def vfee(venue, cents):
+        if venue == "kalshi":
+            return kalshi_fee(cents)
+        if venue == "pmus":
+            return pmus_fee_cents(cents)
+        return 0
+
     arbs = []
     for (a, b) in PAIRS_CACHE:
         ba, bb = BOOKS.get(a), BOOKS.get(b)
         if not ba or not bb or not ba.ok() or not bb.ok():
             continue
         for x, y in ((ba, bb), (bb, ba)):
-            fee_x = kalshi_fee(x.yes_ask) if x.venue == "kalshi" else 0
             no_y = 100 - y.yes_bid
-            fee_y = kalshi_fee(no_y) if y.venue == "kalshi" else 0
-            total = x.yes_ask + no_y + fee_x + fee_y
+            total = x.yes_ask + no_y + vfee(x.venue, x.yes_ask) + vfee(y.venue, no_y)
             edge_bps = (100 - total) * 100
             if edge_bps >= MIN_EDGE_BPS:
                 arbs.append({
@@ -156,6 +253,76 @@ def kalshi_fee(cents):
     if cents <= 0 or cents >= 100:
         return 0
     return max(1, math.ceil(0.07 * (cents / 100) * (1 - cents / 100) * 100))
+
+
+def pmus_fee_cents(cents, coefficient=0.06):
+    """PM-US charges feeCoefficient-style quadratic fees (observed 0.06)."""
+    if cents <= 0 or cents >= 100:
+        return 0
+    return max(1, math.ceil(coefficient * (cents / 100) * (1 - cents / 100) * 100))
+
+
+# ── PM-US Ed25519 auth (proven client rule: sign PATH ONLY, query rides free)
+def pmus_auth_headers(path_no_query):
+    key_id = os.environ.get("POLYMARKET_US_KEY_ID", "").strip()
+    secret = os.environ.get("POLYMARKET_US_SECRET_KEY", "").strip()
+    if not key_id or not secret:
+        return None
+    try:
+        from cryptography.hazmat.primitives.asymmetric import ed25519
+        ts = str(int(time.time() * 1000))
+        seed = base64.b64decode(secret)[:32]
+        sk = ed25519.Ed25519PrivateKey.from_private_bytes(seed)
+        sig = base64.b64encode(sk.sign(f"{ts}GET{path_no_query}".encode())).decode()
+        return {"X-PM-Access-Key": key_id, "X-PM-Timestamp": ts,
+                "X-PM-Signature": sig}
+    except Exception as e:
+        print(f"[pmus-auth] {str(e)[:90]}", flush=True)
+        STATS["pmus.auth_fail"] += 1
+        return None
+
+
+def rest_pmus_exchange_sweep():
+    """REAL Polymarket US exchange board — authenticated, paginated (500/page).
+    NOTE: server ignores status= param; closed=false is the live-board filter."""
+    hdrs = pmus_auth_headers("/v1/markets")
+    if not hdrs:
+        STATS["pmus_x.sweeps_skipped"] += 1
+        return None
+    h = dict(UA)
+    h.update(hdrs)
+    total = 0
+    offset = 0
+    while offset < 8000 and time.time() < DEADLINE:
+        url = f"{PMUS_API}/v1/markets?closed=false&limit=500&offset={offset}"
+        req = urllib.request.Request(url, headers=h)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            d = json.loads(r.read().decode())
+        ms = d.get("markets", [])
+        for m in ms:
+            if m.get("closed") or m.get("status") == "MARKET_STATUS_RESOLVED":
+                continue
+            q = m.get("question", "").strip()
+            mid = str(m.get("id", ""))
+            if not q or not mid:
+                continue
+            try:
+                prices = json.loads(m.get("outcomePrices", "[]"))
+                yes = float(prices[0]) * 100
+            except Exception:
+                continue
+            if not (0 < yes < 100):
+                continue
+            if put_book("pmus", mid, q, int(round(yes)), int(round(yes)), proxy="xchg"):
+                STATS["pmus.rest_updates"] += 1
+            total += 1
+        if len(ms) < 500:
+            break
+        offset += 500
+    STATS["pmus_x.sweeps"] += 1
+    STATS["pmus_x.last_count"] = total
+    LAST_TICK_TS["pmus"] = time.time()
+    return total
 
 
 # ───────────────────── REST fetchers ─────────────────────
@@ -199,8 +366,8 @@ def rest_pmus_sweep():
         except Exception:
             continue
         cid = m.get("conditionId", "")
-        if q and cid and put_book("pmus", cid, q, int(round(yes)), int(round(yes)), proxy="last"):
-            STATS["pmus.rest_updates"] += 1
+        if q and cid and put_book("pmglobal", cid, q, int(round(yes)), int(round(yes)), proxy="last"):
+            STATS["pmglobal.rest_updates"] += 1
         # register clob token ids so the WS feed can route events back here
         try:
             toks = json.loads(m.get("clobTokenIds", "[]"))
@@ -285,8 +452,9 @@ def rest_novig_sweep():
     return n
 
 
-VENUE_SWEEPS = [("kalshi", rest_kalshi_sweep), ("pmus", rest_pmus_sweep),
-                ("prophetx", rest_px_sweep), ("novig", rest_novig_sweep)]
+VENUE_SWEEPS = [("kalshi", rest_kalshi_sweep), ("pmus", rest_pmus_exchange_sweep),
+                ("pmglobal", rest_pmus_sweep), ("prophetx", rest_px_sweep),
+                ("novig", rest_novig_sweep)]
 
 
 # ───────────────────── WebSocket feeds ─────────────────────
@@ -413,7 +581,7 @@ async def ws_pmus_clob():
                     print(f"[pmus-ws] subscribed {len(tokens)} assets", flush=True)
                 while time.time() < DEADLINE:
                     raw = await asyncio.wait_for(ws.recv(), timeout=60)
-                    STATS["pmus.ws_msgs"] += 1
+                    STATS["pmglobal.ws_msgs"] += 1
                     try:
                         msgs = json.loads(raw)
                         if isinstance(msgs, dict):
@@ -425,7 +593,7 @@ async def ws_pmus_clob():
                                 if not cid:
                                     continue
                                 et = ev.get("event_type")
-                                cur = BOOKS.get(("pmus", cid))
+                                cur = BOOKS.get(("pmglobal", cid))
                                 bid = cur.yes_bid if cur else None
                                 ask = cur.yes_ask if cur else None
                                 if et == "book":
@@ -456,18 +624,18 @@ async def ws_pmus_clob():
                                             continue
                                 else:
                                     continue
-                                title = TITLES.get(("pmus", cid), cid[:16])
-                                put_book("pmus", cid, title, bid if bid else 1, ask if ask else 99)
-                                STATS["pmus.ws_ticks"] += 1
+                                title = TITLES.get(("pmglobal", cid), cid[:16])
+                                put_book("pmglobal", cid, title, bid if bid else 1, ask if ask else 99)
+                                STATS["pmglobal.ws_ticks"] += 1
                             except Exception:
-                                STATS["pmus.ws_event_errors"] += 1
+                                STATS["pmglobal.ws_event_errors"] += 1
                                 continue
                     except json.JSONDecodeError:
                         pass
         except asyncio.TimeoutError:
             continue
         except Exception as e:
-            STATS["pmus.ws_errors"] += 1
+            STATS["pmglobal.ws_errors"] += 1
             print(f"[pmus-ws] {str(e)[:90]} — reconnect 5s", flush=True)
             await asyncio.sleep(5)
 
@@ -505,7 +673,7 @@ def write_state(arbs):
     os.makedirs(RESULTS_DIR, exist_ok=True)
     now_iso = datetime.now(timezone.utc).isoformat()
     venues_status = []
-    for v in ["kalshi", "pmus", "prophetx", "novig"]:
+    for v in ["kalshi", "pmus", "pmglobal", "prophetx", "novig"]:
         n = sum(1 for (vv, _k) in BOOKS if vv == v)
         lt = LAST_TICK_TS.get(v, 0)
         age = time.time() - lt if lt else None
