@@ -780,8 +780,11 @@ def publish_hot(snap):
             for a in snap.get("arbitrages", [])[:10]
         ],
     }
-    if _push_gist(payload):
-        STATS["hot_pushes"] += 1
+    # gist writes are secondary-rate-limited by GitHub (~12/min max); stay safe at ~1/min
+    if time.time() - getattr(publish_hot, "_last_gist", 0.0) >= 55:
+        publish_hot._last_gist = time.time()
+        if _push_gist(payload):
+            STATS["hot_pushes"] += 1
     _push_supabase(snap)
 
 
@@ -825,9 +828,9 @@ def _push_supabase(snap):
                  "Prefer": "resolution=merge-duplicates,return=minimal"})
     try:
         urllib.request.urlopen(req, timeout=8)
-        STATS["hot_pushes"] += 1
+        STATS["supa_pushes"] += 1
     except Exception as e:
-        STATS["hot_errors"] += 1
+        STATS["supa_errors"] += 1
         if STATS["hot_errors"] <= 3:
             print(f"[hot] {str(e)[:90]}", flush=True)
 
