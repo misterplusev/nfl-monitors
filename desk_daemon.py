@@ -219,6 +219,32 @@ def jaccard_raw(n1, n2):
     return len(A & B) / len(A | B)
 
 
+def _key_of(b):
+    for (v, k), bk in BOOKS.items():
+        if bk is b:
+            return k
+    return ""
+
+
+def leg_proof(venue, key):
+    """Verifiable per-leg URLs: public API JSON where possible."""
+    if venue == "kalshi" and key:
+        qk = urllib.parse.quote(key)
+        return {"proof_url": f"https://api.elections.kalshi.com/trade-api/v2/markets/{qk}",
+                "page_url": f"https://kalshi.com/markets?q={qk}"}
+    sl = SLUGS.get((venue, key), "")
+    if venue == "pmus" and sl:
+        return {"proof_url": f"https://polymarket.us/market/{sl}",
+                "page_url": f"https://polymarket.us/market/{sl}"}
+    if venue == "pmglobal":
+        tok = CID2TOKEN.get(key, "")
+        slg = SLUGS.get((venue, key), "")
+        if tok:
+            return {"proof_url": f"https://clob.polymarket.com/book?token_id={tok}",
+                    "page_url": f"https://polymarket.com/event/{slg}" if slg else "https://polymarket.com"}
+    return {}
+
+
 def evaluate_all():
     """Fee-adjusted arb across every married pair."""
     def vfee(venue, cents):
@@ -238,11 +264,14 @@ def evaluate_all():
             total = x.yes_ask + no_y + vfee(x.venue, x.yes_ask) + vfee(y.venue, no_y)
             edge_bps = (100 - total) * 100
             if edge_bps >= MIN_EDGE_BPS:
+                xk, yk = _key_of(x), _key_of(y)
                 arbs.append({
-                    "buy_yes": {"venue": x.venue, "key": "", "title": x.title,
-                                "ask_cents": x.yes_ask},
-                    "buy_no": {"venue": y.venue, "key": "", "title": y.title,
-                               "no_cost_cents": no_y},
+                    "buy_yes": {"venue": x.venue, "key": xk, "title": x.title,
+                                "ask_cents": x.yes_ask,
+                                **leg_proof(x.venue, xk)},
+                    "buy_no": {"venue": y.venue, "key": yk, "title": y.title,
+                               "no_cost_cents": no_y,
+                               **leg_proof(y.venue, yk)},
                     "total_cost_cents": total, "edge_bps": edge_bps,
                     "detected_at": datetime.now(timezone.utc).isoformat(),
                 })
@@ -306,6 +335,9 @@ def rest_pmus_exchange_sweep():
             mid = str(m.get("id", ""))
             if not q or not mid:
                 continue
+            sl = m.get("slug", "")
+            if sl:
+                SLUGS[("pmus", mid)] = sl
             try:
                 prices = json.loads(m.get("outcomePrices", "[]"))
                 yes = float(prices[0]) * 100
@@ -366,8 +398,12 @@ def rest_pmus_sweep():
         except Exception:
             continue
         cid = m.get("conditionId", "")
-        if q and cid and put_book("pmglobal", cid, q, int(round(yes)), int(round(yes)), proxy="last"):
-            STATS["pmglobal.rest_updates"] += 1
+        if q and cid:
+            sl = m.get("slug", "")
+            if sl:
+                SLUGS[("pmglobal", cid)] = sl
+            if put_book("pmglobal", cid, q, int(round(yes)), int(round(yes)), proxy="last"):
+                STATS["pmglobal.rest_updates"] += 1
         # register clob token ids so the WS feed can route events back here
         try:
             toks = json.loads(m.get("clobTokenIds", "[]"))
@@ -375,6 +411,7 @@ def rest_pmus_sweep():
                 for t in toks[:1]:  # yes-leg token
                     if t:
                         ASSET2KEY[t] = cid
+                        CID2TOKEN[cid] = t
         except Exception:
             pass
         fresh += 1
@@ -382,6 +419,8 @@ def rest_pmus_sweep():
 
 
 ASSET2KEY: dict[str, str] = {}
+SLUGS: dict[tuple, str] = {}        # (venue,key) -> market slug / page path
+CID2TOKEN: dict[str, str] = {}      # pmglobal cid -> yes-leg clob token
 
 
 def rest_px_sweep():
@@ -669,7 +708,7 @@ async def ws_prophetx():
 
 
 # ───────────────────── persistence ─────────────────────
-def write_state(arbs):
+def write_state(arbs, hot=True):
     os.makedirs(RESULTS_DIR, exist_ok=True)
     now_iso = datetime.now(timezone.utc).isoformat()
     venues_status = []
@@ -705,21 +744,70 @@ def write_state(arbs):
            "ticks": sum(v for k, v in STATS.items() if k.endswith(".ticks")),
            "v": {s["venue"]: f'{s["state"]}:{s["markets"]}' for s in venues_status}}
     hp = os.path.join(RESULTS_DIR, "history.jsonl")
-    lines = []
-    if os.path.exists(hp):
-        with open(hp) as f:
-            lines = f.readlines()
-    lines.append(json.dumps(row) + "\n")
-    with open(hp, "w") as f:
-        f.writelines(lines[-4000:])
+    if time.time() - getattr(write_state, "_last_hist", 0.0) >= 60:
+        write_state._last_hist = time.time()
+        lines = []
+        if os.path.exists(hp):
+            with open(hp) as f:
+                lines = f.readlines()
+        lines.append(json.dumps(row) + "\n")
+        with open(hp, "w") as f:
+            f.writelines(lines[-4000:])
+    if hot:
+        write_state._last_hot = time.time()
+        publish_hot(snap)
     return snap
+
+
+def publish_hot(snap):
+    """Upsert compact hot-state to Supabase so the dashboard reads ~live data."""
+    url = os.environ.get("SUPABASE_URL", "").strip().rstrip("/")
+    key = os.environ.get("SUPABASE_KEY", "").strip()
+    if not url or not key:
+        STATS["hot_skipped"] += 1
+        return
+    payload = {
+        "ts": snap["scanned_at"],
+        "engine": snap["engine"],
+        "totals": snap["totals"],
+        "venues": [{k: v.get(k) for k in ("venue", "state", "markets", "last_tick_age_s")}
+                   for v in snap["venues"]],
+        "arbitrages": [
+            {"edge_bps": a["edge_bps"], "total_cost_cents": a["total_cost_cents"],
+             "yes_v": a["buy_yes"]["venue"], "yes_c": a["buy_yes"]["ask_cents"],
+             "yes_t": a["buy_yes"]["title"][:100],
+             "yes_proof": a["buy_yes"].get("proof_url", ""),
+             "yes_page": a["buy_yes"].get("page_url", ""),
+             "no_v": a["buy_no"]["venue"], "no_c": a["buy_no"]["no_cost_cents"],
+             "no_t": a["buy_no"]["title"][:100],
+             "no_proof": a["buy_no"].get("proof_url", ""),
+             "no_page": a["buy_no"].get("page_url", "")}
+            for a in snap.get("arbitrages", [])[:10]
+        ],
+    }
+    body = json.dumps({"monitor_name": "abet_desk_hot",
+                       "last_state": json.dumps(payload),
+                       "last_run_pt": snap["scanned_at"]}).encode()
+    req = urllib.request.Request(
+        f"{url}/rest/v1/nfl_monitor_state",
+        data=body, method="POST",
+        headers={"apikey": key, "Authorization": f"Bearer {key}",
+                 "Content-Type": "application/json",
+                 "Prefer": "resolution=merge-duplicates,return=minimal"})
+    try:
+        urllib.request.urlopen(req, timeout=8)
+        STATS["hot_pushes"] += 1
+    except Exception as e:
+        STATS["hot_errors"] += 1
+        if STATS["hot_errors"] <= 3:
+            print(f"[hot] {str(e)[:90]}", flush=True)
 
 
 async def persistence_loop():
     last_commit = time.time()
     while time.time() < DEADLINE:
         arbs = evaluate_all()
-        snap = write_state(arbs)
+        snap = write_state(arbs, hot=(time.time() - getattr(write_state, "_last_hot", 0.0)) >= 3.0)
         if arbs and os.environ.get("DISCORD_WEBHOOK_ABET"):
             try:
                 a = arbs[0]

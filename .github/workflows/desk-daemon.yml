@@ -29,7 +29,7 @@ jobs:
         run: python desk_daemon.py
         env:
           RUN_MINUTES: "335"
-          COMMIT_EVERY_S: "300"
+          COMMIT_EVERY_S: "120"
           SWEEP_EVERY_S: "1.0"
           MIN_EDGE_BPS: ${{ vars.MIN_EDGE_BPS || '30' }}
           DISCORD_WEBHOOK_ABET: ${{ secrets.DISCORD_WEBHOOK_ABET }}
@@ -40,6 +40,8 @@ jobs:
           PROPHETX_JWT: ${{ secrets.PROPHETX_JWT }}
           NOVIG_CLIENT_ID: ${{ secrets.NOVIG_CLIENT_ID }}
           NOVIG_CLIENT_SECRET: ${{ secrets.NOVIG_CLIENT_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
 
       - name: Upload final state (always, even on timeout)
         if: always()
