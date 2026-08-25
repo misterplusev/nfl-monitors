@@ -1,25 +1,25 @@
 {
- "scanned_at": "2026-08-25T08:00:14.512258+00:00",
+ "scanned_at": "2026-08-25T08:05:14.305406+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 35.5,
+ "loop_uptime_min": 2.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 35667,
+   "markets": 7490,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 4.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 102,
+   "markets": 100,
    "last_tick_age_s": 0.0
   },
   {
@@ -36,52 +36,55 @@
   }
  ],
  "totals": {
-  "markets_tracked": 43767,
+  "markets_tracked": 15588,
   "pairs_married": 1,
   "arbitrages": 1
  },
  "stats": {
-  "commits": 6,
-  "kalshi.sweeps": 233,
-  "kalshi.ticks": 876745,
-  "kalshi.updates": 405056,
-  "kalshi.ws_ticks": 876745,
-  "kalshi.ws_trades": 111795,
-  "novig.sweeps_skipped": 232,
-  "pairs_blocked_antonym_date": 6406,
-  "pmglobal.rest_updates": 987,
-  "pmglobal.sweeps": 232,
-  "pmglobal.ticks": 26329,
-  "pmglobal.updates": 1865,
-  "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 442445,
-  "pmglobal.ws_ticks": 3029,
-  "pmus.rest_updates": 10829,
-  "pmus.sweeps": 233,
-  "pmus.ticks": 1871532,
-  "pmus.updates": 10829,
+  "hot_pushes": 21,
+  "kalshi.sweeps": 13,
+  "kalshi.ticks": 50590,
+  "kalshi.updates": 25471,
+  "kalshi.ws_ticks": 50590,
+  "kalshi.ws_trades": 5228,
+  "novig.sweeps_skipped": 12,
+  "pairs_blocked_antonym_date": 352,
+  "pmglobal.rest_updates": 199,
+  "pmglobal.sweeps": 12,
+  "pmglobal.ticks": 1562,
+  "pmglobal.updates": 299,
+  "pmglobal.ws_msgs": 26625,
+  "pmglobal.ws_ticks": 262,
+  "pmus.rest_updates": 8111,
+  "pmus.sweeps": 12,
+  "pmus.ticks": 103974,
+  "pmus.updates": 8111,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 234,
-  "prophetx.sweeps_skipped": 232,
-  "prophetx.ws_errors": 125
+  "pmus_x.sweeps": 13,
+  "prophetx.sweeps_skipped": 12,
+  "prophetx.ws_errors": 8
  },
  "arbitrages": [
   {
    "buy_yes": {
     "venue": "pmglobal",
-    "key": "",
+    "key": "0x80b3af88cb991980e8da1ce86b9794a0957f96ec98c29319dd7ba65e9744d82b",
     "title": "Fed rate hike in 2026?",
-    "ask_cents": 56
+    "ask_cents": 56,
+    "proof_url": "https://clob.polymarket.com/book?token_id=75028752776148090296091099469912621384650554615761384992997579209329182670110",
+    "page_url": "https://polymarket.com/event/fed-rate-hike-in-2026"
    },
    "buy_no": {
     "venue": "pmus",
-    "key": "",
+    "key": "171032",
     "title": "Fed Rate Hike in 2026?",
-    "no_cost_cents": 33
+    "no_cost_cents": 33,
+    "proof_url": "https://polymarket.us/market/cbpac-usfed-2026-12-31-hike",
+    "page_url": "https://polymarket.us/market/cbpac-usfed-2026-12-31-hike"
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-08-25T08:00:14.512195+00:00"
+   "detected_at": "2026-08-25T08:05:14.305333+00:00"
   }
  ]
 }
