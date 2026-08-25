@@ -1,20 +1,26 @@
 {
- "scanned_at": "2026-08-25T05:57:32.907468+00:00",
+ "scanned_at": "2026-08-25T07:29:59.087901+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 62.7,
+ "loop_uptime_min": 5.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 16790,
-   "last_tick_age_s": 0.0
+   "markets": 11318,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 105,
-   "last_tick_age_s": 0.0
+   "markets": 7998,
+   "last_tick_age_s": 2.1
+  },
+  {
+   "venue": "pmglobal",
+   "state": "OK",
+   "markets": 100,
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "prophetx",
@@ -30,29 +36,50 @@
   }
  ],
  "totals": {
-  "markets_tracked": 16895,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 19416,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 11,
-  "kalshi.rest_updates": 6,
-  "kalshi.sweeps": 77,
-  "kalshi.ticks": 108995,
-  "kalshi.updates": 59910,
-  "kalshi.ws_errors": 2,
-  "kalshi.ws_ticks": 108989,
-  "kalshi.ws_trades": 23323,
-  "novig.sweeps_skipped": 76,
-  "pmus.rest_updates": 2323,
-  "pmus.sweeps": 77,
-  "pmus.ticks": 11407,
-  "pmus.updates": 4505,
-  "pmus.ws_errors": 23,
-  "pmus.ws_msgs": 143966,
-  "pmus.ws_ticks": 3607,
-  "prophetx.sweeps_skipped": 77,
-  "prophetx.ws_errors": 76
+  "kalshi.sweeps": 33,
+  "kalshi.ticks": 121008,
+  "kalshi.updates": 56409,
+  "kalshi.ws_ticks": 121008,
+  "kalshi.ws_trades": 19127,
+  "novig.sweeps_skipped": 32,
+  "pairs_blocked_antonym_date": 902,
+  "pmglobal.rest_updates": 240,
+  "pmglobal.sweeps": 33,
+  "pmglobal.ticks": 3839,
+  "pmglobal.updates": 379,
+  "pmglobal.ws_msgs": 51896,
+  "pmglobal.ws_ticks": 439,
+  "pmus.rest_updates": 8383,
+  "pmus.sweeps": 33,
+  "pmus.ticks": 271932,
+  "pmus.updates": 8383,
+  "pmus_x.last_count": 7998,
+  "pmus_x.sweeps": 34,
+  "prophetx.sweeps_skipped": 32,
+  "prophetx.ws_errors": 18
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": "",
+    "title": "Fed rate hike in 2026?",
+    "ask_cents": 56
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": "",
+    "title": "Fed Rate Hike in 2026?",
+    "no_cost_cents": 33
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-08-25T07:29:59.087838+00:00"
+  }
+ ]
 }
