@@ -46,7 +46,7 @@ a:hover{text-decoration:underline}
 <body>
 <div class="hdr">
   <div><span class="pulse" id="pulse"></span><h1>ABET DESK &mdash; CROSS-VENUE MARRIAGE ENGINE</h1></div>
-  <div class="muted">poll <span id="refresh-in">2</span>s &middot; <span id="clock"></span> UTC &middot; <span id="src">supabase</span></div>
+  <div class="muted">poll <span id="refresh-in">1</span>s &middot; <span id="clock"></span> UTC &middot; <span id="src">hot</span></div>
 </div>
 
 <div class="card" style="margin-bottom:14px;display:flex;gap:30px;align-items:center;flex-wrap:wrap">
@@ -75,6 +75,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <script>
+const HOT='https://abet-hot-state.vercel.app/api/state';
 const SB_URL='https://kiujpszjsszqzinyxkoi.supabase.co';
 const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtpdWpwc3pqc3N6cXppbnl4a29pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUzOTMwNTAsImV4cCI6MjA2MDk2OTA1MH0.KzM_9sMoYRYaE1DxWFRVQnPGnC9j0iJfK2P8YlhHVEg';
 const RAW='https://raw.githubusercontent.com/misterplusev/nfl-monitors/main/results/';
@@ -117,17 +118,15 @@ function render(d){
 
 async function pollSupabase(){
  try{
-  const r=await fetch(`${SB_URL}/rest/v1/nfl_monitor_state?monitor_name=eq.abet_desk_hot&select=last_state,last_run_pt`,
-   {headers:{apikey:SB_KEY,Authorization:'Bearer '+SB_KEY},cache:'no-store'});
+  const r=await fetch(HOT+'?t='+Date.now(),{cache:'no-store'});
   if(!r.ok)throw('http'+r.status);
-  const rows=await r.json();
-  if(!rows.length)throw('empty');
-  render(JSON.parse(rows[0].last_state));
+  const d=await r.json();
+  render(d);
  }catch(e){
-  try{
-   const r2=await fetch(RAW+'latest_scan.json?t='+Date.now(),{cache:'no-store'});
-   const d=await r2.json();
-   render({ts:d.scanned_at,totals:d.totals,venues:d.venues,
+ try{
+  const r=await fetch(RAW+'latest_scan.json?t='+Date.now(),{cache:'no-store'});
+   const d=await r.json();
+   render({ts:d.scanned_at,totals:d.totals,venues:d.venues,loop_uptime_min:d.loop_uptime_min,
      arbitrages:(d.arbitrages||[]).map(a=>({yes_v:a.buy_yes?.venue,yes_c:a.buy_yes?.ask_cents,
        yes_t:a.buy_yes?.title,no_v:a.buy_no?.venue,no_c:a.buy_no?.no_cost_cents,
        no_t:a.buy_no?.title,yes_proof:a.buy_yes?.proof_url,no_proof:a.buy_no?.proof_url,
@@ -162,7 +161,7 @@ async function loadRuns(){
 }
 
 setInterval(()=>{const el=document.getElementById('refresh-in');el.textContent=Math.max(0,+el.textContent-1);
- if(el.textContent==='0'){el.textContent='2';pollSupabase();}},1000);
+ if(el.textContent==='0'){el.textContent='1';pollSupabase();}},1000);
 setInterval(loadHistory,15000);setInterval(loadRuns,30000);
 setInterval(()=>{document.getElementById('clock').textContent=new Date().toISOString().slice(11,19)},1000);
 pollSupabase();loadHistory();loadRuns();
