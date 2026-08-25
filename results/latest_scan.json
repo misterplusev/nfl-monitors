@@ -1,263 +1,78 @@
 {
- "scanned_at": "2026-08-25T18:47:58.782141+00:00",
+ "scanned_at": "2026-08-25T18:50:09.075101+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 34.3,
+ "loop_uptime_min": 36.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 79893,
+   "markets": 84539,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 5.3
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 109,
+   "markets": 111,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 256,
-   "last_tick_age_s": 1.9
+   "last_tick_age_s": 20.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 26,
-   "last_tick_age_s": 215.3
+   "last_tick_age_s": 345.6
   }
  ],
  "totals": {
-  "markets_tracked": 88283,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 92931,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 14,
-  "gist_errors": 31,
-  "kalshi.sweeps": 62,
-  "kalshi.ticks": 781028,
-  "kalshi.updates": 385145,
-  "kalshi.ws_ticks": 781028,
-  "kalshi.ws_trades": 158952,
+  "commits": 15,
+  "gist_errors": 33,
+  "kalshi.sweeps": 69,
+  "kalshi.ticks": 854680,
+  "kalshi.updates": 420546,
+  "kalshi.ws_ticks": 854680,
+  "kalshi.ws_trades": 172813,
   "live_evals_fired": 66,
-  "novig.rest_updates": 1617,
-  "novig.sweeps": 62,
-  "novig.ticks": 15243,
-  "novig.updates": 1617,
-  "pairs_blocked_antonym_date": 790,
-  "pmglobal.rest_updates": 2165,
-  "pmglobal.sweeps": 62,
-  "pmglobal.ticks": 10194,
-  "pmglobal.updates": 4485,
-  "pmglobal.ws_errors": 24,
-  "pmglobal.ws_msgs": 376330,
-  "pmglobal.ws_ticks": 3894,
-  "pmus.rest_updates": 13939,
-  "pmus.sweeps": 62,
-  "pmus.ticks": 503937,
-  "pmus.updates": 13939,
+  "novig.rest_updates": 1713,
+  "novig.sweeps": 68,
+  "novig.ticks": 16689,
+  "novig.updates": 1713,
+  "pairs_blocked_antonym_date": 872,
+  "pmglobal.rest_updates": 2345,
+  "pmglobal.sweeps": 68,
+  "pmglobal.ticks": 11075,
+  "pmglobal.updates": 4844,
+  "pmglobal.ws_errors": 26,
+  "pmglobal.ws_msgs": 393866,
+  "pmglobal.ws_ticks": 4175,
+  "pmus.rest_updates": 14320,
+  "pmus.sweeps": 69,
+  "pmus.ticks": 559930,
+  "pmus.updates": 14320,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 63,
+  "pmus_x.sweeps": 70,
   "prophetx.ticks": 888,
   "prophetx.updates": 624,
-  "prophetx.ws_errors": 64,
+  "prophetx.ws_errors": 70,
   "px.evt_scanned": 13,
-  "pxboard.sweeps": 62,
-  "supa_pushes": 191
+  "pxboard.sweeps": 68,
+  "supa_pushes": 214
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f13dcb020ee1dd009d25f93f79159186"
-    ],
-    "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-08-25T18:44:03.590367+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2c876e6c308341f0d9a127da2c043bc3"
-    ],
-    "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "ask_cents": 9
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 11,
-   "edge_bps": 8900,
-   "detected_at": "2026-08-25T18:44:03.075483+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "839e1837f6db270ffb788c05bfa2be62"
-    ],
-    "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 12,
-   "edge_bps": 8800,
-   "detected_at": "2026-08-25T18:44:03.244554+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "41a1c1d7c1969d86c3259802e0cdc482"
-    ],
-    "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 18,
-   "edge_bps": 8200,
-   "detected_at": "2026-08-25T18:44:03.752761+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "201b415977d0a401097de6473cc2b748"
-    ],
-    "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "ask_cents": 37
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 39,
-   "edge_bps": 6100,
-   "detected_at": "2026-08-25T18:44:03.926283+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "c25f94944693f29316e7cd1daca599a3"
-    ],
-    "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "ask_cents": 47
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-08-25T18:44:03.411759+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9aa394cdb6f38dd1ba619c7d80c38134"
-    ],
-    "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-08-25T18:44:04.072821+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "48db23dffa7586a1bc6dfe3adb5c40de"
-    ],
-    "title": "MH Hapoel Be'er Sheva at Sabah FK",
-    "ask_cents": 96
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdecb084b0ceafb6dcfbba2a6b5ab0c665d08aada16446fda9cada4154cb6dc2f"
-    ],
-    "title": "Sabah FK vs. MH Hapoel Be'er Sheva: O/U 4.5",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-08-25T18:44:02.906776+00:00"
-  }
- ]
+ "arbitrages": []
 }
