@@ -1,0 +1,44 @@
+name: NFL Dev Proof (manual, zero credits)
+
+# DEVELOPMENT HARNESS — NOT a production monitor.
+#
+#   * workflow_dispatch ONLY. No schedule. It never runs on its own.
+#   * Spends ZERO TheOddsAPI credits: odds come from Supabase rows this monitor
+#     already wrote, logos from ESPN, and /odds/:sport is never called.
+#   * Posts ONLY to DISCORD_WEBHOOK_TESTING. Production channels are not wired
+#     into this job at all — the NFL webhooks are deliberately absent below.
+#   * Read-only against Supabase; writes nothing anywhere.
+#
+# Exists because the credit pool is exhausted until the day-7 reset, and the
+# logo + persistence work has to be provable before then.
+on:
+  workflow_dispatch:
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the dev proof
+        run: python 20260825_212039_DEV_PROOF_NFL_PIPELINE_v1_0_0.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          DISCORD_WEBHOOK_TESTING: ${{ secrets.DISCORD_WEBHOOK_TESTING }}
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nfl-dev-proof-${{ github.run_number }}
+          path: dev_proof_out/
+          retention-days: 30
