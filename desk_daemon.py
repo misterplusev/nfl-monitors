@@ -74,6 +74,7 @@ class Book:
 BOOKS: dict[tuple, Book] = {}          # (venue,key) -> Book
 TITLES: dict[tuple, str] = {}
 PAIRS_CACHE: list = []                 # [(ka,kb)]
+PAIR_INDEX: dict = {}                  # (venue,key) -> [counterpart keys]
 LAST_TICK_TS: dict[str, float] = defaultdict(float)   # venue -> last data ts
 STATS = defaultdict(int)
 
@@ -106,6 +107,9 @@ def put_book(venue, key, title, bid, ask, proxy=""):
     STATS[f"{venue}.ticks"] += 1
     if changed:
         STATS[f"{venue}.updates"] += 1
+        if PAIR_INDEX:
+            with contextlib.suppress(Exception):
+                tick_detect((venue, key))   # zero-delay detection in-tick
     return changed
 
 
@@ -197,6 +201,7 @@ def rebuild_pairs():
                 pair = (ka, kb) if ka[0] < kb[0] else (kb, ka)
                 cand.add(pair)
     pairs = []
+    index = {}
     for a, b in cand:
         ta = normd[a]
         tb = normd[b]
@@ -209,7 +214,11 @@ def rebuild_pairs():
             continue
         if sim(ta, tb) >= 0.70:
             pairs.append((a, b))
+            index.setdefault(a, []).append(b)
+            index.setdefault(b, []).append(a)
     PAIRS_CACHE = pairs
+    PAIR_INDEX.clear()
+    PAIR_INDEX.update(index)
 
 
 def jaccard_raw(n1, n2):
@@ -217,6 +226,71 @@ def jaccard_raw(n1, n2):
     if not A or not B:
         return 0.0
     return len(A & B) / len(A | B)
+
+
+def vfee(venue, cents):
+    if venue == "kalshi":
+        return kalshi_fee(cents)
+    if venue == "pmus":
+        return pmus_fee_cents(cents)
+    return 0
+
+
+def check_pair(a_key, b_key):
+    """Fee-adjusted edge for one married pair; returns arb dict or None."""
+    ba, bb = BOOKS.get(a_key), BOOKS.get(b_key)
+    if not ba or not bb or not ba.ok() or not bb.ok():
+        return None
+    best = None
+    for x, y in ((ba, bb), (bb, ba)):
+        no_y = 100 - y.yes_bid
+        total = x.yes_ask + no_y + vfee(x.venue, x.yes_ask) + vfee(y.venue, no_y)
+        edge_bps = (100 - total) * 100
+        if edge_bps >= MIN_EDGE_BPS and (best is None or edge_bps > best["edge_bps"]):
+            xk, yk = a_key if x is ba else b_key, b_key if x is ba else a_key
+            best = {
+                "buy_yes": {"venue": x.venue, "key": xk, "title": x.title,
+                            "ask_cents": x.yes_ask, **leg_proof(x.venue, xk)},
+                "buy_no": {"venue": y.venue, "key": yk, "title": y.title,
+                           "no_cost_cents": no_y, **leg_proof(y.venue, yk)},
+                "total_cost_cents": total, "edge_bps": edge_bps,
+                "detected_at": datetime.now(timezone.utc).isoformat(),
+            }
+    return best
+
+
+LIVE_ARBS: dict = {}   # frozenset({a,b}) -> arb dict, replaced on every tick
+
+
+def tick_detect(key):
+    """EVENT-DRIVEN detection: runs inside the tick path itself.
+    Called from put_book() the instant any quote changes."""
+    counterparts = PAIR_INDEX.get(key)
+    if not counterparts:
+        return
+    for ck in counterparts:
+        arb = check_pair(key, ck)
+        pk = frozenset((key, ck))
+        if arb:
+            prev = LIVE_ARBS.get(pk)
+            if not prev or arb["edge_bps"] != prev["edge_bps"]:
+                STATS["live_evals_fired"] += 1
+                try:  # alert within the tick's own stack frame — no loop waits
+                    if os.environ.get("DISCORD_WEBHOOK_ABET"):
+                        payload = json.dumps({"content":
+                            f"\u0023\ufe0f\u20e3 ARB {arb['edge_bps']}bps \u2014 "
+                            f"YES {arb['buy_yes']['venue']} @{arb['buy_yes']['ask_cents']}\u00a2 + "
+                            f"NO {arb['buy_no']['venue']} @{arb['buy_no']['no_cost_cents']}\u00a2 "
+                            f"(tick-triggered)"}).encode()
+                        rq = urllib.request.Request(
+                            os.environ["DISCORD_WEBHOOK_ABET"], data=payload,
+                            headers={"Content-Type": "application/json"})
+                        urllib.request.urlopen(rq, timeout=4)
+                except Exception:
+                    pass
+            LIVE_ARBS[pk] = arb
+        else:
+            LIVE_ARBS.pop(pk, None)
 
 
 def _key_of(b):
@@ -246,35 +320,16 @@ def leg_proof(venue, key):
 
 
 def evaluate_all():
-    """Fee-adjusted arb across every married pair."""
-    def vfee(venue, cents):
-        if venue == "kalshi":
-            return kalshi_fee(cents)
-        if venue == "pmus":
-            return pmus_fee_cents(cents)
-        return 0
-
-    arbs = []
+    """Snapshot builder — detection itself already ran per-tick (tick_detect).
+    Merges LIVE_ARBS with a cheap sweep so nothing is missed between ticks."""
+    arbs = list(LIVE_ARBS.values())
+    seen = {frozenset((a["buy_yes"]["key"], a["buy_no"]["key"])) for a in arbs}
     for (a, b) in PAIRS_CACHE:
-        ba, bb = BOOKS.get(a), BOOKS.get(b)
-        if not ba or not bb or not ba.ok() or not bb.ok():
+        if frozenset((a, b)) in seen:
             continue
-        for x, y in ((ba, bb), (bb, ba)):
-            no_y = 100 - y.yes_bid
-            total = x.yes_ask + no_y + vfee(x.venue, x.yes_ask) + vfee(y.venue, no_y)
-            edge_bps = (100 - total) * 100
-            if edge_bps >= MIN_EDGE_BPS:
-                xk, yk = _key_of(x), _key_of(y)
-                arbs.append({
-                    "buy_yes": {"venue": x.venue, "key": xk, "title": x.title,
-                                "ask_cents": x.yes_ask,
-                                **leg_proof(x.venue, xk)},
-                    "buy_no": {"venue": y.venue, "key": yk, "title": y.title,
-                               "no_cost_cents": no_y,
-                               **leg_proof(y.venue, yk)},
-                    "total_cost_cents": total, "edge_bps": edge_bps,
-                    "detected_at": datetime.now(timezone.utc).isoformat(),
-                })
+        arb = check_pair(a, b)
+        if arb is not None:
+            arbs.append(arb)
     return sorted(arbs, key=lambda z: -z["edge_bps"])[:25]
 
 
