@@ -1,8 +1,7 @@
 name: Prediction Market Arb Scanner
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"    # every 15 minutes — perpetual loop
+  # schedule disabled — desk_daemon.yml is the perpetual engine now
   workflow_dispatch:
 
 concurrency:
