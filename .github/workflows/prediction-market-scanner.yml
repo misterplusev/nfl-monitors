@@ -1,0 +1,48 @@
+name: Prediction Market Arb Scanner
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"    # every 15 minutes
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run cross-venue arb scanner (single pass)
+        id: scan
+        continue-on-error: true
+        run: python prediction_market_scanner.py --once --json > scan_output.jsonl
+        env:
+          MIN_EDGE_BPS: ${{ vars.MIN_EDGE_BPS || '50' }}
+          SCAN_LIMIT: ${{ vars.SCAN_LIMIT || '500' }}
+          DISCORD_WEBHOOK_ABET: ${{ secrets.DISCORD_WEBHOOK_ABET }}
+
+      - name: Upload scan results as artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scan-results-${{ github.run_number }}
+          path: |
+            scan_output.jsonl
+            scan_results.json
+          retention-days: 90
+
+      - name: Summary
+        if: always()
+        run: |
+          if [ -f scan_results.json ]; then
+            echo "## Scan Results" >> $GITHUB_STEP_SUMMARY
+            echo '```json' >> $GITHUB_STEP_SUMMARY
+            cat scan_results.json >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Scan did not produce results file." >> $GITHUB_STEP_SUMMARY
+          fi
