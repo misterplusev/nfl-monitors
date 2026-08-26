@@ -1,80 +1,171 @@
 {
- "scanned_at": "2026-08-26T16:36:20.610192+00:00",
+ "scanned_at": "2026-08-26T23:59:21.402751+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 334.4,
+ "loop_uptime_min": 2.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 224705,
-   "last_tick_age_s": 0.1
+   "markets": 14257,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 8001,
-   "last_tick_age_s": 5.4
+   "markets": 7999,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 163,
-   "last_tick_age_s": 0.1
+   "markets": 102,
+   "last_tick_age_s": 7.7
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 342,
-   "last_tick_age_s": 2.9
+   "markets": 157,
+   "last_tick_age_s": 11.2
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
+   "state": "OK",
    "markets": 18,
-   "last_tick_age_s": 19834.7
+   "last_tick_age_s": 9.8
   }
  ],
  "totals": {
-  "markets_tracked": 233229,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 22533,
+  "pairs_married": 6,
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 164,
-  "gist_errors": 353,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 1029,
-  "kalshi.sweeps": 2308,
-  "kalshi.ticks": 9860207,
-  "kalshi.updates": 4718521,
-  "kalshi.ws_ticks": 9857143,
-  "kalshi.ws_trades": 1728303,
-  "novig.rest_updates": 12463,
-  "novig.sweeps": 2307,
-  "novig.ticks": 558160,
-  "novig.updates": 12463,
-  "pairs_blocked_antonym_date": 63482,
-  "pmglobal.rest_updates": 8595,
-  "pmglobal.sweeps": 2307,
-  "pmglobal.ticks": 266053,
-  "pmglobal.updates": 18581,
-  "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 3280640,
-  "pmglobal.ws_ticks": 35253,
-  "pmus.rest_updates": 44343,
-  "pmus.sweeps": 2307,
-  "pmus.ticks": 18461692,
-  "pmus.updates": 44343,
+  "kalshi.sweeps": 13,
+  "kalshi.ticks": 92477,
+  "kalshi.updates": 52019,
+  "kalshi.ws_ticks": 92477,
+  "kalshi.ws_trades": 26872,
+  "live_evals_fired": 52,
+  "novig.rest_updates": 445,
+  "novig.sweeps": 12,
+  "novig.ticks": 1981,
+  "novig.updates": 445,
+  "pairs_blocked_antonym_date": 96,
+  "pmglobal.rest_updates": 416,
+  "pmglobal.sweeps": 12,
+  "pmglobal.ticks": 1780,
+  "pmglobal.updates": 726,
+  "pmglobal.ws_errors": 2,
+  "pmglobal.ws_msgs": 63016,
+  "pmglobal.ws_ticks": 480,
+  "pmus.rest_updates": 8261,
+  "pmus.sweeps": 13,
+  "pmus.ticks": 111986,
+  "pmus.updates": 8261,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 2308,
-  "prophetx.ticks": 486,
-  "prophetx.updates": 18,
-  "prophetx.ws_errors": 1190,
-  "px.evt_scanned": 18,
-  "pxboard.sweep_errors": 2002,
-  "pxboard.sweeps": 305,
-  "supa_errors": 6922
+  "pmus_x.sweeps": 14,
+  "prophetx.ticks": 198,
+  "prophetx.updates": 71,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 15,
+  "pxboard.sweeps": 12,
+  "supa_errors": 38
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x397d306788138d7c32e10e9b51326e831a703e15c8233295f01ae55dbc91d68a"
+    ],
+    "title": "Boston Red Sox vs. Miami Marlins",
+    "ask_cents": 28
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6375d4f342b3dba5af3a892d21bbbfc1"
+    ],
+    "title": "Boston Red Sox at Miami Marlins",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-08-26T23:58:50.526210+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9aff8481827a1c5dce2bc5fde068e7c0cd09b6870983a6e70386a9d71a53c889"
+    ],
+    "title": "Colorado Rockies vs. Washington Nationals: O/U 8.5",
+    "ask_cents": 37
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56084d63f0d5e866285a32ebc378c6a2"
+    ],
+    "title": "Colorado Rockies at Washington Nationals",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 77,
+   "edge_bps": 2300,
+   "detected_at": "2026-08-26T23:59:04.678745+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0a1680549a4ac11ecc346b9d7c572236"
+    ],
+    "title": "Colorado Rockies at Washington Nationals",
+    "ask_cents": 41
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe468170d16efeb49b9211f8bfeda6ab6ce9783dc9d5d23686c1717ba71302fcb"
+    ],
+    "title": "Colorado Rockies vs. Washington Nationals",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-08-26T23:59:04.650709+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9aff8481827a1c5dce2bc5fde068e7c0cd09b6870983a6e70386a9d71a53c889"
+    ],
+    "title": "Colorado Rockies vs. Washington Nationals: O/U 8.5",
+    "ask_cents": 37
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0a1680549a4ac11ecc346b9d7c572236"
+    ],
+    "title": "Colorado Rockies at Washington Nationals",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-08-26T23:59:04.626413+00:00"
+  }
+ ]
 }
