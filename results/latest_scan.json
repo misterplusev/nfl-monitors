@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-08-26T02:40:43.817449+00:00",
+ "scanned_at": "2026-08-26T02:42:52.841738+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 31.2,
+ "loop_uptime_min": 33.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 54036,
+   "markets": 55814,
    "last_tick_age_s": 0.0
   },
   {
@@ -26,54 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 146,
-   "last_tick_age_s": 14.8
+   "last_tick_age_s": 14.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 1577.6
+   "last_tick_age_s": 1706.7
   }
  ],
  "totals": {
-  "markets_tracked": 62321,
+  "markets_tracked": 64099,
   "pairs_married": 8,
-  "arbitrages": 5
+  "arbitrages": 6
  },
  "stats": {
-  "commits": 14,
-  "gist_errors": 30,
+  "commits": 15,
+  "gist_errors": 32,
   "hot_errors": 0,
   "kalshi.rest_updates": 96,
-  "kalshi.sweeps": 171,
-  "kalshi.ticks": 1278328,
-  "kalshi.updates": 663481,
-  "kalshi.ws_ticks": 1278157,
-  "kalshi.ws_trades": 260301,
-  "live_evals_fired": 877,
-  "novig.rest_updates": 2566,
-  "novig.sweeps": 170,
-  "novig.ticks": 20555,
-  "novig.updates": 2566,
-  "pairs_blocked_antonym_date": 3639,
-  "pmglobal.rest_updates": 1603,
-  "pmglobal.sweeps": 170,
-  "pmglobal.ticks": 21839,
-  "pmglobal.updates": 3507,
-  "pmglobal.ws_msgs": 1198297,
-  "pmglobal.ws_ticks": 4739,
-  "pmus.rest_updates": 13505,
-  "pmus.sweeps": 171,
-  "pmus.ticks": 1375828,
-  "pmus.updates": 13505,
+  "kalshi.sweeps": 183,
+  "kalshi.ticks": 1357112,
+  "kalshi.updates": 702592,
+  "kalshi.ws_ticks": 1356941,
+  "kalshi.ws_trades": 279315,
+  "live_evals_fired": 901,
+  "novig.rest_updates": 2720,
+  "novig.sweeps": 182,
+  "novig.ticks": 21998,
+  "novig.updates": 2720,
+  "pairs_blocked_antonym_date": 3894,
+  "pmglobal.rest_updates": 1668,
+  "pmglobal.sweeps": 182,
+  "pmglobal.ticks": 23259,
+  "pmglobal.updates": 3644,
+  "pmglobal.ws_msgs": 1261696,
+  "pmglobal.ws_ticks": 4959,
+  "pmus.rest_updates": 13980,
+  "pmus.sweeps": 183,
+  "pmus.ticks": 1471816,
+  "pmus.updates": 13980,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 172,
+  "pmus_x.sweeps": 184,
   "prophetx.ticks": 471,
   "prophetx.updates": 144,
-  "prophetx.ws_errors": 115,
+  "prophetx.ws_errors": 123,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 170,
-  "supa_errors": 527
+  "pxboard.sweeps": 182,
+  "supa_errors": 563
  },
  "arbitrages": [
   {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 25,
    "edge_bps": 7500,
-   "detected_at": "2026-08-26T02:40:19.859560+00:00"
+   "detected_at": "2026-08-26T02:42:20.830935+00:00"
   },
   {
    "buy_yes": {
@@ -130,7 +130,7 @@
      "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
     ],
     "title": "Pittsburgh Pirates vs. San Diego Padres",
-    "ask_cents": 41
+    "ask_cents": 38
    },
    "buy_no": {
     "venue": "prophetx",
@@ -141,9 +141,9 @@
     "title": "Pittsburgh Pirates at San Diego Padres",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-08-26T02:40:43.815874+00:00"
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-08-26T02:42:29.091980+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +166,7 @@
    },
    "total_cost_cents": 86,
    "edge_bps": 1400,
-   "detected_at": "2026-08-26T02:40:19.896746+00:00"
+   "detected_at": "2026-08-26T02:42:20.869566+00:00"
   },
   {
    "buy_yes": {
@@ -190,6 +190,29 @@
    "total_cost_cents": 96,
    "edge_bps": 400,
    "detected_at": "2026-08-26T02:39:54.742197+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
+    ],
+    "title": "Pittsburgh Pirates vs. San Diego Padres",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "29078e6605e37273b8e27d03b995530a"
+    ],
+    "title": "Pittsburgh Pirates at San Diego Padres",
+    "no_cost_cents": 59
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-08-26T02:42:29.129690+00:00"
   }
  ]
 }
