@@ -1,81 +1,173 @@
 {
- "scanned_at": "2026-08-26T03:39:15.141604+00:00",
+ "scanned_at": "2026-08-26T03:41:16.185032+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 89.8,
+ "loop_uptime_min": 91.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 93488,
+   "markets": 94448,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 6.8
+   "last_tick_age_s": 4.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 127,
-   "last_tick_age_s": 0.7
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 172,
-   "last_tick_age_s": 4.1
+   "last_tick_age_s": 1.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 5089.0
+   "last_tick_age_s": 5210.0
   }
  ],
  "totals": {
-  "markets_tracked": 101810,
+  "markets_tracked": 102770,
   "pairs_married": 6,
-  "arbitrages": 6
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 41,
-  "gist_errors": 85,
+  "commits": 42,
+  "gist_errors": 87,
   "hot_errors": 0,
   "kalshi.rest_updates": 101,
-  "kalshi.sweeps": 496,
-  "kalshi.ticks": 3143233,
-  "kalshi.updates": 1572218,
-  "kalshi.ws_ticks": 3143052,
-  "kalshi.ws_trades": 677059,
-  "live_evals_fired": 2406,
-  "novig.rest_updates": 6371,
-  "novig.sweeps": 495,
-  "novig.ticks": 63082,
-  "novig.updates": 6371,
-  "pairs_blocked_antonym_date": 10542,
-  "pmglobal.rest_updates": 3361,
-  "pmglobal.sweeps": 495,
-  "pmglobal.ticks": 60436,
-  "pmglobal.updates": 7295,
-  "pmglobal.ws_msgs": 2571033,
-  "pmglobal.ws_ticks": 10836,
-  "pmus.rest_updates": 22632,
-  "pmus.sweeps": 495,
-  "pmus.ticks": 3967504,
-  "pmus.updates": 22632,
+  "kalshi.sweeps": 506,
+  "kalshi.ticks": 3196477,
+  "kalshi.updates": 1597305,
+  "kalshi.ws_ticks": 3196296,
+  "kalshi.ws_trades": 692016,
+  "live_evals_fired": 2461,
+  "novig.rest_updates": 6436,
+  "novig.sweeps": 506,
+  "novig.ticks": 64544,
+  "novig.updates": 6436,
+  "pairs_blocked_antonym_date": 10763,
+  "pmglobal.rest_updates": 3421,
+  "pmglobal.sweeps": 506,
+  "pmglobal.ticks": 61715,
+  "pmglobal.updates": 7409,
+  "pmglobal.ws_msgs": 2603379,
+  "pmglobal.ws_ticks": 11015,
+  "pmus.rest_updates": 22978,
+  "pmus.sweeps": 506,
+  "pmus.ticks": 4055493,
+  "pmus.updates": 22978,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 496,
+  "pmus_x.sweeps": 507,
   "prophetx.ticks": 471,
   "prophetx.updates": 144,
-  "prophetx.ws_errors": 331,
+  "prophetx.ws_errors": 338,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 495,
-  "supa_errors": 1512
+  "pxboard.sweeps": 506,
+  "supa_errors": 1546
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
+    ],
+    "title": "Cleveland Guardians vs. Los Angeles Angels",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a50622d32af193dc45be2c6ee3911104"
+    ],
+    "title": "Cleveland Guardians at Los Angeles Angels",
+    "no_cost_cents": 15
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-08-26T03:41:12.958176+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
+    ],
+    "title": "Philadelphia Phillies vs. Seattle Mariners",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "da345e9269b40d12e2190731c626e5ad"
+    ],
+    "title": "Philadelphia Phillies at Seattle Mariners",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-08-26T03:40:15.148498+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
+    ],
+    "title": "Philadelphia Phillies vs. Seattle Mariners",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1e2cca1ed2be021a93e05def15a0a9cb"
+    ],
+    "title": "Philadelphia Phillies at Seattle Mariners",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-08-26T03:40:15.148509+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
+    ],
+    "title": "Pittsburgh Pirates vs. San Diego Padres",
+    "ask_cents": 41
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f20ebf4425aea383a74295a2379d6d51"
+    ],
+    "title": "Pittsburgh Pirates at San Diego Padres",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-08-26T03:41:14.678084+00:00"
+  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -93,126 +185,11 @@
      "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
     ],
     "title": "Cleveland Guardians vs. Los Angeles Angels",
-    "no_cost_cents": 44
+    "no_cost_cents": 64
    },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-08-26T03:39:09.840760+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
-    ],
-    "title": "Philadelphia Phillies vs. Seattle Mariners",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "da345e9269b40d12e2190731c626e5ad"
-    ],
-    "title": "Philadelphia Phillies at Seattle Mariners",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-08-26T03:38:53.904926+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
-    ],
-    "title": "Philadelphia Phillies vs. Seattle Mariners",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1e2cca1ed2be021a93e05def15a0a9cb"
-    ],
-    "title": "Philadelphia Phillies at Seattle Mariners",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-08-26T03:38:53.942423+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
-    ],
-    "title": "Cleveland Guardians vs. Los Angeles Angels",
-    "ask_cents": 56
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a50622d32af193dc45be2c6ee3911104"
-    ],
-    "title": "Cleveland Guardians at Los Angeles Angels",
-    "no_cost_cents": 15
-   },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-08-26T03:39:09.803341+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
-    ],
-    "title": "Pittsburgh Pirates vs. San Diego Padres",
-    "ask_cents": 37
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f20ebf4425aea383a74295a2379d6d51"
-    ],
-    "title": "Pittsburgh Pirates at San Diego Padres",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-08-26T03:39:11.839767+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
-    ],
-    "title": "Pittsburgh Pirates vs. San Diego Padres",
-    "ask_cents": 37
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "29078e6605e37273b8e27d03b995530a"
-    ],
-    "title": "Pittsburgh Pirates at San Diego Padres",
-    "no_cost_cents": 59
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-08-26T03:39:11.867561+00:00"
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-26T03:41:12.992033+00:00"
   }
  ]
 }
