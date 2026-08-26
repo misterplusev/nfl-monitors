@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-08-26T03:06:45.563489+00:00",
+ "scanned_at": "2026-08-26T03:08:57.432995+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 57.3,
+ "loop_uptime_min": 59.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 79794,
+   "markets": 80796,
    "last_tick_age_s": 0.0
   },
   {
@@ -20,60 +20,60 @@
    "venue": "pmglobal",
    "state": "OK",
    "markets": 123,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 166,
-   "last_tick_age_s": 15.0
+   "last_tick_age_s": 16.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 3139.4
+   "last_tick_age_s": 3271.3
   }
  ],
  "totals": {
-  "markets_tracked": 88106,
+  "markets_tracked": 89108,
   "pairs_married": 6,
   "arbitrages": 6
  },
  "stats": {
-  "commits": 26,
-  "gist_errors": 54,
+  "commits": 27,
+  "gist_errors": 56,
   "hot_errors": 0,
   "kalshi.rest_updates": 98,
-  "kalshi.sweeps": 315,
-  "kalshi.ticks": 2156845,
-  "kalshi.updates": 1096849,
-  "kalshi.ws_ticks": 2156671,
-  "kalshi.ws_trades": 451862,
-  "live_evals_fired": 1391,
-  "novig.rest_updates": 4359,
-  "novig.sweeps": 314,
-  "novig.ticks": 38566,
-  "novig.updates": 4359,
-  "pairs_blocked_antonym_date": 6700,
-  "pmglobal.rest_updates": 2425,
-  "pmglobal.sweeps": 314,
-  "pmglobal.ticks": 38993,
-  "pmglobal.updates": 5225,
-  "pmglobal.ws_msgs": 1810787,
-  "pmglobal.ws_ticks": 7493,
-  "pmus.rest_updates": 17739,
-  "pmus.sweeps": 315,
-  "pmus.ticks": 2527684,
-  "pmus.updates": 17739,
+  "kalshi.sweeps": 327,
+  "kalshi.ticks": 2227718,
+  "kalshi.updates": 1129587,
+  "kalshi.ws_ticks": 2227544,
+  "kalshi.ws_trades": 465599,
+  "live_evals_fired": 1469,
+  "novig.rest_updates": 4478,
+  "novig.sweeps": 326,
+  "novig.ticks": 40145,
+  "novig.updates": 4478,
+  "pairs_blocked_antonym_date": 6955,
+  "pmglobal.rest_updates": 2494,
+  "pmglobal.sweeps": 326,
+  "pmglobal.ticks": 40429,
+  "pmglobal.updates": 5382,
+  "pmglobal.ws_msgs": 1869740,
+  "pmglobal.ws_ticks": 7729,
+  "pmus.rest_updates": 18109,
+  "pmus.sweeps": 327,
+  "pmus.ticks": 2623672,
+  "pmus.updates": 18109,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 316,
+  "pmus_x.sweeps": 328,
   "prophetx.ticks": 471,
   "prophetx.updates": 144,
-  "prophetx.ws_errors": 211,
+  "prophetx.ws_errors": 219,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 314,
-  "supa_errors": 962
+  "pxboard.sweeps": 326,
+  "supa_errors": 999
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
     ],
     "title": "Cleveland Guardians vs. Los Angeles Angels",
-    "ask_cents": 8
+    "ask_cents": 28
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +95,9 @@
     "title": "Cleveland Guardians at Los Angeles Angels",
     "no_cost_cents": 15
    },
-   "total_cost_cents": 23,
-   "edge_bps": 7700,
-   "detected_at": "2026-08-26T03:06:29.176102+00:00"
+   "total_cost_cents": 43,
+   "edge_bps": 5700,
+   "detected_at": "2026-08-26T03:08:41.917915+00:00"
   },
   {
    "buy_yes": {
@@ -120,30 +120,30 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-08-26T03:06:21.535565+00:00"
+   "detected_at": "2026-08-26T03:08:32.137896+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
-    ],
-    "title": "Cleveland Guardians vs. Los Angeles Angels",
-    "ask_cents": 8
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "0a68c29dd4021d0f84dcd5f0bc85587f"
     ],
     "title": "Cleveland Guardians at Los Angeles Angels",
-    "no_cost_cents": 76
+    "ask_cents": 25
    },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-08-26T03:06:29.213357+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
+    ],
+    "title": "Cleveland Guardians vs. Los Angeles Angels",
+    "no_cost_cents": 73
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-26T03:08:41.955499+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +166,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-08-26T03:04:52.526074+00:00"
+   "detected_at": "2026-08-26T03:08:39.855603+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +189,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-08-26T03:04:52.561561+00:00"
+   "detected_at": "2026-08-26T03:08:39.893604+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +212,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-26T03:06:21.579699+00:00"
+   "detected_at": "2026-08-26T03:08:32.175106+00:00"
   }
  ]
 }
