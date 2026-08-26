@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-08-26T02:42:52.841738+00:00",
+ "scanned_at": "2026-08-26T02:45:03.741060+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 33.4,
+ "loop_uptime_min": 35.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 55814,
+   "markets": 61466,
    "last_tick_age_s": 0.0
   },
   {
@@ -25,55 +25,55 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 146,
-   "last_tick_age_s": 14.4
+   "markets": 150,
+   "last_tick_age_s": 14.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 1706.7
+   "last_tick_age_s": 1837.5
   }
  ],
  "totals": {
-  "markets_tracked": 64099,
+  "markets_tracked": 69755,
   "pairs_married": 8,
   "arbitrages": 6
  },
  "stats": {
-  "commits": 15,
-  "gist_errors": 32,
+  "commits": 16,
+  "gist_errors": 34,
   "hot_errors": 0,
   "kalshi.rest_updates": 96,
-  "kalshi.sweeps": 183,
-  "kalshi.ticks": 1357112,
-  "kalshi.updates": 702592,
-  "kalshi.ws_ticks": 1356941,
-  "kalshi.ws_trades": 279315,
-  "live_evals_fired": 901,
-  "novig.rest_updates": 2720,
-  "novig.sweeps": 182,
-  "novig.ticks": 21998,
-  "novig.updates": 2720,
-  "pairs_blocked_antonym_date": 3894,
-  "pmglobal.rest_updates": 1668,
-  "pmglobal.sweeps": 182,
-  "pmglobal.ticks": 23259,
-  "pmglobal.updates": 3644,
-  "pmglobal.ws_msgs": 1261696,
-  "pmglobal.ws_ticks": 4959,
-  "pmus.rest_updates": 13980,
-  "pmus.sweeps": 183,
-  "pmus.ticks": 1471816,
-  "pmus.updates": 13980,
+  "kalshi.sweeps": 195,
+  "kalshi.ticks": 1433538,
+  "kalshi.updates": 742886,
+  "kalshi.ws_ticks": 1433367,
+  "kalshi.ws_trades": 297132,
+  "live_evals_fired": 939,
+  "novig.rest_updates": 2865,
+  "novig.sweeps": 194,
+  "novig.ticks": 23436,
+  "novig.updates": 2865,
+  "pairs_blocked_antonym_date": 4149,
+  "pmglobal.rest_updates": 1733,
+  "pmglobal.sweeps": 194,
+  "pmglobal.ticks": 24689,
+  "pmglobal.updates": 3790,
+  "pmglobal.ws_msgs": 1308777,
+  "pmglobal.ws_ticks": 5189,
+  "pmus.rest_updates": 14272,
+  "pmus.sweeps": 195,
+  "pmus.ticks": 1567804,
+  "pmus.updates": 14272,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 184,
+  "pmus_x.sweeps": 196,
   "prophetx.ticks": 471,
   "prophetx.updates": 144,
-  "prophetx.ws_errors": 123,
+  "prophetx.ws_errors": 131,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 182,
-  "supa_errors": 563
+  "pxboard.sweeps": 194,
+  "supa_errors": 599
  },
  "arbitrages": [
   {
@@ -107,7 +107,7 @@
      "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
     ],
     "title": "Cleveland Guardians vs. Los Angeles Angels",
-    "ask_cents": 10
+    "ask_cents": 8
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,32 +118,9 @@
     "title": "Cleveland Guardians at Los Angeles Angels",
     "no_cost_cents": 15
    },
-   "total_cost_cents": 25,
-   "edge_bps": 7500,
-   "detected_at": "2026-08-26T02:42:20.830935+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
-    ],
-    "title": "Pittsburgh Pirates vs. San Diego Padres",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f20ebf4425aea383a74295a2379d6d51"
-    ],
-    "title": "Pittsburgh Pirates at San Diego Padres",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-26T02:42:29.091980+00:00"
+   "total_cost_cents": 23,
+   "edge_bps": 7700,
+   "detected_at": "2026-08-26T02:44:52.504270+00:00"
   },
   {
    "buy_yes": {
@@ -153,7 +130,7 @@
      "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
     ],
     "title": "Cleveland Guardians vs. Los Angeles Angels",
-    "ask_cents": 10
+    "ask_cents": 8
    },
    "buy_no": {
     "venue": "prophetx",
@@ -164,9 +141,32 @@
     "title": "Cleveland Guardians at Los Angeles Angels",
     "no_cost_cents": 76
    },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-08-26T02:42:20.869566+00:00"
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-08-26T02:44:52.544237+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
+    ],
+    "title": "Pittsburgh Pirates vs. San Diego Padres",
+    "ask_cents": 45
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f20ebf4425aea383a74295a2379d6d51"
+    ],
+    "title": "Pittsburgh Pirates at San Diego Padres",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-08-26T02:44:47.911631+00:00"
   },
   {
    "buy_yes": {
@@ -193,26 +193,26 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
-    ],
-    "title": "Pittsburgh Pirates vs. San Diego Padres",
-    "ask_cents": 38
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "29078e6605e37273b8e27d03b995530a"
     ],
     "title": "Pittsburgh Pirates at San Diego Padres",
-    "no_cost_cents": 59
+    "ask_cents": 42
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-08-26T02:42:29.129690+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
+    ],
+    "title": "Pittsburgh Pirates vs. San Diego Padres",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-26T02:44:47.948053+00:00"
   }
  ]
 }
