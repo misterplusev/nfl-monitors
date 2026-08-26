@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-08-26T03:04:34.383008+00:00",
+ "scanned_at": "2026-08-26T03:06:45.563489+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 55.1,
+ "loop_uptime_min": 57.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 76114,
-   "last_tick_age_s": 0.1
+   "markets": 79794,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 0.4
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 121,
-   "last_tick_age_s": 0.1
+   "markets": 123,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 162,
-   "last_tick_age_s": 14.7
+   "markets": 166,
+   "last_tick_age_s": 15.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 3008.2
+   "last_tick_age_s": 3139.4
   }
  ],
  "totals": {
-  "markets_tracked": 84420,
+  "markets_tracked": 88106,
   "pairs_married": 6,
   "arbitrages": 6
  },
  "stats": {
-  "commits": 25,
-  "gist_errors": 52,
+  "commits": 26,
+  "gist_errors": 54,
   "hot_errors": 0,
   "kalshi.rest_updates": 98,
-  "kalshi.sweeps": 303,
-  "kalshi.ticks": 2075453,
-  "kalshi.updates": 1060301,
-  "kalshi.ws_ticks": 2075279,
-  "kalshi.ws_trades": 437508,
-  "live_evals_fired": 1310,
-  "novig.rest_updates": 4203,
-  "novig.sweeps": 302,
-  "novig.ticks": 37005,
-  "novig.updates": 4203,
-  "pairs_blocked_antonym_date": 6445,
-  "pmglobal.rest_updates": 2353,
-  "pmglobal.sweeps": 302,
-  "pmglobal.ticks": 37562,
-  "pmglobal.updates": 5072,
-  "pmglobal.ws_msgs": 1762412,
-  "pmglobal.ws_ticks": 7262,
-  "pmus.rest_updates": 17365,
-  "pmus.sweeps": 303,
-  "pmus.ticks": 2431696,
-  "pmus.updates": 17365,
+  "kalshi.sweeps": 315,
+  "kalshi.ticks": 2156845,
+  "kalshi.updates": 1096849,
+  "kalshi.ws_ticks": 2156671,
+  "kalshi.ws_trades": 451862,
+  "live_evals_fired": 1391,
+  "novig.rest_updates": 4359,
+  "novig.sweeps": 314,
+  "novig.ticks": 38566,
+  "novig.updates": 4359,
+  "pairs_blocked_antonym_date": 6700,
+  "pmglobal.rest_updates": 2425,
+  "pmglobal.sweeps": 314,
+  "pmglobal.ticks": 38993,
+  "pmglobal.updates": 5225,
+  "pmglobal.ws_msgs": 1810787,
+  "pmglobal.ws_ticks": 7493,
+  "pmus.rest_updates": 17739,
+  "pmus.sweeps": 315,
+  "pmus.ticks": 2527684,
+  "pmus.updates": 17739,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 304,
+  "pmus_x.sweeps": 316,
   "prophetx.ticks": 471,
   "prophetx.updates": 144,
-  "prophetx.ws_errors": 203,
+  "prophetx.ws_errors": 211,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 302,
-  "supa_errors": 925
+  "pxboard.sweeps": 314,
+  "supa_errors": 962
  },
  "arbitrages": [
   {
@@ -97,7 +97,7 @@
    },
    "total_cost_cents": 23,
    "edge_bps": 7700,
-   "detected_at": "2026-08-26T03:03:38.712642+00:00"
+   "detected_at": "2026-08-26T03:06:29.176102+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-08-26T03:04:34.303870+00:00"
+   "detected_at": "2026-08-26T03:06:21.535565+00:00"
   },
   {
    "buy_yes": {
@@ -143,53 +143,53 @@
    },
    "total_cost_cents": 84,
    "edge_bps": 1600,
-   "detected_at": "2026-08-26T03:03:38.712663+00:00"
+   "detected_at": "2026-08-26T03:06:29.213357+00:00"
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
+    ],
+    "title": "Philadelphia Phillies vs. Seattle Mariners",
+    "ask_cents": 48
+   },
+   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "da345e9269b40d12e2190731c626e5ad"
     ],
     "title": "Philadelphia Phillies at Seattle Mariners",
-    "ask_cents": 51
+    "no_cost_cents": 50
    },
-   "buy_no": {
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-26T03:04:52.526074+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
     ],
     "title": "Philadelphia Phillies vs. Seattle Mariners",
-    "no_cost_cents": 48
+    "ask_cents": 48
    },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-08-26T03:04:10.935048+00:00"
-  },
-  {
-   "buy_yes": {
+   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "1e2cca1ed2be021a93e05def15a0a9cb"
     ],
     "title": "Philadelphia Phillies at Seattle Mariners",
-    "ask_cents": 51
+    "no_cost_cents": 50
    },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
-    ],
-    "title": "Philadelphia Phillies vs. Seattle Mariners",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-08-26T03:04:10.972544+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-26T03:04:52.561561+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +212,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-26T03:04:34.342727+00:00"
+   "detected_at": "2026-08-26T03:06:21.579699+00:00"
   }
  ]
 }
