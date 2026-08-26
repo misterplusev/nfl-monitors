@@ -1,77 +1,78 @@
 {
- "scanned_at": "2026-08-26T02:11:32.595268+00:00",
+ "scanned_at": "2026-08-26T02:13:33.594285+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.1,
+ "loop_uptime_min": 4.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 10718,
+   "markets": 14916,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 2.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 101,
-   "last_tick_age_s": 1.5
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 119,
-   "last_tick_age_s": 5.4
+   "markets": 121,
+   "last_tick_age_s": 15.2
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 20,
-   "last_tick_age_s": 3.7
+   "last_tick_age_s": 13.4
   }
  ],
  "totals": {
-  "markets_tracked": 18957,
-  "pairs_married": 10,
-  "arbitrages": 9
+  "markets_tracked": 23157,
+  "pairs_married": 12,
+  "arbitrages": 12
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 12,
-  "kalshi.ticks": 85373,
-  "kalshi.updates": 49535,
-  "kalshi.ws_ticks": 85373,
-  "kalshi.ws_trades": 17590,
-  "live_evals_fired": 108,
-  "novig.rest_updates": 276,
-  "novig.sweeps": 11,
-  "novig.ticks": 1328,
-  "novig.updates": 276,
-  "pairs_blocked_antonym_date": 255,
-  "pmglobal.rest_updates": 245,
-  "pmglobal.sweeps": 11,
-  "pmglobal.ticks": 1648,
-  "pmglobal.updates": 449,
-  "pmglobal.ws_msgs": 80284,
-  "pmglobal.ws_ticks": 448,
-  "pmus.rest_updates": 8351,
-  "pmus.sweeps": 12,
-  "pmus.ticks": 103987,
-  "pmus.updates": 8351,
+  "kalshi.sweeps": 22,
+  "kalshi.ticks": 173740,
+  "kalshi.updates": 96363,
+  "kalshi.ws_ticks": 173740,
+  "kalshi.ws_trades": 37956,
+  "live_evals_fired": 188,
+  "novig.rest_updates": 425,
+  "novig.sweeps": 21,
+  "novig.ticks": 2486,
+  "novig.updates": 425,
+  "pairs_blocked_antonym_date": 476,
+  "pmglobal.rest_updates": 356,
+  "pmglobal.sweeps": 22,
+  "pmglobal.ticks": 3071,
+  "pmglobal.updates": 705,
+  "pmglobal.ws_msgs": 183787,
+  "pmglobal.ws_ticks": 771,
+  "pmus.rest_updates": 8650,
+  "pmus.sweeps": 22,
+  "pmus.ticks": 183977,
+  "pmus.updates": 8650,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 13,
-  "prophetx.ticks": 219,
-  "prophetx.updates": 68,
-  "prophetx.ws_errors": 8,
-  "px.evt_scanned": 19,
-  "pxboard.sweeps": 11,
-  "supa_errors": 37
+  "pmus_x.sweeps": 23,
+  "prophetx.ticks": 386,
+  "prophetx.updates": 117,
+  "prophetx.ws_errors": 16,
+  "px.evt_scanned": 14,
+  "pxboard.sweeps": 21,
+  "supa_errors": 72
  },
  "arbitrages": [
   {
@@ -95,7 +96,7 @@
    },
    "total_cost_cents": 9,
    "edge_bps": 9100,
-   "detected_at": "2026-08-26T02:10:29.993341+00:00"
+   "detected_at": "2026-08-26T02:13:17.254029+00:00"
   },
   {
    "buy_yes": {
@@ -105,7 +106,7 @@
      "316952e6d4a1ff034e9aeb9ca85bf919"
     ],
     "title": "Houston Astros at New York Yankees",
-    "ask_cents": 11
+    "ask_cents": 7
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -114,11 +115,34 @@
      "0x455017aeeb812643f1ff38fede7650be6258297043384222b28ec9c59f1cf10c"
     ],
     "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 10
+    "no_cost_cents": 3
    },
-   "total_cost_cents": 21,
-   "edge_bps": 7900,
-   "detected_at": "2026-08-26T02:11:30.113797+00:00"
+   "total_cost_cents": 10,
+   "edge_bps": 9000,
+   "detected_at": "2026-08-26T02:13:33.181087+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6e398daad03fca97984d02c785fc9b4632cbd4b5ad1128c1710968b215f38874"
+    ],
+    "title": "Milwaukee Brewers vs. New York Mets: O/U 8.5",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8c7b4312b622c2fc1cd3a9a5fa527e30"
+    ],
+    "title": "Milwaukee Brewers at New York Mets",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 35,
+   "edge_bps": 6500,
+   "detected_at": "2026-08-26T02:11:34.208700+00:00"
   },
   {
    "buy_yes": {
@@ -141,17 +165,17 @@
    },
    "total_cost_cents": 37,
    "edge_bps": 6300,
-   "detected_at": "2026-08-26T02:10:48.314388+00:00"
+   "detected_at": "2026-08-26T02:13:01.549805+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x6e398daad03fca97984d02c785fc9b4632cbd4b5ad1128c1710968b215f38874"
+     "0x9e12343e61b66ee66778d0afd33c7209f0d7fc7fe882ece7514bbf525a968973"
     ],
-    "title": "Milwaukee Brewers vs. New York Mets: O/U 8.5",
-    "ask_cents": 31
+    "title": "Milwaukee Brewers vs. New York Mets",
+    "ask_cents": 38
    },
    "buy_no": {
     "venue": "prophetx",
@@ -162,9 +186,32 @@
     "title": "Milwaukee Brewers at New York Mets",
     "no_cost_cents": 23
    },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-08-26T02:11:27.376053+00:00"
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-08-26T02:12:26.025343+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e268bacc428d19d000973807f597c74e"
+    ],
+    "title": "Milwaukee Brewers at New York Mets",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9e12343e61b66ee66778d0afd33c7209f0d7fc7fe882ece7514bbf525a968973"
+    ],
+    "title": "Milwaukee Brewers vs. New York Mets",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-08-26T02:12:25.989006+00:00"
   },
   {
    "buy_yes": {
@@ -183,11 +230,11 @@
      "a50622d32af193dc45be2c6ee3911104"
     ],
     "title": "Cleveland Guardians at Los Angeles Angels",
-    "no_cost_cents": 29
+    "no_cost_cents": 27
    },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-08-26T02:10:57.081764+00:00"
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-08-26T02:13:32.634778+00:00"
   },
   {
    "buy_yes": {
@@ -197,7 +244,7 @@
      "e268bacc428d19d000973807f597c74e"
     ],
     "title": "Milwaukee Brewers at New York Mets",
-    "ask_cents": 3
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -208,9 +255,32 @@
     "title": "Milwaukee Brewers vs. New York Mets: O/U 7.5",
     "no_cost_cents": 86
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-08-26T02:11:28.436052+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-08-26T02:13:01.511817+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e268bacc428d19d000973807f597c74e"
+    ],
+    "title": "Milwaukee Brewers at New York Mets",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6e398daad03fca97984d02c785fc9b4632cbd4b5ad1128c1710968b215f38874"
+    ],
+    "title": "Milwaukee Brewers vs. New York Mets: O/U 8.5",
+    "no_cost_cents": 88
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-08-26T02:11:37.396993+00:00"
   },
   {
    "buy_yes": {
@@ -233,30 +303,7 @@
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-08-26T02:10:48.781797+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e268bacc428d19d000973807f597c74e"
-    ],
-    "title": "Milwaukee Brewers at New York Mets",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6e398daad03fca97984d02c785fc9b4632cbd4b5ad1128c1710968b215f38874"
-    ],
-    "title": "Milwaukee Brewers vs. New York Mets: O/U 8.5",
-    "no_cost_cents": 88
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-08-26T02:11:28.406526+00:00"
+   "detected_at": "2026-08-26T02:13:32.669586+00:00"
   },
   {
    "buy_yes": {
@@ -279,7 +326,30 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-26T02:10:30.032373+00:00"
+   "detected_at": "2026-08-26T02:13:17.291126+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "80161a643f669da207bfde50acb25176"
+    ],
+    "title": "Houston Astros at New York Yankees",
+    "ask_cents": 96
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x455017aeeb812643f1ff38fede7650be6258297043384222b28ec9c59f1cf10c"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 3
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-26T02:13:33.211715+00:00"
   }
  ]
 }
