@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-08-26T02:58:02.880906+00:00",
+ "scanned_at": "2026-08-26T03:00:12.201442+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 48.6,
+ "loop_uptime_min": 50.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 68997,
+   "markets": 70388,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,86 +19,63 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 118,
+   "markets": 121,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 155,
-   "last_tick_age_s": 15.3
+   "markets": 156,
+   "last_tick_age_s": 15.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 2616.7
+   "last_tick_age_s": 2746.0
   }
  ],
  "totals": {
-  "markets_tracked": 77293,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 78688,
+  "pairs_married": 6,
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 22,
-  "gist_errors": 46,
+  "commits": 23,
+  "gist_errors": 48,
   "hot_errors": 0,
   "kalshi.rest_updates": 96,
-  "kalshi.sweeps": 267,
-  "kalshi.ticks": 1860729,
-  "kalshi.updates": 951915,
-  "kalshi.ws_ticks": 1860558,
-  "kalshi.ws_trades": 386893,
-  "live_evals_fired": 1178,
-  "novig.rest_updates": 3756,
-  "novig.sweeps": 266,
-  "novig.ticks": 32471,
-  "novig.updates": 3756,
-  "pairs_blocked_antonym_date": 5680,
-  "pmglobal.rest_updates": 2146,
-  "pmglobal.sweeps": 266,
-  "pmglobal.ticks": 33265,
-  "pmglobal.updates": 4630,
-  "pmglobal.ws_msgs": 1613409,
-  "pmglobal.ws_ticks": 6565,
-  "pmus.rest_updates": 16336,
-  "pmus.sweeps": 267,
-  "pmus.ticks": 2143732,
-  "pmus.updates": 16336,
+  "kalshi.sweeps": 279,
+  "kalshi.ticks": 1929842,
+  "kalshi.updates": 987479,
+  "kalshi.ws_ticks": 1929671,
+  "kalshi.ws_trades": 405063,
+  "live_evals_fired": 1239,
+  "novig.rest_updates": 3888,
+  "novig.sweeps": 278,
+  "novig.ticks": 33963,
+  "novig.updates": 3888,
+  "pairs_blocked_antonym_date": 5935,
+  "pmglobal.rest_updates": 2240,
+  "pmglobal.sweeps": 278,
+  "pmglobal.ticks": 34721,
+  "pmglobal.updates": 4819,
+  "pmglobal.ws_msgs": 1669682,
+  "pmglobal.ws_ticks": 6821,
+  "pmus.rest_updates": 16653,
+  "pmus.sweeps": 279,
+  "pmus.ticks": 2239720,
+  "pmus.updates": 16653,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 268,
+  "pmus_x.sweeps": 280,
   "prophetx.ticks": 471,
   "prophetx.updates": 144,
-  "prophetx.ws_errors": 179,
+  "prophetx.ws_errors": 187,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 266,
-  "supa_errors": 817
+  "pxboard.sweeps": 278,
+  "supa_errors": 853
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa2174f2a45a69d9fc1593f0c10822a05becef5622efffe0868741e7a27bd2b0a"
-    ],
-    "title": "Texas Rangers vs. Chicago White Sox",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "50506c86f707991e9af3b3f2aa55b38a"
-    ],
-    "title": "Texas Rangers at Chicago White Sox",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-08-26T02:57:48.348082+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -120,30 +97,7 @@
    },
    "total_cost_cents": 23,
    "edge_bps": 7700,
-   "detected_at": "2026-08-26T02:57:38.764673+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
-    ],
-    "title": "Pittsburgh Pirates vs. San Diego Padres",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f20ebf4425aea383a74295a2379d6d51"
-    ],
-    "title": "Pittsburgh Pirates at San Diego Padres",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-26T02:57:15.206133+00:00"
+   "detected_at": "2026-08-26T02:59:40.478803+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +120,7 @@
    },
    "total_cost_cents": 84,
    "edge_bps": 1600,
-   "detected_at": "2026-08-26T02:57:38.799215+00:00"
+   "detected_at": "2026-08-26T02:59:40.514827+00:00"
   },
   {
    "buy_yes": {
@@ -176,89 +130,66 @@
      "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
     ],
     "title": "Pittsburgh Pirates vs. San Diego Padres",
-    "ask_cents": 38
+    "ask_cents": 42
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "29078e6605e37273b8e27d03b995530a"
+     "f20ebf4425aea383a74295a2379d6d51"
     ],
     "title": "Pittsburgh Pirates at San Diego Padres",
-    "no_cost_cents": 59
+    "no_cost_cents": 43
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-08-26T02:57:15.243939+00:00"
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-08-26T02:59:55.735377+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa2174f2a45a69d9fc1593f0c10822a05becef5622efffe0868741e7a27bd2b0a"
-    ],
-    "title": "Texas Rangers vs. Chicago White Sox",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6f87efa73dc5e5fd13a4e271aa6fea51"
-    ],
-    "title": "Texas Rangers at Chicago White Sox",
-    "no_cost_cents": 95
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-08-26T02:57:48.385517+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
-    ],
-    "title": "Philadelphia Phillies vs. Seattle Mariners",
-    "ask_cents": 48
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "da345e9269b40d12e2190731c626e5ad"
     ],
     "title": "Philadelphia Phillies at Seattle Mariners",
-    "no_cost_cents": 50
+    "ask_cents": 51
    },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-08-26T02:57:30.864798+00:00"
-  },
-  {
-   "buy_yes": {
+   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
     ],
     "title": "Philadelphia Phillies vs. Seattle Mariners",
-    "ask_cents": 48
+    "no_cost_cents": 48
    },
-   "buy_no": {
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-26T02:59:56.793365+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "1e2cca1ed2be021a93e05def15a0a9cb"
     ],
     "title": "Philadelphia Phillies at Seattle Mariners",
-    "no_cost_cents": 50
+    "ask_cents": 51
    },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-08-26T02:57:30.899900+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x167280c1aeecda15a5689ebd71146efc9659a3eaf6e62b645d29d55d42c1796b"
+    ],
+    "title": "Philadelphia Phillies vs. Seattle Mariners",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-26T02:59:56.793386+00:00"
   }
  ]
 }
