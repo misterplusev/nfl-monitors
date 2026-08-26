@@ -1,79 +1,77 @@
 {
- "scanned_at": "2026-08-25T20:56:07.818384+00:00",
+ "scanned_at": "2026-08-26T02:11:32.595268+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 162.5,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 188996,
-   "last_tick_age_s": 0.1
+   "markets": 10718,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 8020,
-   "last_tick_age_s": 0.6
+   "markets": 7999,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 143,
-   "last_tick_age_s": 0.1
+   "markets": 101,
+   "last_tick_age_s": 1.5
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 299,
-   "last_tick_age_s": 28.4
+   "markets": 119,
+   "last_tick_age_s": 5.4
   },
   {
    "venue": "prophetx",
    "state": "OK",
-   "markets": 75,
-   "last_tick_age_s": 94.6
+   "markets": 20,
+   "last_tick_age_s": 3.7
   }
  ],
  "totals": {
-  "markets_tracked": 197533,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 18957,
+  "pairs_married": 10,
+  "arbitrages": 9
  },
  "stats": {
-  "commits": 74,
-  "gist_errors": 151,
-  "kalshi.rest_updates": 2,
-  "kalshi.sweeps": 391,
-  "kalshi.ticks": 5398097,
-  "kalshi.updates": 2418547,
-  "kalshi.ws_ticks": 5398093,
-  "kalshi.ws_trades": 1117057,
-  "live_evals_fired": 299,
-  "novig.rest_updates": 7475,
-  "novig.sweeps": 390,
-  "novig.ticks": 92445,
-  "novig.updates": 7475,
-  "pairs_blocked_antonym_date": 6056,
-  "pmglobal.rest_updates": 8348,
-  "pmglobal.sweeps": 390,
-  "pmglobal.ticks": 59405,
-  "pmglobal.updates": 17863,
-  "pmglobal.ws_errors": 75,
-  "pmglobal.ws_msgs": 2369346,
-  "pmglobal.ws_ticks": 20305,
-  "pmus.rest_updates": 35871,
-  "pmus.sweeps": 391,
-  "pmus.ticks": 3135602,
-  "pmus.updates": 35871,
+  "gist_errors": 3,
+  "hot_errors": 0,
+  "kalshi.sweeps": 12,
+  "kalshi.ticks": 85373,
+  "kalshi.updates": 49535,
+  "kalshi.ws_ticks": 85373,
+  "kalshi.ws_trades": 17590,
+  "live_evals_fired": 108,
+  "novig.rest_updates": 276,
+  "novig.sweeps": 11,
+  "novig.ticks": 1328,
+  "novig.updates": 276,
+  "pairs_blocked_antonym_date": 255,
+  "pmglobal.rest_updates": 245,
+  "pmglobal.sweeps": 11,
+  "pmglobal.ticks": 1648,
+  "pmglobal.updates": 449,
+  "pmglobal.ws_msgs": 80284,
+  "pmglobal.ws_ticks": 448,
+  "pmus.rest_updates": 8351,
+  "pmus.sweeps": 12,
+  "pmus.ticks": 103987,
+  "pmus.updates": 8351,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 392,
-  "prophetx.ticks": 2866,
-  "prophetx.updates": 1746,
-  "prophetx.ws_errors": 395,
-  "px.evt_scanned": 16,
-  "pxboard.sweeps": 390,
-  "supa_pushes": 1242
+  "pmus_x.sweeps": 13,
+  "prophetx.ticks": 219,
+  "prophetx.updates": 68,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 19,
+  "pxboard.sweeps": 11,
+  "supa_errors": 37
  },
  "arbitrages": [
   {
@@ -81,184 +79,207 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
+     "0xa2174f2a45a69d9fc1593f0c10822a05becef5622efffe0868741e7a27bd2b0a"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
-    "ask_cents": 1
+    "title": "Texas Rangers vs. Chicago White Sox",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "5008e8144db44876a411c96080e01ed9"
+     "50506c86f707991e9af3b3f2aa55b38a"
     ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 2
+    "title": "Texas Rangers at Chicago White Sox",
+    "no_cost_cents": 5
    },
-   "total_cost_cents": 3,
-   "edge_bps": 9700,
-   "detected_at": "2026-08-25T20:54:08.780180+00:00"
+   "total_cost_cents": 9,
+   "edge_bps": 9100,
+   "detected_at": "2026-08-26T02:10:29.993341+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "316952e6d4a1ff034e9aeb9ca85bf919"
+    ],
+    "title": "Houston Astros at New York Yankees",
+    "ask_cents": 11
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x455017aeeb812643f1ff38fede7650be6258297043384222b28ec9c59f1cf10c"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 10
+   },
+   "total_cost_cents": 21,
+   "edge_bps": 7900,
+   "detected_at": "2026-08-26T02:11:30.113797+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
+     "0xf2a8ce275be558b5d880f1dd47bf3ffb05e108c96a9b34c78af13d6314cde394"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
-    "ask_cents": 1
+    "title": "Milwaukee Brewers vs. New York Mets: O/U 7.5",
+    "ask_cents": 14
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "ef75ca5d272ac2da5ce2db46eb05974e"
+     "8c7b4312b622c2fc1cd3a9a5fa527e30"
     ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 2
+    "title": "Milwaukee Brewers at New York Mets",
+    "no_cost_cents": 23
    },
-   "total_cost_cents": 3,
-   "edge_bps": 9700,
-   "detected_at": "2026-08-25T20:54:08.965044+00:00"
+   "total_cost_cents": 37,
+   "edge_bps": 6300,
+   "detected_at": "2026-08-26T02:10:48.314388+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
+     "0x6e398daad03fca97984d02c785fc9b4632cbd4b5ad1128c1710968b215f38874"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
-    "ask_cents": 1
+    "title": "Milwaukee Brewers vs. New York Mets: O/U 8.5",
+    "ask_cents": 31
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "a30d2845ddae42fd6ebe05dd7311bf32"
+     "8c7b4312b622c2fc1cd3a9a5fa527e30"
     ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 9
+    "title": "Milwaukee Brewers at New York Mets",
+    "no_cost_cents": 23
    },
-   "total_cost_cents": 10,
-   "edge_bps": 9000,
-   "detected_at": "2026-08-25T20:54:32.559876+00:00"
+   "total_cost_cents": 54,
+   "edge_bps": 4600,
+   "detected_at": "2026-08-26T02:11:27.376053+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
+     "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
-    "ask_cents": 1
+    "title": "Cleveland Guardians vs. Los Angeles Angels",
+    "ask_cents": 38
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "90f275962b928b77e8184be47817931b"
+     "a50622d32af193dc45be2c6ee3911104"
     ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 9
+    "title": "Cleveland Guardians at Los Angeles Angels",
+    "no_cost_cents": 29
    },
-   "total_cost_cents": 10,
-   "edge_bps": 9000,
-   "detected_at": "2026-08-25T20:54:32.734888+00:00"
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-08-26T02:10:57.081764+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
-    ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "585eea76e19507c92f7fd44df51b7f0a"
+     "e268bacc428d19d000973807f597c74e"
     ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 81
+    "title": "Milwaukee Brewers at New York Mets",
+    "ask_cents": 3
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-08-25T20:54:09.176571+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf2a8ce275be558b5d880f1dd47bf3ffb05e108c96a9b34c78af13d6314cde394"
+    ],
+    "title": "Milwaukee Brewers vs. New York Mets: O/U 7.5",
+    "no_cost_cents": 86
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-26T02:11:28.436052+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
-    ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "e1f92683b947250fd21599e911b31aab"
+     "0a68c29dd4021d0f84dcd5f0bc85587f"
     ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 90
+    "title": "Cleveland Guardians at Los Angeles Angels",
+    "ask_cents": 29
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
+    ],
+    "title": "Cleveland Guardians vs. Los Angeles Angels",
+    "no_cost_cents": 62
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-08-25T20:54:32.370382+00:00"
+   "detected_at": "2026-08-26T02:10:48.781797+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
-    ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "d1ecf3e712c8fbd4b7595797972af20b"
+     "e268bacc428d19d000973807f597c74e"
     ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 90
+    "title": "Milwaukee Brewers at New York Mets",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6e398daad03fca97984d02c785fc9b4632cbd4b5ad1128c1710968b215f38874"
+    ],
+    "title": "Milwaukee Brewers vs. New York Mets: O/U 8.5",
+    "no_cost_cents": 88
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-08-25T20:54:32.920236+00:00"
+   "detected_at": "2026-08-26T02:11:28.406526+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x35cc1c842277920c18cf447880acbae3e83c0594c8a3f7e1992c8f1cef8687eb"
+     "0xa2174f2a45a69d9fc1593f0c10822a05becef5622efffe0868741e7a27bd2b0a"
     ],
-    "title": "Valencia CF vs. Real Betis Balompi\u00e9: O/U 2.5",
-    "ask_cents": 1
+    "title": "Texas Rangers vs. Chicago White Sox",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "fa5105dcd31712346c93c7c294568576"
+     "6f87efa73dc5e5fd13a4e271aa6fea51"
     ],
-    "title": "Real Betis Balompi\u00e9 at Valencia CF",
-    "no_cost_cents": 98
+    "title": "Texas Rangers at Chicago White Sox",
+    "no_cost_cents": 95
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-25T20:54:09.545012+00:00"
+   "detected_at": "2026-08-26T02:10:30.032373+00:00"
   }
  ]
 }
