@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-08-26T02:55:51.084866+00:00",
+ "scanned_at": "2026-08-26T02:58:02.880906+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 46.4,
+ "loop_uptime_min": 48.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 67679,
-   "last_tick_age_s": 0.1
+   "markets": 68997,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 0.4
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
@@ -26,54 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 155,
-   "last_tick_age_s": 15.2
+   "last_tick_age_s": 15.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 2484.9
+   "last_tick_age_s": 2616.7
   }
  ],
  "totals": {
-  "markets_tracked": 75975,
+  "markets_tracked": 77293,
   "pairs_married": 8,
-  "arbitrages": 7
+  "arbitrages": 8
  },
  "stats": {
-  "commits": 21,
-  "gist_errors": 44,
+  "commits": 22,
+  "gist_errors": 46,
   "hot_errors": 0,
   "kalshi.rest_updates": 96,
-  "kalshi.sweeps": 255,
-  "kalshi.ticks": 1793922,
-  "kalshi.updates": 919570,
-  "kalshi.ws_ticks": 1793751,
-  "kalshi.ws_trades": 371068,
-  "live_evals_fired": 1135,
-  "novig.rest_updates": 3597,
-  "novig.sweeps": 254,
-  "novig.ticks": 30931,
-  "novig.updates": 3597,
-  "pairs_blocked_antonym_date": 5425,
-  "pmglobal.rest_updates": 2090,
-  "pmglobal.sweeps": 254,
-  "pmglobal.ticks": 31845,
-  "pmglobal.updates": 4513,
-  "pmglobal.ws_msgs": 1564808,
-  "pmglobal.ws_ticks": 6345,
-  "pmus.rest_updates": 15939,
-  "pmus.sweeps": 255,
-  "pmus.ticks": 2047744,
-  "pmus.updates": 15939,
+  "kalshi.sweeps": 267,
+  "kalshi.ticks": 1860729,
+  "kalshi.updates": 951915,
+  "kalshi.ws_ticks": 1860558,
+  "kalshi.ws_trades": 386893,
+  "live_evals_fired": 1178,
+  "novig.rest_updates": 3756,
+  "novig.sweeps": 266,
+  "novig.ticks": 32471,
+  "novig.updates": 3756,
+  "pairs_blocked_antonym_date": 5680,
+  "pmglobal.rest_updates": 2146,
+  "pmglobal.sweeps": 266,
+  "pmglobal.ticks": 33265,
+  "pmglobal.updates": 4630,
+  "pmglobal.ws_msgs": 1613409,
+  "pmglobal.ws_ticks": 6565,
+  "pmus.rest_updates": 16336,
+  "pmus.sweeps": 267,
+  "pmus.ticks": 2143732,
+  "pmus.updates": 16336,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 256,
+  "pmus_x.sweeps": 268,
   "prophetx.ticks": 471,
   "prophetx.updates": 144,
-  "prophetx.ws_errors": 171,
+  "prophetx.ws_errors": 179,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 254,
-  "supa_errors": 780
+  "pxboard.sweeps": 266,
+  "supa_errors": 817
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0xa2174f2a45a69d9fc1593f0c10822a05becef5622efffe0868741e7a27bd2b0a"
     ],
     "title": "Texas Rangers vs. Chicago White Sox",
-    "ask_cents": 1
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +95,9 @@
     "title": "Texas Rangers at Chicago White Sox",
     "no_cost_cents": 3
    },
-   "total_cost_cents": 4,
-   "edge_bps": 9600,
-   "detected_at": "2026-08-26T02:55:27.206114+00:00"
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-08-26T02:57:48.348082+00:00"
   },
   {
    "buy_yes": {
@@ -107,7 +107,7 @@
      "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
     ],
     "title": "Cleveland Guardians vs. Los Angeles Angels",
-    "ask_cents": 11
+    "ask_cents": 8
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,9 +118,9 @@
     "title": "Cleveland Guardians at Los Angeles Angels",
     "no_cost_cents": 15
    },
-   "total_cost_cents": 26,
-   "edge_bps": 7400,
-   "detected_at": "2026-08-26T02:55:50.992502+00:00"
+   "total_cost_cents": 23,
+   "edge_bps": 7700,
+   "detected_at": "2026-08-26T02:57:38.764673+00:00"
   },
   {
    "buy_yes": {
@@ -130,7 +130,7 @@
      "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
     ],
     "title": "Pittsburgh Pirates vs. San Diego Padres",
-    "ask_cents": 43
+    "ask_cents": 38
    },
    "buy_no": {
     "venue": "prophetx",
@@ -141,9 +141,9 @@
     "title": "Pittsburgh Pirates at San Diego Padres",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-08-26T02:55:34.977193+00:00"
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-08-26T02:57:15.206133+00:00"
   },
   {
    "buy_yes": {
@@ -153,7 +153,7 @@
      "0xff14e839f47b1b292ee9424f5429d8fa299f6d411bc2479be53c27405095d9a7"
     ],
     "title": "Cleveland Guardians vs. Los Angeles Angels",
-    "ask_cents": 11
+    "ask_cents": 8
    },
    "buy_no": {
     "venue": "prophetx",
@@ -164,9 +164,32 @@
     "title": "Cleveland Guardians at Los Angeles Angels",
     "no_cost_cents": 76
    },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-08-26T02:55:51.040038+00:00"
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-08-26T02:57:38.799215+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x802764873b0f1a02f3d018d91269a0e6355db8920a8ab42a307aa06b8b3d289f"
+    ],
+    "title": "Pittsburgh Pirates vs. San Diego Padres",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "29078e6605e37273b8e27d03b995530a"
+    ],
+    "title": "Pittsburgh Pirates at San Diego Padres",
+    "no_cost_cents": 59
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-08-26T02:57:15.243939+00:00"
   },
   {
    "buy_yes": {
@@ -176,7 +199,7 @@
      "0xa2174f2a45a69d9fc1593f0c10822a05becef5622efffe0868741e7a27bd2b0a"
     ],
     "title": "Texas Rangers vs. Chicago White Sox",
-    "ask_cents": 1
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "prophetx",
@@ -187,9 +210,9 @@
     "title": "Texas Rangers at Chicago White Sox",
     "no_cost_cents": 95
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-08-26T02:55:27.247366+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-26T02:57:48.385517+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +235,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-08-26T02:55:03.270898+00:00"
+   "detected_at": "2026-08-26T02:57:30.864798+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +258,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-08-26T02:55:03.310991+00:00"
+   "detected_at": "2026-08-26T02:57:30.899900+00:00"
   }
  ]
 }
