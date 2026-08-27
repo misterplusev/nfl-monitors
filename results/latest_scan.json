@@ -1,657 +1,101 @@
 {
- "scanned_at": "2026-08-27T15:42:40.080286+00:00",
+ "scanned_at": "2026-08-27T20:43:19.003548+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 168792,
-   "last_tick_age_s": 0.1
+   "markets": 13636,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 14645,
-   "last_tick_age_s": 0.1
+   "markets": 7999,
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 146,
-   "last_tick_age_s": 0.1
+   "markets": 100,
+   "last_tick_age_s": 0.7
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 308,
-   "last_tick_age_s": 13.3
+   "markets": 227,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 18,
-   "last_tick_age_s": 19906.3
+   "state": "OK",
+   "markets": 55,
+   "last_tick_age_s": 5.4
   }
  ],
  "totals": {
-  "markets_tracked": 183909,
-  "pairs_married": 31,
-  "arbitrages": 25
+  "markets_tracked": 22017,
+  "pairs_married": 2,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 164,
-  "gist_errors": 351,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 419,
-  "kalshi.sweeps": 2493,
-  "kalshi.ticks": 11501188,
-  "kalshi.updates": 4052871,
-  "kalshi.ws_errors": 5,
-  "kalshi.ws_ticks": 11499331,
-  "kalshi.ws_trades": 1537942,
+  "kalshi.sweeps": 12,
+  "kalshi.ticks": 61573,
+  "kalshi.updates": 37286,
+  "kalshi.ws_ticks": 61573,
+  "kalshi.ws_trades": 18442,
   "live_evals_fired": 22,
-  "novig.rest_updates": 3633,
-  "novig.sweeps": 2492,
-  "novig.ticks": 596063,
-  "novig.updates": 3633,
-  "pairs_blocked_antonym_date": 10709,
-  "pmglobal.rest_updates": 11431,
-  "pmglobal.sweeps": 2492,
-  "pmglobal.ticks": 285453,
-  "pmglobal.updates": 24351,
-  "pmglobal.ws_errors": 4,
-  "pmglobal.ws_msgs": 5900985,
-  "pmglobal.ws_ticks": 36153,
-  "pmus.rest_updates": 104424,
-  "pmus.sweeps": 2493,
-  "pmus.ticks": 8361718,
-  "pmus.updates": 104424,
-  "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 2494,
-  "prophetx.ticks": 594,
-  "prophetx.updates": 30,
-  "prophetx.ws_errors": 1261,
-  "px.evt_scanned": 18,
-  "pxboard.sweeps": 2492,
-  "supa_errors": 7304
+  "novig.rest_updates": 327,
+  "novig.sweeps": 12,
+  "novig.ticks": 2867,
+  "novig.updates": 327,
+  "pairs_blocked_antonym_date": 60,
+  "pmglobal.rest_updates": 262,
+  "pmglobal.sweeps": 12,
+  "pmglobal.ticks": 1756,
+  "pmglobal.updates": 443,
+  "pmglobal.ws_msgs": 53642,
+  "pmglobal.ws_ticks": 456,
+  "pmus.rest_updates": 7999,
+  "pmus.sweeps": 12,
+  "pmus.ticks": 103987,
+  "pmus.updates": 7999,
+  "pmus_x.last_count": 7999,
+  "pmus_x.sweeps": 13,
+  "prophetx.ticks": 635,
+  "prophetx.updates": 117,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 54,
+  "pxboard.sweeps": 11,
+  "supa_errors": 41
  },
  "arbitrages": [
   {
    "buy_yes": {
-    "venue": "novig",
+    "venue": "pmglobal",
     "key": [
-     "novig",
-     "01a033d5-8e62-7331-8da6-67a8b40ead1d"
+     "pmglobal",
+     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
     ],
-    "title": "Chelsea -1.5 (EPL)",
-    "ask_cents": 30
+    "title": "Baltimore Orioles vs. St. Louis Cardinals",
+    "ask_cents": 16
    },
    "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "486540"
-    ],
-    "title": "Chelsea EPL Points",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-08-27T15:42:40.080136+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "80b66674290db83a45ec0406e30bc07f"
+     "3cb98d0f75feff06e88477b8b2ec52d9"
     ],
-    "title": "Andrea Lazaro Garcia at Polina Iatcenko",
-    "ask_cents": 44
+    "title": "Baltimore Orioles at St. Louis Cardinals",
+    "no_cost_cents": 5
    },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "534204"
-    ],
-    "title": "Will the Polina Iatcenko cover 2.5 vs the Andrea Lazaro Garcia in Polina Iatcenko vs. Andrea Lazaro Garcia?",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 51,
-   "edge_bps": 4900,
-   "detected_at": "2026-08-27T15:42:40.080187+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
-    ],
-    "title": "Baltimore Orioles vs. St. Louis Cardinals",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525834"
-    ],
-    "title": "Will the Baltimore Orioles win the 9th inning vs the St. Louis Cardinals?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-08-27T15:42:40.080147+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0df6820bbb777df97df370eb9a30cab1"
-    ],
-    "title": "Andrea Lazaro Garcia at Polina Iatcenko",
-    "ask_cents": 56
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "534204"
-    ],
-    "title": "Will the Polina Iatcenko cover 2.5 vs the Andrea Lazaro Garcia in Polina Iatcenko vs. Andrea Lazaro Garcia?",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-08-27T15:42:40.080080+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "526403"
-    ],
-    "title": "Will the Milwaukee Brewers win the 7th inning vs the New York Mets?",
-    "ask_cents": 28
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3c68ec207148e9857c0db83b8791d76c25de9d007b33dfffccbf2b4b148cf65"
-    ],
-    "title": "Milwaukee Brewers vs. New York Mets",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-08-27T15:42:40.080215+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508657"
-    ],
-    "title": "Will the Los Angeles Dodgers cover 2.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
-    "no_cost_cents": 20
-   },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-08-27T15:42:40.080176+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3c68ec207148e9857c0db83b8791d76c25de9d007b33dfffccbf2b4b148cf65"
-    ],
-    "title": "Milwaukee Brewers vs. New York Mets",
-    "ask_cents": 66
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "526409"
-    ],
-    "title": "Will the Milwaukee Brewers win the 9th inning vs the New York Mets?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-08-27T15:42:40.080182+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525819"
-    ],
-    "title": "Will the Baltimore Orioles win the 4th inning vs the St. Louis Cardinals?",
-    "ask_cents": 24
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
-    ],
-    "title": "Baltimore Orioles vs. St. Louis Cardinals",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-08-27T15:42:40.080102+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525816"
-    ],
-    "title": "Will the Baltimore Orioles win the 3rd inning vs the St. Louis Cardinals?",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
-    ],
-    "title": "Baltimore Orioles vs. St. Louis Cardinals",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-08-27T15:42:40.080073+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525801"
-    ],
-    "title": "Will the Colorado Rockies win the 7th inning vs the Washington Nationals?",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xde0b24c0d202d6c3c15b3aa70fabc98df9a6c1274a42e885ceb2a9113d0b91c5"
-    ],
-    "title": "Colorado Rockies vs. Washington Nationals: O/U 9.5",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-08-27T15:42:40.080109+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525828"
-    ],
-    "title": "Will the Baltimore Orioles win the 7th inning vs the St. Louis Cardinals?",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
-    ],
-    "title": "Baltimore Orioles vs. St. Louis Cardinals",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-08-27T15:42:40.080154+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508610"
-    ],
-    "title": "Will the Milwaukee Brewers cover -2.5 vs the New York Mets in Milwaukee Brewers vs New York Mets?",
-    "ask_cents": 41
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3c68ec207148e9857c0db83b8791d76c25de9d007b33dfffccbf2b4b148cf65"
-    ],
-    "title": "Milwaukee Brewers vs. New York Mets",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-08-27T15:42:40.080033+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3c68ec207148e9857c0db83b8791d76c25de9d007b33dfffccbf2b4b148cf65"
-    ],
-    "title": "Milwaukee Brewers vs. New York Mets",
-    "ask_cents": 66
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508613"
-    ],
-    "title": "Will the Milwaukee Brewers cover 2.5 vs the New York Mets in Milwaukee Brewers vs New York Mets?",
-    "no_cost_cents": 10
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-08-27T15:42:40.080095+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508667"
-    ],
-    "title": "Will the Baltimore Orioles cover -2.5 vs the St. Louis Cardinals in Baltimore Orioles vs St. Louis Cardinals?",
-    "ask_cents": 30
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
-    ],
-    "title": "Baltimore Orioles vs. St. Louis Cardinals",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-08-27T15:42:40.080205+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "526418"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 3rd inning vs the Atlanta Braves?",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-08-27T15:42:40.080130+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525801"
-    ],
-    "title": "Will the Colorado Rockies win the 7th inning vs the Washington Nationals?",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x22a21921a9dad2575c6e27979f44decb5acdc270027113da17f74a49d9a6c87e"
-    ],
-    "title": "Colorado Rockies vs. Washington Nationals",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-27T14:45:46.269696+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "526412"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 1st inning vs the Atlanta Braves?",
-    "ask_cents": 25
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-27T15:42:40.080124+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508653"
-    ],
-    "title": "Will the Los Angeles Dodgers cover -2.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-08-27T15:42:40.080066+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525840"
-    ],
-    "title": "Will the Houston Astros win the 2nd inning vs the New York Yankees?",
-    "ask_cents": 22
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
-    ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 60
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-08-27T15:42:40.080089+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
-    ],
-    "title": "Baltimore Orioles vs. St. Louis Cardinals",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508669"
-    ],
-    "title": "Will the Baltimore Orioles cover 1.5 vs the St. Louis Cardinals in Baltimore Orioles vs St. Louis Cardinals?",
-    "no_cost_cents": 28
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-08-27T15:42:40.080142+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "80b66674290db83a45ec0406e30bc07f"
-    ],
-    "title": "Andrea Lazaro Garcia at Polina Iatcenko",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "534203"
-    ],
-    "title": "Will the Polina Iatcenko cover -2.5 vs the Andrea Lazaro Garcia in Polina Iatcenko vs. Andrea Lazaro Garcia?",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-08-27T15:42:40.080056+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525852"
-    ],
-    "title": "Will the Houston Astros win the 6th inning vs the New York Yankees?",
-    "ask_cents": 25
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
-    ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 60
-   },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-08-27T15:42:40.080165+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "531140"
-    ],
-    "title": "Will the total in Los Angeles Dodgers vs Atlanta Braves be more than 8.5?",
-    "ask_cents": 32
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-08-27T15:42:40.080193+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508611"
-    ],
-    "title": "Will the Milwaukee Brewers cover -1.5 vs the New York Mets in Milwaukee Brewers vs New York Mets?",
-    "ask_cents": 53
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3c68ec207148e9857c0db83b8791d76c25de9d007b33dfffccbf2b4b148cf65"
-    ],
-    "title": "Milwaukee Brewers vs. New York Mets",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-08-27T15:42:40.080118+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508640"
-    ],
-    "title": "Will the Houston Astros cover -1.5 vs the New York Yankees in Houston Astros vs New York Yankees?",
-    "ask_cents": 30
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
-    ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 60
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-08-27T15:42:40.080171+00:00"
+   "total_cost_cents": 21,
+   "edge_bps": 7900,
+   "detected_at": "2026-08-27T20:43:13.636742+00:00"
   }
  ]
 }
