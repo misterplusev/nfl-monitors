@@ -1,81 +1,81 @@
 {
- "scanned_at": "2026-08-27T12:49:27.506741+00:00",
+ "scanned_at": "2026-08-27T12:51:28.774324+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 161.8,
+ "loop_uptime_min": 163.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 108160,
-   "last_tick_age_s": 0.0
+   "markets": 108829,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 13719,
-   "last_tick_age_s": 0.1
+   "markets": 14232,
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 121,
+   "markets": 122,
    "last_tick_age_s": 1.2
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 269,
-   "last_tick_age_s": 5.0
+   "last_tick_age_s": 7.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 9513.7
+   "last_tick_age_s": 9635.0
   }
  ],
  "totals": {
-  "markets_tracked": 122287,
+  "markets_tracked": 123470,
   "pairs_married": 9,
   "arbitrages": 9
  },
  "stats": {
-  "commits": 79,
-  "gist_errors": 173,
+  "commits": 80,
+  "gist_errors": 175,
   "hot_errors": 0,
   "kalshi.rest_updates": 200,
-  "kalshi.sweeps": 1538,
-  "kalshi.ticks": 6400501,
-  "kalshi.updates": 1995872,
+  "kalshi.sweeps": 1550,
+  "kalshi.ticks": 6464772,
+  "kalshi.updates": 2021726,
   "kalshi.ws_errors": 1,
-  "kalshi.ws_ticks": 6399301,
-  "kalshi.ws_trades": 621742,
-  "live_evals_fired": 5,
-  "novig.rest_updates": 1465,
-  "novig.sweeps": 1537,
-  "novig.ticks": 365327,
-  "novig.updates": 1465,
-  "pairs_blocked_antonym_date": 966,
-  "pmglobal.rest_updates": 6639,
-  "pmglobal.sweeps": 1537,
-  "pmglobal.ticks": 172461,
-  "pmglobal.updates": 14277,
+  "kalshi.ws_ticks": 6463572,
+  "kalshi.ws_trades": 629769,
+  "live_evals_fired": 6,
+  "novig.rest_updates": 1478,
+  "novig.sweeps": 1549,
+  "novig.ticks": 368219,
+  "novig.updates": 1478,
+  "pairs_blocked_antonym_date": 1094,
+  "pmglobal.rest_updates": 6702,
+  "pmglobal.sweeps": 1550,
+  "pmglobal.ticks": 173928,
+  "pmglobal.updates": 14389,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 2831962,
-  "pmglobal.ws_ticks": 18661,
-  "pmus.rest_updates": 24637,
-  "pmus.sweeps": 1538,
-  "pmus.ticks": 758476,
-  "pmus.updates": 24637,
-  "pmus_x.last_count": 7073,
-  "pmus_x.sweeps": 1539,
+  "pmglobal.ws_msgs": 2856458,
+  "pmglobal.ws_ticks": 18828,
+  "pmus.rest_updates": 26520,
+  "pmus.sweeps": 1550,
+  "pmus.ticks": 847104,
+  "pmus.updates": 26520,
+  "pmus_x.last_count": 7586,
+  "pmus_x.sweeps": 1551,
   "prophetx.ticks": 594,
   "prophetx.updates": 30,
-  "prophetx.ws_errors": 634,
+  "prophetx.ws_errors": 642,
   "px.evt_scanned": 18,
-  "pxboard.sweeps": 1537,
-  "supa_errors": 4379
+  "pxboard.sweeps": 1549,
+  "supa_errors": 4416
  },
  "arbitrages": [
   {
@@ -99,7 +99,7 @@
    },
    "total_cost_cents": 32,
    "edge_bps": 6800,
-   "detected_at": "2026-08-27T12:49:27.506669+00:00"
+   "detected_at": "2026-08-27T12:51:28.774245+00:00"
   },
   {
    "buy_yes": {
@@ -122,7 +122,7 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-08-27T12:49:27.506677+00:00"
+   "detected_at": "2026-08-27T12:51:28.774255+00:00"
   },
   {
    "buy_yes": {
@@ -145,7 +145,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-08-27T12:49:27.506659+00:00"
+   "detected_at": "2026-08-27T12:51:28.774235+00:00"
   },
   {
    "buy_yes": {
@@ -172,6 +172,29 @@
   },
   {
    "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "528399"
+    ],
+    "title": "Sandro Kopp vs. Martin Krumich",
+    "ask_cents": 65
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5553ca080f076784ff857d08e6a04c8c347ceba81a63bb6f46eb34346d2f3896"
+    ],
+    "title": "Augsburg: Sandro Kopp vs Martin Krumich",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-08-27T12:50:25.266706+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -191,30 +214,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-08-27T12:49:27.506638+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "528399"
-    ],
-    "title": "Sandro Kopp vs. Martin Krumich",
-    "ask_cents": 65
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5553ca080f076784ff857d08e6a04c8c347ceba81a63bb6f46eb34346d2f3896"
-    ],
-    "title": "Augsburg: Sandro Kopp vs Martin Krumich",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-08-27T12:45:19.664849+00:00"
+   "detected_at": "2026-08-27T12:51:28.774205+00:00"
   },
   {
    "buy_yes": {
@@ -283,7 +283,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-27T12:49:27.506683+00:00"
+   "detected_at": "2026-08-27T12:51:28.774261+00:00"
   }
  ]
 }
