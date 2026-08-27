@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-08-27T13:23:59.118946+00:00",
+ "scanned_at": "2026-08-27T13:26:00.938685+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 196.3,
+ "loop_uptime_min": 198.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 122958,
+   "markets": 123690,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 14574,
-   "last_tick_age_s": 0.7
+   "markets": 14577,
+   "last_tick_age_s": 5.4
   },
   {
    "venue": "pmglobal",
@@ -26,56 +26,56 @@
    "venue": "novig",
    "state": "OK",
    "markets": 278,
-   "last_tick_age_s": 16.8
+   "last_tick_age_s": 2.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 11585.4
+   "last_tick_age_s": 11707.2
   }
  ],
  "totals": {
-  "markets_tracked": 137954,
-  "pairs_married": 8,
-  "arbitrages": 7
+  "markets_tracked": 138689,
+  "pairs_married": 7,
+  "arbitrages": 6
  },
  "stats": {
-  "commits": 96,
-  "gist_errors": 209,
+  "commits": 97,
+  "gist_errors": 211,
   "hot_errors": 0,
   "kalshi.rest_updates": 399,
-  "kalshi.sweeps": 1735,
-  "kalshi.ticks": 7627024,
-  "kalshi.updates": 2508057,
+  "kalshi.sweeps": 1748,
+  "kalshi.ticks": 7717617,
+  "kalshi.updates": 2538252,
   "kalshi.ws_errors": 1,
-  "kalshi.ws_ticks": 7625227,
-  "kalshi.ws_trades": 783245,
+  "kalshi.ws_ticks": 7715820,
+  "kalshi.ws_trades": 794581,
   "live_evals_fired": 17,
-  "novig.rest_updates": 1807,
-  "novig.sweeps": 1734,
-  "novig.ticks": 412724,
-  "novig.updates": 1807,
-  "pairs_blocked_antonym_date": 2948,
-  "pmglobal.rest_updates": 7493,
-  "pmglobal.sweeps": 1734,
-  "pmglobal.ticks": 195128,
-  "pmglobal.updates": 15982,
+  "novig.rest_updates": 1831,
+  "novig.sweeps": 1747,
+  "novig.ticks": 415870,
+  "novig.updates": 1831,
+  "pairs_blocked_antonym_date": 3076,
+  "pmglobal.rest_updates": 7559,
+  "pmglobal.sweeps": 1747,
+  "pmglobal.ticks": 196642,
+  "pmglobal.updates": 16107,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 3238724,
-  "pmglobal.ws_ticks": 21628,
-  "pmus.rest_updates": 50733,
-  "pmus.sweeps": 1735,
-  "pmus.ticks": 2302105,
-  "pmus.updates": 50733,
-  "pmus_x.last_count": 7928,
-  "pmus_x.sweeps": 1736,
+  "pmglobal.ws_msgs": 3278709,
+  "pmglobal.ws_ticks": 21842,
+  "pmus.rest_updates": 51945,
+  "pmus.sweeps": 1747,
+  "pmus.ticks": 2397264,
+  "pmus.updates": 51945,
+  "pmus_x.last_count": 7931,
+  "pmus_x.sweeps": 1748,
   "prophetx.ticks": 594,
   "prophetx.updates": 30,
-  "prophetx.ws_errors": 760,
+  "prophetx.ws_errors": 768,
   "px.evt_scanned": 18,
-  "pxboard.sweeps": 1734,
-  "supa_errors": 4984
+  "pxboard.sweeps": 1747,
+  "supa_errors": 5022
  },
  "arbitrages": [
   {
@@ -99,7 +99,7 @@
    },
    "total_cost_cents": 32,
    "edge_bps": 6800,
-   "detected_at": "2026-08-27T13:23:59.118867+00:00"
+   "detected_at": "2026-08-27T13:26:00.938616+00:00"
   },
   {
    "buy_yes": {
@@ -122,7 +122,7 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-08-27T13:23:59.118874+00:00"
+   "detected_at": "2026-08-27T13:26:00.938623+00:00"
   },
   {
    "buy_yes": {
@@ -145,7 +145,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-08-27T13:23:59.118857+00:00"
+   "detected_at": "2026-08-27T13:26:00.938597+00:00"
   },
   {
    "buy_yes": {
@@ -172,29 +172,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "528399"
-    ],
-    "title": "Sandro Kopp vs. Martin Krumich",
-    "ask_cents": 65
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5553ca080f076784ff857d08e6a04c8c347ceba81a63bb6f46eb34346d2f3896"
-    ],
-    "title": "Augsburg: Sandro Kopp vs Martin Krumich",
-    "no_cost_cents": 20
-   },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-08-27T13:20:26.675138+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -214,7 +191,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-08-27T13:23:59.118830+00:00"
+   "detected_at": "2026-08-27T13:26:00.938576+00:00"
   },
   {
    "buy_yes": {
@@ -237,7 +214,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-27T13:23:59.118880+00:00"
+   "detected_at": "2026-08-27T13:26:00.938628+00:00"
   }
  ]
 }
