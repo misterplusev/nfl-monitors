@@ -1,77 +1,79 @@
 {
- "scanned_at": "2026-08-27T20:43:19.003548+00:00",
+ "scanned_at": "2026-08-27T20:45:19.594846+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.2,
+ "loop_uptime_min": 4.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 13636,
+   "markets": 22754,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 2.2
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 100,
-   "last_tick_age_s": 0.7
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 227,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 16.5
   },
   {
    "venue": "prophetx",
    "state": "OK",
-   "markets": 55,
-   "last_tick_age_s": 5.4
+   "markets": 58,
+   "last_tick_age_s": 14.3
   }
  ],
  "totals": {
-  "markets_tracked": 22017,
+  "markets_tracked": 31138,
   "pairs_married": 2,
   "arbitrages": 1
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 12,
-  "kalshi.ticks": 61573,
-  "kalshi.updates": 37286,
-  "kalshi.ws_ticks": 61573,
-  "kalshi.ws_trades": 18442,
-  "live_evals_fired": 22,
-  "novig.rest_updates": 327,
-  "novig.sweeps": 12,
-  "novig.ticks": 2867,
-  "novig.updates": 327,
-  "pairs_blocked_antonym_date": 60,
-  "pmglobal.rest_updates": 262,
-  "pmglobal.sweeps": 12,
-  "pmglobal.ticks": 1756,
-  "pmglobal.updates": 443,
-  "pmglobal.ws_msgs": 53642,
-  "pmglobal.ws_ticks": 456,
+  "kalshi.sweeps": 22,
+  "kalshi.ticks": 121362,
+  "kalshi.updates": 72932,
+  "kalshi.ws_ticks": 121362,
+  "kalshi.ws_trades": 35750,
+  "live_evals_fired": 44,
+  "novig.rest_updates": 398,
+  "novig.sweeps": 21,
+  "novig.ticks": 4846,
+  "novig.updates": 398,
+  "pairs_blocked_antonym_date": 113,
+  "pmglobal.rest_updates": 405,
+  "pmglobal.sweeps": 21,
+  "pmglobal.ticks": 3109,
+  "pmglobal.updates": 754,
+  "pmglobal.ws_errors": 1,
+  "pmglobal.ws_msgs": 96932,
+  "pmglobal.ws_ticks": 909,
   "pmus.rest_updates": 7999,
-  "pmus.sweeps": 12,
-  "pmus.ticks": 103987,
+  "pmus.sweeps": 22,
+  "pmus.ticks": 183977,
   "pmus.updates": 7999,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 13,
-  "prophetx.ticks": 635,
-  "prophetx.updates": 117,
-  "prophetx.ws_errors": 8,
-  "px.evt_scanned": 54,
-  "pxboard.sweeps": 11,
-  "supa_errors": 41
+  "pmus_x.sweeps": 23,
+  "prophetx.ticks": 1191,
+  "prophetx.updates": 169,
+  "prophetx.ws_errors": 14,
+  "px.evt_scanned": 56,
+  "pxboard.sweeps": 21,
+  "supa_errors": 75
  },
  "arbitrages": [
   {
@@ -82,7 +84,7 @@
      "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
     ],
     "title": "Baltimore Orioles vs. St. Louis Cardinals",
-    "ask_cents": 16
+    "ask_cents": 7
    },
    "buy_no": {
     "venue": "prophetx",
@@ -91,11 +93,11 @@
      "3cb98d0f75feff06e88477b8b2ec52d9"
     ],
     "title": "Baltimore Orioles at St. Louis Cardinals",
-    "no_cost_cents": 5
+    "no_cost_cents": 7
    },
-   "total_cost_cents": 21,
-   "edge_bps": 7900,
-   "detected_at": "2026-08-27T20:43:13.636742+00:00"
+   "total_cost_cents": 14,
+   "edge_bps": 8600,
+   "detected_at": "2026-08-27T20:45:05.573942+00:00"
   }
  ]
 }
