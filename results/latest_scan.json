@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-08-27T00:17:57.484680+00:00",
+ "scanned_at": "2026-08-27T00:19:57.552692+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 20.9,
+ "loop_uptime_min": 22.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 52570,
+   "markets": 54786,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 105,
+   "markets": 107,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 164,
-   "last_tick_age_s": 11.2
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 983.6
+   "last_tick_age_s": 1103.7
   }
  ],
  "totals": {
-  "markets_tracked": 60856,
+  "markets_tracked": 63074,
   "pairs_married": 6,
-  "arbitrages": 6
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 9,
-  "gist_errors": 22,
+  "commits": 10,
+  "gist_errors": 24,
   "hot_errors": 0,
-  "kalshi.sweeps": 127,
-  "kalshi.ticks": 923584,
-  "kalshi.updates": 462865,
-  "kalshi.ws_ticks": 923584,
-  "kalshi.ws_trades": 179177,
-  "live_evals_fired": 410,
-  "novig.rest_updates": 3123,
-  "novig.sweeps": 126,
-  "novig.ticks": 19210,
-  "novig.updates": 3123,
-  "pairs_blocked_antonym_date": 1114,
-  "pmglobal.rest_updates": 2259,
-  "pmglobal.sweeps": 126,
-  "pmglobal.ticks": 16999,
-  "pmglobal.updates": 4668,
-  "pmglobal.ws_errors": 15,
-  "pmglobal.ws_msgs": 865587,
-  "pmglobal.ws_ticks": 4299,
-  "pmus.rest_updates": 10676,
-  "pmus.sweeps": 127,
-  "pmus.ticks": 1023872,
-  "pmus.updates": 10676,
+  "kalshi.sweeps": 139,
+  "kalshi.ticks": 1014363,
+  "kalshi.updates": 508846,
+  "kalshi.ws_ticks": 1014363,
+  "kalshi.ws_trades": 194475,
+  "live_evals_fired": 461,
+  "novig.rest_updates": 3433,
+  "novig.sweeps": 139,
+  "novig.ticks": 21185,
+  "novig.updates": 3433,
+  "pairs_blocked_antonym_date": 1244,
+  "pmglobal.rest_updates": 2430,
+  "pmglobal.sweeps": 139,
+  "pmglobal.ticks": 18686,
+  "pmglobal.updates": 5040,
+  "pmglobal.ws_errors": 16,
+  "pmglobal.ws_msgs": 953050,
+  "pmglobal.ws_ticks": 4686,
+  "pmus.rest_updates": 10983,
+  "pmus.sweeps": 139,
+  "pmus.ticks": 1119860,
+  "pmus.updates": 10983,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 128,
+  "pmus_x.sweeps": 140,
   "prophetx.ticks": 372,
   "prophetx.updates": 168,
-  "prophetx.ws_errors": 76,
+  "prophetx.ws_errors": 84,
   "px.evt_scanned": 12,
-  "pxboard.sweeps": 126,
-  "supa_errors": 382
+  "pxboard.sweeps": 138,
+  "supa_errors": 419
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0x397d306788138d7c32e10e9b51326e831a703e15c8233295f01ae55dbc91d68a"
     ],
     "title": "Boston Red Sox vs. Miami Marlins",
-    "ask_cents": 23
+    "ask_cents": 30
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +95,9 @@
     "title": "Boston Red Sox at Miami Marlins",
     "no_cost_cents": 24
    },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-08-27T00:17:35.321998+00:00"
+   "total_cost_cents": 54,
+   "edge_bps": 4600,
+   "detected_at": "2026-08-27T00:19:17.867803+00:00"
   },
   {
    "buy_yes": {
@@ -116,34 +116,11 @@
      "0xe468170d16efeb49b9211f8bfeda6ab6ce9783dc9d5d23686c1717ba71302fcb"
     ],
     "title": "Colorado Rockies vs. Washington Nationals",
-    "no_cost_cents": 20
+    "no_cost_cents": 18
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-08-27T00:17:17.723745+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0a1680549a4ac11ecc346b9d7c572236"
-    ],
-    "title": "Colorado Rockies at Washington Nationals",
-    "ask_cents": 43
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9aff8481827a1c5dce2bc5fde068e7c0cd09b6870983a6e70386a9d71a53c889"
-    ],
-    "title": "Colorado Rockies vs. Washington Nationals: O/U 8.5",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-08-27T00:17:17.625129+00:00"
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-08-27T00:19:56.324893+00:00"
   },
   {
    "buy_yes": {
@@ -162,21 +139,21 @@
      "0xe468170d16efeb49b9211f8bfeda6ab6ce9783dc9d5d23686c1717ba71302fcb"
     ],
     "title": "Colorado Rockies vs. Washington Nationals",
-    "no_cost_cents": 20
+    "no_cost_cents": 18
    },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-08-27T00:17:17.759794+00:00"
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-08-27T00:19:56.360670+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "56084d63f0d5e866285a32ebc378c6a2"
+     "0a1680549a4ac11ecc346b9d7c572236"
     ],
     "title": "Colorado Rockies at Washington Nationals",
-    "ask_cents": 60
+    "ask_cents": 43
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -185,34 +162,34 @@
      "0x9aff8481827a1c5dce2bc5fde068e7c0cd09b6870983a6e70386a9d71a53c889"
     ],
     "title": "Colorado Rockies vs. Washington Nationals: O/U 8.5",
-    "no_cost_cents": 30
+    "no_cost_cents": 40
    },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-08-27T00:17:17.649488+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-08-27T00:19:17.767571+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x397d306788138d7c32e10e9b51326e831a703e15c8233295f01ae55dbc91d68a"
-    ],
-    "title": "Boston Red Sox vs. Miami Marlins",
-    "ask_cents": 23
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "14465979c0a6346a98c826d797aafd72"
     ],
     "title": "Boston Red Sox at Miami Marlins",
-    "no_cost_cents": 75
+    "ask_cents": 26
    },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-08-27T00:17:35.294091+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x397d306788138d7c32e10e9b51326e831a703e15c8233295f01ae55dbc91d68a"
+    ],
+    "title": "Boston Red Sox vs. Miami Marlins",
+    "no_cost_cents": 70
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-08-27T00:19:17.838471+00:00"
   }
  ]
 }
