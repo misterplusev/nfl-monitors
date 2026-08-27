@@ -1,83 +1,175 @@
 {
- "scanned_at": "2026-08-27T12:28:48.948866+00:00",
+ "scanned_at": "2026-08-27T12:30:49.885742+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 141.1,
+ "loop_uptime_min": 143.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 84552,
-   "last_tick_age_s": 0.0
+   "markets": 99270,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 3105,
-   "last_tick_age_s": 0.0
+   "markets": 5928,
+   "last_tick_age_s": 6.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 119,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 264,
-   "last_tick_age_s": 4.8
+   "markets": 265,
+   "last_tick_age_s": 4.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 8275.1
+   "last_tick_age_s": 8396.1
   }
  ],
  "totals": {
-  "markets_tracked": 88058,
-  "pairs_married": 3,
-  "arbitrages": 3
+  "markets_tracked": 105600,
+  "pairs_married": 8,
+  "arbitrages": 8
  },
  "stats": {
-  "commits": 69,
-  "gist_errors": 152,
+  "commits": 70,
+  "gist_errors": 154,
   "hot_errors": 0,
   "kalshi.rest_updates": 200,
-  "kalshi.sweeps": 1408,
-  "kalshi.ticks": 5678198,
-  "kalshi.updates": 1689278,
+  "kalshi.sweeps": 1421,
+  "kalshi.ticks": 5759017,
+  "kalshi.updates": 1732197,
   "kalshi.ws_errors": 1,
-  "kalshi.ws_ticks": 5676998,
-  "kalshi.ws_trades": 537799,
+  "kalshi.ws_ticks": 5757817,
+  "kalshi.ws_trades": 546522,
   "live_evals_fired": 1,
-  "novig.rest_updates": 1290,
-  "novig.sweeps": 1407,
-  "novig.ticks": 334099,
-  "novig.updates": 1290,
-  "pairs_blocked_antonym_date": 60,
-  "pmglobal.rest_updates": 6086,
-  "pmglobal.sweeps": 1407,
-  "pmglobal.ticks": 157738,
-  "pmglobal.updates": 13207,
+  "novig.rest_updates": 1321,
+  "novig.sweeps": 1420,
+  "novig.ticks": 337214,
+  "novig.updates": 1321,
+  "pairs_blocked_antonym_date": 145,
+  "pmglobal.rest_updates": 6137,
+  "pmglobal.sweeps": 1420,
+  "pmglobal.ticks": 159194,
+  "pmglobal.updates": 13302,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 2619688,
-  "pmglobal.ws_ticks": 16938,
-  "pmus.rest_updates": 4064,
-  "pmus.sweeps": 1408,
-  "pmus.ticks": 44205,
-  "pmus.updates": 4064,
-  "pmus_x.last_count": 3175,
-  "pmus_x.sweeps": 1409,
+  "pmglobal.ws_msgs": 2643904,
+  "pmglobal.ws_ticks": 17094,
+  "pmus.rest_updates": 8315,
+  "pmus.sweeps": 1420,
+  "pmus.ticks": 95409,
+  "pmus.updates": 8315,
+  "pmus_x.last_count": 5313,
+  "pmus_x.sweeps": 1421,
   "prophetx.ticks": 594,
   "prophetx.updates": 30,
-  "prophetx.ws_errors": 560,
+  "prophetx.ws_errors": 567,
   "px.evt_scanned": 18,
-  "pxboard.sweeps": 1407,
-  "supa_errors": 3978
+  "pxboard.sweeps": 1420,
+  "supa_errors": 4019
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a033d5-8e62-7331-8da6-67a8b40ead1d"
+    ],
+    "title": "Chelsea -1.5 (EPL)",
+    "ask_cents": 30
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "486540"
+    ],
+    "title": "Chelsea EPL Points",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 32,
+   "edge_bps": 6800,
+   "detected_at": "2026-08-27T12:30:49.885660+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "80b66674290db83a45ec0406e30bc07f"
+    ],
+    "title": "Andrea Lazaro Garcia at Polina Iatcenko",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "534204"
+    ],
+    "title": "Will the Polina Iatcenko cover 2.5 vs the Andrea Lazaro Garcia in Polina Iatcenko vs. Andrea Lazaro Garcia?",
+    "no_cost_cents": 6
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-08-27T12:30:49.885677+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0df6820bbb777df97df370eb9a30cab1"
+    ],
+    "title": "Andrea Lazaro Garcia at Polina Iatcenko",
+    "ask_cents": 56
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "534204"
+    ],
+    "title": "Will the Polina Iatcenko cover 2.5 vs the Andrea Lazaro Garcia in Polina Iatcenko vs. Andrea Lazaro Garcia?",
+    "no_cost_cents": 6
+   },
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-08-27T12:30:49.885639+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525801"
+    ],
+    "title": "Will the Colorado Rockies win the 7th inning vs the Washington Nationals?",
+    "ask_cents": 25
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x22a21921a9dad2575c6e27979f44decb5acdc270027113da17f74a49d9a6c87e"
+    ],
+    "title": "Colorado Rockies vs. Washington Nationals",
+    "no_cost_cents": 54
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-08-27T12:30:49.885652+00:00"
+  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -99,7 +191,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-08-27T12:28:48.948794+00:00"
+   "detected_at": "2026-08-27T12:30:49.885596+00:00"
   },
   {
    "buy_yes": {
@@ -126,6 +218,29 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xd33f6b8538ef01ffb4d36c5ee400c19349b01949d989107cc1053e54a8847574"
+    ],
+    "title": "Roehampton 2: Inaki Montes vs George Loffhagen",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "528402"
+    ],
+    "title": "Inaki Montes vs. George Loffhagen",
+    "no_cost_cents": 90
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-27T12:30:49.885670+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -145,7 +260,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-27T12:28:48.948814+00:00"
+   "detected_at": "2026-08-27T12:30:49.885682+00:00"
   }
  ]
 }
