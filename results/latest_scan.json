@@ -1,127 +1,80 @@
 {
- "scanned_at": "2026-08-27T01:23:11.650154+00:00",
+ "scanned_at": "2026-08-27T01:25:18.075864+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 86.1,
+ "loop_uptime_min": 88.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 99825,
+   "markets": 100732,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 2.2
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 119,
-   "last_tick_age_s": 0.4
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 189,
-   "last_tick_age_s": 8.4
+   "markets": 192,
+   "last_tick_age_s": 11.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 4897.8
+   "last_tick_age_s": 5024.3
   }
  ],
  "totals": {
-  "markets_tracked": 108150,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 109060,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 41,
-  "gist_errors": 90,
+  "commits": 42,
+  "gist_errors": 92,
   "hot_errors": 0,
   "kalshi.rest_updates": 42,
-  "kalshi.sweeps": 510,
-  "kalshi.ticks": 3489959,
-  "kalshi.updates": 1722861,
-  "kalshi.ws_ticks": 3489868,
-  "kalshi.ws_trades": 736725,
+  "kalshi.sweeps": 522,
+  "kalshi.ticks": 3561566,
+  "kalshi.updates": 1757877,
+  "kalshi.ws_ticks": 3561475,
+  "kalshi.ws_trades": 753872,
   "live_evals_fired": 1370,
-  "novig.rest_updates": 10504,
-  "novig.sweeps": 509,
-  "novig.ticks": 75313,
-  "novig.updates": 10504,
-  "pairs_blocked_antonym_date": 4748,
-  "pmglobal.rest_updates": 7435,
-  "pmglobal.sweeps": 510,
-  "pmglobal.ticks": 66183,
-  "pmglobal.updates": 15601,
+  "novig.rest_updates": 10711,
+  "novig.sweeps": 521,
+  "novig.ticks": 77035,
+  "novig.updates": 10711,
+  "pairs_blocked_antonym_date": 4832,
+  "pmglobal.rest_updates": 7504,
+  "pmglobal.sweeps": 521,
+  "pmglobal.ticks": 67470,
+  "pmglobal.updates": 15735,
   "pmglobal.ws_errors": 58,
-  "pmglobal.ws_msgs": 2813916,
-  "pmglobal.ws_ticks": 15083,
-  "pmus.rest_updates": 21497,
-  "pmus.sweeps": 510,
-  "pmus.ticks": 4087489,
-  "pmus.updates": 21497,
+  "pmglobal.ws_msgs": 2851291,
+  "pmglobal.ws_ticks": 15270,
+  "pmus.rest_updates": 21885,
+  "pmus.sweeps": 522,
+  "pmus.ticks": 4183477,
+  "pmus.updates": 21885,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 511,
+  "pmus_x.sweeps": 523,
   "prophetx.ticks": 372,
   "prophetx.updates": 168,
-  "prophetx.ws_errors": 317,
+  "prophetx.ws_errors": 324,
   "px.evt_scanned": 12,
-  "pxboard.sweeps": 509,
-  "supa_errors": 1545
+  "pxboard.sweeps": 521,
+  "supa_errors": 1580
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x397d306788138d7c32e10e9b51326e831a703e15c8233295f01ae55dbc91d68a"
-    ],
-    "title": "Boston Red Sox vs. Miami Marlins",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6375d4f342b3dba5af3a892d21bbbfc1"
-    ],
-    "title": "Boston Red Sox at Miami Marlins",
-    "no_cost_cents": 24
-   },
-   "total_cost_cents": 26,
-   "edge_bps": 7400,
-   "detected_at": "2026-08-27T01:22:06.516035+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x397d306788138d7c32e10e9b51326e831a703e15c8233295f01ae55dbc91d68a"
-    ],
-    "title": "Boston Red Sox vs. Miami Marlins",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "14465979c0a6346a98c826d797aafd72"
-    ],
-    "title": "Boston Red Sox at Miami Marlins",
-    "no_cost_cents": 75
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-08-27T01:22:06.490624+00:00"
-  }
- ]
+ "arbitrages": []
 }
