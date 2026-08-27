@@ -1,81 +1,81 @@
 {
- "scanned_at": "2026-08-27T15:35:23.529179+00:00",
+ "scanned_at": "2026-08-27T15:37:25.573259+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 327.7,
+ "loop_uptime_min": 329.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 165140,
-   "last_tick_age_s": 0.0
+   "markets": 166207,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 14645,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 5.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 141,
-   "last_tick_age_s": 0.1
+   "markets": 146,
+   "last_tick_age_s": 0.8
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 306,
-   "last_tick_age_s": 10.9
+   "last_tick_age_s": 2.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 19469.8
+   "last_tick_age_s": 19591.9
   }
  ],
  "totals": {
-  "markets_tracked": 180250,
-  "pairs_married": 25,
-  "arbitrages": 23
+  "markets_tracked": 181322,
+  "pairs_married": 31,
+  "arbitrages": 25
  },
  "stats": {
-  "commits": 160,
-  "gist_errors": 343,
+  "commits": 161,
+  "gist_errors": 345,
   "hot_errors": 0,
   "kalshi.rest_updates": 419,
-  "kalshi.sweeps": 2454,
-  "kalshi.ticks": 11212074,
-  "kalshi.updates": 3928892,
+  "kalshi.sweeps": 2466,
+  "kalshi.ticks": 11300696,
+  "kalshi.updates": 3966880,
   "kalshi.ws_errors": 5,
-  "kalshi.ws_ticks": 11210217,
-  "kalshi.ws_trades": 1492511,
+  "kalshi.ws_ticks": 11298839,
+  "kalshi.ws_trades": 1504139,
   "live_evals_fired": 22,
-  "novig.rest_updates": 3521,
-  "novig.sweeps": 2453,
-  "novig.ticks": 586777,
-  "novig.updates": 3521,
-  "pairs_blocked_antonym_date": 10315,
-  "pmglobal.rest_updates": 11247,
-  "pmglobal.sweeps": 2453,
-  "pmglobal.ticks": 280816,
-  "pmglobal.updates": 23961,
+  "novig.rest_updates": 3547,
+  "novig.sweeps": 2465,
+  "novig.ticks": 589637,
+  "novig.updates": 3547,
+  "pairs_blocked_antonym_date": 10435,
+  "pmglobal.rest_updates": 11316,
+  "pmglobal.sweeps": 2465,
+  "pmglobal.ticks": 282262,
+  "pmglobal.updates": 24095,
   "pmglobal.ws_errors": 4,
-  "pmglobal.ws_msgs": 5799909,
-  "pmglobal.ws_ticks": 35416,
-  "pmus.rest_updates": 102107,
-  "pmus.sweeps": 2454,
-  "pmus.ticks": 8049794,
-  "pmus.updates": 102107,
-  "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 2455,
+  "pmglobal.ws_msgs": 5831507,
+  "pmglobal.ws_ticks": 35662,
+  "pmus.rest_updates": 103074,
+  "pmus.sweeps": 2465,
+  "pmus.ticks": 8137774,
+  "pmus.updates": 103074,
+  "pmus_x.last_count": 7998,
+  "pmus_x.sweeps": 2466,
   "prophetx.ticks": 594,
   "prophetx.updates": 30,
-  "prophetx.ws_errors": 1235,
+  "prophetx.ws_errors": 1243,
   "px.evt_scanned": 18,
-  "pxboard.sweeps": 2453,
-  "supa_errors": 7187
+  "pxboard.sweeps": 2465,
+  "supa_errors": 7222
  },
  "arbitrages": [
   {
@@ -99,7 +99,7 @@
    },
    "total_cost_cents": 32,
    "edge_bps": 6800,
-   "detected_at": "2026-08-27T15:35:23.529063+00:00"
+   "detected_at": "2026-08-27T15:37:25.573108+00:00"
   },
   {
    "buy_yes": {
@@ -122,7 +122,30 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-08-27T15:35:23.529096+00:00"
+   "detected_at": "2026-08-27T15:37:25.573160+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
+    ],
+    "title": "Baltimore Orioles vs. St. Louis Cardinals",
+    "ask_cents": 55
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525834"
+    ],
+    "title": "Will the Baltimore Orioles win the 9th inning vs the St. Louis Cardinals?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-08-27T15:37:25.573120+00:00"
   },
   {
    "buy_yes": {
@@ -145,7 +168,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-08-27T15:35:23.529015+00:00"
+   "detected_at": "2026-08-27T15:37:25.573027+00:00"
   },
   {
    "buy_yes": {
@@ -168,7 +191,7 @@
    },
    "total_cost_cents": 64,
    "edge_bps": 3600,
-   "detected_at": "2026-08-27T15:35:23.529116+00:00"
+   "detected_at": "2026-08-27T15:37:25.573187+00:00"
   },
   {
    "buy_yes": {
@@ -191,7 +214,7 @@
    },
    "total_cost_cents": 67,
    "edge_bps": 3300,
-   "detected_at": "2026-08-27T15:35:23.529086+00:00"
+   "detected_at": "2026-08-27T15:37:25.573149+00:00"
   },
   {
    "buy_yes": {
@@ -214,7 +237,53 @@
    },
    "total_cost_cents": 68,
    "edge_bps": 3200,
-   "detected_at": "2026-08-27T15:35:23.529091+00:00"
+   "detected_at": "2026-08-27T15:37:25.573155+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525819"
+    ],
+    "title": "Will the Baltimore Orioles win the 4th inning vs the St. Louis Cardinals?",
+    "ask_cents": 24
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
+    ],
+    "title": "Baltimore Orioles vs. St. Louis Cardinals",
+    "no_cost_cents": 45
+   },
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-08-27T15:37:25.573049+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525816"
+    ],
+    "title": "Will the Baltimore Orioles win the 3rd inning vs the St. Louis Cardinals?",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
+    ],
+    "title": "Baltimore Orioles vs. St. Louis Cardinals",
+    "no_cost_cents": 45
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-08-27T15:37:25.573019+00:00"
   },
   {
    "buy_yes": {
@@ -237,7 +306,30 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-08-27T15:35:23.529036+00:00"
+   "detected_at": "2026-08-27T15:37:25.573056+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525828"
+    ],
+    "title": "Will the Baltimore Orioles win the 7th inning vs the St. Louis Cardinals?",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
+    ],
+    "title": "Baltimore Orioles vs. St. Louis Cardinals",
+    "no_cost_cents": 45
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-08-27T15:37:25.573126+00:00"
   },
   {
    "buy_yes": {
@@ -260,7 +352,7 @@
    },
    "total_cost_cents": 77,
    "edge_bps": 2300,
-   "detected_at": "2026-08-27T15:35:23.528977+00:00"
+   "detected_at": "2026-08-27T15:37:25.572979+00:00"
   },
   {
    "buy_yes": {
@@ -283,7 +375,30 @@
    },
    "total_cost_cents": 77,
    "edge_bps": 2300,
-   "detected_at": "2026-08-27T15:35:23.529028+00:00"
+   "detected_at": "2026-08-27T15:37:25.573042+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508667"
+    ],
+    "title": "Will the Baltimore Orioles cover -2.5 vs the St. Louis Cardinals in Baltimore Orioles vs St. Louis Cardinals?",
+    "ask_cents": 30
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
+    ],
+    "title": "Baltimore Orioles vs. St. Louis Cardinals",
+    "no_cost_cents": 45
+   },
+   "total_cost_cents": 77,
+   "edge_bps": 2300,
+   "detected_at": "2026-08-27T15:37:25.573178+00:00"
   },
   {
    "buy_yes": {
@@ -306,7 +421,7 @@
    },
    "total_cost_cents": 79,
    "edge_bps": 2100,
-   "detected_at": "2026-08-27T15:35:23.529057+00:00"
+   "detected_at": "2026-08-27T15:37:25.573102+00:00"
   },
   {
    "buy_yes": {
@@ -352,7 +467,7 @@
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-08-27T15:35:23.529051+00:00"
+   "detected_at": "2026-08-27T15:37:25.573095+00:00"
   },
   {
    "buy_yes": {
@@ -375,7 +490,7 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-08-27T15:35:23.529008+00:00"
+   "detected_at": "2026-08-27T15:37:25.573011+00:00"
   },
   {
    "buy_yes": {
@@ -398,7 +513,30 @@
    },
    "total_cost_cents": 84,
    "edge_bps": 1600,
-   "detected_at": "2026-08-27T15:35:23.529023+00:00"
+   "detected_at": "2026-08-27T15:37:25.573036+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa86a782533323251ea704679e351057ab309bf157123078741627af1ac23bd30"
+    ],
+    "title": "Baltimore Orioles vs. St. Louis Cardinals",
+    "ask_cents": 55
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508669"
+    ],
+    "title": "Will the Baltimore Orioles cover 1.5 vs the St. Louis Cardinals in Baltimore Orioles vs St. Louis Cardinals?",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-08-27T15:37:25.573114+00:00"
   },
   {
    "buy_yes": {
@@ -421,7 +559,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-08-27T15:35:23.528999+00:00"
+   "detected_at": "2026-08-27T15:37:25.573001+00:00"
   },
   {
    "buy_yes": {
@@ -444,7 +582,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-08-27T15:35:23.529075+00:00"
+   "detected_at": "2026-08-27T15:37:25.573138+00:00"
   },
   {
    "buy_yes": {
@@ -467,7 +605,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-08-27T15:35:23.529102+00:00"
+   "detected_at": "2026-08-27T15:37:25.573167+00:00"
   },
   {
    "buy_yes": {
@@ -490,7 +628,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-08-27T15:35:23.529045+00:00"
+   "detected_at": "2026-08-27T15:37:25.573065+00:00"
   },
   {
    "buy_yes": {
@@ -513,99 +651,7 @@
    },
    "total_cost_cents": 92,
    "edge_bps": 800,
-   "detected_at": "2026-08-27T15:35:23.529080+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525682"
-    ],
-    "title": "Will the Colorado Rockies win the first 5 innings vs the Washington Nationals?",
-    "ask_cents": 43
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xde0b24c0d202d6c3c15b3aa70fabc98df9a6c1274a42e885ceb2a9113d0b91c5"
-    ],
-    "title": "Colorado Rockies vs. Washington Nationals: O/U 9.5",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-08-27T15:35:23.529121+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "531137"
-    ],
-    "title": "Will the total in Los Angeles Dodgers vs Atlanta Braves be more than 6.5?",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-08-27T15:35:23.529069+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525706"
-    ],
-    "title": "Will the Los Angeles Dodgers win the first 5 innings vs the Atlanta Braves?",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-08-27T15:35:23.529126+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0df6820bbb777df97df370eb9a30cab1"
-    ],
-    "title": "Andrea Lazaro Garcia at Polina Iatcenko",
-    "ask_cents": 56
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "534203"
-    ],
-    "title": "Will the Polina Iatcenko cover -2.5 vs the Andrea Lazaro Garcia in Polina Iatcenko vs. Andrea Lazaro Garcia?",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-08-27T15:35:23.529107+00:00"
+   "detected_at": "2026-08-27T15:37:25.573144+00:00"
   }
  ]
 }
