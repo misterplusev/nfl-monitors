@@ -1,81 +1,81 @@
 {
- "scanned_at": "2026-08-27T12:53:32.778739+00:00",
+ "scanned_at": "2026-08-27T12:55:32.728666+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 165.8,
+ "loop_uptime_min": 167.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 109532,
-   "last_tick_age_s": 0.0
+   "markets": 110367,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 14478,
-   "last_tick_age_s": 0.1
+   "markets": 14481,
+   "last_tick_age_s": 4.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 122,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 1.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 270,
-   "last_tick_age_s": 11.5
+   "last_tick_age_s": 2.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 9759.0
+   "last_tick_age_s": 9878.9
   }
  ],
  "totals": {
-  "markets_tracked": 124420,
+  "markets_tracked": 125258,
   "pairs_married": 9,
   "arbitrages": 9
  },
  "stats": {
-  "commits": 81,
-  "gist_errors": 177,
+  "commits": 82,
+  "gist_errors": 179,
   "hot_errors": 0,
   "kalshi.rest_updates": 200,
-  "kalshi.sweeps": 1564,
-  "kalshi.ticks": 6528377,
-  "kalshi.updates": 2047738,
+  "kalshi.sweeps": 1576,
+  "kalshi.ticks": 6599912,
+  "kalshi.updates": 2079554,
   "kalshi.ws_errors": 1,
-  "kalshi.ws_ticks": 6527177,
-  "kalshi.ws_trades": 637332,
-  "live_evals_fired": 6,
-  "novig.rest_updates": 1504,
-  "novig.sweeps": 1563,
-  "novig.ticks": 371593,
-  "novig.updates": 1504,
-  "pairs_blocked_antonym_date": 1230,
-  "pmglobal.rest_updates": 6746,
-  "pmglobal.sweeps": 1563,
-  "pmglobal.ticks": 175389,
-  "pmglobal.updates": 14480,
+  "kalshi.ws_ticks": 6598712,
+  "kalshi.ws_trades": 646586,
+  "live_evals_fired": 8,
+  "novig.rest_updates": 1520,
+  "novig.sweeps": 1576,
+  "novig.ticks": 374726,
+  "novig.updates": 1520,
+  "pairs_blocked_antonym_date": 1358,
+  "pmglobal.rest_updates": 6817,
+  "pmglobal.sweeps": 1576,
+  "pmglobal.ticks": 176890,
+  "pmglobal.updates": 14610,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 2877425,
-  "pmglobal.ws_ticks": 18989,
-  "pmus.rest_updates": 28008,
-  "pmus.sweeps": 1564,
-  "pmus.ticks": 954626,
-  "pmus.updates": 28008,
-  "pmus_x.last_count": 7832,
-  "pmus_x.sweeps": 1565,
+  "pmglobal.ws_msgs": 2904880,
+  "pmglobal.ws_ticks": 19190,
+  "pmus.rest_updates": 29354,
+  "pmus.sweeps": 1576,
+  "pmus.ticks": 1048633,
+  "pmus.updates": 29354,
+  "pmus_x.last_count": 7835,
+  "pmus_x.sweeps": 1577,
   "prophetx.ticks": 594,
   "prophetx.updates": 30,
-  "prophetx.ws_errors": 649,
+  "prophetx.ws_errors": 657,
   "px.evt_scanned": 18,
-  "pxboard.sweeps": 1563,
-  "supa_errors": 4458
+  "pxboard.sweeps": 1576,
+  "supa_errors": 4498
  },
  "arbitrages": [
   {
@@ -99,7 +99,7 @@
    },
    "total_cost_cents": 32,
    "edge_bps": 6800,
-   "detected_at": "2026-08-27T12:53:32.778668+00:00"
+   "detected_at": "2026-08-27T12:55:32.728563+00:00"
   },
   {
    "buy_yes": {
@@ -122,7 +122,7 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-08-27T12:53:32.778675+00:00"
+   "detected_at": "2026-08-27T12:55:32.728573+00:00"
   },
   {
    "buy_yes": {
@@ -145,7 +145,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-08-27T12:53:32.778658+00:00"
+   "detected_at": "2026-08-27T12:55:32.728553+00:00"
   },
   {
    "buy_yes": {
@@ -172,29 +172,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "528399"
-    ],
-    "title": "Sandro Kopp vs. Martin Krumich",
-    "ask_cents": 65
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5553ca080f076784ff857d08e6a04c8c347ceba81a63bb6f46eb34346d2f3896"
-    ],
-    "title": "Augsburg: Sandro Kopp vs Martin Krumich",
-    "no_cost_cents": 18
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-08-27T12:50:25.266706+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -214,7 +191,53 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-08-27T12:53:32.778631+00:00"
+   "detected_at": "2026-08-27T12:55:32.728523+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "528399"
+    ],
+    "title": "Sandro Kopp vs. Martin Krumich",
+    "ask_cents": 65
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5553ca080f076784ff857d08e6a04c8c347ceba81a63bb6f46eb34346d2f3896"
+    ],
+    "title": "Augsburg: Sandro Kopp vs Martin Krumich",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-27T12:55:29.680691+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xd33f6b8538ef01ffb4d36c5ee400c19349b01949d989107cc1053e54a8847574"
+    ],
+    "title": "Roehampton 2: Inaki Montes vs George Loffhagen",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "528402"
+    ],
+    "title": "Inaki Montes vs. George Loffhagen",
+    "no_cost_cents": 90
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-08-27T12:55:29.713365+00:00"
   },
   {
    "buy_yes": {
@@ -241,29 +264,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd33f6b8538ef01ffb4d36c5ee400c19349b01949d989107cc1053e54a8847574"
-    ],
-    "title": "Roehampton 2: Inaki Montes vs George Loffhagen",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "528402"
-    ],
-    "title": "Inaki Montes vs. George Loffhagen",
-    "no_cost_cents": 90
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-08-27T12:45:19.664655+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -283,7 +283,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-27T12:53:32.778681+00:00"
+   "detected_at": "2026-08-27T12:55:32.728579+00:00"
   }
  ]
 }
