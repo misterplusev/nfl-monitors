@@ -1,81 +1,81 @@
 {
- "scanned_at": "2026-08-27T14:05:06.083473+00:00",
+ "scanned_at": "2026-08-27T14:07:11.962663+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 237.4,
+ "loop_uptime_min": 239.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 142742,
-   "last_tick_age_s": 4.0
+   "markets": 143823,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 14644,
-   "last_tick_age_s": 5.0
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 129,
-   "last_tick_age_s": 0.6
+   "markets": 133,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 286,
-   "last_tick_age_s": 2.4
+   "last_tick_age_s": 14.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 14052.3
+   "last_tick_age_s": 14178.2
   }
  ],
  "totals": {
-  "markets_tracked": 157819,
-  "pairs_married": 14,
-  "arbitrages": 13
+  "markets_tracked": 158904,
+  "pairs_married": 20,
+  "arbitrages": 18
  },
  "stats": {
-  "commits": 116,
-  "gist_errors": 251,
+  "commits": 117,
+  "gist_errors": 253,
   "hot_errors": 0,
   "kalshi.rest_updates": 399,
-  "kalshi.sweeps": 1959,
-  "kalshi.ticks": 9662640,
-  "kalshi.updates": 3272943,
+  "kalshi.sweeps": 1971,
+  "kalshi.ticks": 9767669,
+  "kalshi.updates": 3312967,
   "kalshi.ws_errors": 1,
-  "kalshi.ws_ticks": 9660843,
-  "kalshi.ws_trades": 1005439,
+  "kalshi.ws_ticks": 9765872,
+  "kalshi.ws_trades": 1015619,
   "live_evals_fired": 20,
-  "novig.rest_updates": 2259,
-  "novig.sweeps": 1959,
-  "novig.ticks": 467194,
-  "novig.updates": 2259,
-  "pairs_blocked_antonym_date": 5188,
-  "pmglobal.rest_updates": 8610,
-  "pmglobal.sweeps": 1959,
-  "pmglobal.ticks": 221742,
-  "pmglobal.updates": 18267,
-  "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 4023445,
-  "pmglobal.ws_ticks": 25742,
-  "pmus.rest_updates": 71609,
-  "pmus.sweeps": 1959,
-  "pmus.ticks": 4090601,
-  "pmus.updates": 71609,
+  "novig.rest_updates": 2275,
+  "novig.sweeps": 1970,
+  "novig.ticks": 469869,
+  "novig.updates": 2275,
+  "pairs_blocked_antonym_date": 5349,
+  "pmglobal.rest_updates": 8708,
+  "pmglobal.sweeps": 1970,
+  "pmglobal.ticks": 223063,
+  "pmglobal.updates": 18458,
+  "pmglobal.ws_errors": 4,
+  "pmglobal.ws_msgs": 4060000,
+  "pmglobal.ws_ticks": 25963,
+  "pmus.rest_updates": 73033,
+  "pmus.sweeps": 1971,
+  "pmus.ticks": 4186577,
+  "pmus.updates": 73033,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 1960,
+  "pmus_x.sweeps": 1972,
   "prophetx.ticks": 594,
   "prophetx.updates": 30,
-  "prophetx.ws_errors": 910,
+  "prophetx.ws_errors": 917,
   "px.evt_scanned": 18,
-  "pxboard.sweeps": 1959,
-  "supa_errors": 5669
+  "pxboard.sweeps": 1970,
+  "supa_errors": 5703
  },
  "arbitrages": [
   {
@@ -99,7 +99,7 @@
    },
    "total_cost_cents": 32,
    "edge_bps": 6800,
-   "detected_at": "2026-08-27T14:05:06.083374+00:00"
+   "detected_at": "2026-08-27T14:07:11.962540+00:00"
   },
   {
    "buy_yes": {
@@ -122,7 +122,7 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-08-27T14:05:06.083395+00:00"
+   "detected_at": "2026-08-27T14:07:11.962571+00:00"
   },
   {
    "buy_yes": {
@@ -145,7 +145,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-08-27T14:05:06.083350+00:00"
+   "detected_at": "2026-08-27T14:07:11.962501+00:00"
   },
   {
    "buy_yes": {
@@ -168,7 +168,30 @@
    },
    "total_cost_cents": 67,
    "edge_bps": 3300,
-   "detected_at": "2026-08-27T14:05:06.083388+00:00"
+   "detected_at": "2026-08-27T14:07:11.962566+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525801"
+    ],
+    "title": "Will the Colorado Rockies win the 7th inning vs the Washington Nationals?",
+    "ask_cents": 23
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xde0b24c0d202d6c3c15b3aa70fabc98df9a6c1274a42e885ceb2a9113d0b91c5"
+    ],
+    "title": "Colorado Rockies vs. Washington Nationals: O/U 9.5",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-08-27T14:07:11.962518+00:00"
   },
   {
    "buy_yes": {
@@ -191,7 +214,7 @@
    },
    "total_cost_cents": 79,
    "edge_bps": 2100,
-   "detected_at": "2026-08-27T14:05:06.083367+00:00"
+   "detected_at": "2026-08-27T14:07:11.962534+00:00"
   },
   {
    "buy_yes": {
@@ -237,7 +260,7 @@
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-08-27T14:05:06.083360+00:00"
+   "detected_at": "2026-08-27T14:07:11.962528+00:00"
   },
   {
    "buy_yes": {
@@ -260,7 +283,30 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-08-27T14:05:06.083340+00:00"
+   "detected_at": "2026-08-27T14:07:11.962492+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525840"
+    ],
+    "title": "Will the Houston Astros win the 2nd inning vs the New York Yankees?",
+    "ask_cents": 22
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-08-27T14:07:11.962510+00:00"
   },
   {
    "buy_yes": {
@@ -283,7 +329,30 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-08-27T14:05:06.083314+00:00"
+   "detected_at": "2026-08-27T14:07:11.962469+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525852"
+    ],
+    "title": "Will the Houston Astros win the 6th inning vs the New York Yankees?",
+    "ask_cents": 25
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-08-27T14:07:11.962554+00:00"
   },
   {
    "buy_yes": {
@@ -306,7 +375,53 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-08-27T14:05:06.083401+00:00"
+   "detected_at": "2026-08-27T14:07:11.962577+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508640"
+    ],
+    "title": "Will the Houston Astros cover -1.5 vs the New York Yankees in Houston Astros vs New York Yankees?",
+    "ask_cents": 30
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-08-27T14:07:11.962560+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "525682"
+    ],
+    "title": "Will the Colorado Rockies win the first 5 innings vs the Washington Nationals?",
+    "ask_cents": 43
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xde0b24c0d202d6c3c15b3aa70fabc98df9a6c1274a42e885ceb2a9113d0b91c5"
+    ],
+    "title": "Colorado Rockies vs. Washington Nationals: O/U 9.5",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-08-27T14:07:11.962591+00:00"
   },
   {
    "buy_yes": {
@@ -329,7 +444,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-08-27T14:05:06.083382+00:00"
+   "detected_at": "2026-08-27T14:07:11.962547+00:00"
   },
   {
    "buy_yes": {
@@ -352,7 +467,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-08-27T14:05:06.083417+00:00"
+   "detected_at": "2026-08-27T14:07:11.962597+00:00"
   },
   {
    "buy_yes": {
@@ -375,7 +490,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-27T14:05:06.083406+00:00"
+   "detected_at": "2026-08-27T14:07:11.962582+00:00"
   }
  ]
 }
