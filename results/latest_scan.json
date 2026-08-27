@@ -1,19 +1,19 @@
 {
- "scanned_at": "2026-08-27T12:26:48.128131+00:00",
+ "scanned_at": "2026-08-27T12:28:48.948866+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 139.1,
+ "loop_uptime_min": 141.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 77689,
+   "markets": 84552,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 1316,
+   "markets": 3105,
    "last_tick_age_s": 0.0
   },
   {
@@ -26,56 +26,81 @@
    "venue": "novig",
    "state": "OK",
    "markets": 264,
-   "last_tick_age_s": 7.1
+   "last_tick_age_s": 4.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 8154.3
+   "last_tick_age_s": 8275.1
   }
  ],
  "totals": {
-  "markets_tracked": 79406,
-  "pairs_married": 1,
-  "arbitrages": 1
+  "markets_tracked": 88058,
+  "pairs_married": 3,
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 68,
-  "gist_errors": 149,
+  "commits": 69,
+  "gist_errors": 152,
   "hot_errors": 0,
   "kalshi.rest_updates": 200,
-  "kalshi.sweeps": 1392,
-  "kalshi.ticks": 5610813,
-  "kalshi.updates": 1658232,
+  "kalshi.sweeps": 1408,
+  "kalshi.ticks": 5678198,
+  "kalshi.updates": 1689278,
   "kalshi.ws_errors": 1,
-  "kalshi.ws_ticks": 5609613,
-  "kalshi.ws_trades": 525680,
-  "novig.rest_updates": 1268,
-  "novig.sweeps": 1391,
-  "novig.ticks": 330259,
-  "novig.updates": 1268,
-  "pmglobal.rest_updates": 6023,
-  "pmglobal.sweeps": 1391,
-  "pmglobal.ticks": 155960,
-  "pmglobal.updates": 13078,
+  "kalshi.ws_ticks": 5676998,
+  "kalshi.ws_trades": 537799,
+  "live_evals_fired": 1,
+  "novig.rest_updates": 1290,
+  "novig.sweeps": 1407,
+  "novig.ticks": 334099,
+  "novig.updates": 1290,
+  "pairs_blocked_antonym_date": 60,
+  "pmglobal.rest_updates": 6086,
+  "pmglobal.sweeps": 1407,
+  "pmglobal.ticks": 157738,
+  "pmglobal.updates": 13207,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 2593818,
-  "pmglobal.ws_ticks": 16760,
-  "pmus.rest_updates": 1537,
-  "pmus.sweeps": 1392,
-  "pmus.ticks": 8983,
-  "pmus.updates": 1537,
-  "pmus_x.last_count": 1327,
-  "pmus_x.sweeps": 1393,
+  "pmglobal.ws_msgs": 2619688,
+  "pmglobal.ws_ticks": 16938,
+  "pmus.rest_updates": 4064,
+  "pmus.sweeps": 1408,
+  "pmus.ticks": 44205,
+  "pmus.updates": 4064,
+  "pmus_x.last_count": 3175,
+  "pmus_x.sweeps": 1409,
   "prophetx.ticks": 594,
   "prophetx.updates": 30,
-  "prophetx.ws_errors": 552,
+  "prophetx.ws_errors": 560,
   "px.evt_scanned": 18,
-  "pxboard.sweeps": 1391,
-  "supa_errors": 3931
+  "pxboard.sweeps": 1407,
+  "supa_errors": 3978
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "80b66674290db83a45ec0406e30bc07f"
+    ],
+    "title": "Andrea Lazaro Garcia at Polina Iatcenko",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "534203"
+    ],
+    "title": "Will the Polina Iatcenko cover -2.5 vs the Andrea Lazaro Garcia in Polina Iatcenko vs. Andrea Lazaro Garcia?",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-08-27T12:28:48.948794+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmus",
@@ -84,7 +109,7 @@
      "525682"
     ],
     "title": "Will the Colorado Rockies win the first 5 innings vs the Washington Nationals?",
-    "ask_cents": 41
+    "ask_cents": 43
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -95,9 +120,32 @@
     "title": "Colorado Rockies vs. Washington Nationals",
     "no_cost_cents": 54
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-08-27T12:26:48.128069+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-27T12:28:26.656809+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0df6820bbb777df97df370eb9a30cab1"
+    ],
+    "title": "Andrea Lazaro Garcia at Polina Iatcenko",
+    "ask_cents": 56
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "534203"
+    ],
+    "title": "Will the Polina Iatcenko cover -2.5 vs the Andrea Lazaro Garcia in Polina Iatcenko vs. Andrea Lazaro Garcia?",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-27T12:28:48.948814+00:00"
   }
  ]
 }
