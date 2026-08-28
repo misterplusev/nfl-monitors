@@ -1,656 +1,76 @@
 {
- "scanned_at": "2026-08-28T02:16:07.710608+00:00",
+ "scanned_at": "2026-08-28T11:41:17.510708+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 299150,
-   "last_tick_age_s": 0.1
+   "markets": 10907,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 21862,
-   "last_tick_age_s": 5.9
+   "markets": 7451,
+   "last_tick_age_s": 5.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 190,
-   "last_tick_age_s": 0.2
+   "markets": 100,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 348,
-   "last_tick_age_s": 3.0
+   "markets": 230,
+   "last_tick_age_s": 3.2
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 58,
-   "last_tick_age_s": 19793.8
+   "state": "OK",
+   "markets": 67,
+   "last_tick_age_s": 0.0
   }
  ],
  "totals": {
-  "markets_tracked": 321608,
-  "pairs_married": 39,
-  "arbitrages": 25
+  "markets_tracked": 18755,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 162,
-  "gist_errors": 340,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 83,
-  "kalshi.sweeps": 1944,
-  "kalshi.ticks": 12874211,
-  "kalshi.updates": 6021344,
-  "kalshi.ws_ticks": 12874018,
-  "kalshi.ws_trades": 2656012,
-  "live_evals_fired": 5759,
-  "novig.rest_updates": 22903,
-  "novig.sweeps": 1943,
-  "novig.ticks": 373042,
-  "novig.updates": 22903,
-  "pairs_blocked_antonym_date": 16510,
-  "pmglobal.rest_updates": 8661,
-  "pmglobal.sweeps": 1943,
-  "pmglobal.ticks": 227273,
-  "pmglobal.updates": 17609,
-  "pmglobal.ws_errors": 11,
-  "pmglobal.ws_msgs": 4340572,
-  "pmglobal.ws_ticks": 32873,
-  "pmus.rest_updates": 76052,
-  "pmus.sweeps": 1943,
-  "pmus.ticks": 14289638,
-  "pmus.updates": 76052,
-  "pmus_x.last_count": 7077,
-  "pmus_x.sweeps": 1944,
-  "prophetx.ticks": 1515,
-  "prophetx.updates": 191,
-  "prophetx.ws_errors": 1224,
-  "px.evt_scanned": 52,
-  "pxboard.sweeps": 1943,
-  "supa_errors": 5879
+  "kalshi.sweeps": 10,
+  "kalshi.ticks": 53113,
+  "kalshi.updates": 27510,
+  "kalshi.ws_ticks": 53113,
+  "kalshi.ws_trades": 7714,
+  "novig.rest_updates": 255,
+  "novig.sweeps": 10,
+  "novig.ticks": 2519,
+  "novig.updates": 255,
+  "pairs_blocked_antonym_date": 52,
+  "pmglobal.rest_updates": 225,
+  "pmglobal.sweeps": 10,
+  "pmglobal.ticks": 1680,
+  "pmglobal.updates": 378,
+  "pmglobal.ws_msgs": 46467,
+  "pmglobal.ws_ticks": 580,
+  "pmus.rest_updates": 8035,
+  "pmus.sweeps": 10,
+  "pmus.ticks": 81961,
+  "pmus.updates": 8035,
+  "pmus_x.last_count": 7451,
+  "pmus_x.sweeps": 11,
+  "prophetx.ticks": 737,
+  "prophetx.updates": 68,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 67,
+  "pxboard.sweeps": 10,
+  "supa_errors": 39
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "478202"
-    ],
-    "title": "Will the Crystal Palace FC cover -2.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
-    ],
-    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 8,
-   "edge_bps": 9200,
-   "detected_at": "2026-08-28T02:16:07.710554+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "499514"
-    ],
-    "title": "Will the Crystal Palace FC cover -2.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 6
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
-    ],
-    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 11,
-   "edge_bps": 8900,
-   "detected_at": "2026-08-28T02:16:07.710527+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "478203"
-    ],
-    "title": "Will the Crystal Palace FC cover -1.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
-    ],
-    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 13,
-   "edge_bps": 8700,
-   "detected_at": "2026-08-28T02:16:07.710518+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "499515"
-    ],
-    "title": "Will the Crystal Palace FC cover -1.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
-    ],
-    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 13,
-   "edge_bps": 8700,
-   "detected_at": "2026-08-28T02:16:07.710547+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "500014"
-    ],
-    "title": "Will the Crystal Palace FC cover -1.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 12
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
-    ],
-    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-08-28T02:16:07.710500+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d31762aadcff7aa670a3ec8889c749c7"
-    ],
-    "title": "Elena Pridankina at Qinwen Zheng",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "530622"
-    ],
-    "title": "Qinwen Zheng vs. Elena Pridankina",
-    "no_cost_cents": 24
-   },
-   "total_cost_cents": 52,
-   "edge_bps": 4800,
-   "detected_at": "2026-08-28T02:16:07.710487+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "517023"
-    ],
-    "title": "Will the Arizona Diamondbacks cover 1.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-08-28T02:12:35.838278+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525679"
-    ],
-    "title": "Will the Arizona Diamondbacks cover 2.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-08-28T02:12:36.034734+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "61e781891eb1ec549a8f96e23e7cf768"
-    ],
-    "title": "Harry Wendelken at Vilius Gaubas",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "533480"
-    ],
-    "title": "Vilius Gaubas vs. Harry Wendelken",
-    "no_cost_cents": 26
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-08-28T02:16:07.710541+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "517024"
-    ],
-    "title": "Will the Arizona Diamondbacks cover 2.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "no_cost_cents": 12
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-08-28T02:12:35.873141+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525678"
-    ],
-    "title": "Will the Arizona Diamondbacks cover 1.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "no_cost_cents": 14
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-08-28T02:12:36.160428+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508637"
-    ],
-    "title": "Will the Arizona Diamondbacks cover 2.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-08-28T02:12:35.893487+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "478204"
-    ],
-    "title": "Will the Crystal Palace FC cover 1.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 68
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
-    ],
-    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-08-28T00:40:53.502776+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "532901"
-    ],
-    "title": "Will the Arizona Diamondbacks win the 2nd inning vs the San Francisco Giants?",
-    "ask_cents": 21
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-08-28T02:12:35.857633+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "525739"
-    ],
-    "title": "Will the Arizona Diamondbacks cover 1.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-08-28T02:12:35.798817+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "532904"
-    ],
-    "title": "Will the Arizona Diamondbacks win the 3rd inning vs the San Francisco Giants?",
-    "ask_cents": 24
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-08-28T02:12:35.911034+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "533174"
-    ],
-    "title": "Will the Arizona Diamondbacks win the 7th inning vs the San Francisco Giants?",
-    "ask_cents": 25
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-08-28T02:12:35.818630+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "533179"
-    ],
-    "title": "Will the Arizona Diamondbacks win the 8th inning vs the San Francisco Giants?",
-    "ask_cents": 25
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-08-28T02:12:35.989502+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "532898"
-    ],
-    "title": "Will the Arizona Diamondbacks win the 1st inning vs the San Francisco Giants?",
-    "ask_cents": 25
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-08-28T02:12:36.200662+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "533182"
-    ],
-    "title": "Will the Arizona Diamondbacks win the 9th inning vs the San Francisco Giants?",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-08-28T02:12:36.085150+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "517021"
-    ],
-    "title": "Will the Arizona Diamondbacks cover -2.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "ask_cents": 27
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-08-28T02:12:35.952529+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508634"
-    ],
-    "title": "Will the Arizona Diamondbacks cover -2.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "ask_cents": 28
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-08-28T02:12:35.933028+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "500015"
-    ],
-    "title": "Will the Crystal Palace FC cover 1.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 82
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
-    ],
-    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-08-28T02:16:07.710561+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "478205"
-    ],
-    "title": "Will the Crystal Palace FC cover 2.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 84
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
-    ],
-    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-08-28T00:46:59.013246+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "535135"
-    ],
-    "title": "Will the total in Arizona Diamondbacks vs San Francisco Giants be more than 7.5?",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-08-28T02:12:36.142368+00:00"
-  }
- ]
+ "arbitrages": []
 }
