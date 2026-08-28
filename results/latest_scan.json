@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-08-28T00:41:03.123610+00:00",
+ "scanned_at": "2026-08-28T00:43:06.980309+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 239.9,
+ "loop_uptime_min": 242.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 239687,
+   "markets": 240670,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 11453,
+   "markets": 12641,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 176,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 300,
-   "last_tick_age_s": 7.4
+   "last_tick_age_s": 7.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 14089.2
+   "last_tick_age_s": 14213.0
   }
  ],
  "totals": {
-  "markets_tracked": 251674,
-  "pairs_married": 3,
-  "arbitrages": 3
+  "markets_tracked": 253845,
+  "pairs_married": 20,
+  "arbitrages": 19
  },
  "stats": {
-  "commits": 115,
-  "gist_errors": 242,
+  "commits": 116,
+  "gist_errors": 244,
   "hot_errors": 0,
   "kalshi.rest_updates": 76,
-  "kalshi.sweeps": 1390,
-  "kalshi.ticks": 8892285,
-  "kalshi.updates": 4191126,
-  "kalshi.ws_ticks": 8892105,
-  "kalshi.ws_trades": 1781970,
-  "live_evals_fired": 163,
-  "novig.rest_updates": 16367,
-  "novig.sweeps": 1389,
-  "novig.ticks": 286147,
-  "novig.updates": 16367,
-  "pairs_blocked_antonym_date": 8692,
-  "pmglobal.rest_updates": 6505,
-  "pmglobal.sweeps": 1389,
-  "pmglobal.ticks": 163404,
-  "pmglobal.updates": 13355,
+  "kalshi.sweeps": 1404,
+  "kalshi.ticks": 8989245,
+  "kalshi.updates": 4237004,
+  "kalshi.ws_ticks": 8989065,
+  "kalshi.ws_trades": 1802439,
+  "live_evals_fired": 173,
+  "novig.rest_updates": 16664,
+  "novig.sweeps": 1403,
+  "novig.ticks": 288451,
+  "novig.updates": 16664,
+  "pairs_blocked_antonym_date": 8798,
+  "pmglobal.rest_updates": 6567,
+  "pmglobal.sweeps": 1403,
+  "pmglobal.ticks": 164973,
+  "pmglobal.updates": 13462,
   "pmglobal.ws_errors": 8,
-  "pmglobal.ws_msgs": 3199610,
-  "pmglobal.ws_ticks": 24404,
-  "pmus.rest_updates": 22416,
-  "pmus.sweeps": 1390,
-  "pmus.ticks": 10893966,
-  "pmus.updates": 22416,
-  "pmus_x.last_count": 5585,
-  "pmus_x.sweeps": 1391,
+  "pmglobal.ws_msgs": 3226988,
+  "pmglobal.ws_ticks": 24573,
+  "pmus.rest_updates": 24886,
+  "pmus.sweeps": 1404,
+  "pmus.ticks": 10974694,
+  "pmus.updates": 24886,
+  "pmus_x.last_count": 6054,
+  "pmus_x.sweeps": 1405,
   "prophetx.ticks": 1515,
   "prophetx.updates": 191,
-  "prophetx.ws_errors": 877,
+  "prophetx.ws_errors": 884,
   "px.evt_scanned": 52,
-  "pxboard.sweeps": 1389,
-  "supa_errors": 4203
+  "pxboard.sweeps": 1403,
+  "supa_errors": 4245
  },
  "arbitrages": [
   {
@@ -98,7 +98,122 @@
    },
    "total_cost_cents": 8,
    "edge_bps": 9200,
-   "detected_at": "2026-08-28T00:41:03.123555+00:00"
+   "detected_at": "2026-08-28T00:43:06.980250+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "499514"
+    ],
+    "title": "Will the Crystal Palace FC cover -2.5 vs the Manchester City FC in CRY vs MNC?",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
+    ],
+    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 11,
+   "edge_bps": 8900,
+   "detected_at": "2026-08-28T00:43:06.980198+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb500ec5edd7dd018217cacc8e9c3dff6feb4680cf33ae3eb02019477e724f477"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 7.5",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508655"
+    ],
+    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 32
+   },
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-08-28T00:43:06.980189+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves",
+    "ask_cents": 28
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508655"
+    ],
+    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 32
+   },
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-08-28T00:42:50.667774+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508639"
+    ],
+    "title": "Will the Houston Astros cover -2.5 vs the New York Yankees in Houston Astros vs New York Yankees?",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-08-28T00:42:58.777349+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
+    "ask_cents": 30
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508655"
+    ],
+    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 32
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-08-28T00:43:06.980169+00:00"
   },
   {
    "buy_yes": {
@@ -125,13 +240,128 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
+    ],
+    "title": "Arizona Diamondbacks vs. San Francisco Giants",
+    "ask_cents": 52
+   },
+   "buy_no": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "478205"
+     "508637"
     ],
-    "title": "Will the Crystal Palace FC cover 2.5 vs the Manchester City FC in CRY vs MNC?",
-    "ask_cents": 84
+    "title": "Will the Arizona Diamondbacks cover 2.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 76,
+   "edge_bps": 2400,
+   "detected_at": "2026-08-28T00:43:06.980223+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508610"
+    ],
+    "title": "Will the Milwaukee Brewers cover -2.5 vs the New York Mets in Milwaukee Brewers vs New York Mets?",
+    "ask_cents": 72
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf3c68ec207148e9857c0db83b8791d76c25de9d007b33dfffccbf2b4b148cf65"
+    ],
+    "title": "Milwaukee Brewers vs. New York Mets",
+    "no_cost_cents": 10
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-08-28T00:43:01.382933+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508654"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "ask_cents": 14
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
+    "no_cost_cents": 70
+   },
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-08-28T00:43:06.980205+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508654"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "ask_cents": 14
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves",
+    "no_cost_cents": 72
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-08-28T00:42:50.685875+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508653"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -2.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "ask_cents": 16
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
+    "no_cost_cents": 70
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-08-28T00:43:06.980257+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "500015"
+    ],
+    "title": "Will the Crystal Palace FC cover 1.5 vs the Manchester City FC in CRY vs MNC?",
+    "ask_cents": 82
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -142,9 +372,147 @@
     "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
     "no_cost_cents": 4
    },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-08-28T00:43:06.980264+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508653"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -2.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "ask_cents": 16
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves",
+    "no_cost_cents": 72
+   },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-08-28T00:40:53.523065+00:00"
+   "detected_at": "2026-08-28T00:42:50.648792+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "478205"
+    ],
+    "title": "Will the Crystal Palace FC cover 2.5 vs the Manchester City FC in CRY vs MNC?",
+    "ask_cents": 85
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
+    ],
+    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-08-28T00:41:24.748140+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb500ec5edd7dd018217cacc8e9c3dff6feb4680cf33ae3eb02019477e724f477"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 7.5",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508653"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -2.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 84
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-08-28T00:43:06.980230+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb500ec5edd7dd018217cacc8e9c3dff6feb4680cf33ae3eb02019477e724f477"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 7.5",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508654"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 86
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-08-28T00:43:06.980237+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
+    ],
+    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
+    "ask_cents": 96
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "499517"
+    ],
+    "title": "Will the Crystal Palace FC cover 2.5 vs the Manchester City FC in CRY vs MNC?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-28T00:43:06.980216+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x54f9fca8dfc2dd7b5dccdead751d927a1cdf8c13049c1b0df00cb04bcf3ba48a"
+    ],
+    "title": "Crystal Palace FC vs. Manchester City FC: O/U 0.5",
+    "ask_cents": 96
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "499499"
+    ],
+    "title": "Will Crystal Palace FC lead Manchester City FC at halftime?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-28T00:43:06.980244+00:00"
   }
  ]
 }
