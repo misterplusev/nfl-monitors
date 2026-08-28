@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-08-28T00:47:11.158842+00:00",
+ "scanned_at": "2026-08-28T00:49:11.285943+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 246.1,
+ "loop_uptime_min": 248.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 242591,
+   "markets": 243980,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 15250,
-   "last_tick_age_s": 2.9
+   "markets": 15274,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 176,
-   "last_tick_age_s": 0.5
+   "markets": 177,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 300,
-   "last_tick_age_s": 0.5
+   "last_tick_age_s": 6.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 14457.2
+   "last_tick_age_s": 14577.4
   }
  ],
  "totals": {
-  "markets_tracked": 258375,
-  "pairs_married": 49,
+  "markets_tracked": 259789,
+  "pairs_married": 48,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 118,
-  "gist_errors": 248,
+  "commits": 119,
+  "gist_errors": 250,
   "hot_errors": 0,
   "kalshi.rest_updates": 76,
-  "kalshi.sweeps": 1428,
-  "kalshi.ticks": 9176865,
-  "kalshi.updates": 4326139,
-  "kalshi.ws_ticks": 9176685,
-  "kalshi.ws_trades": 1843503,
-  "live_evals_fired": 460,
-  "novig.rest_updates": 17074,
-  "novig.sweeps": 1428,
-  "novig.ticks": 292513,
-  "novig.updates": 17074,
-  "pairs_blocked_antonym_date": 9119,
-  "pmglobal.rest_updates": 6680,
-  "pmglobal.sweeps": 1428,
-  "pmglobal.ticks": 167821,
-  "pmglobal.updates": 13694,
+  "kalshi.sweeps": 1442,
+  "kalshi.ticks": 9265469,
+  "kalshi.updates": 4367167,
+  "kalshi.ws_ticks": 9265289,
+  "kalshi.ws_trades": 1860883,
+  "live_evals_fired": 617,
+  "novig.rest_updates": 17275,
+  "novig.sweeps": 1441,
+  "novig.ticks": 294697,
+  "novig.updates": 17275,
+  "pairs_blocked_antonym_date": 9306,
+  "pmglobal.rest_updates": 6727,
+  "pmglobal.sweeps": 1441,
+  "pmglobal.ticks": 169259,
+  "pmglobal.updates": 13777,
   "pmglobal.ws_errors": 9,
-  "pmglobal.ws_msgs": 3276430,
-  "pmglobal.ws_ticks": 24921,
-  "pmus.rest_updates": 30414,
-  "pmus.sweeps": 1428,
-  "pmus.ticks": 11111249,
-  "pmus.updates": 30414,
-  "pmus_x.last_count": 4521,
-  "pmus_x.sweeps": 1429,
+  "pmglobal.ws_msgs": 3301266,
+  "pmglobal.ws_ticks": 25059,
+  "pmus.rest_updates": 31565,
+  "pmus.sweeps": 1442,
+  "pmus.ticks": 11156389,
+  "pmus.updates": 31565,
+  "pmus_x.last_count": 1939,
+  "pmus_x.sweeps": 1443,
   "prophetx.ticks": 1515,
   "prophetx.updates": 191,
-  "prophetx.ws_errors": 900,
+  "prophetx.ws_errors": 907,
   "px.evt_scanned": 52,
-  "pxboard.sweeps": 1427,
-  "supa_errors": 4318
+  "pxboard.sweeps": 1441,
+  "supa_errors": 4359
  },
  "arbitrages": [
   {
@@ -98,7 +98,7 @@
    },
    "total_cost_cents": 8,
    "edge_bps": 9200,
-   "detected_at": "2026-08-28T00:47:11.158752+00:00"
+   "detected_at": "2026-08-28T00:49:11.285867+00:00"
   },
   {
    "buy_yes": {
@@ -121,7 +121,7 @@
    },
    "total_cost_cents": 9,
    "edge_bps": 9100,
-   "detected_at": "2026-08-28T00:45:43.802002+00:00"
+   "detected_at": "2026-08-28T00:47:59.395480+00:00"
   },
   {
    "buy_yes": {
@@ -144,7 +144,122 @@
    },
    "total_cost_cents": 11,
    "edge_bps": 8900,
-   "detected_at": "2026-08-28T00:47:11.158727+00:00"
+   "detected_at": "2026-08-28T00:49:11.285847+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "528379"
+    ],
+    "title": "Will the Los Angeles Dodgers win the 6th inning vs the Atlanta Braves?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 12,
+   "edge_bps": 8800,
+   "detected_at": "2026-08-28T00:47:23.139802+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb500ec5edd7dd018217cacc8e9c3dff6feb4680cf33ae3eb02019477e724f477"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 7.5",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508653"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -2.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 8
+   },
+   "total_cost_cents": 16,
+   "edge_bps": 8400,
+   "detected_at": "2026-08-28T00:48:38.452490+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508653"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -2.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 8
+   },
+   "total_cost_cents": 19,
+   "edge_bps": 8100,
+   "detected_at": "2026-08-28T00:48:38.480052+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb500ec5edd7dd018217cacc8e9c3dff6feb4680cf33ae3eb02019477e724f477"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 7.5",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508655"
+    ],
+    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 20,
+   "edge_bps": 8000,
+   "detected_at": "2026-08-28T00:48:38.610541+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508655"
+    ],
+    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 23,
+   "edge_bps": 7700,
+   "detected_at": "2026-08-28T00:48:38.570204+00:00"
   },
   {
    "buy_yes": {
@@ -167,76 +282,7 @@
    },
    "total_cost_cents": 30,
    "edge_bps": 7000,
-   "detected_at": "2026-08-28T00:47:09.472856+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
-    "ask_cents": 30
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "528379"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 6th inning vs the Atlanta Braves?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-08-28T00:47:11.158668+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb500ec5edd7dd018217cacc8e9c3dff6feb4680cf33ae3eb02019477e724f477"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 7.5",
-    "ask_cents": 7
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508655"
-    ],
-    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
-    "no_cost_cents": 27
-   },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-08-28T00:46:45.100492+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "526403"
-    ],
-    "title": "Will the Milwaukee Brewers win the 7th inning vs the New York Mets?",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3c68ec207148e9857c0db83b8791d76c25de9d007b33dfffccbf2b4b148cf65"
-    ],
-    "title": "Milwaukee Brewers vs. New York Mets",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-08-28T00:46:46.250357+00:00"
+   "detected_at": "2026-08-28T00:49:03.155263+00:00"
   },
   {
    "buy_yes": {
@@ -255,34 +301,126 @@
      "0x0fbf58a4c1277082f55591eeb501a70f9a1fbb1f0af789597a3cd9b1b33e93b7"
     ],
     "title": "Kansas City Royals vs. Toronto Blue Jays",
-    "no_cost_cents": 10
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-08-28T00:47:23.328149+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves",
+    "ask_cents": 28
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508653"
+    ],
+    "title": "Will the Los Angeles Dodgers cover -2.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 8
    },
    "total_cost_cents": 37,
    "edge_bps": 6300,
-   "detected_at": "2026-08-28T00:45:22.992867+00:00"
+   "detected_at": "2026-08-28T00:49:03.087317+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "530967"
+     "526176"
     ],
-    "title": "Will the total in Kansas City Royals vs Toronto Blue Jays be more than 9.5?",
-    "ask_cents": 38
+    "title": "Will the Houston Astros win the 9th inning vs the New York Yankees?",
+    "ask_cents": 19
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0fbf58a4c1277082f55591eeb501a70f9a1fbb1f0af789597a3cd9b1b33e93b7"
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
     ],
-    "title": "Kansas City Royals vs. Toronto Blue Jays",
-    "no_cost_cents": 10
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 18
    },
-   "total_cost_cents": 50,
-   "edge_bps": 5000,
-   "detected_at": "2026-08-28T00:46:49.596079+00:00"
+   "total_cost_cents": 38,
+   "edge_bps": 6200,
+   "detected_at": "2026-08-28T00:49:07.867889+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508639"
+    ],
+    "title": "Will the Houston Astros cover -2.5 vs the New York Yankees in Houston Astros vs New York Yankees?",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-08-28T00:49:07.888783+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
+    ],
+    "title": "Los Angeles Dodgers vs. Atlanta Braves",
+    "ask_cents": 28
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508655"
+    ],
+    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-08-28T00:49:03.174663+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "530748"
+    ],
+    "title": "Will the total in Houston Astros vs New York Yankees be more than 7.5?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 47,
+   "edge_bps": 5300,
+   "detected_at": "2026-08-28T00:49:07.851323+00:00"
   },
   {
    "buy_yes": {
@@ -305,99 +443,30 @@
    },
    "total_cost_cents": 52,
    "edge_bps": 4800,
-   "detected_at": "2026-08-28T00:47:11.158648+00:00"
+   "detected_at": "2026-08-28T00:49:11.285793+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x280093bfc0537118b85c5ed9e63e022dc904e4b3e32c0e3b4aaca5c62e8059bd"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves",
-    "ask_cents": 28
-   },
-   "buy_no": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "508655"
+     "526203"
     ],
-    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
-    "no_cost_cents": 27
+    "title": "Will the Kansas City Royals win the 8th inning vs the Toronto Blue Jays?",
+    "ask_cents": 25
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe51bb07cc7f32c1f9dedc0a9ee7fea1678b4091421716e99de51ca8a31943e69"
+    ],
+    "title": "Kansas City Royals vs. Toronto Blue Jays: O/U 7.5",
+    "no_cost_cents": 30
    },
    "total_cost_cents": 57,
    "edge_bps": 4300,
-   "detected_at": "2026-08-28T00:47:09.491537+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
-    "ask_cents": 30
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508655"
-    ],
-    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
-    "no_cost_cents": 27
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-08-28T00:46:45.085267+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "526176"
-    ],
-    "title": "Will the Houston Astros win the 9th inning vs the New York Yankees?",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
-    ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-08-28T00:47:09.543622+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508639"
-    ],
-    "title": "Will the Houston Astros cover -2.5 vs the New York Yankees in Houston Astros vs New York Yankees?",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
-    ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-08-28T00:47:09.566564+00:00"
+   "detected_at": "2026-08-28T00:47:23.439258+00:00"
   },
   {
    "buy_yes": {
@@ -420,7 +489,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-08-28T00:47:11.158678+00:00"
+   "detected_at": "2026-08-28T00:49:11.285810+00:00"
   },
   {
    "buy_yes": {
@@ -443,30 +512,30 @@
    },
    "total_cost_cents": 70,
    "edge_bps": 3000,
-   "detected_at": "2026-08-28T00:47:11.158658+00:00"
+   "detected_at": "2026-08-28T00:49:11.285801+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "530748"
+     "526203"
     ],
-    "title": "Will the total in Houston Astros vs New York Yankees be more than 7.5?",
-    "ask_cents": 28
+    "title": "Will the Kansas City Royals win the 8th inning vs the Toronto Blue Jays?",
+    "ask_cents": 25
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+     "0xe93ccc35890c5b44beecc69144c6afec02e4cc2cadc0c15e27a938e5d539cb26"
     ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 42
+    "title": "Kansas City Royals vs. Toronto Blue Jays: O/U 8.5",
+    "no_cost_cents": 46
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-08-28T00:47:09.528381+00:00"
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-08-28T00:47:23.373415+00:00"
   },
   {
    "buy_yes": {
@@ -512,7 +581,30 @@
    },
    "total_cost_cents": 74,
    "edge_bps": 2600,
-   "detected_at": "2026-08-28T00:47:11.158702+00:00"
+   "detected_at": "2026-08-28T00:49:11.285829+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe93ccc35890c5b44beecc69144c6afec02e4cc2cadc0c15e27a938e5d539cb26"
+    ],
+    "title": "Kansas City Royals vs. Toronto Blue Jays: O/U 8.5",
+    "ask_cents": 54
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "530967"
+    ],
+    "title": "Will the total in Kansas City Royals vs Toronto Blue Jays be more than 9.5?",
+    "no_cost_cents": 20
+   },
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-08-28T00:48:39.435698+00:00"
   },
   {
    "buy_yes": {
@@ -535,7 +627,7 @@
    },
    "total_cost_cents": 75,
    "edge_bps": 2500,
-   "detected_at": "2026-08-28T00:47:11.158718+00:00"
+   "detected_at": "2026-08-28T00:49:11.285839+00:00"
   },
   {
    "buy_yes": {
@@ -559,98 +651,6 @@
    "total_cost_cents": 76,
    "edge_bps": 2400,
    "detected_at": "2026-08-28T00:44:48.392401+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508637"
-    ],
-    "title": "Will the Arizona Diamondbacks cover 2.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-08-28T00:47:11.158692+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "526203"
-    ],
-    "title": "Will the Kansas City Royals win the 8th inning vs the Toronto Blue Jays?",
-    "ask_cents": 25
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe51bb07cc7f32c1f9dedc0a9ee7fea1678b4091421716e99de51ca8a31943e69"
-    ],
-    "title": "Kansas City Royals vs. Toronto Blue Jays: O/U 7.5",
-    "no_cost_cents": 52
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-08-28T00:45:23.033727+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508610"
-    ],
-    "title": "Will the Milwaukee Brewers cover -2.5 vs the New York Mets in Milwaukee Brewers vs New York Mets?",
-    "ask_cents": 72
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3c68ec207148e9857c0db83b8791d76c25de9d007b33dfffccbf2b4b148cf65"
-    ],
-    "title": "Milwaukee Brewers vs. New York Mets",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-08-28T00:46:12.564941+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508654"
-    ],
-    "title": "Will the Los Angeles Dodgers cover -1.5 vs the Atlanta Braves in Los Angeles Dodgers vs Atlanta Braves?",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe2000201df4102cc9aea5d2a7971857d3a26f34ea05d74c2d04b6feadb30e51e"
-    ],
-    "title": "Los Angeles Dodgers vs. Atlanta Braves: O/U 6.5",
-    "no_cost_cents": 70
-   },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-08-28T00:46:12.658706+00:00"
   }
  ]
 }
