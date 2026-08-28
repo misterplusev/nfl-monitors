@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-08-28T00:49:11.285943+00:00",
+ "scanned_at": "2026-08-28T00:51:11.474751+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 248.1,
+ "loop_uptime_min": 250.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 243980,
+   "markets": 245727,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 15274,
-   "last_tick_age_s": 0.1
+   "markets": 15563,
+   "last_tick_age_s": 3.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 177,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 300,
-   "last_tick_age_s": 6.8
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 14577.4
+   "last_tick_age_s": 14697.6
   }
  ],
  "totals": {
-  "markets_tracked": 259789,
-  "pairs_married": 48,
+  "markets_tracked": 261825,
+  "pairs_married": 46,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 119,
-  "gist_errors": 250,
+  "commits": 120,
+  "gist_errors": 253,
   "hot_errors": 0,
   "kalshi.rest_updates": 76,
-  "kalshi.sweeps": 1442,
-  "kalshi.ticks": 9265469,
-  "kalshi.updates": 4367167,
-  "kalshi.ws_ticks": 9265289,
-  "kalshi.ws_trades": 1860883,
-  "live_evals_fired": 617,
-  "novig.rest_updates": 17275,
-  "novig.sweeps": 1441,
-  "novig.ticks": 294697,
-  "novig.updates": 17275,
-  "pairs_blocked_antonym_date": 9306,
-  "pmglobal.rest_updates": 6727,
-  "pmglobal.sweeps": 1441,
-  "pmglobal.ticks": 169259,
-  "pmglobal.updates": 13777,
+  "kalshi.sweeps": 1459,
+  "kalshi.ticks": 9354892,
+  "kalshi.updates": 4409108,
+  "kalshi.ws_ticks": 9354712,
+  "kalshi.ws_trades": 1880103,
+  "live_evals_fired": 778,
+  "novig.rest_updates": 17518,
+  "novig.sweeps": 1459,
+  "novig.ticks": 297614,
+  "novig.updates": 17518,
+  "pairs_blocked_antonym_date": 9548,
+  "pmglobal.rest_updates": 6769,
+  "pmglobal.sweeps": 1459,
+  "pmglobal.ticks": 171234,
+  "pmglobal.updates": 13870,
   "pmglobal.ws_errors": 9,
-  "pmglobal.ws_msgs": 3301266,
-  "pmglobal.ws_ticks": 25059,
-  "pmus.rest_updates": 31565,
-  "pmus.sweeps": 1442,
-  "pmus.ticks": 11156389,
-  "pmus.updates": 31565,
-  "pmus_x.last_count": 1939,
-  "pmus_x.sweeps": 1443,
+  "pmglobal.ws_msgs": 3324630,
+  "pmglobal.ws_ticks": 25234,
+  "pmus.rest_updates": 32336,
+  "pmus.sweeps": 1459,
+  "pmus.ticks": 11173630,
+  "pmus.updates": 32336,
+  "pmus_x.last_count": 297,
+  "pmus_x.sweeps": 1460,
   "prophetx.ticks": 1515,
   "prophetx.updates": 191,
-  "prophetx.ws_errors": 907,
+  "prophetx.ws_errors": 915,
   "px.evt_scanned": 52,
-  "pxboard.sweeps": 1441,
-  "supa_errors": 4359
+  "pxboard.sweeps": 1458,
+  "supa_errors": 4408
  },
  "arbitrages": [
   {
@@ -98,7 +98,7 @@
    },
    "total_cost_cents": 8,
    "edge_bps": 9200,
-   "detected_at": "2026-08-28T00:49:11.285867+00:00"
+   "detected_at": "2026-08-28T00:51:11.474672+00:00"
   },
   {
    "buy_yes": {
@@ -144,7 +144,7 @@
    },
    "total_cost_cents": 11,
    "edge_bps": 8900,
-   "detected_at": "2026-08-28T00:49:11.285847+00:00"
+   "detected_at": "2026-08-28T00:51:11.474648+00:00"
   },
   {
    "buy_yes": {
@@ -282,7 +282,7 @@
    },
    "total_cost_cents": 30,
    "edge_bps": 7000,
-   "detected_at": "2026-08-28T00:49:03.155263+00:00"
+   "detected_at": "2026-08-28T00:51:09.844450+00:00"
   },
   {
    "buy_yes": {
@@ -328,53 +328,7 @@
    },
    "total_cost_cents": 37,
    "edge_bps": 6300,
-   "detected_at": "2026-08-28T00:49:03.087317+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "526176"
-    ],
-    "title": "Will the Houston Astros win the 9th inning vs the New York Yankees?",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
-    ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 18
-   },
-   "total_cost_cents": 38,
-   "edge_bps": 6200,
-   "detected_at": "2026-08-28T00:49:07.867889+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "508639"
-    ],
-    "title": "Will the Houston Astros cover -2.5 vs the New York Yankees in Houston Astros vs New York Yankees?",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
-    ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 18
-   },
-   "total_cost_cents": 39,
-   "edge_bps": 6100,
-   "detected_at": "2026-08-28T00:49:07.888783+00:00"
+   "detected_at": "2026-08-28T00:51:09.812086+00:00"
   },
   {
    "buy_yes": {
@@ -397,30 +351,7 @@
    },
    "total_cost_cents": 41,
    "edge_bps": 5900,
-   "detected_at": "2026-08-28T00:49:03.174663+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "530748"
-    ],
-    "title": "Will the total in Houston Astros vs New York Yankees be more than 7.5?",
-    "ask_cents": 27
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
-    ],
-    "title": "Houston Astros vs. New York Yankees",
-    "no_cost_cents": 18
-   },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-08-28T00:49:07.851323+00:00"
+   "detected_at": "2026-08-28T00:51:09.872598+00:00"
   },
   {
    "buy_yes": {
@@ -443,7 +374,7 @@
    },
    "total_cost_cents": 52,
    "edge_bps": 4800,
-   "detected_at": "2026-08-28T00:49:11.285793+00:00"
+   "detected_at": "2026-08-28T00:51:11.474580+00:00"
   },
   {
    "buy_yes": {
@@ -470,6 +401,52 @@
   },
   {
    "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "526176"
+    ],
+    "title": "Will the Houston Astros win the 9th inning vs the New York Yankees?",
+    "ask_cents": 19
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-08-28T00:51:03.109956+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508639"
+    ],
+    "title": "Will the Houston Astros cover -2.5 vs the New York Yankees in Houston Astros vs New York Yankees?",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-08-28T00:51:03.129213+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -489,7 +466,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-08-28T00:49:11.285810+00:00"
+   "detected_at": "2026-08-28T00:51:11.474600+00:00"
   },
   {
    "buy_yes": {
@@ -512,7 +489,30 @@
    },
    "total_cost_cents": 70,
    "edge_bps": 3000,
-   "detected_at": "2026-08-28T00:49:11.285801+00:00"
+   "detected_at": "2026-08-28T00:51:11.474589+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "530748"
+    ],
+    "title": "Will the total in Houston Astros vs New York Yankees be more than 7.5?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb52f693920f9ed1b2550f20fe88e2bb4c2b70222222838939464497912657ff0"
+    ],
+    "title": "Houston Astros vs. New York Yankees",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-08-28T00:51:03.093355+00:00"
   },
   {
    "buy_yes": {
@@ -581,30 +581,7 @@
    },
    "total_cost_cents": 74,
    "edge_bps": 2600,
-   "detected_at": "2026-08-28T00:49:11.285829+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe93ccc35890c5b44beecc69144c6afec02e4cc2cadc0c15e27a938e5d539cb26"
-    ],
-    "title": "Kansas City Royals vs. Toronto Blue Jays: O/U 8.5",
-    "ask_cents": 54
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "530967"
-    ],
-    "title": "Will the total in Kansas City Royals vs Toronto Blue Jays be more than 9.5?",
-    "no_cost_cents": 20
-   },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-08-28T00:48:39.435698+00:00"
+   "detected_at": "2026-08-28T00:51:11.474623+00:00"
   },
   {
    "buy_yes": {
@@ -627,7 +604,7 @@
    },
    "total_cost_cents": 75,
    "edge_bps": 2500,
-   "detected_at": "2026-08-28T00:49:11.285839+00:00"
+   "detected_at": "2026-08-28T00:51:11.474638+00:00"
   },
   {
    "buy_yes": {
@@ -651,6 +628,29 @@
    "total_cost_cents": 76,
    "edge_bps": 2400,
    "detected_at": "2026-08-28T00:44:48.392401+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xfbed47c98ad86f5ddb59c5b2c297559ce1c3601a31aa8820eeab91e34c154524"
+    ],
+    "title": "Arizona Diamondbacks vs. San Francisco Giants",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "508637"
+    ],
+    "title": "Will the Arizona Diamondbacks cover 2.5 vs the San Francisco Giants in Arizona Diamondbacks vs San Francisco Giants?",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 76,
+   "edge_bps": 2400,
+   "detected_at": "2026-08-28T00:51:11.474613+00:00"
   }
  ]
 }
