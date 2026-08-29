@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-08-29T15:38:02.129147+00:00",
+ "scanned_at": "2026-08-29T15:40:02.760589+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 26.9,
+ "loop_uptime_min": 29.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 78061,
+   "markets": 81665,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7420,
-   "last_tick_age_s": 4.4
+   "last_tick_age_s": 4.8
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 113,
+   "markets": 115,
    "last_tick_age_s": 0.7
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 249,
-   "last_tick_age_s": 1.9
+   "markets": 250,
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 77,
-   "last_tick_age_s": 1347.7
+   "last_tick_age_s": 1468.4
   }
  ],
  "totals": {
-  "markets_tracked": 85920,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 89527,
+  "pairs_married": 16,
+  "arbitrages": 16
  },
  "stats": {
-  "commits": 12,
-  "gist_errors": 28,
+  "commits": 13,
+  "gist_errors": 30,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 158,
-  "kalshi.ticks": 1306346,
-  "kalshi.updates": 555335,
-  "kalshi.ws_ticks": 1306343,
-  "kalshi.ws_trades": 203598,
-  "live_evals_fired": 690,
-  "novig.rest_updates": 1406,
-  "novig.sweeps": 158,
-  "novig.ticks": 35037,
-  "novig.updates": 1406,
-  "pairs_blocked_antonym_date": 841,
-  "pmglobal.rest_updates": 2000,
-  "pmglobal.sweeps": 158,
-  "pmglobal.ticks": 21172,
-  "pmglobal.updates": 4368,
+  "kalshi.sweeps": 170,
+  "kalshi.ticks": 1398322,
+  "kalshi.updates": 594218,
+  "kalshi.ws_ticks": 1398319,
+  "kalshi.ws_trades": 217055,
+  "live_evals_fired": 774,
+  "novig.rest_updates": 1498,
+  "novig.sweeps": 169,
+  "novig.ticks": 37494,
+  "novig.updates": 1498,
+  "pairs_blocked_antonym_date": 897,
+  "pmglobal.rest_updates": 2117,
+  "pmglobal.sweeps": 169,
+  "pmglobal.ticks": 22672,
+  "pmglobal.updates": 4635,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 885725,
-  "pmglobal.ws_ticks": 5272,
-  "pmus.rest_updates": 12420,
-  "pmus.sweeps": 158,
-  "pmus.ticks": 1179780,
-  "pmus.updates": 12420,
+  "pmglobal.ws_msgs": 942755,
+  "pmglobal.ws_ticks": 5672,
+  "pmus.rest_updates": 12639,
+  "pmus.sweeps": 169,
+  "pmus.ticks": 1261400,
+  "pmus.updates": 12639,
   "pmus_x.last_count": 7420,
-  "pmus_x.sweeps": 159,
+  "pmus_x.sweeps": 170,
   "prophetx.ticks": 1774,
   "prophetx.updates": 258,
-  "prophetx.ws_errors": 99,
+  "prophetx.ws_errors": 106,
   "px.evt_scanned": 67,
-  "pxboard.sweeps": 158,
-  "supa_errors": 487
+  "pxboard.sweeps": 169,
+  "supa_errors": 520
  },
  "arbitrages": [
   {
@@ -82,10 +82,10 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
+     "0x6c5dd980654f5b8ae2c39e8f98c8f10d9a84f0b50c42d046ba12e34c06d74326"
     ],
-    "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
-    "ask_cents": 22
+    "title": "AFC Bournemouth vs. Everton FC: O/U 3.5",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -96,19 +96,19 @@
     "title": "Everton FC at AFC Bournemouth",
     "no_cost_cents": 9
    },
-   "total_cost_cents": 31,
-   "edge_bps": 6900,
-   "detected_at": "2026-08-29T15:37:41.664570+00:00"
+   "total_cost_cents": 13,
+   "edge_bps": 8700,
+   "detected_at": "2026-08-29T15:40:02.760541+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
+     "0x6c5dd980654f5b8ae2c39e8f98c8f10d9a84f0b50c42d046ba12e34c06d74326"
     ],
-    "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
-    "ask_cents": 22
+    "title": "AFC Bournemouth vs. Everton FC: O/U 3.5",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -119,19 +119,19 @@
     "title": "Everton FC at AFC Bournemouth",
     "no_cost_cents": 11
    },
-   "total_cost_cents": 33,
-   "edge_bps": 6700,
-   "detected_at": "2026-08-29T15:37:41.747896+00:00"
+   "total_cost_cents": 15,
+   "edge_bps": 8500,
+   "detected_at": "2026-08-29T15:40:02.760514+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
+     "0x6c5dd980654f5b8ae2c39e8f98c8f10d9a84f0b50c42d046ba12e34c06d74326"
     ],
-    "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
-    "ask_cents": 22
+    "title": "AFC Bournemouth vs. Everton FC: O/U 3.5",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -142,9 +142,9 @@
     "title": "Everton FC at AFC Bournemouth",
     "no_cost_cents": 23
    },
-   "total_cost_cents": 45,
-   "edge_bps": 5500,
-   "detected_at": "2026-08-29T15:37:41.725064+00:00"
+   "total_cost_cents": 27,
+   "edge_bps": 7300,
+   "detected_at": "2026-08-29T15:40:02.760487+00:00"
   },
   {
    "buy_yes": {
@@ -154,7 +154,30 @@
      "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
     ],
     "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
-    "ask_cents": 22
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "61359c2d2ccb016220fdbd72a2bed3ae"
+    ],
+    "title": "Everton FC at AFC Bournemouth",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 35,
+   "edge_bps": 6500,
+   "detected_at": "2026-08-29T15:39:49.073978+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6c5dd980654f5b8ae2c39e8f98c8f10d9a84f0b50c42d046ba12e34c06d74326"
+    ],
+    "title": "AFC Bournemouth vs. Everton FC: O/U 3.5",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -165,9 +188,124 @@
     "title": "Everton FC at AFC Bournemouth",
     "no_cost_cents": 31
    },
-   "total_cost_cents": 53,
-   "edge_bps": 4700,
-   "detected_at": "2026-08-29T15:37:41.807038+00:00"
+   "total_cost_cents": 35,
+   "edge_bps": 6500,
+   "detected_at": "2026-08-29T15:40:02.760525+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
+    ],
+    "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "25293a3e68a2231c2738bf4ecfcfe111"
+    ],
+    "title": "Everton FC at AFC Bournemouth",
+    "no_cost_cents": 11
+   },
+   "total_cost_cents": 37,
+   "edge_bps": 6300,
+   "detected_at": "2026-08-29T15:39:49.169699+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
+    ],
+    "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e84fbb258e994f36462e99714de1d50c"
+    ],
+    "title": "Everton FC at AFC Bournemouth",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 49,
+   "edge_bps": 5100,
+   "detected_at": "2026-08-29T15:39:49.144062+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
+    ],
+    "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8eb4c9bcf2b4ec6a22d089d9e96ca61a"
+    ],
+    "title": "Everton FC at AFC Bournemouth",
+    "no_cost_cents": 31
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-08-29T15:39:49.190374+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6c5dd980654f5b8ae2c39e8f98c8f10d9a84f0b50c42d046ba12e34c06d74326"
+    ],
+    "title": "AFC Bournemouth vs. Everton FC: O/U 3.5",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "55a6029e6dfe57727c2b8b8bad561395"
+    ],
+    "title": "Everton FC at AFC Bournemouth",
+    "no_cost_cents": 69
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-08-29T15:40:02.760530+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6c5dd980654f5b8ae2c39e8f98c8f10d9a84f0b50c42d046ba12e34c06d74326"
+    ],
+    "title": "AFC Bournemouth vs. Everton FC: O/U 3.5",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "29b974a8c590dbe753590903220f741a"
+    ],
+    "title": "Everton FC at AFC Bournemouth",
+    "no_cost_cents": 77
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-08-29T15:40:02.760520+00:00"
   },
   {
    "buy_yes": {
@@ -186,11 +324,11 @@
      "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
     ],
     "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
-    "no_cost_cents": 78
+    "no_cost_cents": 74
    },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-08-29T15:37:41.704172+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-08-29T15:39:49.119351+00:00"
   },
   {
    "buy_yes": {
@@ -209,11 +347,34 @@
      "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
     ],
     "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
-    "no_cost_cents": 78
+    "no_cost_cents": 74
    },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-08-29T15:37:41.645555+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-08-29T15:39:49.047756+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6c5dd980654f5b8ae2c39e8f98c8f10d9a84f0b50c42d046ba12e34c06d74326"
+    ],
+    "title": "AFC Bournemouth vs. Everton FC: O/U 3.5",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "cdff35624dada9c59a9ac6fe9f667006"
+    ],
+    "title": "Everton FC at AFC Bournemouth",
+    "no_cost_cents": 89
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-08-29T15:40:02.760536+00:00"
   },
   {
    "buy_yes": {
@@ -223,7 +384,7 @@
      "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
     ],
     "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
-    "ask_cents": 22
+    "ask_cents": 26
    },
    "buy_no": {
     "venue": "prophetx",
@@ -234,32 +395,55 @@
     "title": "Everton FC at AFC Bournemouth",
     "no_cost_cents": 69
    },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-08-29T15:37:41.829471+00:00"
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-08-29T15:39:49.213173+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
+     "0x6c5dd980654f5b8ae2c39e8f98c8f10d9a84f0b50c42d046ba12e34c06d74326"
     ],
-    "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
-    "ask_cents": 22
+    "title": "AFC Bournemouth vs. Everton FC: O/U 3.5",
+    "ask_cents": 4
    },
    "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9840d5d8cfba4c1ce583a99c9fc30622"
+    ],
+    "title": "Everton FC at AFC Bournemouth",
+    "no_cost_cents": 92
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-08-29T15:40:02.760505+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "29b974a8c590dbe753590903220f741a"
     ],
     "title": "Everton FC at AFC Bournemouth",
-    "no_cost_cents": 77
+    "ask_cents": 24
    },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-08-29T15:37:41.683749+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x0a3a06e2485dc639310d84d29ecfad0f6eec9a93d9ede40f3a502c74a1fe5799"
+    ],
+    "title": "AFC Bournemouth vs. Everton FC: O/U 2.5",
+    "no_cost_cents": 74
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-08-29T15:39:49.094231+00:00"
   }
  ]
 }
