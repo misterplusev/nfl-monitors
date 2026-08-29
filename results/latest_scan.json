@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-08-29T22:52:46.084260+00:00",
+ "scanned_at": "2026-08-29T22:54:50.364511+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 8.1,
+ "loop_uptime_min": 10.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 31625,
+   "markets": 35917,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7413,
-   "last_tick_age_s": 4.4
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 101,
+   "markets": 104,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 192,
-   "last_tick_age_s": 2.1
+   "last_tick_age_s": 11.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 52,
-   "last_tick_age_s": 218.8
+   "last_tick_age_s": 343.0
   }
  ],
  "totals": {
-  "markets_tracked": 39383,
+  "markets_tracked": 43678,
   "pairs_married": 12,
-  "arbitrages": 11
+  "arbitrages": 12
  },
  "stats": {
-  "commits": 3,
-  "gist_errors": 9,
+  "commits": 4,
+  "gist_errors": 10,
   "hot_errors": 0,
-  "kalshi.sweeps": 47,
-  "kalshi.ticks": 318314,
-  "kalshi.updates": 158290,
-  "kalshi.ws_ticks": 318314,
-  "kalshi.ws_trades": 60581,
-  "live_evals_fired": 365,
-  "novig.rest_updates": 940,
-  "novig.sweeps": 47,
-  "novig.ticks": 7871,
-  "novig.updates": 940,
-  "pairs_blocked_antonym_date": 295,
-  "pmglobal.rest_updates": 490,
-  "pmglobal.sweeps": 47,
-  "pmglobal.ticks": 6054,
-  "pmglobal.updates": 1056,
-  "pmglobal.ws_msgs": 249580,
-  "pmglobal.ws_ticks": 1254,
-  "pmus.rest_updates": 9370,
-  "pmus.sweeps": 47,
-  "pmus.ticks": 355824,
-  "pmus.updates": 9370,
+  "kalshi.sweeps": 59,
+  "kalshi.ticks": 397386,
+  "kalshi.updates": 195650,
+  "kalshi.ws_ticks": 397386,
+  "kalshi.ws_trades": 75205,
+  "live_evals_fired": 475,
+  "novig.rest_updates": 1133,
+  "novig.sweeps": 58,
+  "novig.ticks": 9753,
+  "novig.updates": 1133,
+  "pairs_blocked_antonym_date": 370,
+  "pmglobal.rest_updates": 597,
+  "pmglobal.sweeps": 58,
+  "pmglobal.ticks": 7466,
+  "pmglobal.updates": 1296,
+  "pmglobal.ws_msgs": 305273,
+  "pmglobal.ws_ticks": 1566,
+  "pmus.rest_updates": 9770,
+  "pmus.sweeps": 59,
+  "pmus.ticks": 444780,
+  "pmus.updates": 9770,
   "pmus_x.last_count": 7413,
-  "pmus_x.sweeps": 48,
+  "pmus_x.sweeps": 60,
   "prophetx.ticks": 1095,
   "prophetx.updates": 200,
-  "prophetx.ws_errors": 31,
+  "prophetx.ws_errors": 38,
   "px.evt_scanned": 45,
-  "pxboard.sweeps": 47,
-  "supa_errors": 147
+  "pxboard.sweeps": 58,
+  "supa_errors": 182
  },
  "arbitrages": [
   {
@@ -83,7 +83,7 @@
      "0x8abeee54a5c558b5d4daeb702f6d6a7aea050416b447eaf8bb290ae23cbf04ab"
     ],
     "title": "San Diego Padres vs. Tampa Bay Rays",
-    "ask_cents": 10
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -94,9 +94,9 @@
     "title": "San Diego Padres at Tampa Bay Rays",
     "no_cost_cents": 15
    },
-   "total_cost_cents": 25,
-   "edge_bps": 7500,
-   "detected_at": "2026-08-29T22:52:42.864064+00:00"
+   "total_cost_cents": 19,
+   "edge_bps": 8100,
+   "detected_at": "2026-08-29T22:54:50.364464+00:00"
   },
   {
    "buy_yes": {
@@ -106,7 +106,7 @@
      "0xf76af9bd9d69ed323f76a182199641a203f52216be5c682fc404b270024215c2"
     ],
     "title": "Colorado Rockies vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 2
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -117,9 +117,9 @@
     "title": "Colorado Rockies at Atlanta Braves",
     "no_cost_cents": 39
    },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-08-29T22:49:30.684768+00:00"
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-08-29T22:54:28.567728+00:00"
   },
   {
    "buy_yes": {
@@ -142,76 +142,7 @@
    },
    "total_cost_cents": 41,
    "edge_bps": 5900,
-   "detected_at": "2026-08-29T22:48:56.341640+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf76af9bd9d69ed323f76a182199641a203f52216be5c682fc404b270024215c2"
-    ],
-    "title": "Colorado Rockies vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6e05b6de91151666837ea2c2a0fe266d"
-    ],
-    "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 62
-   },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-08-29T22:49:30.668603+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc41068274be299651ac8a7e24c26e58c7b7860198da9d26589edb4fb55b0d8c3"
-    ],
-    "title": "Colorado Rockies vs. Atlanta Braves: O/U 9.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6e05b6de91151666837ea2c2a0fe266d"
-    ],
-    "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 62
-   },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-08-29T22:48:56.363148+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x78d124d8107ee388a951364e9844e9456f8f090ec7208044670e069e5e85ec4c"
-    ],
-    "title": "Jacksonville State vs. North Dakota State Bison",
-    "ask_cents": 37
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9b635e3aa2f36ef62d23252950bc25c5"
-    ],
-    "title": "Jacksonville State at North Dakota State",
-    "no_cost_cents": 36
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-08-29T22:52:46.084214+00:00"
+   "detected_at": "2026-08-29T22:54:28.716411+00:00"
   },
   {
    "buy_yes": {
@@ -230,11 +161,57 @@
      "0xeb833fbba177dc3351f63b742e3ce75084e2d5e8bfd8b1539b0236f46142c99d"
     ],
     "title": "Colorado Rockies vs. Atlanta Braves",
-    "no_cost_cents": 38
+    "no_cost_cents": 22
    },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-08-29T22:52:42.822111+00:00"
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-08-29T22:54:38.025295+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf76af9bd9d69ed323f76a182199641a203f52216be5c682fc404b270024215c2"
+    ],
+    "title": "Colorado Rockies vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 1
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6e05b6de91151666837ea2c2a0fe266d"
+    ],
+    "title": "Colorado Rockies at Atlanta Braves",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-08-29T22:54:28.545564+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc41068274be299651ac8a7e24c26e58c7b7860198da9d26589edb4fb55b0d8c3"
+    ],
+    "title": "Colorado Rockies vs. Atlanta Braves: O/U 9.5",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6e05b6de91151666837ea2c2a0fe266d"
+    ],
+    "title": "Colorado Rockies at Atlanta Braves",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-08-29T22:54:28.735849+00:00"
   },
   {
    "buy_yes": {
@@ -244,7 +221,7 @@
      "0x1c4cda693b69ff91ae104e49091203c4bb9da33ad76dc12c5ee8034ef1ccf813"
     ],
     "title": "Miami Marlins vs. Washington Nationals",
-    "ask_cents": 52
+    "ask_cents": 34
    },
    "buy_no": {
     "venue": "prophetx",
@@ -255,32 +232,78 @@
     "title": "Miami Marlins at Washington Nationals",
     "no_cost_cents": 30
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-08-29T22:52:18.476224+00:00"
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-08-29T22:54:38.053393+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x78d124d8107ee388a951364e9844e9456f8f090ec7208044670e069e5e85ec4c"
+    ],
+    "title": "Jacksonville State vs. North Dakota State Bison",
+    "ask_cents": 30
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9b635e3aa2f36ef62d23252950bc25c5"
+    ],
+    "title": "Jacksonville State at North Dakota State",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-08-29T22:54:28.695032+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "4da8fb10eccb705c39d23021046339b9"
+     "d727a3b67427d76af496c949c72d02cc"
     ],
-    "title": "Miami Marlins at Washington Nationals",
-    "ask_cents": 46
+    "title": "Colorado Rockies at Atlanta Braves",
+    "ask_cents": 62
    },
    "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xeb833fbba177dc3351f63b742e3ce75084e2d5e8bfd8b1539b0236f46142c99d"
+    ],
+    "title": "Colorado Rockies vs. Atlanta Braves",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-08-29T22:54:37.999665+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x1c4cda693b69ff91ae104e49091203c4bb9da33ad76dc12c5ee8034ef1ccf813"
     ],
     "title": "Miami Marlins vs. Washington Nationals",
-    "no_cost_cents": 48
+    "ask_cents": 34
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-08-29T22:52:18.495527+00:00"
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4da8fb10eccb705c39d23021046339b9"
+    ],
+    "title": "Miami Marlins at Washington Nationals",
+    "no_cost_cents": 55
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-29T22:54:38.073364+00:00"
   },
   {
    "buy_yes": {
@@ -290,7 +313,7 @@
      "0x8abeee54a5c558b5d4daeb702f6d6a7aea050416b447eaf8bb290ae23cbf04ab"
     ],
     "title": "San Diego Padres vs. Tampa Bay Rays",
-    "ask_cents": 10
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -301,9 +324,9 @@
     "title": "San Diego Padres at Tampa Bay Rays",
     "no_cost_cents": 85
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-08-29T22:52:42.841539+00:00"
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-29T22:54:50.364448+00:00"
   },
   {
    "buy_yes": {
@@ -313,7 +336,7 @@
      "0x78d124d8107ee388a951364e9844e9456f8f090ec7208044670e069e5e85ec4c"
     ],
     "title": "Jacksonville State vs. North Dakota State Bison",
-    "ask_cents": 37
+    "ask_cents": 30
    },
    "buy_no": {
     "venue": "prophetx",
@@ -324,9 +347,9 @@
     "title": "Jacksonville State at North Dakota State",
     "no_cost_cents": 62
    },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-08-29T22:52:46.084190+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-08-29T22:54:28.672065+00:00"
   }
  ]
 }
