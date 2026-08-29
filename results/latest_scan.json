@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-08-29T23:15:22.542134+00:00",
+ "scanned_at": "2026-08-29T23:17:23.266056+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 30.8,
+ "loop_uptime_min": 32.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 73998,
+   "markets": 76363,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7413,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
@@ -25,102 +25,56 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 219,
-   "last_tick_age_s": 6.9
+   "markets": 222,
+   "last_tick_age_s": 9.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 52,
-   "last_tick_age_s": 1575.3
+   "last_tick_age_s": 1696.0
   }
  ],
  "totals": {
-  "markets_tracked": 81791,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 84159,
+  "pairs_married": 10,
+  "arbitrages": 6
  },
  "stats": {
-  "commits": 14,
-  "gist_errors": 32,
+  "commits": 15,
+  "gist_errors": 34,
   "hot_errors": 0,
-  "kalshi.sweeps": 186,
-  "kalshi.ticks": 1296661,
-  "kalshi.updates": 618129,
-  "kalshi.ws_ticks": 1296661,
-  "kalshi.ws_trades": 279466,
-  "live_evals_fired": 1135,
-  "novig.rest_updates": 3472,
-  "novig.sweeps": 185,
-  "novig.ticks": 31858,
-  "novig.updates": 3472,
-  "pairs_blocked_antonym_date": 1160,
-  "pmglobal.rest_updates": 1453,
-  "pmglobal.sweeps": 185,
-  "pmglobal.ticks": 22699,
-  "pmglobal.updates": 3187,
-  "pmglobal.ws_msgs": 812035,
-  "pmglobal.ws_ticks": 4099,
-  "pmus.rest_updates": 13678,
-  "pmus.sweeps": 186,
-  "pmus.ticks": 1386231,
-  "pmus.updates": 13678,
+  "kalshi.sweeps": 199,
+  "kalshi.ticks": 1386761,
+  "kalshi.updates": 661512,
+  "kalshi.ws_ticks": 1386761,
+  "kalshi.ws_trades": 299503,
+  "live_evals_fired": 1163,
+  "novig.rest_updates": 3785,
+  "novig.sweeps": 198,
+  "novig.ticks": 33881,
+  "novig.updates": 3785,
+  "pairs_blocked_antonym_date": 1245,
+  "pmglobal.rest_updates": 1535,
+  "pmglobal.sweeps": 198,
+  "pmglobal.ticks": 24231,
+  "pmglobal.updates": 3379,
+  "pmglobal.ws_msgs": 879752,
+  "pmglobal.ws_ticks": 4331,
+  "pmus.rest_updates": 14098,
+  "pmus.sweeps": 199,
+  "pmus.ticks": 1482600,
+  "pmus.updates": 14098,
   "pmus_x.last_count": 7413,
-  "pmus_x.sweeps": 187,
+  "pmus_x.sweeps": 200,
   "prophetx.ticks": 1095,
   "prophetx.updates": 200,
-  "prophetx.ws_errors": 112,
+  "prophetx.ws_errors": 119,
   "px.evt_scanned": 45,
-  "pxboard.sweeps": 185,
-  "supa_errors": 572
+  "pxboard.sweeps": 198,
+  "supa_errors": 611
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc41068274be299651ac8a7e24c26e58c7b7860198da9d26589edb4fb55b0d8c3"
-    ],
-    "title": "Colorado Rockies vs. Atlanta Braves: O/U 9.5",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d727a3b67427d76af496c949c72d02cc"
-    ],
-    "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 39
-   },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-08-29T23:14:36.511202+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xeb833fbba177dc3351f63b742e3ce75084e2d5e8bfd8b1539b0236f46142c99d"
-    ],
-    "title": "Colorado Rockies vs. Atlanta Braves",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d727a3b67427d76af496c949c72d02cc"
-    ],
-    "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 39
-   },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-08-29T23:15:18.022389+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -165,30 +119,7 @@
    },
    "total_cost_cents": 52,
    "edge_bps": 4800,
-   "detected_at": "2026-08-29T23:14:36.490483+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc41068274be299651ac8a7e24c26e58c7b7860198da9d26589edb4fb55b0d8c3"
-    ],
-    "title": "Colorado Rockies vs. Atlanta Braves: O/U 9.5",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6e05b6de91151666837ea2c2a0fe266d"
-    ],
-    "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 62
-   },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-08-29T23:14:36.534665+00:00"
+   "detected_at": "2026-08-29T23:16:01.116504+00:00"
   },
   {
    "buy_yes": {
@@ -198,20 +129,20 @@
      "0xeb833fbba177dc3351f63b742e3ce75084e2d5e8bfd8b1539b0236f46142c99d"
     ],
     "title": "Colorado Rockies vs. Atlanta Braves",
-    "ask_cents": 8
+    "ask_cents": 22
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "6e05b6de91151666837ea2c2a0fe266d"
+     "d727a3b67427d76af496c949c72d02cc"
     ],
     "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 62
+    "no_cost_cents": 39
    },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-08-29T23:15:18.054431+00:00"
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-08-29T23:17:23.265982+00:00"
   },
   {
    "buy_yes": {
@@ -234,7 +165,7 @@
    },
    "total_cost_cents": 75,
    "edge_bps": 2500,
-   "detected_at": "2026-08-29T23:14:36.467392+00:00"
+   "detected_at": "2026-08-29T23:16:01.098508+00:00"
   },
   {
    "buy_yes": {
@@ -258,6 +189,29 @@
    "total_cost_cents": 76,
    "edge_bps": 2400,
    "detected_at": "2026-08-29T22:59:31.150836+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xeb833fbba177dc3351f63b742e3ce75084e2d5e8bfd8b1539b0236f46142c99d"
+    ],
+    "title": "Colorado Rockies vs. Atlanta Braves",
+    "ask_cents": 22
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6e05b6de91151666837ea2c2a0fe266d"
+    ],
+    "title": "Colorado Rockies at Atlanta Braves",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-08-29T23:17:23.266002+00:00"
   }
  ]
 }
