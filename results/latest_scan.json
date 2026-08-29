@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-08-29T00:38:55.020571+00:00",
+ "scanned_at": "2026-08-29T00:41:01.129231+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 35.1,
+ "loop_uptime_min": 37.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 75917,
+   "markets": 77810,
    "last_tick_age_s": 0.0
   },
   {
@@ -26,54 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 191,
-   "last_tick_age_s": 12.1
+   "last_tick_age_s": 14.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 47,
-   "last_tick_age_s": 1819.5
+   "last_tick_age_s": 1945.6
   }
  ],
  "totals": {
-  "markets_tracked": 83734,
+  "markets_tracked": 85627,
   "pairs_married": 5,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 16,
-  "gist_errors": 36,
+  "commits": 17,
+  "gist_errors": 38,
   "hot_errors": 0,
-  "kalshi.sweeps": 202,
-  "kalshi.ticks": 2337769,
-  "kalshi.updates": 1128923,
-  "kalshi.ws_ticks": 2337769,
-  "kalshi.ws_trades": 332261,
-  "live_evals_fired": 571,
-  "novig.rest_updates": 5597,
-  "novig.sweeps": 201,
-  "novig.ticks": 31837,
-  "novig.updates": 5597,
-  "pairs_blocked_antonym_date": 1984,
-  "pmglobal.rest_updates": 2286,
-  "pmglobal.sweeps": 201,
-  "pmglobal.ticks": 25680,
-  "pmglobal.updates": 4779,
+  "kalshi.sweeps": 214,
+  "kalshi.ticks": 2478202,
+  "kalshi.updates": 1195405,
+  "kalshi.ws_ticks": 2478202,
+  "kalshi.ws_trades": 349976,
+  "live_evals_fired": 595,
+  "novig.rest_updates": 5927,
+  "novig.sweeps": 213,
+  "novig.ticks": 33722,
+  "novig.updates": 5927,
+  "pairs_blocked_antonym_date": 2104,
+  "pmglobal.rest_updates": 2378,
+  "pmglobal.sweeps": 213,
+  "pmglobal.ticks": 27145,
+  "pmglobal.updates": 4980,
   "pmglobal.ws_errors": 9,
-  "pmglobal.ws_msgs": 1375497,
-  "pmglobal.ws_ticks": 5480,
-  "pmus.rest_updates": 16536,
-  "pmus.sweeps": 202,
-  "pmus.ticks": 1515890,
-  "pmus.updates": 16536,
+  "pmglobal.ws_msgs": 1440205,
+  "pmglobal.ws_ticks": 5745,
+  "pmus.rest_updates": 17060,
+  "pmus.sweeps": 214,
+  "pmus.ticks": 1605506,
+  "pmus.updates": 17060,
   "pmus_x.last_count": 7468,
-  "pmus_x.sweeps": 203,
+  "pmus_x.sweeps": 215,
   "prophetx.ticks": 1260,
   "prophetx.updates": 163,
-  "prophetx.ws_errors": 128,
+  "prophetx.ws_errors": 136,
   "px.evt_scanned": 43,
-  "pxboard.sweeps": 201,
-  "supa_errors": 641
+  "pxboard.sweeps": 213,
+  "supa_errors": 677
  },
  "arbitrages": [
   {
@@ -124,6 +124,29 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x53ad852a9950f4b28611090c60b71fc1e03d968f4b6d904337079ffa74fef277"
+    ],
+    "title": "Los Angeles Dodgers vs. Detroit Tigers",
+    "ask_cents": 50
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bdc89fa1b6b6212befe60d755f357643"
+    ],
+    "title": "Los Angeles Dodgers at Detroit Tigers",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-29T00:40:49.721400+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -139,34 +162,11 @@
      "0x53ad852a9950f4b28611090c60b71fc1e03d968f4b6d904337079ffa74fef277"
     ],
     "title": "Los Angeles Dodgers vs. Detroit Tigers",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-08-29T00:38:54.985257+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x53ad852a9950f4b28611090c60b71fc1e03d968f4b6d904337079ffa74fef277"
-    ],
-    "title": "Los Angeles Dodgers vs. Detroit Tigers",
-    "ask_cents": 51
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bdc89fa1b6b6212befe60d755f357643"
-    ],
-    "title": "Los Angeles Dodgers at Detroit Tigers",
-    "no_cost_cents": 39
+    "no_cost_cents": 51
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-08-29T00:38:54.948542+00:00"
+   "detected_at": "2026-08-29T00:40:49.721417+00:00"
   }
  ]
 }
