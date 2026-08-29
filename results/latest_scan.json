@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-08-29T22:46:43.441775+00:00",
+ "scanned_at": "2026-08-29T22:48:43.646617+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.1,
+ "loop_uptime_min": 4.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 15493,
+   "markets": 22397,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7413,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 4.7
   },
   {
    "venue": "pmglobal",
@@ -25,53 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 167,
-   "last_tick_age_s": 6.5
+   "markets": 182,
+   "last_tick_age_s": 2.3
   },
   {
    "venue": "prophetx",
    "state": "OK",
-   "markets": 50,
-   "last_tick_age_s": 4.8
+   "markets": 52,
+   "last_tick_age_s": 0.0
   }
  ],
  "totals": {
-  "markets_tracked": 23223,
+  "markets_tracked": 30144,
   "pairs_married": 11,
-  "arbitrages": 10
+  "arbitrages": 8
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 14,
-  "kalshi.ticks": 83869,
-  "kalshi.updates": 45182,
-  "kalshi.ws_ticks": 83869,
-  "kalshi.ws_trades": 14854,
-  "live_evals_fired": 100,
-  "novig.rest_updates": 339,
-  "novig.sweeps": 13,
-  "novig.ticks": 2140,
-  "novig.updates": 339,
-  "pairs_blocked_antonym_date": 85,
-  "pmglobal.rest_updates": 238,
-  "pmglobal.sweeps": 13,
-  "pmglobal.ticks": 1728,
-  "pmglobal.updates": 400,
-  "pmglobal.ws_msgs": 59118,
-  "pmglobal.ws_ticks": 328,
-  "pmus.rest_updates": 7974,
-  "pmus.sweeps": 14,
-  "pmus.ticks": 111195,
-  "pmus.updates": 7974,
+  "kalshi.sweeps": 25,
+  "kalshi.ticks": 162627,
+  "kalshi.updates": 83418,
+  "kalshi.ws_ticks": 162627,
+  "kalshi.ws_trades": 30478,
+  "live_evals_fired": 168,
+  "novig.rest_updates": 536,
+  "novig.sweeps": 25,
+  "novig.ticks": 4099,
+  "novig.updates": 536,
+  "pairs_blocked_antonym_date": 160,
+  "pmglobal.rest_updates": 314,
+  "pmglobal.sweeps": 25,
+  "pmglobal.ticks": 3194,
+  "pmglobal.updates": 578,
+  "pmglobal.ws_msgs": 119419,
+  "pmglobal.ws_ticks": 594,
+  "pmus.rest_updates": 8435,
+  "pmus.sweeps": 25,
+  "pmus.ticks": 192738,
+  "pmus.updates": 8435,
   "pmus_x.last_count": 7413,
-  "pmus_x.sweeps": 15,
-  "prophetx.ticks": 503,
-  "prophetx.updates": 128,
-  "prophetx.ws_errors": 8,
-  "px.evt_scanned": 42,
-  "pxboard.sweeps": 13,
-  "supa_errors": 40
+  "pmus_x.sweeps": 26,
+  "prophetx.ticks": 1005,
+  "prophetx.updates": 192,
+  "prophetx.ws_errors": 16,
+  "px.evt_scanned": 43,
+  "pxboard.sweeps": 25,
+  "supa_errors": 77
  },
  "arbitrages": [
   {
@@ -82,7 +83,7 @@
      "0x8abeee54a5c558b5d4daeb702f6d6a7aea050416b447eaf8bb290ae23cbf04ab"
     ],
     "title": "San Diego Padres vs. Tampa Bay Rays",
-    "ask_cents": 14
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "prophetx",
@@ -91,11 +92,11 @@
      "96ec7a0d35d0809bdcc1bbe257795e85"
     ],
     "title": "San Diego Padres at Tampa Bay Rays",
-    "no_cost_cents": 12
+    "no_cost_cents": 11
    },
-   "total_cost_cents": 26,
-   "edge_bps": 7400,
-   "detected_at": "2026-08-29T22:46:39.770352+00:00"
+   "total_cost_cents": 23,
+   "edge_bps": 7700,
+   "detected_at": "2026-08-29T22:48:20.828221+00:00"
   },
   {
    "buy_yes": {
@@ -114,34 +115,34 @@
      "d727a3b67427d76af496c949c72d02cc"
     ],
     "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 37
-   },
-   "total_cost_cents": 39,
-   "edge_bps": 6100,
-   "detected_at": "2026-08-29T22:46:13.996172+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf76af9bd9d69ed323f76a182199641a203f52216be5c682fc404b270024215c2"
-    ],
-    "title": "Colorado Rockies vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d727a3b67427d76af496c949c72d02cc"
-    ],
-    "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 37
+    "no_cost_cents": 39
    },
    "total_cost_cents": 41,
    "edge_bps": 5900,
-   "detected_at": "2026-08-29T22:46:14.021870+00:00"
+   "detected_at": "2026-08-29T22:47:50.057084+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf76af9bd9d69ed323f76a182199641a203f52216be5c682fc404b270024215c2"
+    ],
+    "title": "Colorado Rockies vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d727a3b67427d76af496c949c72d02cc"
+    ],
+    "title": "Colorado Rockies at Atlanta Braves",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 43,
+   "edge_bps": 5700,
+   "detected_at": "2026-08-29T22:47:50.074478+00:00"
   },
   {
    "buy_yes": {
@@ -160,11 +161,11 @@
      "6e05b6de91151666837ea2c2a0fe266d"
     ],
     "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 63
+    "no_cost_cents": 62
    },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-08-29T22:44:43.792779+00:00"
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-08-29T22:47:19.716201+00:00"
   },
   {
    "buy_yes": {
@@ -183,11 +184,11 @@
      "6e05b6de91151666837ea2c2a0fe266d"
     ],
     "title": "Colorado Rockies at Atlanta Braves",
-    "no_cost_cents": 63
+    "no_cost_cents": 62
    },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-08-29T22:44:43.650018+00:00"
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-08-29T22:47:19.635600+00:00"
   },
   {
    "buy_yes": {
@@ -197,7 +198,7 @@
      "6e05b6de91151666837ea2c2a0fe266d"
     ],
     "title": "Colorado Rockies at Atlanta Braves",
-    "ask_cents": 38
+    "ask_cents": 39
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -208,9 +209,9 @@
     "title": "Colorado Rockies vs. Atlanta Braves",
     "no_cost_cents": 34
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-08-29T22:46:18.245111+00:00"
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-08-29T22:47:54.809689+00:00"
   },
   {
    "buy_yes": {
@@ -220,7 +221,7 @@
      "d727a3b67427d76af496c949c72d02cc"
     ],
     "title": "Colorado Rockies at Atlanta Braves",
-    "ask_cents": 64
+    "ask_cents": 62
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -231,32 +232,9 @@
     "title": "Colorado Rockies vs. Atlanta Braves",
     "no_cost_cents": 34
    },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-08-29T22:46:18.220261+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x1c4cda693b69ff91ae104e49091203c4bb9da33ad76dc12c5ee8034ef1ccf813"
-    ],
-    "title": "Miami Marlins vs. Washington Nationals",
-    "ask_cents": 50
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4da8fb10eccb705c39d23021046339b9"
-    ],
-    "title": "Miami Marlins at Washington Nationals",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-08-29T22:46:38.322676+00:00"
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-08-29T22:47:54.784553+00:00"
   },
   {
    "buy_yes": {
@@ -279,30 +257,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-08-29T22:46:27.968549+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "42ed236d84189a27b3025a83eda1e8ba"
-    ],
-    "title": "Miami Marlins at Washington Nationals",
-    "ask_cents": 49
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x1c4cda693b69ff91ae104e49091203c4bb9da33ad76dc12c5ee8034ef1ccf813"
-    ],
-    "title": "Miami Marlins vs. Washington Nationals",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-08-29T22:46:38.301695+00:00"
+   "detected_at": "2026-08-29T22:48:40.095325+00:00"
   }
  ]
 }
