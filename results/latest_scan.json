@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-08-29T00:47:19.565315+00:00",
+ "scanned_at": "2026-08-29T00:49:21.142165+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 43.5,
+ "loop_uptime_min": 45.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 84851,
+   "markets": 86897,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7650,
-   "last_tick_age_s": 4.6
+   "markets": 7651,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 111,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 193,
-   "last_tick_age_s": 2.4
+   "markets": 194,
+   "last_tick_age_s": 5.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 47,
-   "last_tick_age_s": 2324.1
+   "last_tick_age_s": 2445.7
   }
  ],
  "totals": {
-  "markets_tracked": 92852,
+  "markets_tracked": 94900,
   "pairs_married": 5,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 20,
-  "gist_errors": 44,
+  "commits": 21,
+  "gist_errors": 46,
   "hot_errors": 0,
-  "kalshi.rest_updates": 80,
-  "kalshi.sweeps": 249,
-  "kalshi.ticks": 2918489,
-  "kalshi.updates": 1410211,
-  "kalshi.ws_ticks": 2918334,
-  "kalshi.ws_trades": 400820,
-  "live_evals_fired": 668,
-  "novig.rest_updates": 6803,
-  "novig.sweeps": 249,
-  "novig.ticks": 39253,
-  "novig.updates": 6803,
-  "pairs_blocked_antonym_date": 2919,
-  "pmglobal.rest_updates": 2789,
-  "pmglobal.sweeps": 249,
-  "pmglobal.ticks": 31675,
-  "pmglobal.updates": 5830,
+  "kalshi.rest_updates": 82,
+  "kalshi.sweeps": 260,
+  "kalshi.ticks": 3054506,
+  "kalshi.updates": 1477439,
+  "kalshi.ws_ticks": 3054345,
+  "kalshi.ws_trades": 417356,
+  "live_evals_fired": 685,
+  "novig.rest_updates": 7076,
+  "novig.sweeps": 259,
+  "novig.ticks": 40815,
+  "novig.updates": 7076,
+  "pairs_blocked_antonym_date": 3023,
+  "pmglobal.rest_updates": 2851,
+  "pmglobal.sweeps": 259,
+  "pmglobal.ticks": 32972,
+  "pmglobal.updates": 6014,
   "pmglobal.ws_errors": 11,
-  "pmglobal.ws_msgs": 1625758,
-  "pmglobal.ws_ticks": 6675,
-  "pmus.rest_updates": 19173,
-  "pmus.sweeps": 249,
-  "pmus.ticks": 1871083,
-  "pmus.updates": 19173,
+  "pmglobal.ws_msgs": 1690648,
+  "pmglobal.ws_ticks": 6972,
+  "pmus.rest_updates": 19582,
+  "pmus.sweeps": 260,
+  "pmus.ticks": 1955216,
+  "pmus.updates": 19582,
   "pmus_x.last_count": 7649,
-  "pmus_x.sweeps": 250,
+  "pmus_x.sweeps": 261,
   "prophetx.ticks": 1260,
   "prophetx.updates": 163,
-  "prophetx.ws_errors": 160,
+  "prophetx.ws_errors": 167,
   "px.evt_scanned": 43,
-  "pxboard.sweeps": 249,
-  "supa_errors": 787
+  "pxboard.sweeps": 259,
+  "supa_errors": 820
  },
  "arbitrages": [
   {
@@ -140,34 +140,34 @@
      "0x53ad852a9950f4b28611090c60b71fc1e03d968f4b6d904337079ffa74fef277"
     ],
     "title": "Los Angeles Dodgers vs. Detroit Tigers",
-    "no_cost_cents": 43
+    "no_cost_cents": 37
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-08-29T00:47:08.854041+00:00"
+   "total_cost_cents": 76,
+   "edge_bps": 2400,
+   "detected_at": "2026-08-29T00:49:18.679718+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x53ad852a9950f4b28611090c60b71fc1e03d968f4b6d904337079ffa74fef277"
-    ],
-    "title": "Los Angeles Dodgers vs. Detroit Tigers",
-    "ask_cents": 57
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "bdc89fa1b6b6212befe60d755f357643"
     ],
     "title": "Los Angeles Dodgers at Detroit Tigers",
-    "no_cost_cents": 39
+    "ask_cents": 62
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-08-29T00:47:08.826810+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x53ad852a9950f4b28611090c60b71fc1e03d968f4b6d904337079ffa74fef277"
+    ],
+    "title": "Los Angeles Dodgers vs. Detroit Tigers",
+    "no_cost_cents": 37
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-29T00:49:18.659537+00:00"
   }
  ]
 }
