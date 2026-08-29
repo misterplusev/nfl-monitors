@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-08-29T09:17:09.491016+00:00",
+ "scanned_at": "2026-08-29T09:19:13.225234+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 120.7,
+ "loop_uptime_min": 122.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 89087,
+   "markets": 89565,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,62 +19,62 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 118,
+   "markets": 120,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 226,
-   "last_tick_age_s": 5.8
+   "last_tick_age_s": 12.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 117,
-   "last_tick_age_s": 6900.5
+   "last_tick_age_s": 7024.2
   }
  ],
  "totals": {
-  "markets_tracked": 97040,
+  "markets_tracked": 97520,
   "pairs_married": 34,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 58,
-  "gist_errors": 126,
+  "commits": 59,
+  "gist_errors": 128,
   "hot_errors": 0,
-  "kalshi.sweeps": 638,
-  "kalshi.ticks": 2522432,
-  "kalshi.updates": 1005628,
+  "kalshi.sweeps": 649,
+  "kalshi.ticks": 2566214,
+  "kalshi.updates": 1023356,
   "kalshi.ws_errors": 1,
-  "kalshi.ws_ticks": 2522432,
-  "kalshi.ws_trades": 479445,
-  "live_evals_fired": 710,
-  "novig.rest_updates": 1797,
-  "novig.sweeps": 637,
-  "novig.ticks": 135251,
-  "novig.updates": 1797,
-  "pairs_blocked_antonym_date": 6629,
-  "pmglobal.rest_updates": 3173,
-  "pmglobal.sweeps": 637,
-  "pmglobal.ticks": 75186,
-  "pmglobal.updates": 6531,
+  "kalshi.ws_ticks": 2566214,
+  "kalshi.ws_trades": 486890,
+  "live_evals_fired": 814,
+  "novig.rest_updates": 1818,
+  "novig.sweeps": 648,
+  "novig.ticks": 137567,
+  "novig.updates": 1818,
+  "pairs_blocked_antonym_date": 6755,
+  "pmglobal.rest_updates": 3240,
+  "pmglobal.sweeps": 648,
+  "pmglobal.ticks": 76474,
+  "pmglobal.updates": 6658,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 824142,
-  "pmglobal.ws_ticks": 11386,
-  "pmus.rest_updates": 34139,
-  "pmus.sweeps": 638,
-  "pmus.ticks": 4762767,
-  "pmus.updates": 34139,
+  "pmglobal.ws_msgs": 839452,
+  "pmglobal.ws_ticks": 11574,
+  "pmus.rest_updates": 34648,
+  "pmus.sweeps": 649,
+  "pmus.ticks": 4844717,
+  "pmus.updates": 34648,
   "pmus_x.last_count": 7450,
-  "pmus_x.sweeps": 639,
+  "pmus_x.sweeps": 650,
   "prophetx.ticks": 3210,
   "prophetx.updates": 124,
-  "prophetx.ws_errors": 427,
+  "prophetx.ws_errors": 434,
   "px.evt_scanned": 113,
-  "pxboard.sweeps": 637,
-  "supa_errors": 2087
+  "pxboard.sweeps": 648,
+  "supa_errors": 2122
  },
  "arbitrages": [
   {
@@ -91,14 +91,14 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "330524"
+     "330521"
     ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "no_cost_cents": 22
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 26,
-   "edge_bps": 7400,
-   "detected_at": "2026-08-29T09:16:58.911513+00:00"
+   "total_cost_cents": 4,
+   "edge_bps": 9600,
+   "detected_at": "2026-08-29T09:19:10.714791+00:00"
   },
   {
    "buy_yes": {
@@ -114,14 +114,14 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "330524"
+     "330521"
     ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "no_cost_cents": 22
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 31,
-   "edge_bps": 6900,
-   "detected_at": "2026-08-29T09:16:59.097140+00:00"
+   "total_cost_cents": 9,
+   "edge_bps": 9100,
+   "detected_at": "2026-08-29T09:19:10.886376+00:00"
   },
   {
    "buy_yes": {
@@ -137,47 +137,24 @@
     "venue": "pmus",
     "key": [
      "pmus",
+     "330521"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 10,
+   "edge_bps": 9000,
+   "detected_at": "2026-08-29T09:19:10.624032+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
      "330524"
     ],
     "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-08-29T09:16:59.309234+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330525"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
-    "ask_cents": 29
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bfd281a8762b10cee3e8b3d16e24261b"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "no_cost_cents": 5
-   },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-08-29T09:16:23.926178+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330525"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
-    "ask_cents": 29
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -188,9 +165,78 @@
     "title": "Rei Tsuruya at Kevin Borjas",
     "no_cost_cents": 5
    },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-08-29T09:16:23.971880+00:00"
+   "total_cost_cents": 12,
+   "edge_bps": 8800,
+   "detected_at": "2026-08-29T09:19:11.327543+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330524"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bfd281a8762b10cee3e8b3d16e24261b"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "no_cost_cents": 5
+   },
+   "total_cost_cents": 12,
+   "edge_bps": 8800,
+   "detected_at": "2026-08-29T09:19:11.288365+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330525"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
+    "ask_cents": 9
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bfd281a8762b10cee3e8b3d16e24261b"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "no_cost_cents": 5
+   },
+   "total_cost_cents": 15,
+   "edge_bps": 8500,
+   "detected_at": "2026-08-29T09:19:11.642813+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330525"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
+    "ask_cents": 9
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d15e10299c4aefc0cae60d05da27244f"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "no_cost_cents": 5
+   },
+   "total_cost_cents": 15,
+   "edge_bps": 8500,
+   "detected_at": "2026-08-29T09:19:11.696546+00:00"
   },
   {
    "buy_yes": {
@@ -206,24 +252,24 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "330524"
+     "330521"
     ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "no_cost_cents": 22
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 40,
-   "edge_bps": 6000,
-   "detected_at": "2026-08-29T09:16:58.859399+00:00"
+   "total_cost_cents": 18,
+   "edge_bps": 8200,
+   "detected_at": "2026-08-29T09:19:10.666880+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "330525"
+     "330524"
     ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
-    "ask_cents": 29
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -234,9 +280,32 @@
     "title": "Rei Tsuruya at Kevin Borjas",
     "no_cost_cents": 13
    },
-   "total_cost_cents": 44,
-   "edge_bps": 5600,
-   "detected_at": "2026-08-29T09:16:24.086626+00:00"
+   "total_cost_cents": 20,
+   "edge_bps": 8000,
+   "detected_at": "2026-08-29T09:19:11.414005+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330525"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
+    "ask_cents": 9
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6f433fa8a1926cc3ad20565da2e22dc5"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "no_cost_cents": 13
+   },
+   "total_cost_cents": 23,
+   "edge_bps": 7700,
+   "detected_at": "2026-08-29T09:19:11.781480+00:00"
   },
   {
    "buy_yes": {
@@ -252,83 +321,14 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "330524"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 46,
-   "edge_bps": 5400,
-   "detected_at": "2026-08-29T09:16:59.044427+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
      "330521"
     ],
     "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
-    "ask_cents": 43
+    "no_cost_cents": 1
    },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d15e10299c4aefc0cae60d05da27244f"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "no_cost_cents": 5
-   },
-   "total_cost_cents": 50,
-   "edge_bps": 5000,
-   "detected_at": "2026-08-29T09:16:58.778810+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330521"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
-    "ask_cents": 43
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bfd281a8762b10cee3e8b3d16e24261b"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "no_cost_cents": 5
-   },
-   "total_cost_cents": 50,
-   "edge_bps": 5000,
-   "detected_at": "2026-08-29T09:16:58.717749+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330521"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
-    "ask_cents": 43
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6f433fa8a1926cc3ad20565da2e22dc5"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "no_cost_cents": 13
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-08-29T09:16:58.342861+00:00"
+   "total_cost_cents": 24,
+   "edge_bps": 7600,
+   "detected_at": "2026-08-29T09:19:10.843062+00:00"
   },
   {
    "buy_yes": {
@@ -344,93 +344,24 @@
     "venue": "pmus",
     "key": [
      "pmus",
+     "330521"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 37,
+   "edge_bps": 6300,
+   "detected_at": "2026-08-29T09:19:11.024339+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
      "330524"
     ],
     "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-08-29T09:16:59.212344+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "47313edebc760ab3e96e9ea28eeb66b6"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330521"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-08-29T09:16:58.488748+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9cc58bd46adfb678a28a74a5b185d1f8"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "ask_cents": 7
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330521"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-08-29T09:16:58.678974+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ea8fb056a4b9ef38bec59e1dd626c84a"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330521"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-08-29T09:16:58.387493+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330525"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
-    "ask_cents": 29
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -441,55 +372,32 @@
     "title": "Rei Tsuruya at Kevin Borjas",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-08-29T09:16:23.794870+00:00"
+   "total_cost_cents": 50,
+   "edge_bps": 5000,
+   "detected_at": "2026-08-29T09:19:11.201618+00:00"
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "47313edebc760ab3e96e9ea28eeb66b6"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "ask_cents": 2
-   },
-   "buy_no": {
     "venue": "pmus",
     "key": [
      "pmus",
      "330525"
     ],
     "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
-    "no_cost_cents": 71
+    "ask_cents": 9
    },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-08-29T09:16:24.222120+00:00"
-  },
-  {
-   "buy_yes": {
+   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "5ec65912faa2bc36d19bf5c2fdfe9fd5"
+     "5c270445b95905f8a9a755e9e6a85156"
     ],
     "title": "Rei Tsuruya at Kevin Borjas",
-    "ask_cents": 16
+    "no_cost_cents": 43
    },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330521"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-08-29T09:16:58.435127+00:00"
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-08-29T09:19:11.500159+00:00"
   },
   {
    "buy_yes": {
@@ -505,24 +413,24 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "330524"
+     "330521"
     ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "no_cost_cents": 22
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-08-29T09:16:58.947259+00:00"
+   "total_cost_cents": 54,
+   "edge_bps": 4600,
+   "detected_at": "2026-08-29T09:19:10.749223+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "330525"
+     "330524"
     ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
-    "ask_cents": 29
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -533,78 +441,32 @@
     "title": "Rei Tsuruya at Kevin Borjas",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-08-29T09:16:23.742623+00:00"
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-08-29T09:19:11.150936+00:00"
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9cc58bd46adfb678a28a74a5b185d1f8"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "ask_cents": 7
-   },
-   "buy_no": {
     "venue": "pmus",
     "key": [
      "pmus",
      "330525"
     ],
     "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
-    "no_cost_cents": 71
+    "ask_cents": 9
    },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-08-29T09:16:23.886567+00:00"
-  },
-  {
-   "buy_yes": {
+   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "ea8fb056a4b9ef38bec59e1dd626c84a"
+     "24fb74ddf45c2a76ef150cc1e4e53e27"
     ],
     "title": "Rei Tsuruya at Kevin Borjas",
-    "ask_cents": 8
+    "no_cost_cents": 49
    },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330525"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
-    "no_cost_cents": 71
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-29T09:16:24.132853+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b043502ebbde7eb1c5a1a65fa2186a3b"
-    ],
-    "title": "Rei Tsuruya at Kevin Borjas",
-    "ask_cents": 22
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "330521"
-    ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-29T09:16:58.631743+00:00"
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-08-29T09:19:11.449634+00:00"
   },
   {
    "buy_yes": {
@@ -620,14 +482,14 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "330524"
+     "330521"
     ],
-    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "no_cost_cents": 22
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-08-29T09:16:58.999525+00:00"
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-08-29T09:19:10.795529+00:00"
   },
   {
    "buy_yes": {
@@ -637,20 +499,158 @@
      "330524"
     ],
     "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
-    "ask_cents": 78
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "d15e10299c4aefc0cae60d05da27244f"
+     "d2c856f428c532b2fd601b7ef3d615ea"
     ],
     "title": "Rei Tsuruya at Kevin Borjas",
-    "no_cost_cents": 5
+    "no_cost_cents": 66
    },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-08-29T09:16:59.171976+00:00"
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-08-29T09:19:11.378659+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330525"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
+    "ask_cents": 9
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d2c856f428c532b2fd601b7ef3d615ea"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "no_cost_cents": 66
+   },
+   "total_cost_cents": 76,
+   "edge_bps": 2400,
+   "detected_at": "2026-08-29T09:19:11.746837+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330524"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b043502ebbde7eb1c5a1a65fa2186a3b"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "no_cost_cents": 79
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-08-29T09:19:11.248556+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330525"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
+    "ask_cents": 9
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b043502ebbde7eb1c5a1a65fa2186a3b"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "no_cost_cents": 79
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-29T09:19:11.548025+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6f433fa8a1926cc3ad20565da2e22dc5"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "ask_cents": 88
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330521"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end in a draw?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-08-29T09:19:10.575484+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330524"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by submission?",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5ec65912faa2bc36d19bf5c2fdfe9fd5"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "no_cost_cents": 85
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-08-29T09:19:11.056433+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "47313edebc760ab3e96e9ea28eeb66b6"
+    ],
+    "title": "Rei Tsuruya at Kevin Borjas",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "330525"
+    ],
+    "title": "Will Rei Tsuruya vs. Kevin Borjas end by decision?",
+    "no_cost_cents": 91
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-08-29T09:19:11.881117+00:00"
   }
  ]
 }
