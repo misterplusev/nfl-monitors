@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-08-29T00:59:48.401073+00:00",
+ "scanned_at": "2026-08-29T01:01:56.974290+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 56.0,
+ "loop_uptime_min": 58.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 98332,
+   "markets": 102420,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7652,
-   "last_tick_age_s": 2.6
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
@@ -25,56 +25,56 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 195,
-   "last_tick_age_s": 0.4
+   "markets": 196,
+   "last_tick_age_s": 15.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 47,
-   "last_tick_age_s": 3072.9
+   "last_tick_age_s": 3201.5
   }
  ],
  "totals": {
-  "markets_tracked": 106338,
+  "markets_tracked": 110427,
   "pairs_married": 5,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 26,
-  "gist_errors": 56,
+  "commits": 27,
+  "gist_errors": 58,
   "hot_errors": 0,
   "kalshi.rest_updates": 104,
-  "kalshi.sweeps": 317,
-  "kalshi.ticks": 3726272,
-  "kalshi.updates": 1796497,
-  "kalshi.ws_ticks": 3726045,
-  "kalshi.ws_trades": 521365,
-  "live_evals_fired": 894,
-  "novig.rest_updates": 8506,
-  "novig.sweeps": 317,
-  "novig.ticks": 49575,
-  "novig.updates": 8506,
-  "pairs_blocked_antonym_date": 3600,
-  "pmglobal.rest_updates": 3271,
-  "pmglobal.sweeps": 317,
-  "pmglobal.ticks": 40230,
-  "pmglobal.updates": 6975,
+  "kalshi.sweeps": 329,
+  "kalshi.ticks": 3865386,
+  "kalshi.updates": 1860760,
+  "kalshi.ws_ticks": 3865159,
+  "kalshi.ws_trades": 539743,
+  "live_evals_fired": 936,
+  "novig.rest_updates": 8755,
+  "novig.sweeps": 328,
+  "novig.ticks": 51164,
+  "novig.updates": 8755,
+  "pairs_blocked_antonym_date": 3712,
+  "pmglobal.rest_updates": 3361,
+  "pmglobal.sweeps": 328,
+  "pmglobal.ticks": 41572,
+  "pmglobal.updates": 7143,
   "pmglobal.ws_errors": 11,
-  "pmglobal.ws_msgs": 2011601,
-  "pmglobal.ws_ticks": 8430,
-  "pmus.rest_updates": 21500,
-  "pmus.sweeps": 317,
-  "pmus.ticks": 2391336,
-  "pmus.updates": 21500,
-  "pmus_x.last_count": 7650,
-  "pmus_x.sweeps": 318,
+  "pmglobal.ws_msgs": 2065701,
+  "pmglobal.ws_ticks": 8672,
+  "pmus.rest_updates": 21980,
+  "pmus.sweeps": 329,
+  "pmus.ticks": 2483146,
+  "pmus.updates": 21980,
+  "pmus_x.last_count": 7651,
+  "pmus_x.sweeps": 330,
   "prophetx.ticks": 1260,
   "prophetx.updates": 163,
-  "prophetx.ws_errors": 205,
+  "prophetx.ws_errors": 212,
   "px.evt_scanned": 43,
-  "pxboard.sweeps": 316,
-  "supa_errors": 999
+  "pxboard.sweeps": 328,
+  "supa_errors": 1034
  },
  "arbitrages": [
   {
@@ -85,7 +85,7 @@
      "0x107b7769aa8ce08a2a48be4a98da75490980c435d109d4265bca955dfcd8f7ca"
     ],
     "title": "Los Angeles Dodgers vs. Detroit Tigers: O/U 7.5",
-    "ask_cents": 8
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "prophetx",
@@ -96,9 +96,32 @@
     "title": "Los Angeles Dodgers at Detroit Tigers",
     "no_cost_cents": 39
    },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-08-29T00:56:02.249093+00:00"
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-08-29T01:01:07.473666+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x107b7769aa8ce08a2a48be4a98da75490980c435d109d4265bca955dfcd8f7ca"
+    ],
+    "title": "Los Angeles Dodgers vs. Detroit Tigers: O/U 7.5",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fc8cbb665b326f2cd44ddb58a2e74815"
+    ],
+    "title": "Los Angeles Dodgers at Detroit Tigers",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-08-29T01:01:07.510467+00:00"
   },
   {
    "buy_yes": {
@@ -117,57 +140,34 @@
      "0x53ad852a9950f4b28611090c60b71fc1e03d968f4b6d904337079ffa74fef277"
     ],
     "title": "Los Angeles Dodgers vs. Detroit Tigers",
-    "no_cost_cents": 19
+    "no_cost_cents": 42
    },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-08-29T00:59:47.899864+00:00"
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-08-29T01:01:33.238298+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x107b7769aa8ce08a2a48be4a98da75490980c435d109d4265bca955dfcd8f7ca"
-    ],
-    "title": "Los Angeles Dodgers vs. Detroit Tigers: O/U 7.5",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "fc8cbb665b326f2cd44ddb58a2e74815"
-    ],
-    "title": "Los Angeles Dodgers at Detroit Tigers",
-    "no_cost_cents": 62
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-08-29T00:56:02.271540+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bdc89fa1b6b6212befe60d755f357643"
-    ],
-    "title": "Los Angeles Dodgers at Detroit Tigers",
-    "ask_cents": 62
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x53ad852a9950f4b28611090c60b71fc1e03d968f4b6d904337079ffa74fef277"
     ],
     "title": "Los Angeles Dodgers vs. Detroit Tigers",
-    "no_cost_cents": 19
+    "ask_cents": 58
    },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-29T00:59:47.878066+00:00"
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bdc89fa1b6b6212befe60d755f357643"
+    ],
+    "title": "Los Angeles Dodgers at Detroit Tigers",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-08-29T01:01:33.217898+00:00"
   }
  ]
 }
