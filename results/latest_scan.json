@@ -1,80 +1,172 @@
 {
- "scanned_at": "2026-08-30T07:33:54.723269+00:00",
+ "scanned_at": "2026-08-30T07:35:54.826645+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 113.9,
+ "loop_uptime_min": 115.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 89075,
-   "last_tick_age_s": 0.1
+   "markets": 89510,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7780,
-   "last_tick_age_s": 4.3
+   "last_tick_age_s": 2.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 119,
-   "last_tick_age_s": 1.0
+   "markets": 122,
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 242,
-   "last_tick_age_s": 2.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 100,
-   "last_tick_age_s": 6577.7
+   "last_tick_age_s": 6697.8
   }
  ],
  "totals": {
-  "markets_tracked": 97316,
-  "pairs_married": 20,
-  "arbitrages": 19
+  "markets_tracked": 97754,
+  "pairs_married": 30,
+  "arbitrages": 25
  },
  "stats": {
-  "commits": 55,
-  "gist_errors": 120,
+  "commits": 56,
+  "gist_errors": 123,
   "hot_errors": 0,
-  "kalshi.sweeps": 781,
-  "kalshi.ticks": 2533163,
-  "kalshi.updates": 1160304,
-  "kalshi.ws_ticks": 2533163,
-  "kalshi.ws_trades": 452545,
-  "live_evals_fired": 326,
-  "novig.rest_updates": 1466,
-  "novig.sweeps": 781,
-  "novig.ticks": 172109,
-  "novig.updates": 1466,
-  "pairs_blocked_antonym_date": 6909,
-  "pmglobal.rest_updates": 2478,
-  "pmglobal.sweeps": 781,
-  "pmglobal.ticks": 88354,
-  "pmglobal.updates": 4818,
-  "pmglobal.ws_msgs": 378143,
-  "pmglobal.ws_ticks": 10154,
-  "pmus.rest_updates": 21227,
-  "pmus.sweeps": 781,
-  "pmus.ticks": 5938776,
-  "pmus.updates": 21227,
+  "kalshi.sweeps": 795,
+  "kalshi.ticks": 2578275,
+  "kalshi.updates": 1179848,
+  "kalshi.ws_ticks": 2578275,
+  "kalshi.ws_trades": 458392,
+  "live_evals_fired": 334,
+  "novig.rest_updates": 1495,
+  "novig.sweeps": 795,
+  "novig.ticks": 175203,
+  "novig.updates": 1495,
+  "pairs_blocked_antonym_date": 7028,
+  "pmglobal.rest_updates": 2532,
+  "pmglobal.sweeps": 795,
+  "pmglobal.ticks": 89915,
+  "pmglobal.updates": 4920,
+  "pmglobal.ws_msgs": 382476,
+  "pmglobal.ws_ticks": 10315,
+  "pmus.rest_updates": 21286,
+  "pmus.sweeps": 795,
+  "pmus.ticks": 6047682,
+  "pmus.updates": 21286,
   "pmus_x.last_count": 7779,
-  "pmus_x.sweeps": 782,
+  "pmus_x.sweeps": 796,
   "prophetx.ticks": 2900,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 403,
+  "prophetx.ws_errors": 410,
   "px.evt_scanned": 100,
-  "pxboard.sweeps": 781,
-  "supa_errors": 2347
+  "pxboard.sweeps": 794,
+  "supa_errors": 2388
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6b02c4412f5f6df62fa6797eed85c7c1"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 25
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 43,
+   "edge_bps": 5700,
+   "detected_at": "2026-08-30T07:35:54.826522+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5b5e65451c94d39eb820de612b483a4d"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 25
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 43,
+   "edge_bps": 5700,
+   "detected_at": "2026-08-30T07:35:54.826589+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "57dfd510d9935f2aa35c87ed17114580"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 34
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 52,
+   "edge_bps": 4800,
+   "detected_at": "2026-08-30T07:35:54.826554+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "3417d34d84822a70cf8e9aec9d78750c"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-08-30T07:35:54.826538+00:00"
+  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -96,7 +188,7 @@
    },
    "total_cost_cents": 68,
    "edge_bps": 3200,
-   "detected_at": "2026-08-30T07:20:12.738924+00:00"
+   "detected_at": "2026-08-30T07:34:37.864212+00:00"
   },
   {
    "buy_yes": {
@@ -119,7 +211,53 @@
    },
    "total_cost_cents": 68,
    "edge_bps": 3200,
-   "detected_at": "2026-08-30T07:20:12.738945+00:00"
+   "detected_at": "2026-08-30T07:34:37.799164+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ff5d1841fbc40ef4d4cfcff67bbd0932"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 50
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-08-30T07:35:54.826577+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "497edd40bad19cf29b781aa4a7e9322b"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 51
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-08-30T07:35:54.826583+00:00"
   },
   {
    "buy_yes": {
@@ -142,7 +280,7 @@
    },
    "total_cost_cents": 77,
    "edge_bps": 2300,
-   "detected_at": "2026-08-30T07:20:12.700648+00:00"
+   "detected_at": "2026-08-30T07:34:37.799175+00:00"
   },
   {
    "buy_yes": {
@@ -166,6 +304,29 @@
    "total_cost_cents": 77,
    "edge_bps": 2300,
    "detected_at": "2026-08-30T07:33:51.604578+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "332594882ad3816228ac2db72dae4907"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-08-30T07:35:54.826563+00:00"
   },
   {
    "buy_yes": {
@@ -211,7 +372,7 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-08-30T07:20:12.719345+00:00"
+   "detected_at": "2026-08-30T07:34:37.836174+00:00"
   },
   {
    "buy_yes": {
@@ -234,7 +395,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-08-30T07:20:12.677375+00:00"
+   "detected_at": "2026-08-30T07:34:37.816930+00:00"
   },
   {
    "buy_yes": {
@@ -257,7 +418,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-08-30T07:20:12.700669+00:00"
+   "detected_at": "2026-08-30T07:34:37.816962+00:00"
   },
   {
    "buy_yes": {
@@ -304,6 +465,29 @@
    "total_cost_cents": 86,
    "edge_bps": 1400,
    "detected_at": "2026-08-30T07:33:51.545774+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e94afa09b5bd0d480beb4429b5ff60d0"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 68
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-08-30T07:35:54.826570+00:00"
   },
   {
    "buy_yes": {
@@ -372,7 +556,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-08-30T07:20:12.738952+00:00"
+   "detected_at": "2026-08-30T07:34:37.799183+00:00"
   },
   {
    "buy_yes": {
@@ -418,7 +602,30 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-08-30T07:20:12.738938+00:00"
+   "detected_at": "2026-08-30T07:34:37.799140+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7f2f7574653c15efffed6b6a0db11312"
+    ],
+    "title": "Brighton & Hove Albion FC at Chelsea FC",
+    "ask_cents": 75
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf036e86da1c8754815f11173b2bed6356f03beae5ebe474df96d0799e5fe2594"
+    ],
+    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 1.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-08-30T07:35:54.826500+00:00"
   },
   {
    "buy_yes": {
@@ -441,76 +648,7 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-08-30T07:20:12.677394+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5fee9a53d6f8195df583eedb48180cfb3a5c9d6855c187667acc9bc5d9b661eb"
-    ],
-    "title": "Leeds United FC vs. Brentford FC: O/U 2.5",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "369d821764b805c0d32c52d3151a58c2"
-    ],
-    "title": "Brentford FC at Leeds United FC",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-08-30T07:33:51.604570+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xed12e47c4817bfa64584855372d175c7d18557c5819be121b745ac1669d79bc2"
-    ],
-    "title": "Chelsea FC vs. Brighton & Hove Albion FC: O/U 2.5",
-    "ask_cents": 57
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "332594882ad3816228ac2db72dae4907"
-    ],
-    "title": "Brighton & Hove Albion FC at Chelsea FC",
-    "no_cost_cents": 39
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-08-30T07:20:12.677403+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "920da9e0099f73632a3bdef827b50287"
-    ],
-    "title": "Brentford FC at Leeds United FC",
-    "ask_cents": 49
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5fee9a53d6f8195df583eedb48180cfb3a5c9d6855c187667acc9bc5d9b661eb"
-    ],
-    "title": "Leeds United FC vs. Brentford FC: O/U 2.5",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-08-30T07:33:51.621553+00:00"
+   "detected_at": "2026-08-30T07:34:37.816952+00:00"
   }
  ]
 }
