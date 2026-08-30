@@ -1,81 +1,104 @@
 {
- "scanned_at": "2026-08-30T22:57:28.213714+00:00",
+ "scanned_at": "2026-08-30T22:59:29.389981+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 4.2,
+ "loop_uptime_min": 6.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 15304,
+   "markets": 20789,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 7.0
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 100,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 226,
-   "last_tick_age_s": 4.4
+   "markets": 229,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 31,
-   "last_tick_age_s": 2.1
+   "last_tick_age_s": 46.9
   }
  ],
  "totals": {
-  "markets_tracked": 23659,
+  "markets_tracked": 29147,
   "pairs_married": 4,
-  "arbitrages": 2
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 1,
-  "gist_errors": 5,
+  "commits": 2,
+  "gist_errors": 7,
   "hot_errors": 0,
-  "kalshi.sweeps": 22,
-  "kalshi.ticks": 148231,
-  "kalshi.updates": 69895,
-  "kalshi.ws_ticks": 148231,
-  "kalshi.ws_trades": 39996,
-  "live_evals_fired": 32,
-  "novig.rest_updates": 554,
-  "novig.sweeps": 21,
-  "novig.ticks": 4449,
-  "novig.updates": 554,
-  "pairs_blocked_antonym_date": 1039,
-  "pmglobal.rest_updates": 443,
-  "pmglobal.sweeps": 21,
-  "pmglobal.ticks": 2995,
-  "pmglobal.updates": 842,
+  "kalshi.sweeps": 32,
+  "kalshi.ticks": 215289,
+  "kalshi.updates": 100521,
+  "kalshi.ws_ticks": 215289,
+  "kalshi.ws_trades": 68300,
+  "live_evals_fired": 39,
+  "novig.rest_updates": 673,
+  "novig.sweeps": 32,
+  "novig.ticks": 6785,
+  "novig.updates": 673,
+  "pairs_blocked_antonym_date": 1520,
+  "pmglobal.rest_updates": 563,
+  "pmglobal.sweeps": 32,
+  "pmglobal.ticks": 4373,
+  "pmglobal.updates": 1081,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 81448,
-  "pmglobal.ws_ticks": 795,
-  "pmus.rest_updates": 8407,
-  "pmus.sweeps": 21,
-  "pmus.ticks": 175956,
-  "pmus.updates": 8407,
+  "pmglobal.ws_msgs": 116972,
+  "pmglobal.ws_ticks": 1073,
+  "pmus.rest_updates": 8761,
+  "pmus.sweeps": 32,
+  "pmus.ticks": 263934,
+  "pmus.updates": 8761,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 22,
-  "prophetx.ticks": 519,
-  "prophetx.updates": 194,
-  "prophetx.ws_errors": 15,
-  "px.evt_scanned": 24,
-  "pxboard.sweeps": 21,
-  "supa_errors": 82
+  "pmus_x.sweeps": 33,
+  "prophetx.ticks": 717,
+  "prophetx.updates": 252,
+  "prophetx.ws_errors": 22,
+  "px.evt_scanned": 29,
+  "pxboard.sweeps": 31,
+  "supa_errors": 120
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f2f7ddbdb001cd266926d759ced3e5ca"
+    ],
+    "title": "Philadelphia Phillies at Los Angeles Angels",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe0a7725d04a320efb1eca2c92d469f6e409ca0e982e52f053def3f0cecd065b4"
+    ],
+    "title": "Philadelphia Phillies vs. Los Angeles Angels",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 3,
+   "edge_bps": 9700,
+   "detected_at": "2026-08-30T22:59:04.233439+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -84,7 +107,7 @@
      "0xa0386ac5273b3a6f3742536ae442ac8dfa703bf6f342c7015fe67bbe0c3b1a01"
     ],
     "title": "Philadelphia Phillies vs. Los Angeles Angels: O/U 7.5",
-    "ask_cents": 30
+    "ask_cents": 18
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +118,9 @@
     "title": "Philadelphia Phillies at Los Angeles Angels",
     "no_cost_cents": 2
    },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-08-30T22:57:22.302455+00:00"
+   "total_cost_cents": 20,
+   "edge_bps": 8000,
+   "detected_at": "2026-08-30T22:58:05.932119+00:00"
   },
   {
    "buy_yes": {
@@ -107,7 +130,7 @@
      "f2f7ddbdb001cd266926d759ced3e5ca"
     ],
     "title": "Philadelphia Phillies at Los Angeles Angels",
-    "ask_cents": 4
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -116,11 +139,11 @@
      "0xa0386ac5273b3a6f3742536ae442ac8dfa703bf6f342c7015fe67bbe0c3b1a01"
     ],
     "title": "Philadelphia Phillies vs. Los Angeles Angels: O/U 7.5",
-    "no_cost_cents": 70
+    "no_cost_cents": 82
    },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-08-30T22:57:22.335054+00:00"
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-08-30T22:58:05.897109+00:00"
   }
  ]
 }
