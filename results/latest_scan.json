@@ -1,105 +1,82 @@
 {
- "scanned_at": "2026-08-30T03:34:46.104314+00:00",
+ "scanned_at": "2026-08-30T03:36:46.785734+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 290.2,
+ "loop_uptime_min": 292.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 270139,
+   "markets": 271029,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7417,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 5.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 189,
-   "last_tick_age_s": 0.2
+   "markets": 191,
+   "last_tick_age_s": 0.8
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 374,
-   "last_tick_age_s": 16.2
+   "markets": 379,
+   "last_tick_age_s": 2.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 52,
-   "last_tick_age_s": 17139.0
+   "last_tick_age_s": 17259.7
   }
  ],
  "totals": {
-  "markets_tracked": 278171,
+  "markets_tracked": 279068,
   "pairs_married": 3,
   "arbitrages": 3
  },
  "stats": {
-  "commits": 140,
-  "gist_errors": 295,
+  "commits": 141,
+  "gist_errors": 297,
   "hot_errors": 0,
   "kalshi.rest_updates": 58,
-  "kalshi.sweeps": 1688,
-  "kalshi.ticks": 12378163,
-  "kalshi.updates": 6049300,
-  "kalshi.ws_ticks": 12378067,
-  "kalshi.ws_trades": 2589339,
-  "live_evals_fired": 1211,
-  "novig.rest_updates": 35392,
-  "novig.sweeps": 1687,
-  "novig.ticks": 261628,
-  "novig.updates": 35392,
-  "pairs_blocked_antonym_date": 10985,
-  "pmglobal.rest_updates": 7515,
-  "pmglobal.sweeps": 1687,
-  "pmglobal.ticks": 196170,
-  "pmglobal.updates": 15661,
+  "kalshi.sweeps": 1699,
+  "kalshi.ticks": 12456783,
+  "kalshi.updates": 6087638,
+  "kalshi.ws_ticks": 12456687,
+  "kalshi.ws_trades": 2606473,
+  "live_evals_fired": 1214,
+  "novig.rest_updates": 35663,
+  "novig.sweeps": 1699,
+  "novig.ticks": 263451,
+  "novig.updates": 35663,
+  "pairs_blocked_antonym_date": 11083,
+  "pmglobal.rest_updates": 7558,
+  "pmglobal.sweeps": 1699,
+  "pmglobal.ticks": 197568,
+  "pmglobal.updates": 15727,
   "pmglobal.ws_errors": 4,
-  "pmglobal.ws_msgs": 4027838,
-  "pmglobal.ws_ticks": 27370,
-  "pmus.rest_updates": 56940,
-  "pmus.sweeps": 1688,
-  "pmus.ticks": 12521326,
-  "pmus.updates": 56940,
+  "pmglobal.ws_msgs": 4031395,
+  "pmglobal.ws_ticks": 27568,
+  "pmus.rest_updates": 57194,
+  "pmus.sweeps": 1699,
+  "pmus.ticks": 12602869,
+  "pmus.updates": 57194,
   "pmus_x.last_count": 7413,
-  "pmus_x.sweeps": 1689,
+  "pmus_x.sweeps": 1700,
   "prophetx.ticks": 1095,
   "prophetx.updates": 200,
-  "prophetx.ws_errors": 1056,
+  "prophetx.ws_errors": 1064,
   "px.evt_scanned": 45,
-  "pxboard.sweeps": 1687,
-  "supa_errors": 5133
+  "pxboard.sweeps": 1699,
+  "supa_errors": 5168
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0538485cc98d686727964231bfa54115"
-    ],
-    "title": "Arizona Diamondbacks at San Francisco Giants",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfc9ea15f75b2489912fd825e4c7082c770656450bac594177c939bc90bd622c2"
-    ],
-    "title": "Arizona Diamondbacks vs. San Francisco Giants: O/U 8.5",
-    "no_cost_cents": 36
-   },
-   "total_cost_cents": 40,
-   "edge_bps": 6000,
-   "detected_at": "2026-08-30T03:30:07.787004+00:00"
-  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -117,11 +94,34 @@
      "0xfe1373daea394fa7556566290f0ea65c83047e6315432d019ca7a4488d72b34e"
     ],
     "title": "Arizona Diamondbacks vs. San Francisco Giants: O/U 7.5",
-    "no_cost_cents": 44
+    "no_cost_cents": 46
    },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-08-30T03:30:07.761788+00:00"
+   "total_cost_cents": 50,
+   "edge_bps": 5000,
+   "detected_at": "2026-08-30T03:35:20.041633+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0538485cc98d686727964231bfa54115"
+    ],
+    "title": "Arizona Diamondbacks at San Francisco Giants",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xfc9ea15f75b2489912fd825e4c7082c770656450bac594177c939bc90bd622c2"
+    ],
+    "title": "Arizona Diamondbacks vs. San Francisco Giants: O/U 8.5",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 52,
+   "edge_bps": 4800,
+   "detected_at": "2026-08-30T03:35:20.112407+00:00"
   },
   {
    "buy_yes": {
@@ -140,11 +140,11 @@
      "0xdf18717ce16cd31e03adf898de542f7c73cff556524d08d6a34698ea7d07749c"
     ],
     "title": "Arizona Diamondbacks vs. San Francisco Giants",
-    "no_cost_cents": 90
+    "no_cost_cents": 84
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-08-30T03:30:07.698197+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-08-30T03:35:20.018602+00:00"
   }
  ]
 }
