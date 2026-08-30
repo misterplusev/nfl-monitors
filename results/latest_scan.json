@@ -1,103 +1,79 @@
 {
- "scanned_at": "2026-08-30T23:07:42.161078+00:00",
+ "scanned_at": "2026-08-30T23:09:47.142297+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 14.4,
+ "loop_uptime_min": 16.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 35399,
+   "markets": 37612,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 2.5
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 103,
-   "last_tick_age_s": 0.8
+   "markets": 108,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 243,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 7.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 31,
-   "last_tick_age_s": 539.7
+   "last_tick_age_s": 664.7
   }
  ],
  "totals": {
-  "markets_tracked": 43774,
-  "pairs_married": 2,
-  "arbitrages": 1
+  "markets_tracked": 45992,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 6,
-  "gist_errors": 15,
+  "commits": 7,
+  "gist_errors": 18,
   "hot_errors": 0,
-  "kalshi.sweeps": 77,
-  "kalshi.ticks": 528639,
-  "kalshi.updates": 240480,
-  "kalshi.ws_ticks": 528639,
-  "kalshi.ws_trades": 132296,
+  "kalshi.sweeps": 88,
+  "kalshi.ticks": 604938,
+  "kalshi.updates": 275237,
+  "kalshi.ws_ticks": 604938,
+  "kalshi.ws_trades": 146946,
   "live_evals_fired": 93,
-  "novig.rest_updates": 1287,
-  "novig.sweeps": 77,
-  "novig.ticks": 15511,
-  "novig.updates": 1287,
-  "pairs_blocked_antonym_date": 3709,
-  "pmglobal.rest_updates": 1071,
-  "pmglobal.sweeps": 77,
-  "pmglobal.ticks": 10178,
-  "pmglobal.updates": 2165,
-  "pmglobal.ws_errors": 5,
-  "pmglobal.ws_msgs": 287938,
-  "pmglobal.ws_ticks": 2378,
-  "pmus.rest_updates": 9840,
-  "pmus.sweeps": 77,
-  "pmus.ticks": 623844,
-  "pmus.updates": 9840,
+  "novig.rest_updates": 1429,
+  "novig.sweeps": 87,
+  "novig.ticks": 17455,
+  "novig.updates": 1429,
+  "pairs_blocked_antonym_date": 4270,
+  "pmglobal.rest_updates": 1240,
+  "pmglobal.sweeps": 87,
+  "pmglobal.ticks": 11588,
+  "pmglobal.updates": 2541,
+  "pmglobal.ws_errors": 7,
+  "pmglobal.ws_msgs": 324613,
+  "pmglobal.ws_ticks": 2788,
+  "pmus.rest_updates": 9970,
+  "pmus.sweeps": 88,
+  "pmus.ticks": 711822,
+  "pmus.updates": 9970,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 78,
+  "pmus_x.sweeps": 89,
   "prophetx.ticks": 717,
   "prophetx.updates": 252,
-  "prophetx.ws_errors": 51,
+  "prophetx.ws_errors": 58,
   "px.evt_scanned": 29,
-  "pxboard.sweeps": 76,
-  "supa_errors": 263
+  "pxboard.sweeps": 87,
+  "supa_errors": 298
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f2f7ddbdb001cd266926d759ced3e5ca"
-    ],
-    "title": "Philadelphia Phillies at Los Angeles Angels",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe0a7725d04a320efb1eca2c92d469f6e409ca0e982e52f053def3f0cecd065b4"
-    ],
-    "title": "Philadelphia Phillies vs. Los Angeles Angels",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 3,
-   "edge_bps": 9700,
-   "detected_at": "2026-08-30T23:06:57.115282+00:00"
-  }
- ]
+ "arbitrages": []
 }
