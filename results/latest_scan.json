@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-08-30T16:28:28.846488+00:00",
+ "scanned_at": "2026-08-30T16:30:34.347057+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 93.2,
+ "loop_uptime_min": 95.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 149149,
-   "last_tick_age_s": 0.7
+   "markets": 150946,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 6.2
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 145,
-   "last_tick_age_s": 0.8
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 281,
-   "last_tick_age_s": 3.0
+   "markets": 282,
+   "last_tick_age_s": 16.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 60,
-   "last_tick_age_s": 5172.3
+   "last_tick_age_s": 5297.8
   }
  ],
  "totals": {
-  "markets_tracked": 157633,
+  "markets_tracked": 159431,
   "pairs_married": 16,
   "arbitrages": 16
  },
  "stats": {
-  "commits": 44,
-  "gist_errors": 94,
+  "commits": 45,
+  "gist_errors": 96,
   "hot_errors": 0,
-  "kalshi.sweeps": 365,
-  "kalshi.ticks": 3577896,
-  "kalshi.updates": 1607040,
-  "kalshi.ws_ticks": 3577896,
-  "kalshi.ws_trades": 721069,
-  "live_evals_fired": 3003,
-  "novig.rest_updates": 3919,
-  "novig.sweeps": 365,
-  "novig.ticks": 77704,
-  "novig.updates": 3919,
-  "pairs_blocked_antonym_date": 1006,
-  "pmglobal.rest_updates": 4277,
-  "pmglobal.sweeps": 365,
-  "pmglobal.ticks": 50436,
-  "pmglobal.updates": 9364,
+  "kalshi.sweeps": 373,
+  "kalshi.ticks": 3659470,
+  "kalshi.updates": 1641798,
+  "kalshi.ws_ticks": 3659470,
+  "kalshi.ws_trades": 735592,
+  "live_evals_fired": 3099,
+  "novig.rest_updates": 4025,
+  "novig.sweeps": 372,
+  "novig.ticks": 79191,
+  "novig.updates": 4025,
+  "pairs_blocked_antonym_date": 1025,
+  "pmglobal.rest_updates": 4352,
+  "pmglobal.sweeps": 372,
+  "pmglobal.ticks": 51386,
+  "pmglobal.updates": 9523,
   "pmglobal.ws_errors": 4,
-  "pmglobal.ws_msgs": 1803657,
-  "pmglobal.ws_ticks": 13836,
-  "pmus.rest_updates": 12634,
-  "pmus.sweeps": 365,
-  "pmus.ticks": 2927268,
-  "pmus.updates": 12634,
+  "pmglobal.ws_msgs": 1836852,
+  "pmglobal.ws_ticks": 14086,
+  "pmus.rest_updates": 12696,
+  "pmus.sweeps": 373,
+  "pmus.ticks": 2991252,
+  "pmus.updates": 12696,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 366,
+  "pmus_x.sweeps": 374,
   "prophetx.ticks": 1301,
   "prophetx.updates": 104,
-  "prophetx.ws_errors": 330,
+  "prophetx.ws_errors": 337,
   "px.evt_scanned": 53,
-  "pxboard.sweeps": 365,
-  "supa_errors": 1293
+  "pxboard.sweeps": 372,
+  "supa_errors": 1319
  },
  "arbitrages": [
   {
@@ -93,11 +93,34 @@
      "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
     ],
     "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
-    "no_cost_cents": 23
+    "no_cost_cents": 21
    },
-   "total_cost_cents": 26,
-   "edge_bps": 7400,
-   "detected_at": "2026-08-30T16:28:28.428907+00:00"
+   "total_cost_cents": 24,
+   "edge_bps": 7600,
+   "detected_at": "2026-08-30T16:30:16.039123+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "08e5792dcd77f1aef18561a40ebbefa5"
+    ],
+    "title": "M\u00e1laga CF at Real Madrid CF",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
+    ],
+    "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
+    "no_cost_cents": 21
+   },
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-08-30T16:30:16.302846+00:00"
   },
   {
    "buy_yes": {
@@ -150,29 +173,6 @@
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "08e5792dcd77f1aef18561a40ebbefa5"
-    ],
-    "title": "M\u00e1laga CF at Real Madrid CF",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
-    ],
-    "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 27,
-   "edge_bps": 7300,
-   "detected_at": "2026-08-30T16:28:28.675194+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
      "53a81d42902fd8fc216a9371efba6dbf"
     ],
     "title": "M\u00e1laga CF at Real Madrid CF",
@@ -185,11 +185,11 @@
      "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
     ],
     "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
-    "no_cost_cents": 23
+    "no_cost_cents": 21
    },
-   "total_cost_cents": 30,
-   "edge_bps": 7000,
-   "detected_at": "2026-08-30T16:28:28.590888+00:00"
+   "total_cost_cents": 28,
+   "edge_bps": 7200,
+   "detected_at": "2026-08-30T16:30:16.211612+00:00"
   },
   {
    "buy_yes": {
@@ -216,6 +216,29 @@
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "37c5355b50d64f366348fcf8cb65524c"
+    ],
+    "title": "M\u00e1laga CF at Real Madrid CF",
+    "ask_cents": 11
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
+    ],
+    "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
+    "no_cost_cents": 21
+   },
+   "total_cost_cents": 32,
+   "edge_bps": 6800,
+   "detected_at": "2026-08-30T16:30:15.862530+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -236,75 +259,6 @@
    "total_cost_cents": 32,
    "edge_bps": 6800,
    "detected_at": "2026-08-30T16:27:19.046984+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "37c5355b50d64f366348fcf8cb65524c"
-    ],
-    "title": "M\u00e1laga CF at Real Madrid CF",
-    "ask_cents": 11
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
-    ],
-    "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 34,
-   "edge_bps": 6600,
-   "detected_at": "2026-08-30T16:28:28.233781+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
-    ],
-    "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
-    "ask_cents": 77
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4b431d0bb7922e62e0ce1665bc9d6726"
-    ],
-    "title": "M\u00e1laga CF at Real Madrid CF",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-30T16:28:28.166108+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
-    ],
-    "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
-    "ask_cents": 77
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "96f7c9a9b7eb82fbb40ffa8a3c485f3e"
-    ],
-    "title": "M\u00e1laga CF at Real Madrid CF",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-08-30T16:28:28.524356+00:00"
   },
   {
    "buy_yes": {
@@ -360,20 +314,43 @@
      "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
     ],
     "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
-    "ask_cents": 77
+    "ask_cents": 79
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "ce01941cbb99a66831ffe70d28bc702c"
+     "4b431d0bb7922e62e0ce1665bc9d6726"
     ],
     "title": "M\u00e1laga CF at Real Madrid CF",
-    "no_cost_cents": 8
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-08-30T16:28:28.762644+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-08-30T16:30:15.776515+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
+    ],
+    "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
+    "ask_cents": 79
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "96f7c9a9b7eb82fbb40ffa8a3c485f3e"
+    ],
+    "title": "M\u00e1laga CF at Real Madrid CF",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-08-30T16:30:16.126664+00:00"
   },
   {
    "buy_yes": {
@@ -406,7 +383,30 @@
      "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
     ],
     "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
-    "ask_cents": 77
+    "ask_cents": 79
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ce01941cbb99a66831ffe70d28bc702c"
+    ],
+    "title": "M\u00e1laga CF at Real Madrid CF",
+    "no_cost_cents": 8
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-08-30T16:30:16.390393+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x8a5c10b181a38a2b4c4cb53badefc88ab00ce9c9caaceb1ef430b9a06ed95b62"
+    ],
+    "title": "Real Madrid CF vs. M\u00e1laga CF: O/U 3.5",
+    "ask_cents": 79
    },
    "buy_no": {
     "venue": "prophetx",
@@ -417,9 +417,9 @@
     "title": "M\u00e1laga CF at Real Madrid CF",
     "no_cost_cents": 10
    },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-08-30T16:28:28.340206+00:00"
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-08-30T16:30:15.952693+00:00"
   },
   {
    "buy_yes": {
