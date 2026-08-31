@@ -1,79 +1,144 @@
 {
- "scanned_at": "2026-08-31T11:30:14.005878+00:00",
+ "scanned_at": "2026-08-31T17:43:00.420404+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 334.9,
+ "loop_uptime_min": 2.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 115485,
+   "markets": 10162,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 4.4
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 132,
-   "last_tick_age_s": 0.6
+   "markets": 100,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
-   "state": "OK",
-   "markets": 278,
-   "last_tick_age_s": 1.6
+   "state": "SKIPPED_NO_CREDENTIALS",
+   "markets": 0,
+   "last_tick_age_s": null
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 19,
-   "last_tick_age_s": 19774.6
+   "state": "OK",
+   "markets": 18,
+   "last_tick_age_s": 14.0
   }
  ],
  "totals": {
-  "markets_tracked": 123912,
-  "pairs_married": 1,
-  "arbitrages": 0
+  "markets_tracked": 18278,
+  "pairs_married": 3,
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 163,
-  "gist_errors": 347,
+  "gist_errors": 2,
   "hot_errors": 0,
-  "kalshi.rest_updates": 1118,
-  "kalshi.sweeps": 1750,
-  "kalshi.ticks": 8049203,
-  "kalshi.updates": 3562003,
-  "kalshi.ws_ticks": 8045650,
-  "kalshi.ws_trades": 1267002,
-  "novig.rest_updates": 3318,
-  "novig.sweeps": 1750,
-  "novig.ticks": 375603,
-  "novig.updates": 3318,
-  "pairs_blocked_antonym_date": 91776,
-  "pmglobal.rest_updates": 11561,
-  "pmglobal.sweeps": 1750,
-  "pmglobal.ticks": 195751,
-  "pmglobal.updates": 22963,
-  "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 685710,
-  "pmglobal.ws_ticks": 20651,
-  "pmus.rest_updates": 50491,
-  "pmus.sweeps": 1750,
-  "pmus.ticks": 14004493,
-  "pmus.updates": 50491,
+  "kalshi.sweeps": 7,
+  "kalshi.ticks": 67147,
+  "kalshi.updates": 32922,
+  "kalshi.ws_ticks": 67147,
+  "kalshi.ws_trades": 13431,
+  "live_evals_fired": 3,
+  "novig.sweep_errors": 7,
+  "pairs_blocked_antonym_date": 27,
+  "pmglobal.rest_updates": 255,
+  "pmglobal.sweeps": 7,
+  "pmglobal.ticks": 1269,
+  "pmglobal.updates": 472,
+  "pmglobal.ws_msgs": 54487,
+  "pmglobal.ws_ticks": 469,
+  "pmus.rest_updates": 8115,
+  "pmus.sweeps": 7,
+  "pmus.ticks": 63984,
+  "pmus.updates": 8115,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 1751,
-  "prophetx.ticks": 543,
-  "prophetx.updates": 51,
-  "prophetx.ws_errors": 1170,
+  "pmus_x.sweeps": 8,
+  "prophetx.ticks": 115,
+  "prophetx.updates": 61,
+  "prophetx.ws_errors": 8,
   "px.evt_scanned": 17,
-  "pxboard.sweeps": 1750,
-  "supa_errors": 5846
+  "pxboard.sweeps": 6,
+  "supa_errors": 26
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1db6598d9da3af2ad6b536bd540e617f"
+    ],
+    "title": "AS Roma at US Lecce",
+    "ask_cents": 1
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23837fab4bbdba039c0f2255a26cc534165cd9a0e95f32f22b0c8fb6b9af1e1f"
+    ],
+    "title": "US Lecce vs. AS Roma: O/U 4.5",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-08-31T17:41:11.799602+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5192f11af05f5541559354b0779f63c7"
+    ],
+    "title": "AS Roma at US Lecce",
+    "ask_cents": 1
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23837fab4bbdba039c0f2255a26cc534165cd9a0e95f32f22b0c8fb6b9af1e1f"
+    ],
+    "title": "US Lecce vs. AS Roma: O/U 4.5",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-08-31T17:43:00.420351+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x80b3af88cb991980e8da1ce86b9794a0957f96ec98c29319dd7ba65e9744d82b"
+    ],
+    "title": "Fed rate hike in 2026?",
+    "ask_cents": 74
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "171032"
+    ],
+    "title": "Fed Rate Hike in 2026?",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-31T17:41:11.929051+00:00"
+  }
+ ]
 }
