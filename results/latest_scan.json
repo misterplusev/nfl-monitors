@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-08-31T17:51:19.043399+00:00",
+ "scanned_at": "2026-08-31T17:53:22.681821+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 10.5,
+ "loop_uptime_min": 12.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 23700,
+   "markets": 25906,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 0.4
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
@@ -30,47 +30,47 @@
   },
   {
    "venue": "prophetx",
-   "state": "OK",
+   "state": "STALE",
    "markets": 20,
-   "last_tick_age_s": 117.4
+   "last_tick_age_s": 241.0
   }
  ],
  "totals": {
-  "markets_tracked": 31823,
+  "markets_tracked": 34029,
   "pairs_married": 3,
-  "arbitrages": 2
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 4,
-  "gist_errors": 11,
+  "commits": 5,
+  "gist_errors": 13,
   "hot_errors": 0,
-  "kalshi.sweeps": 35,
-  "kalshi.ticks": 354028,
-  "kalshi.updates": 150361,
-  "kalshi.ws_ticks": 354028,
-  "kalshi.ws_trades": 67048,
-  "live_evals_fired": 62,
-  "novig.sweep_errors": 34,
-  "pairs_blocked_antonym_date": 132,
-  "pmglobal.rest_updates": 773,
-  "pmglobal.sweeps": 34,
-  "pmglobal.ticks": 5391,
-  "pmglobal.updates": 1628,
+  "kalshi.sweeps": 42,
+  "kalshi.ticks": 424184,
+  "kalshi.updates": 178232,
+  "kalshi.ws_ticks": 424184,
+  "kalshi.ws_trades": 80961,
+  "live_evals_fired": 77,
+  "novig.sweep_errors": 41,
+  "pairs_blocked_antonym_date": 156,
+  "pmglobal.rest_updates": 874,
+  "pmglobal.sweeps": 41,
+  "pmglobal.ticks": 6481,
+  "pmglobal.updates": 1874,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 236068,
-  "pmglobal.ws_ticks": 1891,
-  "pmus.rest_updates": 9080,
-  "pmus.sweeps": 35,
-  "pmus.ticks": 287928,
-  "pmus.updates": 9080,
+  "pmglobal.ws_msgs": 299469,
+  "pmglobal.ws_ticks": 2281,
+  "pmus.rest_updates": 9382,
+  "pmus.sweeps": 42,
+  "pmus.ticks": 343914,
+  "pmus.updates": 9382,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 36,
+  "pmus_x.sweeps": 43,
   "prophetx.ticks": 488,
   "prophetx.updates": 248,
-  "prophetx.ws_errors": 35,
+  "prophetx.ws_errors": 42,
   "px.evt_scanned": 18,
-  "pxboard.sweeps": 34,
-  "supa_errors": 134
+  "pxboard.sweeps": 41,
+  "supa_errors": 161
  },
  "arbitrages": [
   {
@@ -90,11 +90,11 @@
      "0x23837fab4bbdba039c0f2255a26cc534165cd9a0e95f32f22b0c8fb6b9af1e1f"
     ],
     "title": "US Lecce vs. AS Roma: O/U 4.5",
-    "no_cost_cents": 59
+    "no_cost_cents": 58
    },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-08-31T17:51:18.749331+00:00"
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-08-31T17:53:04.975449+00:00"
   },
   {
    "buy_yes": {
@@ -113,11 +113,34 @@
      "0x23837fab4bbdba039c0f2255a26cc534165cd9a0e95f32f22b0c8fb6b9af1e1f"
     ],
     "title": "US Lecce vs. AS Roma: O/U 4.5",
-    "no_cost_cents": 59
+    "no_cost_cents": 58
    },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-08-31T17:51:18.888884+00:00"
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-08-31T17:53:05.129165+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x80b3af88cb991980e8da1ce86b9794a0957f96ec98c29319dd7ba65e9744d82b"
+    ],
+    "title": "Fed rate hike in 2026?",
+    "ask_cents": 74
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "171032"
+    ],
+    "title": "Fed Rate Hike in 2026?",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-08-31T17:51:22.595332+00:00"
   }
  ]
 }
