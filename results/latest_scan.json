@@ -1,104 +1,81 @@
 {
- "scanned_at": "2026-09-01T12:20:48.923091+00:00",
+ "scanned_at": "2026-09-01T12:22:50.059503+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 117.7,
+ "loop_uptime_min": 119.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 85455,
-   "last_tick_age_s": 0.0
+   "markets": 86130,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 22968,
-   "last_tick_age_s": 4.7
+   "markets": 23142,
+   "last_tick_age_s": 5.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 123,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.7
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 262,
-   "last_tick_age_s": 1.9
+   "last_tick_age_s": 3.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 19,
-   "last_tick_age_s": 6862.0
+   "last_tick_age_s": 6983.1
   }
  ],
  "totals": {
-  "markets_tracked": 108827,
+  "markets_tracked": 109676,
   "pairs_married": 55,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 57,
-  "gist_errors": 125,
+  "commits": 58,
+  "gist_errors": 127,
   "kalshi.rest_updates": 36,
-  "kalshi.sweeps": 818,
-  "kalshi.ticks": 3689766,
-  "kalshi.updates": 1600252,
-  "kalshi.ws_ticks": 3689658,
-  "kalshi.ws_trades": 454565,
-  "live_evals_fired": 142,
-  "novig.rest_updates": 725,
-  "novig.sweeps": 818,
-  "novig.ticks": 187570,
-  "novig.updates": 725,
-  "pairs_blocked_antonym_date": 3942,
-  "pmglobal.rest_updates": 3325,
-  "pmglobal.sweeps": 818,
-  "pmglobal.ticks": 92910,
-  "pmglobal.updates": 6739,
+  "kalshi.sweeps": 829,
+  "kalshi.ticks": 3753015,
+  "kalshi.updates": 1626879,
+  "kalshi.ws_ticks": 3752907,
+  "kalshi.ws_trades": 461647,
+  "live_evals_fired": 147,
+  "novig.rest_updates": 739,
+  "novig.sweeps": 829,
+  "novig.ticks": 190092,
+  "novig.updates": 739,
+  "pairs_blocked_antonym_date": 4096,
+  "pmglobal.rest_updates": 3355,
+  "pmglobal.sweeps": 829,
+  "pmglobal.ticks": 94145,
+  "pmglobal.updates": 6799,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 1318613,
-  "pmglobal.ws_ticks": 11010,
-  "pmus.rest_updates": 46210,
-  "pmus.sweeps": 818,
-  "pmus.ticks": 2385677,
-  "pmus.updates": 46210,
-  "pmus_x.last_count": 7845,
-  "pmus_x.sweeps": 819,
+  "pmglobal.ws_msgs": 1332051,
+  "pmglobal.ws_ticks": 11145,
+  "pmus.rest_updates": 47259,
+  "pmus.sweeps": 829,
+  "pmus.ticks": 2472363,
+  "pmus.updates": 47259,
+  "pmus_x.last_count": 7873,
+  "pmus_x.sweeps": 830,
   "prophetx.ticks": 570,
   "prophetx.updates": 19,
-  "prophetx.ws_errors": 441,
+  "prophetx.ws_errors": 448,
   "px.evt_scanned": 19,
-  "pxboard.sweeps": 818,
-  "supa_pushes": 2400
+  "pxboard.sweeps": 829,
+  "supa_pushes": 2433
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x53e978db0216a81b23b50d6912d9094e0a659db43f98bed04326ce9ebb5f252d"
-    ],
-    "title": "Will \"The Whisper Man (2026)\" be the top US Netflix movie this week?",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "523749"
-    ],
-    "title": "Top US Netflix Movie This Week?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-09-01T12:20:48.922901+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -120,7 +97,7 @@
    },
    "total_cost_cents": 6,
    "edge_bps": 9400,
-   "detected_at": "2026-09-01T12:20:48.922980+00:00"
+   "detected_at": "2026-09-01T12:22:50.059398+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +120,7 @@
    },
    "total_cost_cents": 6,
    "edge_bps": 9400,
-   "detected_at": "2026-09-01T12:20:48.922994+00:00"
+   "detected_at": "2026-09-01T12:22:50.059412+00:00"
   },
   {
    "buy_yes": {
@@ -167,6 +144,29 @@
    "total_cost_cents": 7,
    "edge_bps": 9300,
    "detected_at": "2026-09-01T12:07:01.971285+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x53e978db0216a81b23b50d6912d9094e0a659db43f98bed04326ce9ebb5f252d"
+    ],
+    "title": "Will \"The Whisper Man (2026)\" be the top US Netflix movie this week?",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "523749"
+    ],
+    "title": "Top US Netflix Movie This Week?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 7,
+   "edge_bps": 9300,
+   "detected_at": "2026-09-01T12:22:35.701598+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +258,7 @@
    },
    "total_cost_cents": 40,
    "edge_bps": 6000,
-   "detected_at": "2026-09-01T12:20:48.922953+00:00"
+   "detected_at": "2026-09-01T12:22:50.059371+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +281,7 @@
    },
    "total_cost_cents": 42,
    "edge_bps": 5800,
-   "detected_at": "2026-09-01T12:20:48.922826+00:00"
+   "detected_at": "2026-09-01T12:22:50.059247+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +304,7 @@
    },
    "total_cost_cents": 42,
    "edge_bps": 5800,
-   "detected_at": "2026-09-01T12:20:48.922884+00:00"
+   "detected_at": "2026-09-01T12:22:50.059303+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +327,7 @@
    },
    "total_cost_cents": 42,
    "edge_bps": 5800,
-   "detected_at": "2026-09-01T12:20:48.922969+00:00"
+   "detected_at": "2026-09-01T12:22:50.059387+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +350,7 @@
    },
    "total_cost_cents": 42,
    "edge_bps": 5800,
-   "detected_at": "2026-09-01T12:20:48.922987+00:00"
+   "detected_at": "2026-09-01T12:22:50.059405+00:00"
   },
   {
    "buy_yes": {
@@ -396,7 +396,7 @@
    },
    "total_cost_cents": 55,
    "edge_bps": 4500,
-   "detected_at": "2026-09-01T12:20:48.922907+00:00"
+   "detected_at": "2026-09-01T12:22:50.059320+00:00"
   },
   {
    "buy_yes": {
@@ -515,6 +515,29 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
+    "ask_cents": 31
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "554779"
+    ],
+    "title": "Will the Seattle Mariners cover 1.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
+    "no_cost_cents": 34
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-01T12:22:24.742802+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -535,29 +558,6 @@
    "total_cost_cents": 68,
    "edge_bps": 3200,
    "detected_at": "2026-09-01T12:11:03.683354+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 31
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "554779"
-    ],
-    "title": "Will the Seattle Mariners cover 1.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
-    "no_cost_cents": 36
-   },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-01T12:13:16.313605+00:00"
   },
   {
    "buy_yes": {
@@ -599,34 +599,11 @@
      "554779"
     ],
     "title": "Will the Seattle Mariners cover 1.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
-    "no_cost_cents": 36
+    "no_cost_cents": 34
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-01T12:20:48.923011+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 31
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "568482"
-    ],
-    "title": "Will the Seattle Mariners cover -1.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-01T12:13:16.211183+00:00"
+   "total_cost_cents": 76,
+   "edge_bps": 2400,
+   "detected_at": "2026-09-01T12:22:24.836872+00:00"
   },
   {
    "buy_yes": {
@@ -650,6 +627,29 @@
    "total_cost_cents": 83,
    "edge_bps": 1700,
    "detected_at": "2026-09-01T12:19:17.510561+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
+    "ask_cents": 31
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "597763"
+    ],
+    "title": "Will the total in Seattle Mariners vs Boston Red Sox be more than 7.5?",
+    "no_cost_cents": 54
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-01T12:13:15.939749+00:00"
   }
  ]
 }
