@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-01T14:57:41.796798+00:00",
+ "scanned_at": "2026-09-01T14:59:43.676207+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 274.6,
+ "loop_uptime_min": 276.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 181187,
+   "markets": 182189,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 24626,
-   "last_tick_age_s": 1.0
+   "markets": 24630,
+   "last_tick_age_s": 3.0
   },
   {
    "venue": "pmglobal",
@@ -25,55 +25,55 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 318,
-   "last_tick_age_s": 9.1
+   "markets": 319,
+   "last_tick_age_s": 0.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 19,
-   "last_tick_age_s": 16274.9
+   "last_tick_age_s": 16396.8
   }
  ],
  "totals": {
-  "markets_tracked": 206305,
+  "markets_tracked": 207312,
   "pairs_married": 68,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 134,
-  "gist_errors": 288,
+  "commits": 135,
+  "gist_errors": 291,
   "kalshi.rest_updates": 36,
-  "kalshi.sweeps": 1643,
-  "kalshi.ticks": 10049206,
-  "kalshi.updates": 4412590,
-  "kalshi.ws_ticks": 10049098,
-  "kalshi.ws_trades": 1324945,
-  "live_evals_fired": 438,
-  "novig.rest_updates": 2567,
-  "novig.sweeps": 1642,
-  "novig.ticks": 382014,
-  "novig.updates": 2567,
-  "pairs_blocked_antonym_date": 17493,
-  "pmglobal.rest_updates": 7160,
-  "pmglobal.sweeps": 1642,
-  "pmglobal.ticks": 190947,
-  "pmglobal.updates": 14694,
+  "kalshi.sweeps": 1653,
+  "kalshi.ticks": 10135441,
+  "kalshi.updates": 4443626,
+  "kalshi.ws_ticks": 10135333,
+  "kalshi.ws_trades": 1338639,
+  "live_evals_fired": 449,
+  "novig.rest_updates": 2620,
+  "novig.sweeps": 1653,
+  "novig.ticks": 384728,
+  "novig.updates": 2620,
+  "pairs_blocked_antonym_date": 17688,
+  "pmglobal.rest_updates": 7221,
+  "pmglobal.sweeps": 1653,
+  "pmglobal.ticks": 192250,
+  "pmglobal.updates": 14806,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 2681882,
-  "pmglobal.ws_ticks": 26647,
-  "pmus.rest_updates": 100908,
-  "pmus.sweeps": 1643,
-  "pmus.ticks": 8942097,
-  "pmus.updates": 100908,
-  "pmus_x.last_count": 7948,
-  "pmus_x.sweeps": 1644,
+  "pmglobal.ws_msgs": 2696292,
+  "pmglobal.ws_ticks": 26850,
+  "pmus.rest_updates": 101759,
+  "pmus.sweeps": 1653,
+  "pmus.ticks": 9021620,
+  "pmus.updates": 101759,
+  "pmus_x.last_count": 7956,
+  "pmus_x.sweeps": 1654,
   "prophetx.ticks": 570,
   "prophetx.updates": 19,
-  "prophetx.ws_errors": 991,
+  "prophetx.ws_errors": 999,
   "px.evt_scanned": 19,
-  "pxboard.sweeps": 1642,
-  "supa_pushes": 4902
+  "pxboard.sweeps": 1652,
+  "supa_pushes": 4933
  },
  "arbitrages": [
   {
@@ -176,7 +176,7 @@
      "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 35
+    "ask_cents": 36
    },
    "buy_no": {
     "venue": "pmus",
@@ -187,9 +187,9 @@
     "title": "Will the Seattle Mariners win the 5th inning vs the Boston Red Sox?",
     "no_cost_cents": 1
    },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-09-01T14:53:45.865653+00:00"
+   "total_cost_cents": 38,
+   "edge_bps": 6200,
+   "detected_at": "2026-09-01T14:58:43.620668+00:00"
   },
   {
    "buy_yes": {
@@ -308,29 +308,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 35
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "554780"
-    ],
-    "title": "Will the Seattle Mariners cover 2.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-01T14:53:45.484442+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
@@ -360,7 +337,30 @@
      "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 35
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "554780"
+    ],
+    "title": "Will the Seattle Mariners cover 2.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-01T14:58:43.196111+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
+    "ask_cents": 36
    },
    "buy_no": {
     "venue": "pmus",
@@ -371,32 +371,9 @@
     "title": "Will the Seattle Mariners cover 2.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
     "no_cost_cents": 27
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-01T14:53:45.571553+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "597047"
-    ],
-    "title": "Tiago Cacao vs. Alejandro Moro Canas",
-    "ask_cents": 22
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7ace3bf1d7e028262b10343de3cddfc6e4c5c2e1d77555a3adb23ee86adc4169"
-    ],
-    "title": "Porto: Tiago Cacao vs Alejandro Moro Canas",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-09-01T14:53:46.243201+00:00"
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-01T14:58:43.300824+00:00"
   },
   {
    "buy_yes": {
@@ -423,26 +400,26 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 35
-   },
-   "buy_no": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "554779"
+     "597047"
     ],
-    "title": "Will the Seattle Mariners cover 1.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
-    "no_cost_cents": 34
+    "title": "Tiago Cacao vs. Alejandro Moro Canas",
+    "ask_cents": 22
    },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-01T14:53:46.153530+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7ace3bf1d7e028262b10343de3cddfc6e4c5c2e1d77555a3adb23ee86adc4169"
+    ],
+    "title": "Porto: Tiago Cacao vs Alejandro Moro Canas",
+    "no_cost_cents": 44
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-01T14:58:43.945986+00:00"
   },
   {
    "buy_yes": {
@@ -466,6 +443,29 @@
    "total_cost_cents": 71,
    "edge_bps": 2900,
    "detected_at": "2026-09-01T14:51:28.628262+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "554779"
+    ],
+    "title": "Will the Seattle Mariners cover 1.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
+    "no_cost_cents": 34
+   },
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-01T14:58:43.855966+00:00"
   },
   {
    "buy_yes": {
