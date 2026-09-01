@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-01T00:04:29.590268+00:00",
+ "scanned_at": "2026-09-01T00:06:30.853022+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 4.1,
+ "loop_uptime_min": 6.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 25455,
+   "markets": 30348,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 2.3
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 100,
-   "last_tick_age_s": 1.1
+   "last_tick_age_s": 8.7
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 169,
-   "last_tick_age_s": 0.0
+   "markets": 171,
+   "last_tick_age_s": 7.6
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 16,
-   "last_tick_age_s": 10.4
+   "last_tick_age_s": 98.8
   }
  ],
  "totals": {
-  "markets_tracked": 33738,
+  "markets_tracked": 38633,
   "pairs_married": 23,
   "arbitrages": 22
  },
  "stats": {
-  "commits": 1,
-  "gist_errors": 5,
+  "commits": 2,
+  "gist_errors": 7,
   "hot_errors": 0,
-  "kalshi.sweeps": 23,
-  "kalshi.ticks": 206823,
-  "kalshi.updates": 108007,
-  "kalshi.ws_ticks": 206823,
-  "kalshi.ws_trades": 34988,
-  "live_evals_fired": 224,
-  "novig.rest_updates": 585,
-  "novig.sweeps": 23,
-  "novig.ticks": 3863,
-  "novig.updates": 585,
-  "pairs_blocked_antonym_date": 1048,
+  "kalshi.sweeps": 36,
+  "kalshi.ticks": 307990,
+  "kalshi.updates": 158302,
+  "kalshi.ws_ticks": 307990,
+  "kalshi.ws_trades": 52794,
+  "live_evals_fired": 240,
+  "novig.rest_updates": 825,
+  "novig.sweeps": 35,
+  "novig.ticks": 5791,
+  "novig.updates": 825,
+  "pairs_blocked_antonym_date": 1624,
   "pmglobal.rest_updates": 331,
-  "pmglobal.sweeps": 23,
-  "pmglobal.ticks": 2700,
+  "pmglobal.sweeps": 35,
+  "pmglobal.ticks": 3900,
   "pmglobal.updates": 562,
-  "pmglobal.ws_msgs": 7,
+  "pmglobal.ws_msgs": 22,
   "pmglobal.ws_ticks": 300,
-  "pmus.rest_updates": 8532,
-  "pmus.sweeps": 23,
-  "pmus.ticks": 191952,
-  "pmus.updates": 8532,
+  "pmus.rest_updates": 8754,
+  "pmus.sweeps": 36,
+  "pmus.ticks": 295926,
+  "pmus.updates": 8754,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 24,
-  "prophetx.ticks": 351,
-  "prophetx.updates": 107,
-  "prophetx.ws_errors": 16,
-  "px.evt_scanned": 16,
-  "pxboard.sweeps": 22,
-  "supa_errors": 71
+  "pmus_x.sweeps": 37,
+  "prophetx.ticks": 396,
+  "prophetx.updates": 119,
+  "prophetx.ws_errors": 23,
+  "px.evt_scanned": 14,
+  "pxboard.sweeps": 35,
+  "supa_errors": 109
  },
  "arbitrages": [
   {
@@ -92,11 +92,11 @@
      "219073037b36a407029b424f6773d32b"
     ],
     "title": "San Francisco Giants at Atlanta Braves",
-    "no_cost_cents": 11
+    "no_cost_cents": 7
    },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-09-01T00:04:18.747678+00:00"
+   "total_cost_cents": 33,
+   "edge_bps": 6700,
+   "detected_at": "2026-09-01T00:04:51.713889+00:00"
   },
   {
    "buy_yes": {
@@ -126,29 +126,6 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x3f88b3eeb255a89a62f4dd63f7fd763f4a173aea7bf96b699b45767746e91062"
-    ],
-    "title": "San Diego Padres vs. Cincinnati Reds: O/U 8.5",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ad65ff455239bd54b463d3f80d565b85"
-    ],
-    "title": "San Diego Padres at Cincinnati Reds",
-    "no_cost_cents": 7
-   },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-01T00:03:55.726633+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
      "0x6ea018e04406616549737eb97ef93af5a9f1416c74d656ed558d098277ad56d8"
     ],
     "title": "Miami Marlins vs. Washington Nationals: O/U 8.5",
@@ -161,11 +138,34 @@
      "18a97c9098b5465817ac53d91b0eb14a"
     ],
     "title": "Miami Marlins at Washington Nationals",
-    "no_cost_cents": 14
+    "no_cost_cents": 15
    },
-   "total_cost_cents": 50,
-   "edge_bps": 5000,
-   "detected_at": "2026-09-01T00:03:55.833407+00:00"
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-01T00:04:51.934103+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3f88b3eeb255a89a62f4dd63f7fd763f4a173aea7bf96b699b45767746e91062"
+    ],
+    "title": "San Diego Padres vs. Cincinnati Reds: O/U 8.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ad65ff455239bd54b463d3f80d565b85"
+    ],
+    "title": "San Diego Padres at Cincinnati Reds",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-01T00:04:31.395422+00:00"
   },
   {
    "buy_yes": {
@@ -184,11 +184,11 @@
      "ad65ff455239bd54b463d3f80d565b85"
     ],
     "title": "San Diego Padres at Cincinnati Reds",
-    "no_cost_cents": 7
+    "no_cost_cents": 9
    },
-   "total_cost_cents": 55,
-   "edge_bps": 4500,
-   "detected_at": "2026-09-01T00:03:55.604730+00:00"
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-01T00:04:31.374545+00:00"
   },
   {
    "buy_yes": {
@@ -212,6 +212,29 @@
    "total_cost_cents": 58,
    "edge_bps": 4200,
    "detected_at": "2026-09-01T00:03:55.585088+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x18e99285c983437032293d9bbc1b3b44057b58db9e12c90d5b113058b9767ae8"
+    ],
+    "title": "San Francisco Giants vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "219073037b36a407029b424f6773d32b"
+    ],
+    "title": "San Francisco Giants at Atlanta Braves",
+    "no_cost_cents": 7
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-01T00:04:51.693644+00:00"
   },
   {
    "buy_yes": {
@@ -253,34 +276,11 @@
      "18a97c9098b5465817ac53d91b0eb14a"
     ],
     "title": "Miami Marlins at Washington Nationals",
-    "no_cost_cents": 14
-   },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-09-01T00:03:55.652256+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x18e99285c983437032293d9bbc1b3b44057b58db9e12c90d5b113058b9767ae8"
-    ],
-    "title": "San Francisco Giants vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "219073037b36a407029b424f6773d32b"
-    ],
-    "title": "San Francisco Giants at Atlanta Braves",
-    "no_cost_cents": 11
+    "no_cost_cents": 15
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-09-01T00:04:18.729944+00:00"
+   "detected_at": "2026-09-01T00:04:51.915490+00:00"
   },
   {
    "buy_yes": {
@@ -345,11 +345,11 @@
      "219073037b36a407029b424f6773d32b"
     ],
     "title": "San Francisco Giants at Atlanta Braves",
-    "no_cost_cents": 11
+    "no_cost_cents": 7
    },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-01T00:04:18.703114+00:00"
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-01T00:04:51.670238+00:00"
   },
   {
    "buy_yes": {
@@ -391,11 +391,11 @@
      "97c26b038d29f133e0a57514cf84b1bb"
     ],
     "title": "New York Mets at Tampa Bay Rays",
-    "no_cost_cents": 45
+    "no_cost_cents": 44
    },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-01T00:04:19.002655+00:00"
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-01T00:04:41.540269+00:00"
   },
   {
    "buy_yes": {
@@ -405,7 +405,7 @@
      "a6f85026996acb3be412cc837b719db1"
     ],
     "title": "Seattle Mariners at Boston Red Sox",
-    "ask_cents": 39
+    "ask_cents": 38
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -416,9 +416,9 @@
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 7.5",
     "no_cost_cents": 40
    },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-01T00:04:19.167842+00:00"
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-01T00:04:41.674646+00:00"
   },
   {
    "buy_yes": {
@@ -506,11 +506,11 @@
      "afba9371986deaf20b7f513a53a41626"
     ],
     "title": "New York Mets at Tampa Bay Rays",
-    "no_cost_cents": 55
+    "no_cost_cents": 54
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-01T00:03:55.523804+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-01T00:04:41.521441+00:00"
   },
   {
    "buy_yes": {
@@ -520,7 +520,7 @@
      "a6f85026996acb3be412cc837b719db1"
     ],
     "title": "Seattle Mariners at Boston Red Sox",
-    "ask_cents": 39
+    "ask_cents": 38
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -531,9 +531,9 @@
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
     "no_cost_cents": 52
    },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-01T00:04:19.143076+00:00"
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-01T00:04:41.649602+00:00"
   },
   {
    "buy_yes": {
