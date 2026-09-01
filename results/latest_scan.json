@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-01T01:51:37.777444+00:00",
+ "scanned_at": "2026-09-01T01:53:49.341930+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 111.3,
+ "loop_uptime_min": 113.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 141031,
+   "markets": 142320,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,109 +19,63 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 111,
+   "markets": 114,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 236,
-   "last_tick_age_s": 16.8
+   "markets": 247,
+   "last_tick_age_s": 16.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 16,
-   "last_tick_age_s": 6405.8
+   "last_tick_age_s": 6537.4
   }
  ],
  "totals": {
-  "markets_tracked": 149392,
-  "pairs_married": 3,
-  "arbitrages": 3
+  "markets_tracked": 150695,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 51,
-  "gist_errors": 102,
+  "commits": 52,
+  "gist_errors": 104,
   "hot_errors": 0,
   "kalshi.rest_updates": 5,
-  "kalshi.sweeps": 608,
-  "kalshi.ticks": 5488120,
-  "kalshi.updates": 2668105,
-  "kalshi.ws_ticks": 5488113,
-  "kalshi.ws_trades": 968799,
+  "kalshi.sweeps": 620,
+  "kalshi.ticks": 5589806,
+  "kalshi.updates": 2716484,
+  "kalshi.ws_ticks": 5589799,
+  "kalshi.ws_trades": 987366,
   "live_evals_fired": 2671,
-  "novig.rest_updates": 11712,
-  "novig.sweeps": 607,
-  "novig.ticks": 83173,
-  "novig.updates": 11712,
-  "pairs_blocked_antonym_date": 12415,
-  "pmglobal.rest_updates": 4444,
-  "pmglobal.sweeps": 607,
-  "pmglobal.ticks": 70059,
-  "pmglobal.updates": 9153,
-  "pmglobal.ws_msgs": 416940,
-  "pmglobal.ws_ticks": 9259,
-  "pmus.rest_updates": 22585,
-  "pmus.sweeps": 608,
-  "pmus.ticks": 4870782,
-  "pmus.updates": 22585,
+  "novig.rest_updates": 11901,
+  "novig.sweeps": 619,
+  "novig.ticks": 84727,
+  "novig.updates": 11901,
+  "pairs_blocked_antonym_date": 12550,
+  "pmglobal.rest_updates": 4532,
+  "pmglobal.sweeps": 619,
+  "pmglobal.ticks": 71585,
+  "pmglobal.updates": 9344,
+  "pmglobal.ws_msgs": 441394,
+  "pmglobal.ws_ticks": 9585,
+  "pmus.rest_updates": 22696,
+  "pmus.sweeps": 620,
+  "pmus.ticks": 4966758,
+  "pmus.updates": 22696,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 609,
+  "pmus_x.sweeps": 621,
   "prophetx.ticks": 396,
   "prophetx.updates": 119,
-  "prophetx.ws_errors": 403,
+  "prophetx.ws_errors": 411,
   "px.evt_scanned": 14,
-  "pxboard.sweeps": 607,
-  "supa_errors": 1832
+  "pxboard.sweeps": 619,
+  "supa_errors": 1868
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "dc6cd0c30ab11397931c349148874fc9"
-    ],
-    "title": "Seattle Mariners at Boston Red Sox",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-01T01:51:12.769103+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a6f85026996acb3be412cc837b719db1"
-    ],
-    "title": "Seattle Mariners at Boston Red Sox",
-    "no_cost_cents": 63
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-01T01:51:12.742451+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
