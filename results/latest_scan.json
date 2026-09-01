@@ -1,104 +1,81 @@
 {
- "scanned_at": "2026-09-01T01:36:19.546740+00:00",
+ "scanned_at": "2026-09-01T01:38:23.278710+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 96.0,
+ "loop_uptime_min": 98.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 131533,
-   "last_tick_age_s": 0.0
+   "markets": 132916,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 2.6
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 109,
+   "markets": 110,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 219,
-   "last_tick_age_s": 0.4
+   "markets": 220,
+   "last_tick_age_s": 17.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 16,
-   "last_tick_age_s": 5487.6
+   "last_tick_age_s": 5611.3
   }
  ],
  "totals": {
-  "markets_tracked": 139875,
-  "pairs_married": 7,
-  "arbitrages": 7
+  "markets_tracked": 141260,
+  "pairs_married": 5,
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 44,
-  "gist_errors": 89,
+  "commits": 45,
+  "gist_errors": 90,
   "hot_errors": 0,
-  "kalshi.rest_updates": 3,
-  "kalshi.sweeps": 525,
-  "kalshi.ticks": 4735116,
-  "kalshi.updates": 2290260,
-  "kalshi.ws_ticks": 4735112,
-  "kalshi.ws_trades": 848741,
-  "live_evals_fired": 2399,
-  "novig.rest_updates": 10392,
-  "novig.sweeps": 525,
-  "novig.ticks": 73100,
-  "novig.updates": 10392,
-  "pairs_blocked_antonym_date": 11486,
-  "pmglobal.rest_updates": 3972,
-  "pmglobal.sweeps": 525,
-  "pmglobal.ticks": 60097,
-  "pmglobal.updates": 8088,
-  "pmglobal.ws_msgs": 282458,
-  "pmglobal.ws_ticks": 7497,
-  "pmus.rest_updates": 20045,
-  "pmus.sweeps": 525,
-  "pmus.ticks": 4206948,
-  "pmus.updates": 20045,
+  "kalshi.rest_updates": 5,
+  "kalshi.sweeps": 536,
+  "kalshi.ticks": 4828576,
+  "kalshi.updates": 2335899,
+  "kalshi.ws_ticks": 4828569,
+  "kalshi.ws_trades": 864091,
+  "live_evals_fired": 2439,
+  "novig.rest_updates": 10563,
+  "novig.sweeps": 535,
+  "novig.ticks": 74535,
+  "novig.updates": 10563,
+  "pairs_blocked_antonym_date": 11603,
+  "pmglobal.rest_updates": 4029,
+  "pmglobal.sweeps": 535,
+  "pmglobal.ticks": 61283,
+  "pmglobal.updates": 8202,
+  "pmglobal.ws_msgs": 295173,
+  "pmglobal.ws_ticks": 7683,
+  "pmus.rest_updates": 20469,
+  "pmus.sweeps": 536,
+  "pmus.ticks": 4294926,
+  "pmus.updates": 20469,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 526,
+  "pmus_x.sweeps": 537,
   "prophetx.ticks": 396,
   "prophetx.updates": 119,
-  "prophetx.ws_errors": 348,
+  "prophetx.ws_errors": 355,
   "px.evt_scanned": 14,
-  "pxboard.sweeps": 524,
-  "supa_errors": 1584
+  "pxboard.sweeps": 535,
+  "supa_errors": 1616
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3f88b3eeb255a89a62f4dd63f7fd763f4a173aea7bf96b699b45767746e91062"
-    ],
-    "title": "San Diego Padres vs. Cincinnati Reds: O/U 8.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ad65ff455239bd54b463d3f80d565b85"
-    ],
-    "title": "San Diego Padres at Cincinnati Reds",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 11,
-   "edge_bps": 8900,
-   "detected_at": "2026-09-01T01:33:25.706464+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -107,7 +84,7 @@
      "0xc38041b831c27ca92777333ff7997fec5fd61a93da9e314e96bfb05f9607c502"
     ],
     "title": "Miami Marlins vs. Washington Nationals",
-    "ask_cents": 4
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,9 +95,9 @@
     "title": "Miami Marlins at Washington Nationals",
     "no_cost_cents": 15
    },
-   "total_cost_cents": 19,
-   "edge_bps": 8100,
-   "detected_at": "2026-09-01T01:36:10.486461+00:00"
+   "total_cost_cents": 17,
+   "edge_bps": 8300,
+   "detected_at": "2026-09-01T01:37:24.357570+00:00"
   },
   {
    "buy_yes": {
@@ -130,7 +107,7 @@
      "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox",
-    "ask_cents": 44
+    "ask_cents": 26
    },
    "buy_no": {
     "venue": "prophetx",
@@ -141,9 +118,9 @@
     "title": "Seattle Mariners at Boston Red Sox",
     "no_cost_cents": 38
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-01T01:36:18.074387+00:00"
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-01T01:38:23.251427+00:00"
   },
   {
    "buy_yes": {
@@ -153,7 +130,7 @@
      "0xc38041b831c27ca92777333ff7997fec5fd61a93da9e314e96bfb05f9607c502"
     ],
     "title": "Miami Marlins vs. Washington Nationals",
-    "ask_cents": 4
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
@@ -164,55 +141,32 @@
     "title": "Miami Marlins at Washington Nationals",
     "no_cost_cents": 85
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-01T01:36:10.515897+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-01T01:37:24.392739+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3f88b3eeb255a89a62f4dd63f7fd763f4a173aea7bf96b699b45767746e91062"
-    ],
-    "title": "San Diego Padres vs. Cincinnati Reds: O/U 8.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "364fd89275997ed5994da7e26a985c15"
-    ],
-    "title": "San Diego Padres at Cincinnati Reds",
-    "no_cost_cents": 92
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-01T01:33:25.682098+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a6f85026996acb3be412cc837b719db1"
-    ],
-    "title": "Seattle Mariners at Boston Red Sox",
-    "ask_cents": 38
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox",
-    "no_cost_cents": 56
+    "ask_cents": 26
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-01T01:36:18.051412+00:00"
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a6f85026996acb3be412cc837b719db1"
+    ],
+    "title": "Seattle Mariners at Boston Red Sox",
+    "no_cost_cents": 63
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-01T01:38:23.221277+00:00"
   },
   {
    "buy_yes": {
