@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-01T01:27:50.821798+00:00",
+ "scanned_at": "2026-09-01T01:30:02.853221+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 87.5,
+ "loop_uptime_min": 89.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 124474,
+   "markets": 126032,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "pmglobal",
@@ -26,54 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 209,
-   "last_tick_age_s": 17.9
+   "last_tick_age_s": 15.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 16,
-   "last_tick_age_s": 4978.9
+   "last_tick_age_s": 5110.9
   }
  ],
  "totals": {
-  "markets_tracked": 132802,
+  "markets_tracked": 134360,
   "pairs_married": 7,
-  "arbitrages": 7
+  "arbitrages": 6
  },
  "stats": {
-  "commits": 40,
-  "gist_errors": 81,
+  "commits": 41,
+  "gist_errors": 83,
   "hot_errors": 0,
   "kalshi.rest_updates": 2,
-  "kalshi.sweeps": 479,
-  "kalshi.ticks": 4297760,
-  "kalshi.updates": 2081602,
-  "kalshi.ws_ticks": 4297757,
-  "kalshi.ws_trades": 765221,
-  "live_evals_fired": 2138,
-  "novig.rest_updates": 9699,
-  "novig.sweeps": 478,
-  "novig.ticks": 66648,
-  "novig.updates": 9699,
-  "pairs_blocked_antonym_date": 10964,
-  "pmglobal.rest_updates": 3729,
-  "pmglobal.sweeps": 478,
-  "pmglobal.ticks": 54435,
-  "pmglobal.updates": 7548,
-  "pmglobal.ws_msgs": 218173,
-  "pmglobal.ws_ticks": 6535,
-  "pmus.rest_updates": 18815,
-  "pmus.sweeps": 479,
-  "pmus.ticks": 3839040,
-  "pmus.updates": 18815,
+  "kalshi.sweeps": 491,
+  "kalshi.ticks": 4409068,
+  "kalshi.updates": 2133364,
+  "kalshi.ws_ticks": 4409065,
+  "kalshi.ws_trades": 789953,
+  "live_evals_fired": 2213,
+  "novig.rest_updates": 9866,
+  "novig.sweeps": 490,
+  "novig.ticks": 68263,
+  "novig.updates": 9866,
+  "pairs_blocked_antonym_date": 11099,
+  "pmglobal.rest_updates": 3789,
+  "pmglobal.sweeps": 490,
+  "pmglobal.ticks": 55917,
+  "pmglobal.updates": 7702,
+  "pmglobal.ws_msgs": 238123,
+  "pmglobal.ws_ticks": 6817,
+  "pmus.rest_updates": 19159,
+  "pmus.sweeps": 491,
+  "pmus.ticks": 3935016,
+  "pmus.updates": 19159,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 480,
+  "pmus_x.sweeps": 492,
   "prophetx.ticks": 396,
   "prophetx.updates": 119,
-  "prophetx.ws_errors": 317,
+  "prophetx.ws_errors": 325,
   "px.evt_scanned": 14,
-  "pxboard.sweeps": 478,
-  "supa_errors": 1445
+  "pxboard.sweeps": 490,
+  "supa_errors": 1481
  },
  "arbitrages": [
   {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 19,
    "edge_bps": 8100,
-   "detected_at": "2026-09-01T01:26:43.922577+00:00"
+   "detected_at": "2026-09-01T01:27:59.064830+00:00"
   },
   {
    "buy_yes": {
@@ -139,34 +139,11 @@
      "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox",
-    "no_cost_cents": 23
+    "no_cost_cents": 45
    },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-01T01:27:33.014090+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "dc6cd0c30ab11397931c349148874fc9"
-    ],
-    "title": "Seattle Mariners at Boston Red Sox",
-    "ask_cents": 63
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-01T01:27:33.035076+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-01T01:29:46.636405+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +166,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-01T01:26:43.953426+00:00"
+   "detected_at": "2026-09-01T01:27:59.090868+00:00"
   },
   {
    "buy_yes": {
