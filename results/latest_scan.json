@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-01T14:02:37.322421+00:00",
+ "scanned_at": "2026-09-01T14:04:38.793182+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 219.5,
+ "loop_uptime_min": 221.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 150500,
-   "last_tick_age_s": 0.1
+   "markets": 151678,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 24534,
+   "markets": 24536,
    "last_tick_age_s": 5.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 143,
-   "last_tick_age_s": 0.1
+   "markets": 144,
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 292,
-   "last_tick_age_s": 2.0
+   "markets": 294,
+   "last_tick_age_s": 2.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 19,
-   "last_tick_age_s": 12970.4
+   "last_tick_age_s": 13091.9
   }
  ],
  "totals": {
-  "markets_tracked": 175488,
-  "pairs_married": 59,
+  "markets_tracked": 176671,
+  "pairs_married": 58,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 107,
-  "gist_errors": 231,
+  "commits": 108,
+  "gist_errors": 233,
   "kalshi.rest_updates": 36,
-  "kalshi.sweeps": 1354,
-  "kalshi.ticks": 7747821,
-  "kalshi.updates": 3419391,
-  "kalshi.ws_ticks": 7747713,
-  "kalshi.ws_trades": 999360,
-  "live_evals_fired": 344,
-  "novig.rest_updates": 1571,
-  "novig.sweeps": 1354,
-  "novig.ticks": 311855,
-  "novig.updates": 1571,
-  "pairs_blocked_antonym_date": 12484,
-  "pmglobal.rest_updates": 5669,
-  "pmglobal.sweeps": 1354,
-  "pmglobal.ticks": 156073,
-  "pmglobal.updates": 11575,
+  "kalshi.sweeps": 1364,
+  "kalshi.ticks": 7841411,
+  "kalshi.updates": 3463289,
+  "kalshi.ws_ticks": 7841303,
+  "kalshi.ws_trades": 1009269,
+  "live_evals_fired": 346,
+  "novig.rest_updates": 1610,
+  "novig.sweeps": 1364,
+  "novig.ticks": 314280,
+  "novig.updates": 1610,
+  "pairs_blocked_antonym_date": 12653,
+  "pmglobal.rest_updates": 5727,
+  "pmglobal.sweeps": 1364,
+  "pmglobal.ticks": 157306,
+  "pmglobal.updates": 11680,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 2235824,
-  "pmglobal.ws_ticks": 20573,
-  "pmus.rest_updates": 76659,
-  "pmus.sweeps": 1354,
-  "pmus.ticks": 6642681,
-  "pmus.updates": 76659,
-  "pmus_x.last_count": 7952,
-  "pmus_x.sweeps": 1355,
+  "pmglobal.ws_msgs": 2256804,
+  "pmglobal.ws_ticks": 20806,
+  "pmus.rest_updates": 77464,
+  "pmus.sweeps": 1364,
+  "pmus.ticks": 6722200,
+  "pmus.updates": 77464,
+  "pmus_x.last_count": 7954,
+  "pmus_x.sweeps": 1365,
   "prophetx.ticks": 570,
   "prophetx.updates": 19,
-  "prophetx.ws_errors": 798,
+  "prophetx.ws_errors": 805,
   "px.evt_scanned": 19,
-  "pxboard.sweeps": 1354,
-  "supa_pushes": 4025
+  "pxboard.sweeps": 1364,
+  "supa_pushes": 4055
  },
  "arbitrages": [
   {
@@ -139,11 +139,11 @@
      "523749"
     ],
     "title": "Top US Netflix Movie This Week?",
-    "no_cost_cents": 4
+    "no_cost_cents": 5
    },
-   "total_cost_cents": 9,
-   "edge_bps": 9100,
-   "detected_at": "2026-09-01T14:02:13.055382+00:00"
+   "total_cost_cents": 10,
+   "edge_bps": 9000,
+   "detected_at": "2026-09-01T14:02:50.520096+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +281,30 @@
    },
    "total_cost_cents": 42,
    "edge_bps": 5800,
-   "detected_at": "2026-09-01T14:02:37.322234+00:00"
+   "detected_at": "2026-09-01T14:04:38.792995+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf3d62eb13cea91ec64a0428a167c25b570d5327e8f54e10607e221cdf6c2100e"
+    ],
+    "title": "Como: Raul Brancaccio vs Duje Ajdukovic",
+    "ask_cents": 14
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "564659"
+    ],
+    "title": "Raul Brancaccio vs. Duje Ajdukovic",
+    "no_cost_cents": 30
+   },
+   "total_cost_cents": 46,
+   "edge_bps": 5400,
+   "detected_at": "2026-09-01T14:03:35.135687+00:00"
   },
   {
    "buy_yes": {
@@ -328,29 +351,6 @@
    "total_cost_cents": 56,
    "edge_bps": 4400,
    "detected_at": "2026-09-01T12:56:47.242387+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3d62eb13cea91ec64a0428a167c25b570d5327e8f54e10607e221cdf6c2100e"
-    ],
-    "title": "Como: Raul Brancaccio vs Duje Ajdukovic",
-    "ask_cents": 25
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "564659"
-    ],
-    "title": "Raul Brancaccio vs. Duje Ajdukovic",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-01T13:58:39.161276+00:00"
   },
   {
    "buy_yes": {
@@ -561,29 +561,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01ccc5495e292609da5b977d39e86142321d43fc8f55eb88edab2880944af2b6"
-    ],
-    "title": "Manacor: Max Basing vs Joel Schwaerzler",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "575033"
-    ],
-    "title": "Max Basing vs. Joel Schwaerzler",
-    "no_cost_cents": 66
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-01T13:58:39.264582+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
@@ -650,6 +627,29 @@
    "total_cost_cents": 91,
    "edge_bps": 900,
    "detected_at": "2026-09-01T13:48:36.415021+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "568481"
+    ],
+    "title": "Will the Seattle Mariners cover -2.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
+    "ask_cents": 30
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9e8345ef61995457041dded86ec4b24ead5ddd1b6563f543efe30cf373b1866a"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 7.5",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-01T13:33:28.807369+00:00"
   }
  ]
 }
