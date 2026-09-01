@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-01T13:28:03.010887+00:00",
+ "scanned_at": "2026-09-01T13:30:04.341992+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 184.9,
+ "loop_uptime_min": 187.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 124771,
-   "last_tick_age_s": 0.0
+   "markets": 126169,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 24475,
-   "last_tick_age_s": 0.1
+   "markets": 24477,
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 139,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 277,
-   "last_tick_age_s": 6.5
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 19,
-   "last_tick_age_s": 10896.1
+   "last_tick_age_s": 11017.4
   }
  ],
  "totals": {
-  "markets_tracked": 149681,
+  "markets_tracked": 151081,
   "pairs_married": 57,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 90,
-  "gist_errors": 195,
+  "commits": 91,
+  "gist_errors": 197,
   "kalshi.rest_updates": 36,
-  "kalshi.sweeps": 1174,
-  "kalshi.ticks": 6086183,
-  "kalshi.updates": 2649716,
-  "kalshi.ws_ticks": 6086075,
-  "kalshi.ws_trades": 787556,
-  "live_evals_fired": 274,
-  "novig.rest_updates": 1177,
-  "novig.sweeps": 1173,
-  "novig.ticks": 269072,
-  "novig.updates": 1177,
-  "pairs_blocked_antonym_date": 9546,
-  "pmglobal.rest_updates": 4786,
-  "pmglobal.sweeps": 1173,
-  "pmglobal.ticks": 134376,
-  "pmglobal.updates": 9754,
+  "kalshi.sweeps": 1184,
+  "kalshi.ticks": 6169633,
+  "kalshi.updates": 2686835,
+  "kalshi.ws_ticks": 6169525,
+  "kalshi.ws_trades": 802079,
+  "live_evals_fired": 282,
+  "novig.rest_updates": 1188,
+  "novig.sweeps": 1184,
+  "novig.ticks": 271624,
+  "novig.updates": 1188,
+  "pairs_blocked_antonym_date": 9715,
+  "pmglobal.rest_updates": 4845,
+  "pmglobal.sweeps": 1184,
+  "pmglobal.ticks": 135703,
+  "pmglobal.updates": 9873,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 1852651,
-  "pmglobal.ws_ticks": 16976,
-  "pmus.rest_updates": 68138,
-  "pmus.sweeps": 1174,
-  "pmus.ticks": 5210118,
-  "pmus.updates": 68138,
-  "pmus_x.last_count": 7963,
-  "pmus_x.sweeps": 1175,
+  "pmglobal.ws_msgs": 1871403,
+  "pmglobal.ws_ticks": 17203,
+  "pmus.rest_updates": 68718,
+  "pmus.sweeps": 1184,
+  "pmus.ticks": 5289750,
+  "pmus.updates": 68718,
+  "pmus_x.last_count": 7964,
+  "pmus_x.sweeps": 1185,
   "prophetx.ticks": 570,
   "prophetx.updates": 19,
-  "prophetx.ws_errors": 678,
+  "prophetx.ws_errors": 685,
   "px.evt_scanned": 19,
-  "pxboard.sweeps": 1173,
-  "supa_pushes": 3475
+  "pxboard.sweeps": 1183,
+  "supa_pushes": 3507
  },
  "arbitrages": [
   {
@@ -199,7 +199,7 @@
      "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 34
+    "ask_cents": 32
    },
    "buy_no": {
     "venue": "pmus",
@@ -210,9 +210,9 @@
     "title": "Will the Seattle Mariners win the 5th inning vs the Boston Red Sox?",
     "no_cost_cents": 1
    },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-09-01T13:18:29.913724+00:00"
+   "total_cost_cents": 34,
+   "edge_bps": 6600,
+   "detected_at": "2026-09-01T13:28:29.194273+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +258,7 @@
    },
    "total_cost_cents": 42,
    "edge_bps": 5800,
-   "detected_at": "2026-09-01T13:28:03.010711+00:00"
+   "detected_at": "2026-09-01T13:30:04.341788+00:00"
   },
   {
    "buy_yes": {
@@ -282,6 +282,29 @@
    "total_cost_cents": 44,
    "edge_bps": 5600,
    "detected_at": "2026-09-01T13:13:31.936680+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "554780"
+    ],
+    "title": "Will the Seattle Mariners cover 2.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-09-01T13:28:28.839799+00:00"
   },
   {
    "buy_yes": {
@@ -331,29 +354,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 34
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "554780"
-    ],
-    "title": "Will the Seattle Mariners cover 2.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-01T13:18:29.559752+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -383,7 +383,7 @@
      "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 34
+    "ask_cents": 32
    },
    "buy_no": {
     "venue": "pmus",
@@ -394,9 +394,9 @@
     "title": "Will the Seattle Mariners cover 2.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
     "no_cost_cents": 27
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-09-01T13:18:29.645871+00:00"
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-01T13:28:28.925739+00:00"
   },
   {
    "buy_yes": {
@@ -452,7 +452,7 @@
      "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 34
+    "ask_cents": 32
    },
    "buy_no": {
     "venue": "pmus",
@@ -463,9 +463,9 @@
     "title": "Will the Seattle Mariners cover 1.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
     "no_cost_cents": 34
    },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-01T13:18:30.188704+00:00"
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-01T13:28:29.381715+00:00"
   },
   {
    "buy_yes": {
@@ -538,6 +538,29 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf3d62eb13cea91ec64a0428a167c25b570d5327e8f54e10607e221cdf6c2100e"
+    ],
+    "title": "Como: Raul Brancaccio vs Duje Ajdukovic",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "564659"
+    ],
+    "title": "Raul Brancaccio vs. Duje Ajdukovic",
+    "no_cost_cents": 30
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-01T13:28:28.739525+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
@@ -564,33 +587,10 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xf3d62eb13cea91ec64a0428a167c25b570d5327e8f54e10607e221cdf6c2100e"
-    ],
-    "title": "Como: Raul Brancaccio vs Duje Ajdukovic",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "564659"
-    ],
-    "title": "Raul Brancaccio vs. Duje Ajdukovic",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-09-01T13:23:25.290983+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
      "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 34
+    "ask_cents": 32
    },
    "buy_no": {
     "venue": "pmus",
@@ -601,9 +601,9 @@
     "title": "Will the total in Seattle Mariners vs Boston Red Sox be more than 7.5?",
     "no_cost_cents": 54
    },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-01T13:18:29.727615+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-01T13:28:29.006911+00:00"
   },
   {
    "buy_yes": {
@@ -633,23 +633,23 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x53e978db0216a81b23b50d6912d9094e0a659db43f98bed04326ce9ebb5f252d"
+     "0x28d9fa2abdd0492e607de01121f78a33cc670e09c71c89ea52dafe6c7f34a286"
     ],
-    "title": "Will \"The Whisper Man (2026)\" be the top US Netflix movie this week?",
-    "ask_cents": 4
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
+    "ask_cents": 32
    },
    "buy_no": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "523752"
+     "568482"
     ],
-    "title": "Top US Netflix Movie This Week?",
-    "no_cost_cents": 87
+    "title": "Will the Seattle Mariners cover -1.5 vs the Boston Red Sox in Seattle Mariners vs Boston Red Sox?",
+    "no_cost_cents": 57
    },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-01T13:00:22.038702+00:00"
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-01T13:28:29.292331+00:00"
   }
  ]
 }
