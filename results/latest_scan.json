@@ -1,265 +1,81 @@
 {
- "scanned_at": "2026-09-01T19:33:35.742415+00:00",
+ "scanned_at": "2026-09-01T19:35:37.648981+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 49.0,
+ "loop_uptime_min": 51.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 84951,
+   "markets": 87054,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 9532,
-   "last_tick_age_s": 0.1
+   "markets": 9726,
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 112,
-   "last_tick_age_s": 0.1
+   "markets": 113,
+   "last_tick_age_s": 0.9
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 257,
-   "last_tick_age_s": 11.1
+   "markets": 258,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 54,
-   "last_tick_age_s": 2636.7
+   "last_tick_age_s": 2758.6
   }
  ],
  "totals": {
-  "markets_tracked": 94906,
-  "pairs_married": 9,
-  "arbitrages": 9
+  "markets_tracked": 97205,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 23,
-  "gist_errors": 50,
+  "commits": 24,
+  "gist_errors": 53,
   "kalshi.rest_updates": 75,
-  "kalshi.sweeps": 294,
-  "kalshi.ticks": 2015330,
-  "kalshi.updates": 830693,
-  "kalshi.ws_ticks": 2015030,
-  "kalshi.ws_trades": 341268,
-  "live_evals_fired": 1246,
-  "novig.rest_updates": 3043,
-  "novig.sweeps": 293,
-  "novig.ticks": 70094,
-  "novig.updates": 3043,
-  "pairs_blocked_antonym_date": 1757,
-  "pmglobal.rest_updates": 2982,
-  "pmglobal.sweeps": 293,
-  "pmglobal.ticks": 36680,
-  "pmglobal.updates": 6279,
+  "kalshi.sweeps": 308,
+  "kalshi.ticks": 2096642,
+  "kalshi.updates": 863456,
+  "kalshi.ws_ticks": 2096342,
+  "kalshi.ws_trades": 353599,
+  "live_evals_fired": 1254,
+  "novig.rest_updates": 3216,
+  "novig.sweeps": 308,
+  "novig.ticks": 73694,
+  "novig.updates": 3216,
+  "pairs_blocked_antonym_date": 1847,
+  "pmglobal.rest_updates": 3117,
+  "pmglobal.sweeps": 308,
+  "pmglobal.ticks": 38516,
+  "pmglobal.updates": 6595,
   "pmglobal.ws_errors": 11,
-  "pmglobal.ws_msgs": 984289,
-  "pmglobal.ws_ticks": 7280,
-  "pmus.rest_updates": 18977,
-  "pmus.sweeps": 294,
-  "pmus.ticks": 2352716,
-  "pmus.updates": 18977,
-  "pmus_x.last_count": 7984,
-  "pmus_x.sweeps": 295,
+  "pmglobal.ws_msgs": 1025243,
+  "pmglobal.ws_ticks": 7616,
+  "pmus.rest_updates": 19391,
+  "pmus.sweeps": 308,
+  "pmus.ticks": 2464313,
+  "pmus.updates": 19391,
+  "pmus_x.last_count": 7971,
+  "pmus_x.sweeps": 309,
   "prophetx.ticks": 1060,
   "prophetx.updates": 182,
-  "prophetx.ws_errors": 178,
+  "prophetx.ws_errors": 186,
   "px.evt_scanned": 30,
-  "pxboard.sweeps": 293,
-  "supa_pushes": 896
+  "pxboard.sweeps": 307,
+  "supa_pushes": 939
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b7ceeb62fa37f18e2510e847f36f1f28"
-    ],
-    "title": "Wolverhampton Wanderers FC at West Ham United FC",
-    "ask_cents": 27
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7caa00bbaf9b92f728ed0ca0ab15d1ec7a890cc816ecfe8d6f92bcf9d0a4ff03"
-    ],
-    "title": "West Ham United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-01T19:33:23.551170+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "27aed2fd79adc8badf54a5f0f7a892db"
-    ],
-    "title": "Wolverhampton Wanderers FC at West Ham United FC",
-    "ask_cents": 33
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7caa00bbaf9b92f728ed0ca0ab15d1ec7a890cc816ecfe8d6f92bcf9d0a4ff03"
-    ],
-    "title": "West Ham United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-01T19:33:23.576952+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7184e3d4f7031411a47714f9397f94f4"
-    ],
-    "title": "Wolverhampton Wanderers FC at West Ham United FC",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7caa00bbaf9b92f728ed0ca0ab15d1ec7a890cc816ecfe8d6f92bcf9d0a4ff03"
-    ],
-    "title": "West Ham United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-01T19:33:23.482845+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "433b34c709522058ccb2a58d99a56a6d"
-    ],
-    "title": "Wolverhampton Wanderers FC at West Ham United FC",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7caa00bbaf9b92f728ed0ca0ab15d1ec7a890cc816ecfe8d6f92bcf9d0a4ff03"
-    ],
-    "title": "West Ham United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-01T19:33:23.406487+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5c5902981be9d42e474930c88c8b6683"
-    ],
-    "title": "Wolverhampton Wanderers FC at West Ham United FC",
-    "ask_cents": 58
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7caa00bbaf9b92f728ed0ca0ab15d1ec7a890cc816ecfe8d6f92bcf9d0a4ff03"
-    ],
-    "title": "West Ham United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-01T19:33:23.449938+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "c6953737d70d730c9456a6e962a42fa7"
-    ],
-    "title": "Wolverhampton Wanderers FC at West Ham United FC",
-    "ask_cents": 59
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7caa00bbaf9b92f728ed0ca0ab15d1ec7a890cc816ecfe8d6f92bcf9d0a4ff03"
-    ],
-    "title": "West Ham United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-09-01T19:33:23.528770+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2dd2e6fa65612d7ec018371dbd340fb6"
-    ],
-    "title": "Wolverhampton Wanderers FC at West Ham United FC",
-    "ask_cents": 71
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7caa00bbaf9b92f728ed0ca0ab15d1ec7a890cc816ecfe8d6f92bcf9d0a4ff03"
-    ],
-    "title": "West Ham United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-09-01T19:33:23.503095+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "c19601a1b60e4101c6fecf8b9a5403aa"
-    ],
-    "title": "Wolverhampton Wanderers FC at West Ham United FC",
-    "ask_cents": 75
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7caa00bbaf9b92f728ed0ca0ab15d1ec7a890cc816ecfe8d6f92bcf9d0a4ff03"
-    ],
-    "title": "West Ham United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-01T19:33:23.431064+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -281,7 +97,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-01T19:20:57.095265+00:00"
+   "detected_at": "2026-09-01T19:35:21.861981+00:00"
   }
  ]
 }
