@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-01T01:34:18.226299+00:00",
+ "scanned_at": "2026-09-01T01:36:19.546740+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 94.0,
+ "loop_uptime_min": 96.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 129953,
+   "markets": 131533,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 4.7
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 109,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 210,
-   "last_tick_age_s": 2.3
+   "markets": 219,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 16,
-   "last_tick_age_s": 5366.3
+   "last_tick_age_s": 5487.6
   }
  ],
  "totals": {
-  "markets_tracked": 138286,
+  "markets_tracked": 139875,
   "pairs_married": 7,
-  "arbitrages": 6
+  "arbitrages": 7
  },
  "stats": {
-  "commits": 43,
-  "gist_errors": 87,
+  "commits": 44,
+  "gist_errors": 89,
   "hot_errors": 0,
-  "kalshi.rest_updates": 2,
-  "kalshi.sweeps": 514,
-  "kalshi.ticks": 4638276,
-  "kalshi.updates": 2245073,
-  "kalshi.ws_ticks": 4638273,
-  "kalshi.ws_trades": 829882,
-  "live_evals_fired": 2357,
-  "novig.rest_updates": 10210,
-  "novig.sweeps": 514,
-  "novig.ticks": 71516,
-  "novig.updates": 10210,
-  "pairs_blocked_antonym_date": 11360,
-  "pmglobal.rest_updates": 3925,
-  "pmglobal.sweeps": 514,
-  "pmglobal.ticks": 58801,
-  "pmglobal.updates": 7992,
-  "pmglobal.ws_msgs": 268942,
-  "pmglobal.ws_ticks": 7301,
-  "pmus.rest_updates": 19777,
-  "pmus.sweeps": 514,
-  "pmus.ticks": 4118970,
-  "pmus.updates": 19777,
+  "kalshi.rest_updates": 3,
+  "kalshi.sweeps": 525,
+  "kalshi.ticks": 4735116,
+  "kalshi.updates": 2290260,
+  "kalshi.ws_ticks": 4735112,
+  "kalshi.ws_trades": 848741,
+  "live_evals_fired": 2399,
+  "novig.rest_updates": 10392,
+  "novig.sweeps": 525,
+  "novig.ticks": 73100,
+  "novig.updates": 10392,
+  "pairs_blocked_antonym_date": 11486,
+  "pmglobal.rest_updates": 3972,
+  "pmglobal.sweeps": 525,
+  "pmglobal.ticks": 60097,
+  "pmglobal.updates": 8088,
+  "pmglobal.ws_msgs": 282458,
+  "pmglobal.ws_ticks": 7497,
+  "pmus.rest_updates": 20045,
+  "pmus.sweeps": 525,
+  "pmus.ticks": 4206948,
+  "pmus.updates": 20045,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 515,
+  "pmus_x.sweeps": 526,
   "prophetx.ticks": 396,
   "prophetx.updates": 119,
-  "prophetx.ws_errors": 341,
+  "prophetx.ws_errors": 348,
   "px.evt_scanned": 14,
-  "pxboard.sweeps": 514,
-  "supa_errors": 1552
+  "pxboard.sweeps": 524,
+  "supa_errors": 1584
  },
  "arbitrages": [
   {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 19,
    "edge_bps": 8100,
-   "detected_at": "2026-09-01T01:34:07.484407+00:00"
+   "detected_at": "2026-09-01T01:36:10.486461+00:00"
   },
   {
    "buy_yes": {
@@ -130,7 +130,7 @@
      "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
     ],
     "title": "Seattle Mariners vs. Boston Red Sox",
-    "ask_cents": 39
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -141,9 +141,9 @@
     "title": "Seattle Mariners at Boston Red Sox",
     "no_cost_cents": 38
    },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-01T01:34:14.942763+00:00"
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-01T01:36:18.074387+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +166,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-01T01:34:07.507741+00:00"
+   "detected_at": "2026-09-01T01:36:10.515897+00:00"
   },
   {
    "buy_yes": {
@@ -190,6 +190,29 @@
    "total_cost_cents": 94,
    "edge_bps": 600,
    "detected_at": "2026-09-01T01:33:25.682098+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a6f85026996acb3be412cc837b719db1"
+    ],
+    "title": "Seattle Mariners at Boston Red Sox",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-01T01:36:18.051412+00:00"
   },
   {
    "buy_yes": {
