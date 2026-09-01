@@ -1,77 +1,78 @@
 {
- "scanned_at": "2026-09-01T00:02:28.360884+00:00",
+ "scanned_at": "2026-09-01T00:04:29.590268+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.1,
+ "loop_uptime_min": 4.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 17677,
+   "markets": 25455,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 2.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 100,
-   "last_tick_age_s": 9.0
+   "last_tick_age_s": 1.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 166,
-   "last_tick_age_s": 7.9
+   "markets": 169,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 16,
-   "last_tick_age_s": 6.2
+   "last_tick_age_s": 10.4
   }
  ],
  "totals": {
-  "markets_tracked": 25957,
+  "markets_tracked": 33738,
   "pairs_married": 23,
-  "arbitrages": 23
+  "arbitrages": 22
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 12,
-  "kalshi.ticks": 105826,
-  "kalshi.updates": 58847,
-  "kalshi.ws_ticks": 105826,
-  "kalshi.ws_trades": 17551,
-  "live_evals_fired": 153,
-  "novig.rest_updates": 381,
-  "novig.sweeps": 11,
-  "novig.ticks": 1921,
-  "novig.updates": 381,
-  "pairs_blocked_antonym_date": 542,
-  "pmglobal.rest_updates": 254,
-  "pmglobal.sweeps": 11,
-  "pmglobal.ticks": 1400,
-  "pmglobal.updates": 408,
-  "pmglobal.ws_msgs": 3,
-  "pmglobal.ws_ticks": 200,
-  "pmus.rest_updates": 8291,
-  "pmus.sweeps": 12,
-  "pmus.ticks": 103974,
-  "pmus.updates": 8291,
+  "kalshi.sweeps": 23,
+  "kalshi.ticks": 206823,
+  "kalshi.updates": 108007,
+  "kalshi.ws_ticks": 206823,
+  "kalshi.ws_trades": 34988,
+  "live_evals_fired": 224,
+  "novig.rest_updates": 585,
+  "novig.sweeps": 23,
+  "novig.ticks": 3863,
+  "novig.updates": 585,
+  "pairs_blocked_antonym_date": 1048,
+  "pmglobal.rest_updates": 331,
+  "pmglobal.sweeps": 23,
+  "pmglobal.ticks": 2700,
+  "pmglobal.updates": 562,
+  "pmglobal.ws_msgs": 7,
+  "pmglobal.ws_ticks": 300,
+  "pmus.rest_updates": 8532,
+  "pmus.sweeps": 23,
+  "pmus.ticks": 191952,
+  "pmus.updates": 8532,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 13,
-  "prophetx.ticks": 182,
-  "prophetx.updates": 69,
-  "prophetx.ws_errors": 8,
-  "px.evt_scanned": 14,
-  "pxboard.sweeps": 11,
-  "supa_errors": 35
+  "pmus_x.sweeps": 24,
+  "prophetx.ticks": 351,
+  "prophetx.updates": 107,
+  "prophetx.ws_errors": 16,
+  "px.evt_scanned": 16,
+  "pxboard.sweeps": 22,
+  "supa_errors": 71
  },
  "arbitrages": [
   {
@@ -91,11 +92,11 @@
      "219073037b36a407029b424f6773d32b"
     ],
     "title": "San Francisco Giants at Atlanta Braves",
-    "no_cost_cents": 9
+    "no_cost_cents": 11
    },
-   "total_cost_cents": 35,
-   "edge_bps": 6500,
-   "detected_at": "2026-09-01T00:02:21.846119+00:00"
+   "total_cost_cents": 37,
+   "edge_bps": 6300,
+   "detected_at": "2026-09-01T00:04:18.747678+00:00"
   },
   {
    "buy_yes": {
@@ -118,7 +119,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-01T00:02:21.769198+00:00"
+   "detected_at": "2026-09-01T00:03:55.800349+00:00"
   },
   {
    "buy_yes": {
@@ -141,7 +142,7 @@
    },
    "total_cost_cents": 49,
    "edge_bps": 5100,
-   "detected_at": "2026-09-01T00:01:45.897701+00:00"
+   "detected_at": "2026-09-01T00:03:55.726633+00:00"
   },
   {
    "buy_yes": {
@@ -160,11 +161,11 @@
      "18a97c9098b5465817ac53d91b0eb14a"
     ],
     "title": "Miami Marlins at Washington Nationals",
-    "no_cost_cents": 16
+    "no_cost_cents": 14
    },
-   "total_cost_cents": 52,
-   "edge_bps": 4800,
-   "detected_at": "2026-09-01T00:02:22.067911+00:00"
+   "total_cost_cents": 50,
+   "edge_bps": 5000,
+   "detected_at": "2026-09-01T00:03:55.833407+00:00"
   },
   {
    "buy_yes": {
@@ -187,7 +188,7 @@
    },
    "total_cost_cents": 55,
    "edge_bps": 4500,
-   "detected_at": "2026-09-01T00:01:45.831258+00:00"
+   "detected_at": "2026-09-01T00:03:55.604730+00:00"
   },
   {
    "buy_yes": {
@@ -210,7 +211,7 @@
    },
    "total_cost_cents": 58,
    "edge_bps": 4200,
-   "detected_at": "2026-09-01T00:02:21.722281+00:00"
+   "detected_at": "2026-09-01T00:03:55.585088+00:00"
   },
   {
    "buy_yes": {
@@ -233,30 +234,7 @@
    },
    "total_cost_cents": 61,
    "edge_bps": 3900,
-   "detected_at": "2026-09-01T00:01:45.853879+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x18e99285c983437032293d9bbc1b3b44057b58db9e12c90d5b113058b9767ae8"
-    ],
-    "title": "San Francisco Giants vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "219073037b36a407029b424f6773d32b"
-    ],
-    "title": "San Francisco Giants at Atlanta Braves",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-01T00:02:21.811813+00:00"
+   "detected_at": "2026-09-01T00:03:55.652098+00:00"
   },
   {
    "buy_yes": {
@@ -275,11 +253,34 @@
      "18a97c9098b5465817ac53d91b0eb14a"
     ],
     "title": "Miami Marlins at Washington Nationals",
-    "no_cost_cents": 16
+    "no_cost_cents": 14
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-01T00:02:22.038544+00:00"
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-09-01T00:03:55.652256+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x18e99285c983437032293d9bbc1b3b44057b58db9e12c90d5b113058b9767ae8"
+    ],
+    "title": "San Francisco Giants vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "219073037b36a407029b424f6773d32b"
+    ],
+    "title": "San Francisco Giants at Atlanta Braves",
+    "no_cost_cents": 11
+   },
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-01T00:04:18.729944+00:00"
   },
   {
    "buy_yes": {
@@ -302,7 +303,7 @@
    },
    "total_cost_cents": 67,
    "edge_bps": 3300,
-   "detected_at": "2026-09-01T00:01:45.873789+00:00"
+   "detected_at": "2026-09-01T00:03:55.697226+00:00"
   },
   {
    "buy_yes": {
@@ -312,7 +313,7 @@
      "f07b5ea55fae8e765ed4e59a054564f8"
     ],
     "title": "Miami Marlins at Washington Nationals",
-    "ask_cents": 18
+    "ask_cents": 16
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -323,9 +324,9 @@
     "title": "Miami Marlins vs. Washington Nationals",
     "no_cost_cents": 52
    },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-01T00:02:21.992366+00:00"
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-01T00:03:55.676583+00:00"
   },
   {
    "buy_yes": {
@@ -344,11 +345,34 @@
      "219073037b36a407029b424f6773d32b"
     ],
     "title": "San Francisco Giants at Atlanta Braves",
-    "no_cost_cents": 9
+    "no_cost_cents": 11
    },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-01T00:02:21.788940+00:00"
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-01T00:04:18.703114+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "dc6cd0c30ab11397931c349148874fc9"
+    ],
+    "title": "Seattle Mariners at Boston Red Sox",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 76,
+   "edge_bps": 2400,
+   "detected_at": "2026-09-01T00:03:58.420259+00:00"
   },
   {
    "buy_yes": {
@@ -371,7 +395,30 @@
    },
    "total_cost_cents": 79,
    "edge_bps": 2100,
-   "detected_at": "2026-09-01T00:01:48.510068+00:00"
+   "detected_at": "2026-09-01T00:04:19.002655+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a6f85026996acb3be412cc837b719db1"
+    ],
+    "title": "Seattle Mariners at Boston Red Sox",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x72c8eba84d41cc7baf84204dc69a7ea3be45021e96b7a6a1195c437cfa41e142"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 7.5",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-01T00:04:19.167842+00:00"
   },
   {
    "buy_yes": {
@@ -381,7 +428,7 @@
      "f07b5ea55fae8e765ed4e59a054564f8"
     ],
     "title": "Miami Marlins at Washington Nationals",
-    "ask_cents": 18
+    "ask_cents": 16
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -392,32 +439,9 @@
     "title": "Miami Marlins vs. Washington Nationals: O/U 8.5",
     "no_cost_cents": 64
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-01T00:02:22.016354+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "dc6cd0c30ab11397931c349148874fc9"
-    ],
-    "title": "Seattle Mariners at Boston Red Sox",
-    "no_cost_cents": 44
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-01T00:02:08.188179+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-01T00:03:55.858434+00:00"
   },
   {
    "buy_yes": {
@@ -440,53 +464,7 @@
    },
    "total_cost_cents": 84,
    "edge_bps": 1600,
-   "detected_at": "2026-09-01T00:02:21.745376+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a6f85026996acb3be412cc837b719db1"
-    ],
-    "title": "Seattle Mariners at Boston Red Sox",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x72c8eba84d41cc7baf84204dc69a7ea3be45021e96b7a6a1195c437cfa41e142"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox: O/U 7.5",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-01T00:02:08.230967+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x27f0222c0aedcc92988ee73c6fed16b37801757fe43afda48558e345ff4e690f"
-    ],
-    "title": "New York Mets vs. Tampa Bay Rays",
-    "ask_cents": 34
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "afba9371986deaf20b7f513a53a41626"
-    ],
-    "title": "New York Mets at Tampa Bay Rays",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-01T00:01:45.724244+00:00"
+   "detected_at": "2026-09-01T00:03:55.567180+00:00"
   },
   {
    "buy_yes": {
@@ -505,57 +483,34 @@
      "dc6cd0c30ab11397931c349148874fc9"
     ],
     "title": "Seattle Mariners at Boston Red Sox",
-    "no_cost_cents": 44
+    "no_cost_cents": 38
    },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-01T00:02:08.136716+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-01T00:03:58.377394+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x3706bf52913b2e2c6043be7b25095474319e4871169d309588365b6ca6db3067"
+     "0x27f0222c0aedcc92988ee73c6fed16b37801757fe43afda48558e345ff4e690f"
     ],
-    "title": "Seattle Mariners vs. Boston Red Sox",
-    "ask_cents": 38
+    "title": "New York Mets vs. Tampa Bay Rays",
+    "ask_cents": 34
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "a6f85026996acb3be412cc837b719db1"
+     "afba9371986deaf20b7f513a53a41626"
     ],
-    "title": "Seattle Mariners at Boston Red Sox",
+    "title": "New York Mets at Tampa Bay Rays",
     "no_cost_cents": 55
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-01T00:02:08.264355+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "dc6cd0c30ab11397931c349148874fc9"
-    ],
-    "title": "Seattle Mariners at Boston Red Sox",
-    "ask_cents": 57
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x72c8eba84d41cc7baf84204dc69a7ea3be45021e96b7a6a1195c437cfa41e142"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox: O/U 7.5",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-01T00:02:08.164258+00:00"
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-01T00:03:55.523804+00:00"
   },
   {
    "buy_yes": {
@@ -565,7 +520,7 @@
      "a6f85026996acb3be412cc837b719db1"
     ],
     "title": "Seattle Mariners at Boston Red Sox",
-    "ask_cents": 46
+    "ask_cents": 39
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -576,9 +531,32 @@
     "title": "Seattle Mariners vs. Boston Red Sox: O/U 8.5",
     "no_cost_cents": 52
    },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-01T00:04:19.143076+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x72c8eba84d41cc7baf84204dc69a7ea3be45021e96b7a6a1195c437cfa41e142"
+    ],
+    "title": "Seattle Mariners vs. Boston Red Sox: O/U 7.5",
+    "ask_cents": 60
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "dc6cd0c30ab11397931c349148874fc9"
+    ],
+    "title": "Seattle Mariners at Boston Red Sox",
+    "no_cost_cents": 38
+   },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-01T00:02:08.206805+00:00"
+   "detected_at": "2026-09-01T00:03:58.396436+00:00"
   },
   {
    "buy_yes": {
@@ -601,7 +579,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-01T00:01:45.873553+00:00"
+   "detected_at": "2026-09-01T00:03:55.676707+00:00"
   }
  ]
 }
