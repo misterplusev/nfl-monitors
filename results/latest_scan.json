@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-02T09:17:44.965138+00:00",
+ "scanned_at": "2026-09-02T09:19:45.858908+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 262.7,
+ "loop_uptime_min": 264.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 135046,
+   "markets": 135373,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 25665,
-   "last_tick_age_s": 0.4
+   "markets": 26597,
+   "last_tick_age_s": 4.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 131,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 258,
-   "last_tick_age_s": 14.5
+   "last_tick_age_s": 1.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 13977.4
+   "last_tick_age_s": 14098.3
   }
  ],
  "totals": {
-  "markets_tracked": 161118,
-  "pairs_married": 29,
-  "arbitrages": 19
+  "markets_tracked": 162377,
+  "pairs_married": 31,
+  "arbitrages": 20
  },
  "stats": {
-  "commits": 125,
-  "gist_errors": 260,
+  "commits": 126,
+  "gist_errors": 262,
   "hot_errors": 0,
   "kalshi.rest_updates": 447,
-  "kalshi.sweeps": 1463,
-  "kalshi.ticks": 7968139,
-  "kalshi.updates": 3513394,
-  "kalshi.ws_ticks": 7966539,
-  "kalshi.ws_trades": 1061887,
-  "live_evals_fired": 100,
-  "novig.rest_updates": 4946,
-  "novig.sweeps": 1462,
-  "novig.ticks": 332442,
-  "novig.updates": 4946,
-  "pairs_blocked_antonym_date": 23539,
-  "pmglobal.rest_updates": 6162,
-  "pmglobal.sweeps": 1462,
-  "pmglobal.ticks": 168913,
-  "pmglobal.updates": 12572,
+  "kalshi.sweeps": 1474,
+  "kalshi.ticks": 8037720,
+  "kalshi.updates": 3542337,
+  "kalshi.ws_ticks": 8036120,
+  "kalshi.ws_trades": 1067114,
+  "live_evals_fired": 101,
+  "novig.rest_updates": 4973,
+  "novig.sweeps": 1474,
+  "novig.ticks": 335178,
+  "novig.updates": 4973,
+  "pairs_blocked_antonym_date": 23763,
+  "pmglobal.rest_updates": 6205,
+  "pmglobal.sweeps": 1474,
+  "pmglobal.ticks": 170296,
+  "pmglobal.updates": 12670,
   "pmglobal.ws_errors": 9,
-  "pmglobal.ws_msgs": 1071783,
-  "pmglobal.ws_ticks": 22613,
-  "pmus.rest_updates": 39826,
-  "pmus.sweeps": 1463,
-  "pmus.ticks": 7334662,
-  "pmus.updates": 39826,
-  "pmus_x.last_count": 4469,
-  "pmus_x.sweeps": 1464,
+  "pmglobal.ws_msgs": 1094017,
+  "pmglobal.ws_ticks": 22796,
+  "pmus.rest_updates": 43167,
+  "pmus.sweeps": 1474,
+  "pmus.ticks": 7385343,
+  "pmus.updates": 43167,
+  "pmus_x.last_count": 4884,
+  "pmus_x.sweeps": 1475,
   "prophetx.ticks": 937,
   "prophetx.updates": 73,
-  "prophetx.ws_errors": 918,
+  "prophetx.ws_errors": 926,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 1462,
-  "supa_errors": 4387
+  "pxboard.sweeps": 1474,
+  "supa_errors": 4422
  },
  "arbitrages": [
   {
@@ -98,7 +98,7 @@
    },
    "total_cost_cents": 12,
    "edge_bps": 8800,
-   "detected_at": "2026-09-02T09:17:44.965029+00:00"
+   "detected_at": "2026-09-02T09:19:45.858780+00:00"
   },
   {
    "buy_yes": {
@@ -144,7 +144,7 @@
    },
    "total_cost_cents": 46,
    "edge_bps": 5400,
-   "detected_at": "2026-09-02T09:17:44.965039+00:00"
+   "detected_at": "2026-09-02T09:19:45.858792+00:00"
   },
   {
    "buy_yes": {
@@ -167,7 +167,7 @@
    },
    "total_cost_cents": 46,
    "edge_bps": 5400,
-   "detected_at": "2026-09-02T09:17:44.965065+00:00"
+   "detected_at": "2026-09-02T09:19:45.858826+00:00"
   },
   {
    "buy_yes": {
@@ -190,30 +190,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-02T09:17:44.965081+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdee7062c12ce9193286aa7b5b93df17aa3bb5fac283ed29de0a0ab55626b944b"
-    ],
-    "title": "US Open WTA: Tatjana Maria vs Jelena Ostapenko",
-    "ask_cents": 51
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "547445"
-    ],
-    "title": "Tatjana Maria vs. Jelena Ostapenko",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-02T09:16:45.816103+00:00"
+   "detected_at": "2026-09-02T09:19:45.858854+00:00"
   },
   {
    "buy_yes": {
@@ -259,7 +236,7 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-02T09:17:44.965051+00:00"
+   "detected_at": "2026-09-02T09:19:45.858808+00:00"
   },
   {
    "buy_yes": {
@@ -282,7 +259,53 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-02T09:17:44.965070+00:00"
+   "detected_at": "2026-09-02T09:19:45.858841+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "600215"
+    ],
+    "title": "Diane Parry vs. Sorana Cirstea",
+    "ask_cents": 29
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b8acd1c657320df4985342d0a686054f"
+    ],
+    "title": "Sorana Cirstea at Diane Parry",
+    "no_cost_cents": 29
+   },
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-02T09:19:45.858834+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdee7062c12ce9193286aa7b5b93df17aa3bb5fac283ed29de0a0ab55626b944b"
+    ],
+    "title": "US Open WTA: Tatjana Maria vs Jelena Ostapenko",
+    "ask_cents": 51
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "547445"
+    ],
+    "title": "Tatjana Maria vs. Jelena Ostapenko",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-02T09:19:17.555399+00:00"
   },
   {
    "buy_yes": {
@@ -305,7 +328,7 @@
    },
    "total_cost_cents": 76,
    "edge_bps": 2400,
-   "detected_at": "2026-09-02T09:17:44.965074+00:00"
+   "detected_at": "2026-09-02T09:19:45.858845+00:00"
   },
   {
    "buy_yes": {
@@ -328,7 +351,7 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-09-02T09:17:44.965090+00:00"
+   "detected_at": "2026-09-02T09:19:45.858863+00:00"
   },
   {
    "buy_yes": {
@@ -351,7 +374,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T09:17:44.965001+00:00"
+   "detected_at": "2026-09-02T09:19:45.858747+00:00"
   },
   {
    "buy_yes": {
@@ -374,7 +397,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T09:17:44.965035+00:00"
+   "detected_at": "2026-09-02T09:19:45.858787+00:00"
   },
   {
    "buy_yes": {
@@ -397,7 +420,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T09:17:44.965056+00:00"
+   "detected_at": "2026-09-02T09:19:45.858814+00:00"
   },
   {
    "buy_yes": {
@@ -420,7 +443,7 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-02T09:17:44.965061+00:00"
+   "detected_at": "2026-09-02T09:19:45.858821+00:00"
   },
   {
    "buy_yes": {
@@ -443,7 +466,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-02T09:17:44.965044+00:00"
+   "detected_at": "2026-09-02T09:19:45.858799+00:00"
   },
   {
    "buy_yes": {
@@ -466,7 +489,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-02T09:17:44.965093+00:00"
+   "detected_at": "2026-09-02T09:19:45.858867+00:00"
   },
   {
    "buy_yes": {
@@ -489,7 +512,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-02T09:13:23.117452+00:00"
+   "detected_at": "2026-09-02T09:17:55.959593+00:00"
   },
   {
    "buy_yes": {
@@ -512,7 +535,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-02T09:17:44.965047+00:00"
+   "detected_at": "2026-09-02T09:19:45.858803+00:00"
   }
  ]
 }
