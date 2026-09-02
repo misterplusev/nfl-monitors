@@ -1,19 +1,19 @@
 {
- "scanned_at": "2026-09-02T08:12:53.549887+00:00",
+ "scanned_at": "2026-09-02T08:15:03.577620+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 197.8,
+ "loop_uptime_min": 200.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 120002,
+   "markets": 120643,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 22035,
+   "markets": 22801,
    "last_tick_age_s": 0.0
   },
   {
@@ -26,57 +26,80 @@
    "venue": "novig",
    "state": "OK",
    "markets": 254,
-   "last_tick_age_s": 13.0
+   "last_tick_age_s": 14.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 10086.0
+   "last_tick_age_s": 10216.0
   }
  ],
  "totals": {
-  "markets_tracked": 142430,
-  "pairs_married": 15,
-  "arbitrages": 9
+  "markets_tracked": 143837,
+  "pairs_married": 22,
+  "arbitrages": 14
  },
  "stats": {
-  "commits": 93,
-  "gist_errors": 191,
+  "commits": 94,
+  "gist_errors": 193,
   "hot_errors": 0,
   "kalshi.rest_updates": 200,
-  "kalshi.sweeps": 889,
-  "kalshi.ticks": 5892188,
-  "kalshi.updates": 2590765,
-  "kalshi.ws_ticks": 5891588,
-  "kalshi.ws_trades": 844985,
+  "kalshi.sweeps": 901,
+  "kalshi.ticks": 5955847,
+  "kalshi.updates": 2618514,
+  "kalshi.ws_ticks": 5955247,
+  "kalshi.ws_trades": 857152,
   "live_evals_fired": 55,
-  "novig.rest_updates": 4050,
-  "novig.sweeps": 888,
-  "novig.ticks": 201579,
-  "novig.updates": 4050,
-  "pairs_blocked_antonym_date": 13335,
-  "pmglobal.rest_updates": 4377,
-  "pmglobal.sweeps": 888,
-  "pmglobal.ticks": 106004,
-  "pmglobal.updates": 8896,
+  "novig.rest_updates": 4070,
+  "novig.sweeps": 900,
+  "novig.ticks": 204315,
+  "novig.updates": 4070,
+  "pairs_blocked_antonym_date": 13530,
+  "pmglobal.rest_updates": 4415,
+  "pmglobal.sweeps": 900,
+  "pmglobal.ticks": 107413,
+  "pmglobal.updates": 8986,
   "pmglobal.ws_errors": 9,
-  "pmglobal.ws_msgs": 762471,
-  "pmglobal.ws_ticks": 17104,
-  "pmus.rest_updates": 33122,
-  "pmus.sweeps": 889,
-  "pmus.ticks": 7110653,
-  "pmus.updates": 33122,
-  "pmus_x.last_count": 7993,
-  "pmus_x.sweeps": 890,
+  "pmglobal.ws_msgs": 774271,
+  "pmglobal.ws_ticks": 17313,
+  "pmus.rest_updates": 33888,
+  "pmus.sweeps": 901,
+  "pmus.ticks": 7198054,
+  "pmus.updates": 33888,
+  "pmus_x.last_count": 5658,
+  "pmus_x.sweeps": 902,
   "prophetx.ticks": 937,
   "prophetx.updates": 73,
-  "prophetx.ws_errors": 663,
+  "prophetx.ws_errors": 671,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 888,
-  "supa_errors": 2749
+  "pxboard.sweeps": 900,
+  "supa_errors": 2785
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "891f6647fec35c8129f30cbfa0a500f0"
+    ],
+    "title": "Andrey Rublev at Daniel Merida Aguilar",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "609851"
+    ],
+    "title": "Will the Daniel Merida Aguilar cover 2.5 vs the Andrey Rublev in Daniel Merida Aguilar vs. Andrey Rublev?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 46,
+   "edge_bps": 5400,
+   "detected_at": "2026-09-02T08:15:03.577537+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmus",
@@ -98,7 +121,30 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-02T08:12:53.549839+00:00"
+   "detected_at": "2026-09-02T08:15:03.577567+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bae0054db69ad9d45a2d30d0605c29e4"
+    ],
+    "title": "Andrey Rublev at Daniel Merida Aguilar",
+    "ask_cents": 57
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "609851"
+    ],
+    "title": "Will the Daniel Merida Aguilar cover 2.5 vs the Andrey Rublev in Daniel Merida Aguilar vs. Andrey Rublev?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-02T08:15:03.577546+00:00"
   },
   {
    "buy_yes": {
@@ -121,7 +167,7 @@
    },
    "total_cost_cents": 76,
    "edge_bps": 2400,
-   "detected_at": "2026-09-02T08:12:53.549830+00:00"
+   "detected_at": "2026-09-02T08:15:03.577559+00:00"
   },
   {
    "buy_yes": {
@@ -144,7 +190,7 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-09-02T08:12:53.549846+00:00"
+   "detected_at": "2026-09-02T08:15:03.577576+00:00"
   },
   {
    "buy_yes": {
@@ -167,7 +213,30 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T08:12:53.549791+00:00"
+   "detected_at": "2026-09-02T08:15:03.577500+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "891f6647fec35c8129f30cbfa0a500f0"
+    ],
+    "title": "Andrey Rublev at Daniel Merida Aguilar",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "609840"
+    ],
+    "title": "Will the Daniel Merida Aguilar cover -4.5 vs the Andrey Rublev in Daniel Merida Aguilar vs. Andrey Rublev?",
+    "no_cost_cents": 44
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-02T08:15:03.577528+00:00"
   },
   {
    "buy_yes": {
@@ -190,7 +259,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T08:12:53.549822+00:00"
+   "detected_at": "2026-09-02T08:15:03.577552+00:00"
   },
   {
    "buy_yes": {
@@ -214,6 +283,52 @@
    "total_cost_cents": 96,
    "edge_bps": 400,
    "detected_at": "2026-09-02T08:11:24.956344+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "891f6647fec35c8129f30cbfa0a500f0"
+    ],
+    "title": "Andrey Rublev at Daniel Merida Aguilar",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "609839"
+    ],
+    "title": "Will the Daniel Merida Aguilar cover 1.5 vs the Andrey Rublev in Daniel Merida Aguilar vs. Andrey Rublev?",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-02T08:15:03.577543+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "609839"
+    ],
+    "title": "Will the Daniel Merida Aguilar cover 1.5 vs the Andrey Rublev in Daniel Merida Aguilar vs. Andrey Rublev?",
+    "ask_cents": 50
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bae0054db69ad9d45a2d30d0605c29e4"
+    ],
+    "title": "Andrey Rublev at Daniel Merida Aguilar",
+    "no_cost_cents": 44
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-02T08:15:03.577579+00:00"
   },
   {
    "buy_yes": {
