@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-02T09:36:06.456346+00:00",
+ "scanned_at": "2026-09-02T09:38:06.936858+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 281.0,
+ "loop_uptime_min": 283.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 138093,
-   "last_tick_age_s": 0.0
+   "markets": 138387,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 28481,
-   "last_tick_age_s": 0.0
+   "markets": 28482,
+   "last_tick_age_s": 4.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 134,
-   "last_tick_age_s": 0.0
+   "markets": 135,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 258,
-   "last_tick_age_s": 6.5
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 15078.9
+   "last_tick_age_s": 15199.3
   }
  ],
  "totals": {
-  "markets_tracked": 166984,
-  "pairs_married": 37,
-  "arbitrages": 23
+  "markets_tracked": 167280,
+  "pairs_married": 34,
+  "arbitrages": 20
  },
  "stats": {
-  "commits": 134,
-  "gist_errors": 280,
+  "commits": 135,
+  "gist_errors": 282,
   "hot_errors": 0,
   "kalshi.rest_updates": 447,
-  "kalshi.sweeps": 1562,
-  "kalshi.ticks": 8608548,
-  "kalshi.updates": 3791972,
-  "kalshi.ws_ticks": 8606948,
-  "kalshi.ws_trades": 1125654,
-  "live_evals_fired": 111,
-  "novig.rest_updates": 5231,
-  "novig.sweeps": 1561,
-  "novig.ticks": 355014,
-  "novig.updates": 5231,
-  "pairs_blocked_antonym_date": 25507,
-  "pmglobal.rest_updates": 6581,
-  "pmglobal.sweeps": 1561,
-  "pmglobal.ticks": 180380,
-  "pmglobal.updates": 13457,
+  "kalshi.sweeps": 1572,
+  "kalshi.ticks": 8679466,
+  "kalshi.updates": 3822974,
+  "kalshi.ws_ticks": 8677866,
+  "kalshi.ws_trades": 1133811,
+  "live_evals_fired": 112,
+  "novig.rest_updates": 5293,
+  "novig.sweeps": 1572,
+  "novig.ticks": 357522,
+  "novig.updates": 5293,
+  "pairs_blocked_antonym_date": 25731,
+  "pmglobal.rest_updates": 6641,
+  "pmglobal.sweeps": 1572,
+  "pmglobal.ticks": 181666,
+  "pmglobal.updates": 13578,
   "pmglobal.ws_errors": 9,
-  "pmglobal.ws_msgs": 1213639,
-  "pmglobal.ws_ticks": 24180,
-  "pmus.rest_updates": 56690,
-  "pmus.sweeps": 1562,
-  "pmus.ticks": 7881015,
-  "pmus.updates": 56690,
-  "pmus_x.last_count": 5332,
-  "pmus_x.sweeps": 1563,
+  "pmglobal.ws_msgs": 1228349,
+  "pmglobal.ws_ticks": 24366,
+  "pmus.rest_updates": 57860,
+  "pmus.sweeps": 1572,
+  "pmus.ticks": 7934642,
+  "pmus.updates": 57860,
+  "pmus_x.last_count": 5431,
+  "pmus_x.sweeps": 1573,
   "prophetx.ticks": 937,
   "prophetx.updates": 73,
-  "prophetx.ws_errors": 985,
+  "prophetx.ws_errors": 992,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 1561,
-  "supa_errors": 4689
+  "pxboard.sweeps": 1572,
+  "supa_errors": 4722
  },
  "arbitrages": [
   {
@@ -98,7 +98,7 @@
    },
    "total_cost_cents": 12,
    "edge_bps": 8800,
-   "detected_at": "2026-09-02T09:36:06.456204+00:00"
+   "detected_at": "2026-09-02T09:38:06.936724+00:00"
   },
   {
    "buy_yes": {
@@ -144,7 +144,7 @@
    },
    "total_cost_cents": 46,
    "edge_bps": 5400,
-   "detected_at": "2026-09-02T09:36:06.456217+00:00"
+   "detected_at": "2026-09-02T09:38:06.936736+00:00"
   },
   {
    "buy_yes": {
@@ -167,7 +167,7 @@
    },
    "total_cost_cents": 46,
    "edge_bps": 5400,
-   "detected_at": "2026-09-02T09:36:06.456260+00:00"
+   "detected_at": "2026-09-02T09:38:06.936780+00:00"
   },
   {
    "buy_yes": {
@@ -190,76 +190,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-02T09:36:06.456294+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8c0f372e4fb8e37989767b89d645a5f04e8efd8f254991fa099ca847360ff336"
-    ],
-    "title": "LoL: Hanwha Life Esports vs T1 - Game 2 Winner",
-    "ask_cents": 12
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "575307"
-    ],
-    "title": "Will Hanwha Life Esports win Game 3 vs T1?",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 55,
-   "edge_bps": 4500,
-   "detected_at": "2026-09-02T09:31:33.440861+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8c0f372e4fb8e37989767b89d645a5f04e8efd8f254991fa099ca847360ff336"
-    ],
-    "title": "LoL: Hanwha Life Esports vs T1 - Game 2 Winner",
-    "ask_cents": 12
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "575308"
-    ],
-    "title": "Will Hanwha Life Esports win Game 4 vs T1?",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-02T09:31:33.341930+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8c0f372e4fb8e37989767b89d645a5f04e8efd8f254991fa099ca847360ff336"
-    ],
-    "title": "LoL: Hanwha Life Esports vs T1 - Game 2 Winner",
-    "ask_cents": 12
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "575304"
-    ],
-    "title": "Will Hanwha Life Esports win Game 1 vs T1?",
-    "no_cost_cents": 44
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-02T09:31:33.386703+00:00"
+   "detected_at": "2026-09-02T09:38:06.936805+00:00"
   },
   {
    "buy_yes": {
@@ -305,7 +236,7 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-02T09:36:06.456245+00:00"
+   "detected_at": "2026-09-02T09:38:06.936763+00:00"
   },
   {
    "buy_yes": {
@@ -328,7 +259,7 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-02T09:36:06.456281+00:00"
+   "detected_at": "2026-09-02T09:38:06.936793+00:00"
   },
   {
    "buy_yes": {
@@ -351,7 +282,7 @@
    },
    "total_cost_cents": 60,
    "edge_bps": 4000,
-   "detected_at": "2026-09-02T09:36:06.456267+00:00"
+   "detected_at": "2026-09-02T09:38:06.936787+00:00"
   },
   {
    "buy_yes": {
@@ -361,7 +292,7 @@
      "0xdee7062c12ce9193286aa7b5b93df17aa3bb5fac283ed29de0a0ab55626b944b"
     ],
     "title": "US Open WTA: Tatjana Maria vs Jelena Ostapenko",
-    "ask_cents": 51
+    "ask_cents": 50
    },
    "buy_no": {
     "venue": "pmus",
@@ -372,9 +303,9 @@
     "title": "Tatjana Maria vs. Jelena Ostapenko",
     "no_cost_cents": 20
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-02T09:31:08.021547+00:00"
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-02T09:36:40.645347+00:00"
   },
   {
    "buy_yes": {
@@ -397,7 +328,7 @@
    },
    "total_cost_cents": 76,
    "edge_bps": 2400,
-   "detected_at": "2026-09-02T09:36:06.456286+00:00"
+   "detected_at": "2026-09-02T09:38:06.936797+00:00"
   },
   {
    "buy_yes": {
@@ -420,7 +351,7 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-09-02T09:36:06.456304+00:00"
+   "detected_at": "2026-09-02T09:38:06.936814+00:00"
   },
   {
    "buy_yes": {
@@ -443,7 +374,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T09:36:06.456172+00:00"
+   "detected_at": "2026-09-02T09:38:06.936693+00:00"
   },
   {
    "buy_yes": {
@@ -466,7 +397,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T09:36:06.456211+00:00"
+   "detected_at": "2026-09-02T09:38:06.936731+00:00"
   },
   {
    "buy_yes": {
@@ -489,7 +420,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T09:36:06.456250+00:00"
+   "detected_at": "2026-09-02T09:38:06.936768+00:00"
   },
   {
    "buy_yes": {
@@ -512,7 +443,7 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-02T09:36:06.456255+00:00"
+   "detected_at": "2026-09-02T09:38:06.936775+00:00"
   },
   {
    "buy_yes": {
@@ -535,7 +466,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-02T09:36:06.456224+00:00"
+   "detected_at": "2026-09-02T09:38:06.936743+00:00"
   },
   {
    "buy_yes": {
@@ -558,7 +489,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-02T09:36:06.456307+00:00"
+   "detected_at": "2026-09-02T09:38:06.936818+00:00"
   },
   {
    "buy_yes": {
@@ -581,7 +512,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-02T09:36:06.456228+00:00"
+   "detected_at": "2026-09-02T09:38:06.936747+00:00"
   },
   {
    "buy_yes": {
@@ -604,7 +535,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-02T09:36:06.456235+00:00"
+   "detected_at": "2026-09-02T09:38:06.936753+00:00"
   }
  ]
 }
