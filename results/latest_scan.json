@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-02T07:36:30.976393+00:00",
+ "scanned_at": "2026-09-02T07:38:39.885648+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 161.4,
+ "loop_uptime_min": 163.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 108005,
+   "markets": 108477,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 22035,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
@@ -26,54 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 253,
-   "last_tick_age_s": 11.9
+   "last_tick_age_s": 13.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 7903.4
+   "last_tick_age_s": 8032.3
   }
  ],
  "totals": {
-  "markets_tracked": 130428,
+  "markets_tracked": 130900,
   "pairs_married": 15,
   "arbitrages": 8
  },
  "stats": {
-  "commits": 76,
-  "gist_errors": 157,
+  "commits": 77,
+  "gist_errors": 159,
   "hot_errors": 0,
-  "kalshi.sweeps": 688,
-  "kalshi.ticks": 4790486,
-  "kalshi.updates": 2089175,
-  "kalshi.ws_ticks": 4790486,
-  "kalshi.ws_trades": 711300,
-  "live_evals_fired": 32,
-  "novig.rest_updates": 3409,
-  "novig.sweeps": 687,
-  "novig.ticks": 155754,
-  "novig.updates": 3409,
-  "pairs_blocked_antonym_date": 10072,
-  "pmglobal.rest_updates": 3664,
-  "pmglobal.sweeps": 687,
-  "pmglobal.ticks": 82905,
-  "pmglobal.updates": 7436,
+  "kalshi.sweeps": 700,
+  "kalshi.ticks": 4849978,
+  "kalshi.updates": 2115516,
+  "kalshi.ws_ticks": 4849978,
+  "kalshi.ws_trades": 716558,
+  "live_evals_fired": 33,
+  "novig.rest_updates": 3451,
+  "novig.sweeps": 699,
+  "novig.ticks": 158490,
+  "novig.updates": 3451,
+  "pairs_blocked_antonym_date": 10267,
+  "pmglobal.rest_updates": 3702,
+  "pmglobal.sweeps": 699,
+  "pmglobal.ticks": 84285,
+  "pmglobal.updates": 7523,
   "pmglobal.ws_errors": 9,
-  "pmglobal.ws_msgs": 635310,
-  "pmglobal.ws_ticks": 14105,
+  "pmglobal.ws_msgs": 651820,
+  "pmglobal.ws_ticks": 14285,
   "pmus.rest_updates": 33122,
-  "pmus.sweeps": 688,
-  "pmus.ticks": 5504060,
+  "pmus.sweeps": 700,
+  "pmus.ticks": 5599976,
   "pmus.updates": 33122,
   "pmus_x.last_count": 7993,
-  "pmus_x.sweeps": 689,
+  "pmus_x.sweeps": 701,
   "prophetx.ticks": 937,
   "prophetx.updates": 73,
-  "prophetx.ws_errors": 529,
+  "prophetx.ws_errors": 537,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 687,
-  "supa_errors": 2134
+  "pxboard.sweeps": 699,
+  "supa_errors": 2171
  },
  "arbitrages": [
   {
@@ -97,7 +97,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-02T07:36:30.976348+00:00"
+   "detected_at": "2026-09-02T07:38:39.885598+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 76,
    "edge_bps": 2400,
-   "detected_at": "2026-09-02T07:36:30.976334+00:00"
+   "detected_at": "2026-09-02T07:38:39.885584+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +143,7 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-09-02T07:36:30.976356+00:00"
+   "detected_at": "2026-09-02T07:38:39.885606+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +166,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T07:36:30.976293+00:00"
+   "detected_at": "2026-09-02T07:38:39.885538+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +189,30 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T07:36:30.976327+00:00"
+   "detected_at": "2026-09-02T07:38:39.885576+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x49d3b353203f4ae2f2c2cada04de61521dca9a1a01c8ae716e62a06ed71798ab"
+    ],
+    "title": "US Open WTA: Daria Kasatkina vs Paula Badosa",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "547309"
+    ],
+    "title": "Daria Kasatkina vs. Paula Badosa",
+    "no_cost_cents": 89
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-02T07:36:33.615489+00:00"
   },
   {
    "buy_yes": {
@@ -212,30 +235,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-02T07:36:30.976313+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x49d3b353203f4ae2f2c2cada04de61521dca9a1a01c8ae716e62a06ed71798ab"
-    ],
-    "title": "US Open WTA: Daria Kasatkina vs Paula Badosa",
-    "ask_cents": 9
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "547309"
-    ],
-    "title": "Daria Kasatkina vs. Paula Badosa",
-    "no_cost_cents": 89
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-02T07:36:30.905384+00:00"
+   "detected_at": "2026-09-02T07:38:39.885563+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +258,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-02T07:36:30.976339+00:00"
+   "detected_at": "2026-09-02T07:38:39.885589+00:00"
   }
  ]
 }
