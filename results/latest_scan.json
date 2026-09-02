@@ -1,81 +1,104 @@
 {
- "scanned_at": "2026-09-02T06:36:03.578328+00:00",
+ "scanned_at": "2026-09-02T06:38:05.770050+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 101.0,
+ "loop_uptime_min": 103.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 87777,
+   "markets": 88368,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 20641,
-   "last_tick_age_s": 0.0
+   "markets": 22035,
+   "last_tick_age_s": 2.7
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 109,
-   "last_tick_age_s": 0.0
+   "markets": 110,
+   "last_tick_age_s": 0.7
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 251,
-   "last_tick_age_s": 6.2
+   "markets": 252,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 18,
-   "last_tick_age_s": 4276.0
+   "last_tick_age_s": 4398.2
   }
  ],
  "totals": {
-  "markets_tracked": 108796,
-  "pairs_married": 8,
-  "arbitrages": 3
+  "markets_tracked": 110783,
+  "pairs_married": 12,
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 47,
-  "gist_errors": 99,
+  "commits": 48,
+  "gist_errors": 101,
   "hot_errors": 0,
-  "kalshi.sweeps": 352,
-  "kalshi.ticks": 2854298,
-  "kalshi.updates": 1216766,
-  "kalshi.ws_ticks": 2854298,
-  "kalshi.ws_trades": 476028,
+  "kalshi.sweeps": 363,
+  "kalshi.ticks": 2914469,
+  "kalshi.updates": 1243862,
+  "kalshi.ws_ticks": 2914469,
+  "kalshi.ws_trades": 483561,
   "live_evals_fired": 16,
-  "novig.rest_updates": 2276,
-  "novig.sweeps": 351,
-  "novig.ticks": 79153,
-  "novig.updates": 2276,
-  "pairs_blocked_antonym_date": 4612,
-  "pmglobal.rest_updates": 2609,
-  "pmglobal.sweeps": 351,
-  "pmglobal.ticks": 44747,
-  "pmglobal.updates": 5348,
+  "novig.rest_updates": 2317,
+  "novig.sweeps": 363,
+  "novig.ticks": 81889,
+  "novig.updates": 2317,
+  "pairs_blocked_antonym_date": 4794,
+  "pmglobal.rest_updates": 2643,
+  "pmglobal.sweeps": 363,
+  "pmglobal.ticks": 46095,
+  "pmglobal.updates": 5409,
   "pmglobal.ws_errors": 9,
-  "pmglobal.ws_msgs": 449912,
-  "pmglobal.ws_ticks": 9547,
-  "pmus.rest_updates": 31728,
-  "pmus.sweeps": 352,
-  "pmus.ticks": 2818405,
-  "pmus.updates": 31728,
-  "pmus_x.last_count": 7995,
-  "pmus_x.sweeps": 353,
+  "pmglobal.ws_msgs": 455293,
+  "pmglobal.ws_ticks": 9695,
+  "pmus.rest_updates": 33122,
+  "pmus.sweeps": 363,
+  "pmus.ticks": 2906335,
+  "pmus.updates": 33122,
+  "pmus_x.last_count": 7993,
+  "pmus_x.sweeps": 364,
   "prophetx.ticks": 937,
   "prophetx.updates": 73,
-  "prophetx.ws_errors": 305,
+  "prophetx.ws_errors": 313,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 351,
-  "supa_errors": 1114
+  "pxboard.sweeps": 362,
+  "supa_errors": 1148
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "599826"
+    ],
+    "title": "Karolina Pliskova vs. Diana Shnaider",
+    "ask_cents": 23
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a00d2c834900aea9749da4ed0895154e"
+    ],
+    "title": "Diana Shnaider at Karolina Pliskova",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 48,
+   "edge_bps": 5200,
+   "detected_at": "2026-09-02T06:38:05.770002+00:00"
+  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -97,7 +120,7 @@
    },
    "total_cost_cents": 76,
    "edge_bps": 2400,
-   "detected_at": "2026-09-02T06:36:03.578235+00:00"
+   "detected_at": "2026-09-02T06:38:05.769992+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +143,30 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-09-02T06:36:03.578244+00:00"
+   "detected_at": "2026-09-02T06:38:05.770010+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "598158"
+    ],
+    "title": "Daniel Merida Aguilar vs. Andrey Rublev",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bae0054db69ad9d45a2d30d0605c29e4"
+    ],
+    "title": "Andrey Rublev at Daniel Merida Aguilar",
+    "no_cost_cents": 44
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-02T06:38:05.769954+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +189,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-02T06:36:03.578217+00:00"
+   "detected_at": "2026-09-02T06:38:05.769984+00:00"
   }
  ]
 }
