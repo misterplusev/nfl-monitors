@@ -1,103 +1,80 @@
 {
- "scanned_at": "2026-09-02T22:53:02.532846+00:00",
+ "scanned_at": "2026-09-02T22:55:04.235594+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 6.6,
+ "loop_uptime_min": 8.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 30744,
+   "markets": 35859,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 2.8
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 105,
-   "last_tick_age_s": 12.4
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 209,
-   "last_tick_age_s": 17.4
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 24,
-   "last_tick_age_s": 14.9
+   "last_tick_age_s": 102.5
   }
  ],
  "totals": {
-  "markets_tracked": 39080,
-  "pairs_married": 3,
-  "arbitrages": 3
+  "markets_tracked": 44195,
+  "pairs_married": 2,
+  "arbitrages": 2
  },
  "stats": {
-  "commits": 2,
-  "gist_errors": 7,
+  "commits": 3,
+  "gist_errors": 9,
   "hot_errors": 0,
-  "kalshi.sweeps": 24,
-  "kalshi.ticks": 287991,
-  "kalshi.updates": 133737,
-  "kalshi.ws_ticks": 287991,
-  "kalshi.ws_trades": 45920,
-  "live_evals_fired": 28,
-  "novig.rest_updates": 605,
-  "novig.sweeps": 23,
-  "novig.ticks": 4929,
-  "novig.updates": 605,
-  "pairs_blocked_antonym_date": 1200,
-  "pmglobal.rest_updates": 398,
-  "pmglobal.sweeps": 23,
-  "pmglobal.ticks": 3300,
-  "pmglobal.updates": 791,
-  "pmglobal.ws_msgs": 136994,
-  "pmglobal.ws_ticks": 900,
-  "pmus.rest_updates": 9464,
-  "pmus.sweeps": 24,
-  "pmus.ticks": 199950,
-  "pmus.updates": 9464,
+  "kalshi.sweeps": 31,
+  "kalshi.ticks": 395924,
+  "kalshi.updates": 179781,
+  "kalshi.ws_ticks": 395924,
+  "kalshi.ws_trades": 62695,
+  "live_evals_fired": 48,
+  "novig.rest_updates": 764,
+  "novig.sweeps": 31,
+  "novig.ticks": 6586,
+  "novig.updates": 764,
+  "pairs_blocked_antonym_date": 1560,
+  "pmglobal.rest_updates": 478,
+  "pmglobal.sweeps": 31,
+  "pmglobal.ticks": 4364,
+  "pmglobal.updates": 964,
+  "pmglobal.ws_msgs": 180724,
+  "pmglobal.ws_ticks": 1164,
+  "pmus.rest_updates": 9754,
+  "pmus.sweeps": 31,
+  "pmus.ticks": 255936,
+  "pmus.updates": 9754,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 25,
-  "prophetx.ticks": 444,
-  "prophetx.updates": 144,
-  "prophetx.ws_errors": 22,
-  "px.evt_scanned": 17,
-  "pxboard.sweeps": 23,
-  "supa_errors": 88
+  "pmus_x.sweeps": 32,
+  "prophetx.ticks": 484,
+  "prophetx.updates": 158,
+  "prophetx.ws_errors": 30,
+  "px.evt_scanned": 19,
+  "pxboard.sweeps": 30,
+  "supa_errors": 116
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "c3fa32c3a50e5f8407418e7a5949183e"
-    ],
-    "title": "Seattle Mariners at Boston Red Sox",
-    "ask_cents": 43
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9fe116625e868096b31447e05949a44bcc9315c3b3d76fff725069846e5acd23"
-    ],
-    "title": "Seattle Mariners vs. Boston Red Sox",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 44,
-   "edge_bps": 5600,
-   "detected_at": "2026-09-02T22:52:43.662930+00:00"
-  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -115,11 +92,11 @@
      "0x8b6d52e1e548ff8ed6442de52b64aab17b5fcba9c75d287c78d480555a03ca95"
     ],
     "title": "San Francisco Giants vs. Pittsburgh Pirates: O/U 8.5",
-    "no_cost_cents": 40
+    "no_cost_cents": 44
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-02T22:52:30.975670+00:00"
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-02T22:55:02.845353+00:00"
   },
   {
    "buy_yes": {
@@ -138,11 +115,11 @@
      "0x8b6d52e1e548ff8ed6442de52b64aab17b5fcba9c75d287c78d480555a03ca95"
     ],
     "title": "San Francisco Giants vs. Pittsburgh Pirates: O/U 8.5",
-    "no_cost_cents": 40
+    "no_cost_cents": 44
    },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-02T22:52:47.596798+00:00"
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-02T22:55:02.931561+00:00"
   }
  ]
 }
