@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-03T00:58:48.335161+00:00",
+ "scanned_at": "2026-09-03T01:01:04.833309+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 132.3,
+ "loop_uptime_min": 134.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 169169,
+   "markets": 172927,
    "last_tick_age_s": 0.0
   },
   {
@@ -26,54 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 247,
-   "last_tick_age_s": 19.7
+   "last_tick_age_s": 19.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 7526.6
+   "last_tick_age_s": 7663.1
   }
  ],
  "totals": {
-  "markets_tracked": 177577,
+  "markets_tracked": 181335,
   "pairs_married": 4,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 63,
-  "gist_errors": 127,
+  "commits": 64,
+  "gist_errors": 129,
   "hot_errors": 0,
-  "kalshi.sweeps": 478,
-  "kalshi.ticks": 6422331,
-  "kalshi.updates": 2881644,
-  "kalshi.ws_ticks": 6422331,
-  "kalshi.ws_trades": 1001067,
-  "live_evals_fired": 359,
-  "novig.rest_updates": 9682,
-  "novig.sweeps": 477,
-  "novig.ticks": 89887,
-  "novig.updates": 9682,
-  "pairs_blocked_antonym_date": 7149,
-  "pmglobal.rest_updates": 5333,
-  "pmglobal.sweeps": 477,
-  "pmglobal.ticks": 64260,
-  "pmglobal.updates": 11469,
-  "pmglobal.ws_errors": 19,
-  "pmglobal.ws_msgs": 2677881,
-  "pmglobal.ws_ticks": 16460,
-  "pmus.rest_updates": 33020,
-  "pmus.sweeps": 478,
-  "pmus.ticks": 3831168,
-  "pmus.updates": 33020,
+  "kalshi.sweeps": 486,
+  "kalshi.ticks": 6544486,
+  "kalshi.updates": 2941172,
+  "kalshi.ws_ticks": 6544486,
+  "kalshi.ws_trades": 1029041,
+  "live_evals_fired": 367,
+  "novig.rest_updates": 9833,
+  "novig.sweeps": 485,
+  "novig.ticks": 91189,
+  "novig.updates": 9833,
+  "pairs_blocked_antonym_date": 7219,
+  "pmglobal.rest_updates": 5452,
+  "pmglobal.sweeps": 485,
+  "pmglobal.ticks": 65295,
+  "pmglobal.updates": 11713,
+  "pmglobal.ws_errors": 20,
+  "pmglobal.ws_msgs": 2712556,
+  "pmglobal.ws_ticks": 16695,
+  "pmus.rest_updates": 33384,
+  "pmus.sweeps": 486,
+  "pmus.ticks": 3895152,
+  "pmus.updates": 33384,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 479,
+  "pmus_x.sweeps": 487,
   "prophetx.ticks": 484,
   "prophetx.updates": 158,
-  "prophetx.ws_errors": 463,
+  "prophetx.ws_errors": 471,
   "px.evt_scanned": 19,
-  "pxboard.sweeps": 477,
-  "supa_errors": 1576
+  "pxboard.sweeps": 485,
+  "supa_errors": 1602
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0x8b6d52e1e548ff8ed6442de52b64aab17b5fcba9c75d287c78d480555a03ca95"
     ],
     "title": "San Francisco Giants vs. Pittsburgh Pirates: O/U 8.5",
-    "ask_cents": 28
+    "ask_cents": 20
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +95,32 @@
     "title": "San Francisco Giants at Pittsburgh Pirates",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-03T00:55:15.500781+00:00"
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-03T00:59:37.810959+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x8b6d52e1e548ff8ed6442de52b64aab17b5fcba9c75d287c78d480555a03ca95"
+    ],
+    "title": "San Francisco Giants vs. Pittsburgh Pirates: O/U 8.5",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "af3f032dcc9662995e2721feef927306"
+    ],
+    "title": "San Francisco Giants at Pittsburgh Pirates",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-03T00:59:37.909252+00:00"
   },
   {
    "buy_yes": {
@@ -116,34 +139,11 @@
      "0x2ba831a2001f150343e4ea0f15bc2e556d66e294e6cc56d9b4b0464c4f256f28"
     ],
     "title": "San Francisco Giants vs. Pittsburgh Pirates",
-    "no_cost_cents": 30
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-03T00:54:09.224936+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8b6d52e1e548ff8ed6442de52b64aab17b5fcba9c75d287c78d480555a03ca95"
-    ],
-    "title": "San Francisco Giants vs. Pittsburgh Pirates: O/U 8.5",
-    "ask_cents": 28
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "af3f032dcc9662995e2721feef927306"
-    ],
-    "title": "San Francisco Giants at Pittsburgh Pirates",
-    "no_cost_cents": 52
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-03T00:55:15.631445+00:00"
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-09-03T00:59:22.875023+00:00"
   },
   {
    "buy_yes": {
@@ -162,11 +162,11 @@
      "0x2ba831a2001f150343e4ea0f15bc2e556d66e294e6cc56d9b4b0464c4f256f28"
     ],
     "title": "San Francisco Giants vs. Pittsburgh Pirates",
-    "no_cost_cents": 30
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-03T00:54:09.134761+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-03T00:59:22.787998+00:00"
   }
  ]
 }
