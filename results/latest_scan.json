@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-04T05:04:03.941481+00:00",
+ "scanned_at": "2026-09-04T05:06:04.878119+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 8.4,
+ "loop_uptime_min": 10.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 28912,
+   "markets": 31870,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
@@ -25,54 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 219,
-   "last_tick_age_s": 9.4
+   "markets": 220,
+   "last_tick_age_s": 13.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 17,
-   "last_tick_age_s": 235.5
+   "last_tick_age_s": 356.4
   }
  ],
  "totals": {
-  "markets_tracked": 37246,
+  "markets_tracked": 40205,
   "pairs_married": 6,
   "arbitrages": 6
  },
  "stats": {
-  "commits": 3,
-  "gist_errors": 9,
+  "commits": 4,
+  "gist_errors": 11,
   "hot_errors": 0,
-  "kalshi.sweeps": 46,
-  "kalshi.ticks": 281172,
-  "kalshi.updates": 131390,
-  "kalshi.ws_ticks": 281172,
-  "kalshi.ws_trades": 59686,
-  "live_evals_fired": 160,
-  "novig.rest_updates": 516,
-  "novig.sweeps": 45,
-  "novig.ticks": 9654,
-  "novig.updates": 516,
-  "pairs_blocked_antonym_date": 4503,
-  "pmglobal.rest_updates": 445,
-  "pmglobal.sweeps": 45,
-  "pmglobal.ticks": 5584,
-  "pmglobal.updates": 826,
-  "pmglobal.ws_msgs": 116639,
-  "pmglobal.ws_ticks": 984,
-  "pmus.rest_updates": 8844,
-  "pmus.sweeps": 46,
-  "pmus.ticks": 375906,
-  "pmus.updates": 8844,
+  "kalshi.sweeps": 56,
+  "kalshi.ticks": 349202,
+  "kalshi.updates": 159890,
+  "kalshi.ws_ticks": 349202,
+  "kalshi.ws_trades": 71378,
+  "live_evals_fired": 209,
+  "novig.rest_updates": 584,
+  "novig.sweeps": 55,
+  "novig.ticks": 11770,
+  "novig.updates": 584,
+  "pairs_blocked_antonym_date": 5565,
+  "pmglobal.rest_updates": 522,
+  "pmglobal.sweeps": 55,
+  "pmglobal.ticks": 6813,
+  "pmglobal.updates": 996,
+  "pmglobal.ws_msgs": 157553,
+  "pmglobal.ws_ticks": 1213,
+  "pmus.rest_updates": 9094,
+  "pmus.sweeps": 56,
+  "pmus.ticks": 455886,
+  "pmus.updates": 9094,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 47,
+  "pmus_x.sweeps": 57,
   "prophetx.ticks": 414,
   "prophetx.updates": 54,
-  "prophetx.ws_errors": 29,
+  "prophetx.ws_errors": 36,
   "px.evt_scanned": 17,
-  "pxboard.sweeps": 45,
-  "supa_errors": 144
+  "pxboard.sweeps": 55,
+  "supa_errors": 175
  },
  "arbitrages": [
   {
@@ -92,11 +92,11 @@
      "0x3a3ea86e30d9deeec9ecb16f246151359074f55c7f7312d72394dd6627b0d75e"
     ],
     "title": "Athletics vs. Seattle Mariners",
-    "no_cost_cents": 2
+    "no_cost_cents": 5
    },
-   "total_cost_cents": 8,
-   "edge_bps": 9200,
-   "detected_at": "2026-09-04T05:04:03.884990+00:00"
+   "total_cost_cents": 11,
+   "edge_bps": 8900,
+   "detected_at": "2026-09-04T05:05:38.950712+00:00"
   },
   {
    "buy_yes": {
@@ -138,11 +138,11 @@
      "0x9500e74e6d2f34035c373bc91ad9ea2a232b7c19012c30678b9c2e7041a55b93"
     ],
     "title": "St. Louis Cardinals vs. Los Angeles Dodgers",
-    "no_cost_cents": 14
+    "no_cost_cents": 27
    },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-09-04T05:03:55.211759+00:00"
+   "total_cost_cents": 49,
+   "edge_bps": 5100,
+   "detected_at": "2026-09-04T05:05:51.881176+00:00"
   },
   {
    "buy_yes": {
@@ -169,49 +169,49 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "250591d32a96ad4851c073fcf0e18111"
-    ],
-    "title": "St. Louis Cardinals at Los Angeles Dodgers",
-    "ask_cents": 79
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x9500e74e6d2f34035c373bc91ad9ea2a232b7c19012c30678b9c2e7041a55b93"
     ],
     "title": "St. Louis Cardinals vs. Los Angeles Dodgers",
-    "no_cost_cents": 14
+    "ask_cents": 74
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-04T05:03:55.249417+00:00"
-  },
-  {
-   "buy_yes": {
+   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "b85716dddf48222f5a194c8323e016b7"
+     "250591d32a96ad4851c073fcf0e18111"
     ],
-    "title": "Athletics at Seattle Mariners",
-    "ask_cents": 97
+    "title": "St. Louis Cardinals at Los Angeles Dodgers",
+    "no_cost_cents": 22
    },
-   "buy_no": {
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-04T05:05:51.922545+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x3a3ea86e30d9deeec9ecb16f246151359074f55c7f7312d72394dd6627b0d75e"
     ],
     "title": "Athletics vs. Seattle Mariners",
-    "no_cost_cents": 2
+    "ask_cents": 95
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b85716dddf48222f5a194c8323e016b7"
+    ],
+    "title": "Athletics at Seattle Mariners",
+    "no_cost_cents": 4
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-04T05:04:03.930121+00:00"
+   "detected_at": "2026-09-04T05:05:38.985932+00:00"
   }
  ]
 }
