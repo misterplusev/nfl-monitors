@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-04T22:32:51.613705+00:00",
+ "scanned_at": "2026-09-04T22:34:54.387895+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 4.2,
+ "loop_uptime_min": 6.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 31128,
+   "markets": 38486,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
@@ -26,53 +26,53 @@
    "venue": "novig",
    "state": "OK",
    "markets": 249,
-   "last_tick_age_s": 13.0
+   "last_tick_age_s": 8.6
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 32,
-   "last_tick_age_s": 11.1
+   "last_tick_age_s": 65.7
   }
  ],
  "totals": {
-  "markets_tracked": 39509,
+  "markets_tracked": 46867,
   "pairs_married": 21,
-  "arbitrages": 15
+  "arbitrages": 17
  },
  "stats": {
-  "commits": 1,
-  "gist_errors": 5,
+  "commits": 2,
+  "gist_errors": 7,
   "hot_errors": 0,
-  "kalshi.sweeps": 22,
-  "kalshi.ticks": 159003,
-  "kalshi.updates": 83846,
-  "kalshi.ws_ticks": 159003,
-  "kalshi.ws_trades": 39107,
-  "live_evals_fired": 79,
+  "kalshi.sweeps": 33,
+  "kalshi.ticks": 246401,
+  "kalshi.updates": 124640,
+  "kalshi.ws_ticks": 246401,
+  "kalshi.ws_trades": 55232,
+  "live_evals_fired": 106,
   "novig.rest_updates": 350,
-  "novig.sweeps": 21,
-  "novig.ticks": 5456,
+  "novig.sweeps": 32,
+  "novig.ticks": 8184,
   "novig.updates": 350,
-  "pairs_blocked_antonym_date": 2052,
-  "pmglobal.rest_updates": 266,
-  "pmglobal.sweeps": 21,
-  "pmglobal.ticks": 2543,
-  "pmglobal.updates": 441,
-  "pmglobal.ws_msgs": 27044,
-  "pmglobal.ws_ticks": 343,
-  "pmus.rest_updates": 8289,
-  "pmus.sweeps": 22,
-  "pmus.ticks": 183954,
-  "pmus.updates": 8289,
+  "pairs_blocked_antonym_date": 3116,
+  "pmglobal.rest_updates": 320,
+  "pmglobal.sweeps": 32,
+  "pmglobal.ticks": 3867,
+  "pmglobal.updates": 568,
+  "pmglobal.ws_msgs": 41860,
+  "pmglobal.ws_ticks": 567,
+  "pmus.rest_updates": 8466,
+  "pmus.sweeps": 33,
+  "pmus.ticks": 271932,
+  "pmus.updates": 8466,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 23,
-  "prophetx.ticks": 587,
-  "prophetx.updates": 79,
-  "prophetx.ws_errors": 15,
-  "px.evt_scanned": 30,
-  "pxboard.sweeps": 21,
-  "supa_errors": 72
+  "pmus_x.sweeps": 34,
+  "prophetx.ticks": 745,
+  "prophetx.updates": 96,
+  "prophetx.ws_errors": 23,
+  "px.evt_scanned": 23,
+  "pxboard.sweeps": 32,
+  "supa_errors": 106
  },
  "arbitrages": [
   {
@@ -96,7 +96,7 @@
    },
    "total_cost_cents": 70,
    "edge_bps": 3000,
-   "detected_at": "2026-09-04T22:28:55.149625+00:00"
+   "detected_at": "2026-09-04T22:33:45.848110+00:00"
   },
   {
    "buy_yes": {
@@ -142,7 +142,7 @@
    },
    "total_cost_cents": 77,
    "edge_bps": 2300,
-   "detected_at": "2026-09-04T22:30:49.246393+00:00"
+   "detected_at": "2026-09-04T22:34:44.555683+00:00"
   },
   {
    "buy_yes": {
@@ -257,7 +257,7 @@
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-09-04T22:32:51.613619+00:00"
+   "detected_at": "2026-09-04T22:34:54.387801+00:00"
   },
   {
    "buy_yes": {
@@ -280,7 +280,30 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-04T22:30:49.246415+00:00"
+   "detected_at": "2026-09-04T22:34:44.587915+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
+    ],
+    "title": "San Jose State vs. Eastern Michigan",
+    "ask_cents": 47
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "28cdca88fbd2cdfe9a4272e87b461505"
+    ],
+    "title": "San Jose State at Eastern Michigan",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-04T22:34:54.261902+00:00"
   },
   {
    "buy_yes": {
@@ -303,7 +326,7 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-09-04T22:30:49.204613+00:00"
+   "detected_at": "2026-09-04T22:34:44.514515+00:00"
   },
   {
    "buy_yes": {
@@ -326,7 +349,7 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-09-04T22:28:55.149634+00:00"
+   "detected_at": "2026-09-04T22:33:45.848120+00:00"
   },
   {
    "buy_yes": {
@@ -336,20 +359,20 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "ask_cents": 48
+    "ask_cents": 47
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "28cdca88fbd2cdfe9a4272e87b461505"
+     "8ee8329293a0e20c6e05b413ead3d569"
     ],
     "title": "San Jose State at Eastern Michigan",
-    "no_cost_cents": 48
+    "no_cost_cents": 49
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-04T22:31:54.182143+00:00"
+   "detected_at": "2026-09-04T22:34:54.332981+00:00"
   },
   {
    "buy_yes": {
@@ -372,7 +395,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-04T22:28:55.149595+00:00"
+   "detected_at": "2026-09-04T22:33:45.848076+00:00"
   },
   {
    "buy_yes": {
@@ -382,20 +405,20 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "ask_cents": 48
+    "ask_cents": 47
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "8ee8329293a0e20c6e05b413ead3d569"
+     "f42e110434f1d9332af4e638415ac212"
     ],
     "title": "San Jose State at Eastern Michigan",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-04T22:31:54.218352+00:00"
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-04T22:34:54.227022+00:00"
   },
   {
    "buy_yes": {
@@ -418,7 +441,30 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-04T22:30:49.377732+00:00"
+   "detected_at": "2026-09-04T22:34:44.624429+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
+    ],
+    "title": "San Jose State vs. Eastern Michigan",
+    "ask_cents": 47
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2298c0c5bebbe66d1d2180645716fae6"
+    ],
+    "title": "San Jose State at Eastern Michigan",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-04T22:34:54.295611+00:00"
   }
  ]
 }
