@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-05T23:34:41.820635+00:00",
+ "scanned_at": "2026-09-05T23:36:41.858135+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 85.1,
+ "loop_uptime_min": 87.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 182738,
-   "last_tick_age_s": 0.0
+   "markets": 185591,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 5.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 122,
-   "last_tick_age_s": 7.3
+   "markets": 124,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 288,
-   "last_tick_age_s": 11.6
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 13,
-   "last_tick_age_s": 4775.2
+   "last_tick_age_s": 4895.3
   }
  ],
  "totals": {
-  "markets_tracked": 191160,
+  "markets_tracked": 194015,
   "pairs_married": 2,
-  "arbitrages": 1
+  "arbitrages": 2
  },
  "stats": {
-  "commits": 40,
-  "gist_errors": 88,
+  "commits": 41,
+  "gist_errors": 90,
   "hot_errors": 0,
-  "kalshi.sweeps": 429,
-  "kalshi.ticks": 5755194,
-  "kalshi.updates": 2869295,
-  "kalshi.ws_ticks": 5755194,
-  "kalshi.ws_trades": 908906,
-  "live_evals_fired": 1830,
-  "novig.rest_updates": 10288,
-  "novig.sweeps": 428,
-  "novig.ticks": 70081,
-  "novig.updates": 10288,
-  "pairs_blocked_antonym_date": 45024,
-  "pmglobal.rest_updates": 3835,
-  "pmglobal.sweeps": 428,
-  "pmglobal.ticks": 54768,
-  "pmglobal.updates": 8565,
+  "kalshi.sweeps": 436,
+  "kalshi.ticks": 5917082,
+  "kalshi.updates": 2949538,
+  "kalshi.ws_ticks": 5917082,
+  "kalshi.ws_trades": 932223,
+  "live_evals_fired": 1850,
+  "novig.rest_updates": 10624,
+  "novig.sweeps": 436,
+  "novig.ticks": 71340,
+  "novig.updates": 10624,
+  "pairs_blocked_antonym_date": 45864,
+  "pmglobal.rest_updates": 3915,
+  "pmglobal.sweeps": 436,
+  "pmglobal.ticks": 55850,
+  "pmglobal.updates": 8729,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 2497152,
-  "pmglobal.ws_ticks": 11868,
+  "pmglobal.ws_msgs": 2547793,
+  "pmglobal.ws_ticks": 12150,
   "pmus.rest_updates": 9172,
-  "pmus.sweeps": 429,
-  "pmus.ticks": 172265,
+  "pmus.sweeps": 436,
+  "pmus.ticks": 172286,
   "pmus.updates": 9172,
   "pmus_x.last_count": 3,
-  "pmus_x.sweeps": 430,
+  "pmus_x.sweeps": 437,
   "prophetx.ticks": 332,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 297,
+  "prophetx.ws_errors": 305,
   "px.evt_scanned": 13,
-  "pxboard.sweeps": 428,
-  "supa_errors": 1347
+  "pxboard.sweeps": 436,
+  "supa_errors": 1370
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0xefabaceecde105644a40f338c79d4b5fcaa5c2903b4a37120f7bfe97c7089e89"
     ],
     "title": "Tulane vs. Duke",
-    "ask_cents": 11
+    "ask_cents": 10
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +95,32 @@
     "title": "Tulane at Duke",
     "no_cost_cents": 10
    },
-   "total_cost_cents": 21,
-   "edge_bps": 7900,
-   "detected_at": "2026-09-05T23:34:33.136339+00:00"
+   "total_cost_cents": 20,
+   "edge_bps": 8000,
+   "detected_at": "2026-09-05T23:36:38.052550+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xefabaceecde105644a40f338c79d4b5fcaa5c2903b4a37120f7bfe97c7089e89"
+    ],
+    "title": "Tulane vs. Duke",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f403b0c4ba4e57a5bb0796f74f01843d"
+    ],
+    "title": "Tulane at Duke",
+    "no_cost_cents": 89
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-05T23:36:38.180209+00:00"
   }
  ]
 }
