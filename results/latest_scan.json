@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-05T00:19:06.342038+00:00",
+ "scanned_at": "2026-09-05T00:21:08.109057+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 110.5,
+ "loop_uptime_min": 112.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 197544,
+   "markets": 199838,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 4.7
+   "last_tick_age_s": 5.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 117,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 278,
-   "last_tick_age_s": 2.0
+   "last_tick_age_s": 3.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 32,
-   "last_tick_age_s": 6317.8
+   "last_tick_age_s": 6439.6
   }
  ],
  "totals": {
-  "markets_tracked": 205970,
+  "markets_tracked": 208264,
   "pairs_married": 28,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 53,
-  "gist_errors": 117,
+  "commits": 54,
+  "gist_errors": 119,
   "hot_errors": 0,
-  "kalshi.sweeps": 582,
-  "kalshi.ticks": 6388715,
-  "kalshi.updates": 3000729,
-  "kalshi.ws_ticks": 6388715,
-  "kalshi.ws_trades": 912372,
-  "live_evals_fired": 4832,
-  "novig.rest_updates": 10440,
-  "novig.sweeps": 582,
-  "novig.ticks": 123782,
-  "novig.updates": 10440,
-  "pairs_blocked_antonym_date": 55328,
-  "pmglobal.rest_updates": 3879,
-  "pmglobal.sweeps": 582,
-  "pmglobal.ticks": 71340,
-  "pmglobal.updates": 8292,
-  "pmglobal.ws_msgs": 1680699,
-  "pmglobal.ws_ticks": 13040,
-  "pmus.rest_updates": 15536,
-  "pmus.sweeps": 582,
-  "pmus.ticks": 4662834,
-  "pmus.updates": 15536,
+  "kalshi.sweeps": 593,
+  "kalshi.ticks": 6534880,
+  "kalshi.updates": 3068718,
+  "kalshi.ws_ticks": 6534880,
+  "kalshi.ws_trades": 926602,
+  "live_evals_fired": 4891,
+  "novig.rest_updates": 10763,
+  "novig.sweeps": 593,
+  "novig.ticks": 125805,
+  "novig.updates": 10763,
+  "pairs_blocked_antonym_date": 56392,
+  "pmglobal.rest_updates": 3921,
+  "pmglobal.sweeps": 593,
+  "pmglobal.ticks": 72597,
+  "pmglobal.updates": 8379,
+  "pmglobal.ws_msgs": 1708145,
+  "pmglobal.ws_ticks": 13197,
+  "pmus.rest_updates": 15682,
+  "pmus.sweeps": 593,
+  "pmus.ticks": 4750812,
+  "pmus.updates": 15682,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 583,
+  "pmus_x.sweeps": 594,
   "prophetx.ticks": 745,
   "prophetx.updates": 96,
-  "prophetx.ws_errors": 391,
+  "prophetx.ws_errors": 398,
   "px.evt_scanned": 23,
-  "pxboard.sweeps": 582,
-  "supa_errors": 1791
+  "pxboard.sweeps": 593,
+  "supa_errors": 1824
  },
  "arbitrages": [
   {
@@ -345,11 +345,34 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 35
+    "no_cost_cents": 32
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-05T00:19:05.329027+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-05T00:20:41.001306+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "74c04743687befe3b67de4246299df73"
+    ],
+    "title": "Atlanta Braves at Philadelphia Phillies",
+    "ask_cents": 49
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
+    ],
+    "title": "Atlanta Braves vs. Philadelphia Phillies",
+    "no_cost_cents": 32
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-05T00:20:41.029004+00:00"
   },
   {
    "buy_yes": {
@@ -379,10 +402,10 @@
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "74c04743687befe3b67de4246299df73"
+     "8008342f9b1ed747abe0862b12691d94"
     ],
     "title": "Atlanta Braves at Philadelphia Phillies",
-    "ask_cents": 49
+    "ask_cents": 53
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -391,11 +414,11 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 35
+    "no_cost_cents": 32
    },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-05T00:19:05.358221+00:00"
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-09-05T00:20:40.965842+00:00"
   },
   {
    "buy_yes": {
@@ -445,36 +468,13 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
-    ],
-    "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "ask_cents": 66
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "b1ab6c7632aeeb636c70855de5f8d06f"
+     "7e3295fc4c2e4ce467cec6c5b7931976"
     ],
     "title": "Atlanta Braves at Philadelphia Phillies",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-05T00:19:05.437641+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8008342f9b1ed747abe0862b12691d94"
-    ],
-    "title": "Atlanta Braves at Philadelphia Phillies",
-    "ask_cents": 53
+    "ask_cents": 55
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -483,11 +483,11 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 35
+    "no_cost_cents": 32
    },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-05T00:19:05.288953+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-05T00:20:41.094693+00:00"
   },
   {
    "buy_yes": {
@@ -537,26 +537,26 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7e3295fc4c2e4ce467cec6c5b7931976"
-    ],
-    "title": "Atlanta Braves at Philadelphia Phillies",
-    "ask_cents": 55
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 35
+    "ask_cents": 68
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b1ab6c7632aeeb636c70855de5f8d06f"
+    ],
+    "title": "Atlanta Braves at Philadelphia Phillies",
+    "no_cost_cents": 22
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-05T00:19:05.473919+00:00"
+   "detected_at": "2026-09-05T00:20:41.065457+00:00"
   },
   {
    "buy_yes": {
