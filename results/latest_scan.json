@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-05T02:16:17.332108+00:00",
+ "scanned_at": "2026-09-05T02:18:19.916070+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 227.7,
+ "loop_uptime_min": 229.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 316019,
+   "markets": 317705,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 8000,
-   "last_tick_age_s": 0.6
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
@@ -25,102 +25,56 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 322,
-   "last_tick_age_s": 6.2
+   "markets": 323,
+   "last_tick_age_s": 14.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 32,
-   "last_tick_age_s": 13348.9
+   "last_tick_age_s": 13471.5
   }
  ],
  "totals": {
-  "markets_tracked": 324504,
-  "pairs_married": 4,
-  "arbitrages": 3
+  "markets_tracked": 326191,
+  "pairs_married": 2,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 110,
-  "gist_errors": 239,
+  "commits": 111,
+  "gist_errors": 241,
   "hot_errors": 0,
-  "kalshi.sweeps": 1191,
-  "kalshi.ticks": 14053555,
-  "kalshi.updates": 6608465,
-  "kalshi.ws_ticks": 14053555,
-  "kalshi.ws_trades": 1994646,
+  "kalshi.sweeps": 1201,
+  "kalshi.ticks": 14161513,
+  "kalshi.updates": 6657725,
+  "kalshi.ws_ticks": 14161513,
+  "kalshi.ws_trades": 2011988,
   "live_evals_fired": 8774,
-  "novig.rest_updates": 24059,
-  "novig.sweeps": 1190,
-  "novig.ticks": 220374,
-  "novig.updates": 24059,
-  "pairs_blocked_antonym_date": 113165,
-  "pmglobal.rest_updates": 6756,
-  "pmglobal.sweeps": 1190,
-  "pmglobal.ticks": 142993,
-  "pmglobal.updates": 14324,
-  "pmglobal.ws_msgs": 2979017,
-  "pmglobal.ws_ticks": 23893,
-  "pmus.rest_updates": 23240,
-  "pmus.sweeps": 1191,
-  "pmus.ticks": 9533616,
-  "pmus.updates": 23240,
+  "novig.rest_updates": 24288,
+  "novig.sweeps": 1200,
+  "novig.ticks": 221969,
+  "novig.updates": 24288,
+  "pairs_blocked_antonym_date": 114077,
+  "pmglobal.rest_updates": 6801,
+  "pmglobal.sweeps": 1200,
+  "pmglobal.ticks": 144152,
+  "pmglobal.updates": 14409,
+  "pmglobal.ws_msgs": 2993083,
+  "pmglobal.ws_ticks": 24052,
+  "pmus.rest_updates": 23353,
+  "pmus.sweeps": 1201,
+  "pmus.ticks": 9613596,
+  "pmus.updates": 23353,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 1192,
+  "pmus_x.sweeps": 1202,
   "prophetx.ticks": 745,
   "prophetx.updates": 96,
-  "prophetx.ws_errors": 798,
+  "prophetx.ws_errors": 805,
   "px.evt_scanned": 23,
-  "pxboard.sweeps": 1190,
-  "supa_errors": 3632
+  "pxboard.sweeps": 1200,
+  "supa_errors": 3662
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f8a12e8b8c5e61c5a49f72d63798369b"
-    ],
-    "title": "Milwaukee Brewers at Cincinnati Reds",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7551ce76e122a0f7d156fdd3a310b28fc33e88cb8837765811031d2e668c4a85"
-    ],
-    "title": "Milwaukee Brewers vs. Cincinnati Reds",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-05T02:12:17.072752+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f41d8360fc755950ef5e91760950f294"
-    ],
-    "title": "Milwaukee Brewers at Cincinnati Reds",
-    "ask_cents": 60
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7551ce76e122a0f7d156fdd3a310b28fc33e88cb8837765811031d2e668c4a85"
-    ],
-    "title": "Milwaukee Brewers vs. Cincinnati Reds",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-05T02:12:17.107746+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
