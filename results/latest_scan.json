@@ -1,14 +1,14 @@
 {
- "scanned_at": "2026-09-05T01:04:14.781207+00:00",
+ "scanned_at": "2026-09-05T01:06:21.966711+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 155.6,
+ "loop_uptime_min": 157.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 247072,
-   "last_tick_age_s": 0.1
+   "markets": 249173,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmus",
@@ -25,54 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 283,
-   "last_tick_age_s": 7.1
+   "markets": 284,
+   "last_tick_age_s": 12.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 32,
-   "last_tick_age_s": 9026.3
+   "last_tick_age_s": 9153.5
   }
  ],
  "totals": {
-  "markets_tracked": 255511,
+  "markets_tracked": 257613,
   "pairs_married": 23,
   "arbitrages": 22
  },
  "stats": {
-  "commits": 75,
-  "gist_errors": 164,
+  "commits": 76,
+  "gist_errors": 166,
   "hot_errors": 0,
-  "kalshi.sweeps": 818,
-  "kalshi.ticks": 9577377,
-  "kalshi.updates": 4527439,
-  "kalshi.ws_ticks": 9577377,
-  "kalshi.ws_trades": 1310201,
-  "live_evals_fired": 6939,
-  "novig.rest_updates": 16013,
-  "novig.sweeps": 817,
-  "novig.ticks": 163110,
-  "novig.updates": 16013,
-  "pairs_blocked_antonym_date": 77673,
-  "pmglobal.rest_updates": 5125,
-  "pmglobal.sweeps": 817,
-  "pmglobal.ticks": 99497,
-  "pmglobal.updates": 10936,
-  "pmglobal.ws_msgs": 2281877,
-  "pmglobal.ws_ticks": 17697,
-  "pmus.rest_updates": 18565,
-  "pmus.sweeps": 818,
-  "pmus.ticks": 6550362,
-  "pmus.updates": 18565,
+  "kalshi.sweeps": 830,
+  "kalshi.ticks": 9714941,
+  "kalshi.updates": 4591221,
+  "kalshi.ws_ticks": 9714941,
+  "kalshi.ws_trades": 1328248,
+  "live_evals_fired": 7006,
+  "novig.rest_updates": 16235,
+  "novig.sweeps": 829,
+  "novig.ticks": 165003,
+  "novig.updates": 16235,
+  "pairs_blocked_antonym_date": 78813,
+  "pmglobal.rest_updates": 5166,
+  "pmglobal.sweeps": 829,
+  "pmglobal.ticks": 100886,
+  "pmglobal.updates": 11034,
+  "pmglobal.ws_msgs": 2302581,
+  "pmglobal.ws_ticks": 17886,
+  "pmus.rest_updates": 18653,
+  "pmus.sweeps": 830,
+  "pmus.ticks": 6646338,
+  "pmus.updates": 18653,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 819,
+  "pmus_x.sweeps": 831,
   "prophetx.ticks": 745,
   "prophetx.updates": 96,
-  "prophetx.ws_errors": 550,
+  "prophetx.ws_errors": 558,
   "px.evt_scanned": 23,
-  "pxboard.sweeps": 817,
-  "supa_errors": 2510
+  "pxboard.sweeps": 829,
+  "supa_errors": 2546
  },
  "arbitrages": [
   {
@@ -184,34 +184,11 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 51,
-   "edge_bps": 4900,
-   "detected_at": "2026-09-05T01:04:14.625608+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "74c04743687befe3b67de4246299df73"
-    ],
-    "title": "Atlanta Braves at Philadelphia Phillies",
-    "ask_cents": 49
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
-    ],
-    "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 3
+    "no_cost_cents": 4
    },
    "total_cost_cents": 52,
    "edge_bps": 4800,
-   "detected_at": "2026-09-05T01:04:14.654641+00:00"
+   "detected_at": "2026-09-05T01:04:31.017049+00:00"
   },
   {
    "buy_yes": {
@@ -261,6 +238,29 @@
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "74c04743687befe3b67de4246299df73"
+    ],
+    "title": "Atlanta Braves at Philadelphia Phillies",
+    "ask_cents": 49
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
+    ],
+    "title": "Atlanta Braves vs. Philadelphia Phillies",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-05T01:04:31.051827+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -299,11 +299,11 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 3
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 56,
-   "edge_bps": 4400,
-   "detected_at": "2026-09-05T01:04:14.586610+00:00"
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-05T01:04:30.978933+00:00"
   },
   {
    "buy_yes": {
@@ -322,11 +322,11 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 3
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-05T01:04:14.742907+00:00"
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-05T01:04:31.127147+00:00"
   },
   {
    "buy_yes": {
@@ -422,29 +422,6 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b1ab6c7632aeeb636c70855de5f8d06f"
-    ],
-    "title": "Atlanta Braves at Philadelphia Phillies",
-    "ask_cents": 79
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
-    ],
-    "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-05T01:04:14.693666+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -468,13 +445,36 @@
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b1ab6c7632aeeb636c70855de5f8d06f"
+    ],
+    "title": "Atlanta Braves at Philadelphia Phillies",
+    "ask_cents": 79
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
+    ],
+    "title": "Atlanta Braves vs. Philadelphia Phillies",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-05T01:04:31.087805+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "ask_cents": 36
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -485,9 +485,9 @@
     "title": "San Jose State at Eastern Michigan",
     "no_cost_cents": 47
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-05T01:04:10.090961+00:00"
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-05T01:06:21.853509+00:00"
   },
   {
    "buy_yes": {
@@ -497,7 +497,7 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "ask_cents": 36
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -508,9 +508,9 @@
     "title": "San Jose State at Eastern Michigan",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-05T01:04:10.054151+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-05T01:06:21.817535+00:00"
   },
   {
    "buy_yes": {
@@ -520,7 +520,7 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "ask_cents": 36
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -531,9 +531,9 @@
     "title": "San Jose State at Eastern Michigan",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-05T01:04:10.166722+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-05T01:06:21.932330+00:00"
   },
   {
    "buy_yes": {
@@ -543,7 +543,7 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "ask_cents": 36
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -554,9 +554,9 @@
     "title": "San Jose State at Eastern Michigan",
     "no_cost_cents": 52
    },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-05T01:04:10.130349+00:00"
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-05T01:06:21.895229+00:00"
   },
   {
    "buy_yes": {
