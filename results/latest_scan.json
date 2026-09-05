@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-05T23:20:06.363072+00:00",
+ "scanned_at": "2026-09-05T23:22:09.562393+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 70.5,
+ "loop_uptime_min": 72.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 161625,
+   "markets": 164387,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 2.4
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
@@ -25,55 +25,55 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 261,
-   "last_tick_age_s": 0.2
+   "markets": 264,
+   "last_tick_age_s": 16.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 13,
-   "last_tick_age_s": 3899.8
+   "last_tick_age_s": 4022.9
   }
  ],
  "totals": {
-  "markets_tracked": 170014,
-  "pairs_married": 6,
-  "arbitrages": 6
+  "markets_tracked": 172779,
+  "pairs_married": 4,
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 33,
-  "gist_errors": 74,
+  "commits": 34,
+  "gist_errors": 75,
   "hot_errors": 0,
-  "kalshi.sweeps": 364,
-  "kalshi.ticks": 4611702,
-  "kalshi.updates": 2294702,
-  "kalshi.ws_ticks": 4611702,
-  "kalshi.ws_trades": 749664,
-  "live_evals_fired": 1744,
-  "novig.rest_updates": 8090,
-  "novig.sweeps": 364,
-  "novig.ticks": 60232,
-  "novig.updates": 8090,
-  "pairs_blocked_antonym_date": 38220,
-  "pmglobal.rest_updates": 3233,
-  "pmglobal.sweeps": 364,
-  "pmglobal.ticks": 46406,
-  "pmglobal.updates": 7256,
+  "kalshi.sweeps": 374,
+  "kalshi.ticks": 4757649,
+  "kalshi.updates": 2366487,
+  "kalshi.ws_ticks": 4757649,
+  "kalshi.ws_trades": 771389,
+  "live_evals_fired": 1756,
+  "novig.rest_updates": 8367,
+  "novig.sweeps": 373,
+  "novig.ticks": 61584,
+  "novig.updates": 8367,
+  "pairs_blocked_antonym_date": 39228,
+  "pmglobal.rest_updates": 3320,
+  "pmglobal.sweeps": 373,
+  "pmglobal.ticks": 47548,
+  "pmglobal.updates": 7434,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 2169688,
-  "pmglobal.ws_ticks": 9906,
+  "pmglobal.ws_msgs": 2213391,
+  "pmglobal.ws_ticks": 10148,
   "pmus.rest_updates": 9171,
-  "pmus.sweeps": 364,
-  "pmus.ticks": 172129,
+  "pmus.sweeps": 374,
+  "pmus.ticks": 172149,
   "pmus.updates": 9171,
   "pmus_x.last_count": 2,
-  "pmus_x.sweeps": 365,
+  "pmus_x.sweeps": 375,
   "prophetx.ticks": 332,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 246,
+  "prophetx.ws_errors": 253,
   "px.evt_scanned": 13,
-  "pxboard.sweeps": 363,
-  "supa_errors": 1151
+  "pxboard.sweeps": 373,
+  "supa_errors": 1180
  },
  "arbitrages": [
   {
@@ -97,17 +97,17 @@
    },
    "total_cost_cents": 18,
    "edge_bps": 8200,
-   "detected_at": "2026-09-05T23:19:18.513451+00:00"
+   "detected_at": "2026-09-05T23:21:56.060706+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xd46d00efd8c768ca800367653f34538a00864c8193dfb5be4c3e162c8ed7ff16"
+     "0x961f5a9a2b52b49e60efd0454c136b9c2a120434c47b353a8d8211f75e335e9b"
     ],
-    "title": "Baylor vs. Auburn",
-    "ask_cents": 46
+    "title": "Baylor vs. Auburn: O/U 58.5",
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,9 +118,9 @@
     "title": "Baylor at Auburn",
     "no_cost_cents": 23
    },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-05T23:19:56.245367+00:00"
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-09-05T23:22:09.562345+00:00"
   },
   {
    "buy_yes": {
@@ -130,66 +130,20 @@
      "0x961f5a9a2b52b49e60efd0454c136b9c2a120434c47b353a8d8211f75e335e9b"
     ],
     "title": "Baylor vs. Auburn: O/U 58.5",
-    "ask_cents": 47
+    "ask_cents": 2
    },
    "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "faf6d166dff55d5c3fea12b09a0ad8de"
-    ],
-    "title": "Baylor at Auburn",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-05T23:15:29.397154+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "55d0b1b9cf2382210097fb21de832f84"
     ],
     "title": "Baylor at Auburn",
-    "ask_cents": 26
+    "no_cost_cents": 75
    },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x961f5a9a2b52b49e60efd0454c136b9c2a120434c47b353a8d8211f75e335e9b"
-    ],
-    "title": "Baylor vs. Auburn: O/U 58.5",
-    "no_cost_cents": 53
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-05T23:15:29.300973+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "55d0b1b9cf2382210097fb21de832f84"
-    ],
-    "title": "Baylor at Auburn",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd46d00efd8c768ca800367653f34538a00864c8193dfb5be4c3e162c8ed7ff16"
-    ],
-    "title": "Baylor vs. Auburn",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-05T23:19:56.159363+00:00"
+   "total_cost_cents": 77,
+   "edge_bps": 2300,
+   "detected_at": "2026-09-05T23:22:09.562325+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +166,7 @@
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-05T23:19:18.591474+00:00"
+   "detected_at": "2026-09-05T23:21:56.151773+00:00"
   }
  ]
 }
