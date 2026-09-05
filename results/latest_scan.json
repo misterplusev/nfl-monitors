@@ -1,81 +1,125 @@
 {
- "scanned_at": "2026-09-05T04:03:35.274021+00:00",
+ "scanned_at": "2026-09-05T04:51:51.819057+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 396121,
-   "last_tick_age_s": 0.1
+   "markets": 10473,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 8004,
-   "last_tick_age_s": 3.1
+   "markets": 7998,
+   "last_tick_age_s": 5.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 149,
-   "last_tick_age_s": 0.3
+   "markets": 100,
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 412,
-   "last_tick_age_s": 0.7
+   "markets": 223,
+   "last_tick_age_s": 3.3
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 32,
-   "last_tick_age_s": 19786.9
+   "state": "OK",
+   "markets": 54,
+   "last_tick_age_s": 1.5
   }
  ],
  "totals": {
-  "markets_tracked": 404718,
-  "pairs_married": 2,
-  "arbitrages": 1
+  "markets_tracked": 18848,
+  "pairs_married": 4,
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 163,
-  "gist_errors": 351,
+  "gist_errors": 2,
   "hot_errors": 0,
-  "kalshi.rest_updates": 2,
-  "kalshi.sweeps": 1747,
-  "kalshi.ticks": 19050971,
-  "kalshi.updates": 8867958,
-  "kalshi.ws_ticks": 19050969,
-  "kalshi.ws_trades": 2943952,
-  "live_evals_fired": 8778,
-  "novig.rest_updates": 33583,
-  "novig.sweeps": 1747,
-  "novig.ticks": 320931,
-  "novig.updates": 33583,
-  "pairs_blocked_antonym_date": 165986,
-  "pmglobal.rest_updates": 8876,
-  "pmglobal.sweeps": 1747,
-  "pmglobal.ticks": 208508,
-  "pmglobal.updates": 18760,
-  "pmglobal.ws_msgs": 3704437,
-  "pmglobal.ws_ticks": 33708,
-  "pmus.rest_updates": 28885,
-  "pmus.sweeps": 1747,
-  "pmus.ticks": 13980504,
-  "pmus.updates": 28885,
+  "kalshi.sweeps": 12,
+  "kalshi.ticks": 66634,
+  "kalshi.updates": 32430,
+  "kalshi.ws_ticks": 66634,
+  "kalshi.ws_trades": 12605,
+  "live_evals_fired": 22,
+  "novig.rest_updates": 268,
+  "novig.sweeps": 11,
+  "novig.ticks": 2675,
+  "novig.updates": 268,
+  "pairs_blocked_antonym_date": 1140,
+  "pmglobal.rest_updates": 231,
+  "pmglobal.sweeps": 11,
+  "pmglobal.ticks": 1499,
+  "pmglobal.updates": 368,
+  "pmglobal.ws_msgs": 20105,
+  "pmglobal.ws_ticks": 299,
+  "pmus.rest_updates": 8043,
+  "pmus.sweeps": 11,
+  "pmus.ticks": 95976,
+  "pmus.updates": 8043,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 1748,
-  "prophetx.ticks": 745,
-  "prophetx.updates": 96,
-  "prophetx.ws_errors": 1170,
-  "px.evt_scanned": 23,
-  "pxboard.sweeps": 1746,
-  "supa_errors": 5301
+  "pmus_x.sweeps": 12,
+  "prophetx.ticks": 634,
+  "prophetx.updates": 69,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 54,
+  "pxboard.sweeps": 11,
+  "supa_errors": 39
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7fd41a197d8e86e149afb7d8797b839a"
+    ],
+    "title": "Athletics at Seattle Mariners",
+    "ask_cents": 22
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6aea25ca71d2fac651ee4eac3f854bdf9e7d1bbf027900a59feeccc1b5f07fab"
+    ],
+    "title": "Athletics vs. Seattle Mariners",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 50,
+   "edge_bps": 5000,
+   "detected_at": "2026-09-05T04:51:42.605448+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6aea25ca71d2fac651ee4eac3f854bdf9e7d1bbf027900a59feeccc1b5f07fab"
+    ],
+    "title": "Athletics vs. Seattle Mariners",
+    "ask_cents": 72
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0e0d21378d7a0ce10e373134f4f580e4"
+    ],
+    "title": "Athletics at Seattle Mariners",
+    "no_cost_cents": 19
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-05T04:51:42.625318+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -97,7 +141,7 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-05T03:13:46.619727+00:00"
+   "detected_at": "2026-09-05T04:51:51.818976+00:00"
   }
  ]
 }
