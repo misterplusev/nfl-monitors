@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-05T22:48:57.752681+00:00",
+ "scanned_at": "2026-09-05T22:50:58.448820+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 39.3,
+ "loop_uptime_min": 41.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 105907,
+   "markets": 109709,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7996,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 109,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 2.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 224,
-   "last_tick_age_s": 10.8
+   "markets": 233,
+   "last_tick_age_s": 5.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 13,
-   "last_tick_age_s": 2031.1
+   "last_tick_age_s": 2151.8
   }
  ],
  "totals": {
-  "markets_tracked": 114249,
+  "markets_tracked": 118060,
   "pairs_married": 8,
   "arbitrages": 8
  },
  "stats": {
-  "commits": 18,
-  "gist_errors": 41,
+  "commits": 19,
+  "gist_errors": 43,
   "hot_errors": 0,
-  "kalshi.sweeps": 200,
-  "kalshi.ticks": 2483672,
-  "kalshi.updates": 1239060,
-  "kalshi.ws_ticks": 2483672,
-  "kalshi.ws_trades": 392595,
-  "live_evals_fired": 877,
-  "novig.rest_updates": 3961,
-  "novig.sweeps": 199,
-  "novig.ticks": 33912,
-  "novig.updates": 3961,
-  "pairs_blocked_antonym_date": 21000,
-  "pmglobal.rest_updates": 1906,
-  "pmglobal.sweeps": 199,
-  "pmglobal.ticks": 25281,
-  "pmglobal.updates": 4217,
+  "kalshi.sweeps": 211,
+  "kalshi.ticks": 2609467,
+  "kalshi.updates": 1301900,
+  "kalshi.ws_ticks": 2609467,
+  "kalshi.ws_trades": 413018,
+  "live_evals_fired": 922,
+  "novig.rest_updates": 4235,
+  "novig.sweeps": 210,
+  "novig.ticks": 35764,
+  "novig.updates": 4235,
+  "pairs_blocked_antonym_date": 22176,
+  "pmglobal.rest_updates": 2004,
+  "pmglobal.sweeps": 210,
+  "pmglobal.ticks": 26692,
+  "pmglobal.updates": 4450,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1275244,
-  "pmglobal.ws_ticks": 5281,
+  "pmglobal.ws_msgs": 1337350,
+  "pmglobal.ws_ticks": 5592,
   "pmus.rest_updates": 9169,
-  "pmus.sweeps": 200,
+  "pmus.sweeps": 211,
   "pmus.ticks": 172101,
   "pmus.updates": 9169,
   "pmus_x.last_count": 0,
-  "pmus_x.sweeps": 201,
+  "pmus_x.sweeps": 212,
   "prophetx.ticks": 332,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 137,
+  "prophetx.ws_errors": 145,
   "px.evt_scanned": 13,
-  "pxboard.sweeps": 199,
-  "supa_errors": 640
+  "pxboard.sweeps": 210,
+  "supa_errors": 674
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0xefabaceecde105644a40f338c79d4b5fcaa5c2903b4a37120f7bfe97c7089e89"
     ],
     "title": "Tulane vs. Duke",
-    "ask_cents": 10
+    "ask_cents": 9
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +95,9 @@
     "title": "Tulane at Duke",
     "no_cost_cents": 10
    },
-   "total_cost_cents": 20,
-   "edge_bps": 8000,
-   "detected_at": "2026-09-05T22:47:53.311665+00:00"
+   "total_cost_cents": 19,
+   "edge_bps": 8100,
+   "detected_at": "2026-09-05T22:50:17.977649+00:00"
   },
   {
    "buy_yes": {
@@ -107,7 +107,7 @@
      "0x61f6a4fe40ecd58ff3dcf96ff4ef362ea69d2e7c0ba1a059aa8c6c0f95fc6189"
     ],
     "title": "Boise State vs. Oregon",
-    "ask_cents": 9
+    "ask_cents": 5
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,9 +118,9 @@
     "title": "Boise State at Oregon",
     "no_cost_cents": 14
    },
-   "total_cost_cents": 23,
-   "edge_bps": 7700,
-   "detected_at": "2026-09-05T22:47:38.600649+00:00"
+   "total_cost_cents": 19,
+   "edge_bps": 8100,
+   "detected_at": "2026-09-05T22:50:26.539977+00:00"
   },
   {
    "buy_yes": {
@@ -153,7 +153,7 @@
      "0xd46d00efd8c768ca800367653f34538a00864c8193dfb5be4c3e162c8ed7ff16"
     ],
     "title": "Baylor vs. Auburn",
-    "ask_cents": 35
+    "ask_cents": 36
    },
    "buy_no": {
     "venue": "prophetx",
@@ -164,9 +164,9 @@
     "title": "Baylor at Auburn",
     "no_cost_cents": 23
    },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-05T22:48:37.619984+00:00"
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-05T22:50:51.395391+00:00"
   },
   {
    "buy_yes": {
@@ -193,6 +193,29 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x61f6a4fe40ecd58ff3dcf96ff4ef362ea69d2e7c0ba1a059aa8c6c0f95fc6189"
+    ],
+    "title": "Boise State vs. Oregon",
+    "ask_cents": 5
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5d93b82e64a822d16848bf3679da065d"
+    ],
+    "title": "Boise State at Oregon",
+    "no_cost_cents": 83
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-05T22:50:26.448347+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -208,34 +231,11 @@
      "0xd46d00efd8c768ca800367653f34538a00864c8193dfb5be4c3e162c8ed7ff16"
     ],
     "title": "Baylor vs. Auburn",
-    "no_cost_cents": 65
+    "no_cost_cents": 64
    },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-05T22:48:37.533636+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x61f6a4fe40ecd58ff3dcf96ff4ef362ea69d2e7c0ba1a059aa8c6c0f95fc6189"
-    ],
-    "title": "Boise State vs. Oregon",
-    "ask_cents": 9
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5d93b82e64a822d16848bf3679da065d"
-    ],
-    "title": "Boise State at Oregon",
-    "no_cost_cents": 83
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-05T22:47:38.546246+00:00"
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-05T22:50:51.307762+00:00"
   },
   {
    "buy_yes": {
@@ -245,7 +245,7 @@
      "0xefabaceecde105644a40f338c79d4b5fcaa5c2903b4a37120f7bfe97c7089e89"
     ],
     "title": "Tulane vs. Duke",
-    "ask_cents": 10
+    "ask_cents": 9
    },
    "buy_no": {
     "venue": "prophetx",
@@ -256,9 +256,9 @@
     "title": "Tulane at Duke",
     "no_cost_cents": 89
    },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-05T22:47:53.398893+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-05T22:50:18.065858+00:00"
   }
  ]
 }
