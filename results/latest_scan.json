@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-05T01:00:12.038957+00:00",
+ "scanned_at": "2026-09-05T01:02:12.783263+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 151.6,
+ "loop_uptime_min": 153.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 242285,
+   "markets": 245002,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 2.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 125,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 282,
-   "last_tick_age_s": 6.3
+   "last_tick_age_s": 11.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 32,
-   "last_tick_age_s": 8783.6
+   "last_tick_age_s": 8904.3
   }
  ],
  "totals": {
-  "markets_tracked": 250723,
+  "markets_tracked": 253440,
   "pairs_married": 23,
   "arbitrages": 22
  },
  "stats": {
-  "commits": 73,
-  "gist_errors": 160,
+  "commits": 74,
+  "gist_errors": 162,
   "hot_errors": 0,
-  "kalshi.sweeps": 797,
-  "kalshi.ticks": 9291155,
-  "kalshi.updates": 4385816,
-  "kalshi.ws_ticks": 9291155,
-  "kalshi.ws_trades": 1270412,
-  "live_evals_fired": 6731,
-  "novig.rest_updates": 15600,
-  "novig.sweeps": 796,
-  "novig.ticks": 159890,
-  "novig.updates": 15600,
-  "pairs_blocked_antonym_date": 75697,
-  "pmglobal.rest_updates": 5035,
-  "pmglobal.sweeps": 796,
-  "pmglobal.ticks": 97051,
-  "pmglobal.updates": 10742,
-  "pmglobal.ws_msgs": 2233235,
-  "pmglobal.ws_ticks": 17351,
-  "pmus.rest_updates": 18278,
-  "pmus.sweeps": 797,
-  "pmus.ticks": 6382404,
-  "pmus.updates": 18278,
+  "kalshi.sweeps": 807,
+  "kalshi.ticks": 9431800,
+  "kalshi.updates": 4454785,
+  "kalshi.ws_ticks": 9431800,
+  "kalshi.ws_trades": 1289022,
+  "live_evals_fired": 6861,
+  "novig.rest_updates": 15802,
+  "novig.sweeps": 806,
+  "novig.ticks": 161400,
+  "novig.updates": 15802,
+  "pairs_blocked_antonym_date": 76685,
+  "pmglobal.rest_updates": 5092,
+  "pmglobal.sweeps": 807,
+  "pmglobal.ticks": 98322,
+  "pmglobal.updates": 10856,
+  "pmglobal.ws_msgs": 2256096,
+  "pmglobal.ws_ticks": 17522,
+  "pmus.rest_updates": 18395,
+  "pmus.sweeps": 807,
+  "pmus.ticks": 6462384,
+  "pmus.updates": 18395,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 798,
+  "pmus_x.sweeps": 808,
   "prophetx.ticks": 745,
   "prophetx.updates": 96,
-  "prophetx.ws_errors": 536,
+  "prophetx.ws_errors": 543,
   "px.evt_scanned": 23,
-  "pxboard.sweeps": 796,
-  "supa_errors": 2446
+  "pxboard.sweeps": 806,
+  "supa_errors": 2477
  },
  "arbitrages": [
   {
@@ -83,7 +83,7 @@
      "0xc5ff53c797fe8a0d7fc1f49f4bc35d8e94e5c579441353d9e10be36d8c0d3b52"
     ],
     "title": "Los Angeles Angels vs. Pittsburgh Pirates: O/U 8.5",
-    "ask_cents": 10
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -94,9 +94,9 @@
     "title": "Los Angeles Angels at Pittsburgh Pirates",
     "no_cost_cents": 22
    },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-09-05T00:57:04.097602+00:00"
+   "total_cost_cents": 26,
+   "edge_bps": 7400,
+   "detected_at": "2026-09-05T01:02:12.398768+00:00"
   },
   {
    "buy_yes": {
@@ -106,7 +106,7 @@
      "0xc5ff53c797fe8a0d7fc1f49f4bc35d8e94e5c579441353d9e10be36d8c0d3b52"
     ],
     "title": "Los Angeles Angels vs. Pittsburgh Pirates: O/U 8.5",
-    "ask_cents": 10
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -117,32 +117,9 @@
     "title": "Los Angeles Angels at Pittsburgh Pirates",
     "no_cost_cents": 35
    },
-   "total_cost_cents": 45,
-   "edge_bps": 5500,
-   "detected_at": "2026-09-05T00:57:04.178076+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc5ff53c797fe8a0d7fc1f49f4bc35d8e94e5c579441353d9e10be36d8c0d3b52"
-    ],
-    "title": "Los Angeles Angels vs. Pittsburgh Pirates: O/U 8.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "fc40c2e66068c68c48d0cb919631f414"
-    ],
-    "title": "Los Angeles Angels at Pittsburgh Pirates",
-    "no_cost_cents": 37
-   },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-09-05T00:57:04.058244+00:00"
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-05T01:02:12.288185+00:00"
   },
   {
    "buy_yes": {
@@ -152,7 +129,7 @@
      "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
     ],
     "title": "Los Angeles Angels vs. Pittsburgh Pirates",
-    "ask_cents": 26
+    "ask_cents": 18
    },
    "buy_no": {
     "venue": "prophetx",
@@ -163,32 +140,32 @@
     "title": "Los Angeles Angels at Pittsburgh Pirates",
     "no_cost_cents": 22
    },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-05T00:57:03.867157+00:00"
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-09-05T01:02:12.152070+00:00"
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f8a12e8b8c5e61c5a49f72d63798369b"
-    ],
-    "title": "Milwaukee Brewers at Cincinnati Reds",
-    "ask_cents": 42
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x7551ce76e122a0f7d156fdd3a310b28fc33e88cb8837765811031d2e668c4a85"
+     "0xc5ff53c797fe8a0d7fc1f49f4bc35d8e94e5c579441353d9e10be36d8c0d3b52"
     ],
-    "title": "Milwaukee Brewers vs. Cincinnati Reds",
-    "no_cost_cents": 8
+    "title": "Los Angeles Angels vs. Pittsburgh Pirates: O/U 8.5",
+    "ask_cents": 4
    },
-   "total_cost_cents": 50,
-   "edge_bps": 5000,
-   "detected_at": "2026-09-05T00:57:03.771435+00:00"
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fc40c2e66068c68c48d0cb919631f414"
+    ],
+    "title": "Los Angeles Angels at Pittsburgh Pirates",
+    "no_cost_cents": 37
+   },
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-05T01:02:12.362903+00:00"
   },
   {
    "buy_yes": {
@@ -207,11 +184,57 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 6
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-05T00:59:52.306812+00:00"
+   "total_cost_cents": 52,
+   "edge_bps": 4800,
+   "detected_at": "2026-09-05T01:02:11.860212+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f8a12e8b8c5e61c5a49f72d63798369b"
+    ],
+    "title": "Milwaukee Brewers at Cincinnati Reds",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7551ce76e122a0f7d156fdd3a310b28fc33e88cb8837765811031d2e668c4a85"
+    ],
+    "title": "Milwaukee Brewers vs. Cincinnati Reds",
+    "no_cost_cents": 10
+   },
+   "total_cost_cents": 52,
+   "edge_bps": 4800,
+   "detected_at": "2026-09-05T01:02:12.011694+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
+    ],
+    "title": "Los Angeles Angels vs. Pittsburgh Pirates",
+    "ask_cents": 18
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "49ca104631e3247a007f5c7fd4ee626e"
+    ],
+    "title": "Los Angeles Angels at Pittsburgh Pirates",
+    "no_cost_cents": 35
+   },
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-05T01:02:12.226054+00:00"
   },
   {
    "buy_yes": {
@@ -230,11 +253,34 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 6
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-05T01:02:11.902679+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
+    ],
+    "title": "Los Angeles Angels vs. Pittsburgh Pirates",
+    "ask_cents": 18
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fc40c2e66068c68c48d0cb919631f414"
+    ],
+    "title": "Los Angeles Angels at Pittsburgh Pirates",
+    "no_cost_cents": 37
    },
    "total_cost_cents": 55,
    "edge_bps": 4500,
-   "detected_at": "2026-09-05T00:59:52.347016+00:00"
+   "detected_at": "2026-09-05T01:02:12.122509+00:00"
   },
   {
    "buy_yes": {
@@ -253,34 +299,11 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 6
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-05T00:59:52.273526+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
-    ],
-    "title": "Los Angeles Angels vs. Pittsburgh Pirates",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "49ca104631e3247a007f5c7fd4ee626e"
-    ],
-    "title": "Los Angeles Angels at Pittsburgh Pirates",
-    "no_cost_cents": 35
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-05T00:57:03.932095+00:00"
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-05T01:02:11.827655+00:00"
   },
   {
    "buy_yes": {
@@ -299,34 +322,57 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 6
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-05T00:59:52.420073+00:00"
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-05T01:02:11.970376+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
+     "0xc5ff53c797fe8a0d7fc1f49f4bc35d8e94e5c579441353d9e10be36d8c0d3b52"
     ],
-    "title": "Los Angeles Angels vs. Pittsburgh Pirates",
-    "ask_cents": 26
+    "title": "Los Angeles Angels vs. Pittsburgh Pirates: O/U 8.5",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "fc40c2e66068c68c48d0cb919631f414"
+     "45830f8e18e05c677eef7e19ba092e72"
     ],
     "title": "Los Angeles Angels at Pittsburgh Pirates",
-    "no_cost_cents": 37
+    "no_cost_cents": 62
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-09-05T00:57:03.839727+00:00"
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-05T01:02:12.324762+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc5ff53c797fe8a0d7fc1f49f4bc35d8e94e5c579441353d9e10be36d8c0d3b52"
+    ],
+    "title": "Los Angeles Angels vs. Pittsburgh Pirates: O/U 8.5",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "86e78af42800c5635dab8d252d5ff5f3"
+    ],
+    "title": "Los Angeles Angels at Pittsburgh Pirates",
+    "no_cost_cents": 65
+   },
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-05T01:02:12.257540+00:00"
   },
   {
    "buy_yes": {
@@ -345,21 +391,21 @@
      "0x7551ce76e122a0f7d156fdd3a310b28fc33e88cb8837765811031d2e668c4a85"
     ],
     "title": "Milwaukee Brewers vs. Cincinnati Reds",
-    "no_cost_cents": 8
+    "no_cost_cents": 10
    },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-05T00:57:03.808945+00:00"
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-05T01:02:12.049340+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xc5ff53c797fe8a0d7fc1f49f4bc35d8e94e5c579441353d9e10be36d8c0d3b52"
+     "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
     ],
-    "title": "Los Angeles Angels vs. Pittsburgh Pirates: O/U 8.5",
-    "ask_cents": 10
+    "title": "Los Angeles Angels vs. Pittsburgh Pirates",
+    "ask_cents": 18
    },
    "buy_no": {
     "venue": "prophetx",
@@ -370,19 +416,19 @@
     "title": "Los Angeles Angels at Pittsburgh Pirates",
     "no_cost_cents": 62
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-05T00:57:04.018360+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-05T01:02:12.086960+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xc5ff53c797fe8a0d7fc1f49f4bc35d8e94e5c579441353d9e10be36d8c0d3b52"
+     "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
     ],
-    "title": "Los Angeles Angels vs. Pittsburgh Pirates: O/U 8.5",
-    "ask_cents": 10
+    "title": "Los Angeles Angels vs. Pittsburgh Pirates",
+    "ask_cents": 18
    },
    "buy_no": {
     "venue": "prophetx",
@@ -393,9 +439,9 @@
     "title": "Los Angeles Angels at Pittsburgh Pirates",
     "no_cost_cents": 65
    },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-09-05T00:57:04.141112+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-05T01:02:12.194922+00:00"
   },
   {
    "buy_yes": {
@@ -414,34 +460,11 @@
      "0xf3afb2dd052479f1cb2f7e73162c5a4bba8318acd104eb17ec3d6f9e342c6cce"
     ],
     "title": "Atlanta Braves vs. Philadelphia Phillies",
-    "no_cost_cents": 6
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-05T00:59:52.379546+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
-    ],
-    "title": "Los Angeles Angels vs. Pittsburgh Pirates",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "45830f8e18e05c677eef7e19ba092e72"
-    ],
-    "title": "Los Angeles Angels at Pittsburgh Pirates",
-    "no_cost_cents": 62
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-05T00:57:03.983746+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-05T01:02:11.937925+00:00"
   },
   {
    "buy_yes": {
@@ -460,11 +483,80 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "no_cost_cents": 40
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-05T01:00:04.658035+00:00"
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-09-05T01:02:11.754742+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f42e110434f1d9332af4e638415ac212"
+    ],
+    "title": "San Jose State at Eastern Michigan",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
+    ],
+    "title": "San Jose State vs. Eastern Michigan",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-05T01:02:11.674020+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8ee8329293a0e20c6e05b413ead3d569"
+    ],
+    "title": "San Jose State at Eastern Michigan",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
+    ],
+    "title": "San Jose State vs. Eastern Michigan",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-05T01:02:11.796440+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "28cdca88fbd2cdfe9a4272e87b461505"
+    ],
+    "title": "San Jose State at Eastern Michigan",
+    "ask_cents": 54
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
+    ],
+    "title": "San Jose State vs. Eastern Michigan",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-05T01:02:11.715717+00:00"
   },
   {
    "buy_yes": {
@@ -488,98 +580,6 @@
    "total_cost_cents": 91,
    "edge_bps": 900,
    "detected_at": "2026-09-04T23:19:16.775914+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x36c0c5c264a2865659027bc879b90ac149a285b66af2f1216378dba666a96a71"
-    ],
-    "title": "Los Angeles Angels vs. Pittsburgh Pirates",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "86e78af42800c5635dab8d252d5ff5f3"
-    ],
-    "title": "Los Angeles Angels at Pittsburgh Pirates",
-    "no_cost_cents": 65
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-05T00:57:03.904322+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f42e110434f1d9332af4e638415ac212"
-    ],
-    "title": "San Jose State at Eastern Michigan",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
-    ],
-    "title": "San Jose State vs. Eastern Michigan",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-05T01:00:04.588623+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8ee8329293a0e20c6e05b413ead3d569"
-    ],
-    "title": "San Jose State at Eastern Michigan",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
-    ],
-    "title": "San Jose State vs. Eastern Michigan",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-05T01:00:04.722839+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "28cdca88fbd2cdfe9a4272e87b461505"
-    ],
-    "title": "San Jose State at Eastern Michigan",
-    "ask_cents": 54
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
-    ],
-    "title": "San Jose State vs. Eastern Michigan",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-05T01:00:04.623792+00:00"
   }
  ]
 }
