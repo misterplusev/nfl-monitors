@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-05T22:26:33.084543+00:00",
+ "scanned_at": "2026-09-05T22:28:33.182074+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 16.9,
+ "loop_uptime_min": 18.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 60434,
+   "markets": 64132,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7996,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 106,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 6.5
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 210,
-   "last_tick_age_s": 9.8
+   "markets": 211,
+   "last_tick_age_s": 10.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 13,
-   "last_tick_age_s": 686.4
+   "last_tick_age_s": 806.5
   }
  ],
  "totals": {
-  "markets_tracked": 68759,
+  "markets_tracked": 72458,
   "pairs_married": 8,
   "arbitrages": 8
  },
  "stats": {
-  "commits": 7,
-  "gist_errors": 18,
+  "commits": 8,
+  "gist_errors": 20,
   "hot_errors": 0,
-  "kalshi.sweeps": 85,
-  "kalshi.ticks": 1074703,
-  "kalshi.updates": 545321,
-  "kalshi.ws_ticks": 1074703,
-  "kalshi.ws_trades": 172878,
-  "live_evals_fired": 342,
-  "novig.rest_updates": 1736,
-  "novig.sweeps": 84,
-  "novig.ticks": 14413,
-  "novig.updates": 1736,
-  "pairs_blocked_antonym_date": 8904,
-  "pmglobal.rest_updates": 903,
-  "pmglobal.sweeps": 84,
-  "pmglobal.ticks": 10752,
-  "pmglobal.updates": 1870,
-  "pmglobal.ws_msgs": 580561,
-  "pmglobal.ws_ticks": 2252,
+  "kalshi.sweeps": 95,
+  "kalshi.ticks": 1209216,
+  "kalshi.updates": 607963,
+  "kalshi.ws_ticks": 1209216,
+  "kalshi.ws_trades": 193312,
+  "live_evals_fired": 392,
+  "novig.rest_updates": 1934,
+  "novig.sweeps": 94,
+  "novig.ticks": 16108,
+  "novig.updates": 1934,
+  "pairs_blocked_antonym_date": 9996,
+  "pmglobal.rest_updates": 996,
+  "pmglobal.sweeps": 94,
+  "pmglobal.ticks": 12099,
+  "pmglobal.updates": 2100,
+  "pmglobal.ws_msgs": 639221,
+  "pmglobal.ws_ticks": 2599,
   "pmus.rest_updates": 9169,
-  "pmus.sweeps": 85,
-  "pmus.ticks": 172087,
+  "pmus.sweeps": 95,
+  "pmus.ticks": 172097,
   "pmus.updates": 9169,
   "pmus_x.last_count": 1,
-  "pmus_x.sweeps": 86,
+  "pmus_x.sweeps": 96,
   "prophetx.ticks": 332,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 60,
+  "prophetx.ws_errors": 67,
   "px.evt_scanned": 13,
-  "pxboard.sweeps": 84,
-  "supa_errors": 279
+  "pxboard.sweeps": 94,
+  "supa_errors": 311
  },
  "arbitrages": [
   {
@@ -129,7 +129,7 @@
      "0x61f6a4fe40ecd58ff3dcf96ff4ef362ea69d2e7c0ba1a059aa8c6c0f95fc6189"
     ],
     "title": "Boise State vs. Oregon",
-    "ask_cents": 27
+    "ask_cents": 23
    },
    "buy_no": {
     "venue": "prophetx",
@@ -140,9 +140,9 @@
     "title": "Boise State at Oregon",
     "no_cost_cents": 14
    },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-05T22:26:26.347117+00:00"
+   "total_cost_cents": 37,
+   "edge_bps": 6300,
+   "detected_at": "2026-09-05T22:28:07.655594+00:00"
   },
   {
    "buy_yes": {
@@ -152,7 +152,7 @@
      "0xd46d00efd8c768ca800367653f34538a00864c8193dfb5be4c3e162c8ed7ff16"
     ],
     "title": "Baylor vs. Auburn",
-    "ask_cents": 31
+    "ask_cents": 30
    },
    "buy_no": {
     "venue": "prophetx",
@@ -163,9 +163,9 @@
     "title": "Baylor at Auburn",
     "no_cost_cents": 23
    },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-05T22:26:26.250467+00:00"
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-05T22:28:21.129840+00:00"
   },
   {
    "buy_yes": {
@@ -207,11 +207,11 @@
      "0x61f6a4fe40ecd58ff3dcf96ff4ef362ea69d2e7c0ba1a059aa8c6c0f95fc6189"
     ],
     "title": "Boise State vs. Oregon",
-    "no_cost_cents": 74
+    "no_cost_cents": 77
    },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-05T22:26:26.347101+00:00"
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-09-05T22:28:07.570528+00:00"
   },
   {
    "buy_yes": {
@@ -234,7 +234,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-05T22:26:26.250449+00:00"
+   "detected_at": "2026-09-05T22:28:21.054098+00:00"
   },
   {
    "buy_yes": {
