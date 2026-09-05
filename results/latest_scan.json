@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-05T04:55:54.642372+00:00",
+ "scanned_at": "2026-09-05T04:57:55.809610+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 6.3,
+ "loop_uptime_min": 8.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 23188,
+   "markets": 27222,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
@@ -26,53 +26,53 @@
    "venue": "novig",
    "state": "OK",
    "markets": 226,
-   "last_tick_age_s": 5.3
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
-   "state": "OK",
+   "state": "STALE",
    "markets": 54,
-   "last_tick_age_s": 46.0
+   "last_tick_age_s": 167.2
   }
  ],
  "totals": {
-  "markets_tracked": 31567,
+  "markets_tracked": 35601,
   "pairs_married": 4,
-  "arbitrages": 2
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 2,
-  "gist_errors": 7,
+  "commits": 3,
+  "gist_errors": 9,
   "hot_errors": 0,
-  "kalshi.sweeps": 32,
-  "kalshi.ticks": 201739,
-  "kalshi.updates": 93535,
-  "kalshi.ws_ticks": 201739,
-  "kalshi.ws_trades": 39607,
-  "live_evals_fired": 64,
-  "novig.rest_updates": 348,
-  "novig.sweeps": 31,
-  "novig.ticks": 7126,
-  "novig.updates": 348,
-  "pairs_blocked_antonym_date": 3040,
-  "pmglobal.rest_updates": 337,
-  "pmglobal.sweeps": 31,
-  "pmglobal.ticks": 3918,
-  "pmglobal.updates": 609,
-  "pmglobal.ws_msgs": 59634,
-  "pmglobal.ws_ticks": 718,
-  "pmus.rest_updates": 8330,
-  "pmus.sweeps": 32,
-  "pmus.ticks": 263880,
-  "pmus.updates": 8330,
+  "kalshi.sweeps": 42,
+  "kalshi.ticks": 276568,
+  "kalshi.updates": 124809,
+  "kalshi.ws_ticks": 276568,
+  "kalshi.ws_trades": 51778,
+  "live_evals_fired": 103,
+  "novig.rest_updates": 388,
+  "novig.sweeps": 42,
+  "novig.ticks": 9571,
+  "novig.updates": 388,
+  "pairs_blocked_antonym_date": 4028,
+  "pmglobal.rest_updates": 392,
+  "pmglobal.sweeps": 42,
+  "pmglobal.ticks": 5209,
+  "pmglobal.updates": 729,
+  "pmglobal.ws_msgs": 79815,
+  "pmglobal.ws_ticks": 909,
+  "pmus.rest_updates": 8427,
+  "pmus.sweeps": 42,
+  "pmus.ticks": 343800,
+  "pmus.updates": 8427,
   "pmus_x.last_count": 7992,
-  "pmus_x.sweeps": 33,
+  "pmus_x.sweeps": 43,
   "prophetx.ticks": 1495,
   "prophetx.updates": 95,
-  "prophetx.ws_errors": 21,
+  "prophetx.ws_errors": 29,
   "px.evt_scanned": 54,
-  "pxboard.sweeps": 31,
-  "supa_errors": 109
+  "pxboard.sweeps": 41,
+  "supa_errors": 140
  },
  "arbitrages": [
   {
@@ -92,11 +92,11 @@
      "0x6aea25ca71d2fac651ee4eac3f854bdf9e7d1bbf027900a59feeccc1b5f07fab"
     ],
     "title": "Athletics vs. Seattle Mariners",
-    "no_cost_cents": 20
+    "no_cost_cents": 16
    },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-05T04:55:48.190262+00:00"
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-05T04:57:54.779974+00:00"
   },
   {
    "buy_yes": {
@@ -106,7 +106,7 @@
      "0x5e082f0b57f47a29044aa35b4c5658393122e659d5feae521c06b57cdd7f905c"
     ],
     "title": "Will 1 Fed rate cut happen in 2026?",
-    "ask_cents": 4
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "pmus",
@@ -115,11 +115,34 @@
      "171031"
     ],
     "title": "Fed Rate Cut in 2026?",
-    "no_cost_cents": 88
+    "no_cost_cents": 89
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-05T04:55:48.209198+00:00"
+   "detected_at": "2026-09-05T04:57:41.814773+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0e0d21378d7a0ce10e373134f4f580e4"
+    ],
+    "title": "Athletics at Seattle Mariners",
+    "ask_cents": 80
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6aea25ca71d2fac651ee4eac3f854bdf9e7d1bbf027900a59feeccc1b5f07fab"
+    ],
+    "title": "Athletics vs. Seattle Mariners",
+    "no_cost_cents": 16
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-05T04:57:54.765301+00:00"
   }
  ]
 }
