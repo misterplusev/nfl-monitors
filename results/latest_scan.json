@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-05T01:51:38.602371+00:00",
+ "scanned_at": "2026-09-05T01:53:38.907969+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 203.0,
+ "loop_uptime_min": 205.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 292162,
+   "markets": 293730,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 3.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 127,
-   "last_tick_age_s": 1.2
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 297,
-   "last_tick_age_s": 0.7
+   "last_tick_age_s": 13.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 32,
-   "last_tick_age_s": 11870.2
+   "last_tick_age_s": 11990.5
   }
  ],
  "totals": {
-  "markets_tracked": 300617,
+  "markets_tracked": 302185,
   "pairs_married": 8,
   "arbitrages": 7
  },
  "stats": {
-  "commits": 98,
-  "gist_errors": 213,
+  "commits": 99,
+  "gist_errors": 215,
   "hot_errors": 0,
-  "kalshi.sweeps": 1061,
-  "kalshi.ticks": 12666732,
-  "kalshi.updates": 5970422,
-  "kalshi.ws_ticks": 12666732,
-  "kalshi.ws_trades": 1755532,
-  "live_evals_fired": 8244,
-  "novig.rest_updates": 21195,
-  "novig.sweeps": 1061,
-  "novig.ticks": 200006,
-  "novig.updates": 21195,
-  "pairs_blocked_antonym_date": 100853,
-  "pmglobal.rest_updates": 6186,
-  "pmglobal.sweeps": 1061,
-  "pmglobal.ticks": 127886,
-  "pmglobal.updates": 13113,
-  "pmglobal.ws_msgs": 2780671,
-  "pmglobal.ws_ticks": 21686,
-  "pmus.rest_updates": 21907,
-  "pmus.sweeps": 1061,
-  "pmus.ticks": 8493876,
-  "pmus.updates": 21907,
+  "kalshi.sweeps": 1072,
+  "kalshi.ticks": 12774848,
+  "kalshi.updates": 6021572,
+  "kalshi.ws_ticks": 12774848,
+  "kalshi.ws_trades": 1772437,
+  "live_evals_fired": 8336,
+  "novig.rest_updates": 21440,
+  "novig.sweeps": 1071,
+  "novig.ticks": 201589,
+  "novig.updates": 21440,
+  "pairs_blocked_antonym_date": 101841,
+  "pmglobal.rest_updates": 6233,
+  "pmglobal.sweeps": 1071,
+  "pmglobal.ticks": 129069,
+  "pmglobal.updates": 13214,
+  "pmglobal.ws_msgs": 2797810,
+  "pmglobal.ws_ticks": 21869,
+  "pmus.rest_updates": 21976,
+  "pmus.sweeps": 1072,
+  "pmus.ticks": 8581854,
+  "pmus.updates": 21976,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 1062,
+  "pmus_x.sweeps": 1073,
   "prophetx.ticks": 745,
   "prophetx.updates": 96,
-  "prophetx.ws_errors": 712,
+  "prophetx.ws_errors": 719,
   "px.evt_scanned": 23,
-  "pxboard.sweeps": 1060,
-  "supa_errors": 3243
+  "pxboard.sweeps": 1071,
+  "supa_errors": 3275
  },
  "arbitrages": [
   {
@@ -103,29 +103,6 @@
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "f41d8360fc755950ef5e91760950f294"
-    ],
-    "title": "Milwaukee Brewers at Cincinnati Reds",
-    "ask_cents": 60
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7551ce76e122a0f7d156fdd3a310b28fc33e88cb8837765811031d2e668c4a85"
-    ],
-    "title": "Milwaukee Brewers vs. Cincinnati Reds",
-    "no_cost_cents": 8
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-05T01:47:16.652841+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
      "2298c0c5bebbe66d1d2180645716fae6"
     ],
     "title": "San Jose State at Eastern Michigan",
@@ -138,11 +115,11 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "no_cost_cents": 26
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-09-05T01:51:36.912396+00:00"
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-05T01:53:29.111567+00:00"
   },
   {
    "buy_yes": {
@@ -161,11 +138,11 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "no_cost_cents": 26
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-05T01:51:36.822954+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-05T01:53:29.047836+00:00"
   },
   {
    "buy_yes": {
@@ -184,11 +161,11 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "no_cost_cents": 26
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-05T01:51:36.950972+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-05T01:53:29.148815+00:00"
   },
   {
    "buy_yes": {
@@ -207,11 +184,34 @@
      "0x41c12c0285f45cdac97324739f29ba5f8918b9b73fe853a0d1d9efd6f991eec1"
     ],
     "title": "San Jose State vs. Eastern Michigan",
-    "no_cost_cents": 26
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-05T01:51:36.857790+00:00"
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-05T01:53:29.074723+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f41d8360fc755950ef5e91760950f294"
+    ],
+    "title": "Milwaukee Brewers at Cincinnati Reds",
+    "ask_cents": 60
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7551ce76e122a0f7d156fdd3a310b28fc33e88cb8837765811031d2e668c4a85"
+    ],
+    "title": "Milwaukee Brewers vs. Cincinnati Reds",
+    "no_cost_cents": 8
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-05T01:47:16.652841+00:00"
   },
   {
    "buy_yes": {
