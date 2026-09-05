@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-05T15:42:37.016272+00:00",
+ "scanned_at": "2026-09-05T15:44:38.882191+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 132.2,
+ "loop_uptime_min": 134.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 270600,
+   "markets": 277022,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7995,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 2.7
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 145,
-   "last_tick_age_s": 0.1
+   "markets": 146,
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 316,
-   "last_tick_age_s": 15.1
+   "markets": 317,
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 76,
-   "last_tick_age_s": 7622.5
+   "last_tick_age_s": 7744.4
   }
  ],
  "totals": {
-  "markets_tracked": 279132,
-  "pairs_married": 20,
-  "arbitrages": 20
+  "markets_tracked": 285556,
+  "pairs_married": 30,
+  "arbitrages": 25
  },
  "stats": {
-  "commits": 63,
-  "gist_errors": 135,
+  "commits": 64,
+  "gist_errors": 137,
   "hot_errors": 0,
-  "kalshi.rest_updates": 2,
-  "kalshi.sweeps": 705,
-  "kalshi.ticks": 7603986,
-  "kalshi.updates": 3209733,
-  "kalshi.ws_ticks": 7603980,
-  "kalshi.ws_trades": 1035117,
-  "live_evals_fired": 3735,
-  "novig.rest_updates": 8620,
-  "novig.sweeps": 704,
-  "novig.ticks": 167781,
-  "novig.updates": 8620,
-  "pairs_blocked_antonym_date": 52156,
-  "pmglobal.rest_updates": 9028,
-  "pmglobal.sweeps": 704,
-  "pmglobal.ticks": 95215,
-  "pmglobal.updates": 20658,
+  "kalshi.rest_updates": 3,
+  "kalshi.sweeps": 716,
+  "kalshi.ticks": 7742382,
+  "kalshi.updates": 3268663,
+  "kalshi.ws_ticks": 7742373,
+  "kalshi.ws_trades": 1061602,
+  "live_evals_fired": 3744,
+  "novig.rest_updates": 8814,
+  "novig.sweeps": 716,
+  "novig.ticks": 170672,
+  "novig.updates": 8814,
+  "pairs_blocked_antonym_date": 53206,
+  "pmglobal.rest_updates": 9166,
+  "pmglobal.sweeps": 716,
+  "pmglobal.ticks": 96805,
+  "pmglobal.updates": 20975,
   "pmglobal.ws_errors": 6,
-  "pmglobal.ws_msgs": 4007457,
-  "pmglobal.ws_ticks": 24715,
-  "pmus.rest_updates": 13971,
-  "pmus.sweeps": 705,
-  "pmus.ticks": 5641327,
-  "pmus.updates": 13971,
+  "pmglobal.ws_msgs": 4076171,
+  "pmglobal.ws_ticks": 25105,
+  "pmus.rest_updates": 14078,
+  "pmus.sweeps": 716,
+  "pmus.ticks": 5729239,
+  "pmus.updates": 14078,
   "pmus_x.last_count": 7992,
-  "pmus_x.sweeps": 706,
+  "pmus_x.sweeps": 717,
   "prophetx.ticks": 1858,
   "prophetx.updates": 241,
-  "prophetx.ws_errors": 467,
+  "prophetx.ws_errors": 475,
   "px.evt_scanned": 66,
-  "pxboard.sweeps": 704,
-  "supa_errors": 2154
+  "pxboard.sweeps": 715,
+  "supa_errors": 2188
  },
  "arbitrages": [
   {
@@ -128,6 +128,52 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
+     "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0c2aae25955bfb1cbcc6a87416932713"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "no_cost_cents": 7
+   },
+   "total_cost_cents": 13,
+   "edge_bps": 8700,
+   "detected_at": "2026-09-05T15:44:22.309927+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "02ba9599af804ece6ba8f1ca4c4f1196"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "no_cost_cents": 7
+   },
+   "total_cost_cents": 13,
+   "edge_bps": 8700,
+   "detected_at": "2026-09-05T15:44:22.325380+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
      "0xbb95f6adb7d8b886ce86d41fe4700de59056796a7e8b3d8eb1f4bdc334a215a9"
     ],
     "title": "Manchester City FC vs. Coventry City FC: O/U 3.5",
@@ -154,43 +200,20 @@
      "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
     ],
     "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "ask_cents": 10
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "0c2aae25955bfb1cbcc6a87416932713"
+     "65bade8b1b39c0c9714fb5f20c90d0da"
     ],
     "title": "Coventry City FC at Manchester City FC",
-    "no_cost_cents": 7
+    "no_cost_cents": 13
    },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-05T15:39:17.668846+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
-    ],
-    "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "02ba9599af804ece6ba8f1ca4c4f1196"
-    ],
-    "title": "Coventry City FC at Manchester City FC",
-    "no_cost_cents": 7
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-05T15:39:17.687642+00:00"
+   "total_cost_cents": 19,
+   "edge_bps": 8100,
+   "detected_at": "2026-09-05T15:44:22.367664+00:00"
   },
   {
    "buy_yes": {
@@ -223,30 +246,7 @@
      "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
     ],
     "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "65bade8b1b39c0c9714fb5f20c90d0da"
-    ],
-    "title": "Coventry City FC at Manchester City FC",
-    "no_cost_cents": 13
-   },
-   "total_cost_cents": 23,
-   "edge_bps": 7700,
-   "detected_at": "2026-09-05T15:39:17.651909+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
-    ],
-    "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "ask_cents": 10
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -257,9 +257,9 @@
     "title": "Coventry City FC at Manchester City FC",
     "no_cost_cents": 19
    },
-   "total_cost_cents": 29,
-   "edge_bps": 7100,
-   "detected_at": "2026-09-05T15:39:17.572885+00:00"
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-09-05T15:44:22.446350+00:00"
   },
   {
    "buy_yes": {
@@ -315,7 +315,7 @@
      "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
     ],
     "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "ask_cents": 10
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -326,9 +326,55 @@
     "title": "Coventry City FC at Manchester City FC",
     "no_cost_cents": 48
    },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-05T15:39:17.553515+00:00"
+   "total_cost_cents": 54,
+   "edge_bps": 4600,
+   "detected_at": "2026-09-05T15:44:22.293254+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41727131e6117a2100e362ce8de9b35b8d78c5971dabd420531ebaf6019cf514"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 1.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0c2aae25955bfb1cbcc6a87416932713"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "no_cost_cents": 7
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-05T15:44:38.882074+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41727131e6117a2100e362ce8de9b35b8d78c5971dabd420531ebaf6019cf514"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 1.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "02ba9599af804ece6ba8f1ca4c4f1196"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "no_cost_cents": 7
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-05T15:44:38.882082+00:00"
   },
   {
    "buy_yes": {
@@ -338,7 +384,7 @@
      "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
     ],
     "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "ask_cents": 10
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -349,9 +395,147 @@
     "title": "Coventry City FC at Manchester City FC",
     "no_cost_cents": 52
    },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-09-05T15:39:17.629547+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-05T15:44:22.400669+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f8b5943ce99a2c0c3e7f10fd8e8f4b50"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41727131e6117a2100e362ce8de9b35b8d78c5971dabd420531ebaf6019cf514"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 1.5",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-05T15:44:38.882089+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c7c331dcecc4722f08bead96212115a2"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41727131e6117a2100e362ce8de9b35b8d78c5971dabd420531ebaf6019cf514"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 1.5",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-05T15:44:38.882057+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41727131e6117a2100e362ce8de9b35b8d78c5971dabd420531ebaf6019cf514"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 1.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "65bade8b1b39c0c9714fb5f20c90d0da"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "no_cost_cents": 13
+   },
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-05T15:44:38.882103+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "309645413bbb8dd48ede8549b4bb4104"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41727131e6117a2100e362ce8de9b35b8d78c5971dabd420531ebaf6019cf514"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 1.5",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-05T15:44:38.882047+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41727131e6117a2100e362ce8de9b35b8d78c5971dabd420531ebaf6019cf514"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 1.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "581dde7d832d047f5276a92e5525fd09"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "no_cost_cents": 19
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-05T15:44:38.882111+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d1bba9453074d23beb35d131b2867b93"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "ask_cents": 19
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x41727131e6117a2100e362ce8de9b35b8d78c5971dabd420531ebaf6019cf514"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 1.5",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-05T15:44:38.882026+00:00"
   },
   {
    "buy_yes": {
@@ -375,6 +559,29 @@
    "total_cost_cents": 84,
    "edge_bps": 1600,
    "detected_at": "2026-09-05T15:42:14.206473+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
+    ],
+    "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d1bba9453074d23beb35d131b2867b93"
+    ],
+    "title": "Coventry City FC at Manchester City FC",
+    "no_cost_cents": 82
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-05T15:44:22.429398+00:00"
   },
   {
    "buy_yes": {
@@ -407,20 +614,20 @@
      "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
     ],
     "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "ask_cents": 10
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "d1bba9453074d23beb35d131b2867b93"
+     "309645413bbb8dd48ede8549b4bb4104"
     ],
     "title": "Coventry City FC at Manchester City FC",
-    "no_cost_cents": 82
+    "no_cost_cents": 89
    },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-05T15:39:17.516202+00:00"
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-09-05T15:44:22.385662+00:00"
   },
   {
    "buy_yes": {
@@ -444,98 +651,6 @@
    "total_cost_cents": 95,
    "edge_bps": 500,
    "detected_at": "2026-09-05T15:42:14.206527+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f8b5943ce99a2c0c3e7f10fd8e8f4b50"
-    ],
-    "title": "Coventry City FC at Manchester City FC",
-    "ask_cents": 6
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
-    ],
-    "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "no_cost_cents": 90
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-05T15:39:17.535429+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xbb95f6adb7d8b886ce86d41fe4700de59056796a7e8b3d8eb1f4bdc334a215a9"
-    ],
-    "title": "Manchester City FC vs. Coventry City FC: O/U 3.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f8b5943ce99a2c0c3e7f10fd8e8f4b50"
-    ],
-    "title": "Coventry City FC at Manchester City FC",
-    "no_cost_cents": 95
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-05T15:42:14.206542+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "c7c331dcecc4722f08bead96212115a2"
-    ],
-    "title": "Coventry City FC at Manchester City FC",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
-    ],
-    "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "no_cost_cents": 90
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-05T15:39:17.610122+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x80b83b78cb75842d0bc739c8caf383d39cb1cf1f85adbba07f98fe8b0c2aa5a0"
-    ],
-    "title": "Manchester City FC vs. Coventry City FC: O/U 2.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "309645413bbb8dd48ede8549b4bb4104"
-    ],
-    "title": "Coventry City FC at Manchester City FC",
-    "no_cost_cents": 89
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-05T15:39:17.592728+00:00"
   }
  ]
 }
