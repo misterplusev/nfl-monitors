@@ -1,126 +1,80 @@
 {
- "scanned_at": "2026-09-05T05:06:20.409071+00:00",
+ "scanned_at": "2026-09-05T05:08:20.484119+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 16.8,
+ "loop_uptime_min": 18.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 43574,
+   "markets": 46538,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 101,
-   "last_tick_age_s": 0.0
+   "markets": 105,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 236,
-   "last_tick_age_s": 15.7
+   "markets": 237,
+   "last_tick_age_s": 6.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 54,
-   "last_tick_age_s": 671.8
+   "last_tick_age_s": 791.9
   }
  ],
  "totals": {
-  "markets_tracked": 51963,
-  "pairs_married": 4,
-  "arbitrages": 3
+  "markets_tracked": 54932,
+  "pairs_married": 2,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 7,
-  "gist_errors": 17,
+  "commits": 8,
+  "gist_errors": 19,
   "hot_errors": 0,
-  "kalshi.sweeps": 87,
-  "kalshi.ticks": 537642,
-  "kalshi.updates": 238300,
-  "kalshi.ws_ticks": 537642,
-  "kalshi.ws_trades": 109671,
+  "kalshi.sweeps": 98,
+  "kalshi.ticks": 601741,
+  "kalshi.updates": 265003,
+  "kalshi.ws_ticks": 601741,
+  "kalshi.ws_trades": 120219,
   "live_evals_fired": 209,
-  "novig.rest_updates": 493,
-  "novig.sweeps": 86,
-  "novig.ticks": 19709,
-  "novig.updates": 493,
-  "pairs_blocked_antonym_date": 8284,
-  "pmglobal.rest_updates": 600,
-  "pmglobal.sweeps": 86,
-  "pmglobal.ticks": 10374,
-  "pmglobal.updates": 1202,
-  "pmglobal.ws_msgs": 140079,
-  "pmglobal.ws_ticks": 1674,
-  "pmus.rest_updates": 8754,
-  "pmus.sweeps": 87,
-  "pmus.ticks": 703440,
-  "pmus.updates": 8754,
+  "novig.rest_updates": 514,
+  "novig.sweeps": 97,
+  "novig.ticks": 22268,
+  "novig.updates": 514,
+  "pairs_blocked_antonym_date": 9348,
+  "pmglobal.rest_updates": 662,
+  "pmglobal.sweeps": 98,
+  "pmglobal.ticks": 11734,
+  "pmglobal.updates": 1313,
+  "pmglobal.ws_msgs": 150095,
+  "pmglobal.ws_ticks": 1834,
+  "pmus.rest_updates": 8851,
+  "pmus.sweeps": 98,
+  "pmus.ticks": 791352,
+  "pmus.updates": 8851,
   "pmus_x.last_count": 7992,
-  "pmus_x.sweeps": 88,
+  "pmus_x.sweeps": 99,
   "prophetx.ticks": 1495,
   "prophetx.updates": 95,
-  "prophetx.ws_errors": 58,
+  "prophetx.ws_errors": 66,
   "px.evt_scanned": 54,
-  "pxboard.sweeps": 86,
-  "supa_errors": 274
+  "pxboard.sweeps": 97,
+  "supa_errors": 308
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7fd41a197d8e86e149afb7d8797b839a"
-    ],
-    "title": "Athletics at Seattle Mariners",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6aea25ca71d2fac651ee4eac3f854bdf9e7d1bbf027900a59feeccc1b5f07fab"
-    ],
-    "title": "Athletics vs. Seattle Mariners",
-    "no_cost_cents": 13
-   },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-09-05T05:05:55.418079+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0e0d21378d7a0ce10e373134f4f580e4"
-    ],
-    "title": "Athletics at Seattle Mariners",
-    "ask_cents": 80
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6aea25ca71d2fac651ee4eac3f854bdf9e7d1bbf027900a59feeccc1b5f07fab"
-    ],
-    "title": "Athletics vs. Seattle Mariners",
-    "no_cost_cents": 13
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-05T05:05:55.400978+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
