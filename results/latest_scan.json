@@ -1,19 +1,19 @@
 {
- "scanned_at": "2026-09-05T22:16:08.684694+00:00",
+ "scanned_at": "2026-09-05T22:18:10.879978+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 6.5,
+ "loop_uptime_min": 8.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 36742,
+   "markets": 42448,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7992,
+   "markets": 7994,
    "last_tick_age_s": 0.0
   },
   {
@@ -25,54 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 201,
-   "last_tick_age_s": 11.1
+   "markets": 204,
+   "last_tick_age_s": 11.6
   },
   {
    "venue": "prophetx",
-   "state": "OK",
+   "state": "STALE",
    "markets": 13,
-   "last_tick_age_s": 61.9
+   "last_tick_age_s": 184.1
   }
  ],
  "totals": {
-  "markets_tracked": 45051,
+  "markets_tracked": 50762,
   "pairs_married": 8,
   "arbitrages": 6
  },
  "stats": {
-  "commits": 2,
-  "gist_errors": 7,
+  "commits": 3,
+  "gist_errors": 9,
   "hot_errors": 0,
-  "kalshi.sweeps": 32,
-  "kalshi.ticks": 416927,
-  "kalshi.updates": 220888,
-  "kalshi.ws_ticks": 416927,
-  "kalshi.ws_trades": 72458,
-  "live_evals_fired": 185,
-  "novig.rest_updates": 818,
-  "novig.sweeps": 31,
-  "novig.ticks": 5461,
-  "novig.updates": 818,
-  "pairs_blocked_antonym_date": 3360,
-  "pmglobal.rest_updates": 461,
-  "pmglobal.sweeps": 31,
-  "pmglobal.ticks": 4046,
-  "pmglobal.updates": 872,
-  "pmglobal.ws_msgs": 211360,
-  "pmglobal.ws_ticks": 846,
-  "pmus.rest_updates": 9165,
-  "pmus.sweeps": 32,
-  "pmus.ticks": 170672,
-  "pmus.updates": 9165,
-  "pmus_x.last_count": 93,
-  "pmus_x.sweeps": 33,
+  "kalshi.sweeps": 42,
+  "kalshi.ticks": 547994,
+  "kalshi.updates": 287351,
+  "kalshi.ws_ticks": 547994,
+  "kalshi.ws_trades": 92540,
+  "live_evals_fired": 208,
+  "novig.rest_updates": 992,
+  "novig.sweeps": 41,
+  "novig.ticks": 7144,
+  "novig.updates": 992,
+  "pairs_blocked_antonym_date": 4368,
+  "pmglobal.rest_updates": 535,
+  "pmglobal.sweeps": 41,
+  "pmglobal.ticks": 5308,
+  "pmglobal.updates": 1043,
+  "pmglobal.ws_msgs": 284928,
+  "pmglobal.ws_ticks": 1108,
+  "pmus.rest_updates": 9167,
+  "pmus.sweeps": 42,
+  "pmus.ticks": 171275,
+  "pmus.updates": 9167,
+  "pmus_x.last_count": 49,
+  "pmus_x.sweeps": 43,
   "prophetx.ticks": 332,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 24,
+  "prophetx.ws_errors": 31,
   "px.evt_scanned": 13,
-  "pxboard.sweeps": 31,
-  "supa_errors": 112
+  "pxboard.sweeps": 41,
+  "supa_errors": 143
  },
  "arbitrages": [
   {
@@ -96,30 +96,7 @@
    },
    "total_cost_cents": 22,
    "edge_bps": 7800,
-   "detected_at": "2026-09-05T22:15:12.379586+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x61f6a4fe40ecd58ff3dcf96ff4ef362ea69d2e7c0ba1a059aa8c6c0f95fc6189"
-    ],
-    "title": "Boise State vs. Oregon",
-    "ask_cents": 11
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9dd6d1b48abcef60c3dede13729540de"
-    ],
-    "title": "Boise State at Oregon",
-    "no_cost_cents": 14
-   },
-   "total_cost_cents": 25,
-   "edge_bps": 7500,
-   "detected_at": "2026-09-05T22:15:56.224948+00:00"
+   "detected_at": "2026-09-05T22:17:00.146971+00:00"
   },
   {
    "buy_yes": {
@@ -149,6 +126,29 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
+     "0x61f6a4fe40ecd58ff3dcf96ff4ef362ea69d2e7c0ba1a059aa8c6c0f95fc6189"
+    ],
+    "title": "Boise State vs. Oregon",
+    "ask_cents": 16
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9dd6d1b48abcef60c3dede13729540de"
+    ],
+    "title": "Boise State at Oregon",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 30,
+   "edge_bps": 7000,
+   "detected_at": "2026-09-05T22:18:02.495116+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
      "0xd46d00efd8c768ca800367653f34538a00864c8193dfb5be4c3e162c8ed7ff16"
     ],
     "title": "Baylor vs. Auburn",
@@ -165,7 +165,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-05T22:15:56.318721+00:00"
+   "detected_at": "2026-09-05T22:18:01.060848+00:00"
   },
   {
    "buy_yes": {
@@ -198,7 +198,7 @@
      "0x61f6a4fe40ecd58ff3dcf96ff4ef362ea69d2e7c0ba1a059aa8c6c0f95fc6189"
     ],
     "title": "Boise State vs. Oregon",
-    "ask_cents": 11
+    "ask_cents": 16
    },
    "buy_no": {
     "venue": "prophetx",
@@ -209,9 +209,9 @@
     "title": "Boise State at Oregon",
     "no_cost_cents": 83
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-05T22:15:56.146672+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-05T22:18:02.406040+00:00"
   }
  ]
 }
