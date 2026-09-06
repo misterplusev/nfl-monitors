@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-06T23:28:14.238403+00:00",
+ "scanned_at": "2026-09-06T23:30:15.293452+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 74.3,
+ "loop_uptime_min": 76.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 89723,
+   "markets": 91521,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7489,
-   "last_tick_age_s": 4.7
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 119,
+   "markets": 120,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 285,
-   "last_tick_age_s": 2.4
+   "markets": 288,
+   "last_tick_age_s": 8.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 42,
-   "last_tick_age_s": 4041.4
+   "last_tick_age_s": 4162.5
   }
  ],
  "totals": {
-  "markets_tracked": 97658,
+  "markets_tracked": 99460,
   "pairs_married": 12,
-  "arbitrages": 12
+  "arbitrages": 11
  },
  "stats": {
-  "commits": 35,
-  "gist_errors": 76,
+  "commits": 36,
+  "gist_errors": 78,
   "hot_errors": 0,
-  "kalshi.sweeps": 361,
-  "kalshi.ticks": 3115608,
-  "kalshi.updates": 1595525,
-  "kalshi.ws_ticks": 3115608,
-  "kalshi.ws_trades": 644919,
-  "live_evals_fired": 1001,
-  "novig.rest_updates": 6027,
-  "novig.sweeps": 361,
-  "novig.ticks": 69838,
-  "novig.updates": 6027,
-  "pairs_blocked_antonym_date": 979,
-  "pmglobal.rest_updates": 1914,
-  "pmglobal.sweeps": 361,
-  "pmglobal.ticks": 43140,
-  "pmglobal.updates": 3854,
-  "pmglobal.ws_msgs": 1032606,
-  "pmglobal.ws_ticks": 6940,
-  "pmus.rest_updates": 13882,
-  "pmus.sweeps": 361,
-  "pmus.ticks": 2686583,
-  "pmus.updates": 13882,
+  "kalshi.sweeps": 371,
+  "kalshi.ticks": 3203735,
+  "kalshi.updates": 1639554,
+  "kalshi.ws_ticks": 3203735,
+  "kalshi.ws_trades": 664648,
+  "live_evals_fired": 1012,
+  "novig.rest_updates": 6181,
+  "novig.sweeps": 370,
+  "novig.ticks": 71508,
+  "novig.updates": 6181,
+  "pairs_blocked_antonym_date": 1063,
+  "pmglobal.rest_updates": 1964,
+  "pmglobal.sweeps": 370,
+  "pmglobal.ticks": 44210,
+  "pmglobal.updates": 3944,
+  "pmglobal.ws_msgs": 1056411,
+  "pmglobal.ws_ticks": 7110,
+  "pmus.rest_updates": 14060,
+  "pmus.sweeps": 371,
+  "pmus.ticks": 2761193,
+  "pmus.updates": 14060,
   "pmus_x.last_count": 7461,
-  "pmus_x.sweeps": 362,
+  "pmus_x.sweeps": 372,
   "prophetx.ticks": 967,
   "prophetx.updates": 288,
-  "prophetx.ws_errors": 254,
+  "prophetx.ws_errors": 261,
   "px.evt_scanned": 7,
-  "pxboard.sweeps": 361,
-  "supa_errors": 1198
+  "pxboard.sweeps": 370,
+  "supa_errors": 1229
  },
  "arbitrages": [
   {
@@ -83,7 +83,7 @@
      "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 16
+    "ask_cents": 13
    },
    "buy_no": {
     "venue": "prophetx",
@@ -93,10 +93,33 @@
     ],
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 40
+   },
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-06T23:30:15.279552+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
+    ],
+    "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
+    "ask_cents": 13
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6c3761ad78c030b9e9c02a74a2721d48"
+    ],
+    "title": "Minnesota Twins at Chicago White Sox",
+    "no_cost_cents": 43
    },
    "total_cost_cents": 56,
    "edge_bps": 4400,
-   "detected_at": "2026-09-06T23:27:36.855193+00:00"
+   "detected_at": "2026-09-06T23:30:15.279532+00:00"
   },
   {
    "buy_yes": {
@@ -106,30 +129,7 @@
      "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6c3761ad78c030b9e9c02a74a2721d48"
-    ],
-    "title": "Minnesota Twins at Chicago White Sox",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-06T23:27:36.815762+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
-    ],
-    "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 16
+    "ask_cents": 13
    },
    "buy_no": {
     "venue": "prophetx",
@@ -140,9 +140,9 @@
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-06T23:27:37.004895+00:00"
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-09-06T23:30:15.279578+00:00"
   },
   {
    "buy_yes": {
@@ -152,7 +152,7 @@
      "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 16
+    "ask_cents": 13
    },
    "buy_no": {
     "venue": "prophetx",
@@ -163,9 +163,9 @@
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 55
    },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-06T23:27:36.969717+00:00"
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-06T23:30:15.279572+00:00"
   },
   {
    "buy_yes": {
@@ -175,7 +175,7 @@
      "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 16
+    "ask_cents": 13
    },
    "buy_no": {
     "venue": "prophetx",
@@ -186,9 +186,9 @@
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 57
    },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-06T23:27:36.898359+00:00"
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-06T23:30:15.279560+00:00"
   },
   {
    "buy_yes": {
@@ -198,7 +198,7 @@
      "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 16
+    "ask_cents": 13
    },
    "buy_no": {
     "venue": "prophetx",
@@ -209,9 +209,9 @@
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 58
    },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-06T23:27:36.930709+00:00"
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-06T23:30:15.279566+00:00"
   },
   {
    "buy_yes": {
@@ -221,7 +221,7 @@
      "0xd2cb95611e57b79de8078def999da5c617e32bc26231d1f2c197cf494ae9a04d"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox",
-    "ask_cents": 40
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -232,9 +232,9 @@
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 40
    },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-06T23:24:01.060495+00:00"
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-06T23:29:15.572853+00:00"
   },
   {
    "buy_yes": {
@@ -244,7 +244,7 @@
      "0xd2cb95611e57b79de8078def999da5c617e32bc26231d1f2c197cf494ae9a04d"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox",
-    "ask_cents": 40
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -255,9 +255,9 @@
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-06T23:24:01.017748+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-06T23:29:15.533741+00:00"
   },
   {
    "buy_yes": {
@@ -267,7 +267,7 @@
      "0xd2cb95611e57b79de8078def999da5c617e32bc26231d1f2c197cf494ae9a04d"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox",
-    "ask_cents": 40
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -278,9 +278,32 @@
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-06T23:24:01.209247+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-06T23:29:15.688138+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "02b4ab63a57b4ac19707c188a4aed1d0"
+    ],
+    "title": "Minnesota Twins at Chicago White Sox",
+    "ask_cents": 43
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xd2cb95611e57b79de8078def999da5c617e32bc26231d1f2c197cf494ae9a04d"
+    ],
+    "title": "Minnesota Twins vs. Chicago White Sox",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-06T23:29:15.606810+00:00"
   },
   {
    "buy_yes": {
@@ -290,7 +313,7 @@
      "0xd2cb95611e57b79de8078def999da5c617e32bc26231d1f2c197cf494ae9a04d"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox",
-    "ask_cents": 40
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -301,55 +324,9 @@
     "title": "Minnesota Twins at Chicago White Sox",
     "no_cost_cents": 55
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-06T23:24:01.169082+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd2cb95611e57b79de8078def999da5c617e32bc26231d1f2c197cf494ae9a04d"
-    ],
-    "title": "Minnesota Twins vs. Chicago White Sox",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f4130a245b65ef94439585ffa622874b"
-    ],
-    "title": "Minnesota Twins at Chicago White Sox",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-06T23:24:01.101773+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd2cb95611e57b79de8078def999da5c617e32bc26231d1f2c197cf494ae9a04d"
-    ],
-    "title": "Minnesota Twins vs. Chicago White Sox",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "02b4ab63a57b4ac19707c188a4aed1d0"
-    ],
-    "title": "Minnesota Twins at Chicago White Sox",
-    "no_cost_cents": 58
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-06T23:24:01.139033+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-06T23:29:15.648733+00:00"
   }
  ]
 }
