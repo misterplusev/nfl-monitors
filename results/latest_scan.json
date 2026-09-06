@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-06T16:02:11.625626+00:00",
+ "scanned_at": "2026-09-06T16:04:23.333784+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 137.1,
+ "loop_uptime_min": 139.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 199330,
+   "markets": 202013,
    "last_tick_age_s": 0.0
   },
   {
@@ -26,240 +26,55 @@
    "venue": "novig",
    "state": "OK",
    "markets": 292,
-   "last_tick_age_s": 16.0
+   "last_tick_age_s": 16.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 64,
-   "last_tick_age_s": 7930.9
+   "last_tick_age_s": 8062.7
   }
  ],
  "totals": {
-  "markets_tracked": 208421,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 211104,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 63,
-  "gist_errors": 126,
+  "commits": 64,
+  "gist_errors": 128,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 747,
-  "kalshi.ticks": 5256094,
-  "kalshi.updates": 2363819,
-  "kalshi.ws_ticks": 5256092,
-  "kalshi.ws_trades": 1101173,
+  "kalshi.sweeps": 759,
+  "kalshi.ticks": 5351041,
+  "kalshi.updates": 2410561,
+  "kalshi.ws_ticks": 5351039,
+  "kalshi.ws_trades": 1120717,
   "live_evals_fired": 6052,
-  "novig.rest_updates": 5580,
-  "novig.sweeps": 746,
-  "novig.ticks": 176983,
-  "novig.updates": 5580,
-  "pairs_blocked_antonym_date": 56105,
-  "pmglobal.rest_updates": 9129,
-  "pmglobal.sweeps": 746,
-  "pmglobal.ticks": 104241,
-  "pmglobal.updates": 21192,
+  "novig.rest_updates": 5714,
+  "novig.sweeps": 758,
+  "novig.ticks": 179761,
+  "novig.updates": 5714,
+  "pairs_blocked_antonym_date": 57155,
+  "pmglobal.rest_updates": 9246,
+  "pmglobal.sweeps": 758,
+  "pmglobal.ticks": 105820,
+  "pmglobal.updates": 21434,
   "pmglobal.ws_errors": 6,
-  "pmglobal.ws_msgs": 3593648,
-  "pmglobal.ws_ticks": 29541,
-  "pmus.rest_updates": 36491,
-  "pmus.sweeps": 747,
-  "pmus.ticks": 5350269,
-  "pmus.updates": 36491,
-  "pmus_x.last_count": 7234,
-  "pmus_x.sweeps": 748,
+  "pmglobal.ws_msgs": 3629977,
+  "pmglobal.ws_ticks": 29920,
+  "pmus.rest_updates": 36786,
+  "pmus.sweeps": 759,
+  "pmus.ticks": 5437073,
+  "pmus.updates": 36786,
+  "pmus_x.last_count": 7233,
+  "pmus_x.sweeps": 760,
   "prophetx.ticks": 1629,
   "prophetx.updates": 205,
-  "prophetx.ws_errors": 496,
+  "prophetx.ws_errors": 504,
   "px.evt_scanned": 56,
-  "pxboard.sweeps": 746,
-  "supa_errors": 2258
+  "pxboard.sweeps": 758,
+  "supa_errors": 2294
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "464ddb56f76c6c55d032969395a056d4"
-    ],
-    "title": "FC Barcelona at Valencia CF",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
-    ],
-    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 46,
-   "edge_bps": 5400,
-   "detected_at": "2026-09-06T15:57:57.043707+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0aa96bb549ef9e90727a26a9bfae68dd"
-    ],
-    "title": "FC Barcelona at Valencia CF",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
-    ],
-    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-06T15:57:57.083323+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7b9b7ebb3c3ccab3905fdad280bd26de"
-    ],
-    "title": "FC Barcelona at Valencia CF",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
-    ],
-    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 53,
-   "edge_bps": 4700,
-   "detected_at": "2026-09-06T15:57:57.183568+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "37f54cb2521715d40ee2007648461f5c"
-    ],
-    "title": "FC Barcelona at Valencia CF",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
-    ],
-    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-06T15:57:57.128249+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
-    ],
-    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 62
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1322c35cd31f231db81edcebe82f7a06"
-    ],
-    "title": "FC Barcelona at Valencia CF",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-06T15:57:57.143382+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
-    ],
-    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 62
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6bf72e366f920d3591f47aed5aa0a93c"
-    ],
-    "title": "FC Barcelona at Valencia CF",
-    "no_cost_cents": 10
-   },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-06T15:57:57.065410+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
-    ],
-    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 62
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "14a6320a4c08aa53758e40242d990724"
-    ],
-    "title": "FC Barcelona at Valencia CF",
-    "no_cost_cents": 15
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-06T15:57:57.104175+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
-    ],
-    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 62
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "3736fabef5cbe5a6832df98634c72afd"
-    ],
-    "title": "FC Barcelona at Valencia CF",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-06T15:57:57.160523+00:00"
-  }
- ]
+ "arbitrages": []
 }
