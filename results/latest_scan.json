@@ -1,150 +1,81 @@
 {
- "scanned_at": "2026-09-06T14:57:00.455176+00:00",
+ "scanned_at": "2026-09-06T14:59:01.909345+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 71.9,
+ "loop_uptime_min": 73.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 115531,
+   "markets": 118132,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 8370,
-   "last_tick_age_s": 4.3
+   "markets": 8414,
+   "last_tick_age_s": 4.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 128,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 272,
-   "last_tick_age_s": 2.3
+   "markets": 273,
+   "last_tick_age_s": 2.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 64,
-   "last_tick_age_s": 4019.7
+   "last_tick_age_s": 4141.2
   }
  ],
  "totals": {
-  "markets_tracked": 124365,
-  "pairs_married": 32,
-  "arbitrages": 25
+  "markets_tracked": 127011,
+  "pairs_married": 8,
+  "arbitrages": 8
  },
  "stats": {
-  "commits": 33,
-  "gist_errors": 67,
+  "commits": 34,
+  "gist_errors": 69,
   "hot_errors": 0,
-  "kalshi.sweeps": 392,
-  "kalshi.ticks": 2698133,
-  "kalshi.updates": 1222636,
-  "kalshi.ws_ticks": 2698133,
-  "kalshi.ws_trades": 568050,
-  "live_evals_fired": 5958,
-  "novig.rest_updates": 3139,
-  "novig.sweeps": 392,
-  "novig.ticks": 92814,
-  "novig.updates": 3139,
-  "pairs_blocked_antonym_date": 25095,
-  "pmglobal.rest_updates": 5960,
-  "pmglobal.sweeps": 392,
-  "pmglobal.ticks": 58502,
-  "pmglobal.updates": 14225,
+  "kalshi.sweeps": 402,
+  "kalshi.ticks": 2770575,
+  "kalshi.updates": 1255792,
+  "kalshi.ws_ticks": 2770575,
+  "kalshi.ws_trades": 587532,
+  "live_evals_fired": 5974,
+  "novig.rest_updates": 3176,
+  "novig.sweeps": 402,
+  "novig.ticks": 95192,
+  "novig.updates": 3176,
+  "pairs_blocked_antonym_date": 25935,
+  "pmglobal.rest_updates": 6081,
+  "pmglobal.sweeps": 402,
+  "pmglobal.ticks": 59841,
+  "pmglobal.updates": 14455,
   "pmglobal.ws_errors": 6,
-  "pmglobal.ws_msgs": 2473528,
-  "pmglobal.ws_ticks": 19202,
-  "pmus.rest_updates": 28307,
-  "pmus.sweeps": 392,
-  "pmus.ticks": 2783832,
-  "pmus.updates": 28307,
-  "pmus_x.last_count": 7165,
-  "pmus_x.sweeps": 393,
+  "pmglobal.ws_msgs": 2502148,
+  "pmglobal.ws_ticks": 19541,
+  "pmus.rest_updates": 28664,
+  "pmus.sweeps": 402,
+  "pmus.ticks": 2855661,
+  "pmus.updates": 28664,
+  "pmus_x.last_count": 7209,
+  "pmus_x.sweeps": 403,
   "prophetx.ticks": 1629,
   "prophetx.updates": 205,
-  "prophetx.ws_errors": 261,
+  "prophetx.ws_errors": 268,
   "px.evt_scanned": 56,
-  "pxboard.sweeps": 392,
-  "supa_errors": 1194
+  "pxboard.sweeps": 402,
+  "supa_errors": 1224
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01dcffd7cf2e379206bbcb492b1453a9afaa659d2bb4066629dd0ab8d9cfe229"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 4.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "07f7ef8b49d93e3dc33b1dcdec43b25a"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 21
-   },
-   "total_cost_cents": 23,
-   "edge_bps": 7700,
-   "detected_at": "2026-09-06T14:57:00.455112+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x10d4eb1740593e60f7942a56d716b69a334ad843301d6ed3b29ef555cebf2361"
-    ],
-    "title": "Parma Calcio 1913 vs. AC Monza: O/U 2.5",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "838bdf1a10d4e04503bb5beb7e4624bd"
-    ],
-    "title": "AC Monza at Parma Calcio 1913",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 25,
-   "edge_bps": 7500,
-   "detected_at": "2026-09-06T14:55:42.751258+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x10d4eb1740593e60f7942a56d716b69a334ad843301d6ed3b29ef555cebf2361"
-    ],
-    "title": "Parma Calcio 1913 vs. AC Monza: O/U 2.5",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f3127c15c2d32b58f5feff1267680ffc"
-    ],
-    "title": "AC Monza at Parma Calcio 1913",
-    "no_cost_cents": 11
-   },
-   "total_cost_cents": 27,
-   "edge_bps": 7300,
-   "detected_at": "2026-09-06T14:55:42.791205+00:00"
-  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -162,34 +93,11 @@
      "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
     ],
     "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 24
+    "no_cost_cents": 30
    },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-09-06T14:52:55.323411+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01dcffd7cf2e379206bbcb492b1453a9afaa659d2bb4066629dd0ab8d9cfe229"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 4.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "caa07598b195dcbcfd059a577b370986"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 31
-   },
-   "total_cost_cents": 33,
-   "edge_bps": 6700,
-   "detected_at": "2026-09-06T14:57:00.455108+00:00"
+   "total_cost_cents": 38,
+   "edge_bps": 6200,
+   "detected_at": "2026-09-06T14:57:51.196304+00:00"
   },
   {
    "buy_yes": {
@@ -208,34 +116,11 @@
      "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
     ],
     "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 24
+    "no_cost_cents": 30
    },
-   "total_cost_cents": 34,
-   "edge_bps": 6600,
-   "detected_at": "2026-09-06T14:52:55.373738+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01dcffd7cf2e379206bbcb492b1453a9afaa659d2bb4066629dd0ab8d9cfe229"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 4.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ac93e3c731ca77296d4e01b01eacd324"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 35
-   },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-09-06T14:57:00.455076+00:00"
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-09-06T14:57:51.238426+00:00"
   },
   {
    "buy_yes": {
@@ -254,57 +139,11 @@
      "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
     ],
     "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 24
+    "no_cost_cents": 30
    },
-   "total_cost_cents": 39,
-   "edge_bps": 6100,
-   "detected_at": "2026-09-06T14:52:55.477781+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x10d4eb1740593e60f7942a56d716b69a334ad843301d6ed3b29ef555cebf2361"
-    ],
-    "title": "Parma Calcio 1913 vs. AC Monza: O/U 2.5",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "05612b5ee4fa43d9f762c615541534d3"
-    ],
-    "title": "AC Monza at Parma Calcio 1913",
-    "no_cost_cents": 24
-   },
-   "total_cost_cents": 40,
-   "edge_bps": 6000,
-   "detected_at": "2026-09-06T14:55:42.866331+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x741c62b948cb3c0997030307911ffbd1778533fcc8a22c59fbf35bcd330f3cf0"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 3.5",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "07f7ef8b49d93e3dc33b1dcdec43b25a"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 21
-   },
-   "total_cost_cents": 40,
-   "edge_bps": 6000,
-   "detected_at": "2026-09-06T14:56:50.172100+00:00"
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-06T14:57:51.359473+00:00"
   },
   {
    "buy_yes": {
@@ -323,264 +162,11 @@
      "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
     ],
     "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 24
+    "no_cost_cents": 30
    },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-09-06T14:52:55.414477+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x10d4eb1740593e60f7942a56d716b69a334ad843301d6ed3b29ef555cebf2361"
-    ],
-    "title": "Parma Calcio 1913 vs. AC Monza: O/U 2.5",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "63061f3f0d026245c63663d767e16702"
-    ],
-    "title": "AC Monza at Parma Calcio 1913",
-    "no_cost_cents": 32
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-06T14:55:42.810195+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01dcffd7cf2e379206bbcb492b1453a9afaa659d2bb4066629dd0ab8d9cfe229"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 4.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5f6747ffedaf8cceea0bcbc5039f8f15"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 46
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-06T14:57:00.455100+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x741c62b948cb3c0997030307911ffbd1778533fcc8a22c59fbf35bcd330f3cf0"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 3.5",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "caa07598b195dcbcfd059a577b370986"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 31
-   },
-   "total_cost_cents": 50,
-   "edge_bps": 5000,
-   "detected_at": "2026-09-06T14:56:50.274996+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x741c62b948cb3c0997030307911ffbd1778533fcc8a22c59fbf35bcd330f3cf0"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 3.5",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ac93e3c731ca77296d4e01b01eacd324"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 35
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-06T14:56:50.235654+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01dcffd7cf2e379206bbcb492b1453a9afaa659d2bb4066629dd0ab8d9cfe229"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 4.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "011a594b9a9ac8b310c7ac843fff76b4"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 55
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-06T14:57:00.455056+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x741c62b948cb3c0997030307911ffbd1778533fcc8a22c59fbf35bcd330f3cf0"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 3.5",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5f6747ffedaf8cceea0bcbc5039f8f15"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 46
-   },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-06T14:56:50.127036+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01dcffd7cf2e379206bbcb492b1453a9afaa659d2bb4066629dd0ab8d9cfe229"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 4.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "04e476b396fb85e58a47966e0bb8fc24"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 66
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-06T14:57:00.455094+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01dcffd7cf2e379206bbcb492b1453a9afaa659d2bb4066629dd0ab8d9cfe229"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 4.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5a0f8f9f8dd9803b0436ed13d8db4a9b"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 69
-   },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-06T14:57:00.455117+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x741c62b948cb3c0997030307911ffbd1778533fcc8a22c59fbf35bcd330f3cf0"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 3.5",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "011a594b9a9ac8b310c7ac843fff76b4"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 55
-   },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-06T14:56:50.207977+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x01dcffd7cf2e379206bbcb492b1453a9afaa659d2bb4066629dd0ab8d9cfe229"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 4.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e8fae4523cc9bd30cb2c00e1a3e856be"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 80
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-06T14:57:00.455084+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x10d4eb1740593e60f7942a56d716b69a334ad843301d6ed3b29ef555cebf2361"
-    ],
-    "title": "Parma Calcio 1913 vs. AC Monza: O/U 2.5",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ff469ff56f84591d3fd100d85c878692"
-    ],
-    "title": "AC Monza at Parma Calcio 1913",
-    "no_cost_cents": 68
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-06T14:55:42.773137+00:00"
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-06T14:57:51.279382+00:00"
   },
   {
    "buy_yes": {
@@ -590,7 +176,7 @@
      "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
     ],
     "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 76
+    "ask_cents": 70
    },
    "buy_no": {
     "venue": "prophetx",
@@ -601,32 +187,9 @@
     "title": "FC Barcelona at Valencia CF",
     "no_cost_cents": 9
    },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-06T14:52:55.436839+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x741c62b948cb3c0997030307911ffbd1778533fcc8a22c59fbf35bcd330f3cf0"
-    ],
-    "title": "Everton FC vs. Manchester United FC: O/U 3.5",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "04e476b396fb85e58a47966e0bb8fc24"
-    ],
-    "title": "Manchester United FC at Everton FC",
-    "no_cost_cents": 66
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-06T14:56:50.102454+00:00"
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-06T14:57:51.300560+00:00"
   },
   {
    "buy_yes": {
@@ -636,7 +199,7 @@
      "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
     ],
     "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 76
+    "ask_cents": 70
    },
    "buy_no": {
     "venue": "prophetx",
@@ -647,9 +210,55 @@
     "title": "FC Barcelona at Valencia CF",
     "no_cost_cents": 10
    },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-06T14:52:55.339963+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-06T14:57:51.215060+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
+    ],
+    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
+    "ask_cents": 70
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "14a6320a4c08aa53758e40242d990724"
+    ],
+    "title": "FC Barcelona at Valencia CF",
+    "no_cost_cents": 15
+   },
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-09-06T14:57:51.262835+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x2194323ab6c93bbd680bdeab28324b686abb2f44199383edf864a67612d611ca"
+    ],
+    "title": "Valencia CF vs. FC Barcelona: O/U 3.5",
+    "ask_cents": 70
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "3736fabef5cbe5a6832df98634c72afd"
+    ],
+    "title": "FC Barcelona at Valencia CF",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-06T14:57:51.332059+00:00"
   }
  ]
 }
