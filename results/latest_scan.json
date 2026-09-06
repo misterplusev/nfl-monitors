@@ -1,79 +1,195 @@
 {
- "scanned_at": "2026-09-06T07:00:06.733924+00:00",
+ "scanned_at": "2026-09-06T07:02:12.381436+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 122.9,
+ "loop_uptime_min": 125.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 97935,
+   "markets": 99762,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 8902,
-   "last_tick_age_s": 2.6
+   "markets": 9336,
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 121,
-   "last_tick_age_s": 0.9
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 268,
-   "last_tick_age_s": 0.4
+   "markets": 271,
+   "last_tick_age_s": 15.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 4,
-   "last_tick_age_s": 7040.3
+   "last_tick_age_s": 7165.9
   }
  ],
  "totals": {
-  "markets_tracked": 107230,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 109494,
+  "pairs_married": 5,
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 59,
-  "gist_errors": 128,
+  "commits": 60,
+  "gist_errors": 130,
   "hot_errors": 0,
-  "kalshi.sweeps": 629,
-  "kalshi.ticks": 3514962,
-  "kalshi.updates": 1717560,
-  "kalshi.ws_ticks": 3514962,
-  "kalshi.ws_trades": 704759,
+  "kalshi.sweeps": 639,
+  "kalshi.ticks": 3561380,
+  "kalshi.updates": 1738451,
+  "kalshi.ws_ticks": 3561380,
+  "kalshi.ws_trades": 712594,
   "live_evals_fired": 394,
-  "novig.rest_updates": 1266,
-  "novig.sweeps": 629,
-  "novig.ticks": 76051,
-  "novig.updates": 1266,
-  "pairs_blocked_antonym_date": 72868,
-  "pmglobal.rest_updates": 3155,
-  "pmglobal.sweeps": 629,
-  "pmglobal.ticks": 74574,
-  "pmglobal.updates": 6677,
+  "novig.rest_updates": 1276,
+  "novig.sweeps": 638,
+  "novig.ticks": 78175,
+  "novig.updates": 1276,
+  "pairs_blocked_antonym_date": 74176,
+  "pmglobal.rest_updates": 3191,
+  "pmglobal.sweeps": 638,
+  "pmglobal.ticks": 75618,
+  "pmglobal.updates": 6751,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 984258,
-  "pmglobal.ws_ticks": 11574,
-  "pmus.rest_updates": 28979,
-  "pmus.sweeps": 629,
-  "pmus.ticks": 4585083,
-  "pmus.updates": 28979,
-  "pmus_x.last_count": 6602,
-  "pmus_x.sweeps": 630,
+  "pmglobal.ws_msgs": 993347,
+  "pmglobal.ws_ticks": 11718,
+  "pmus.rest_updates": 29420,
+  "pmus.sweeps": 639,
+  "pmus.ticks": 4650298,
+  "pmus.updates": 29420,
+  "pmus_x.last_count": 6456,
+  "pmus_x.sweeps": 640,
   "prophetx.ticks": 71,
   "prophetx.updates": 35,
-  "prophetx.ws_errors": 420,
+  "prophetx.ws_errors": 427,
   "px.evt_scanned": 2,
-  "pxboard.sweeps": 628,
-  "supa_errors": 1931
+  "pxboard.sweeps": 638,
+  "supa_errors": 1960
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a054f5-4b11-75e2-afa8-7cdcf82132ac"
+    ],
+    "title": "Arsenal -1.5 (EPL)",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "486508"
+    ],
+    "title": "Arsenal EPL Points",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-06T07:02:12.381369+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a054f5-4b11-75e2-afa8-7cdcf82132ac"
+    ],
+    "title": "Arsenal -1.5 (EPL)",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "486507"
+    ],
+    "title": "Arsenal EPL Points",
+    "no_cost_cents": 25
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-06T07:02:12.381330+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a054f5-4b11-75e2-afa8-7cdcf82132ac"
+    ],
+    "title": "Arsenal -1.5 (EPL)",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "486506"
+    ],
+    "title": "Arsenal EPL Points",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-06T07:02:12.381363+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "486504"
+    ],
+    "title": "Arsenal EPL Points",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a054f5-4b11-75e2-afa8-7cdcf82132ac"
+    ],
+    "title": "Arsenal -1.5 (EPL)",
+    "no_cost_cents": 71
+   },
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-06T07:02:12.381377+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a054f5-4b11-75e2-afa8-7cdcf82132ac"
+    ],
+    "title": "Arsenal -1.5 (EPL)",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "486505"
+    ],
+    "title": "Arsenal EPL Points",
+    "no_cost_cents": 55
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-06T07:02:12.381357+00:00"
+  }
+ ]
 }
