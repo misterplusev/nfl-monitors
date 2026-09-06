@@ -1,19 +1,19 @@
 {
- "scanned_at": "2026-09-06T07:12:24.870849+00:00",
+ "scanned_at": "2026-09-06T07:14:27.525782+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 135.2,
+ "loop_uptime_min": 137.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 103327,
+   "markets": 103911,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 12994,
+   "markets": 14292,
    "last_tick_age_s": 0.1
   },
   {
@@ -26,54 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 275,
-   "last_tick_age_s": 12.7
+   "last_tick_age_s": 9.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 4,
-   "last_tick_age_s": 7778.4
+   "last_tick_age_s": 7901.1
   }
  ],
  "totals": {
-  "markets_tracked": 116723,
-  "pairs_married": 19,
-  "arbitrages": 19
+  "markets_tracked": 118605,
+  "pairs_married": 22,
+  "arbitrages": 22
  },
  "stats": {
-  "commits": 65,
-  "gist_errors": 141,
+  "commits": 66,
+  "gist_errors": 143,
   "hot_errors": 0,
-  "kalshi.sweeps": 693,
-  "kalshi.ticks": 3798727,
-  "kalshi.updates": 1844140,
-  "kalshi.ws_ticks": 3798727,
-  "kalshi.ws_trades": 751898,
+  "kalshi.sweeps": 704,
+  "kalshi.ticks": 3857175,
+  "kalshi.updates": 1871757,
+  "kalshi.ws_ticks": 3857175,
+  "kalshi.ws_trades": 764178,
   "live_evals_fired": 399,
-  "novig.rest_updates": 1308,
-  "novig.sweeps": 692,
-  "novig.ticks": 90922,
-  "novig.updates": 1308,
-  "pairs_blocked_antonym_date": 81479,
-  "pmglobal.rest_updates": 3390,
-  "pmglobal.sweeps": 692,
-  "pmglobal.ticks": 81794,
-  "pmglobal.updates": 7142,
+  "novig.rest_updates": 1322,
+  "novig.sweeps": 703,
+  "novig.ticks": 93529,
+  "novig.updates": 1322,
+  "pairs_blocked_antonym_date": 83005,
+  "pmglobal.rest_updates": 3426,
+  "pmglobal.sweeps": 703,
+  "pmglobal.ticks": 83045,
+  "pmglobal.updates": 7218,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1027711,
-  "pmglobal.ws_ticks": 12494,
-  "pmus.rest_updates": 33082,
-  "pmus.sweeps": 693,
-  "pmus.ticks": 4946920,
-  "pmus.updates": 33082,
-  "pmus_x.last_count": 5698,
-  "pmus_x.sweeps": 694,
+  "pmglobal.ws_msgs": 1037179,
+  "pmglobal.ws_ticks": 12645,
+  "pmus.rest_updates": 34397,
+  "pmus.sweeps": 704,
+  "pmus.ticks": 5011561,
+  "pmus.updates": 34397,
+  "pmus_x.last_count": 6061,
+  "pmus_x.sweeps": 705,
   "prophetx.ticks": 71,
   "prophetx.updates": 35,
-  "prophetx.ws_errors": 463,
+  "prophetx.ws_errors": 470,
   "px.evt_scanned": 2,
-  "pxboard.sweeps": 692,
-  "supa_errors": 2122
+  "pxboard.sweeps": 703,
+  "supa_errors": 2155
  },
  "arbitrages": [
   {
@@ -97,7 +97,7 @@
    },
    "total_cost_cents": 47,
    "edge_bps": 5300,
-   "detected_at": "2026-09-06T07:12:24.870688+00:00"
+   "detected_at": "2026-09-06T07:14:27.525606+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 49,
    "edge_bps": 5100,
-   "detected_at": "2026-09-06T07:12:24.870719+00:00"
+   "detected_at": "2026-09-06T07:14:27.525714+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +143,7 @@
    },
    "total_cost_cents": 50,
    "edge_bps": 5000,
-   "detected_at": "2026-09-06T07:12:24.870713+00:00"
+   "detected_at": "2026-09-06T07:14:27.525709+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +189,7 @@
    },
    "total_cost_cents": 57,
    "edge_bps": 4300,
-   "detected_at": "2026-09-06T07:12:24.870761+00:00"
+   "detected_at": "2026-09-06T07:14:27.525666+00:00"
   },
   {
    "buy_yes": {
@@ -258,53 +258,7 @@
    },
    "total_cost_cents": 61,
    "edge_bps": 3900,
-   "detected_at": "2026-09-06T07:12:24.870786+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
-    ],
-    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
-    "ask_cents": 62
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "577635"
-    ],
-    "title": "Will the Frosinone Calcio cover 1.5 vs the Venezia FC in FRO vs VEN?",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:12:24.870734+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "571773"
-    ],
-    "title": "Will Drake Maye record 4+ passing touchdowns?",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a01c92-8e9a-7411-ae75-cf30448d3c9f"
-    ],
-    "title": "Drake Maye 1.5 PASSING_TOUCHDOWNS (NFL)",
-    "no_cost_cents": 62
-   },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:12:24.870742+00:00"
+   "detected_at": "2026-09-06T07:14:27.525701+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +281,53 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:12:24.870755+00:00"
+   "detected_at": "2026-09-06T07:14:27.525653+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577635"
+    ],
+    "title": "Will the Frosinone Calcio cover 1.5 vs the Venezia FC in FRO vs VEN?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-06T07:14:27.525671+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "571773"
+    ],
+    "title": "Will Drake Maye record 4+ passing touchdowns?",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a01c92-8e9a-7411-ae75-cf30448d3c9f"
+    ],
+    "title": "Drake Maye 1.5 PASSING_TOUCHDOWNS (NFL)",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-06T07:14:27.525677+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +350,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:12:24.870767+00:00"
+   "detected_at": "2026-09-06T07:14:27.525696+00:00"
   },
   {
    "buy_yes": {
@@ -373,7 +373,7 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-06T07:12:24.870747+00:00"
+   "detected_at": "2026-09-06T07:14:27.525689+00:00"
   },
   {
    "buy_yes": {
@@ -396,7 +396,30 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-06T07:12:24.870792+00:00"
+   "detected_at": "2026-09-06T07:14:27.525719+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a04c0f-4f38-7801-8dec-57ddeb7918d8"
+    ],
+    "title": "Josh Allen 1.5 PASSING_TOUCHDOWNS (NFL)",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "599838"
+    ],
+    "title": "Will Josh Allen record 1+ passing touchdowns?",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-06T07:14:27.525646+00:00"
   },
   {
    "buy_yes": {
@@ -442,7 +465,30 @@
    },
    "total_cost_cents": 79,
    "edge_bps": 2100,
-   "detected_at": "2026-09-06T07:12:24.870775+00:00"
+   "detected_at": "2026-09-06T07:14:27.525638+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "599753"
+    ],
+    "title": "Will Joe Burrow record 4+ passing touchdowns?",
+    "ask_cents": 16
+   },
+   "buy_no": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a054e0-17c7-7b73-a1e5-b77075ee7b86"
+    ],
+    "title": "Joe Burrow 2.5 PASSING_TOUCHDOWNS (NFL)",
+    "no_cost_cents": 70
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-06T07:14:27.525629+00:00"
   },
   {
    "buy_yes": {
@@ -488,7 +534,7 @@
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-09-06T07:12:24.870726+00:00"
+   "detected_at": "2026-09-06T07:14:27.525660+00:00"
   },
   {
    "buy_yes": {
@@ -511,7 +557,30 @@
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-09-06T07:12:24.870780+00:00"
+   "detected_at": "2026-09-06T07:14:27.525683+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a054e0-17c7-7b73-a1e5-b77075ee7b86"
+    ],
+    "title": "Joe Burrow 2.5 PASSING_TOUCHDOWNS (NFL)",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "599756"
+    ],
+    "title": "Will Joe Burrow record 2+ passing touchdowns?",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-06T07:14:27.525725+00:00"
   }
  ]
 }
