@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-06T05:36:27.930125+00:00",
+ "scanned_at": "2026-09-06T05:38:34.558451+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 39.3,
+ "loop_uptime_min": 41.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 59877,
+   "markets": 61330,
    "last_tick_age_s": 0.0
   },
   {
@@ -25,101 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 118,
-   "last_tick_age_s": 12.6
+   "markets": 119,
+   "last_tick_age_s": 10.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 4,
-   "last_tick_age_s": 2021.4
+   "last_tick_age_s": 2148.0
   }
  ],
  "totals": {
-  "markets_tracked": 67397,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 68851,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 18,
-  "gist_errors": 41,
+  "commits": 19,
+  "gist_errors": 43,
   "hot_errors": 0,
-  "kalshi.sweeps": 197,
-  "kalshi.ticks": 1249981,
-  "kalshi.updates": 619564,
-  "kalshi.ws_ticks": 1249981,
-  "kalshi.ws_trades": 268500,
+  "kalshi.sweeps": 208,
+  "kalshi.ticks": 1319192,
+  "kalshi.updates": 652077,
+  "kalshi.ws_ticks": 1319192,
+  "kalshi.ws_trades": 283486,
   "live_evals_fired": 394,
-  "novig.rest_updates": 761,
-  "novig.sweeps": 196,
-  "novig.ticks": 18765,
-  "novig.updates": 761,
-  "pairs_blocked_antonym_date": 18204,
-  "pmglobal.rest_updates": 1283,
-  "pmglobal.sweeps": 196,
-  "pmglobal.ticks": 24192,
-  "pmglobal.updates": 2796,
-  "pmglobal.ws_msgs": 560450,
-  "pmglobal.ws_ticks": 4492,
-  "pmus.rest_updates": 15093,
-  "pmus.sweeps": 197,
-  "pmus.ticks": 1442742,
-  "pmus.updates": 15093,
+  "novig.rest_updates": 782,
+  "novig.sweeps": 207,
+  "novig.ticks": 19766,
+  "novig.updates": 782,
+  "pairs_blocked_antonym_date": 19240,
+  "pmglobal.rest_updates": 1339,
+  "pmglobal.sweeps": 207,
+  "pmglobal.ticks": 25509,
+  "pmglobal.updates": 2921,
+  "pmglobal.ws_msgs": 584419,
+  "pmglobal.ws_ticks": 4709,
+  "pmus.rest_updates": 15516,
+  "pmus.sweeps": 208,
+  "pmus.ticks": 1522877,
+  "pmus.updates": 15516,
   "pmus_x.last_count": 7285,
-  "pmus_x.sweeps": 198,
+  "pmus_x.sweeps": 209,
   "prophetx.ticks": 71,
   "prophetx.updates": 35,
-  "prophetx.ws_errors": 131,
+  "prophetx.ws_errors": 138,
   "px.evt_scanned": 2,
-  "pxboard.sweeps": 196,
-  "supa_errors": 608
+  "pxboard.sweeps": 207,
+  "supa_errors": 643
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8f0f38c0dba6c51910d7913bc008ca35"
-    ],
-    "title": "UNLV at Hawaii",
-    "ask_cents": 29
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5d55e68611d18120ef41e8100ac2a3ca5aaac1f8ceb969c6c5514fccb9eb8198"
-    ],
-    "title": "UNLV vs. Hawai'i",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 30,
-   "edge_bps": 7000,
-   "detected_at": "2026-09-06T05:36:27.930052+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "847691f2ad97990f69c7c419d8f2276f"
-    ],
-    "title": "UNLV at Hawaii",
-    "ask_cents": 77
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5d55e68611d18120ef41e8100ac2a3ca5aaac1f8ceb969c6c5514fccb9eb8198"
-    ],
-    "title": "UNLV vs. Hawai'i",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-06T05:36:27.930074+00:00"
-  }
- ]
+ "arbitrages": []
 }
