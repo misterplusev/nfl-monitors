@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-06T07:08:14.939085+00:00",
+ "scanned_at": "2026-09-06T07:10:15.349842+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 131.1,
+ "loop_uptime_min": 133.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 101909,
+   "markets": 102750,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 10336,
-   "last_tick_age_s": 2.8
+   "markets": 11508,
+   "last_tick_age_s": 2.4
   },
   {
    "venue": "pmglobal",
@@ -25,57 +25,126 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 272,
-   "last_tick_age_s": 0.1
+   "markets": 273,
+   "last_tick_age_s": 8.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 4,
-   "last_tick_age_s": 7528.5
+   "last_tick_age_s": 7648.9
   }
  ],
  "totals": {
-  "markets_tracked": 112642,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 114656,
+  "pairs_married": 19,
+  "arbitrages": 19
  },
  "stats": {
-  "commits": 63,
-  "gist_errors": 137,
+  "commits": 64,
+  "gist_errors": 139,
   "hot_errors": 0,
-  "kalshi.sweeps": 671,
-  "kalshi.ticks": 3699582,
-  "kalshi.updates": 1799938,
-  "kalshi.ws_ticks": 3699582,
-  "kalshi.ws_trades": 732705,
+  "kalshi.sweeps": 682,
+  "kalshi.ticks": 3745551,
+  "kalshi.updates": 1820726,
+  "kalshi.ws_ticks": 3745551,
+  "kalshi.ws_trades": 741557,
   "live_evals_fired": 399,
-  "novig.rest_updates": 1292,
-  "novig.sweeps": 671,
-  "novig.ticks": 85963,
-  "novig.updates": 1292,
-  "pairs_blocked_antonym_date": 78536,
-  "pmglobal.rest_updates": 3314,
-  "pmglobal.sweeps": 671,
-  "pmglobal.ticks": 79374,
-  "pmglobal.updates": 6994,
+  "novig.rest_updates": 1296,
+  "novig.sweeps": 681,
+  "novig.ticks": 88323,
+  "novig.updates": 1296,
+  "pairs_blocked_antonym_date": 80062,
+  "pmglobal.rest_updates": 3355,
+  "pmglobal.sweeps": 682,
+  "pmglobal.ticks": 80645,
+  "pmglobal.updates": 7076,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1013350,
-  "pmglobal.ws_ticks": 12174,
-  "pmus.rest_updates": 30424,
-  "pmus.sweeps": 671,
-  "pmus.ticks": 4827914,
-  "pmus.updates": 30424,
-  "pmus_x.last_count": 5202,
-  "pmus_x.sweeps": 672,
+  "pmglobal.ws_msgs": 1020929,
+  "pmglobal.ws_ticks": 12345,
+  "pmus.rest_updates": 31596,
+  "pmus.sweeps": 682,
+  "pmus.ticks": 4885244,
+  "pmus.updates": 31596,
+  "pmus_x.last_count": 5316,
+  "pmus_x.sweeps": 683,
   "prophetx.ticks": 71,
   "prophetx.updates": 35,
-  "prophetx.ws_errors": 449,
+  "prophetx.ws_errors": 456,
   "px.evt_scanned": 2,
-  "pxboard.sweeps": 670,
-  "supa_errors": 2057
+  "pxboard.sweeps": 681,
+  "supa_errors": 2090
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577521"
+    ],
+    "title": "Will the Frosinone Calcio cover -2.5 vs the Venezia FC in FRO vs VEN?",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 47,
+   "edge_bps": 5300,
+   "detected_at": "2026-09-06T07:10:15.349672+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577584"
+    ],
+    "title": "Will the Frosinone Calcio cover -1.5 vs the Venezia FC in FRO vs VEN?",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 49,
+   "edge_bps": 5100,
+   "detected_at": "2026-09-06T07:10:15.349702+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577583"
+    ],
+    "title": "Will the Frosinone Calcio cover -2.5 vs the Venezia FC in FRO vs VEN?",
+    "ask_cents": 11
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 50,
+   "edge_bps": 5000,
+   "detected_at": "2026-09-06T07:10:15.349695+00:00"
+  },
   {
    "buy_yes": {
     "venue": "novig",
@@ -98,6 +167,29 @@
    "total_cost_cents": 51,
    "edge_bps": 4900,
    "detected_at": "2026-09-06T07:02:15.605717+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577522"
+    ],
+    "title": "Will the Frosinone Calcio cover -1.5 vs the Venezia FC in FRO vs VEN?",
+    "ask_cents": 18
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-06T07:10:15.349751+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +258,30 @@
    },
    "total_cost_cents": 61,
    "edge_bps": 3900,
-   "detected_at": "2026-09-06T07:08:14.939022+00:00"
+   "detected_at": "2026-09-06T07:10:15.349778+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577635"
+    ],
+    "title": "Will the Frosinone Calcio cover 1.5 vs the Venezia FC in FRO vs VEN?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-06T07:10:15.349720+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +304,99 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:08:14.938986+00:00"
+   "detected_at": "2026-09-06T07:10:15.349729+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577586"
+    ],
+    "title": "Will the Frosinone Calcio cover 2.5 vs the Venezia FC in FRO vs VEN?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-06T07:10:15.349743+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577636"
+    ],
+    "title": "Will the Frosinone Calcio cover 2.5 vs the Venezia FC in FRO vs VEN?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-06T07:10:15.349757+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577524"
+    ],
+    "title": "Will the Frosinone Calcio cover 2.5 vs the Venezia FC in FRO vs VEN?",
+    "no_cost_cents": 6
+   },
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-06T07:10:15.349735+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577576"
+    ],
+    "title": "Will Frosinone Calcio lead Venezia FC at halftime?",
+    "no_cost_cents": 6
+   },
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-06T07:10:15.349784+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +442,7 @@
    },
    "total_cost_cents": 79,
    "edge_bps": 2100,
-   "detected_at": "2026-09-06T07:08:14.939012+00:00"
+   "detected_at": "2026-09-06T07:10:15.349764+00:00"
   },
   {
    "buy_yes": {
@@ -259,6 +466,52 @@
    "total_cost_cents": 89,
    "edge_bps": 1100,
    "detected_at": "2026-09-06T07:02:15.457410+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577634"
+    ],
+    "title": "Will the Frosinone Calcio cover -1.5 vs the Venezia FC in FRO vs VEN?",
+    "ask_cents": 51
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-06T07:10:15.349711+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "577633"
+    ],
+    "title": "Will the Frosinone Calcio cover -2.5 vs the Venezia FC in FRO vs VEN?",
+    "ask_cents": 51
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
+    ],
+    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-06T07:10:15.349771+00:00"
   }
  ]
 }
