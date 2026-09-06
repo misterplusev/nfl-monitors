@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-06T07:24:37.439477+00:00",
+ "scanned_at": "2026-09-06T07:26:39.239892+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 147.5,
+ "loop_uptime_min": 149.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 106687,
-   "last_tick_age_s": 0.2
+   "markets": 107268,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 18471,
-   "last_tick_age_s": 5.0
+   "last_tick_age_s": 5.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 123,
-   "last_tick_age_s": 0.7
+   "markets": 129,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 276,
-   "last_tick_age_s": 2.8
+   "last_tick_age_s": 3.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 4,
-   "last_tick_age_s": 8511.0
+   "last_tick_age_s": 8632.8
   }
  ],
  "totals": {
-  "markets_tracked": 125561,
-  "pairs_married": 33,
+  "markets_tracked": 126148,
+  "pairs_married": 40,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 71,
-  "gist_errors": 154,
+  "commits": 72,
+  "gist_errors": 156,
   "hot_errors": 0,
-  "kalshi.sweeps": 765,
-  "kalshi.ticks": 4100257,
-  "kalshi.updates": 1978442,
-  "kalshi.ws_ticks": 4100257,
-  "kalshi.ws_trades": 803114,
-  "live_evals_fired": 399,
-  "novig.rest_updates": 1395,
-  "novig.sweeps": 765,
-  "novig.ticks": 108223,
-  "novig.updates": 1395,
-  "pairs_blocked_antonym_date": 91398,
-  "pmglobal.rest_updates": 3660,
-  "pmglobal.sweeps": 765,
-  "pmglobal.ticks": 90061,
-  "pmglobal.updates": 7697,
+  "kalshi.sweeps": 784,
+  "kalshi.ticks": 4151307,
+  "kalshi.updates": 2000681,
+  "kalshi.ws_ticks": 4151307,
+  "kalshi.ws_trades": 810581,
+  "live_evals_fired": 400,
+  "novig.rest_updates": 1429,
+  "novig.sweeps": 783,
+  "novig.ticks": 112489,
+  "novig.updates": 1429,
+  "pairs_blocked_antonym_date": 93905,
+  "pmglobal.rest_updates": 3720,
+  "pmglobal.sweeps": 783,
+  "pmglobal.ticks": 92015,
+  "pmglobal.updates": 7811,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1088977,
-  "pmglobal.ws_ticks": 13461,
+  "pmglobal.ws_msgs": 1103708,
+  "pmglobal.ws_ticks": 13615,
   "pmus.rest_updates": 38577,
-  "pmus.sweeps": 765,
-  "pmus.ticks": 5271557,
+  "pmus.sweeps": 783,
+  "pmus.ticks": 5272721,
   "pmus.updates": 38577,
-  "pmus_x.last_count": 677,
-  "pmus_x.sweeps": 766,
+  "pmus_x.last_count": 4,
+  "pmus_x.sweeps": 784,
   "prophetx.ticks": 71,
   "prophetx.updates": 35,
-  "prophetx.ws_errors": 508,
+  "prophetx.ws_errors": 516,
   "px.evt_scanned": 2,
-  "pxboard.sweeps": 765,
-  "supa_errors": 2340
+  "pxboard.sweeps": 783,
+  "supa_errors": 2390
  },
  "arbitrages": [
   {
@@ -97,7 +97,53 @@
    },
    "total_cost_cents": 47,
    "edge_bps": 5300,
-   "detected_at": "2026-09-06T07:24:37.439131+00:00"
+   "detected_at": "2026-09-06T07:26:39.239610+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3ed5e532b60cc309367e12c8f11d04d82eb3391818ec367a69a77db0d0e98bbc"
+    ],
+    "title": "Eintracht Frankfurt vs. FC Augsburg: O/U 3.5",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "573817"
+    ],
+    "title": "Will the Eintracht Frankfurt cover 1.5 vs the FC Augsburg in FRA vs AUG?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 49,
+   "edge_bps": 5100,
+   "detected_at": "2026-09-06T07:26:39.239632+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3ed5e532b60cc309367e12c8f11d04d82eb3391818ec367a69a77db0d0e98bbc"
+    ],
+    "title": "Eintracht Frankfurt vs. FC Augsburg: O/U 3.5",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "573818"
+    ],
+    "title": "Will the Eintracht Frankfurt cover 2.5 vs the FC Augsburg in FRA vs AUG?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 49,
+   "edge_bps": 5100,
+   "detected_at": "2026-09-06T07:26:39.239649+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +166,30 @@
    },
    "total_cost_cents": 49,
    "edge_bps": 5100,
-   "detected_at": "2026-09-06T07:24:37.439184+00:00"
+   "detected_at": "2026-09-06T07:26:39.239669+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3ed5e532b60cc309367e12c8f11d04d82eb3391818ec367a69a77db0d0e98bbc"
+    ],
+    "title": "Eintracht Frankfurt vs. FC Augsburg: O/U 3.5",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "573793"
+    ],
+    "title": "Will the Eintracht Frankfurt cover 2.5 vs the FC Augsburg in FRA vs AUG?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 49,
+   "edge_bps": 5100,
+   "detected_at": "2026-09-06T07:26:39.239774+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +212,7 @@
    },
    "total_cost_cents": 50,
    "edge_bps": 5000,
-   "detected_at": "2026-09-06T07:24:37.439175+00:00"
+   "detected_at": "2026-09-06T07:26:39.239657+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +235,7 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-09-06T07:02:15.605717+00:00"
+   "detected_at": "2026-09-06T07:25:10.614191+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +258,30 @@
    },
    "total_cost_cents": 53,
    "edge_bps": 4700,
-   "detected_at": "2026-09-06T07:24:37.439272+00:00"
+   "detected_at": "2026-09-06T07:26:39.239728+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3ed5e532b60cc309367e12c8f11d04d82eb3391818ec367a69a77db0d0e98bbc"
+    ],
+    "title": "Eintracht Frankfurt vs. FC Augsburg: O/U 3.5",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "573761"
+    ],
+    "title": "Will the Eintracht Frankfurt cover 1.5 vs the FC Augsburg in FRA vs AUG?",
+    "no_cost_cents": 10
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-06T07:26:39.239733+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +304,7 @@
    },
    "total_cost_cents": 57,
    "edge_bps": 4300,
-   "detected_at": "2026-09-06T07:24:37.439298+00:00"
+   "detected_at": "2026-09-06T07:26:39.239750+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +327,7 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-06T07:02:15.373569+00:00"
+   "detected_at": "2026-09-06T07:25:10.702607+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +350,7 @@
    },
    "total_cost_cents": 61,
    "edge_bps": 3900,
-   "detected_at": "2026-09-06T07:02:15.507633+00:00"
+   "detected_at": "2026-09-06T07:25:10.702646+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +373,7 @@
    },
    "total_cost_cents": 61,
    "edge_bps": 3900,
-   "detected_at": "2026-09-06T07:24:37.439381+00:00"
+   "detected_at": "2026-09-06T07:26:39.239825+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +396,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-09-06T07:24:37.439315+00:00"
+   "detected_at": "2026-09-06T07:26:39.239763+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +419,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:24:37.439204+00:00"
+   "detected_at": "2026-09-06T07:26:39.239681+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +442,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:24:37.439214+00:00"
+   "detected_at": "2026-09-06T07:26:39.239688+00:00"
   },
   {
    "buy_yes": {
@@ -373,7 +465,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:24:37.439288+00:00"
+   "detected_at": "2026-09-06T07:26:39.239744+00:00"
   },
   {
    "buy_yes": {
@@ -396,7 +488,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-06T07:24:37.439305+00:00"
+   "detected_at": "2026-09-06T07:26:39.239756+00:00"
   },
   {
    "buy_yes": {
@@ -419,7 +511,7 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-06T07:24:37.439231+00:00"
+   "detected_at": "2026-09-06T07:26:39.239699+00:00"
   },
   {
    "buy_yes": {
@@ -442,7 +534,7 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-06T07:24:37.439393+00:00"
+   "detected_at": "2026-09-06T07:26:39.239833+00:00"
   },
   {
    "buy_yes": {
@@ -465,7 +557,7 @@
    },
    "total_cost_cents": 70,
    "edge_bps": 3000,
-   "detected_at": "2026-09-06T07:24:37.439280+00:00"
+   "detected_at": "2026-09-06T07:26:39.239739+00:00"
   },
   {
    "buy_yes": {
@@ -484,11 +576,11 @@
      "01a054f5-4b11-75e2-afa8-7cdcf82132ac"
     ],
     "title": "Arsenal -1.5 (EPL)",
-    "no_cost_cents": 70
+    "no_cost_cents": 71
    },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-06T07:02:15.683383+00:00"
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-06T07:25:10.614204+00:00"
   },
   {
    "buy_yes": {
@@ -511,7 +603,7 @@
    },
    "total_cost_cents": 75,
    "edge_bps": 2500,
-   "detected_at": "2026-09-06T07:24:37.439223+00:00"
+   "detected_at": "2026-09-06T07:26:39.239694+00:00"
   },
   {
    "buy_yes": {
@@ -534,7 +626,7 @@
    },
    "total_cost_cents": 75,
    "edge_bps": 2500,
-   "detected_at": "2026-09-06T07:24:37.439253+00:00"
+   "detected_at": "2026-09-06T07:26:39.239715+00:00"
   },
   {
    "buy_yes": {
@@ -557,99 +649,7 @@
    },
    "total_cost_cents": 79,
    "edge_bps": 2100,
-   "detected_at": "2026-09-06T07:24:37.439348+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "599753"
-    ],
-    "title": "Will Joe Burrow record 4+ passing touchdowns?",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a054e0-17c7-7b73-a1e5-b77075ee7b86"
-    ],
-    "title": "Joe Burrow 2.5 PASSING_TOUCHDOWNS (NFL)",
-    "no_cost_cents": 70
-   },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-09-06T07:24:37.439335+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a054f5-4b11-75e2-afa8-7cdcf82132ac"
-    ],
-    "title": "Arsenal -1.5 (EPL)",
-    "ask_cents": 32
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "486505"
-    ],
-    "title": "Arsenal EPL Points",
-    "no_cost_cents": 55
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-06T07:02:15.457410+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "577634"
-    ],
-    "title": "Will the Frosinone Calcio cover -1.5 vs the Venezia FC in FRO vs VEN?",
-    "ask_cents": 51
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
-    ],
-    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-06T07:24:37.439193+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "577633"
-    ],
-    "title": "Will the Frosinone Calcio cover -2.5 vs the Venezia FC in FRO vs VEN?",
-    "ask_cents": 51
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6726aa4e472746c281e59acd3fb80888a79cff3a362044b7df1299a5bf1a937d"
-    ],
-    "title": "Frosinone Calcio vs. Venezia FC: O/U 2.5",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-06T07:24:37.439357+00:00"
+   "detected_at": "2026-09-06T07:26:39.239790+00:00"
   }
  ]
 }
