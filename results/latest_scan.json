@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-06T22:18:35.245209+00:00",
+ "scanned_at": "2026-09-06T22:20:47.448298+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 4.6,
+ "loop_uptime_min": 6.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 17499,
+   "markets": 21804,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,85 +19,62 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 100,
+   "markets": 102,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 195,
-   "last_tick_age_s": 17.7
+   "markets": 205,
+   "last_tick_age_s": 17.1
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 42,
-   "last_tick_age_s": 14.7
+   "last_tick_age_s": 14.5
   }
  ],
  "totals": {
-  "markets_tracked": 25176,
-  "pairs_married": 16,
-  "arbitrages": 16
+  "markets_tracked": 29493,
+  "pairs_married": 14,
+  "arbitrages": 12
  },
  "stats": {
-  "commits": 1,
-  "gist_errors": 4,
+  "commits": 2,
+  "gist_errors": 6,
   "hot_errors": 0,
-  "kalshi.sweeps": 17,
-  "kalshi.ticks": 177977,
-  "kalshi.updates": 98887,
-  "kalshi.ws_ticks": 177977,
-  "kalshi.ws_trades": 33602,
-  "live_evals_fired": 191,
-  "novig.rest_updates": 519,
-  "novig.sweeps": 16,
-  "novig.ticks": 2973,
-  "novig.updates": 519,
-  "pairs_blocked_antonym_date": 21,
-  "pmglobal.rest_updates": 256,
-  "pmglobal.sweeps": 16,
-  "pmglobal.ticks": 2227,
-  "pmglobal.updates": 443,
-  "pmglobal.ws_msgs": 90987,
-  "pmglobal.ws_ticks": 527,
-  "pmus.rest_updates": 7867,
-  "pmus.sweeps": 17,
-  "pmus.ticks": 132061,
-  "pmus.updates": 7867,
-  "pmus_x.last_count": 7330,
-  "pmus_x.sweeps": 18,
-  "prophetx.ticks": 642,
-  "prophetx.updates": 214,
-  "prophetx.ws_errors": 16,
-  "px.evt_scanned": 40,
-  "pxboard.sweeps": 16,
-  "supa_errors": 64
+  "kalshi.sweeps": 26,
+  "kalshi.ticks": 272761,
+  "kalshi.updates": 148795,
+  "kalshi.ws_ticks": 272761,
+  "kalshi.ws_trades": 51933,
+  "live_evals_fired": 261,
+  "novig.rest_updates": 663,
+  "novig.sweeps": 25,
+  "novig.ticks": 4534,
+  "novig.updates": 663,
+  "pairs_blocked_antonym_date": 32,
+  "pmglobal.rest_updates": 311,
+  "pmglobal.sweeps": 25,
+  "pmglobal.ticks": 3349,
+  "pmglobal.updates": 566,
+  "pmglobal.ws_msgs": 136852,
+  "pmglobal.ws_ticks": 749,
+  "pmus.rest_updates": 8082,
+  "pmus.sweeps": 26,
+  "pmus.ticks": 198027,
+  "pmus.updates": 8082,
+  "pmus_x.last_count": 7326,
+  "pmus_x.sweeps": 27,
+  "prophetx.ticks": 960,
+  "prophetx.updates": 281,
+  "prophetx.ws_errors": 24,
+  "px.evt_scanned": 32,
+  "pxboard.sweeps": 25,
+  "supa_errors": 97
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "49647d549a8b9e4082251b8fe7c79b72"
-    ],
-    "title": "St. Louis Cardinals at Colorado Rockies",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd8afe2dd4e380add39d83735747e47bf2f7303a13e34d51e07ba8545020da758"
-    ],
-    "title": "St. Louis Cardinals vs. Colorado Rockies",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 4,
-   "edge_bps": 9600,
-   "detected_at": "2026-09-06T22:18:35.245133+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -106,7 +83,7 @@
      "0x70611030401a307a9581d44ac5272cb5e3b88163072cafe7153d0ffadb79d2b0"
     ],
     "title": "Athletics vs. Seattle Mariners: O/U 7.5",
-    "ask_cents": 4
+    "ask_cents": 5
    },
    "buy_no": {
     "venue": "prophetx",
@@ -115,11 +92,11 @@
      "079440e48646580ec277b4368b713132"
     ],
     "title": "Athletics at Seattle Mariners",
-    "no_cost_cents": 2
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-09-06T22:18:19.502208+00:00"
+   "total_cost_cents": 11,
+   "edge_bps": 8900,
+   "detected_at": "2026-09-06T22:19:24.243723+00:00"
   },
   {
    "buy_yes": {
@@ -129,7 +106,7 @@
      "0x4f9d9c5654e9beb546af817b25fc5a1ff4773d2d1be34646810e4c2458a9d43f"
     ],
     "title": "Athletics vs. Seattle Mariners",
-    "ask_cents": 8
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -138,11 +115,11 @@
      "079440e48646580ec277b4368b713132"
     ],
     "title": "Athletics at Seattle Mariners",
-    "no_cost_cents": 2
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 10,
-   "edge_bps": 9000,
-   "detected_at": "2026-09-06T22:18:19.535927+00:00"
+   "total_cost_cents": 12,
+   "edge_bps": 8800,
+   "detected_at": "2026-09-06T22:20:29.190363+00:00"
   },
   {
    "buy_yes": {
@@ -152,7 +129,7 @@
      "0x7869e27dce78fe6330b2481b4b5a359f8c68508e9fd9364f647fb7f372283baa"
     ],
     "title": "Athletics vs. Seattle Mariners: O/U 6.5",
-    "ask_cents": 8
+    "ask_cents": 7
    },
    "buy_no": {
     "venue": "prophetx",
@@ -161,11 +138,11 @@
      "079440e48646580ec277b4368b713132"
     ],
     "title": "Athletics at Seattle Mariners",
-    "no_cost_cents": 2
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 10,
-   "edge_bps": 9000,
-   "detected_at": "2026-09-06T22:18:19.569560+00:00"
+   "total_cost_cents": 13,
+   "edge_bps": 8700,
+   "detected_at": "2026-09-06T22:19:11.239077+00:00"
   },
   {
    "buy_yes": {
@@ -175,7 +152,7 @@
      "0x0ba6af5681ef9354d084ba74a00d3f74ccc9aa3405101ef2f394d87e0681d5d7"
     ],
     "title": "New York Yankees vs. San Diego Padres",
-    "ask_cents": 23
+    "ask_cents": 14
    },
    "buy_no": {
     "venue": "prophetx",
@@ -186,32 +163,9 @@
     "title": "New York Yankees at San Diego Padres",
     "no_cost_cents": 11
    },
-   "total_cost_cents": 34,
-   "edge_bps": 6600,
-   "detected_at": "2026-09-06T22:18:02.946339+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e0331c904627654c69991b40f96a0377"
-    ],
-    "title": "New York Yankees at San Diego Padres",
-    "ask_cents": 12
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0ba6af5681ef9354d084ba74a00d3f74ccc9aa3405101ef2f394d87e0681d5d7"
-    ],
-    "title": "New York Yankees vs. San Diego Padres",
-    "no_cost_cents": 77
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-06T22:18:02.974241+00:00"
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-09-06T22:20:32.014416+00:00"
   },
   {
    "buy_yes": {
@@ -221,7 +175,7 @@
      "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
     ],
     "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 51
+    "ask_cents": 50
    },
    "buy_no": {
     "venue": "prophetx",
@@ -230,11 +184,11 @@
      "91bd41d624c5b6a5a94835614abe1189"
     ],
     "title": "Minnesota Twins at Chicago White Sox",
-    "no_cost_cents": 41
+    "no_cost_cents": 40
    },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-06T22:18:17.653749+00:00"
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-06T22:20:08.796351+00:00"
   },
   {
    "buy_yes": {
@@ -257,7 +211,53 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-06T22:18:17.597909+00:00"
+   "detected_at": "2026-09-06T22:19:43.015887+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
+    ],
+    "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
+    "ask_cents": 50
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6c3761ad78c030b9e9c02a74a2721d48"
+    ],
+    "title": "Minnesota Twins at Chicago White Sox",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-06T22:19:43.015903+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
+    ],
+    "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
+    "ask_cents": 50
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4eb28df2c77d34bb2cbf280fec2b400a"
+    ],
+    "title": "Minnesota Twins at Chicago White Sox",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-06T22:19:43.050658+00:00"
   },
   {
    "buy_yes": {
@@ -280,53 +280,7 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-09-06T22:18:17.597888+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
-    ],
-    "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 51
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6c3761ad78c030b9e9c02a74a2721d48"
-    ],
-    "title": "Minnesota Twins at Chicago White Sox",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-06T22:18:17.597923+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc761631b6075ccb434e762f6bae85c88bf74ff20f99f152a8825380c8bf30917"
-    ],
-    "title": "Minnesota Twins vs. Chicago White Sox: O/U 8.5",
-    "ask_cents": 51
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4eb28df2c77d34bb2cbf280fec2b400a"
-    ],
-    "title": "Minnesota Twins at Chicago White Sox",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-06T22:18:17.625598+00:00"
+   "detected_at": "2026-09-06T22:19:43.015864+00:00"
   },
   {
    "buy_yes": {
@@ -349,53 +303,30 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-06T22:18:17.597916+00:00"
+   "detected_at": "2026-09-06T22:19:43.015896+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "46603f4a3c469068978ed6159a818611"
+     "e0331c904627654c69991b40f96a0377"
     ],
-    "title": "St. Louis Cardinals at Colorado Rockies",
-    "ask_cents": 94
+    "title": "New York Yankees at San Diego Padres",
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xd8afe2dd4e380add39d83735747e47bf2f7303a13e34d51e07ba8545020da758"
+     "0x0ba6af5681ef9354d084ba74a00d3f74ccc9aa3405101ef2f394d87e0681d5d7"
     ],
-    "title": "St. Louis Cardinals vs. Colorado Rockies",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-06T22:18:35.245155+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x70611030401a307a9581d44ac5272cb5e3b88163072cafe7153d0ffadb79d2b0"
-    ],
-    "title": "Athletics vs. Seattle Mariners: O/U 7.5",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5e3d0ea4be5c322c67896ad58b7d2dd6"
-    ],
-    "title": "Athletics at Seattle Mariners",
-    "no_cost_cents": 94
+    "title": "New York Yankees vs. San Diego Padres",
+    "no_cost_cents": 86
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-06T22:18:06.468606+00:00"
+   "detected_at": "2026-09-06T22:20:32.054557+00:00"
   },
   {
    "buy_yes": {
@@ -405,7 +336,7 @@
      "5e3d0ea4be5c322c67896ad58b7d2dd6"
     ],
     "title": "Athletics at Seattle Mariners",
-    "ask_cents": 7
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -414,34 +345,11 @@
      "0x7869e27dce78fe6330b2481b4b5a359f8c68508e9fd9364f647fb7f372283baa"
     ],
     "title": "Athletics vs. Seattle Mariners: O/U 6.5",
-    "no_cost_cents": 92
+    "no_cost_cents": 93
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-06T22:18:06.504624+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5e3d0ea4be5c322c67896ad58b7d2dd6"
-    ],
-    "title": "Athletics at Seattle Mariners",
-    "ask_cents": 7
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x4f9d9c5654e9beb546af817b25fc5a1ff4773d2d1be34646810e4c2458a9d43f"
-    ],
-    "title": "Athletics vs. Seattle Mariners",
-    "no_cost_cents": 92
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-06T22:18:16.169427+00:00"
+   "detected_at": "2026-09-06T22:19:58.978589+00:00"
   }
  ]
 }
