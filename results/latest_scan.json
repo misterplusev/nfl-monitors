@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-06T22:41:04.863691+00:00",
+ "scanned_at": "2026-09-06T22:43:07.236283+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 27.1,
+ "loop_uptime_min": 29.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 48657,
+   "markets": 50736,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7442,
-   "last_tick_age_s": 0.0
+   "markets": 7443,
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "pmglobal",
@@ -25,79 +25,56 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 223,
-   "last_tick_age_s": 11.4
+   "markets": 250,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 42,
-   "last_tick_age_s": 1212.0
+   "last_tick_age_s": 1334.4
   }
  ],
  "totals": {
-  "markets_tracked": 56471,
+  "markets_tracked": 58578,
   "pairs_married": 20,
   "arbitrages": 20
  },
  "stats": {
-  "commits": 12,
-  "gist_errors": 27,
+  "commits": 13,
+  "gist_errors": 30,
   "hot_errors": 0,
-  "kalshi.sweeps": 130,
-  "kalshi.ticks": 1126786,
-  "kalshi.updates": 592257,
-  "kalshi.ws_ticks": 1126786,
-  "kalshi.ws_trades": 228610,
-  "live_evals_fired": 725,
-  "novig.rest_updates": 2666,
-  "novig.sweeps": 129,
-  "novig.ticks": 23359,
-  "novig.updates": 2666,
-  "pairs_blocked_antonym_date": 175,
-  "pmglobal.rest_updates": 850,
-  "pmglobal.sweeps": 129,
-  "pmglobal.ticks": 15897,
-  "pmglobal.updates": 1693,
-  "pmglobal.ws_msgs": 449925,
-  "pmglobal.ws_ticks": 2897,
-  "pmus.rest_updates": 10037,
-  "pmus.sweeps": 130,
-  "pmus.ticks": 963938,
-  "pmus.updates": 10037,
-  "pmus_x.last_count": 7440,
-  "pmus_x.sweeps": 131,
+  "kalshi.sweeps": 140,
+  "kalshi.ticks": 1217435,
+  "kalshi.updates": 637831,
+  "kalshi.ws_ticks": 1217435,
+  "kalshi.ws_trades": 245426,
+  "live_evals_fired": 751,
+  "novig.rest_updates": 2824,
+  "novig.sweeps": 140,
+  "novig.ticks": 25461,
+  "novig.updates": 2824,
+  "pairs_blocked_antonym_date": 201,
+  "pmglobal.rest_updates": 917,
+  "pmglobal.sweeps": 140,
+  "pmglobal.ticks": 17214,
+  "pmglobal.updates": 1832,
+  "pmglobal.ws_msgs": 471289,
+  "pmglobal.ws_ticks": 3114,
+  "pmus.rest_updates": 10214,
+  "pmus.sweeps": 140,
+  "pmus.ticks": 1038346,
+  "pmus.updates": 10214,
+  "pmus_x.last_count": 7441,
+  "pmus_x.sweeps": 141,
   "prophetx.ticks": 967,
   "prophetx.updates": 288,
-  "prophetx.ws_errors": 93,
+  "prophetx.ws_errors": 101,
   "px.evt_scanned": 7,
-  "pxboard.sweeps": 129,
-  "supa_errors": 447
+  "pxboard.sweeps": 139,
+  "supa_errors": 482
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x70611030401a307a9581d44ac5272cb5e3b88163072cafe7153d0ffadb79d2b0"
-    ],
-    "title": "Athletics vs. Seattle Mariners: O/U 7.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "079440e48646580ec277b4368b713132"
-    ],
-    "title": "Athletics at Seattle Mariners",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 5,
-   "edge_bps": 9500,
-   "detected_at": "2026-09-06T22:39:07.931207+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -142,7 +119,30 @@
    },
    "total_cost_cents": 5,
    "edge_bps": 9500,
-   "detected_at": "2026-09-06T22:40:33.365716+00:00"
+   "detected_at": "2026-09-06T22:42:12.797177+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x70611030401a307a9581d44ac5272cb5e3b88163072cafe7153d0ffadb79d2b0"
+    ],
+    "title": "Athletics vs. Seattle Mariners: O/U 7.5",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "079440e48646580ec277b4368b713132"
+    ],
+    "title": "Athletics at Seattle Mariners",
+    "no_cost_cents": 3
+   },
+   "total_cost_cents": 5,
+   "edge_bps": 9500,
+   "detected_at": "2026-09-06T22:42:51.184236+00:00"
   },
   {
    "buy_yes": {
@@ -165,7 +165,7 @@
    },
    "total_cost_cents": 18,
    "edge_bps": 8200,
-   "detected_at": "2026-09-06T22:40:44.422115+00:00"
+   "detected_at": "2026-09-06T22:42:12.864906+00:00"
   },
   {
    "buy_yes": {
@@ -188,7 +188,7 @@
    },
    "total_cost_cents": 80,
    "edge_bps": 2000,
-   "detected_at": "2026-09-06T22:39:07.825772+00:00"
+   "detected_at": "2026-09-06T22:43:05.976047+00:00"
   },
   {
    "buy_yes": {
@@ -211,7 +211,7 @@
    },
    "total_cost_cents": 80,
    "edge_bps": 2000,
-   "detected_at": "2026-09-06T22:41:04.863626+00:00"
+   "detected_at": "2026-09-06T22:43:07.236224+00:00"
   },
   {
    "buy_yes": {
@@ -234,7 +234,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-06T22:39:07.755773+00:00"
+   "detected_at": "2026-09-06T22:43:05.898363+00:00"
   },
   {
    "buy_yes": {
@@ -257,7 +257,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-06T22:39:07.783331+00:00"
+   "detected_at": "2026-09-06T22:43:05.943635+00:00"
   },
   {
    "buy_yes": {
@@ -280,7 +280,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-06T22:41:04.863614+00:00"
+   "detected_at": "2026-09-06T22:43:07.236212+00:00"
   },
   {
    "buy_yes": {
@@ -303,7 +303,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-06T22:41:04.863621+00:00"
+   "detected_at": "2026-09-06T22:43:07.236219+00:00"
   },
   {
    "buy_yes": {
@@ -326,7 +326,7 @@
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-06T22:39:07.718200+00:00"
+   "detected_at": "2026-09-06T22:43:05.859479+00:00"
   },
   {
    "buy_yes": {
@@ -349,30 +349,7 @@
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-06T22:41:04.863593+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x70611030401a307a9581d44ac5272cb5e3b88163072cafe7153d0ffadb79d2b0"
-    ],
-    "title": "Athletics vs. Seattle Mariners: O/U 7.5",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5e3d0ea4be5c322c67896ad58b7d2dd6"
-    ],
-    "title": "Athletics at Seattle Mariners",
-    "no_cost_cents": 94
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-06T22:39:07.957251+00:00"
+   "detected_at": "2026-09-06T22:43:07.236193+00:00"
   },
   {
    "buy_yes": {
@@ -418,7 +395,30 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-06T22:40:33.399965+00:00"
+   "detected_at": "2026-09-06T22:42:12.831047+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x70611030401a307a9581d44ac5272cb5e3b88163072cafe7153d0ffadb79d2b0"
+    ],
+    "title": "Athletics vs. Seattle Mariners: O/U 7.5",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5e3d0ea4be5c322c67896ad58b7d2dd6"
+    ],
+    "title": "Athletics at Seattle Mariners",
+    "no_cost_cents": 94
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-06T22:42:51.221979+00:00"
   },
   {
    "buy_yes": {
@@ -441,7 +441,7 @@
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-06T22:39:07.645088+00:00"
+   "detected_at": "2026-09-06T22:43:05.775777+00:00"
   },
   {
    "buy_yes": {
@@ -464,7 +464,7 @@
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-06T22:41:04.863633+00:00"
+   "detected_at": "2026-09-06T22:43:07.236232+00:00"
   },
   {
    "buy_yes": {
@@ -487,7 +487,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-06T22:39:07.684379+00:00"
+   "detected_at": "2026-09-06T22:43:05.826255+00:00"
   },
   {
    "buy_yes": {
@@ -510,7 +510,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-06T22:40:44.455797+00:00"
+   "detected_at": "2026-09-06T22:42:12.909664+00:00"
   },
   {
    "buy_yes": {
@@ -533,7 +533,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-06T22:41:04.863641+00:00"
+   "detected_at": "2026-09-06T22:43:07.236237+00:00"
   }
  ]
 }
