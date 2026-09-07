@@ -1,126 +1,79 @@
 {
- "scanned_at": "2026-09-07T21:45:48.884118+00:00",
+ "scanned_at": "2026-09-07T21:47:49.845049+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 145.6,
+ "loop_uptime_min": 147.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 164061,
+   "markets": 165490,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7594,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 5.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 150,
-   "last_tick_age_s": 0.1
+   "markets": 151,
+   "last_tick_age_s": 0.7
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 295,
-   "last_tick_age_s": 17.0
+   "markets": 308,
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 8427.2
+   "last_tick_age_s": 8548.2
   }
  ],
  "totals": {
-  "markets_tracked": 172129,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 173572,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 67,
-  "gist_errors": 131,
+  "commits": 68,
+  "gist_errors": 133,
   "hot_errors": 0,
-  "kalshi.sweeps": 784,
-  "kalshi.ticks": 6015968,
-  "kalshi.updates": 2729948,
-  "kalshi.ws_ticks": 6015968,
-  "kalshi.ws_trades": 1170398,
+  "kalshi.sweeps": 796,
+  "kalshi.ticks": 6100844,
+  "kalshi.updates": 2764441,
+  "kalshi.ws_ticks": 6100844,
+  "kalshi.ws_trades": 1184828,
   "live_evals_fired": 2569,
-  "novig.rest_updates": 13217,
-  "novig.sweeps": 783,
-  "novig.ticks": 145266,
-  "novig.updates": 13217,
-  "pairs_blocked_antonym_date": 8941,
-  "pmglobal.rest_updates": 6934,
-  "pmglobal.sweeps": 783,
-  "pmglobal.ticks": 103095,
-  "pmglobal.updates": 16193,
+  "novig.rest_updates": 13349,
+  "novig.sweeps": 795,
+  "novig.ticks": 147697,
+  "novig.updates": 13349,
+  "pairs_blocked_antonym_date": 9136,
+  "pmglobal.rest_updates": 6995,
+  "pmglobal.sweeps": 795,
+  "pmglobal.ticks": 104513,
+  "pmglobal.updates": 16319,
   "pmglobal.ws_errors": 4,
-  "pmglobal.ws_msgs": 3870104,
-  "pmglobal.ws_ticks": 24695,
-  "pmus.rest_updates": 16029,
-  "pmus.sweeps": 784,
-  "pmus.ticks": 5959688,
-  "pmus.updates": 16029,
+  "pmglobal.ws_msgs": 3881172,
+  "pmglobal.ws_ticks": 24913,
+  "pmus.rest_updates": 16186,
+  "pmus.sweeps": 795,
+  "pmus.ticks": 6043222,
+  "pmus.updates": 16186,
   "pmus_x.last_count": 7594,
-  "pmus_x.sweeps": 785,
+  "pmus_x.sweeps": 796,
   "prophetx.ticks": 715,
   "prophetx.updates": 187,
-  "prophetx.ws_errors": 522,
+  "prophetx.ws_errors": 530,
   "px.evt_scanned": 29,
-  "pxboard.sweeps": 783,
-  "supa_errors": 2358
+  "pxboard.sweeps": 795,
+  "supa_errors": 2393
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xddc30002f7e9a9d52f81bf546d45e908b8e1f56eb2e06384a0814ac55c8a32d7"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "29897015b52c05df522cd1620a163f65"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-07T21:41:21.655118+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xddc30002f7e9a9d52f81bf546d45e908b8e1f56eb2e06384a0814ac55c8a32d7"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8d9da53eba877cac3ec85a9facfec2c9"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "no_cost_cents": 58
-   },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-07T21:41:21.680357+00:00"
-  }
- ]
+ "arbitrages": []
 }
