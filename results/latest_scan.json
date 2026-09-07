@@ -1,79 +1,77 @@
 {
- "scanned_at": "2026-09-07T10:37:33.350867+00:00",
+ "scanned_at": "2026-09-07T19:22:27.829959+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 334.1,
+ "loop_uptime_min": 2.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 144107,
+   "markets": 12397,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7647,
-   "last_tick_age_s": 0.1
+   "markets": 7592,
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 153,
-   "last_tick_age_s": 0.1
+   "markets": 101,
+   "last_tick_age_s": 0.8
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 294,
-   "last_tick_age_s": 8.6
+   "markets": 195,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 18,
-   "last_tick_age_s": 19625.6
+   "state": "OK",
+   "markets": 29,
+   "last_tick_age_s": 5.4
   }
  ],
  "totals": {
-  "markets_tracked": 152219,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 20314,
+  "pairs_married": 15,
+  "arbitrages": 14
  },
  "stats": {
-  "commits": 157,
-  "gist_errors": 319,
+  "gist_errors": 2,
   "hot_errors": 0,
-  "kalshi.sweeps": 1246,
-  "kalshi.ticks": 8720076,
-  "kalshi.updates": 3701292,
-  "kalshi.ws_ticks": 8720076,
-  "kalshi.ws_trades": 1306186,
-  "live_evals_fired": 483,
-  "novig.rest_updates": 2099,
-  "novig.sweeps": 1245,
-  "novig.ticks": 291860,
-  "novig.updates": 2099,
-  "pairs_blocked_antonym_date": 67908,
-  "pmglobal.rest_updates": 4412,
-  "pmglobal.sweeps": 1245,
-  "pmglobal.ticks": 148182,
-  "pmglobal.updates": 8525,
-  "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1421817,
-  "pmglobal.ws_ticks": 23582,
-  "pmus.rest_updates": 24491,
-  "pmus.sweeps": 1246,
-  "pmus.ticks": 9304174,
-  "pmus.updates": 24491,
-  "pmus_x.last_count": 7475,
-  "pmus_x.sweeps": 1247,
-  "prophetx.ticks": 351,
-  "prophetx.updates": 30,
-  "prophetx.ws_errors": 1185,
-  "px.evt_scanned": 16,
-  "pxboard.sweeps": 1245,
-  "supa_errors": 3996
+  "kalshi.sweeps": 12,
+  "kalshi.ticks": 99028,
+  "kalshi.updates": 54177,
+  "kalshi.ws_ticks": 99028,
+  "kalshi.ws_trades": 14476,
+  "live_evals_fired": 91,
+  "novig.rest_updates": 460,
+  "novig.sweeps": 12,
+  "novig.ticks": 2339,
+  "novig.updates": 460,
+  "pairs_blocked_antonym_date": 135,
+  "pmglobal.rest_updates": 274,
+  "pmglobal.sweeps": 12,
+  "pmglobal.ticks": 1643,
+  "pmglobal.updates": 454,
+  "pmglobal.ws_msgs": 70784,
+  "pmglobal.ws_ticks": 343,
+  "pmus.rest_updates": 7711,
+  "pmus.sweeps": 12,
+  "pmus.ticks": 98696,
+  "pmus.updates": 7711,
+  "pmus_x.last_count": 7592,
+  "pmus_x.sweeps": 13,
+  "prophetx.ticks": 304,
+  "prophetx.updates": 94,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 27,
+  "pxboard.sweeps": 11,
+  "supa_errors": 36
  },
  "arbitrages": [
   {
@@ -81,184 +79,322 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+     "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
     ],
-    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
-    "ask_cents": 42
+    "title": "Cleveland Guardians vs. Baltimore Orioles",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "acfdb6a2a3b67c7cf538701d1dc4593e"
+     "51b462352dd29cd6af26faad424b50b2"
     ],
-    "title": "US Lecce at Cagliari Calcio",
-    "no_cost_cents": 24
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-07T10:34:36.403715+00:00"
+   "total_cost_cents": 8,
+   "edge_bps": 9200,
+   "detected_at": "2026-09-07T19:22:19.660930+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7cbc7397e3e503bd217e62ced95025f7"
+    ],
+    "title": "New York Mets at Miami Marlins",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3f3236a2c93b325b205bb40dc7ce5f456545e2e0bff1c25eca28d2eb96ba3e0d"
+    ],
+    "title": "New York Mets vs. Miami Marlins",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 10,
+   "edge_bps": 9000,
+   "detected_at": "2026-09-07T19:22:12.211551+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+     "0xb8277fdbeb64abd4ff7f305c338df40791dd8be7f17350bd0892ad28d2efe029"
     ],
-    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
-    "ask_cents": 42
+    "title": "Cleveland Guardians vs. Baltimore Orioles: O/U 7.5",
+    "ask_cents": 41
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "d6facce66a4087ba63bcda41cd555cf7"
+     "51b462352dd29cd6af26faad424b50b2"
     ],
-    "title": "US Lecce at Cagliari Calcio",
-    "no_cost_cents": 31
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-07T19:21:55.003988+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
+    ],
+    "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
+    "ask_cents": 18
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f30538495bb6b75a750f7d9dffa8ac00"
+    ],
+    "title": "Chicago Cubs at Milwaukee Brewers",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-07T19:21:04.593108+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x967ae947189baf7b87b23854bcc33d6a599dfdf8ca1887a90a77af4540b26a01"
+    ],
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2c4f204fff1244a27631695205c50ab0"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "no_cost_cents": 61
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-07T19:22:14.780883+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8a42f446aa251070ca8e0b5ad481cd0b"
+    ],
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb8277fdbeb64abd4ff7f305c338df40791dd8be7f17350bd0892ad28d2efe029"
+    ],
+    "title": "Cleveland Guardians vs. Baltimore Orioles: O/U 7.5",
+    "no_cost_cents": 59
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-07T19:21:55.025537+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2c4f204fff1244a27631695205c50ab0"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xfdf5b9cd558e1b107522c4a3aad46f579a6c3cccecb14327c592821e5b3d715b"
+    ],
+    "title": "Los Angeles Angels vs. Boston Red Sox: O/U 7.5",
+    "no_cost_cents": 33
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-07T10:34:36.577738+00:00"
+   "detected_at": "2026-09-07T19:22:14.801914+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+     "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
     ],
-    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
-    "ask_cents": 42
+    "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
+    "ask_cents": 18
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "4a4564fe6621fc5896afc3d57bb5e866"
+     "32ec16209a4934cadb8bfaf9ebc4f474"
     ],
-    "title": "US Lecce at Cagliari Calcio",
-    "no_cost_cents": 33
+    "title": "Chicago Cubs at Milwaukee Brewers",
+    "no_cost_cents": 61
    },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-09-07T10:34:36.577778+00:00"
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-07T19:21:04.615807+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "0515809b68d144b4c01227ea427051b1"
+     "8d9da53eba877cac3ec85a9facfec2c9"
     ],
-    "title": "US Lecce at Cagliari Calcio",
-    "ask_cents": 24
+    "title": "Minnesota Twins at Detroit Tigers",
+    "ask_cents": 45
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+     "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
     ],
-    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
-    "no_cost_cents": 58
+    "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
+    "no_cost_cents": 40
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-07T10:34:36.493370+00:00"
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-09-07T19:21:55.370721+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "9533465cc6a4b870e8a612fbd2d94092"
+     "2c4f204fff1244a27631695205c50ab0"
     ],
-    "title": "US Lecce at Cagliari Calcio",
-    "ask_cents": 31
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 40
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+     "0x5e013a01e8d6f78035ce4cd0da503c30522cc60d683ee288a62f7e6fcc52cb03"
     ],
-    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
-    "no_cost_cents": 58
+    "title": "Los Angeles Angels vs. Boston Red Sox: O/U 8.5",
+    "no_cost_cents": 46
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-07T10:34:36.403743+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-07T19:22:14.756622+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
     ],
-    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
-    "ask_cents": 42
+    "title": "Arizona Diamondbacks vs. Kansas City Royals",
+    "ask_cents": 46
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "60486268ab93adf22fddd2528dd1d8cd"
+     "2c0cfb67cdf5e65f3b45ec197d19b739"
     ],
-    "title": "US Lecce at Cagliari Calcio",
-    "no_cost_cents": 47
+    "title": "Arizona Diamondbacks at Kansas City Royals",
+    "no_cost_cents": 41
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-07T10:34:36.577762+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-07T19:22:22.262122+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "3f8217ace05f2a70a77a45daf8c5c088"
+     "29897015b52c05df522cd1620a163f65"
     ],
-    "title": "US Lecce at Cagliari Calcio",
-    "ask_cents": 33
+    "title": "Minnesota Twins at Detroit Tigers",
+    "ask_cents": 57
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+     "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
     ],
-    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
-    "no_cost_cents": 58
+    "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
+    "no_cost_cents": 40
    },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-07T10:34:36.320507+00:00"
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-07T19:21:55.390356+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
-    ],
-    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
-    "ask_cents": 42
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "35580351680ba0bb105d6d3a3a8c235c"
+     "246bdb033998961b5d875f4df51e43a6"
     ],
-    "title": "US Lecce at Cagliari Calcio",
+    "title": "Arizona Diamondbacks at Kansas City Royals",
+    "ask_cents": 43
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
+    ],
+    "title": "Arizona Diamondbacks vs. Kansas City Royals",
     "no_cost_cents": 54
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-07T10:34:36.577771+00:00"
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-07T19:22:12.166808+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
+    ],
+    "title": "Cleveland Guardians vs. Baltimore Orioles",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8a42f446aa251070ca8e0b5ad481cd0b"
+    ],
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 95
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-07T19:22:19.686639+00:00"
   }
  ]
 }
