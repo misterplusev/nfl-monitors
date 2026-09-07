@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-07T20:27:19.910104+00:00",
+ "scanned_at": "2026-09-07T20:29:20.908593+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 67.1,
+ "loop_uptime_min": 69.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 95626,
-   "last_tick_age_s": 0.1
+   "markets": 97618,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7592,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 121,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 219,
-   "last_tick_age_s": 16.1
+   "markets": 222,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 3718.2
+   "last_tick_age_s": 3839.2
   }
  ],
  "totals": {
-  "markets_tracked": 103587,
+  "markets_tracked": 105582,
   "pairs_married": 20,
   "arbitrages": 20
  },
  "stats": {
-  "commits": 30,
-  "gist_errors": 61,
+  "commits": 31,
+  "gist_errors": 63,
   "hot_errors": 0,
-  "kalshi.sweeps": 362,
-  "kalshi.ticks": 3025353,
-  "kalshi.updates": 1427773,
-  "kalshi.ws_ticks": 3025353,
-  "kalshi.ws_trades": 503783,
-  "live_evals_fired": 1755,
-  "novig.rest_updates": 7951,
-  "novig.sweeps": 361,
-  "novig.ticks": 64346,
-  "novig.updates": 7951,
-  "pairs_blocked_antonym_date": 4068,
-  "pmglobal.rest_updates": 3630,
-  "pmglobal.sweeps": 361,
-  "pmglobal.ticks": 46668,
-  "pmglobal.updates": 8135,
+  "kalshi.sweeps": 373,
+  "kalshi.ticks": 3111768,
+  "kalshi.updates": 1464941,
+  "kalshi.ws_ticks": 3111768,
+  "kalshi.ws_trades": 525937,
+  "live_evals_fired": 1806,
+  "novig.rest_updates": 8135,
+  "novig.sweeps": 373,
+  "novig.ticks": 66435,
+  "novig.updates": 8135,
+  "pairs_blocked_antonym_date": 4203,
+  "pmglobal.rest_updates": 3742,
+  "pmglobal.sweeps": 373,
+  "pmglobal.ticks": 48254,
+  "pmglobal.updates": 8417,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 2168194,
-  "pmglobal.ws_ticks": 10468,
-  "pmus.rest_updates": 11078,
-  "pmus.sweeps": 362,
-  "pmus.ticks": 2755817,
-  "pmus.updates": 11078,
+  "pmglobal.ws_msgs": 2234761,
+  "pmglobal.ws_ticks": 10854,
+  "pmus.rest_updates": 11179,
+  "pmus.sweeps": 373,
+  "pmus.ticks": 2839318,
+  "pmus.updates": 11179,
   "pmus_x.last_count": 7591,
-  "pmus_x.sweeps": 363,
+  "pmus_x.sweeps": 374,
   "prophetx.ticks": 715,
   "prophetx.updates": 187,
-  "prophetx.ws_errors": 240,
+  "prophetx.ws_errors": 248,
   "px.evt_scanned": 29,
-  "pxboard.sweeps": 361,
-  "supa_errors": 1092
+  "pxboard.sweeps": 372,
+  "supa_errors": 1126
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
     ],
     "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 2
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +95,9 @@
     "title": "Cleveland Guardians at Baltimore Orioles",
     "no_cost_cents": 6
    },
-   "total_cost_cents": 8,
-   "edge_bps": 9200,
-   "detected_at": "2026-09-07T20:27:06.883687+00:00"
+   "total_cost_cents": 9,
+   "edge_bps": 9100,
+   "detected_at": "2026-09-07T20:29:05.112376+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-07T20:26:15.390520+00:00"
+   "detected_at": "2026-09-07T20:28:38.736191+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +143,7 @@
    },
    "total_cost_cents": 70,
    "edge_bps": 3000,
-   "detected_at": "2026-09-07T20:26:15.415368+00:00"
+   "detected_at": "2026-09-07T20:28:38.756093+00:00"
   },
   {
    "buy_yes": {
@@ -265,29 +265,6 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
-    ],
-    "title": "Arizona Diamondbacks vs. Kansas City Royals",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2c0cfb67cdf5e65f3b45ec197d19b739"
-    ],
-    "title": "Arizona Diamondbacks at Kansas City Royals",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-07T20:27:19.854840+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
      "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
     ],
     "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
@@ -305,6 +282,29 @@
    "total_cost_cents": 83,
    "edge_bps": 1700,
    "detected_at": "2026-09-07T20:26:15.568799+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
+    ],
+    "title": "Arizona Diamondbacks vs. Kansas City Royals",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2c0cfb67cdf5e65f3b45ec197d19b739"
+    ],
+    "title": "Arizona Diamondbacks at Kansas City Royals",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-07T20:29:05.084193+00:00"
   },
   {
    "buy_yes": {
@@ -475,7 +475,7 @@
      "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
     ],
     "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 2
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "prophetx",
@@ -486,32 +486,9 @@
     "title": "Cleveland Guardians at Baltimore Orioles",
     "no_cost_cents": 94
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-07T20:27:06.904864+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
-    ],
-    "title": "Arizona Diamondbacks vs. Kansas City Royals",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "246bdb033998961b5d875f4df51e43a6"
-    ],
-    "title": "Arizona Diamondbacks at Kansas City Royals",
-    "no_cost_cents": 59
-   },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-07T20:27:19.882589+00:00"
+   "detected_at": "2026-09-07T20:29:05.147717+00:00"
   },
   {
    "buy_yes": {
@@ -535,6 +512,29 @@
    "total_cost_cents": 98,
    "edge_bps": 200,
    "detected_at": "2026-09-07T20:26:15.544250+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "246bdb033998961b5d875f4df51e43a6"
+    ],
+    "title": "Arizona Diamondbacks at Kansas City Royals",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
+    ],
+    "title": "Arizona Diamondbacks vs. Kansas City Royals",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-07T20:29:05.084217+00:00"
   }
  ]
 }
