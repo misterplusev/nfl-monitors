@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-07T20:23:08.721479+00:00",
+ "scanned_at": "2026-09-07T20:25:09.635815+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 63.0,
+ "loop_uptime_min": 65.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 91798,
-   "last_tick_age_s": 0.1
+   "markets": 93569,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7592,
-   "last_tick_age_s": 4.3
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
@@ -25,80 +25,57 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 216,
-   "last_tick_age_s": 2.2
+   "markets": 217,
+   "last_tick_age_s": 19.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 3467.0
+   "last_tick_age_s": 3587.9
   }
  ],
  "totals": {
-  "markets_tracked": 99753,
-  "pairs_married": 33,
+  "markets_tracked": 101525,
+  "pairs_married": 31,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 28,
-  "gist_errors": 57,
+  "commits": 29,
+  "gist_errors": 59,
   "hot_errors": 0,
-  "kalshi.sweeps": 340,
-  "kalshi.ticks": 2871081,
-  "kalshi.updates": 1361694,
-  "kalshi.ws_ticks": 2871081,
-  "kalshi.ws_trades": 467893,
-  "live_evals_fired": 1647,
-  "novig.rest_updates": 7606,
-  "novig.sweeps": 340,
-  "novig.ticks": 60756,
-  "novig.updates": 7606,
-  "pairs_blocked_antonym_date": 3834,
-  "pmglobal.rest_updates": 3420,
-  "pmglobal.sweeps": 340,
-  "pmglobal.ticks": 43797,
-  "pmglobal.updates": 7639,
+  "kalshi.sweeps": 350,
+  "kalshi.ticks": 2951276,
+  "kalshi.updates": 1395990,
+  "kalshi.ws_ticks": 2951276,
+  "kalshi.ws_trades": 485591,
+  "live_evals_fired": 1708,
+  "novig.rest_updates": 7778,
+  "novig.sweeps": 349,
+  "novig.ticks": 62297,
+  "novig.updates": 7778,
+  "pairs_blocked_antonym_date": 3942,
+  "pmglobal.rest_updates": 3509,
+  "pmglobal.sweeps": 350,
+  "pmglobal.ticks": 45152,
+  "pmglobal.updates": 7861,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 2079982,
-  "pmglobal.ws_ticks": 9697,
-  "pmus.rest_updates": 10825,
-  "pmus.sweeps": 340,
-  "pmus.ticks": 2588815,
-  "pmus.updates": 10825,
+  "pmglobal.ws_msgs": 2124002,
+  "pmglobal.ws_ticks": 10052,
+  "pmus.rest_updates": 10970,
+  "pmus.sweeps": 350,
+  "pmus.ticks": 2664725,
+  "pmus.updates": 10970,
   "pmus_x.last_count": 7591,
-  "pmus_x.sweeps": 341,
+  "pmus_x.sweeps": 351,
   "prophetx.ticks": 715,
   "prophetx.updates": 187,
-  "prophetx.ws_errors": 226,
+  "prophetx.ws_errors": 233,
   "px.evt_scanned": 29,
-  "pxboard.sweeps": 340,
-  "supa_errors": 1027
+  "pxboard.sweeps": 349,
+  "supa_errors": 1056
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 6
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "51b462352dd29cd6af26faad424b50b2"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 12,
-   "edge_bps": 8800,
-   "detected_at": "2026-09-07T20:23:08.094572+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -120,7 +97,7 @@
    },
    "total_cost_cents": 30,
    "edge_bps": 7000,
-   "detected_at": "2026-09-07T20:22:24.907947+00:00"
+   "detected_at": "2026-09-07T20:25:08.625204+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +235,7 @@
    },
    "total_cost_cents": 62,
    "edge_bps": 3800,
-   "detected_at": "2026-09-07T20:22:51.637973+00:00"
+   "detected_at": "2026-09-07T20:24:49.189219+00:00"
   },
   {
    "buy_yes": {
@@ -396,7 +373,7 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-07T20:21:43.306775+00:00"
+   "detected_at": "2026-09-07T20:25:08.682077+00:00"
   },
   {
    "buy_yes": {
@@ -511,7 +488,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-07T20:22:24.884458+00:00"
+   "detected_at": "2026-09-07T20:25:08.597617+00:00"
   },
   {
    "buy_yes": {
@@ -534,7 +511,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-07T20:23:05.487138+00:00"
+   "detected_at": "2026-09-07T20:25:08.572367+00:00"
   },
   {
    "buy_yes": {
@@ -580,7 +557,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-07T20:21:43.270539+00:00"
+   "detected_at": "2026-09-07T20:25:08.657245+00:00"
   },
   {
    "buy_yes": {
@@ -650,6 +627,29 @@
    "total_cost_cents": 91,
    "edge_bps": 900,
    "detected_at": "2026-09-07T20:21:08.816670+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a1e15d7ae488f71ffc3040d19811ab6f"
+    ],
+    "title": "SS Lazio at Udinese Calcio",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x1101da54b65ae4266947663feee61207e0dc3dcf4aee2b4e77f011670fc43c86"
+    ],
+    "title": "Udinese Calcio vs. SS Lazio: O/U 1.5",
+    "no_cost_cents": 30
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-07T20:21:09.198731+00:00"
   }
  ]
 }
