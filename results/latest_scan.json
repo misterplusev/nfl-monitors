@@ -1,77 +1,286 @@
 {
- "scanned_at": "2026-09-07T05:05:42.452645+00:00",
+ "scanned_at": "2026-09-07T05:07:43.575492+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.2,
+ "loop_uptime_min": 4.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 11036,
+   "markets": 16135,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7461,
-   "last_tick_age_s": 2.1
+   "last_tick_age_s": 2.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 100,
-   "last_tick_age_s": 0.7
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 200,
-   "last_tick_age_s": 15.2
+   "markets": 213,
+   "last_tick_age_s": 18.3
   },
   {
    "venue": "prophetx",
    "state": "OK",
-   "markets": 10,
-   "last_tick_age_s": 13.1
+   "markets": 18,
+   "last_tick_age_s": 16.1
   }
  ],
  "totals": {
-  "markets_tracked": 18807,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 23927,
+  "pairs_married": 10,
+  "arbitrages": 9
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 8,
-  "kalshi.ticks": 58756,
-  "kalshi.updates": 30482,
-  "kalshi.ws_ticks": 58756,
-  "kalshi.ws_trades": 13598,
-  "live_evals_fired": 30,
-  "novig.rest_updates": 215,
-  "novig.sweeps": 7,
-  "novig.ticks": 1563,
-  "novig.updates": 215,
-  "pairs_blocked_antonym_date": 380,
-  "pmglobal.rest_updates": 203,
-  "pmglobal.sweeps": 8,
-  "pmglobal.ticks": 1186,
-  "pmglobal.updates": 317,
-  "pmglobal.ws_msgs": 14245,
-  "pmglobal.ws_ticks": 286,
-  "pmus.rest_updates": 7667,
-  "pmus.sweeps": 8,
-  "pmus.ticks": 67149,
-  "pmus.updates": 7667,
+  "kalshi.sweeps": 15,
+  "kalshi.ticks": 119253,
+  "kalshi.updates": 60215,
+  "kalshi.ws_ticks": 119253,
+  "kalshi.ws_trades": 26456,
+  "live_evals_fired": 48,
+  "novig.rest_updates": 237,
+  "novig.sweeps": 14,
+  "novig.ticks": 2966,
+  "novig.updates": 237,
+  "pairs_blocked_antonym_date": 722,
+  "pmglobal.rest_updates": 226,
+  "pmglobal.sweeps": 15,
+  "pmglobal.ticks": 2030,
+  "pmglobal.updates": 365,
+  "pmglobal.ws_msgs": 25150,
+  "pmglobal.ws_ticks": 430,
+  "pmus.rest_updates": 7875,
+  "pmus.sweeps": 15,
+  "pmus.ticks": 119376,
+  "pmus.updates": 7875,
   "pmus_x.last_count": 7461,
-  "pmus_x.sweeps": 9,
-  "prophetx.ticks": 77,
-  "prophetx.updates": 16,
-  "prophetx.ws_errors": 8,
-  "px.evt_scanned": 9,
-  "pxboard.sweeps": 7,
-  "supa_errors": 30
+  "pmus_x.sweeps": 16,
+  "prophetx.ticks": 175,
+  "prophetx.updates": 26,
+  "prophetx.ws_errors": 15,
+  "px.evt_scanned": 16,
+  "pxboard.sweeps": 14,
+  "supa_errors": 58
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+    ],
+    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "acfdb6a2a3b67c7cf538701d1dc4593e"
+    ],
+    "title": "US Lecce at Cagliari Calcio",
+    "no_cost_cents": 24
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-07T05:07:08.179839+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+    ],
+    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d6facce66a4087ba63bcda41cd555cf7"
+    ],
+    "title": "US Lecce at Cagliari Calcio",
+    "no_cost_cents": 31
+   },
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-07T05:07:08.179879+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+    ],
+    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4a4564fe6621fc5896afc3d57bb5e866"
+    ],
+    "title": "US Lecce at Cagliari Calcio",
+    "no_cost_cents": 33
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-07T05:07:08.179867+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0515809b68d144b4c01227ea427051b1"
+    ],
+    "title": "US Lecce at Cagliari Calcio",
+    "ask_cents": 24
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+    ],
+    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-07T05:07:08.088122+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+    ],
+    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "60486268ab93adf22fddd2528dd1d8cd"
+    ],
+    "title": "US Lecce at Cagliari Calcio",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-07T05:07:08.088078+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9533465cc6a4b870e8a612fbd2d94092"
+    ],
+    "title": "US Lecce at Cagliari Calcio",
+    "ask_cents": 31
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+    ],
+    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-07T05:07:08.020775+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "3f8217ace05f2a70a77a45daf8c5c088"
+    ],
+    "title": "US Lecce at Cagliari Calcio",
+    "ask_cents": 33
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+    ],
+    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-07T05:07:08.179889+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f21acbd60f1f85c174b58408d5020519"
+    ],
+    "title": "Washington Nationals at Los Angeles Dodgers",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9c49a169f2a83d408fd70970c7fcb214afed99be97a837ab8dea870e3db2a01e"
+    ],
+    "title": "Washington Nationals vs. Los Angeles Dodgers",
+    "no_cost_cents": 92
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-07T05:07:43.197460+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x92226b7bad5c189bf9fc82a16a05dc860408fd0cc3279dfccfe2c07a0f852ceb"
+    ],
+    "title": "Cagliari Calcio vs. US Lecce: O/U 2.5",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "35580351680ba0bb105d6d3a3a8c235c"
+    ],
+    "title": "US Lecce at Cagliari Calcio",
+    "no_cost_cents": 54
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-07T05:07:08.088109+00:00"
+  }
+ ]
 }
