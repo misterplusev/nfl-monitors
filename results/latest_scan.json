@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-07T05:07:43.575492+00:00",
+ "scanned_at": "2026-09-07T05:09:47.145138+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 4.3,
+ "loop_uptime_min": 6.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 16135,
+   "markets": 19320,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7461,
-   "last_tick_age_s": 2.3
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
@@ -25,56 +25,79 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 213,
-   "last_tick_age_s": 18.3
+   "markets": 217,
+   "last_tick_age_s": 14.9
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 18,
-   "last_tick_age_s": 16.1
+   "last_tick_age_s": 12.8
   }
  ],
  "totals": {
-  "markets_tracked": 23927,
+  "markets_tracked": 27116,
   "pairs_married": 10,
-  "arbitrages": 9
+  "arbitrages": 10
  },
  "stats": {
-  "commits": 1,
-  "gist_errors": 5,
+  "commits": 2,
+  "gist_errors": 7,
   "hot_errors": 0,
-  "kalshi.sweeps": 15,
-  "kalshi.ticks": 119253,
-  "kalshi.updates": 60215,
-  "kalshi.ws_ticks": 119253,
-  "kalshi.ws_trades": 26456,
-  "live_evals_fired": 48,
-  "novig.rest_updates": 237,
-  "novig.sweeps": 14,
-  "novig.ticks": 2966,
-  "novig.updates": 237,
-  "pairs_blocked_antonym_date": 722,
-  "pmglobal.rest_updates": 226,
-  "pmglobal.sweeps": 15,
-  "pmglobal.ticks": 2030,
-  "pmglobal.updates": 365,
-  "pmglobal.ws_msgs": 25150,
-  "pmglobal.ws_ticks": 430,
-  "pmus.rest_updates": 7875,
-  "pmus.sweeps": 15,
-  "pmus.ticks": 119376,
-  "pmus.updates": 7875,
+  "kalshi.sweeps": 23,
+  "kalshi.ticks": 172946,
+  "kalshi.updates": 85593,
+  "kalshi.ws_ticks": 172946,
+  "kalshi.ws_trades": 37746,
+  "live_evals_fired": 53,
+  "novig.rest_updates": 245,
+  "novig.sweeps": 22,
+  "novig.ticks": 4604,
+  "novig.updates": 245,
+  "pairs_blocked_antonym_date": 1102,
+  "pmglobal.rest_updates": 257,
+  "pmglobal.sweeps": 22,
+  "pmglobal.ticks": 2885,
+  "pmglobal.updates": 429,
+  "pmglobal.ws_msgs": 34873,
+  "pmglobal.ws_ticks": 585,
+  "pmus.rest_updates": 8044,
+  "pmus.sweeps": 23,
+  "pmus.ticks": 179064,
+  "pmus.updates": 8044,
   "pmus_x.last_count": 7461,
-  "pmus_x.sweeps": 16,
-  "prophetx.ticks": 175,
-  "prophetx.updates": 26,
-  "prophetx.ws_errors": 15,
+  "pmus_x.sweeps": 24,
+  "prophetx.ticks": 303,
+  "prophetx.updates": 30,
+  "prophetx.ws_errors": 22,
   "px.evt_scanned": 16,
-  "pxboard.sweeps": 14,
-  "supa_errors": 58
+  "pxboard.sweeps": 22,
+  "supa_errors": 89
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9c49a169f2a83d408fd70970c7fcb214afed99be97a837ab8dea870e3db2a01e"
+    ],
+    "title": "Washington Nationals vs. Los Angeles Dodgers",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "67f15dc3412c91586cbec96d74e004cb"
+    ],
+    "title": "Washington Nationals at Los Angeles Dodgers",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 10,
+   "edge_bps": 9000,
+   "detected_at": "2026-09-07T05:09:30.819946+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -257,7 +280,7 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-09-07T05:07:43.197460+00:00"
+   "detected_at": "2026-09-07T05:09:30.819922+00:00"
   },
   {
    "buy_yes": {
