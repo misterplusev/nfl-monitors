@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-07T20:09:59.603178+00:00",
+ "scanned_at": "2026-09-07T20:12:14.669123+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 49.8,
+ "loop_uptime_min": 52.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 80208,
+   "markets": 82396,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,61 +19,61 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 115,
+   "markets": 118,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 212,
-   "last_tick_age_s": 16.5
+   "markets": 213,
+   "last_tick_age_s": 17.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 2677.8
+   "last_tick_age_s": 2812.9
   }
  ],
  "totals": {
-  "markets_tracked": 88156,
-  "pairs_married": 27,
+  "markets_tracked": 90348,
+  "pairs_married": 35,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 22,
-  "gist_errors": 45,
+  "commits": 23,
+  "gist_errors": 47,
   "hot_errors": 0,
-  "kalshi.sweeps": 269,
-  "kalshi.ticks": 2323957,
-  "kalshi.updates": 1118197,
-  "kalshi.ws_ticks": 2323957,
-  "kalshi.ws_trades": 368967,
-  "live_evals_fired": 1293,
-  "novig.rest_updates": 6382,
-  "novig.sweeps": 268,
-  "novig.ticks": 48897,
-  "novig.updates": 6382,
-  "pairs_blocked_antonym_date": 3024,
-  "pmglobal.rest_updates": 2692,
-  "pmglobal.sweeps": 268,
-  "pmglobal.ticks": 34373,
-  "pmglobal.updates": 5937,
+  "kalshi.sweeps": 281,
+  "kalshi.ticks": 2418919,
+  "kalshi.updates": 1161561,
+  "kalshi.ws_ticks": 2418919,
+  "kalshi.ws_trades": 386863,
+  "live_evals_fired": 1347,
+  "novig.rest_updates": 6610,
+  "novig.sweeps": 280,
+  "novig.ticks": 50870,
+  "novig.updates": 6610,
+  "pairs_blocked_antonym_date": 3159,
+  "pmglobal.rest_updates": 2836,
+  "pmglobal.sweeps": 280,
+  "pmglobal.ticks": 35973,
+  "pmglobal.updates": 6274,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 1639064,
-  "pmglobal.ws_ticks": 7473,
-  "pmus.rest_updates": 10063,
-  "pmus.sweeps": 269,
-  "pmus.ticks": 2049840,
-  "pmus.updates": 10063,
+  "pmglobal.ws_msgs": 1722423,
+  "pmglobal.ws_ticks": 7873,
+  "pmus.rest_updates": 10165,
+  "pmus.sweeps": 281,
+  "pmus.ticks": 2140944,
+  "pmus.updates": 10165,
   "pmus_x.last_count": 7592,
-  "pmus_x.sweeps": 270,
+  "pmus_x.sweeps": 282,
   "prophetx.ticks": 715,
   "prophetx.updates": 187,
-  "prophetx.ws_errors": 178,
+  "prophetx.ws_errors": 186,
   "px.evt_scanned": 29,
-  "pxboard.sweeps": 268,
-  "supa_errors": 811
+  "pxboard.sweeps": 280,
+  "supa_errors": 847
  },
  "arbitrages": [
   {
@@ -124,6 +124,121 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
+    ],
+    "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f30538495bb6b75a750f7d9dffa8ac00"
+    ],
+    "title": "Chicago Cubs at Milwaukee Brewers",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 50,
+   "edge_bps": 5000,
+   "detected_at": "2026-09-07T20:11:08.377471+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb8277fdbeb64abd4ff7f305c338df40791dd8be7f17350bd0892ad28d2efe029"
+    ],
+    "title": "Cleveland Guardians vs. Baltimore Orioles: O/U 7.5",
+    "ask_cents": 45
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "51b462352dd29cd6af26faad424b50b2"
+    ],
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 6
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-07T20:11:56.205597+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
+    ],
+    "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4054ab72b84f7e6aa4e9a7e4d8d7b1a8"
+    ],
+    "title": "SS Lazio at Udinese Calcio",
+    "no_cost_cents": 29
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-07T20:11:08.643686+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
+    ],
+    "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "57586bda5f4a5185e5b0dc4220784f1c"
+    ],
+    "title": "SS Lazio at Udinese Calcio",
+    "no_cost_cents": 34
+   },
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-07T20:11:08.622007+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
+    ],
+    "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "32ec16209a4934cadb8bfaf9ebc4f474"
+    ],
+    "title": "Chicago Cubs at Milwaukee Brewers",
+    "no_cost_cents": 53
+   },
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-07T20:11:08.400507+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -139,80 +254,34 @@
      "0xb8277fdbeb64abd4ff7f305c338df40791dd8be7f17350bd0892ad28d2efe029"
     ],
     "title": "Cleveland Guardians vs. Baltimore Orioles: O/U 7.5",
-    "no_cost_cents": 32
+    "no_cost_cents": 55
    },
-   "total_cost_cents": 39,
-   "edge_bps": 6100,
-   "detected_at": "2026-09-07T20:09:27.577129+00:00"
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-09-07T20:11:56.175382+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
+     "0x967ae947189baf7b87b23854bcc33d6a599dfdf8ca1887a90a77af4540b26a01"
     ],
-    "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
-    "ask_cents": 10
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "f30538495bb6b75a750f7d9dffa8ac00"
+     "2c4f204fff1244a27631695205c50ab0"
     ],
-    "title": "Chicago Cubs at Milwaukee Brewers",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 52,
-   "edge_bps": 4800,
-   "detected_at": "2026-09-07T20:09:09.850056+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
-    ],
-    "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
-    "ask_cents": 32
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4054ab72b84f7e6aa4e9a7e4d8d7b1a8"
-    ],
-    "title": "SS Lazio at Udinese Calcio",
-    "no_cost_cents": 29
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-07T20:06:09.129180+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
-    ],
-    "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "32ec16209a4934cadb8bfaf9ebc4f474"
-    ],
-    "title": "Chicago Cubs at Milwaukee Brewers",
-    "no_cost_cents": 53
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "no_cost_cents": 61
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-09-07T20:09:09.874303+00:00"
+   "detected_at": "2026-09-07T20:11:15.461963+00:00"
   },
   {
    "buy_yes": {
@@ -242,56 +311,10 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x967ae947189baf7b87b23854bcc33d6a599dfdf8ca1887a90a77af4540b26a01"
-    ],
-    "title": "Los Angeles Angels vs. Boston Red Sox",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2c4f204fff1244a27631695205c50ab0"
-    ],
-    "title": "Los Angeles Angels at Boston Red Sox",
-    "no_cost_cents": 61
-   },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-07T20:09:27.632352+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
      "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
     ],
     "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
-    "ask_cents": 32
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "57586bda5f4a5185e5b0dc4220784f1c"
-    ],
-    "title": "SS Lazio at Udinese Calcio",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-07T20:06:09.101782+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
-    ],
-    "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
-    "ask_cents": 32
+    "ask_cents": 26
    },
    "buy_no": {
     "venue": "prophetx",
@@ -302,55 +325,55 @@
     "title": "SS Lazio at Udinese Calcio",
     "no_cost_cents": 39
    },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-07T20:06:08.999715+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb8277fdbeb64abd4ff7f305c338df40791dd8be7f17350bd0892ad28d2efe029"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles: O/U 7.5",
-    "ask_cents": 68
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "51b462352dd29cd6af26faad424b50b2"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-07T20:09:27.607102+00:00"
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-07T20:11:08.518093+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "8d9da53eba877cac3ec85a9facfec2c9"
+     "517f19d76dddd996bb3140d5b2aa0715"
     ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "ask_cents": 43
+    "title": "SS Lazio at Udinese Calcio",
+    "ask_cents": 29
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
+     "0x1101da54b65ae4266947663feee61207e0dc3dcf4aee2b4e77f011670fc43c86"
     ],
-    "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
-    "no_cost_cents": 33
+    "title": "Udinese Calcio vs. SS Lazio: O/U 1.5",
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-07T20:09:09.822778+00:00"
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-07T20:12:14.669040+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "dc883379c3907ad808068111f12b9a1f"
+    ],
+    "title": "SS Lazio at Udinese Calcio",
+    "ask_cents": 34
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x1101da54b65ae4266947663feee61207e0dc3dcf4aee2b4e77f011670fc43c86"
+    ],
+    "title": "Udinese Calcio vs. SS Lazio: O/U 1.5",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-07T20:12:14.669028+00:00"
   },
   {
    "buy_yes": {
@@ -360,7 +383,7 @@
      "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
     ],
     "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
-    "ask_cents": 32
+    "ask_cents": 26
    },
    "buy_no": {
     "venue": "prophetx",
@@ -371,9 +394,32 @@
     "title": "SS Lazio at Udinese Calcio",
     "no_cost_cents": 46
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-07T20:06:09.150638+00:00"
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-07T20:11:08.667895+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "67d864af79e9d8f03083e5174dcebbd5"
+    ],
+    "title": "SS Lazio at Udinese Calcio",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x1101da54b65ae4266947663feee61207e0dc3dcf4aee2b4e77f011670fc43c86"
+    ],
+    "title": "Udinese Calcio vs. SS Lazio: O/U 1.5",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-07T20:12:14.669035+00:00"
   },
   {
    "buy_yes": {
@@ -392,11 +438,11 @@
      "0xdc1e8ef6649b1610e3454f539f3f493668bf90061960341c437d04f0fc56d5df"
     ],
     "title": "Chicago Cubs vs. Milwaukee Brewers",
-    "no_cost_cents": 32
+    "no_cost_cents": 28
    },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-07T20:06:08.884025+00:00"
+   "total_cost_cents": 76,
+   "edge_bps": 2400,
+   "detected_at": "2026-09-07T20:11:08.467045+00:00"
   },
   {
    "buy_yes": {
@@ -423,59 +469,13 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2c4f204fff1244a27631695205c50ab0"
-    ],
-    "title": "Los Angeles Angels at Boston Red Sox",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xfdf5b9cd558e1b107522c4a3aad46f579a6c3cccecb14327c592821e5b3d715b"
-    ],
-    "title": "Los Angeles Angels vs. Boston Red Sox: O/U 7.5",
-    "no_cost_cents": 44
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-07T20:09:09.932470+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
-    ],
-    "title": "Arizona Diamondbacks vs. Kansas City Royals",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2c0cfb67cdf5e65f3b45ec197d19b739"
-    ],
-    "title": "Arizona Diamondbacks at Kansas City Royals",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-07T20:09:09.656066+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
     ],
     "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
-    "ask_cents": 32
+    "ask_cents": 26
    },
    "buy_no": {
     "venue": "prophetx",
@@ -486,9 +486,55 @@
     "title": "SS Lazio at Udinese Calcio",
     "no_cost_cents": 54
    },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-07T20:06:08.976527+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-07T20:11:08.497389+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8d9da53eba877cac3ec85a9facfec2c9"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "ask_cents": 43
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
+    ],
+    "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-07T20:11:08.346403+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "63283341991bb01f0b14e890e2a426ab"
+    ],
+    "title": "SS Lazio at Udinese Calcio",
+    "ask_cents": 47
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x1101da54b65ae4266947663feee61207e0dc3dcf4aee2b4e77f011670fc43c86"
+    ],
+    "title": "Udinese Calcio vs. SS Lazio: O/U 1.5",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-07T20:12:14.669013+00:00"
   },
   {
    "buy_yes": {
@@ -507,57 +553,34 @@
      "0xdc1e8ef6649b1610e3454f539f3f493668bf90061960341c437d04f0fc56d5df"
     ],
     "title": "Chicago Cubs vs. Milwaukee Brewers",
-    "no_cost_cents": 32
+    "no_cost_cents": 28
    },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-07T20:06:08.853700+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "29897015b52c05df522cd1620a163f65"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "ask_cents": 59
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
-    "no_cost_cents": 33
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-07T20:09:09.796817+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-07T20:11:08.447951+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x5e013a01e8d6f78035ce4cd0da503c30522cc60d683ee288a62f7e6fcc52cb03"
+     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
     ],
-    "title": "Los Angeles Angels vs. Boston Red Sox: O/U 8.5",
-    "ask_cents": 32
+    "title": "Arizona Diamondbacks vs. Kansas City Royals",
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "2c4f204fff1244a27631695205c50ab0"
+     "2c0cfb67cdf5e65f3b45ec197d19b739"
     ],
-    "title": "Los Angeles Angels at Boston Red Sox",
-    "no_cost_cents": 61
+    "title": "Arizona Diamondbacks at Kansas City Royals",
+    "no_cost_cents": 40
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-07T20:09:09.771727+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-07T20:12:00.220855+00:00"
   },
   {
    "buy_yes": {
@@ -567,7 +590,7 @@
      "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
     ],
     "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
-    "ask_cents": 32
+    "ask_cents": 26
    },
    "buy_no": {
     "venue": "prophetx",
@@ -578,78 +601,55 @@
     "title": "SS Lazio at Udinese Calcio",
     "no_cost_cents": 62
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-07T20:06:09.051010+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-07T20:11:08.568178+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "5645b6da5da89dd3e9329c26e4ba23c2"
+     "cfaff77ba5a67feece403ea30389d49c"
     ],
-    "title": "New York Mets at Miami Marlins",
-    "ask_cents": 94
+    "title": "SS Lazio at Udinese Calcio",
+    "ask_cents": 55
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x3f3236a2c93b325b205bb40dc7ce5f456545e2e0bff1c25eca28d2eb96ba3e0d"
+     "0x1101da54b65ae4266947663feee61207e0dc3dcf4aee2b4e77f011670fc43c86"
     ],
-    "title": "New York Mets vs. Miami Marlins",
-    "no_cost_cents": 1
+    "title": "Udinese Calcio vs. SS Lazio: O/U 1.5",
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-07T20:05:02.228823+00:00"
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-07T20:12:14.669058+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
+     "0x44810d86d3133ad49a36e76b33697b60426f3c18ca0d4a135dc6ffcce7e7df41"
     ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 1
+    "title": "Udinese Calcio vs. SS Lazio: O/U 2.5",
+    "ask_cents": 26
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "8a42f446aa251070ca8e0b5ad481cd0b"
+     "dc883379c3907ad808068111f12b9a1f"
     ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "no_cost_cents": 94
+    "title": "SS Lazio at Udinese Calcio",
+    "no_cost_cents": 67
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-07T20:05:17.100835+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "246bdb033998961b5d875f4df51e43a6"
-    ],
-    "title": "Arizona Diamondbacks at Kansas City Royals",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
-    ],
-    "title": "Arizona Diamondbacks vs. Kansas City Royals",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-07T20:09:09.682042+00:00"
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-07T20:11:08.547943+00:00"
   }
  ]
 }
