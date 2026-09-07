@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-07T19:44:24.072123+00:00",
+ "scanned_at": "2026-09-07T19:46:38.431364+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 24.2,
+ "loop_uptime_min": 26.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 50385,
+   "markets": 54605,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7592,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
@@ -26,55 +26,78 @@
    "venue": "novig",
    "state": "OK",
    "markets": 206,
-   "last_tick_age_s": 17.6
+   "last_tick_age_s": 17.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 1142.3
+   "last_tick_age_s": 1276.6
   }
  ],
  "totals": {
-  "markets_tracked": 58323,
+  "markets_tracked": 62543,
   "pairs_married": 19,
-  "arbitrages": 18
+  "arbitrages": 19
  },
  "stats": {
-  "commits": 10,
-  "gist_errors": 22,
+  "commits": 11,
+  "gist_errors": 24,
   "hot_errors": 0,
-  "kalshi.sweeps": 131,
-  "kalshi.ticks": 1167045,
-  "kalshi.updates": 581482,
-  "kalshi.ws_ticks": 1167045,
-  "kalshi.ws_trades": 167158,
-  "live_evals_fired": 697,
-  "novig.rest_updates": 3198,
-  "novig.sweeps": 130,
-  "novig.ticks": 24057,
-  "novig.updates": 3198,
-  "pairs_blocked_antonym_date": 1476,
-  "pmglobal.rest_updates": 1288,
-  "pmglobal.sweeps": 130,
-  "pmglobal.ticks": 16646,
-  "pmglobal.updates": 2819,
-  "pmglobal.ws_msgs": 816176,
-  "pmglobal.ws_ticks": 3546,
-  "pmus.rest_updates": 8953,
-  "pmus.sweeps": 131,
-  "pmus.ticks": 1002144,
-  "pmus.updates": 8953,
+  "kalshi.sweeps": 143,
+  "kalshi.ticks": 1280091,
+  "kalshi.updates": 637621,
+  "kalshi.ws_ticks": 1280091,
+  "kalshi.ws_trades": 182427,
+  "live_evals_fired": 765,
+  "novig.rest_updates": 3468,
+  "novig.sweeps": 142,
+  "novig.ticks": 26277,
+  "novig.updates": 3468,
+  "pairs_blocked_antonym_date": 1611,
+  "pmglobal.rest_updates": 1411,
+  "pmglobal.sweeps": 142,
+  "pmglobal.ticks": 18182,
+  "pmglobal.updates": 3081,
+  "pmglobal.ws_msgs": 892483,
+  "pmglobal.ws_ticks": 3882,
+  "pmus.rest_updates": 9047,
+  "pmus.sweeps": 143,
+  "pmus.ticks": 1093248,
+  "pmus.updates": 9047,
   "pmus_x.last_count": 7592,
-  "pmus_x.sweeps": 132,
+  "pmus_x.sweeps": 144,
   "prophetx.ticks": 715,
   "prophetx.updates": 187,
-  "prophetx.ws_errors": 86,
+  "prophetx.ws_errors": 94,
   "px.evt_scanned": 29,
-  "pxboard.sweeps": 130,
-  "supa_errors": 393
+  "pxboard.sweeps": 142,
+  "supa_errors": 430
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
+    ],
+    "title": "Cleveland Guardians vs. Baltimore Orioles",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "51b462352dd29cd6af26faad424b50b2"
+    ],
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 6
+   },
+   "total_cost_cents": 8,
+   "edge_bps": 9200,
+   "detected_at": "2026-09-07T19:46:19.910791+00:00"
+  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -92,103 +115,11 @@
      "0x3f3236a2c93b325b205bb40dc7ce5f456545e2e0bff1c25eca28d2eb96ba3e0d"
     ],
     "title": "New York Mets vs. Miami Marlins",
-    "no_cost_cents": 4
+    "no_cost_cents": 5
    },
-   "total_cost_cents": 12,
-   "edge_bps": 8800,
-   "detected_at": "2026-09-07T19:43:51.879988+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 6
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "51b462352dd29cd6af26faad424b50b2"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 12,
-   "edge_bps": 8800,
-   "detected_at": "2026-09-07T19:43:18.661840+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb8277fdbeb64abd4ff7f305c338df40791dd8be7f17350bd0892ad28d2efe029"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles: O/U 7.5",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "51b462352dd29cd6af26faad424b50b2"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 44,
-   "edge_bps": 5600,
-   "detected_at": "2026-09-07T19:41:04.987875+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
-    ],
-    "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
-    "ask_cents": 18
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f30538495bb6b75a750f7d9dffa8ac00"
-    ],
-    "title": "Chicago Cubs at Milwaukee Brewers",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-07T19:39:25.139305+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x967ae947189baf7b87b23854bcc33d6a599dfdf8ca1887a90a77af4540b26a01"
-    ],
-    "title": "Los Angeles Angels vs. Boston Red Sox",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2c4f204fff1244a27631695205c50ab0"
-    ],
-    "title": "Los Angeles Angels at Boston Red Sox",
-    "no_cost_cents": 61
-   },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-07T19:43:51.946793+00:00"
+   "total_cost_cents": 13,
+   "edge_bps": 8700,
+   "detected_at": "2026-09-07T19:46:06.045581+00:00"
   },
   {
    "buy_yes": {
@@ -207,11 +138,11 @@
      "0xb8277fdbeb64abd4ff7f305c338df40791dd8be7f17350bd0892ad28d2efe029"
     ],
     "title": "Cleveland Guardians vs. Baltimore Orioles: O/U 7.5",
-    "no_cost_cents": 62
+    "no_cost_cents": 25
    },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-07T19:41:04.965577+00:00"
+   "total_cost_cents": 32,
+   "edge_bps": 6800,
+   "detected_at": "2026-09-07T19:46:19.860872+00:00"
   },
   {
    "buy_yes": {
@@ -221,7 +152,53 @@
      "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
     ],
     "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
-    "ask_cents": 18
+    "ask_cents": 14
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f30538495bb6b75a750f7d9dffa8ac00"
+    ],
+    "title": "Chicago Cubs at Milwaukee Brewers",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-09-07T19:46:06.133911+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x967ae947189baf7b87b23854bcc33d6a599dfdf8ca1887a90a77af4540b26a01"
+    ],
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "ask_cents": 5
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2c4f204fff1244a27631695205c50ab0"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "no_cost_cents": 61
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-07T19:46:06.193062+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x87cf73008e432510cc5943886b6fb497b561fa3d63026f85a771d671f22e0cc3"
+    ],
+    "title": "Chicago Cubs vs. Milwaukee Brewers: O/U 8.5",
+    "ask_cents": 14
    },
    "buy_no": {
     "venue": "prophetx",
@@ -232,9 +209,9 @@
     "title": "Chicago Cubs at Milwaukee Brewers",
     "no_cost_cents": 53
    },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-07T19:39:25.164179+00:00"
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-07T19:46:06.162988+00:00"
   },
   {
    "buy_yes": {
@@ -244,7 +221,7 @@
      "0xddc30002f7e9a9d52f81bf546d45e908b8e1f56eb2e06384a0814ac55c8a32d7"
     ],
     "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 32
+    "ask_cents": 36
    },
    "buy_no": {
     "venue": "prophetx",
@@ -255,32 +232,9 @@
     "title": "Minnesota Twins at Detroit Tigers",
     "no_cost_cents": 42
    },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-07T19:41:05.165511+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
-    ],
-    "title": "Arizona Diamondbacks vs. Kansas City Royals",
-    "ask_cents": 37
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2c0cfb67cdf5e65f3b45ec197d19b739"
-    ],
-    "title": "Arizona Diamondbacks at Kansas City Royals",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-07T19:44:09.479787+00:00"
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-07T19:46:06.259345+00:00"
   },
   {
    "buy_yes": {
@@ -299,11 +253,80 @@
      "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
     ],
     "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
-    "no_cost_cents": 34
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-07T19:41:51.707176+00:00"
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-07T19:46:06.108608+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
+    ],
+    "title": "Arizona Diamondbacks vs. Kansas City Royals",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2c0cfb67cdf5e65f3b45ec197d19b739"
+    ],
+    "title": "Arizona Diamondbacks at Kansas City Royals",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-07T19:46:19.816110+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdc1e8ef6649b1610e3454f539f3f493668bf90061960341c437d04f0fc56d5df"
+    ],
+    "title": "Chicago Cubs vs. Milwaukee Brewers",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f30538495bb6b75a750f7d9dffa8ac00"
+    ],
+    "title": "Chicago Cubs at Milwaukee Brewers",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-07T19:46:06.193258+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb8277fdbeb64abd4ff7f305c338df40791dd8be7f17350bd0892ad28d2efe029"
+    ],
+    "title": "Cleveland Guardians vs. Baltimore Orioles: O/U 7.5",
+    "ask_cents": 75
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "51b462352dd29cd6af26faad424b50b2"
+    ],
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 6
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-07T19:46:19.888844+00:00"
   },
   {
    "buy_yes": {
@@ -322,11 +345,11 @@
      "0xfdf5b9cd558e1b107522c4a3aad46f579a6c3cccecb14327c592821e5b3d715b"
     ],
     "title": "Los Angeles Angels vs. Boston Red Sox: O/U 7.5",
-    "no_cost_cents": 38
+    "no_cost_cents": 41
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-07T19:43:51.978572+00:00"
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-07T19:46:06.236894+00:00"
   },
   {
    "buy_yes": {
@@ -336,20 +359,20 @@
      "0xdc1e8ef6649b1610e3454f539f3f493668bf90061960341c437d04f0fc56d5df"
     ],
     "title": "Chicago Cubs vs. Milwaukee Brewers",
-    "ask_cents": 46
+    "ask_cents": 38
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "f30538495bb6b75a750f7d9dffa8ac00"
+     "32ec16209a4934cadb8bfaf9ebc4f474"
     ],
     "title": "Chicago Cubs at Milwaukee Brewers",
-    "no_cost_cents": 42
+    "no_cost_cents": 53
    },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-07T19:36:05.760931+00:00"
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-07T19:46:06.215504+00:00"
   },
   {
    "buy_yes": {
@@ -359,7 +382,7 @@
      "0xddc30002f7e9a9d52f81bf546d45e908b8e1f56eb2e06384a0814ac55c8a32d7"
     ],
     "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 32
+    "ask_cents": 36
    },
    "buy_no": {
     "venue": "prophetx",
@@ -370,9 +393,9 @@
     "title": "Minnesota Twins at Detroit Tigers",
     "no_cost_cents": 58
    },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-07T19:41:05.226625+00:00"
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-07T19:46:06.285092+00:00"
   },
   {
    "buy_yes": {
@@ -391,34 +414,34 @@
      "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
     ],
     "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
-    "no_cost_cents": 34
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-07T19:41:51.678537+00:00"
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-09-07T19:46:06.084673+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
+     "0x268c6b546ca3a86c5603d85cd09c833102c782660891197f8e96e6f8bc83b292"
     ],
-    "title": "Arizona Diamondbacks vs. Kansas City Royals",
-    "ask_cents": 37
+    "title": "Cleveland Guardians vs. Baltimore Orioles",
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "246bdb033998961b5d875f4df51e43a6"
+     "8a42f446aa251070ca8e0b5ad481cd0b"
     ],
-    "title": "Arizona Diamondbacks at Kansas City Royals",
-    "no_cost_cents": 59
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 94
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-07T19:44:09.506311+00:00"
+   "detected_at": "2026-09-07T19:46:19.935430+00:00"
   },
   {
    "buy_yes": {
@@ -437,11 +460,11 @@
      "0x5e013a01e8d6f78035ce4cd0da503c30522cc60d683ee288a62f7e6fcc52cb03"
     ],
     "title": "Los Angeles Angels vs. Boston Red Sox: O/U 8.5",
-    "no_cost_cents": 57
+    "no_cost_cents": 58
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-07T19:41:05.014962+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-07T19:46:06.004567+00:00"
   },
   {
    "buy_yes": {
@@ -460,34 +483,34 @@
      "0x3f3236a2c93b325b205bb40dc7ce5f456545e2e0bff1c25eca28d2eb96ba3e0d"
     ],
     "title": "New York Mets vs. Miami Marlins",
-    "no_cost_cents": 4
+    "no_cost_cents": 5
    },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-07T19:43:51.914889+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-07T19:46:06.069843+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xdc1e8ef6649b1610e3454f539f3f493668bf90061960341c437d04f0fc56d5df"
+     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
     ],
-    "title": "Chicago Cubs vs. Milwaukee Brewers",
-    "ask_cents": 46
+    "title": "Arizona Diamondbacks vs. Kansas City Royals",
+    "ask_cents": 40
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "32ec16209a4934cadb8bfaf9ebc4f474"
+     "246bdb033998961b5d875f4df51e43a6"
     ],
-    "title": "Chicago Cubs at Milwaukee Brewers",
-    "no_cost_cents": 53
+    "title": "Arizona Diamondbacks at Kansas City Royals",
+    "no_cost_cents": 59
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-07T19:36:05.784936+00:00"
+   "detected_at": "2026-09-07T19:46:19.835664+00:00"
   }
  ]
 }
