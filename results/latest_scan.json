@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-07T20:41:55.737794+00:00",
+ "scanned_at": "2026-09-07T20:44:02.125682+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 81.7,
+ "loop_uptime_min": 83.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 108470,
+   "markets": 110239,
    "last_tick_age_s": 0.0
   },
   {
@@ -25,55 +25,55 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 244,
-   "last_tick_age_s": 5.1
+   "markets": 251,
+   "last_tick_age_s": 17.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 4594.0
+   "last_tick_age_s": 4720.4
   }
  ],
  "totals": {
-  "markets_tracked": 116457,
+  "markets_tracked": 118233,
   "pairs_married": 10,
-  "arbitrages": 10
+  "arbitrages": 9
  },
  "stats": {
-  "commits": 37,
-  "gist_errors": 74,
+  "commits": 38,
+  "gist_errors": 76,
   "hot_errors": 0,
-  "kalshi.sweeps": 441,
-  "kalshi.ticks": 3603471,
-  "kalshi.updates": 1686188,
-  "kalshi.ws_ticks": 3603471,
-  "kalshi.ws_trades": 625643,
-  "live_evals_fired": 2035,
-  "novig.rest_updates": 9088,
-  "novig.sweeps": 440,
-  "novig.ticks": 78643,
-  "novig.updates": 9088,
-  "pairs_blocked_antonym_date": 4959,
-  "pmglobal.rest_updates": 4315,
-  "pmglobal.sweeps": 440,
-  "pmglobal.ticks": 57149,
-  "pmglobal.updates": 9848,
+  "kalshi.sweeps": 452,
+  "kalshi.ticks": 3675940,
+  "kalshi.updates": 1720636,
+  "kalshi.ws_ticks": 3675940,
+  "kalshi.ws_trades": 645622,
+  "live_evals_fired": 2057,
+  "novig.rest_updates": 9258,
+  "novig.sweeps": 451,
+  "novig.ticks": 80719,
+  "novig.updates": 9258,
+  "pairs_blocked_antonym_date": 5085,
+  "pmglobal.rest_updates": 4402,
+  "pmglobal.sweeps": 451,
+  "pmglobal.ticks": 58535,
+  "pmglobal.updates": 10055,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 2589739,
-  "pmglobal.ws_ticks": 13049,
-  "pmus.rest_updates": 11741,
-  "pmus.sweeps": 441,
-  "pmus.ticks": 3355571,
-  "pmus.updates": 11741,
+  "pmglobal.ws_msgs": 2640434,
+  "pmglobal.ws_ticks": 13335,
+  "pmus.rest_updates": 11858,
+  "pmus.sweeps": 452,
+  "pmus.ticks": 3439083,
+  "pmus.updates": 11858,
   "pmus_x.last_count": 7592,
-  "pmus_x.sweeps": 442,
+  "pmus_x.sweeps": 453,
   "prophetx.ticks": 715,
   "prophetx.updates": 187,
-  "prophetx.ws_errors": 293,
+  "prophetx.ws_errors": 300,
   "px.evt_scanned": 29,
-  "pxboard.sweeps": 440,
-  "supa_errors": 1329
+  "pxboard.sweeps": 451,
+  "supa_errors": 1362
  },
  "arbitrages": [
   {
@@ -147,29 +147,6 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8d9da53eba877cac3ec85a9facfec2c9"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "ask_cents": 43
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-07T20:41:15.084652+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -190,6 +167,29 @@
    "total_cost_cents": 59,
    "edge_bps": 4100,
    "detected_at": "2026-09-07T20:41:15.183884+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8d9da53eba877cac3ec85a9facfec2c9"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "ask_cents": 43
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x98f078d85bf52e800228b49476fe5bccd47a93c4b9d84cc8d2caed5a063a3119"
+    ],
+    "title": "Minnesota Twins vs. Detroit Tigers: O/U 7.5",
+    "no_cost_cents": 16
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-07T20:43:28.501029+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +258,7 @@
    },
    "total_cost_cents": 75,
    "edge_bps": 2500,
-   "detected_at": "2026-09-07T20:41:15.053862+00:00"
+   "detected_at": "2026-09-07T20:43:28.477638+00:00"
   },
   {
    "buy_yes": {
@@ -277,34 +277,11 @@
      "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
     ],
     "title": "Arizona Diamondbacks vs. Kansas City Royals",
-    "no_cost_cents": 36
+    "no_cost_cents": 41
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-07T20:41:49.569571+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2c0cfb67cdf5e65f3b45ec197d19b739"
-    ],
-    "title": "Arizona Diamondbacks at Kansas City Royals",
-    "ask_cents": 61
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3dbf759fa4640a47ea99d2dbaaf6925dfb99337c68190c886207a895eb376640"
-    ],
-    "title": "Arizona Diamondbacks vs. Kansas City Royals",
-    "no_cost_cents": 36
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-07T20:41:49.541860+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-07T20:43:47.395146+00:00"
   }
  ]
 }
