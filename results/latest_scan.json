@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-08T23:17:35.304832+00:00",
+ "scanned_at": "2026-09-08T23:19:41.048454+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 23.7,
+ "loop_uptime_min": 25.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 74176,
+   "markets": 77321,
    "last_tick_age_s": 0.0
   },
   {
@@ -25,55 +25,55 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 229,
-   "last_tick_age_s": 16.3
+   "markets": 230,
+   "last_tick_age_s": 13.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 21,
-   "last_tick_age_s": 987.2
+   "last_tick_age_s": 1113.0
   }
  ],
  "totals": {
-  "markets_tracked": 81961,
+  "markets_tracked": 85107,
   "pairs_married": 12,
   "arbitrages": 12
  },
  "stats": {
-  "commits": 10,
-  "gist_errors": 23,
+  "commits": 11,
+  "gist_errors": 25,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 94,
-  "kalshi.ticks": 1400492,
-  "kalshi.updates": 704843,
-  "kalshi.ws_ticks": 1400490,
-  "kalshi.ws_trades": 214336,
-  "live_evals_fired": 688,
-  "novig.rest_updates": 1850,
-  "novig.sweeps": 93,
-  "novig.ticks": 19005,
-  "novig.updates": 1850,
-  "pairs_blocked_antonym_date": 234,
-  "pmglobal.rest_updates": 952,
-  "pmglobal.sweeps": 93,
-  "pmglobal.ticks": 12662,
-  "pmglobal.updates": 2109,
-  "pmglobal.ws_msgs": 371380,
-  "pmglobal.ws_ticks": 3262,
-  "pmus.rest_updates": 8908,
-  "pmus.sweeps": 94,
-  "pmus.ticks": 705185,
-  "pmus.updates": 8908,
+  "kalshi.sweeps": 102,
+  "kalshi.ticks": 1522125,
+  "kalshi.updates": 765836,
+  "kalshi.ws_ticks": 1522123,
+  "kalshi.ws_trades": 232177,
+  "live_evals_fired": 735,
+  "novig.rest_updates": 2042,
+  "novig.sweeps": 101,
+  "novig.ticks": 20602,
+  "novig.updates": 2042,
+  "pairs_blocked_antonym_date": 254,
+  "pmglobal.rest_updates": 1006,
+  "pmglobal.sweeps": 101,
+  "pmglobal.ticks": 13666,
+  "pmglobal.updates": 2223,
+  "pmglobal.ws_msgs": 399072,
+  "pmglobal.ws_ticks": 3466,
+  "pmus.rest_updates": 9050,
+  "pmus.sweeps": 102,
+  "pmus.ticks": 764569,
+  "pmus.updates": 9050,
   "pmus_x.last_count": 7423,
-  "pmus_x.sweeps": 95,
+  "pmus_x.sweeps": 103,
   "prophetx.ticks": 565,
   "prophetx.updates": 175,
-  "prophetx.ws_errors": 84,
+  "prophetx.ws_errors": 92,
   "px.evt_scanned": 21,
-  "pxboard.sweeps": 93,
-  "supa_errors": 312
+  "pxboard.sweeps": 101,
+  "supa_errors": 337
  },
  "arbitrages": [
   {
@@ -97,7 +97,7 @@
    },
    "total_cost_cents": 32,
    "edge_bps": 6800,
-   "detected_at": "2026-09-08T23:17:17.177379+00:00"
+   "detected_at": "2026-09-08T23:19:26.461033+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +143,7 @@
    },
    "total_cost_cents": 47,
    "edge_bps": 5300,
-   "detected_at": "2026-09-08T23:17:17.736100+00:00"
+   "detected_at": "2026-09-08T23:19:13.087359+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +166,7 @@
    },
    "total_cost_cents": 49,
    "edge_bps": 5100,
-   "detected_at": "2026-09-08T23:17:17.666512+00:00"
+   "detected_at": "2026-09-08T23:19:13.038582+00:00"
   },
   {
    "buy_yes": {
@@ -189,30 +189,30 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-08T23:17:17.575530+00:00"
+   "detected_at": "2026-09-08T23:19:29.997971+00:00"
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d4f59fdfa86ae2c2b0d3f11c2440a098"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 42
+   },
+   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x57dd61041a19318dda117ff7614abe80585d1d2e7f237be2f56c64f8120867ca"
     ],
     "title": "Los Angeles Angels vs. Boston Red Sox",
-    "ask_cents": 50
+    "no_cost_cents": 46
    },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d18392ff6248d2bd45bcbbc4bd788f84"
-    ],
-    "title": "Los Angeles Angels at Boston Red Sox",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-08T23:17:17.289793+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-08T23:19:27.211294+00:00"
   },
   {
    "buy_yes": {
@@ -239,29 +239,6 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d4f59fdfa86ae2c2b0d3f11c2440a098"
-    ],
-    "title": "Los Angeles Angels at Boston Red Sox",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x57dd61041a19318dda117ff7614abe80585d1d2e7f237be2f56c64f8120867ca"
-    ],
-    "title": "Los Angeles Angels vs. Boston Red Sox",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-08T23:17:17.177452+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -281,30 +258,30 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-09-08T23:17:17.784016+00:00"
+   "detected_at": "2026-09-08T23:19:13.140028+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x7f260e0f53e63ad43f4208bf0e040ee4796da3ddd8633ae6470a21d031fa1a66"
+     "0x57dd61041a19318dda117ff7614abe80585d1d2e7f237be2f56c64f8120867ca"
     ],
-    "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 54
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "ask_cents": 55
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "8dc15c600840c24515b24cf2a14d6eff"
+     "d18392ff6248d2bd45bcbbc4bd788f84"
     ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "no_cost_cents": 41
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "no_cost_cents": 42
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-08T23:17:17.524435+00:00"
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-08T23:19:27.296158+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +304,30 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-08T23:17:17.618269+00:00"
+   "detected_at": "2026-09-08T23:19:12.975325+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7f260e0f53e63ad43f4208bf0e040ee4796da3ddd8633ae6470a21d031fa1a66"
+    ],
+    "title": "Minnesota Twins vs. Detroit Tigers",
+    "ask_cents": 58
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8dc15c600840c24515b24cf2a14d6eff"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-08T23:19:29.943735+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +350,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-08T23:17:17.177363+00:00"
+   "detected_at": "2026-09-08T23:19:26.461011+00:00"
   }
  ]
 }
