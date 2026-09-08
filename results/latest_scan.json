@@ -1,77 +1,538 @@
 {
- "scanned_at": "2026-09-08T07:04:29.640165+00:00",
+ "scanned_at": "2026-09-08T07:06:31.223211+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 123.7,
+ "loop_uptime_min": 125.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 104270,
+   "markets": 104968,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 17139,
-   "last_tick_age_s": 0.1
+   "markets": 17891,
+   "last_tick_age_s": 2.8
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 123,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.8
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 241,
-   "last_tick_age_s": 13.3
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 56,
-   "last_tick_age_s": 6997.3
+   "last_tick_age_s": 7118.9
   }
  ],
  "totals": {
-  "markets_tracked": 121829,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 123279,
+  "pairs_married": 21,
+  "arbitrages": 20
  },
  "stats": {
-  "commits": 59,
-  "gist_errors": 127,
+  "commits": 60,
+  "gist_errors": 129,
   "hot_errors": 0,
-  "kalshi.sweeps": 610,
-  "kalshi.ticks": 4717105,
-  "kalshi.updates": 2225932,
-  "kalshi.ws_ticks": 4717105,
-  "kalshi.ws_trades": 687401,
-  "novig.rest_updates": 900,
-  "novig.sweeps": 609,
-  "novig.ticks": 126087,
-  "novig.updates": 900,
-  "pairs_blocked_antonym_date": 9062,
-  "pmglobal.rest_updates": 3575,
-  "pmglobal.sweeps": 609,
-  "pmglobal.ticks": 74027,
-  "pmglobal.updates": 7786,
-  "pmglobal.ws_msgs": 1208035,
-  "pmglobal.ws_ticks": 13027,
-  "pmus.rest_updates": 21267,
-  "pmus.sweeps": 610,
-  "pmus.ticks": 4671935,
-  "pmus.updates": 21267,
-  "pmus_x.last_count": 7833,
-  "pmus_x.sweeps": 611,
+  "kalshi.sweeps": 621,
+  "kalshi.ticks": 4791203,
+  "kalshi.updates": 2256983,
+  "kalshi.ws_ticks": 4791203,
+  "kalshi.ws_trades": 696276,
+  "novig.rest_updates": 907,
+  "novig.sweeps": 621,
+  "novig.ticks": 128919,
+  "novig.updates": 907,
+  "pairs_blocked_antonym_date": 9302,
+  "pmglobal.rest_updates": 3628,
+  "pmglobal.sweeps": 621,
+  "pmglobal.ticks": 75473,
+  "pmglobal.updates": 7918,
+  "pmglobal.ws_msgs": 1233659,
+  "pmglobal.ws_ticks": 13273,
+  "pmus.rest_updates": 22019,
+  "pmus.sweeps": 621,
+  "pmus.ticks": 4758149,
+  "pmus.updates": 22019,
+  "pmus_x.last_count": 7825,
+  "pmus_x.sweeps": 622,
   "prophetx.ticks": 1568,
   "prophetx.updates": 68,
-  "prophetx.ws_errors": 416,
+  "prophetx.ws_errors": 424,
   "px.evt_scanned": 56,
-  "pxboard.sweeps": 609,
-  "supa_errors": 2023
+  "pxboard.sweeps": 620,
+  "supa_errors": 2061
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc1c35cf0bc7046d51c71d0f5dad1cb2af30e815df4a606ab15116ac3647d4691"
+    ],
+    "title": "BV Borussia 09 Dortmund vs. Villarreal CF: O/U 3.5",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603570"
+    ],
+    "title": "Will the BV Borussia 09 Dortmund cover 1.5 vs the Villarreal CF in BVB vs VIL?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 47,
+   "edge_bps": 5300,
+   "detected_at": "2026-09-08T07:06:31.223053+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc1c35cf0bc7046d51c71d0f5dad1cb2af30e815df4a606ab15116ac3647d4691"
+    ],
+    "title": "BV Borussia 09 Dortmund vs. Villarreal CF: O/U 3.5",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603520"
+    ],
+    "title": "Will the BV Borussia 09 Dortmund cover 2.5 vs the Villarreal CF in BVB vs VIL?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 47,
+   "edge_bps": 5300,
+   "detected_at": "2026-09-08T07:06:31.223111+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc1c35cf0bc7046d51c71d0f5dad1cb2af30e815df4a606ab15116ac3647d4691"
+    ],
+    "title": "BV Borussia 09 Dortmund vs. Villarreal CF: O/U 3.5",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603572"
+    ],
+    "title": "Will the BV Borussia 09 Dortmund cover 2.5 vs the Villarreal CF in BVB vs VIL?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 47,
+   "edge_bps": 5300,
+   "detected_at": "2026-09-08T07:06:31.223134+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603497"
+    ],
+    "title": "Will the Club Brugge KV cover -2.5 vs the Aston Villa FC in BRU vs AST?",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9583192c420c90070797370f7a4da74dbbd089982c62ae27cdc02d3c27ca59b9"
+    ],
+    "title": "Club Brugge KV vs. Aston Villa FC: O/U 2.5",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 48,
+   "edge_bps": 5200,
+   "detected_at": "2026-09-08T07:06:31.223075+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc1c35cf0bc7046d51c71d0f5dad1cb2af30e815df4a606ab15116ac3647d4691"
+    ],
+    "title": "BV Borussia 09 Dortmund vs. Villarreal CF: O/U 3.5",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603524"
+    ],
+    "title": "Will the BV Borussia 09 Dortmund cover 1.5 vs the Villarreal CF in BVB vs VIL?",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 54,
+   "edge_bps": 4600,
+   "detected_at": "2026-09-08T07:06:31.223117+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9583192c420c90070797370f7a4da74dbbd089982c62ae27cdc02d3c27ca59b9"
+    ],
+    "title": "Club Brugge KV vs. Aston Villa FC: O/U 2.5",
+    "ask_cents": 57
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603452"
+    ],
+    "title": "Will the Club Brugge KV cover 1.5 vs the Aston Villa FC in BRU vs AST?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-08T07:06:31.223045+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9583192c420c90070797370f7a4da74dbbd089982c62ae27cdc02d3c27ca59b9"
+    ],
+    "title": "Club Brugge KV vs. Aston Villa FC: O/U 2.5",
+    "ask_cents": 57
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603482"
+    ],
+    "title": "Will the Club Brugge KV cover 2.5 vs the Aston Villa FC in BRU vs AST?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-08T07:06:31.223098+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ff3295d98176cb92f429eb9bb468f4b4"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-08T07:06:31.223122+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603445"
+    ],
+    "title": "Will the Club Brugge KV cover -1.5 vs the Aston Villa FC in BRU vs AST?",
+    "ask_cents": 19
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9583192c420c90070797370f7a4da74dbbd089982c62ae27cdc02d3c27ca59b9"
+    ],
+    "title": "Club Brugge KV vs. Aston Villa FC: O/U 2.5",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-08T07:06:31.223092+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c42a00f26f9b435a3c21337bceb6580d"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 35
+   },
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-08T07:06:31.223013+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603519"
+    ],
+    "title": "Will the BV Borussia 09 Dortmund cover -2.5 vs the Villarreal CF in BVB vs VIL?",
+    "ask_cents": 15
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc1c35cf0bc7046d51c71d0f5dad1cb2af30e815df4a606ab15116ac3647d4691"
+    ],
+    "title": "BV Borussia 09 Dortmund vs. Villarreal CF: O/U 3.5",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-08T07:06:31.223105+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e826ddfd79f828e20b947172c02cd5c2"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-08T07:06:31.223067+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "504fe93dfc539b92898d21b8a2168987"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-08T07:06:31.223034+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "599836"
+    ],
+    "title": "Will Josh Allen record 3+ passing touchdowns?",
+    "ask_cents": 15
+   },
+   "buy_no": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a04c0f-4f38-7801-8dec-57ddeb7918d8"
+    ],
+    "title": "Josh Allen 1.5 PASSING_TOUCHDOWNS (NFL)",
+    "no_cost_cents": 64
+   },
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-08T07:06:31.223061+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b436f8a323e7d722ec7f9e157dbae00f"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-08T07:06:31.223081+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8bf6c9ae812c6a59ffb2ff30ecc52865"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-08T07:06:31.223146+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "75af71adc52ca8b842b5921cf68cd65c"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 59
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-08T07:06:31.223158+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5b9668e450ca9ebab2c130a139871f96"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-08T07:06:31.223139+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "cfac6802c1e5293f88490b1f163645af"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "no_cost_cents": 68
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-08T07:06:31.223128+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "603475"
+    ],
+    "title": "Will Aston Villa FC lead Club Brugge KV at halftime?",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "502b6c466c6e237f1f02432499cc3329"
+    ],
+    "title": "Aston Villa FC at Club Brugge KV",
+    "no_cost_cents": 65
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-08T07:06:31.223152+00:00"
+  }
+ ]
 }
