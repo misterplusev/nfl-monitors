@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-08T17:23:57.295386+00:00",
+ "scanned_at": "2026-09-08T17:25:59.127906+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 160.9,
+ "loop_uptime_min": 163.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 196250,
+   "markets": 197915,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,109 +19,63 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 141,
-   "last_tick_age_s": 1.1
+   "markets": 142,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 292,
-   "last_tick_age_s": 0.1
+   "markets": 293,
+   "last_tick_age_s": 12.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 9349.2
+   "last_tick_age_s": 9471.0
   }
  ],
  "totals": {
-  "markets_tracked": 204622,
-  "pairs_married": 12,
-  "arbitrages": 12
+  "markets_tracked": 206289,
+  "pairs_married": 10,
+  "arbitrages": 9
  },
  "stats": {
-  "commits": 77,
-  "gist_errors": 165,
+  "commits": 78,
+  "gist_errors": 167,
   "hot_errors": 0,
-  "kalshi.sweeps": 776,
-  "kalshi.ticks": 7406449,
-  "kalshi.updates": 3394538,
-  "kalshi.ws_ticks": 7406449,
-  "kalshi.ws_trades": 1097714,
-  "live_evals_fired": 71,
-  "novig.rest_updates": 4175,
-  "novig.sweeps": 776,
-  "novig.ticks": 186748,
-  "novig.updates": 4175,
-  "pairs_blocked_antonym_date": 4852,
-  "pmglobal.rest_updates": 7581,
-  "pmglobal.sweeps": 776,
-  "pmglobal.ticks": 102016,
-  "pmglobal.updates": 16886,
+  "kalshi.sweeps": 786,
+  "kalshi.ticks": 7498514,
+  "kalshi.updates": 3435382,
+  "kalshi.ws_ticks": 7498514,
+  "kalshi.ws_trades": 1113119,
+  "live_evals_fired": 80,
+  "novig.rest_updates": 4209,
+  "novig.sweeps": 785,
+  "novig.ticks": 188863,
+  "novig.updates": 4209,
+  "pairs_blocked_antonym_date": 4917,
+  "pmglobal.rest_updates": 7681,
+  "pmglobal.sweeps": 786,
+  "pmglobal.ticks": 103359,
+  "pmglobal.updates": 17119,
   "pmglobal.ws_errors": 5,
-  "pmglobal.ws_msgs": 2305627,
-  "pmglobal.ws_ticks": 24316,
-  "pmus.rest_updates": 22537,
-  "pmus.sweeps": 776,
-  "pmus.ticks": 5778085,
-  "pmus.updates": 22537,
-  "pmus_x.last_count": 7421,
-  "pmus_x.sweeps": 777,
+  "pmglobal.ws_msgs": 2333539,
+  "pmglobal.ws_ticks": 24659,
+  "pmus.rest_updates": 22684,
+  "pmus.sweeps": 786,
+  "pmus.ticks": 5852303,
+  "pmus.updates": 22684,
+  "pmus_x.last_count": 7422,
+  "pmus_x.sweeps": 787,
   "prophetx.ticks": 1444,
   "prophetx.updates": 79,
-  "prophetx.ws_errors": 541,
+  "prophetx.ws_errors": 547,
   "px.evt_scanned": 58,
-  "pxboard.sweeps": 775,
-  "supa_errors": 2384
+  "pxboard.sweeps": 785,
+  "supa_errors": 2415
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9b01193e29e724362e8c378a7c9b6f5f"
-    ],
-    "title": "Hungary (W) vs Japan (W)",
-    "ask_cents": 48
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc65a0ab60f2f486e85364e41309ca43b98aa1af5e870b40f8e0bc7bb71cb3e4e"
-    ],
-    "title": "Hungary vs. Japan",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-08T17:23:57.295311+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ec5ee2ae9ee0d5fd819801acf41371fe"
-    ],
-    "title": "Hungary (W) vs Japan (W)",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc65a0ab60f2f486e85364e41309ca43b98aa1af5e870b40f8e0bc7bb71cb3e4e"
-    ],
-    "title": "Hungary vs. Japan",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 56,
-   "edge_bps": 4400,
-   "detected_at": "2026-09-08T17:23:57.295329+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -130,7 +84,7 @@
      "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
     ],
     "title": "AEK vs. LASK Linz: O/U 3.5",
-    "ask_cents": 40
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -141,9 +95,9 @@
     "title": "LASK Linz at AEK",
     "no_cost_cents": 21
    },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-08T17:19:33.202500+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-08T17:24:34.301569+00:00"
   },
   {
    "buy_yes": {
@@ -153,7 +107,7 @@
      "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
     ],
     "title": "AEK vs. LASK Linz: O/U 3.5",
-    "ask_cents": 40
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -164,9 +118,9 @@
     "title": "LASK Linz at AEK",
     "no_cost_cents": 23
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-09-08T17:19:33.643595+00:00"
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-08T17:24:34.752171+00:00"
   },
   {
    "buy_yes": {
@@ -176,7 +130,7 @@
      "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
     ],
     "title": "AEK vs. LASK Linz: O/U 3.5",
-    "ask_cents": 40
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -187,9 +141,9 @@
     "title": "LASK Linz at AEK",
     "no_cost_cents": 26
    },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-08T17:19:33.551352+00:00"
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-08T17:24:34.649901+00:00"
   },
   {
    "buy_yes": {
@@ -199,7 +153,7 @@
      "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
     ],
     "title": "AEK vs. LASK Linz: O/U 3.5",
-    "ask_cents": 40
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -210,9 +164,32 @@
     "title": "LASK Linz at AEK",
     "no_cost_cents": 37
    },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-08T17:19:32.993376+00:00"
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-08T17:24:34.143212+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
+    ],
+    "title": "AEK vs. LASK Linz: O/U 3.5",
+    "ask_cents": 37
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a87f12713adbdbf8e23005a0a59728cf"
+    ],
+    "title": "LASK Linz at AEK",
+    "no_cost_cents": 44
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-08T17:24:33.953224+00:00"
   },
   {
    "buy_yes": {
@@ -231,11 +208,11 @@
      "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
     ],
     "title": "AEK vs. LASK Linz: O/U 3.5",
-    "no_cost_cents": 60
+    "no_cost_cents": 63
    },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-08T17:19:33.448887+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-08T17:24:34.549286+00:00"
   },
   {
    "buy_yes": {
@@ -254,34 +231,11 @@
      "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
     ],
     "title": "AEK vs. LASK Linz: O/U 3.5",
-    "no_cost_cents": 60
+    "no_cost_cents": 63
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-08T17:19:33.308915+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
-    ],
-    "title": "AEK vs. LASK Linz: O/U 3.5",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a87f12713adbdbf8e23005a0a59728cf"
-    ],
-    "title": "LASK Linz at AEK",
-    "no_cost_cents": 44
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-08T17:19:32.748645+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-08T17:24:34.456230+00:00"
   },
   {
    "buy_yes": {
@@ -300,11 +254,11 @@
      "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
     ],
     "title": "AEK vs. LASK Linz: O/U 3.5",
-    "no_cost_cents": 60
+    "no_cost_cents": 63
    },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-08T17:19:32.847384+00:00"
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-08T17:24:34.044208+00:00"
   },
   {
    "buy_yes": {
@@ -314,7 +268,7 @@
      "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
     ],
     "title": "AEK vs. LASK Linz: O/U 3.5",
-    "ask_cents": 40
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -325,32 +279,9 @@
     "title": "LASK Linz at AEK",
     "no_cost_cents": 58
    },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-08T17:19:33.105613+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0e506b1d99f51c97a276fe0feadbd227"
-    ],
-    "title": "LASK Linz at AEK",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x46180728114a9a2dab0de382593a90150990cfda55d195cedc406bdf84a03fce"
-    ],
-    "title": "AEK vs. LASK Linz: O/U 3.5",
-    "no_cost_cents": 60
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-08T17:19:32.906334+00:00"
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-09-08T17:24:34.225944+00:00"
   }
  ]
 }
