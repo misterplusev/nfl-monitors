@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-08T23:25:54.253278+00:00",
+ "scanned_at": "2026-09-08T23:27:55.169900+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 32.0,
+ "loop_uptime_min": 34.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 86998,
+   "markets": 92189,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7431,
-   "last_tick_age_s": 2.6
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 105,
-   "last_tick_age_s": 0.8
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 232,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 15.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 21,
-   "last_tick_age_s": 1486.2
+   "last_tick_age_s": 1607.1
   }
  ],
  "totals": {
-  "markets_tracked": 94787,
+  "markets_tracked": 99978,
   "pairs_married": 12,
   "arbitrages": 12
  },
  "stats": {
-  "commits": 14,
-  "gist_errors": 31,
+  "commits": 15,
+  "gist_errors": 33,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 131,
-  "kalshi.ticks": 1897607,
-  "kalshi.updates": 955601,
-  "kalshi.ws_ticks": 1897605,
-  "kalshi.ws_trades": 280642,
-  "live_evals_fired": 957,
-  "novig.rest_updates": 2657,
-  "novig.sweeps": 131,
-  "novig.ticks": 26673,
-  "novig.updates": 2657,
-  "pairs_blocked_antonym_date": 328,
-  "pmglobal.rest_updates": 1221,
-  "pmglobal.sweeps": 131,
-  "pmglobal.ticks": 17398,
-  "pmglobal.updates": 2684,
-  "pmglobal.ws_msgs": 488821,
-  "pmglobal.ws_ticks": 4198,
-  "pmus.rest_updates": 9384,
-  "pmus.sweeps": 131,
-  "pmus.ticks": 979836,
-  "pmus.updates": 9384,
+  "kalshi.sweeps": 141,
+  "kalshi.ticks": 2031185,
+  "kalshi.updates": 1020726,
+  "kalshi.ws_ticks": 2031183,
+  "kalshi.ws_trades": 297846,
+  "live_evals_fired": 1030,
+  "novig.rest_updates": 2852,
+  "novig.sweeps": 140,
+  "novig.ticks": 28503,
+  "novig.updates": 2852,
+  "pairs_blocked_antonym_date": 352,
+  "pmglobal.rest_updates": 1274,
+  "pmglobal.sweeps": 140,
+  "pmglobal.ticks": 18498,
+  "pmglobal.updates": 2809,
+  "pmglobal.ws_msgs": 514966,
+  "pmglobal.ws_ticks": 4398,
+  "pmus.rest_updates": 9500,
+  "pmus.sweeps": 141,
+  "pmus.ticks": 1054066,
+  "pmus.updates": 9500,
   "pmus_x.last_count": 7423,
-  "pmus_x.sweeps": 132,
+  "pmus_x.sweeps": 142,
   "prophetx.ticks": 565,
   "prophetx.updates": 175,
-  "prophetx.ws_errors": 113,
+  "prophetx.ws_errors": 120,
   "px.evt_scanned": 21,
-  "pxboard.sweeps": 130,
-  "supa_errors": 434
+  "pxboard.sweeps": 140,
+  "supa_errors": 467
  },
  "arbitrages": [
   {
@@ -97,7 +97,7 @@
    },
    "total_cost_cents": 30,
    "edge_bps": 7000,
-   "detected_at": "2026-09-08T23:25:40.218976+00:00"
+   "detected_at": "2026-09-08T23:27:42.407165+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 38,
    "edge_bps": 6200,
-   "detected_at": "2026-09-08T23:25:22.099018+00:00"
+   "detected_at": "2026-09-08T23:26:09.404293+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +143,7 @@
    },
    "total_cost_cents": 41,
    "edge_bps": 5900,
-   "detected_at": "2026-09-08T23:25:22.263964+00:00"
+   "detected_at": "2026-09-08T23:27:38.082861+00:00"
   },
   {
    "buy_yes": {
@@ -166,30 +166,7 @@
    },
    "total_cost_cents": 43,
    "edge_bps": 5700,
-   "detected_at": "2026-09-08T23:25:22.216437+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "84d927521f692590118ec5df2e423198"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "ask_cents": 41
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7f260e0f53e63ad43f4208bf0e040ee4796da3ddd8633ae6470a21d031fa1a66"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-08T23:25:21.988863+00:00"
+   "detected_at": "2026-09-08T23:27:38.017664+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +189,30 @@
    },
    "total_cost_cents": 86,
    "edge_bps": 1400,
-   "detected_at": "2026-09-08T23:25:40.219053+00:00"
+   "detected_at": "2026-09-08T23:27:37.797531+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "84d927521f692590118ec5df2e423198"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "ask_cents": 41
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7f260e0f53e63ad43f4208bf0e040ee4796da3ddd8633ae6470a21d031fa1a66"
+    ],
+    "title": "Minnesota Twins vs. Detroit Tigers",
+    "no_cost_cents": 46
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-08T23:27:42.324536+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +235,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-08T23:25:22.365068+00:00"
+   "detected_at": "2026-09-08T23:27:38.136242+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +258,7 @@
    },
    "total_cost_cents": 92,
    "edge_bps": 800,
-   "detected_at": "2026-09-08T23:25:22.154774+00:00"
+   "detected_at": "2026-09-08T23:27:37.965864+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +281,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-08T23:25:22.044557+00:00"
+   "detected_at": "2026-09-08T23:26:09.404277+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +304,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-08T23:25:21.893019+00:00"
+   "detected_at": "2026-09-08T23:27:42.324515+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +327,7 @@
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-08T23:25:40.218954+00:00"
+   "detected_at": "2026-09-08T23:27:42.407151+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +350,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-08T23:25:40.292273+00:00"
+   "detected_at": "2026-09-08T23:27:37.858566+00:00"
   }
  ]
 }
