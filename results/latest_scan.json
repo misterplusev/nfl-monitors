@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-08T16:49:04.753269+00:00",
+ "scanned_at": "2026-09-08T16:51:04.790351+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 126.0,
+ "loop_uptime_min": 128.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 165102,
+   "markets": 166582,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7881,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 135,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 287,
-   "last_tick_age_s": 14.3
+   "markets": 288,
+   "last_tick_age_s": 22.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 7256.6
+   "last_tick_age_s": 7376.6
   }
  ],
  "totals": {
-  "markets_tracked": 173463,
+  "markets_tracked": 174944,
   "pairs_married": 12,
   "arbitrages": 12
  },
  "stats": {
-  "commits": 60,
-  "gist_errors": 129,
+  "commits": 61,
+  "gist_errors": 131,
   "hot_errors": 0,
-  "kalshi.sweeps": 606,
-  "kalshi.ticks": 5781578,
-  "kalshi.updates": 2649101,
-  "kalshi.ws_ticks": 5781578,
-  "kalshi.ws_trades": 818409,
-  "live_evals_fired": 12,
-  "novig.rest_updates": 3090,
-  "novig.sweeps": 605,
-  "novig.ticks": 146330,
-  "novig.updates": 3090,
-  "pairs_blocked_antonym_date": 3787,
-  "pmglobal.rest_updates": 6158,
-  "pmglobal.sweeps": 605,
-  "pmglobal.ticks": 79636,
-  "pmglobal.updates": 13613,
+  "kalshi.sweeps": 615,
+  "kalshi.ticks": 5866577,
+  "kalshi.updates": 2688317,
+  "kalshi.ws_ticks": 5866577,
+  "kalshi.ws_trades": 833154,
+  "live_evals_fired": 14,
+  "novig.rest_updates": 3147,
+  "novig.sweeps": 614,
+  "novig.ticks": 148452,
+  "novig.updates": 3147,
+  "pairs_blocked_antonym_date": 3847,
+  "pmglobal.rest_updates": 6234,
+  "pmglobal.sweeps": 614,
+  "pmglobal.ticks": 80824,
+  "pmglobal.updates": 13769,
   "pmglobal.ws_errors": 5,
-  "pmglobal.ws_msgs": 1853814,
-  "pmglobal.ws_ticks": 19036,
-  "pmus.rest_updates": 19920,
-  "pmus.sweeps": 606,
-  "pmus.ticks": 4516428,
-  "pmus.updates": 19920,
+  "pmglobal.ws_msgs": 1866611,
+  "pmglobal.ws_ticks": 19324,
+  "pmus.rest_updates": 20043,
+  "pmus.sweeps": 615,
+  "pmus.ticks": 4583235,
+  "pmus.updates": 20043,
   "pmus_x.last_count": 7423,
-  "pmus_x.sweeps": 607,
+  "pmus_x.sweeps": 616,
   "prophetx.ticks": 1444,
   "prophetx.updates": 79,
-  "prophetx.ws_errors": 422,
+  "prophetx.ws_errors": 428,
   "px.evt_scanned": 58,
-  "pxboard.sweeps": 605,
-  "supa_errors": 1868
+  "pxboard.sweeps": 614,
+  "supa_errors": 1896
  },
  "arbitrages": [
   {
@@ -147,6 +147,29 @@
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9b01193e29e724362e8c378a7c9b6f5f"
+    ],
+    "title": "Hungary (W) vs Japan (W)",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc65a0ab60f2f486e85364e41309ca43b98aa1af5e870b40f8e0bc7bb71cb3e4e"
+    ],
+    "title": "Hungary vs. Japan",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-08T16:49:44.517914+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -190,6 +213,29 @@
    "total_cost_cents": 80,
    "edge_bps": 2000,
    "detected_at": "2026-09-08T16:34:36.897909+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ec5ee2ae9ee0d5fd819801acf41371fe"
+    ],
+    "title": "Hungary (W) vs Japan (W)",
+    "ask_cents": 55
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc65a0ab60f2f486e85364e41309ca43b98aa1af5e870b40f8e0bc7bb71cb3e4e"
+    ],
+    "title": "Hungary vs. Japan",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-08T16:49:44.615055+00:00"
   },
   {
    "buy_yes": {
@@ -242,29 +288,6 @@
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "9b01193e29e724362e8c378a7c9b6f5f"
-    ],
-    "title": "Hungary (W) vs Japan (W)",
-    "ask_cents": 48
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc65a0ab60f2f486e85364e41309ca43b98aa1af5e870b40f8e0bc7bb71cb3e4e"
-    ],
-    "title": "Hungary vs. Japan",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-08T16:34:37.175562+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
      "e5b4993a76876285c4ef9f750d4b6d6a"
     ],
     "title": "LASK Linz at AEK",
@@ -282,29 +305,6 @@
    "total_cost_cents": 88,
    "edge_bps": 1200,
    "detected_at": "2026-09-08T16:34:36.252674+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ec5ee2ae9ee0d5fd819801acf41371fe"
-    ],
-    "title": "Hungary (W) vs Japan (W)",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc65a0ab60f2f486e85364e41309ca43b98aa1af5e870b40f8e0bc7bb71cb3e4e"
-    ],
-    "title": "Hungary vs. Japan",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-08T16:34:37.271919+00:00"
   },
   {
    "buy_yes": {
