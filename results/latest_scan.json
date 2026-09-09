@@ -1,81 +1,150 @@
 {
- "scanned_at": "2026-09-09T17:01:22.628830+00:00",
+ "scanned_at": "2026-09-09T17:03:29.375876+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 137.1,
+ "loop_uptime_min": 139.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 203007,
+   "markets": 204844,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7314,
-   "last_tick_age_s": 4.8
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 139,
-   "last_tick_age_s": 0.8
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 296,
-   "last_tick_age_s": 2.8
+   "last_tick_age_s": 8.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 44,
-   "last_tick_age_s": 7901.1
+   "last_tick_age_s": 8027.9
   }
  ],
  "totals": {
-  "markets_tracked": 210800,
+  "markets_tracked": 212637,
   "pairs_married": 16,
   "arbitrages": 16
  },
  "stats": {
-  "commits": 66,
-  "gist_errors": 141,
+  "commits": 67,
+  "gist_errors": 143,
   "hot_errors": 0,
-  "kalshi.sweeps": 713,
-  "kalshi.ticks": 7169953,
-  "kalshi.updates": 3511012,
-  "kalshi.ws_ticks": 7169953,
-  "kalshi.ws_trades": 1076853,
-  "live_evals_fired": 40,
-  "novig.rest_updates": 3030,
-  "novig.sweeps": 713,
-  "novig.ticks": 174109,
-  "novig.updates": 3030,
-  "pairs_blocked_antonym_date": 1784,
-  "pmglobal.rest_updates": 6691,
-  "pmglobal.sweeps": 713,
-  "pmglobal.ticks": 91600,
-  "pmglobal.updates": 14619,
+  "kalshi.sweeps": 724,
+  "kalshi.ticks": 7271277,
+  "kalshi.updates": 3556892,
+  "kalshi.ws_ticks": 7271277,
+  "kalshi.ws_trades": 1094336,
+  "live_evals_fired": 50,
+  "novig.rest_updates": 3093,
+  "novig.sweeps": 723,
+  "novig.ticks": 176521,
+  "novig.updates": 3093,
+  "pairs_blocked_antonym_date": 1810,
+  "pmglobal.rest_updates": 6770,
+  "pmglobal.sweeps": 723,
+  "pmglobal.ticks": 92851,
+  "pmglobal.updates": 14771,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 2989218,
-  "pmglobal.ws_ticks": 20200,
-  "pmus.rest_updates": 24146,
-  "pmus.sweeps": 713,
-  "pmus.ticks": 5217624,
-  "pmus.updates": 24146,
+  "pmglobal.ws_msgs": 3013145,
+  "pmglobal.ws_ticks": 20451,
+  "pmus.rest_updates": 24337,
+  "pmus.sweeps": 724,
+  "pmus.ticks": 5298012,
+  "pmus.updates": 24337,
   "pmus_x.last_count": 7308,
-  "pmus_x.sweeps": 714,
+  "pmus_x.sweeps": 725,
   "prophetx.ticks": 1232,
   "prophetx.updates": 56,
-  "prophetx.ws_errors": 478,
+  "prophetx.ws_errors": 485,
   "px.evt_scanned": 44,
-  "pxboard.sweeps": 713,
-  "supa_errors": 2158
+  "pxboard.sweeps": 723,
+  "supa_errors": 2189
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
+    ],
+    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4979098d3f178c1b359c636ad2f6dc7b"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-09T17:03:19.346539+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
+    ],
+    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4a411df9015656c5ff8187918f3d4c2e"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "no_cost_cents": 10
+   },
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-09-09T17:03:19.078820+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
+    ],
+    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a0251323dfb0c3c36cb21138d0edb32b"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-09T17:03:19.173000+00:00"
+  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -93,11 +162,11 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 48
+    "no_cost_cents": 54
    },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-09T16:58:17.510556+00:00"
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-09T17:03:19.036984+00:00"
   },
   {
    "buy_yes": {
@@ -116,57 +185,11 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 48
+    "no_cost_cents": 54
    },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-09T16:58:17.487670+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
-    ],
-    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4979098d3f178c1b359c636ad2f6dc7b"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-09T16:58:17.703771+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
-    ],
-    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4a411df9015656c5ff8187918f3d4c2e"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 10
-   },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-09-09T16:58:17.536604+00:00"
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-09T17:03:19.012129+00:00"
   },
   {
    "buy_yes": {
@@ -185,11 +208,11 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 48
+    "no_cost_cents": 54
    },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-09-09T16:58:17.677456+00:00"
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-09T17:03:19.325265+00:00"
   },
   {
    "buy_yes": {
@@ -199,20 +222,20 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 52
+    "ask_cents": 46
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "a0251323dfb0c3c36cb21138d0edb32b"
+     "7720b11bdc3ef2913824a12de4117c9d"
     ],
     "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 14
+    "no_cost_cents": 23
    },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-09T16:58:17.615335+00:00"
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-09T17:03:19.110544+00:00"
   },
   {
    "buy_yes": {
@@ -231,11 +254,11 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 48
+    "no_cost_cents": 54
    },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-09T16:58:17.654331+00:00"
+   "total_cost_cents": 76,
+   "edge_bps": 2400,
+   "detected_at": "2026-09-09T17:03:19.300990+00:00"
   },
   {
    "buy_yes": {
@@ -245,43 +268,20 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 52
+    "ask_cents": 46
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "7720b11bdc3ef2913824a12de4117c9d"
+     "49da89f52f84469c4bfc045b48db1ebf"
     ],
     "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 23
+    "no_cost_cents": 38
    },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-09-09T16:58:17.559550+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6b4562e2023a6b366b739f0921d260c3"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
-    ],
-    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-09T16:58:17.635439+00:00"
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-09T17:03:19.137565+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +304,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-09T17:01:22.628769+00:00"
+   "detected_at": "2026-09-09T17:03:29.375802+00:00"
   },
   {
    "buy_yes": {
@@ -327,30 +327,30 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-09T17:01:22.628777+00:00"
+   "detected_at": "2026-09-09T17:03:29.375809+00:00"
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6b4562e2023a6b366b739f0921d260c3"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "ask_cents": 38
+   },
+   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 52
+    "no_cost_cents": 54
    },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "49da89f52f84469c4bfc045b48db1ebf"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-09T16:58:17.586988+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-09T17:03:19.277976+00:00"
   },
   {
    "buy_yes": {
@@ -373,7 +373,7 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-09-09T17:01:22.628754+00:00"
+   "detected_at": "2026-09-09T17:03:29.375789+00:00"
   },
   {
    "buy_yes": {
@@ -396,7 +396,7 @@
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-09T17:01:22.628745+00:00"
+   "detected_at": "2026-09-09T17:03:29.375780+00:00"
   },
   {
    "buy_yes": {
@@ -419,7 +419,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-09T17:01:22.628725+00:00"
+   "detected_at": "2026-09-09T17:03:29.375760+00:00"
   },
   {
    "buy_yes": {
@@ -442,7 +442,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-09T17:01:22.628761+00:00"
+   "detected_at": "2026-09-09T17:03:29.375795+00:00"
   }
  ]
 }
