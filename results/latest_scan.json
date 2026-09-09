@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-09T23:25:04.445472+00:00",
+ "scanned_at": "2026-09-09T23:27:13.903222+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 43.7,
+ "loop_uptime_min": 45.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 132455,
-   "last_tick_age_s": 0.0
+   "markets": 136907,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7290,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
@@ -26,56 +26,79 @@
    "venue": "novig",
    "state": "OK",
    "markets": 252,
-   "last_tick_age_s": 16.6
+   "last_tick_age_s": 16.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 47,
-   "last_tick_age_s": 2176.5
+   "last_tick_age_s": 2306.0
   }
  ],
  "totals": {
-  "markets_tracked": 140158,
+  "markets_tracked": 144610,
   "pairs_married": 16,
   "arbitrages": 16
  },
  "stats": {
-  "commits": 19,
-  "gist_errors": 44,
+  "commits": 20,
+  "gist_errors": 46,
   "hot_errors": 0,
-  "kalshi.sweeps": 178,
-  "kalshi.ticks": 3372678,
-  "kalshi.updates": 1594115,
-  "kalshi.ws_ticks": 3372678,
-  "kalshi.ws_trades": 394956,
-  "live_evals_fired": 900,
-  "novig.rest_updates": 3067,
-  "novig.sweeps": 177,
-  "novig.ticks": 39827,
-  "novig.updates": 3067,
-  "pairs_blocked_antonym_date": 2220,
-  "pmglobal.rest_updates": 1505,
-  "pmglobal.sweeps": 177,
-  "pmglobal.ticks": 22874,
-  "pmglobal.updates": 3189,
-  "pmglobal.ws_msgs": 739774,
-  "pmglobal.ws_ticks": 5074,
-  "pmus.rest_updates": 10543,
-  "pmus.sweeps": 178,
-  "pmus.ticks": 1303823,
-  "pmus.updates": 10543,
+  "kalshi.sweeps": 186,
+  "kalshi.ticks": 3560425,
+  "kalshi.updates": 1683928,
+  "kalshi.ws_ticks": 3560425,
+  "kalshi.ws_trades": 417602,
+  "live_evals_fired": 963,
+  "novig.rest_updates": 3207,
+  "novig.sweeps": 185,
+  "novig.ticks": 41618,
+  "novig.updates": 3207,
+  "pairs_blocked_antonym_date": 2320,
+  "pmglobal.rest_updates": 1559,
+  "pmglobal.sweeps": 185,
+  "pmglobal.ticks": 23899,
+  "pmglobal.updates": 3319,
+  "pmglobal.ws_msgs": 770283,
+  "pmglobal.ws_ticks": 5299,
+  "pmus.rest_updates": 10738,
+  "pmus.sweeps": 186,
+  "pmus.ticks": 1362111,
+  "pmus.updates": 10738,
   "pmus_x.last_count": 7286,
-  "pmus_x.sweeps": 179,
+  "pmus_x.sweeps": 187,
   "prophetx.ticks": 939,
   "prophetx.updates": 139,
-  "prophetx.ws_errors": 151,
+  "prophetx.ws_errors": 158,
   "push_fails": 1,
   "px.evt_scanned": 41,
-  "pxboard.sweeps": 177,
-  "supa_errors": 574
+  "pxboard.sweeps": 185,
+  "supa_errors": 601
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "63950400b79834491bc1373a44ec7191"
+    ],
+    "title": "Houston Astros at Philadelphia Phillies",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
+    ],
+    "title": "Houston Astros vs. Philadelphia Phillies",
+    "no_cost_cents": 17
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-09T23:27:13.765995+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -97,7 +120,7 @@
    },
    "total_cost_cents": 71,
    "edge_bps": 2900,
-   "detected_at": "2026-09-09T23:24:46.683863+00:00"
+   "detected_at": "2026-09-09T23:26:56.289937+00:00"
   },
   {
    "buy_yes": {
@@ -170,26 +193,26 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
-    ],
-    "title": "Houston Astros vs. Philadelphia Phillies",
-    "ask_cents": 44
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "76ad58defaeba317aa91ad0c6eec3241"
     ],
     "title": "Houston Astros at Philadelphia Phillies",
-    "no_cost_cents": 39
+    "ask_cents": 62
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-09T23:24:46.566039+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
+    ],
+    "title": "Houston Astros vs. Philadelphia Phillies",
+    "no_cost_cents": 17
+   },
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-09T23:27:13.821153+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +235,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-09T23:24:32.916916+00:00"
+   "detected_at": "2026-09-09T23:26:42.203040+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +258,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-09T23:24:32.963114+00:00"
+   "detected_at": "2026-09-09T23:26:42.246830+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +281,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-09T23:24:33.065119+00:00"
+   "detected_at": "2026-09-09T23:26:42.356447+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +304,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-09T23:24:33.134007+00:00"
+   "detected_at": "2026-09-09T23:26:42.415681+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +327,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-09T23:24:33.182298+00:00"
+   "detected_at": "2026-09-09T23:26:42.455526+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +373,7 @@
    },
    "total_cost_cents": 92,
    "edge_bps": 800,
-   "detected_at": "2026-09-09T23:24:46.621375+00:00"
+   "detected_at": "2026-09-09T23:26:56.240393+00:00"
   },
   {
    "buy_yes": {
@@ -373,7 +396,7 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-09-09T23:24:33.016587+00:00"
+   "detected_at": "2026-09-09T23:26:42.304442+00:00"
   },
   {
    "buy_yes": {
@@ -397,29 +420,6 @@
    "total_cost_cents": 96,
    "edge_bps": 400,
    "detected_at": "2026-09-09T23:24:32.758243+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "63950400b79834491bc1373a44ec7191"
-    ],
-    "title": "Houston Astros at Philadelphia Phillies",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
-    ],
-    "title": "Houston Astros vs. Philadelphia Phillies",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-09T23:24:46.527157+00:00"
   },
   {
    "buy_yes": {
