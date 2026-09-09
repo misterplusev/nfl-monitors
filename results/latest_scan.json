@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-09T23:18:39.818726+00:00",
+ "scanned_at": "2026-09-09T23:20:43.586302+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 37.3,
+ "loop_uptime_min": 39.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 120834,
+   "markets": 124721,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7290,
-   "last_tick_age_s": 0.4
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
@@ -25,80 +25,57 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 251,
-   "last_tick_age_s": 14.6
+   "markets": 252,
+   "last_tick_age_s": 6.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 47,
-   "last_tick_age_s": 1791.9
+   "last_tick_age_s": 1915.7
   }
  ],
  "totals": {
-  "markets_tracked": 128536,
+  "markets_tracked": 132424,
   "pairs_married": 16,
-  "arbitrages": 15
+  "arbitrages": 16
  },
  "stats": {
-  "commits": 16,
-  "gist_errors": 38,
+  "commits": 17,
+  "gist_errors": 40,
   "hot_errors": 0,
-  "kalshi.sweeps": 151,
-  "kalshi.ticks": 2810327,
-  "kalshi.updates": 1323397,
-  "kalshi.ws_ticks": 2810327,
-  "kalshi.ws_trades": 332970,
-  "live_evals_fired": 642,
-  "novig.rest_updates": 2552,
-  "novig.sweeps": 150,
-  "novig.ticks": 33665,
-  "novig.updates": 2552,
-  "pairs_blocked_antonym_date": 1890,
-  "pmglobal.rest_updates": 1276,
-  "pmglobal.sweeps": 150,
-  "pmglobal.ticks": 19296,
-  "pmglobal.updates": 2661,
-  "pmglobal.ws_msgs": 621201,
-  "pmglobal.ws_ticks": 4196,
-  "pmus.rest_updates": 10065,
-  "pmus.sweeps": 151,
-  "pmus.ticks": 1107101,
-  "pmus.updates": 10065,
+  "kalshi.sweeps": 160,
+  "kalshi.ticks": 3001537,
+  "kalshi.updates": 1417116,
+  "kalshi.ws_ticks": 3001537,
+  "kalshi.ws_trades": 353972,
+  "live_evals_fired": 727,
+  "novig.rest_updates": 2729,
+  "novig.sweeps": 159,
+  "novig.ticks": 35705,
+  "novig.updates": 2729,
+  "pairs_blocked_antonym_date": 2000,
+  "pmglobal.rest_updates": 1356,
+  "pmglobal.sweeps": 159,
+  "pmglobal.ticks": 20532,
+  "pmglobal.updates": 2852,
+  "pmglobal.ws_msgs": 666565,
+  "pmglobal.ws_ticks": 4532,
+  "pmus.rest_updates": 10177,
+  "pmus.sweeps": 160,
+  "pmus.ticks": 1172675,
+  "pmus.updates": 10177,
   "pmus_x.last_count": 7286,
-  "pmus_x.sweeps": 152,
+  "pmus_x.sweeps": 161,
   "prophetx.ticks": 939,
   "prophetx.updates": 139,
-  "prophetx.ws_errors": 128,
+  "prophetx.ws_errors": 136,
   "push_fails": 1,
   "px.evt_scanned": 41,
-  "pxboard.sweeps": 150,
-  "supa_errors": 491
+  "pxboard.sweeps": 159,
+  "supa_errors": 519
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e83cb6804f9312d4d3dc31a8ab9e3217"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "ask_cents": 32
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "no_cost_cents": 26
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-09T23:16:21.905558+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -120,7 +97,7 @@
    },
    "total_cost_cents": 78,
    "edge_bps": 2200,
-   "detected_at": "2026-09-09T23:18:05.104430+00:00"
+   "detected_at": "2026-09-09T23:20:35.972567+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +120,30 @@
    },
    "total_cost_cents": 78,
    "edge_bps": 2200,
-   "detected_at": "2026-09-09T23:18:05.161715+00:00"
+   "detected_at": "2026-09-09T23:20:36.035476+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e83cb6804f9312d4d3dc31a8ab9e3217"
+    ],
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "ask_cents": 32
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
+    ],
+    "title": "Cleveland Guardians vs. Baltimore Orioles",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-09T23:20:41.110366+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +166,30 @@
    },
    "total_cost_cents": 80,
    "edge_bps": 2000,
-   "detected_at": "2026-09-09T23:18:05.055097+00:00"
+   "detected_at": "2026-09-09T23:20:35.928195+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
+    ],
+    "title": "Houston Astros vs. Philadelphia Phillies",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "76ad58defaeba317aa91ad0c6eec3241"
+    ],
+    "title": "Houston Astros at Philadelphia Phillies",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-09T23:20:08.679156+00:00"
   },
   {
    "buy_yes": {
@@ -189,30 +212,53 @@
    },
    "total_cost_cents": 85,
    "edge_bps": 1500,
-   "detected_at": "2026-09-09T23:18:05.202113+00:00"
+   "detected_at": "2026-09-09T23:20:36.073346+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
+     "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
     ],
-    "title": "Houston Astros vs. Philadelphia Phillies",
-    "ask_cents": 50
+    "title": "Cleveland Guardians vs. Baltimore Orioles",
+    "ask_cents": 58
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "76ad58defaeba317aa91ad0c6eec3241"
+     "ea0115e0dc973f2be2b4d2fd5b0e6e62"
     ],
-    "title": "Houston Astros at Philadelphia Phillies",
-    "no_cost_cents": 39
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 31
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-09T23:18:27.186461+00:00"
+   "detected_at": "2026-09-09T23:20:41.171510+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "925375d3420d835bfa5554599dc31bff"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-09T23:20:36.503692+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +281,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-09T23:18:05.202147+00:00"
+   "detected_at": "2026-09-09T23:20:36.180124+00:00"
   },
   {
    "buy_yes": {
@@ -245,20 +291,89 @@
      "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
     ],
     "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 46
+    "ask_cents": 42
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "925375d3420d835bfa5554599dc31bff"
+     "200b5ed2b796a81953d1011a30f38540"
     ],
     "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 47
+    "no_cost_cents": 48
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-09T23:16:56.766297+00:00"
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-09T23:20:36.559194+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "838ca108e968c43eea3665034a4fa4b7"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-09T23:20:36.654663+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "121cb69d2f1483247ae6bb6b22ef3a4e"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-09T23:20:36.697498+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6c008042a0a3022952f65f8d98892567"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-09T23:20:36.763822+00:00"
   },
   {
    "buy_yes": {
@@ -277,126 +392,34 @@
      "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
     ],
     "title": "Houston Astros vs. Philadelphia Phillies",
-    "no_cost_cents": 53
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-09T23:18:27.116767+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "200b5ed2b796a81953d1011a30f38540"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-09T23:16:56.821453+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "838ca108e968c43eea3665034a4fa4b7"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-09T23:16:56.865408+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "121cb69d2f1483247ae6bb6b22ef3a4e"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 49
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-09T23:16:56.925079+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6c008042a0a3022952f65f8d98892567"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 49
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-09T23:16:56.981205+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ea0115e0dc973f2be2b4d2fd5b0e6e62"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "ask_cents": 70
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "no_cost_cents": 26
+    "no_cost_cents": 56
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-09T23:16:21.956519+00:00"
+   "detected_at": "2026-09-09T23:20:08.623043+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "cf43d8f7bb7e54e8bc07e423cf0d2efe"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 54
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-09T23:20:36.608256+00:00"
   },
   {
    "buy_yes": {
@@ -419,7 +442,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-09T23:18:05.202138+00:00"
+   "detected_at": "2026-09-09T23:20:36.130481+00:00"
   }
  ]
 }
