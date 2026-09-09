@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-09T01:15:43.503347+00:00",
+ "scanned_at": "2026-09-09T01:17:45.053348+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 141.8,
+ "loop_uptime_min": 143.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 207782,
+   "markets": 209614,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7987,
-   "last_tick_age_s": 6.6
+   "last_tick_age_s": 4.4
   },
   {
    "venue": "pmglobal",
@@ -25,81 +25,58 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 257,
-   "last_tick_age_s": 3.5
+   "markets": 258,
+   "last_tick_age_s": 1.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 21,
-   "last_tick_age_s": 8075.4
+   "last_tick_age_s": 8197.0
   }
  ],
  "totals": {
-  "markets_tracked": 216169,
+  "markets_tracked": 218002,
   "pairs_married": 12,
-  "arbitrages": 12
+  "arbitrages": 11
  },
  "stats": {
-  "commits": 67,
-  "gist_errors": 141,
+  "commits": 68,
+  "gist_errors": 143,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 586,
-  "kalshi.ticks": 8974211,
-  "kalshi.updates": 4495391,
-  "kalshi.ws_ticks": 8974209,
-  "kalshi.ws_trades": 1284669,
-  "live_evals_fired": 4916,
-  "novig.rest_updates": 12814,
-  "novig.sweeps": 585,
-  "novig.ticks": 111024,
-  "novig.updates": 12814,
-  "pairs_blocked_antonym_date": 1465,
-  "pmglobal.rest_updates": 4210,
-  "pmglobal.sweeps": 585,
-  "pmglobal.ticks": 74353,
-  "pmglobal.updates": 9301,
+  "kalshi.sweeps": 594,
+  "kalshi.ticks": 9095876,
+  "kalshi.updates": 4553347,
+  "kalshi.ws_ticks": 9095874,
+  "kalshi.ws_trades": 1305949,
+  "live_evals_fired": 4947,
+  "novig.rest_updates": 12990,
+  "novig.sweeps": 594,
+  "novig.ticks": 112700,
+  "novig.updates": 12990,
+  "pairs_blocked_antonym_date": 1487,
+  "pmglobal.rest_updates": 4261,
+  "pmglobal.sweeps": 594,
+  "pmglobal.ticks": 75469,
+  "pmglobal.updates": 9418,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 2048751,
-  "pmglobal.ws_ticks": 15753,
-  "pmus.rest_updates": 17302,
-  "pmus.sweeps": 585,
-  "pmus.ticks": 4495558,
-  "pmus.updates": 17302,
-  "pmus_x.last_count": 7630,
-  "pmus_x.sweeps": 586,
+  "pmglobal.ws_msgs": 2072878,
+  "pmglobal.ws_ticks": 15969,
+  "pmus.rest_updates": 17539,
+  "pmus.sweeps": 594,
+  "pmus.ticks": 4565056,
+  "pmus.updates": 17539,
+  "pmus_x.last_count": 7756,
+  "pmus_x.sweeps": 595,
   "prophetx.ticks": 565,
   "prophetx.updates": 175,
-  "prophetx.ws_errors": 490,
+  "prophetx.ws_errors": 497,
   "px.evt_scanned": 21,
-  "pxboard.sweeps": 585,
-  "supa_errors": 1943
+  "pxboard.sweeps": 594,
+  "supa_errors": 1971
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6c9858350db6d2b80d5de7d8b6255be6"
-    ],
-    "title": "New York Mets at Miami Marlins",
-    "ask_cents": 24
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7ca10f693c5e77faeb57e2c5e2faec69c4dd6b581b594036e0405b5a119c55dc"
-    ],
-    "title": "New York Mets vs. Miami Marlins",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 28,
-   "edge_bps": 7200,
-   "detected_at": "2026-09-09T01:15:38.397747+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -145,6 +122,29 @@
    "total_cost_cents": 35,
    "edge_bps": 6500,
    "detected_at": "2026-09-09T01:15:38.725429+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6c9858350db6d2b80d5de7d8b6255be6"
+    ],
+    "title": "New York Mets at Miami Marlins",
+    "ask_cents": 24
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7ca10f693c5e77faeb57e2c5e2faec69c4dd6b581b594036e0405b5a119c55dc"
+    ],
+    "title": "New York Mets vs. Miami Marlins",
+    "no_cost_cents": 11
+   },
+   "total_cost_cents": 35,
+   "edge_bps": 6500,
+   "detected_at": "2026-09-09T01:17:42.631628+00:00"
   },
   {
    "buy_yes": {
@@ -213,7 +213,7 @@
    },
    "total_cost_cents": 54,
    "edge_bps": 4600,
-   "detected_at": "2026-09-09T01:15:38.453005+00:00"
+   "detected_at": "2026-09-09T01:17:20.440741+00:00"
   },
   {
    "buy_yes": {
@@ -236,7 +236,7 @@
    },
    "total_cost_cents": 71,
    "edge_bps": 2900,
-   "detected_at": "2026-09-09T01:15:38.493335+00:00"
+   "detected_at": "2026-09-09T01:17:20.485987+00:00"
   },
   {
    "buy_yes": {
@@ -329,29 +329,6 @@
    "total_cost_cents": 89,
    "edge_bps": 1100,
    "detected_at": "2026-09-09T01:15:38.587374+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e08f61939aac1834eab653a0996bb7a3"
-    ],
-    "title": "New York Mets at Miami Marlins",
-    "ask_cents": 91
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7ca10f693c5e77faeb57e2c5e2faec69c4dd6b581b594036e0405b5a119c55dc"
-    ],
-    "title": "New York Mets vs. Miami Marlins",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-09T01:15:38.340386+00:00"
   }
  ]
 }
