@@ -1,150 +1,81 @@
 {
- "scanned_at": "2026-09-09T17:11:44.153341+00:00",
+ "scanned_at": "2026-09-09T17:13:45.990486+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 147.5,
+ "loop_uptime_min": 149.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 212409,
-   "last_tick_age_s": 0.0
+   "markets": 214577,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7314,
-   "last_tick_age_s": 2.8
+   "last_tick_age_s": 2.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 143,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 1.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 297,
-   "last_tick_age_s": 0.2
+   "markets": 298,
+   "last_tick_age_s": 0.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 44,
-   "last_tick_age_s": 8522.6
+   "last_tick_age_s": 8644.5
   }
  ],
  "totals": {
-  "markets_tracked": 220207,
+  "markets_tracked": 222376,
   "pairs_married": 16,
-  "arbitrages": 16
+  "arbitrages": 14
  },
  "stats": {
-  "commits": 71,
-  "gist_errors": 151,
+  "commits": 72,
+  "gist_errors": 153,
   "hot_errors": 0,
-  "kalshi.sweeps": 767,
-  "kalshi.ticks": 7734679,
-  "kalshi.updates": 3765967,
-  "kalshi.ws_ticks": 7734679,
-  "kalshi.ws_trades": 1159902,
-  "live_evals_fired": 60,
-  "novig.rest_updates": 3339,
-  "novig.sweeps": 767,
-  "novig.ticks": 187061,
-  "novig.updates": 3339,
-  "pairs_blocked_antonym_date": 1918,
-  "pmglobal.rest_updates": 7097,
-  "pmglobal.sweeps": 767,
-  "pmglobal.ticks": 98361,
-  "pmglobal.updates": 15461,
+  "kalshi.sweeps": 777,
+  "kalshi.ticks": 7841535,
+  "kalshi.updates": 3815315,
+  "kalshi.ws_ticks": 7841535,
+  "kalshi.ws_trades": 1183086,
+  "live_evals_fired": 74,
+  "novig.rest_updates": 3397,
+  "novig.sweeps": 777,
+  "novig.ticks": 189461,
+  "novig.updates": 3397,
+  "pairs_blocked_antonym_date": 1944,
+  "pmglobal.rest_updates": 7196,
+  "pmglobal.sweeps": 777,
+  "pmglobal.ticks": 99583,
+  "pmglobal.updates": 15641,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 3110139,
-  "pmglobal.ws_ticks": 21561,
-  "pmus.rest_updates": 25079,
-  "pmus.sweeps": 767,
-  "pmus.ticks": 5612247,
-  "pmus.updates": 25079,
+  "pmglobal.ws_msgs": 3128609,
+  "pmglobal.ws_ticks": 21783,
+  "pmus.rest_updates": 25298,
+  "pmus.sweeps": 777,
+  "pmus.ticks": 5685327,
+  "pmus.updates": 25298,
   "pmus_x.last_count": 7308,
-  "pmus_x.sweeps": 768,
+  "pmus_x.sweeps": 778,
   "prophetx.ticks": 1232,
   "prophetx.updates": 56,
-  "prophetx.ws_errors": 514,
+  "prophetx.ws_errors": 521,
   "px.evt_scanned": 44,
-  "pxboard.sweeps": 766,
-  "supa_errors": 2319
+  "pxboard.sweeps": 776,
+  "supa_errors": 2349
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
-    ],
-    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4979098d3f178c1b359c636ad2f6dc7b"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 53,
-   "edge_bps": 4700,
-   "detected_at": "2026-09-09T17:08:15.833006+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
-    ],
-    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4a411df9015656c5ff8187918f3d4c2e"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 10
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-09T17:08:15.575675+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
-    ],
-    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a0251323dfb0c3c36cb21138d0edb32b"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 14
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-09T17:08:15.700487+00:00"
-  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -162,11 +93,11 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 56
+    "no_cost_cents": 18
    },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-09T17:08:15.536789+00:00"
+   "total_cost_cents": 27,
+   "edge_bps": 7300,
+   "detected_at": "2026-09-09T17:13:19.364513+00:00"
   },
   {
    "buy_yes": {
@@ -185,34 +116,11 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 56
+    "no_cost_cents": 18
    },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-09T17:08:15.510776+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
-    ],
-    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7720b11bdc3ef2913824a12de4117c9d"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-09-09T17:08:15.640181+00:00"
+   "total_cost_cents": 28,
+   "edge_bps": 7200,
+   "detected_at": "2026-09-09T17:13:19.338487+00:00"
   },
   {
    "buy_yes": {
@@ -231,11 +139,11 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 56
+    "no_cost_cents": 18
    },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-09T17:08:15.804290+00:00"
+   "total_cost_cents": 32,
+   "edge_bps": 6800,
+   "detected_at": "2026-09-09T17:13:19.570505+00:00"
   },
   {
    "buy_yes": {
@@ -254,80 +162,11 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 56
+    "no_cost_cents": 18
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-09T17:08:15.759165+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
-    ],
-    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "49da89f52f84469c4bfc045b48db1ebf"
-    ],
-    "title": "Viking FK at VfB Stuttgart",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-09T17:08:15.675005+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x14039392318b0ca2c58c8a4f388f62f670d281776fd6e9ce591a8c4d0f026215"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "3794c9be2d19bbdf3e61cb754733632b"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-09-09T17:11:44.153287+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x14039392318b0ca2c58c8a4f388f62f670d281776fd6e9ce591a8c4d0f026215"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a478c0824a020920c8531e2e17e5cb35"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-09T17:11:44.153294+00:00"
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-09-09T17:13:19.548198+00:00"
   },
   {
    "buy_yes": {
@@ -346,11 +185,34 @@
      "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
     ],
     "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
-    "no_cost_cents": 56
+    "no_cost_cents": 18
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-09T17:08:15.732831+00:00"
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-09-09T17:13:19.522419+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "49da89f52f84469c4bfc045b48db1ebf"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "ask_cents": 63
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
+    ],
+    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-09T17:13:19.461371+00:00"
   },
   {
    "buy_yes": {
@@ -360,7 +222,145 @@
      "0x14039392318b0ca2c58c8a4f388f62f670d281776fd6e9ce591a8c4d0f026215"
     ],
     "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 46
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "3794c9be2d19bbdf3e61cb754733632b"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-09T17:13:19.264608+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x14039392318b0ca2c58c8a4f388f62f670d281776fd6e9ce591a8c4d0f026215"
+    ],
+    "title": "Minnesota Twins vs. Detroit Tigers",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a478c0824a020920c8531e2e17e5cb35"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-09T17:13:19.297793+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
+    ],
+    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
+    "ask_cents": 82
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4979098d3f178c1b359c636ad2f6dc7b"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-09T17:13:19.609114+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
+    ],
+    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
+    "ask_cents": 82
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4a411df9015656c5ff8187918f3d4c2e"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "no_cost_cents": 10
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-09T17:13:19.407998+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7720b11bdc3ef2913824a12de4117c9d"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "ask_cents": 78
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
+    ],
+    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-09T17:13:19.431416+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x59f88b5a1dcea13fbebcdabff9aade8dbc62358b2ee17af87d48115c74b8a3fe"
+    ],
+    "title": "VfB Stuttgart vs. Viking FK: O/U 3.5",
+    "ask_cents": 82
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a0251323dfb0c3c36cb21138d0edb32b"
+    ],
+    "title": "Viking FK at VfB Stuttgart",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-09T17:13:19.498576+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x14039392318b0ca2c58c8a4f388f62f670d281776fd6e9ce591a8c4d0f026215"
+    ],
+    "title": "Minnesota Twins vs. Detroit Tigers",
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
@@ -371,9 +371,9 @@
     "title": "Minnesota Twins at Detroit Tigers",
     "no_cost_cents": 48
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-09T17:11:44.153274+00:00"
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-09T17:13:19.233044+00:00"
   },
   {
    "buy_yes": {
@@ -383,7 +383,7 @@
      "0x14039392318b0ca2c58c8a4f388f62f670d281776fd6e9ce591a8c4d0f026215"
     ],
     "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 46
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
@@ -394,55 +394,9 @@
     "title": "Minnesota Twins at Detroit Tigers",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-09T17:11:44.153266+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x14039392318b0ca2c58c8a4f388f62f670d281776fd6e9ce591a8c4d0f026215"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1ebc33b577331d3aaef7559b68c0aa6d"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "no_cost_cents": 53
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-09T17:11:44.153247+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x14039392318b0ca2c58c8a4f388f62f670d281776fd6e9ce591a8c4d0f026215"
-    ],
-    "title": "Minnesota Twins vs. Detroit Tigers",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "fb8f911f8d5087e6b9f9d14dcbd33b5d"
-    ],
-    "title": "Minnesota Twins at Detroit Tigers",
-    "no_cost_cents": 53
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-09T17:11:44.153280+00:00"
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-09T17:13:19.200286+00:00"
   }
  ]
 }
