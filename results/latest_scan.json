@@ -1,77 +1,78 @@
 {
- "scanned_at": "2026-09-09T22:43:35.799059+00:00",
+ "scanned_at": "2026-09-09T22:45:37.330955+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.3,
+ "loop_uptime_min": 4.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 18907,
+   "markets": 28812,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7286,
-   "last_tick_age_s": 5.4
+   "last_tick_age_s": 2.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 100,
-   "last_tick_age_s": 0.0
+   "markets": 102,
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 228,
-   "last_tick_age_s": 2.9
+   "last_tick_age_s": 20.5
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 37,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 18.0
   }
  ],
  "totals": {
-  "markets_tracked": 26558,
+  "markets_tracked": 36465,
   "pairs_married": 17,
   "arbitrages": 15
  },
  "stats": {
-  "gist_errors": 2,
+  "commits": 1,
+  "gist_errors": 4,
   "hot_errors": 0,
-  "kalshi.sweeps": 8,
-  "kalshi.ticks": 133094,
-  "kalshi.updates": 70920,
-  "kalshi.ws_ticks": 133094,
-  "kalshi.ws_trades": 22101,
-  "live_evals_fired": 64,
-  "novig.rest_updates": 332,
-  "novig.sweeps": 8,
-  "novig.ticks": 2011,
-  "novig.updates": 332,
-  "pairs_blocked_antonym_date": 110,
-  "pmglobal.rest_updates": 241,
-  "pmglobal.sweeps": 8,
-  "pmglobal.ticks": 1293,
-  "pmglobal.updates": 403,
-  "pmglobal.ws_msgs": 34108,
-  "pmglobal.ws_ticks": 393,
-  "pmus.rest_updates": 7406,
-  "pmus.sweeps": 8,
-  "pmus.ticks": 65572,
-  "pmus.updates": 7406,
-  "pmus_x.last_count": 7285,
-  "pmus_x.sweeps": 9,
-  "prophetx.ticks": 329,
-  "prophetx.updates": 64,
-  "prophetx.ws_errors": 8,
-  "px.evt_scanned": 36,
-  "pxboard.sweeps": 8,
-  "supa_errors": 28
+  "kalshi.sweeps": 15,
+  "kalshi.ticks": 284679,
+  "kalshi.updates": 146004,
+  "kalshi.ws_ticks": 284679,
+  "kalshi.ws_trades": 45329,
+  "live_evals_fired": 109,
+  "novig.rest_updates": 428,
+  "novig.sweeps": 14,
+  "novig.ticks": 3337,
+  "novig.updates": 428,
+  "pairs_blocked_antonym_date": 190,
+  "pmglobal.rest_updates": 313,
+  "pmglobal.sweeps": 15,
+  "pmglobal.ticks": 2295,
+  "pmglobal.updates": 566,
+  "pmglobal.ws_msgs": 74911,
+  "pmglobal.ws_ticks": 695,
+  "pmus.rest_updates": 7529,
+  "pmus.sweeps": 15,
+  "pmus.ticks": 116563,
+  "pmus.updates": 7529,
+  "pmus_x.last_count": 7283,
+  "pmus_x.sweeps": 16,
+  "prophetx.ticks": 537,
+  "prophetx.updates": 91,
+  "prophetx.ws_errors": 15,
+  "px.evt_scanned": 32,
+  "pxboard.sweeps": 14,
+  "supa_errors": 52
  },
  "arbitrages": [
   {
@@ -82,7 +83,7 @@
      "e83cb6804f9312d4d3dc31a8ab9e3217"
     ],
     "title": "Cleveland Guardians at Baltimore Orioles",
-    "ask_cents": 31
+    "ask_cents": 32
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -91,34 +92,11 @@
      "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
     ],
     "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "no_cost_cents": 46
+    "no_cost_cents": 28
    },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-09T22:43:31.506492+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
-    ],
-    "title": "Houston Astros vs. Philadelphia Phillies",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "76ad58defaeba317aa91ad0c6eec3241"
-    ],
-    "title": "Houston Astros at Philadelphia Phillies",
-    "no_cost_cents": 39
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-09-09T22:43:31.651142+00:00"
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-09T22:45:36.322287+00:00"
   },
   {
    "buy_yes": {
@@ -141,7 +119,7 @@
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-09-09T22:41:41.573817+00:00"
+   "detected_at": "2026-09-09T22:44:41.709189+00:00"
   },
   {
    "buy_yes": {
@@ -164,7 +142,7 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-09-09T22:41:41.573798+00:00"
+   "detected_at": "2026-09-09T22:44:41.709175+00:00"
   },
   {
    "buy_yes": {
@@ -187,7 +165,30 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-09-09T22:41:41.573809+00:00"
+   "detected_at": "2026-09-09T22:44:41.709182+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
+    ],
+    "title": "Houston Astros vs. Philadelphia Phillies",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "76ad58defaeba317aa91ad0c6eec3241"
+    ],
+    "title": "Houston Astros at Philadelphia Phillies",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-09T22:45:36.683637+00:00"
   },
   {
    "buy_yes": {
@@ -210,30 +211,7 @@
    },
    "total_cost_cents": 84,
    "edge_bps": 1600,
-   "detected_at": "2026-09-09T22:41:41.573731+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 54
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ea0115e0dc973f2be2b4d2fd5b0e6e62"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-09T22:43:31.554643+00:00"
+   "detected_at": "2026-09-09T22:44:41.709151+00:00"
   },
   {
    "buy_yes": {
@@ -256,7 +234,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-09T22:41:41.671007+00:00"
+   "detected_at": "2026-09-09T22:44:41.807236+00:00"
   },
   {
    "buy_yes": {
@@ -302,7 +280,7 @@
    },
    "total_cost_cents": 94,
    "edge_bps": 600,
-   "detected_at": "2026-09-09T22:41:41.624305+00:00"
+   "detected_at": "2026-09-09T22:44:41.758385+00:00"
   },
   {
    "buy_yes": {
@@ -355,29 +333,6 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
-    ],
-    "title": "Houston Astros vs. Philadelphia Phillies",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "63950400b79834491bc1373a44ec7191"
-    ],
-    "title": "Houston Astros at Philadelphia Phillies",
-    "no_cost_cents": 52
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-09T22:43:34.628656+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
      "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
     ],
     "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
@@ -418,6 +373,52 @@
    "total_cost_cents": 95,
    "edge_bps": 500,
    "detected_at": "2026-09-09T22:41:41.926004+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ea0115e0dc973f2be2b4d2fd5b0e6e62"
+    ],
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "ask_cents": 68
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
+    ],
+    "title": "Cleveland Guardians vs. Baltimore Orioles",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-09T22:45:36.548331+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "63950400b79834491bc1373a44ec7191"
+    ],
+    "title": "Houston Astros at Philadelphia Phillies",
+    "ask_cents": 41
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
+    ],
+    "title": "Houston Astros vs. Philadelphia Phillies",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-09T22:45:36.609241+00:00"
   }
  ]
 }
