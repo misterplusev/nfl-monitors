@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-09T23:37:42.661527+00:00",
+ "scanned_at": "2026-09-09T23:39:53.577284+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 56.4,
+ "loop_uptime_min": 58.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 157608,
+   "markets": 161932,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7640,
+   "markets": 7741,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 115,
+   "markets": 118,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 260,
-   "last_tick_age_s": 15.1
+   "markets": 261,
+   "last_tick_age_s": 16.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 47,
-   "last_tick_age_s": 2934.8
+   "last_tick_age_s": 3065.7
   }
  ],
  "totals": {
-  "markets_tracked": 165670,
-  "pairs_married": 16,
-  "arbitrages": 16
+  "markets_tracked": 170099,
+  "pairs_married": 22,
+  "arbitrages": 22
  },
  "stats": {
-  "commits": 25,
-  "gist_errors": 56,
+  "commits": 26,
+  "gist_errors": 58,
   "hot_errors": 0,
-  "kalshi.sweeps": 224,
-  "kalshi.ticks": 4505811,
-  "kalshi.updates": 2134511,
-  "kalshi.ws_ticks": 4505811,
-  "kalshi.ws_trades": 532594,
-  "live_evals_fired": 1290,
-  "novig.rest_updates": 3958,
-  "novig.sweeps": 223,
-  "novig.ticks": 50221,
-  "novig.updates": 3958,
-  "pairs_blocked_antonym_date": 2800,
-  "pmglobal.rest_updates": 1861,
-  "pmglobal.sweeps": 223,
-  "pmglobal.ticks": 28790,
-  "pmglobal.updates": 3961,
-  "pmglobal.ws_msgs": 924686,
-  "pmglobal.ws_ticks": 6390,
-  "pmus.rest_updates": 11918,
-  "pmus.sweeps": 224,
-  "pmus.ticks": 1640306,
-  "pmus.updates": 11918,
-  "pmus_x.last_count": 7633,
-  "pmus_x.sweeps": 225,
+  "kalshi.sweeps": 233,
+  "kalshi.ticks": 4676869,
+  "kalshi.updates": 2217684,
+  "kalshi.ws_ticks": 4676869,
+  "kalshi.ws_trades": 554361,
+  "live_evals_fired": 1356,
+  "novig.rest_updates": 4125,
+  "novig.sweeps": 232,
+  "novig.ticks": 52264,
+  "novig.updates": 4125,
+  "pairs_blocked_antonym_date": 2910,
+  "pmglobal.rest_updates": 1928,
+  "pmglobal.sweeps": 232,
+  "pmglobal.ticks": 29907,
+  "pmglobal.updates": 4096,
+  "pmglobal.ws_msgs": 959133,
+  "pmglobal.ws_ticks": 6607,
+  "pmus.rest_updates": 12205,
+  "pmus.sweeps": 233,
+  "pmus.ticks": 1709557,
+  "pmus.updates": 12205,
+  "pmus_x.last_count": 7737,
+  "pmus_x.sweeps": 234,
   "prophetx.ticks": 939,
   "prophetx.updates": 139,
-  "prophetx.ws_errors": 196,
+  "prophetx.ws_errors": 204,
   "push_fails": 1,
   "px.evt_scanned": 41,
-  "pxboard.sweeps": 223,
-  "supa_errors": 723
+  "pxboard.sweeps": 232,
+  "supa_errors": 752
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
     ],
     "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 12
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,101 +95,78 @@
     "title": "Cleveland Guardians at Baltimore Orioles",
     "no_cost_cents": 31
    },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-09T23:37:12.448579+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
-    "ask_cents": 34
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "eb6c4bf24b6dfe3f5b85722e8f5bbd00"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 32
-   },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-09T23:37:26.115639+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
-    "ask_cents": 34
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8a25c823d64b4c392f3e20c4e05ede74"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 32
-   },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-09T23:37:26.163211+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
-    "ask_cents": 34
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "76f17a266b42d62f20cd9c5510987da3"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-09T23:37:26.058066+00:00"
+   "total_cost_cents": 37,
+   "edge_bps": 6300,
+   "detected_at": "2026-09-09T23:39:35.553434+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "63950400b79834491bc1373a44ec7191"
+     "6e948fa639516c953c8e4ab869c99733"
     ],
-    "title": "Houston Astros at Philadelphia Phillies",
-    "ask_cents": 40
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
+     "0x5c7614945e607b2a32704e4a461053407801da337b80fe55934599844bf9862d"
     ],
-    "title": "Houston Astros vs. Philadelphia Phillies",
-    "no_cost_cents": 35
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "no_cost_cents": 14
    },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-09-09T23:37:30.378303+00:00"
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-09T23:39:53.577208+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "15cb47afd7d0afb7a7d1478b51f5dbf1"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5c7614945e607b2a32704e4a461053407801da337b80fe55934599844bf9862d"
+    ],
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-09T23:39:53.577214+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "78b54add1b64940c55a4fcf883389f86"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5c7614945e607b2a32704e4a461053407801da337b80fe55934599844bf9862d"
+    ],
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-09T23:39:53.577175+00:00"
   },
   {
    "buy_yes": {
@@ -199,7 +176,7 @@
      "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
     ],
     "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 12
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -210,9 +187,55 @@
     "title": "Cleveland Guardians at Baltimore Orioles",
     "no_cost_cents": 69
    },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-09-09T23:37:12.388423+00:00"
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-09T23:39:35.500487+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7e964eda9ae083fc2f17632b769e4cd4"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 64
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5c7614945e607b2a32704e4a461053407801da337b80fe55934599844bf9862d"
+    ],
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-09T23:39:53.577225+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2d47105fdcddf39805ceae4c04fb62f9"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 65
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5c7614945e607b2a32704e4a461053407801da337b80fe55934599844bf9862d"
+    ],
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-09T23:39:53.577220+00:00"
   },
   {
    "buy_yes": {
@@ -222,135 +245,89 @@
      "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
     ],
     "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
-    "ask_cents": 34
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "65b3b7107237317b5ef776904420e434"
+     "eb6c4bf24b6dfe3f5b85722e8f5bbd00"
     ],
     "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 57
+    "no_cost_cents": 32
    },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-09T23:37:26.252389+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-09T23:39:35.209551+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+     "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
     ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 45
+    "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "925375d3420d835bfa5554599dc31bff"
+     "8a25c823d64b4c392f3e20c4e05ede74"
     ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 47
+    "title": "Colorado Rockies at New York Yankees",
+    "no_cost_cents": 32
    },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-09T23:34:29.970952+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-09T23:39:35.267057+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4f84ec7c056b95ca5f2c47691deff200"
+    ],
+    "title": "Los Angeles Angels at Boston Red Sox",
+    "ask_cents": 67
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5c7614945e607b2a32704e4a461053407801da337b80fe55934599844bf9862d"
+    ],
+    "title": "Los Angeles Angels vs. Boston Red Sox",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-09T23:39:53.577202+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+     "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
     ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 45
+    "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "200b5ed2b796a81953d1011a30f38540"
+     "76f17a266b42d62f20cd9c5510987da3"
     ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 48
+    "title": "Colorado Rockies at New York Yankees",
+    "no_cost_cents": 34
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-09T23:34:30.020215+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 45
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "838ca108e968c43eea3665034a4fa4b7"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-09T23:34:30.118308+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 45
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "121cb69d2f1483247ae6bb6b22ef3a4e"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 49
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-09T23:34:30.169690+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 45
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6c008042a0a3022952f65f8d98892567"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 49
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-09T23:34:30.227580+00:00"
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-09T23:39:35.154926+00:00"
   },
   {
    "buy_yes": {
@@ -369,21 +346,44 @@
      "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
     ],
     "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
-    "no_cost_cents": 66
+    "no_cost_cents": 52
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-09T23:37:26.210861+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-09T23:39:35.324129+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "76ad58defaeba317aa91ad0c6eec3241"
+     "0c09eafb8679c972eceb50fbc2d3a611"
+    ],
+    "title": "Colorado Rockies at New York Yankees",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
+    ],
+    "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-09T23:39:35.446730+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "63950400b79834491bc1373a44ec7191"
     ],
     "title": "Houston Astros at Philadelphia Phillies",
-    "ask_cents": 62
+    "ask_cents": 40
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -392,11 +392,34 @@
      "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
     ],
     "title": "Houston Astros vs. Philadelphia Phillies",
-    "no_cost_cents": 35
+    "no_cost_cents": 52
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-09T23:37:30.431619+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-09T23:39:40.516823+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x81b36241e41296d8de1fdd2b27d7136a3f121a3cd775c4a862141d3421d5de14"
+    ],
+    "title": "Houston Astros vs. Philadelphia Phillies",
+    "ask_cents": 55
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "76ad58defaeba317aa91ad0c6eec3241"
+    ],
+    "title": "Houston Astros at Philadelphia Phillies",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-09T23:39:40.567520+00:00"
   },
   {
    "buy_yes": {
@@ -406,43 +429,158 @@
      "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
     ],
     "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
-    "ask_cents": 45
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "cf43d8f7bb7e54e8bc07e423cf0d2efe"
+     "925375d3420d835bfa5554599dc31bff"
     ],
     "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 54
+    "no_cost_cents": 47
    },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-09T23:34:30.067068+00:00"
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-09-09T23:39:35.601712+00:00"
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "65b3b7107237317b5ef776904420e434"
+    ],
+    "title": "Colorado Rockies at New York Yankees",
+    "ask_cents": 44
+   },
+   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0xd7eac207083aa49335413afde1249d16f60f8b89582a02ae08f6399835d7d108"
     ],
     "title": "Colorado Rockies vs. New York Yankees: O/U 9.5",
-    "ask_cents": 34
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-09T23:39:35.379026+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "0c09eafb8679c972eceb50fbc2d3a611"
+     "200b5ed2b796a81953d1011a30f38540"
     ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 65
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-09T23:39:35.641892+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "838ca108e968c43eea3665034a4fa4b7"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-09T23:39:35.711107+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "121cb69d2f1483247ae6bb6b22ef3a4e"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-09T23:39:35.765520+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6c008042a0a3022952f65f8d98892567"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-09T23:39:35.828847+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "cf43d8f7bb7e54e8bc07e423cf0d2efe"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "ask_cents": 47
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves: O/U 8.5",
+    "no_cost_cents": 52
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-09T23:37:26.310969+00:00"
+   "detected_at": "2026-09-09T23:39:35.711082+00:00"
   }
  ]
 }
