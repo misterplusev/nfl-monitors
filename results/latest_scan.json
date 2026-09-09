@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-09T01:40:48.250750+00:00",
+ "scanned_at": "2026-09-09T01:42:55.760857+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 166.9,
+ "loop_uptime_min": 169.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 232208,
+   "markets": 234288,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,7 +19,7 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 124,
+   "markets": 127,
    "last_tick_age_s": 0.1
   },
   {
@@ -32,280 +32,49 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 21,
-   "last_tick_age_s": 9580.2
+   "last_tick_age_s": 9707.7
   }
  ],
  "totals": {
-  "markets_tracked": 240614,
-  "pairs_married": 10,
-  "arbitrages": 10
+  "markets_tracked": 242697,
+  "pairs_married": 4,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 79,
-  "gist_errors": 166,
+  "commits": 80,
+  "gist_errors": 168,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 696,
-  "kalshi.ticks": 10316790,
-  "kalshi.updates": 5117750,
-  "kalshi.ws_ticks": 10316788,
-  "kalshi.ws_trades": 1523766,
-  "live_evals_fired": 5202,
-  "novig.rest_updates": 14715,
-  "novig.sweeps": 695,
-  "novig.ticks": 132044,
-  "novig.updates": 14715,
-  "pairs_blocked_antonym_date": 1741,
-  "pmglobal.rest_updates": 4768,
-  "pmglobal.sweeps": 695,
-  "pmglobal.ticks": 88028,
-  "pmglobal.updates": 10551,
+  "kalshi.sweeps": 704,
+  "kalshi.ticks": 10445270,
+  "kalshi.updates": 5179742,
+  "kalshi.ws_ticks": 10445268,
+  "kalshi.ws_trades": 1544673,
+  "live_evals_fired": 5218,
+  "novig.rest_updates": 14921,
+  "novig.sweeps": 703,
+  "novig.ticks": 133492,
+  "novig.updates": 14921,
+  "pairs_blocked_antonym_date": 1761,
+  "pmglobal.rest_updates": 4822,
+  "pmglobal.sweeps": 703,
+  "pmglobal.ticks": 89017,
+  "pmglobal.updates": 10655,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 2325676,
-  "pmglobal.ws_ticks": 18428,
-  "pmus.rest_updates": 18795,
-  "pmus.sweeps": 696,
-  "pmus.ticks": 5370727,
-  "pmus.updates": 18795,
-  "pmus_x.last_count": 7581,
-  "pmus_x.sweeps": 697,
+  "pmglobal.ws_msgs": 2350044,
+  "pmglobal.ws_ticks": 18617,
+  "pmus.rest_updates": 18939,
+  "pmus.sweeps": 704,
+  "pmus.ticks": 5430347,
+  "pmus.updates": 18939,
+  "pmus_x.last_count": 7445,
+  "pmus_x.sweeps": 705,
   "prophetx.ticks": 565,
   "prophetx.updates": 175,
-  "prophetx.ws_errors": 578,
+  "prophetx.ws_errors": 586,
   "px.evt_scanned": 21,
-  "pxboard.sweeps": 695,
-  "supa_errors": 2294
+  "pxboard.sweeps": 703,
+  "supa_errors": 2319
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5d4e820464e2c6e6b57db0b98500ec02a8495ceb9ecb7111dcddb67eaeec8b4c"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5b9ce72105852a04c8d297b04811cd68"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 25
-   },
-   "total_cost_cents": 26,
-   "edge_bps": 7400,
-   "detected_at": "2026-09-09T01:40:48.250707+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5d4e820464e2c6e6b57db0b98500ec02a8495ceb9ecb7111dcddb67eaeec8b4c"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "da8e967feaf0e754dc1e9a0ef31d414f"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 27
-   },
-   "total_cost_cents": 28,
-   "edge_bps": 7200,
-   "detected_at": "2026-09-09T01:40:48.250700+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "223441f78e227ddbceb2e90a270cfa65"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "ask_cents": 31
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe1b994d41eb1b724445abb5a9f75fac66981d44191f87bdf4772877063ac6120"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 34,
-   "edge_bps": 6600,
-   "detected_at": "2026-09-09T01:35:50.325490+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d4f59fdfa86ae2c2b0d3f11c2440a098"
-    ],
-    "title": "Los Angeles Angels at Boston Red Sox",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x57dd61041a19318dda117ff7614abe80585d1d2e7f237be2f56c64f8120867ca"
-    ],
-    "title": "Los Angeles Angels vs. Boston Red Sox",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-09T01:40:32.095827+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d18392ff6248d2bd45bcbbc4bd788f84"
-    ],
-    "title": "Los Angeles Angels at Boston Red Sox",
-    "ask_cents": 59
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x57dd61041a19318dda117ff7614abe80585d1d2e7f237be2f56c64f8120867ca"
-    ],
-    "title": "Los Angeles Angels vs. Boston Red Sox",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-09T01:40:32.204776+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0c505e11b680e9c02cf257508206f582"
-    ],
-    "title": "Houston Astros at Philadelphia Phillies",
-    "ask_cents": 28
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x98fc981a2e73bc0c041fa144bf828455a591ab550f7315a9d9672009fdc5b960"
-    ],
-    "title": "Houston Astros vs. Philadelphia Phillies",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-09T01:35:50.256269+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1cc4757944570f2555985dfd0893d717"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "ask_cents": 70
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe1b994d41eb1b724445abb5a9f75fac66981d44191f87bdf4772877063ac6120"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-09T01:35:50.397376+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5d4e820464e2c6e6b57db0b98500ec02a8495ceb9ecb7111dcddb67eaeec8b4c"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "938509da178737ec4514d7941127f178"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 72
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-09T01:40:48.250711+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5d4e820464e2c6e6b57db0b98500ec02a8495ceb9ecb7111dcddb67eaeec8b4c"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "269fb0689638c4242232e736bd47bdf1"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 76
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-09T01:40:48.250681+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x98fc981a2e73bc0c041fa144bf828455a591ab550f7315a9d9672009fdc5b960"
-    ],
-    "title": "Houston Astros vs. Philadelphia Phillies",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a2ed548b1b18d165ef84d99ff240a9f0"
-    ],
-    "title": "Houston Astros at Philadelphia Phillies",
-    "no_cost_cents": 28
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-09T01:35:50.152949+00:00"
-  }
- ]
+ "arbitrages": []
 }
