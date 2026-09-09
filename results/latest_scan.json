@@ -1,78 +1,217 @@
 {
- "scanned_at": "2026-09-09T09:57:11.716482+00:00",
+ "scanned_at": "2026-09-09T09:59:12.218989+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 297.0,
+ "loop_uptime_min": 299.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 176479,
-   "last_tick_age_s": 0.0
+   "markets": 176826,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 21446,
-   "last_tick_age_s": 0.1
+   "markets": 23213,
+   "last_tick_age_s": 4.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 145,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 257,
-   "last_tick_age_s": 6.5
+   "last_tick_age_s": 1.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 36,
-   "last_tick_age_s": 17530.0
+   "last_tick_age_s": 17650.5
   }
  ],
  "totals": {
-  "markets_tracked": 198363,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 200477,
+  "pairs_married": 6,
+  "arbitrages": 6
  },
  "stats": {
-  "commits": 143,
-  "gist_errors": 303,
+  "commits": 144,
+  "gist_errors": 305,
   "hot_errors": 0,
-  "kalshi.sweeps": 1724,
-  "kalshi.ticks": 10963441,
-  "kalshi.updates": 5136112,
-  "kalshi.ws_ticks": 10963441,
-  "kalshi.ws_trades": 1340559,
-  "novig.rest_updates": 3514,
-  "novig.sweeps": 1723,
-  "novig.ticks": 407993,
-  "novig.updates": 3514,
-  "pairs_blocked_antonym_date": 7665,
-  "pmglobal.rest_updates": 8668,
-  "pmglobal.sweeps": 1723,
-  "pmglobal.ticks": 205814,
-  "pmglobal.updates": 19063,
+  "kalshi.sweeps": 1738,
+  "kalshi.ticks": 11035529,
+  "kalshi.updates": 5171750,
+  "kalshi.ws_ticks": 11035529,
+  "kalshi.ws_trades": 1347108,
+  "novig.rest_updates": 3525,
+  "novig.sweeps": 1738,
+  "novig.ticks": 411637,
+  "novig.updates": 3525,
+  "pairs_blocked_antonym_date": 7773,
+  "pmglobal.rest_updates": 8701,
+  "pmglobal.sweeps": 1738,
+  "pmglobal.ticks": 207465,
+  "pmglobal.updates": 19131,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 3094609,
-  "pmglobal.ws_ticks": 33414,
-  "pmus.rest_updates": 28391,
-  "pmus.sweeps": 1724,
-  "pmus.ticks": 12897011,
-  "pmus.updates": 28391,
-  "pmus_x.last_count": 7672,
-  "pmus_x.sweeps": 1725,
+  "pmglobal.ws_msgs": 3103987,
+  "pmglobal.ws_ticks": 33565,
+  "pmus.rest_updates": 30158,
+  "pmus.sweeps": 1738,
+  "pmus.ticks": 13004766,
+  "pmus.updates": 30158,
+  "pmus_x.last_count": 7723,
+  "pmus_x.sweeps": 1739,
   "prophetx.ticks": 1008,
   "prophetx.updates": 70,
-  "prophetx.ws_errors": 1078,
+  "prophetx.ws_errors": 1086,
   "px.evt_scanned": 36,
-  "pxboard.sweeps": 1723,
-  "supa_errors": 5174
+  "pxboard.sweeps": 1738,
+  "supa_errors": 5218
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "739524"
+    ],
+    "title": "Will the total in Minnesota Twins vs Detroit Tigers be more than 9.5?",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "af7b12914086922c55a477a5299455b4"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 24
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-09T09:59:12.218892+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "739524"
+    ],
+    "title": "Will the total in Minnesota Twins vs Detroit Tigers be more than 9.5?",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "3794c9be2d19bbdf3e61cb754733632b"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 26
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-09T09:59:12.218940+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "739524"
+    ],
+    "title": "Will the total in Minnesota Twins vs Detroit Tigers be more than 9.5?",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a478c0824a020920c8531e2e17e5cb35"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-09T09:59:12.218914+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "739524"
+    ],
+    "title": "Will the total in Minnesota Twins vs Detroit Tigers be more than 9.5?",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6bce63584ac3d25f3a2f9e3490f51d0a"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 46
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-09T09:59:12.218922+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "739524"
+    ],
+    "title": "Will the total in Minnesota Twins vs Detroit Tigers be more than 9.5?",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1ebc33b577331d3aaef7559b68c0aa6d"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-09T09:59:12.218928+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "739524"
+    ],
+    "title": "Will the total in Minnesota Twins vs Detroit Tigers be more than 9.5?",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fb8f911f8d5087e6b9f9d14dcbd33b5d"
+    ],
+    "title": "Minnesota Twins at Detroit Tigers",
+    "no_cost_cents": 55
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-09T09:59:12.218933+00:00"
+  }
+ ]
 }
