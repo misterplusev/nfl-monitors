@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-10T14:39:01.900489+00:00",
+ "scanned_at": "2026-09-10T14:41:03.453007+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 4.4,
+ "loop_uptime_min": 6.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 24166,
+   "markets": 29690,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7321,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 10.8
   },
   {
    "venue": "pmglobal",
@@ -26,53 +26,53 @@
    "venue": "novig",
    "state": "OK",
    "markets": 245,
-   "last_tick_age_s": 12.0
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 62,
-   "last_tick_age_s": 10.1
+   "last_tick_age_s": 42.8
   }
  ],
  "totals": {
-  "markets_tracked": 31897,
+  "markets_tracked": 37421,
   "pairs_married": 14,
   "arbitrages": 13
  },
  "stats": {
-  "commits": 1,
-  "gist_errors": 5,
+  "commits": 2,
+  "gist_errors": 7,
   "hot_errors": 0,
-  "kalshi.sweeps": 22,
-  "kalshi.ticks": 194620,
-  "kalshi.updates": 103482,
-  "kalshi.ws_ticks": 194620,
-  "kalshi.ws_trades": 22689,
-  "live_evals_fired": 33,
-  "novig.rest_updates": 298,
-  "novig.sweeps": 21,
-  "novig.ticks": 5368,
-  "novig.updates": 298,
-  "pairs_blocked_antonym_date": 270,
-  "pmglobal.rest_updates": 323,
-  "pmglobal.sweeps": 21,
-  "pmglobal.ticks": 2860,
-  "pmglobal.updates": 599,
-  "pmglobal.ws_msgs": 60982,
-  "pmglobal.ws_ticks": 660,
-  "pmus.rest_updates": 7426,
-  "pmus.sweeps": 22,
-  "pmus.ticks": 168373,
-  "pmus.updates": 7426,
+  "kalshi.sweeps": 29,
+  "kalshi.ticks": 286790,
+  "kalshi.updates": 149490,
+  "kalshi.ws_ticks": 286790,
+  "kalshi.ws_trades": 34964,
+  "live_evals_fired": 47,
+  "novig.rest_updates": 310,
+  "novig.sweeps": 29,
+  "novig.ticks": 7320,
+  "novig.updates": 310,
+  "pairs_blocked_antonym_date": 370,
+  "pmglobal.rest_updates": 396,
+  "pmglobal.sweeps": 29,
+  "pmglobal.ticks": 3910,
+  "pmglobal.updates": 758,
+  "pmglobal.ws_msgs": 88134,
+  "pmglobal.ws_ticks": 910,
+  "pmus.rest_updates": 7492,
+  "pmus.sweeps": 29,
+  "pmus.ticks": 219613,
+  "pmus.updates": 7492,
   "pmus_x.last_count": 7320,
-  "pmus_x.sweeps": 23,
-  "prophetx.ticks": 1359,
-  "prophetx.updates": 71,
-  "prophetx.ws_errors": 16,
+  "pmus_x.sweeps": 30,
+  "prophetx.ticks": 1725,
+  "prophetx.updates": 76,
+  "prophetx.ws_errors": 23,
   "px.evt_scanned": 61,
-  "pxboard.sweeps": 21,
-  "supa_errors": 73
+  "pxboard.sweeps": 28,
+  "supa_errors": 97
  },
  "arbitrages": [
   {
@@ -172,29 +172,6 @@
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "856662568c9341c9753c7a489eae58a3"
-    ],
-    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
-    ],
-    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
-    "no_cost_cents": 62
-   },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-10T14:35:44.058416+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
      "03be17c93e8944b5f5140420f4e44974"
     ],
     "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
@@ -212,6 +189,29 @@
    "total_cost_cents": 65,
    "edge_bps": 3500,
    "detected_at": "2026-09-10T14:35:44.076211+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "856662568c9341c9753c7a489eae58a3"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-10T14:39:59.597147+00:00"
   },
   {
    "buy_yes": {
@@ -303,7 +303,7 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-10T14:34:56.657925+00:00"
+   "detected_at": "2026-09-10T14:40:34.263558+00:00"
   },
   {
    "buy_yes": {
@@ -326,30 +326,7 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-10T14:34:56.682330+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
-    ],
-    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e4d1bedd6b923e83f6557bfdd4bab11f"
-    ],
-    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-10T14:38:51.749478+00:00"
+   "detected_at": "2026-09-10T14:40:34.295324+00:00"
   },
   {
    "buy_yes": {
@@ -372,7 +349,30 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-10T14:34:56.701384+00:00"
+   "detected_at": "2026-09-10T14:40:34.319106+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e4d1bedd6b923e83f6557bfdd4bab11f"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-10T14:40:20.643086+00:00"
   }
  ]
 }
