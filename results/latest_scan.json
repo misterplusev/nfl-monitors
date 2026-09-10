@@ -1,81 +1,81 @@
 {
- "scanned_at": "2026-09-10T01:05:19.694884+00:00",
+ "scanned_at": "2026-09-10T01:07:25.932015+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 144.0,
+ "loop_uptime_min": 146.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 289975,
+   "markets": 292527,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7880,
-   "last_tick_age_s": 5.3
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 135,
-   "last_tick_age_s": 0.6
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 277,
-   "last_tick_age_s": 3.1
+   "markets": 278,
+   "last_tick_age_s": 13.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 47,
-   "last_tick_age_s": 8191.9
+   "last_tick_age_s": 8318.1
   }
  ],
  "totals": {
-  "markets_tracked": 298314,
+  "markets_tracked": 300867,
   "pairs_married": 28,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 67,
-  "gist_errors": 142,
+  "commits": 68,
+  "gist_errors": 144,
   "hot_errors": 0,
   "kalshi.rest_updates": 12,
-  "kalshi.sweeps": 566,
-  "kalshi.ticks": 10834665,
-  "kalshi.updates": 5210308,
-  "kalshi.ws_ticks": 10834653,
-  "kalshi.ws_trades": 1563531,
-  "live_evals_fired": 3817,
-  "novig.rest_updates": 13002,
-  "novig.sweeps": 565,
-  "novig.ticks": 111611,
-  "novig.updates": 13002,
-  "pairs_blocked_antonym_date": 7070,
-  "pmglobal.rest_updates": 4630,
-  "pmglobal.sweeps": 565,
-  "pmglobal.ticks": 73304,
-  "pmglobal.updates": 9859,
-  "pmglobal.ws_msgs": 2515770,
-  "pmglobal.ws_ticks": 16704,
-  "pmus.rest_updates": 20255,
+  "kalshi.sweeps": 573,
+  "kalshi.ticks": 10974348,
+  "kalshi.updates": 5282132,
+  "kalshi.ws_ticks": 10974336,
+  "kalshi.ws_trades": 1591476,
+  "live_evals_fired": 3823,
+  "novig.rest_updates": 13232,
+  "novig.sweeps": 572,
+  "novig.ticks": 112597,
+  "novig.updates": 13232,
+  "pairs_blocked_antonym_date": 7160,
+  "pmglobal.rest_updates": 4666,
+  "pmglobal.sweeps": 572,
+  "pmglobal.ticks": 74244,
+  "pmglobal.updates": 9947,
+  "pmglobal.ws_msgs": 2563193,
+  "pmglobal.ws_ticks": 16944,
+  "pmus.rest_updates": 20566,
   "pmus.sweep_errors": 2,
-  "pmus.sweeps": 563,
-  "pmus.ticks": 4198241,
-  "pmus.updates": 20255,
+  "pmus.sweeps": 571,
+  "pmus.ticks": 4256801,
+  "pmus.updates": 20566,
   "pmus_x.last_count": 7320,
-  "pmus_x.sweeps": 564,
+  "pmus_x.sweeps": 572,
   "prophetx.ticks": 939,
   "prophetx.updates": 139,
-  "prophetx.ws_errors": 487,
+  "prophetx.ws_errors": 494,
   "push_fails": 1,
   "px.evt_scanned": 41,
-  "pxboard.sweeps": 565,
-  "supa_errors": 1802
+  "pxboard.sweeps": 572,
+  "supa_errors": 1824
  },
  "arbitrages": [
   {
@@ -86,7 +86,7 @@
      "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
     ],
     "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 1
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
@@ -97,9 +97,9 @@
     "title": "Cleveland Guardians at Baltimore Orioles",
     "no_cost_cents": 31
    },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-09-10T01:04:50.654570+00:00"
+   "total_cost_cents": 33,
+   "edge_bps": 6700,
+   "detected_at": "2026-09-10T01:07:12.694357+00:00"
   },
   {
    "buy_yes": {
@@ -214,7 +214,7 @@
    },
    "total_cost_cents": 43,
    "edge_bps": 5700,
-   "detected_at": "2026-09-10T01:04:50.243912+00:00"
+   "detected_at": "2026-09-10T01:06:21.315186+00:00"
   },
   {
    "buy_yes": {
@@ -398,7 +398,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-10T01:04:50.175102+00:00"
+   "detected_at": "2026-09-10T01:06:21.315163+00:00"
   },
   {
    "buy_yes": {
@@ -540,29 +540,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
-    ],
-    "title": "Cleveland Guardians vs. Baltimore Orioles",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e83cb6804f9312d4d3dc31a8ab9e3217"
-    ],
-    "title": "Cleveland Guardians at Baltimore Orioles",
-    "no_cost_cents": 69
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-10T01:04:50.593025+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -583,6 +560,29 @@
    "total_cost_cents": 70,
    "edge_bps": 3000,
    "detected_at": "2026-09-10T01:04:50.971114+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xba51ae8821e04efd884fc0b26b2a9ff429d90cbf300e9e9413609ba4928a652a"
+    ],
+    "title": "Cleveland Guardians vs. Baltimore Orioles",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e83cb6804f9312d4d3dc31a8ab9e3217"
+    ],
+    "title": "Cleveland Guardians at Baltimore Orioles",
+    "no_cost_cents": 69
+   },
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-10T01:07:12.654763+00:00"
   },
   {
    "buy_yes": {
