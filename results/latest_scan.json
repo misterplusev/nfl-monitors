@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-10T23:20:29.929299+00:00",
+ "scanned_at": "2026-09-10T23:22:30.388223+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 36.8,
+ "loop_uptime_min": 38.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 105284,
+   "markets": 108204,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7308,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 107,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 257,
-   "last_tick_age_s": 9.0
+   "markets": 258,
+   "last_tick_age_s": 10.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 129,
-   "last_tick_age_s": 1927.0
+   "last_tick_age_s": 2047.4
   }
  ],
  "totals": {
-  "markets_tracked": 113085,
+  "markets_tracked": 116006,
   "pairs_married": 13,
   "arbitrages": 10
  },
  "stats": {
-  "commits": 17,
-  "gist_errors": 39,
+  "commits": 18,
+  "gist_errors": 41,
   "hot_errors": 0,
-  "kalshi.sweeps": 199,
-  "kalshi.ticks": 1688733,
-  "kalshi.updates": 749174,
-  "kalshi.ws_ticks": 1688733,
-  "kalshi.ws_trades": 345304,
-  "live_evals_fired": 115,
-  "novig.rest_updates": 1328,
-  "novig.sweeps": 198,
-  "novig.ticks": 47808,
-  "novig.updates": 1328,
-  "pairs_blocked_antonym_date": 1743,
-  "pmglobal.rest_updates": 1189,
-  "pmglobal.sweeps": 198,
-  "pmglobal.ticks": 23724,
-  "pmglobal.updates": 2416,
-  "pmglobal.ws_msgs": 587384,
-  "pmglobal.ws_ticks": 3824,
-  "pmus.rest_updates": 8205,
-  "pmus.sweeps": 199,
-  "pmus.ticks": 1461400,
-  "pmus.updates": 8205,
+  "kalshi.sweeps": 210,
+  "kalshi.ticks": 1782132,
+  "kalshi.updates": 790013,
+  "kalshi.ws_ticks": 1782132,
+  "kalshi.ws_trades": 365053,
+  "live_evals_fired": 119,
+  "novig.rest_updates": 1444,
+  "novig.sweeps": 209,
+  "novig.ticks": 50431,
+  "novig.updates": 1444,
+  "pairs_blocked_antonym_date": 1834,
+  "pmglobal.rest_updates": 1252,
+  "pmglobal.sweeps": 209,
+  "pmglobal.ticks": 25045,
+  "pmglobal.updates": 2547,
+  "pmglobal.ws_msgs": 614936,
+  "pmglobal.ws_ticks": 4045,
+  "pmus.rest_updates": 8250,
+  "pmus.sweeps": 210,
+  "pmus.ticks": 1541777,
+  "pmus.updates": 8250,
   "pmus_x.last_count": 7307,
-  "pmus_x.sweeps": 200,
+  "pmus_x.sweeps": 211,
   "prophetx.ticks": 3351,
   "prophetx.updates": 134,
-  "prophetx.ws_errors": 131,
+  "prophetx.ws_errors": 138,
   "px.evt_scanned": 129,
-  "pxboard.sweeps": 198,
-  "supa_errors": 599
+  "pxboard.sweeps": 209,
+  "supa_errors": 632
  },
  "arbitrages": [
   {
@@ -83,7 +83,7 @@
      "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
     ],
     "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 24
+    "ask_cents": 22
    },
    "buy_no": {
     "venue": "prophetx",
@@ -94,9 +94,9 @@
     "title": "Colorado Rockies at New York Yankees",
     "no_cost_cents": 27
    },
-   "total_cost_cents": 51,
-   "edge_bps": 4900,
-   "detected_at": "2026-09-10T23:15:49.611934+00:00"
+   "total_cost_cents": 49,
+   "edge_bps": 5100,
+   "detected_at": "2026-09-10T23:20:53.086367+00:00"
   },
   {
    "buy_yes": {
@@ -106,7 +106,7 @@
      "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
     ],
     "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 24
+    "ask_cents": 22
    },
    "buy_no": {
     "venue": "prophetx",
@@ -117,9 +117,32 @@
     "title": "Colorado Rockies at New York Yankees",
     "no_cost_cents": 29
    },
-   "total_cost_cents": 53,
-   "edge_bps": 4700,
-   "detected_at": "2026-09-10T23:15:49.481308+00:00"
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-10T23:20:53.036418+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
+    ],
+    "title": "Colorado Rockies vs. New York Yankees",
+    "ask_cents": 22
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "75100176960dd1101c9beda64d6211cd"
+    ],
+    "title": "Colorado Rockies at New York Yankees",
+    "no_cost_cents": 71
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-10T23:20:52.995973+00:00"
   },
   {
    "buy_yes": {
@@ -152,30 +175,7 @@
      "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
     ],
     "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 24
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "75100176960dd1101c9beda64d6211cd"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 71
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-10T23:15:49.459140+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 24
+    "ask_cents": 22
    },
    "buy_no": {
     "venue": "prophetx",
@@ -186,9 +186,9 @@
     "title": "Colorado Rockies at New York Yankees",
     "no_cost_cents": 72
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-10T23:15:49.584507+00:00"
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-10T23:20:53.056057+00:00"
   },
   {
    "buy_yes": {
