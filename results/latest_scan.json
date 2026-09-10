@@ -1,81 +1,150 @@
 {
- "scanned_at": "2026-09-10T15:52:41.677944+00:00",
+ "scanned_at": "2026-09-10T15:54:43.096840+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 78.0,
+ "loop_uptime_min": 80.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 122295,
+   "markets": 124469,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7326,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 118,
+   "markets": 121,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 270,
-   "last_tick_age_s": 14.0
+   "markets": 272,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 62,
-   "last_tick_age_s": 4341.1
+   "last_tick_age_s": 4462.5
   }
  ],
  "totals": {
-  "markets_tracked": 130071,
-  "pairs_married": 24,
-  "arbitrages": 23
+  "markets_tracked": 132250,
+  "pairs_married": 38,
+  "arbitrages": 25
  },
  "stats": {
-  "commits": 37,
-  "gist_errors": 81,
+  "commits": 38,
+  "gist_errors": 83,
   "hot_errors": 0,
-  "kalshi.sweeps": 398,
-  "kalshi.ticks": 3660896,
-  "kalshi.updates": 1670068,
-  "kalshi.ws_ticks": 3660896,
-  "kalshi.ws_trades": 556935,
-  "live_evals_fired": 535,
-  "novig.rest_updates": 1398,
+  "kalshi.sweeps": 409,
+  "kalshi.ticks": 3764815,
+  "kalshi.updates": 1714348,
+  "kalshi.ws_ticks": 3764815,
+  "kalshi.ws_trades": 573355,
+  "live_evals_fired": 559,
+  "novig.rest_updates": 1426,
   "novig.sweep_errors": 1,
-  "novig.sweeps": 396,
-  "novig.ticks": 97207,
-  "novig.updates": 1398,
-  "pairs_blocked_antonym_date": 4970,
-  "pmglobal.rest_updates": 3066,
-  "pmglobal.sweeps": 397,
-  "pmglobal.ticks": 49749,
-  "pmglobal.updates": 6584,
-  "pmglobal.ws_msgs": 1321532,
-  "pmglobal.ws_ticks": 9949,
-  "pmus.rest_updates": 9218,
-  "pmus.sweeps": 398,
-  "pmus.ticks": 2920693,
-  "pmus.updates": 9218,
+  "novig.sweeps": 408,
+  "novig.ticks": 100159,
+  "novig.updates": 1426,
+  "pairs_blocked_antonym_date": 5120,
+  "pmglobal.rest_updates": 3154,
+  "pmglobal.sweeps": 409,
+  "pmglobal.ticks": 51194,
+  "pmglobal.updates": 6755,
+  "pmglobal.ws_msgs": 1345269,
+  "pmglobal.ws_ticks": 10194,
+  "pmus.rest_updates": 9244,
+  "pmus.sweeps": 409,
+  "pmus.ticks": 3001213,
+  "pmus.updates": 9244,
   "pmus_x.last_count": 7320,
-  "pmus_x.sweeps": 399,
+  "pmus_x.sweeps": 410,
   "prophetx.ticks": 1725,
   "prophetx.updates": 76,
-  "prophetx.ws_errors": 273,
+  "prophetx.ws_errors": 281,
   "px.evt_scanned": 61,
-  "pxboard.sweeps": 397,
-  "supa_errors": 1221
+  "pxboard.sweeps": 408,
+  "supa_errors": 1255
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "edc6a793e2fb93d675d397234380f817"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-09-10T15:54:43.096730+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a6481bd6bf38cda33b63736008b94940"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-09-10T15:54:43.096745+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8694b55c8e2760c33b5fbb2feeb25f74"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-09-10T15:54:43.096710+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -121,6 +190,29 @@
    "total_cost_cents": 42,
    "edge_bps": 5800,
    "detected_at": "2026-09-10T15:52:08.877077+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "122abe921327688a7922ff23c35ecaa2"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 42,
+   "edge_bps": 5800,
+   "detected_at": "2026-09-10T15:54:43.096788+00:00"
   },
   {
    "buy_yes": {
@@ -170,6 +262,52 @@
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f6a621c8abdf783891a83ab5d1f3a908"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 52,
+   "edge_bps": 4800,
+   "detected_at": "2026-09-10T15:54:43.096772+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bfde776fc43872860eb5f92b092f0e5f"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 53
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-10T15:54:43.096754+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -189,7 +327,7 @@
    },
    "total_cost_cents": 61,
    "edge_bps": 3900,
-   "detected_at": "2026-09-10T15:52:41.677861+00:00"
+   "detected_at": "2026-09-10T15:54:43.096704+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +373,7 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-10T15:52:41.677867+00:00"
+   "detected_at": "2026-09-10T15:54:43.096724+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +419,7 @@
    },
    "total_cost_cents": 66,
    "edge_bps": 3400,
-   "detected_at": "2026-09-10T15:52:41.677886+00:00"
+   "detected_at": "2026-09-10T15:54:43.096758+00:00"
   },
   {
    "buy_yes": {
@@ -311,6 +449,52 @@
     "venue": "prophetx",
     "key": [
      "prophetx",
+     "4ab3e21a9a6f60f945104fda7cd9f00e"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 64
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-10T15:54:43.096700+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56d20cf9d0c67b172512ea8ac8467537"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 65
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-10T15:54:43.096736+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
      "98d356612179e5da68b121787327ccc3"
     ],
     "title": "FK Shakhtar Donetsk at PSV",
@@ -327,7 +511,7 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-10T15:52:41.677892+00:00"
+   "detected_at": "2026-09-10T15:54:43.096764+00:00"
   },
   {
    "buy_yes": {
@@ -373,7 +557,7 @@
    },
    "total_cost_cents": 74,
    "edge_bps": 2600,
-   "detected_at": "2026-09-10T15:52:41.677830+00:00"
+   "detected_at": "2026-09-10T15:54:43.096674+00:00"
   },
   {
    "buy_yes": {
@@ -396,7 +580,53 @@
    },
    "total_cost_cents": 74,
    "edge_bps": 2600,
-   "detected_at": "2026-09-10T15:52:41.677881+00:00"
+   "detected_at": "2026-09-10T15:54:43.096749+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "43cd7e3fab53eb16121e525e02ef3b11"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 74
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-10T15:54:43.096688+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "613a9ad6bd459b7f2f5f781af342fea8"
+    ],
+    "title": "AS Roma at Fenerbah\u00e7e SK",
+    "ask_cents": 74
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x4863f1e9e9c8389b55440df57409b29a9322589f525dd03266970c8d1c60964e"
+    ],
+    "title": "Fenerbah\u00e7e SK vs. AS Roma: O/U 0.5",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-10T15:54:43.096768+00:00"
   },
   {
    "buy_yes": {
@@ -420,190 +650,6 @@
    "total_cost_cents": 81,
    "edge_bps": 1900,
    "detected_at": "2026-09-10T15:52:08.741496+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x71ef4b07995749db0b495651842932f124e1b3a4a76e0fd1a7253fbf56ce0f82"
-    ],
-    "title": "PSV vs. FK Shakhtar Donetsk: O/U 3.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9a102a9d72b7081bc175e10561eff64b"
-    ],
-    "title": "FK Shakhtar Donetsk at PSV",
-    "no_cost_cents": 35
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-09-10T15:52:41.677896+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x71ef4b07995749db0b495651842932f124e1b3a4a76e0fd1a7253fbf56ce0f82"
-    ],
-    "title": "PSV vs. FK Shakhtar Donetsk: O/U 3.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6c39f8a83cff5da6b26d7d2b5eb257df"
-    ],
-    "title": "FK Shakhtar Donetsk at PSV",
-    "no_cost_cents": 39
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-10T15:52:41.677854+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "c7213c3643883dff4bd065d4610f3aee"
-    ],
-    "title": "FK Shakhtar Donetsk at PSV",
-    "ask_cents": 35
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x71ef4b07995749db0b495651842932f124e1b3a4a76e0fd1a7253fbf56ce0f82"
-    ],
-    "title": "PSV vs. FK Shakhtar Donetsk: O/U 3.5",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-10T15:52:41.677876+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "540378207592d52a7b13c29b4556cc1e"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 47
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-10T15:51:52.303007+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a35fcdb0d33d225ce7916adcec741ed2"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 47
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-10T15:51:52.328592+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "04d94ee8ef423ff432b5f0c441a002f4"
-    ],
-    "title": "FK Shakhtar Donetsk at PSV",
-    "ask_cents": 39
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x71ef4b07995749db0b495651842932f124e1b3a4a76e0fd1a7253fbf56ce0f82"
-    ],
-    "title": "PSV vs. FK Shakhtar Donetsk: O/U 3.5",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-10T15:52:41.677848+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d7867a98bfc31d92092624a3095c080f"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-10T15:51:52.348728+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
-    ],
-    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e4d1bedd6b923e83f6557bfdd4bab11f"
-    ],
-    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
-    "no_cost_cents": 58
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-10T15:52:08.817586+00:00"
   }
  ]
 }
