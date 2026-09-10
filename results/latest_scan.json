@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-10T18:05:56.063937+00:00",
+ "scanned_at": "2026-09-10T18:07:58.833548+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 211.3,
+ "loop_uptime_min": 213.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 257679,
+   "markets": 259529,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7879,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 5.6
   },
   {
    "venue": "pmglobal",
@@ -25,56 +25,56 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 311,
-   "last_tick_age_s": 5.0
+   "markets": 312,
+   "last_tick_age_s": 3.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 62,
-   "last_tick_age_s": 12335.6
+   "last_tick_age_s": 12458.4
   }
  ],
  "totals": {
-  "markets_tracked": 266080,
+  "markets_tracked": 267931,
   "pairs_married": 52,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 102,
-  "gist_errors": 219,
+  "commits": 103,
+  "gist_errors": 221,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 1097,
-  "kalshi.ticks": 10537064,
-  "kalshi.updates": 4752793,
-  "kalshi.ws_ticks": 10537061,
-  "kalshi.ws_trades": 1721613,
-  "live_evals_fired": 3844,
-  "novig.rest_updates": 6542,
+  "kalshi.sweeps": 1108,
+  "kalshi.ticks": 10632715,
+  "kalshi.updates": 4798133,
+  "kalshi.ws_ticks": 10632712,
+  "kalshi.ws_trades": 1738350,
+  "live_evals_fired": 3912,
+  "novig.rest_updates": 6674,
   "novig.sweep_errors": 1,
-  "novig.sweeps": 1095,
-  "novig.ticks": 260863,
-  "novig.updates": 6542,
-  "pairs_blocked_antonym_date": 13710,
-  "pmglobal.rest_updates": 6941,
-  "pmglobal.sweeps": 1096,
-  "pmglobal.ticks": 133960,
-  "pmglobal.updates": 14634,
-  "pmglobal.ws_msgs": 2947919,
-  "pmglobal.ws_ticks": 24260,
-  "pmus.rest_updates": 13554,
-  "pmus.sweeps": 1097,
-  "pmus.ticks": 8139562,
-  "pmus.updates": 13554,
-  "pmus_x.last_count": 7869,
-  "pmus_x.sweeps": 1098,
+  "novig.sweeps": 1106,
+  "novig.ticks": 263412,
+  "novig.updates": 6674,
+  "pairs_blocked_antonym_date": 13850,
+  "pmglobal.rest_updates": 6995,
+  "pmglobal.sweeps": 1107,
+  "pmglobal.ticks": 135283,
+  "pmglobal.updates": 14757,
+  "pmglobal.ws_msgs": 2965500,
+  "pmglobal.ws_ticks": 24483,
+  "pmus.rest_updates": 13587,
+  "pmus.sweeps": 1107,
+  "pmus.ticks": 8218265,
+  "pmus.updates": 13587,
+  "pmus_x.last_count": 7870,
+  "pmus_x.sweeps": 1108,
   "prophetx.ticks": 1725,
   "prophetx.updates": 76,
-  "prophetx.ws_errors": 738,
+  "prophetx.ws_errors": 745,
   "px.evt_scanned": 61,
-  "pxboard.sweeps": 1096,
-  "supa_errors": 3330
+  "pxboard.sweeps": 1107,
+  "supa_errors": 3362
  },
  "arbitrages": [
   {
@@ -289,6 +289,52 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
+     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "540378207592d52a7b13c29b4556cc1e"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-10T18:07:58.135537+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a35fcdb0d33d225ce7916adcec741ed2"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-10T18:07:58.078767+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
      "0x71ef4b07995749db0b495651842932f124e1b3a4a76e0fd1a7253fbf56ce0f82"
     ],
     "title": "PSV vs. FK Shakhtar Donetsk: O/U 3.5",
@@ -384,43 +430,20 @@
      "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
     ],
     "title": "Tampa Bay Rays vs. Atlanta Braves",
-    "ask_cents": 10
+    "ask_cents": 8
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "540378207592d52a7b13c29b4556cc1e"
+     "d7867a98bfc31d92092624a3095c080f"
     ],
     "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 47
+    "no_cost_cents": 50
    },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-10T18:05:15.051168+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a35fcdb0d33d225ce7916adcec741ed2"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 47
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-10T18:05:15.002508+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-10T18:07:58.114699+00:00"
   },
   {
    "buy_yes": {
@@ -476,20 +499,20 @@
      "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
     ],
     "title": "Tampa Bay Rays vs. Atlanta Braves",
-    "ask_cents": 10
+    "ask_cents": 8
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "d7867a98bfc31d92092624a3095c080f"
+     "bec70e1459d4f6543445c6c3c1fadffd"
     ],
     "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 50
+    "no_cost_cents": 54
    },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-10T18:05:15.030367+00:00"
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-09-10T18:07:58.049191+00:00"
   },
   {
    "buy_yes": {
@@ -536,29 +559,6 @@
    "total_cost_cents": 64,
    "edge_bps": 3600,
    "detected_at": "2026-09-10T18:05:39.686230+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
-    ],
-    "title": "Tampa Bay Rays vs. Atlanta Braves",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bec70e1459d4f6543445c6c3c1fadffd"
-    ],
-    "title": "Tampa Bay Rays at Atlanta Braves",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-10T18:05:14.978831+00:00"
   },
   {
    "buy_yes": {
