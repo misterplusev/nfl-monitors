@@ -1,81 +1,377 @@
 {
- "scanned_at": "2026-09-10T09:57:25.040883+00:00",
+ "scanned_at": "2026-09-10T14:36:52.654548+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 294.0,
+ "loop_uptime_min": 2.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 171649,
-   "last_tick_age_s": 0.1
+   "markets": 15239,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7880,
-   "last_tick_age_s": 6.8
+   "markets": 7321,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 149,
-   "last_tick_age_s": 0.6
+   "markets": 100,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 249,
-   "last_tick_age_s": 4.5
+   "markets": 245,
+   "last_tick_age_s": 7.3
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 41,
-   "last_tick_age_s": 17220.3
+   "state": "OK",
+   "markets": 62,
+   "last_tick_age_s": 5.0
   }
  ],
  "totals": {
-  "markets_tracked": 179968,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 22967,
+  "pairs_married": 14,
+  "arbitrages": 13
  },
  "stats": {
-  "commits": 142,
-  "gist_errors": 302,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 222,
-  "kalshi.sweeps": 1369,
-  "kalshi.ticks": 5943415,
-  "kalshi.updates": 3000492,
-  "kalshi.ws_errors": 1,
-  "kalshi.ws_ticks": 5942815,
-  "kalshi.ws_trades": 880820,
-  "novig.rest_updates": 1367,
-  "novig.sweep_errors": 10,
-  "novig.sweeps": 1358,
-  "novig.ticks": 327231,
-  "novig.updates": 1367,
-  "pairs_blocked_antonym_date": 22920,
-  "pmglobal.rest_updates": 7762,
-  "pmglobal.sweeps": 1368,
-  "pmglobal.ticks": 165696,
-  "pmglobal.updates": 16091,
-  "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 2785734,
-  "pmglobal.ws_ticks": 28796,
-  "pmus.rest_updates": 20012,
-  "pmus.sweeps": 1368,
-  "pmus.ticks": 10453748,
-  "pmus.updates": 20012,
-  "pmus_x.last_count": 7871,
-  "pmus_x.sweeps": 1369,
-  "prophetx.ticks": 1045,
-  "prophetx.updates": 58,
-  "prophetx.ws_errors": 1002,
-  "px.evt_scanned": 39,
-  "pxboard.sweeps": 1368,
-  "supa_errors": 4570
+  "kalshi.sweeps": 12,
+  "kalshi.ticks": 98778,
+  "kalshi.updates": 54777,
+  "kalshi.ws_ticks": 98778,
+  "kalshi.ws_trades": 11259,
+  "live_evals_fired": 29,
+  "novig.rest_updates": 270,
+  "novig.sweeps": 11,
+  "novig.ticks": 2928,
+  "novig.updates": 270,
+  "pairs_blocked_antonym_date": 150,
+  "pmglobal.rest_updates": 240,
+  "pmglobal.sweeps": 11,
+  "pmglobal.ticks": 1571,
+  "pmglobal.updates": 407,
+  "pmglobal.ws_msgs": 28795,
+  "pmglobal.ws_ticks": 371,
+  "pmus.rest_updates": 7376,
+  "pmus.sweeps": 12,
+  "pmus.ticks": 95173,
+  "pmus.updates": 7376,
+  "pmus_x.last_count": 7321,
+  "pmus_x.sweeps": 13,
+  "prophetx.ticks": 744,
+  "prophetx.updates": 63,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 62,
+  "pxboard.sweeps": 11,
+  "supa_errors": 40
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "83e2c1676cf487b49ae5d67460a685fd"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 42,
+   "edge_bps": 5800,
+   "detected_at": "2026-09-10T14:35:44.024416+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8bbe0d663ae07564188d47765ee57aca"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 42,
+   "edge_bps": 5800,
+   "detected_at": "2026-09-10T14:35:44.076195+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7dd222575b58976f24ebff8d339ce1b9"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "no_cost_cents": 7
+   },
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-10T14:35:44.058397+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5882086ca02717176c7a3f5c8ed704b3"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 47,
+   "edge_bps": 5300,
+   "detected_at": "2026-09-10T14:35:44.024439+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "856662568c9341c9753c7a489eae58a3"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-10T14:35:44.058416+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "03be17c93e8944b5f5140420f4e44974"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-10T14:35:44.076211+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "db28861771b264c2a4df165b254db9b1"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-10T14:35:44.024447+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c76152ddac3877d7216f70283cff5d7b"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "ask_cents": 9
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "no_cost_cents": 62
+   },
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-10T14:35:44.001122+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b4444fdfcd0f7c893be4eeb648bbef17"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-10T14:35:44.001102+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "540378207592d52a7b13c29b4556cc1e"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-10T14:34:56.657925+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a35fcdb0d33d225ce7916adcec741ed2"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-10T14:34:56.682330+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3cf790e534d59f6261152e0958ecac38519436b09b4bc1b300bb28490993394e"
+    ],
+    "title": "Tampa Bay Rays vs. Atlanta Braves",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d7867a98bfc31d92092624a3095c080f"
+    ],
+    "title": "Tampa Bay Rays at Atlanta Braves",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-10T14:34:56.701384+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb67f2c70e13bc94bd8262ea5575dab71f2590ac0cbf68e2a1b48dd6076cfc403"
+    ],
+    "title": "FC Bayern M\u00fcnchen vs. FK Bod\u00f8/Glimt: O/U 5.5",
+    "ask_cents": 38
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e4d1bedd6b923e83f6557bfdd4bab11f"
+    ],
+    "title": "FK Bod\u00f8/Glimt at FC Bayern M\u00fcnchen",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-10T14:35:44.024431+00:00"
+  }
+ ]
 }
