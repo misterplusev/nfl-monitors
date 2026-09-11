@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-11T00:11:42.584706+00:00",
+ "scanned_at": "2026-09-11T00:13:43.918545+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 88.1,
+ "loop_uptime_min": 90.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 180683,
-   "last_tick_age_s": 0.0
+   "markets": 183988,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7320,
-   "last_tick_age_s": 0.5
+   "last_tick_age_s": 4.7
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 115,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 271,
-   "last_tick_age_s": 18.0
+   "markets": 272,
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 129,
-   "last_tick_age_s": 4999.7
+   "last_tick_age_s": 5121.0
   }
  ],
  "totals": {
-  "markets_tracked": 188518,
+  "markets_tracked": 191824,
   "pairs_married": 13,
-  "arbitrages": 9
+  "arbitrages": 11
  },
  "stats": {
-  "commits": 42,
-  "gist_errors": 93,
+  "commits": 43,
+  "gist_errors": 95,
   "hot_errors": 0,
   "kalshi.rest_updates": 3,
-  "kalshi.sweeps": 467,
-  "kalshi.ticks": 4328943,
-  "kalshi.updates": 1883607,
-  "kalshi.ws_ticks": 4328935,
-  "kalshi.ws_trades": 814627,
-  "live_evals_fired": 792,
-  "novig.rest_updates": 4319,
-  "novig.sweeps": 466,
-  "novig.ticks": 111036,
-  "novig.updates": 4319,
-  "pairs_blocked_antonym_date": 4196,
-  "pmglobal.rest_updates": 2691,
-  "pmglobal.sweeps": 466,
-  "pmglobal.ticks": 56007,
-  "pmglobal.updates": 5637,
-  "pmglobal.ws_msgs": 1687102,
-  "pmglobal.ws_ticks": 9307,
-  "pmus.rest_updates": 9719,
+  "kalshi.sweeps": 477,
+  "kalshi.ticks": 4459580,
+  "kalshi.updates": 1938778,
+  "kalshi.ws_ticks": 4459572,
+  "kalshi.ws_trades": 835097,
+  "live_evals_fired": 819,
+  "novig.rest_updates": 4492,
+  "novig.sweeps": 477,
+  "novig.ticks": 113595,
+  "novig.updates": 4492,
+  "pairs_blocked_antonym_date": 4326,
+  "pmglobal.rest_updates": 2762,
+  "pmglobal.sweeps": 477,
+  "pmglobal.ticks": 57321,
+  "pmglobal.updates": 5784,
+  "pmglobal.ws_msgs": 1743145,
+  "pmglobal.ws_ticks": 9521,
+  "pmus.rest_updates": 9780,
   "pmus.sweep_errors": 1,
-  "pmus.sweeps": 466,
-  "pmus.ticks": 3415753,
-  "pmus.updates": 9719,
+  "pmus.sweeps": 476,
+  "pmus.ticks": 3488713,
+  "pmus.updates": 9780,
   "pmus_x.last_count": 7296,
-  "pmus_x.sweeps": 467,
+  "pmus_x.sweeps": 477,
   "prophetx.ticks": 3351,
   "prophetx.updates": 134,
-  "prophetx.ws_errors": 309,
+  "prophetx.ws_errors": 316,
   "px.evt_scanned": 129,
-  "pxboard.sweeps": 466,
-  "supa_errors": 1407
+  "pxboard.sweeps": 477,
+  "supa_errors": 1439
  },
  "arbitrages": [
   {
@@ -263,13 +263,36 @@
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bf14fd29c1077c4b79e1ea52e3119a4e"
+    ],
+    "title": "Pittsburgh Pirates at Chicago White Sox",
+    "ask_cents": 49
+   },
+   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "ask_cents": 53
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-11T00:13:33.361663+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
+    ],
+    "title": "Pittsburgh Pirates vs. Chicago White Sox",
+    "ask_cents": 52
    },
    "buy_no": {
     "venue": "prophetx",
@@ -280,9 +303,32 @@
     "title": "Pittsburgh Pirates at Chicago White Sox",
     "no_cost_cents": 46
    },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-11T00:13:33.395672+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4335e3b2c044d5a76ba2a843b0b099ff"
+    ],
+    "title": "Pittsburgh Pirates at Chicago White Sox",
+    "ask_cents": 51
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
+    ],
+    "title": "Pittsburgh Pirates vs. Chicago White Sox",
+    "no_cost_cents": 48
+   },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-11T00:11:27.998019+00:00"
+   "detected_at": "2026-09-11T00:13:33.342468+00:00"
   }
  ]
 }
