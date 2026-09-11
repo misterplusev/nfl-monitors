@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-11T18:29:10.843077+00:00",
+ "scanned_at": "2026-09-11T18:31:14.393723+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 234.7,
+ "loop_uptime_min": 236.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 287621,
+   "markets": 292529,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7329,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.7
   },
   {
    "venue": "pmglobal",
@@ -26,53 +26,53 @@
    "venue": "novig",
    "state": "OK",
    "markets": 302,
-   "last_tick_age_s": 11.7
+   "last_tick_age_s": 6.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 62,
-   "last_tick_age_s": 13824.4
+   "last_tick_age_s": 13947.9
   }
  ],
  "totals": {
-  "markets_tracked": 295462,
+  "markets_tracked": 300370,
   "pairs_married": 5,
-  "arbitrages": 4
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 113,
-  "gist_errors": 243,
+  "commits": 114,
+  "gist_errors": 245,
   "hot_errors": 0,
-  "kalshi.sweeps": 1312,
-  "kalshi.ticks": 11517093,
-  "kalshi.updates": 4894360,
-  "kalshi.ws_ticks": 11517093,
-  "kalshi.ws_trades": 1858298,
-  "live_evals_fired": 69,
-  "novig.rest_updates": 5016,
-  "novig.sweeps": 1311,
-  "novig.ticks": 325159,
-  "novig.updates": 5016,
-  "pairs_blocked_antonym_date": 26240,
-  "pmglobal.rest_updates": 8715,
-  "pmglobal.sweeps": 1311,
-  "pmglobal.ticks": 155204,
-  "pmglobal.updates": 17830,
-  "pmglobal.ws_msgs": 3159929,
-  "pmglobal.ws_ticks": 24004,
-  "pmus.rest_updates": 19738,
-  "pmus.sweeps": 1312,
-  "pmus.ticks": 9593328,
-  "pmus.updates": 19738,
+  "kalshi.sweeps": 1323,
+  "kalshi.ticks": 11658817,
+  "kalshi.updates": 4956218,
+  "kalshi.ws_ticks": 11658817,
+  "kalshi.ws_trades": 1873761,
+  "live_evals_fired": 73,
+  "novig.rest_updates": 5110,
+  "novig.sweeps": 1322,
+  "novig.ticks": 327852,
+  "novig.updates": 5110,
+  "pairs_blocked_antonym_date": 26464,
+  "pmglobal.rest_updates": 8785,
+  "pmglobal.sweeps": 1322,
+  "pmglobal.ticks": 156512,
+  "pmglobal.updates": 17962,
+  "pmglobal.ws_msgs": 3178497,
+  "pmglobal.ws_ticks": 24212,
+  "pmus.rest_updates": 19819,
+  "pmus.sweeps": 1323,
+  "pmus.ticks": 9673518,
+  "pmus.updates": 19819,
   "pmus_x.last_count": 7290,
-  "pmus_x.sweeps": 1313,
+  "pmus_x.sweeps": 1324,
   "prophetx.ticks": 1674,
   "prophetx.updates": 69,
-  "prophetx.ws_errors": 859,
+  "prophetx.ws_errors": 866,
   "px.evt_scanned": 62,
-  "pxboard.sweeps": 1311,
-  "supa_errors": 3975
+  "pxboard.sweeps": 1322,
+  "supa_errors": 4008
  },
  "arbitrages": [
   {
@@ -83,7 +83,7 @@
      "0x1ed7d60c35951e552eb11f848bd4b01efb29a68cdcc4a4f0cafa06c43f7338aa"
     ],
     "title": "Pittsburgh Pirates vs. Chicago Cubs",
-    "ask_cents": 36
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -94,9 +94,9 @@
     "title": "Pittsburgh Pirates at Chicago Cubs",
     "no_cost_cents": 36
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-11T17:39:00.004034+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-11T18:29:24.409592+00:00"
   },
   {
    "buy_yes": {
@@ -106,7 +106,7 @@
      "0x1ed7d60c35951e552eb11f848bd4b01efb29a68cdcc4a4f0cafa06c43f7338aa"
     ],
     "title": "Pittsburgh Pirates vs. Chicago Cubs",
-    "ask_cents": 36
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -117,32 +117,55 @@
     "title": "Pittsburgh Pirates at Chicago Cubs",
     "no_cost_cents": 37
    },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-11T17:38:59.969162+00:00"
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-11T18:29:24.338054+00:00"
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ba8a174c0ed507b2a3ad53135cd32e55"
+    ],
+    "title": "Pittsburgh Pirates at Chicago Cubs",
+    "ask_cents": 36
+   },
+   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x1ed7d60c35951e552eb11f848bd4b01efb29a68cdcc4a4f0cafa06c43f7338aa"
     ],
     "title": "Pittsburgh Pirates vs. Chicago Cubs",
-    "ask_cents": 36
+    "no_cost_cents": 56
    },
-   "buy_no": {
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-11T18:29:24.303330+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "b65f34b5221837fdca8b017c22aa9b93"
     ],
     "title": "Pittsburgh Pirates at Chicago Cubs",
-    "no_cost_cents": 59
+    "ask_cents": 42
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-11T17:38:59.931399+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x1ed7d60c35951e552eb11f848bd4b01efb29a68cdcc4a4f0cafa06c43f7338aa"
+    ],
+    "title": "Pittsburgh Pirates vs. Chicago Cubs",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-11T18:29:24.378777+00:00"
   },
   {
    "buy_yes": {
