@@ -1,81 +1,81 @@
 {
- "scanned_at": "2026-09-11T01:35:05.694647+00:00",
+ "scanned_at": "2026-09-11T01:37:07.800444+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 171.4,
+ "loop_uptime_min": 173.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 264978,
+   "markets": 266277,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7321,
-   "last_tick_age_s": 3.0
+   "last_tick_age_s": 3.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 123,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 1.4
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 284,
-   "last_tick_age_s": 0.8
+   "markets": 285,
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 129,
-   "last_tick_age_s": 10002.9
+   "last_tick_age_s": 10125.0
   }
  ],
  "totals": {
-  "markets_tracked": 272835,
+  "markets_tracked": 274135,
   "pairs_married": 13,
   "arbitrages": 12
  },
  "stats": {
-  "commits": 83,
-  "gist_errors": 177,
+  "commits": 84,
+  "gist_errors": 179,
   "hot_errors": 0,
   "kalshi.rest_updates": 3,
-  "kalshi.sweeps": 897,
-  "kalshi.ticks": 8795183,
-  "kalshi.updates": 3898445,
-  "kalshi.ws_ticks": 8795175,
-  "kalshi.ws_trades": 1666311,
-  "live_evals_fired": 2180,
-  "novig.rest_updates": 14178,
-  "novig.sweeps": 897,
-  "novig.ticks": 194314,
-  "novig.updates": 14178,
-  "pairs_blocked_antonym_date": 9576,
-  "pmglobal.rest_updates": 5229,
-  "pmglobal.sweeps": 897,
-  "pmglobal.ticks": 109297,
-  "pmglobal.updates": 11617,
+  "kalshi.sweeps": 907,
+  "kalshi.ticks": 8897992,
+  "kalshi.updates": 3947470,
+  "kalshi.ws_ticks": 8897984,
+  "kalshi.ws_trades": 1691655,
+  "live_evals_fired": 2216,
+  "novig.rest_updates": 14435,
+  "novig.sweeps": 907,
+  "novig.ticks": 196033,
+  "novig.updates": 14435,
+  "pairs_blocked_antonym_date": 9696,
+  "pmglobal.rest_updates": 5284,
+  "pmglobal.sweeps": 907,
+  "pmglobal.ticks": 110488,
+  "pmglobal.updates": 11723,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 3653095,
-  "pmglobal.ws_ticks": 19497,
-  "pmus.rest_updates": 14205,
+  "pmglobal.ws_msgs": 3707366,
+  "pmglobal.ws_ticks": 19688,
+  "pmus.rest_updates": 14344,
   "pmus.sweep_errors": 1,
-  "pmus.sweeps": 896,
-  "pmus.ticks": 6556231,
-  "pmus.updates": 14205,
-  "pmus_x.last_count": 7319,
-  "pmus_x.sweeps": 897,
+  "pmus.sweeps": 906,
+  "pmus.ticks": 6629418,
+  "pmus.updates": 14344,
+  "pmus_x.last_count": 7317,
+  "pmus_x.sweeps": 907,
   "prophetx.ticks": 3351,
   "prophetx.updates": 134,
-  "prophetx.ws_errors": 596,
+  "prophetx.ws_errors": 603,
   "px.evt_scanned": 129,
-  "pxboard.sweeps": 896,
-  "supa_errors": 2699
+  "pxboard.sweeps": 906,
+  "supa_errors": 2730
  },
  "arbitrages": [
   {
@@ -86,7 +86,7 @@
      "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
     ],
     "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 6
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
@@ -97,9 +97,9 @@
     "title": "Colorado Rockies at New York Yankees",
     "no_cost_cents": 27
    },
-   "total_cost_cents": 33,
-   "edge_bps": 6700,
-   "detected_at": "2026-09-11T01:26:15.338737+00:00"
+   "total_cost_cents": 29,
+   "edge_bps": 7100,
+   "detected_at": "2026-09-11T01:36:11.436568+00:00"
   },
   {
    "buy_yes": {
@@ -109,7 +109,7 @@
      "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
     ],
     "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 6
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
@@ -120,9 +120,9 @@
     "title": "Colorado Rockies at New York Yankees",
     "no_cost_cents": 29
    },
-   "total_cost_cents": 35,
-   "edge_bps": 6500,
-   "detected_at": "2026-09-11T01:26:15.298667+00:00"
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-09-11T01:36:11.394788+00:00"
   },
   {
    "buy_yes": {
@@ -218,52 +218,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 6
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "75100176960dd1101c9beda64d6211cd"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 71
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-11T01:26:15.275531+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 6
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "19488caf8fffedb6fe23865ea2e04067"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 72
-   },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-11T01:26:15.324111+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -279,11 +233,11 @@
      "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "no_cost_cents": 32
+    "no_cost_cents": 20
    },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-09-11T01:35:03.899536+00:00"
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-11T01:37:06.540645+00:00"
   },
   {
    "buy_yes": {
@@ -302,11 +256,11 @@
      "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "no_cost_cents": 32
+    "no_cost_cents": 20
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-11T01:35:03.876204+00:00"
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-11T01:37:06.540618+00:00"
   },
   {
    "buy_yes": {
@@ -325,11 +279,57 @@
      "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "no_cost_cents": 32
+    "no_cost_cents": 20
    },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-11T01:35:03.923962+00:00"
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-11T01:37:06.540654+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
+    ],
+    "title": "Colorado Rockies vs. New York Yankees",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "75100176960dd1101c9beda64d6211cd"
+    ],
+    "title": "Colorado Rockies at New York Yankees",
+    "no_cost_cents": 71
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-11T01:36:11.373549+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
+    ],
+    "title": "Colorado Rockies vs. New York Yankees",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "19488caf8fffedb6fe23865ea2e04067"
+    ],
+    "title": "Colorado Rockies at New York Yankees",
+    "no_cost_cents": 72
+   },
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-11T01:36:11.417836+00:00"
   },
   {
    "buy_yes": {
@@ -348,11 +348,11 @@
      "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "no_cost_cents": 32
+    "no_cost_cents": 20
    },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-09-11T01:35:03.944538+00:00"
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-11T01:37:06.540661+00:00"
   }
  ]
 }
