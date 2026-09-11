@@ -1,239 +1,101 @@
 {
- "scanned_at": "2026-09-11T09:55:04.110828+00:00",
+ "scanned_at": "2026-09-11T14:36:40.431947+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 295.1,
+ "loop_uptime_min": 2.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 178814,
-   "last_tick_age_s": 0.1
+   "markets": 14481,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 26639,
-   "last_tick_age_s": 6.2
+   "markets": 7265,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 141,
-   "last_tick_age_s": 0.9
+   "markets": 100,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 256,
-   "last_tick_age_s": 3.6
+   "markets": 250,
+   "last_tick_age_s": 7.8
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 61,
-   "last_tick_age_s": 17360.9
+   "state": "OK",
+   "markets": 62,
+   "last_tick_age_s": 6.1
   }
  ],
  "totals": {
-  "markets_tracked": 205911,
-  "pairs_married": 9,
-  "arbitrages": 7
+  "markets_tracked": 22158,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 144,
-  "gist_errors": 304,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.sweeps": 1599,
-  "kalshi.ticks": 9054815,
-  "kalshi.updates": 4099457,
-  "kalshi.ws_ticks": 9054815,
-  "kalshi.ws_trades": 1338986,
-  "novig.rest_updates": 4363,
-  "novig.sweeps": 1598,
-  "novig.ticks": 385896,
-  "novig.updates": 4363,
-  "pairs_blocked_antonym_date": 22359,
-  "pmglobal.rest_updates": 6884,
-  "pmglobal.sweeps": 1598,
-  "pmglobal.ticks": 185662,
-  "pmglobal.updates": 13745,
-  "pmglobal.ws_msgs": 2042946,
-  "pmglobal.ws_ticks": 25762,
-  "pmus.rest_updates": 31207,
-  "pmus.sweeps": 1598,
-  "pmus.ticks": 11454122,
-  "pmus.updates": 31207,
-  "pmus_x.last_count": 0,
-  "pmus_x.sweeps": 1599,
-  "prophetx.ticks": 1708,
-  "prophetx.updates": 68,
-  "prophetx.ws_errors": 1028,
-  "px.evt_scanned": 61,
-  "pxboard.sweeps": 1598,
-  "supa_errors": 4816
+  "kalshi.sweeps": 14,
+  "kalshi.ticks": 80484,
+  "kalshi.updates": 43743,
+  "kalshi.ws_ticks": 80484,
+  "kalshi.ws_trades": 13739,
+  "live_evals_fired": 6,
+  "novig.rest_updates": 286,
+  "novig.sweeps": 13,
+  "novig.ticks": 3477,
+  "novig.updates": 286,
+  "pairs_blocked_antonym_date": 272,
+  "pmglobal.rest_updates": 276,
+  "pmglobal.sweeps": 13,
+  "pmglobal.ticks": 1740,
+  "pmglobal.updates": 466,
+  "pmglobal.ws_msgs": 76120,
+  "pmglobal.ws_ticks": 340,
+  "pmus.rest_updates": 7443,
+  "pmus.sweeps": 14,
+  "pmus.ticks": 108975,
+  "pmus.updates": 7443,
+  "pmus_x.last_count": 7265,
+  "pmus_x.sweeps": 15,
+  "prophetx.ticks": 868,
+  "prophetx.updates": 66,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 62,
+  "pxboard.sweeps": 13,
+  "supa_errors": 43
  },
  "arbitrages": [
   {
    "buy_yes": {
-    "venue": "pmus",
+    "venue": "pmglobal",
     "key": [
-     "pmus",
-     "784675"
+     "pmglobal",
+     "0x80b3af88cb991980e8da1ce86b9794a0957f96ec98c29319dd7ba65e9744d82b"
     ],
-    "title": "Will the total in Colorado Rockies vs Detroit Tigers be more than 9.5?",
-    "ask_cents": 37
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b00fff34884754a70971464bfd1a826f"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "no_cost_cents": 35
-   },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-11T09:55:04.110765+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "784675"
-    ],
-    "title": "Will the total in Colorado Rockies vs Detroit Tigers be more than 9.5?",
-    "ask_cents": 37
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "81850ca8c645445f98639cbec623ae99"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "no_cost_cents": 37
-   },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-11T09:55:04.110714+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "784663"
-    ],
-    "title": "Will the total in Colorado Rockies vs Detroit Tigers be more than 8.5?",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b00fff34884754a70971464bfd1a826f"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "no_cost_cents": 35
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-11T09:55:04.110773+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "784663"
-    ],
-    "title": "Will the total in Colorado Rockies vs Detroit Tigers be more than 8.5?",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "81850ca8c645445f98639cbec623ae99"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "no_cost_cents": 37
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-11T09:55:04.110751+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6c45bca3a867ca1dd2f50da6a13167ed"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "ask_cents": 38
+    "title": "Fed rate hike in 2026?",
+    "ask_cents": 86
    },
    "buy_no": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "784663"
+     "171032"
     ],
-    "title": "Will the total in Colorado Rockies vs Detroit Tigers be more than 8.5?",
-    "no_cost_cents": 54
+    "title": "Fed Rate Hike in 2026?",
+    "no_cost_cents": 11
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-11T09:55:04.110733+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "784675"
-    ],
-    "title": "Will the total in Colorado Rockies vs Detroit Tigers be more than 9.5?",
-    "ask_cents": 37
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "98fb37c60933e63c4f388079ccdb7674"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "no_cost_cents": 58
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-11T09:55:04.110665+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "98fb37c60933e63c4f388079ccdb7674"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "ask_cents": 43
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "784663"
-    ],
-    "title": "Will the total in Colorado Rockies vs Detroit Tigers be more than 8.5?",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-11T09:55:04.110702+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-11T14:35:47.145138+00:00"
   }
  ]
 }
