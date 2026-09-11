@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-11T00:34:08.063952+00:00",
+ "scanned_at": "2026-09-11T00:36:08.127636+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 110.5,
+ "loop_uptime_min": 112.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 214877,
-   "last_tick_age_s": 0.0
+   "markets": 217384,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7320,
-   "last_tick_age_s": 0.5
+   "last_tick_age_s": 4.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 116,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 279,
-   "last_tick_age_s": 4.8
+   "last_tick_age_s": 2.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 129,
-   "last_tick_age_s": 6345.2
+   "last_tick_age_s": 6465.3
   }
  ],
  "totals": {
-  "markets_tracked": 222721,
+  "markets_tracked": 225228,
   "pairs_married": 13,
-  "arbitrages": 12
+  "arbitrages": 11
  },
  "stats": {
-  "commits": 53,
-  "gist_errors": 114,
+  "commits": 54,
+  "gist_errors": 116,
   "hot_errors": 0,
   "kalshi.rest_updates": 3,
-  "kalshi.sweeps": 583,
-  "kalshi.ticks": 5623975,
-  "kalshi.updates": 2429335,
-  "kalshi.ws_ticks": 5623967,
-  "kalshi.ws_trades": 1051194,
-  "live_evals_fired": 1168,
-  "novig.rest_updates": 5733,
-  "novig.sweeps": 582,
-  "novig.ticks": 137670,
-  "novig.updates": 5733,
-  "pairs_blocked_antonym_date": 5646,
-  "pmglobal.rest_updates": 3357,
-  "pmglobal.sweeps": 582,
-  "pmglobal.ticks": 70095,
-  "pmglobal.updates": 7056,
-  "pmglobal.ws_msgs": 2076705,
-  "pmglobal.ws_ticks": 11795,
-  "pmus.rest_updates": 10632,
+  "kalshi.sweeps": 592,
+  "kalshi.ticks": 5737783,
+  "kalshi.updates": 2479178,
+  "kalshi.ws_ticks": 5737775,
+  "kalshi.ws_trades": 1072052,
+  "live_evals_fired": 1194,
+  "novig.rest_updates": 5972,
+  "novig.sweeps": 592,
+  "novig.ticks": 139886,
+  "novig.updates": 5972,
+  "pairs_blocked_antonym_date": 5766,
+  "pmglobal.rest_updates": 3420,
+  "pmglobal.sweeps": 592,
+  "pmglobal.ticks": 71295,
+  "pmglobal.updates": 7179,
+  "pmglobal.ws_msgs": 2125133,
+  "pmglobal.ws_ticks": 11995,
+  "pmus.rest_updates": 10705,
   "pmus.sweep_errors": 1,
-  "pmus.sweeps": 582,
-  "pmus.ticks": 4262119,
-  "pmus.updates": 10632,
+  "pmus.sweeps": 591,
+  "pmus.ticks": 4327828,
+  "pmus.updates": 10705,
   "pmus_x.last_count": 7301,
-  "pmus_x.sweeps": 583,
+  "pmus_x.sweeps": 592,
   "prophetx.ticks": 3351,
   "prophetx.updates": 134,
-  "prophetx.ws_errors": 386,
+  "prophetx.ws_errors": 393,
   "px.evt_scanned": 129,
-  "pxboard.sweeps": 582,
-  "supa_errors": 1755
+  "pxboard.sweeps": 592,
+  "supa_errors": 1785
  },
  "arbitrages": [
   {
@@ -85,7 +85,7 @@
      "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
     ],
     "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 8
+    "ask_cents": 10
    },
    "buy_no": {
     "venue": "prophetx",
@@ -96,9 +96,9 @@
     "title": "Colorado Rockies at New York Yankees",
     "no_cost_cents": 27
    },
-   "total_cost_cents": 35,
-   "edge_bps": 6500,
-   "detected_at": "2026-09-11T00:26:17.442642+00:00"
+   "total_cost_cents": 37,
+   "edge_bps": 6300,
+   "detected_at": "2026-09-11T00:36:04.993375+00:00"
   },
   {
    "buy_yes": {
@@ -108,7 +108,7 @@
      "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
     ],
     "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 8
+    "ask_cents": 10
    },
    "buy_no": {
     "venue": "prophetx",
@@ -119,32 +119,9 @@
     "title": "Colorado Rockies at New York Yankees",
     "no_cost_cents": 29
    },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-09-11T00:26:17.374857+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "75100176960dd1101c9beda64d6211cd"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 71
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-11T00:26:17.267585+00:00"
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-11T00:36:04.957137+00:00"
   },
   {
    "buy_yes": {
@@ -154,7 +131,7 @@
      "0xb7dbd21e41e7ee8de5f3b8790fb368d557e9eb99b4c2f6d158c61a692bd75952"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox: O/U 7.5",
-    "ask_cents": 34
+    "ask_cents": 28
    },
    "buy_no": {
     "venue": "prophetx",
@@ -165,32 +142,9 @@
     "title": "Pittsburgh Pirates at Chicago White Sox",
     "no_cost_cents": 46
    },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-11T00:33:27.555477+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
-    ],
-    "title": "Colorado Rockies vs. New York Yankees",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "19488caf8fffedb6fe23865ea2e04067"
-    ],
-    "title": "Colorado Rockies at New York Yankees",
-    "no_cost_cents": 72
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-11T00:26:17.419302+00:00"
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-11T00:36:05.139311+00:00"
   },
   {
    "buy_yes": {
@@ -200,7 +154,7 @@
      "0xb7dbd21e41e7ee8de5f3b8790fb368d557e9eb99b4c2f6d158c61a692bd75952"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox: O/U 7.5",
-    "ask_cents": 34
+    "ask_cents": 28
    },
    "buy_no": {
     "venue": "prophetx",
@@ -211,9 +165,9 @@
     "title": "Pittsburgh Pirates at Chicago White Sox",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-11T00:33:27.609724+00:00"
+   "total_cost_cents": 77,
+   "edge_bps": 2300,
+   "detected_at": "2026-09-11T00:36:05.194980+00:00"
   },
   {
    "buy_yes": {
@@ -223,7 +177,7 @@
      "0xb7dbd21e41e7ee8de5f3b8790fb368d557e9eb99b4c2f6d158c61a692bd75952"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox: O/U 7.5",
-    "ask_cents": 34
+    "ask_cents": 28
    },
    "buy_no": {
     "venue": "prophetx",
@@ -234,9 +188,9 @@
     "title": "Pittsburgh Pirates at Chicago White Sox",
     "no_cost_cents": 50
    },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-11T00:33:27.579797+00:00"
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-11T00:36:05.175128+00:00"
   },
   {
    "buy_yes": {
@@ -246,7 +200,7 @@
      "0xb7dbd21e41e7ee8de5f3b8790fb368d557e9eb99b4c2f6d158c61a692bd75952"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox: O/U 7.5",
-    "ask_cents": 34
+    "ask_cents": 28
    },
    "buy_no": {
     "venue": "prophetx",
@@ -257,9 +211,55 @@
     "title": "Pittsburgh Pirates at Chicago White Sox",
     "no_cost_cents": 52
    },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-11T00:33:27.529104+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-11T00:36:05.061676+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
+    ],
+    "title": "Colorado Rockies vs. New York Yankees",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "75100176960dd1101c9beda64d6211cd"
+    ],
+    "title": "Colorado Rockies at New York Yankees",
+    "no_cost_cents": 71
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-11T00:36:04.927931+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x13c7c15ca5351726f20a2a5db2987bdd9855ecc5a06a8a7d5eb15725b73965ab"
+    ],
+    "title": "Colorado Rockies vs. New York Yankees",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "19488caf8fffedb6fe23865ea2e04067"
+    ],
+    "title": "Colorado Rockies at New York Yankees",
+    "no_cost_cents": 72
+   },
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-11T00:36:04.972641+00:00"
   },
   {
    "buy_yes": {
@@ -278,11 +278,34 @@
      "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "no_cost_cents": 43
+    "no_cost_cents": 48
    },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-11T00:33:55.101963+00:00"
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-11T00:36:05.036661+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
+    ],
+    "title": "Pittsburgh Pirates vs. Chicago White Sox",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2383cc8f405696a2642d4ffee2d863c8"
+    ],
+    "title": "Pittsburgh Pirates at Chicago White Sox",
+    "no_cost_cents": 46
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-11T00:36:05.061498+00:00"
   },
   {
    "buy_yes": {
@@ -301,57 +324,11 @@
      "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
     ],
     "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "no_cost_cents": 43
+    "no_cost_cents": 48
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-11T00:33:55.084825+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bfb0227bdafca28ec30c87fc347ca8c4"
-    ],
-    "title": "Pittsburgh Pirates at Chicago White Sox",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
-    ],
-    "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-11T00:33:55.122102+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2383cc8f405696a2642d4ffee2d863c8"
-    ],
-    "title": "Pittsburgh Pirates at Chicago White Sox",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb5790d86556c53956f9cabf9b8f36bddfd49918b175358fe13941645e138bff7"
-    ],
-    "title": "Pittsburgh Pirates vs. Chicago White Sox",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-11T00:33:55.143488+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-11T00:36:05.019127+00:00"
   }
  ]
 }
