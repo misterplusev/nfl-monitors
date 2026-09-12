@@ -1,81 +1,263 @@
 {
- "scanned_at": "2026-09-12T09:30:45.679743+00:00",
+ "scanned_at": "2026-09-12T13:43:40.874453+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 278.6,
+ "loop_uptime_min": 2.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 224630,
-   "last_tick_age_s": 0.1
+   "markets": 19537,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7852,
-   "last_tick_age_s": 0.1
+   "markets": 7861,
+   "last_tick_age_s": 6.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 141,
-   "last_tick_age_s": 0.1
+   "markets": 100,
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 257,
-   "last_tick_age_s": 5.7
+   "markets": 248,
+   "last_tick_age_s": 4.0
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 68,
-   "last_tick_age_s": 16384.3
+   "state": "OK",
+   "markets": 72,
+   "last_tick_age_s": 2.1
   }
  ],
  "totals": {
-  "markets_tracked": 232948,
-  "pairs_married": 1,
-  "arbitrages": 1
+  "markets_tracked": 27818,
+  "pairs_married": 9,
+  "arbitrages": 9
  },
  "stats": {
-  "commits": 135,
-  "gist_errors": 291,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.sweeps": 1476,
-  "kalshi.ticks": 9202474,
-  "kalshi.updates": 3959687,
-  "kalshi.ws_ticks": 9202474,
-  "kalshi.ws_trades": 1383107,
-  "live_evals_fired": 411,
-  "novig.rest_updates": 4777,
-  "novig.sweeps": 1475,
-  "novig.ticks": 355488,
-  "novig.updates": 4777,
-  "pairs_blocked_antonym_date": 13026,
-  "pmglobal.rest_updates": 7007,
-  "pmglobal.sweeps": 1475,
-  "pmglobal.ticks": 175900,
-  "pmglobal.updates": 15189,
-  "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 2942420,
-  "pmglobal.ws_ticks": 28300,
-  "pmus.rest_updates": 17700,
-  "pmus.sweeps": 1476,
-  "pmus.ticks": 10880307,
-  "pmus.updates": 17700,
-  "pmus_x.last_count": 7689,
-  "pmus_x.sweeps": 1477,
-  "prophetx.ticks": 1874,
-  "prophetx.updates": 102,
-  "prophetx.ws_errors": 981,
-  "px.evt_scanned": 66,
-  "pxboard.sweeps": 1475,
-  "supa_errors": 4643
+  "kalshi.sweeps": 12,
+  "kalshi.ticks": 111294,
+  "kalshi.updates": 55178,
+  "kalshi.ws_ticks": 111294,
+  "kalshi.ws_trades": 14773,
+  "live_evals_fired": 122,
+  "novig.rest_updates": 276,
+  "novig.sweeps": 11,
+  "novig.ticks": 2972,
+  "novig.updates": 276,
+  "pairs_blocked_antonym_date": 45,
+  "pmglobal.rest_updates": 299,
+  "pmglobal.sweeps": 11,
+  "pmglobal.ticks": 1721,
+  "pmglobal.updates": 543,
+  "pmglobal.ws_msgs": 68864,
+  "pmglobal.ws_ticks": 521,
+  "pmus.rest_updates": 7910,
+  "pmus.sweeps": 11,
+  "pmus.ticks": 94332,
+  "pmus.updates": 7910,
+  "pmus_x.last_count": 7861,
+  "pmus_x.sweeps": 12,
+  "prophetx.ticks": 805,
+  "prophetx.updates": 187,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 65,
+  "pxboard.sweeps": 11,
+  "supa_errors": 44
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa4de2143fbe4fe5277936cf4939aa893e5fd8f71c8077997e84753c8f5791aa9"
+    ],
+    "title": "Real Racing Club vs. Deportivo Alav\u00e9s: O/U 3.5",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "93b3e9bc9eab25474402241310c143c4"
+    ],
+    "title": "Deportivo Alav\u00e9s at Real Racing Club",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-12T13:43:35.363774+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa4de2143fbe4fe5277936cf4939aa893e5fd8f71c8077997e84753c8f5791aa9"
+    ],
+    "title": "Real Racing Club vs. Deportivo Alav\u00e9s: O/U 3.5",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ed1a7c34a60d698951f31b865dd56e5f"
+    ],
+    "title": "Deportivo Alav\u00e9s at Real Racing Club",
+    "no_cost_cents": 3
+   },
+   "total_cost_cents": 42,
+   "edge_bps": 5800,
+   "detected_at": "2026-09-12T13:43:35.205565+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa4de2143fbe4fe5277936cf4939aa893e5fd8f71c8077997e84753c8f5791aa9"
+    ],
+    "title": "Real Racing Club vs. Deportivo Alav\u00e9s: O/U 3.5",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4aa592cfa663b3b01189f5f7ad1c4e13"
+    ],
+    "title": "Deportivo Alav\u00e9s at Real Racing Club",
+    "no_cost_cents": 15
+   },
+   "total_cost_cents": 54,
+   "edge_bps": 4600,
+   "detected_at": "2026-09-12T13:43:35.606448+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa4de2143fbe4fe5277936cf4939aa893e5fd8f71c8077997e84753c8f5791aa9"
+    ],
+    "title": "Real Racing Club vs. Deportivo Alav\u00e9s: O/U 3.5",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "72bb465d4ce0aa7610468741893f7fe3"
+    ],
+    "title": "Deportivo Alav\u00e9s at Real Racing Club",
+    "no_cost_cents": 17
+   },
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-09-12T13:43:35.544642+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fabf0f066f416d806384dbc406f9efe4"
+    ],
+    "title": "Deportivo Alav\u00e9s at Real Racing Club",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa4de2143fbe4fe5277936cf4939aa893e5fd8f71c8077997e84753c8f5791aa9"
+    ],
+    "title": "Real Racing Club vs. Deportivo Alav\u00e9s: O/U 3.5",
+    "no_cost_cents": 61
+   },
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-12T13:43:35.498644+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0427635f3e8868f2e2a5c48ecb1a0b44"
+    ],
+    "title": "Deportivo Alav\u00e9s at Real Racing Club",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa4de2143fbe4fe5277936cf4939aa893e5fd8f71c8077997e84753c8f5791aa9"
+    ],
+    "title": "Real Racing Club vs. Deportivo Alav\u00e9s: O/U 3.5",
+    "no_cost_cents": 61
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-12T13:43:35.438874+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "57a2b03f92cac7b3cd7b815a0567ab3f"
+    ],
+    "title": "Deportivo Alav\u00e9s at Real Racing Club",
+    "ask_cents": 17
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa4de2143fbe4fe5277936cf4939aa893e5fd8f71c8077997e84753c8f5791aa9"
+    ],
+    "title": "Real Racing Club vs. Deportivo Alav\u00e9s: O/U 3.5",
+    "no_cost_cents": 61
+   },
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-12T13:43:38.165910+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e57d3e93db7dd5f642ddef4b5033e9a7"
+    ],
+    "title": "Deportivo Alav\u00e9s at Real Racing Club",
+    "ask_cents": 18
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa4de2143fbe4fe5277936cf4939aa893e5fd8f71c8077997e84753c8f5791aa9"
+    ],
+    "title": "Real Racing Club vs. Deportivo Alav\u00e9s: O/U 3.5",
+    "no_cost_cents": 61
+   },
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-12T13:43:38.105431+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmus",
@@ -97,7 +279,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-12T08:06:03.343658+00:00"
+   "detected_at": "2026-09-12T13:41:55.835015+00:00"
   }
  ]
 }
