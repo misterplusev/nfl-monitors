@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-12T22:36:38.429704+00:00",
+ "scanned_at": "2026-09-12T22:38:41.525487+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 8.3,
+ "loop_uptime_min": 10.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 60963,
+   "markets": 66740,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,86 +19,63 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 101,
-   "last_tick_age_s": 4.7
+   "markets": 107,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 184,
-   "last_tick_age_s": 8.7
+   "markets": 186,
+   "last_tick_age_s": 10.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 16,
-   "last_tick_age_s": 244.6
+   "last_tick_age_s": 367.7
   }
  ],
  "totals": {
-  "markets_tracked": 68556,
-  "pairs_married": 9,
-  "arbitrages": 8
+  "markets_tracked": 74341,
+  "pairs_married": 10,
+  "arbitrages": 9
  },
  "stats": {
-  "commits": 3,
-  "gist_errors": 9,
+  "commits": 4,
+  "gist_errors": 11,
   "hot_errors": 0,
-  "kalshi.sweeps": 52,
-  "kalshi.ticks": 669702,
-  "kalshi.updates": 319013,
-  "kalshi.ws_ticks": 669702,
-  "kalshi.ws_trades": 116653,
-  "live_evals_fired": 341,
-  "novig.rest_updates": 1288,
-  "novig.sweeps": 51,
-  "novig.ticks": 8493,
-  "novig.updates": 1288,
-  "pairs_blocked_antonym_date": 585,
-  "pmglobal.rest_updates": 821,
-  "pmglobal.sweeps": 51,
-  "pmglobal.ticks": 7586,
-  "pmglobal.updates": 2025,
-  "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 542880,
-  "pmglobal.ws_ticks": 2386,
-  "pmus.rest_updates": 7719,
-  "pmus.sweeps": 52,
-  "pmus.ticks": 386443,
-  "pmus.updates": 7719,
+  "kalshi.sweeps": 65,
+  "kalshi.ticks": 834696,
+  "kalshi.updates": 392119,
+  "kalshi.ws_ticks": 834696,
+  "kalshi.ws_trades": 140015,
+  "live_evals_fired": 395,
+  "novig.rest_updates": 1498,
+  "novig.sweeps": 64,
+  "novig.ticks": 10695,
+  "novig.updates": 1498,
+  "pairs_blocked_antonym_date": 729,
+  "pmglobal.rest_updates": 1027,
+  "pmglobal.sweeps": 64,
+  "pmglobal.ticks": 9258,
+  "pmglobal.updates": 2432,
+  "pmglobal.ws_errors": 2,
+  "pmglobal.ws_msgs": 631128,
+  "pmglobal.ws_ticks": 2758,
+  "pmus.rest_updates": 7840,
+  "pmus.sweeps": 65,
+  "pmus.ticks": 481239,
+  "pmus.updates": 7840,
   "pmus_x.last_count": 7292,
-  "pmus_x.sweeps": 53,
+  "pmus_x.sweeps": 66,
   "prophetx.ticks": 342,
   "prophetx.updates": 115,
-  "prophetx.ws_errors": 29,
+  "prophetx.ws_errors": 36,
   "px.evt_scanned": 12,
-  "pxboard.sweeps": 51,
-  "supa_errors": 169
+  "pxboard.sweeps": 64,
+  "supa_errors": 209
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "01286201b8d2b61a7ac6fee641a507ae"
-    ],
-    "title": "Mississippi State at Minnesota",
-    "ask_cents": 5
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x947de29ac16ca1d535d9f9aff43f7b893467824d5bc13f99676293440553828e"
-    ],
-    "title": "Mississippi State vs. Minnesota",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-09-12T22:32:24.197776+00:00"
-  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -116,11 +93,11 @@
      "0x089089349eab28967cdb7b96462d5a55b9a57ad27de5422a25041f8b92b1594c"
     ],
     "title": "Alabama vs. Kentucky",
-    "no_cost_cents": 5
+    "no_cost_cents": 2
    },
-   "total_cost_cents": 12,
-   "edge_bps": 8800,
-   "detected_at": "2026-09-12T22:35:17.053591+00:00"
+   "total_cost_cents": 9,
+   "edge_bps": 9100,
+   "detected_at": "2026-09-12T22:38:35.078269+00:00"
   },
   {
    "buy_yes": {
@@ -130,7 +107,7 @@
      "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
     ],
     "title": "California vs. Syracuse",
-    "ask_cents": 30
+    "ask_cents": 37
    },
    "buy_no": {
     "venue": "prophetx",
@@ -141,9 +118,9 @@
     "title": "California at Syracuse",
     "no_cost_cents": 18
    },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-12T22:36:28.558832+00:00"
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-12T22:38:31.089623+00:00"
   },
   {
    "buy_yes": {
@@ -162,11 +139,34 @@
      "0x205ea709d281fbb1078afe771bb401828303213aa46f8ec10c074b23df0218a7"
     ],
     "title": "Duke vs. Illinois",
-    "no_cost_cents": 49
+    "no_cost_cents": 47
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-12T22:36:28.884407+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-12T22:38:22.953269+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a496b1ddd98c2208a755970d0649385b"
+    ],
+    "title": "UTSA at Texas State",
+    "ask_cents": 33
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3463e4f8d977830146b8db5ddef78dfb735a142d93970a434c1129913fbd49f1"
+    ],
+    "title": "UTSA vs. Texas State",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-12T22:38:41.525421+00:00"
   },
   {
    "buy_yes": {
@@ -176,7 +176,7 @@
      "0x205ea709d281fbb1078afe771bb401828303213aa46f8ec10c074b23df0218a7"
     ],
     "title": "Duke vs. Illinois",
-    "ask_cents": 54
+    "ask_cents": 53
    },
    "buy_no": {
     "venue": "prophetx",
@@ -187,9 +187,32 @@
     "title": "Duke at Illinois",
     "no_cost_cents": 28
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-12T22:36:28.904602+00:00"
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-12T22:38:22.973377+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3463e4f8d977830146b8db5ddef78dfb735a142d93970a434c1129913fbd49f1"
+    ],
+    "title": "UTSA vs. Texas State",
+    "ask_cents": 53
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "dfda923545da3b881fb17948125287ec"
+    ],
+    "title": "UTSA at Texas State",
+    "no_cost_cents": 31
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-12T22:38:41.525397+00:00"
   },
   {
    "buy_yes": {
@@ -208,11 +231,11 @@
      "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
     ],
     "title": "California vs. Syracuse",
-    "no_cost_cents": 70
+    "no_cost_cents": 69
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-12T22:36:28.579648+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-12T22:38:31.107133+00:00"
   },
   {
    "buy_yes": {
@@ -222,7 +245,7 @@
      "0x3ee54a8d72c34142ff34af9d03ec4df20f02218e232af90ade8995022514e44e"
     ],
     "title": "Utah State vs. Washington",
-    "ask_cents": 3
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -233,32 +256,32 @@
     "title": "Utah State at Washington",
     "no_cost_cents": 94
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-12T22:32:33.367203+00:00"
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-09-12T22:37:25.524455+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x089089349eab28967cdb7b96462d5a55b9a57ad27de5422a25041f8b92b1594c"
-    ],
-    "title": "Alabama vs. Kentucky",
-    "ask_cents": 95
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "47b600d10cb38fe2fecec9e8665648f5"
     ],
     "title": "Alabama at Kentucky",
-    "no_cost_cents": 4
+    "ask_cents": 97
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x089089349eab28967cdb7b96462d5a55b9a57ad27de5422a25041f8b92b1594c"
+    ],
+    "title": "Alabama vs. Kentucky",
+    "no_cost_cents": 2
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-12T22:35:17.076245+00:00"
+   "detected_at": "2026-09-12T22:38:35.078294+00:00"
   }
  ]
 }
