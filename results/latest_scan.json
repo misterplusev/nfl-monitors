@@ -1,77 +1,78 @@
 {
- "scanned_at": "2026-09-12T04:54:15.190992+00:00",
+ "scanned_at": "2026-09-12T04:56:17.990194+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.1,
+ "loop_uptime_min": 4.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 18133,
-   "last_tick_age_s": 0.0
+   "markets": 26438,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7324,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 100,
+   "markets": 102,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 229,
-   "last_tick_age_s": 6.6
+   "markets": 237,
+   "last_tick_age_s": 15.5
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 68,
-   "last_tick_age_s": 4.4
+   "last_tick_age_s": 13.4
   }
  ],
  "totals": {
-  "markets_tracked": 25854,
-  "pairs_married": 7,
-  "arbitrages": 6
+  "markets_tracked": 34169,
+  "pairs_married": 3,
+  "arbitrages": 2
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 11,
-  "kalshi.ticks": 78926,
-  "kalshi.updates": 41678,
-  "kalshi.ws_ticks": 78926,
-  "kalshi.ws_trades": 14013,
-  "live_evals_fired": 54,
-  "novig.rest_updates": 278,
-  "novig.sweeps": 10,
-  "novig.ticks": 2516,
-  "novig.updates": 278,
-  "pairs_blocked_antonym_date": 70,
-  "pmglobal.rest_updates": 239,
-  "pmglobal.sweeps": 10,
-  "pmglobal.ticks": 1433,
-  "pmglobal.updates": 399,
-  "pmglobal.ws_msgs": 31635,
-  "pmglobal.ws_ticks": 333,
-  "pmus.rest_updates": 7415,
-  "pmus.sweeps": 11,
-  "pmus.ticks": 87882,
-  "pmus.updates": 7415,
-  "pmus_x.last_count": 7323,
-  "pmus_x.sweeps": 12,
-  "prophetx.ticks": 686,
-  "prophetx.updates": 88,
-  "prophetx.ws_errors": 8,
+  "kalshi.sweeps": 21,
+  "kalshi.ticks": 152908,
+  "kalshi.updates": 74610,
+  "kalshi.ws_ticks": 152908,
+  "kalshi.ws_trades": 31517,
+  "live_evals_fired": 88,
+  "novig.rest_updates": 318,
+  "novig.sweeps": 20,
+  "novig.ticks": 4832,
+  "novig.updates": 318,
+  "pairs_blocked_antonym_date": 130,
+  "pmglobal.rest_updates": 307,
+  "pmglobal.sweeps": 20,
+  "pmglobal.ticks": 2661,
+  "pmglobal.updates": 543,
+  "pmglobal.ws_msgs": 52926,
+  "pmglobal.ws_ticks": 561,
+  "pmus.rest_updates": 7511,
+  "pmus.sweeps": 21,
+  "pmus.ticks": 161108,
+  "pmus.updates": 7511,
+  "pmus_x.last_count": 7322,
+  "pmus_x.sweeps": 22,
+  "prophetx.ticks": 1346,
+  "prophetx.updates": 99,
+  "prophetx.ws_errors": 14,
   "px.evt_scanned": 66,
-  "pxboard.sweeps": 10,
-  "supa_errors": 40
+  "pxboard.sweeps": 20,
+  "supa_errors": 77
  },
  "arbitrages": [
   {
@@ -82,7 +83,7 @@
      "b79b6e7ba7a070398f37a4e5fc24f73b"
     ],
     "title": "San Diego Padres at San Francisco Giants",
-    "ask_cents": 6
+    "ask_cents": 7
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -91,103 +92,11 @@
      "0x697559f55828ca4928f0dfae421eb21a00b17a2442896305e3ed5d34b0036b29"
     ],
     "title": "San Diego Padres vs. San Francisco Giants",
-    "no_cost_cents": 8
+    "no_cost_cents": 5
    },
-   "total_cost_cents": 14,
-   "edge_bps": 8600,
-   "detected_at": "2026-09-12T04:54:00.909669+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "be22689727789e4f843d8b426707179a"
-    ],
-    "title": "Seattle Mariners at Athletics",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x4321f98397e2eeb0586d204bbd5932519f154c0d878ed6b92d000ed6dac2fa4d"
-    ],
-    "title": "Seattle Mariners vs. Athletics",
-    "no_cost_cents": 37
-   },
-   "total_cost_cents": 39,
-   "edge_bps": 6100,
-   "detected_at": "2026-09-12T04:54:10.855953+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "be22689727789e4f843d8b426707179a"
-    ],
-    "title": "Seattle Mariners at Athletics",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x404bcedd7f040bf409cf4934ac9d7b5068e660003b85b061b6b101b08a5b374b"
-    ],
-    "title": "Seattle Mariners vs. Athletics: O/U 10.5",
-    "no_cost_cents": 44
-   },
-   "total_cost_cents": 46,
-   "edge_bps": 5400,
-   "detected_at": "2026-09-12T04:54:07.089910+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x404bcedd7f040bf409cf4934ac9d7b5068e660003b85b061b6b101b08a5b374b"
-    ],
-    "title": "Seattle Mariners vs. Athletics: O/U 10.5",
-    "ask_cents": 56
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "be65afad61ada4c182ab3ccb925e320e"
-    ],
-    "title": "Seattle Mariners at Athletics",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-12T04:54:07.030149+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x697559f55828ca4928f0dfae421eb21a00b17a2442896305e3ed5d34b0036b29"
-    ],
-    "title": "San Diego Padres vs. San Francisco Giants",
-    "ask_cents": 92
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b49bc0af4764e3a4a6579b704a6178f2"
-    ],
-    "title": "San Diego Padres at San Francisco Giants",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-12T04:54:00.967034+00:00"
+   "total_cost_cents": 12,
+   "edge_bps": 8800,
+   "detected_at": "2026-09-12T04:56:17.950714+00:00"
   },
   {
    "buy_yes": {
