@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-12T22:34:38.300143+00:00",
+ "scanned_at": "2026-09-12T22:36:38.429704+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 6.3,
+ "loop_uptime_min": 8.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 50975,
+   "markets": 60963,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7292,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 101,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 4.7
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 180,
-   "last_tick_age_s": 11.1
+   "markets": 184,
+   "last_tick_age_s": 8.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 16,
-   "last_tick_age_s": 124.4
+   "last_tick_age_s": 244.6
   }
  ],
  "totals": {
-  "markets_tracked": 58564,
+  "markets_tracked": 68556,
   "pairs_married": 9,
-  "arbitrages": 7
+  "arbitrages": 8
  },
  "stats": {
-  "commits": 2,
-  "gist_errors": 7,
+  "commits": 3,
+  "gist_errors": 9,
   "hot_errors": 0,
-  "kalshi.sweeps": 39,
-  "kalshi.ticks": 494649,
-  "kalshi.updates": 238562,
-  "kalshi.ws_ticks": 494649,
-  "kalshi.ws_trades": 91923,
-  "live_evals_fired": 236,
-  "novig.rest_updates": 1048,
-  "novig.sweeps": 38,
-  "novig.ticks": 6353,
-  "novig.updates": 1048,
-  "pairs_blocked_antonym_date": 441,
-  "pmglobal.rest_updates": 686,
-  "pmglobal.sweeps": 38,
-  "pmglobal.ticks": 5889,
-  "pmglobal.updates": 1695,
+  "kalshi.sweeps": 52,
+  "kalshi.ticks": 669702,
+  "kalshi.updates": 319013,
+  "kalshi.ws_ticks": 669702,
+  "kalshi.ws_trades": 116653,
+  "live_evals_fired": 341,
+  "novig.rest_updates": 1288,
+  "novig.sweeps": 51,
+  "novig.ticks": 8493,
+  "novig.updates": 1288,
+  "pairs_blocked_antonym_date": 585,
+  "pmglobal.rest_updates": 821,
+  "pmglobal.sweeps": 51,
+  "pmglobal.ticks": 7586,
+  "pmglobal.updates": 2025,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 444878,
-  "pmglobal.ws_ticks": 1989,
-  "pmus.rest_updates": 7626,
-  "pmus.sweeps": 39,
-  "pmus.ticks": 291647,
-  "pmus.updates": 7626,
+  "pmglobal.ws_msgs": 542880,
+  "pmglobal.ws_ticks": 2386,
+  "pmus.rest_updates": 7719,
+  "pmus.sweeps": 52,
+  "pmus.ticks": 386443,
+  "pmus.updates": 7719,
   "pmus_x.last_count": 7292,
-  "pmus_x.sweeps": 40,
+  "pmus_x.sweeps": 53,
   "prophetx.ticks": 342,
   "prophetx.updates": 115,
-  "prophetx.ws_errors": 22,
+  "prophetx.ws_errors": 29,
   "px.evt_scanned": 12,
-  "pxboard.sweeps": 38,
-  "supa_errors": 129
+  "pxboard.sweeps": 51,
+  "supa_errors": 169
  },
  "arbitrages": [
   {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 12,
    "edge_bps": 8800,
-   "detected_at": "2026-09-12T22:32:46.218425+00:00"
+   "detected_at": "2026-09-12T22:35:17.053591+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +143,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-12T22:34:17.221454+00:00"
+   "detected_at": "2026-09-12T22:36:28.558832+00:00"
   },
   {
    "buy_yes": {
@@ -162,11 +162,34 @@
      "0x205ea709d281fbb1078afe771bb401828303213aa46f8ec10c074b23df0218a7"
     ],
     "title": "Duke vs. Illinois",
-    "no_cost_cents": 37
+    "no_cost_cents": 49
    },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-12T22:34:28.071960+00:00"
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-12T22:36:28.884407+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x205ea709d281fbb1078afe771bb401828303213aa46f8ec10c074b23df0218a7"
+    ],
+    "title": "Duke vs. Illinois",
+    "ask_cents": 54
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "baa42977b88a99a8eb196b24464bf8a1"
+    ],
+    "title": "Duke at Illinois",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-12T22:36:28.904602+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +212,7 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-12T22:34:17.239304+00:00"
+   "detected_at": "2026-09-12T22:36:28.579648+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +258,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-12T22:32:46.235919+00:00"
+   "detected_at": "2026-09-12T22:35:17.076245+00:00"
   }
  ]
 }
