@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-12T23:11:12.282916+00:00",
+ "scanned_at": "2026-09-12T23:13:13.229047+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 42.8,
+ "loop_uptime_min": 44.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 148240,
+   "markets": 152598,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7316,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 116,
-   "last_tick_age_s": 0.1
+   "markets": 120,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 250,
-   "last_tick_age_s": 11.5
+   "markets": 253,
+   "last_tick_age_s": 4.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 16,
-   "last_tick_age_s": 2318.5
+   "last_tick_age_s": 2439.4
   }
  ],
  "totals": {
-  "markets_tracked": 155938,
+  "markets_tracked": 160303,
   "pairs_married": 5,
-  "arbitrages": 3
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 20,
-  "gist_errors": 45,
+  "commits": 21,
+  "gist_errors": 47,
   "hot_errors": 0,
-  "kalshi.sweeps": 273,
-  "kalshi.ticks": 3386295,
-  "kalshi.updates": 1471526,
-  "kalshi.ws_ticks": 3386295,
-  "kalshi.ws_trades": 592680,
-  "live_evals_fired": 1260,
-  "novig.rest_updates": 5092,
-  "novig.sweeps": 272,
-  "novig.ticks": 46416,
-  "novig.updates": 5092,
-  "pairs_blocked_antonym_date": 3069,
-  "pmglobal.rest_updates": 2713,
-  "pmglobal.sweeps": 272,
-  "pmglobal.ticks": 35909,
-  "pmglobal.updates": 6586,
+  "kalshi.sweeps": 286,
+  "kalshi.ticks": 3560745,
+  "kalshi.updates": 1544959,
+  "kalshi.ws_ticks": 3560745,
+  "kalshi.ws_trades": 626300,
+  "live_evals_fired": 1294,
+  "novig.rest_updates": 5349,
+  "novig.sweeps": 285,
+  "novig.ticks": 48561,
+  "novig.updates": 5349,
+  "pairs_blocked_antonym_date": 3213,
+  "pmglobal.rest_updates": 2801,
+  "pmglobal.sweeps": 285,
+  "pmglobal.ticks": 37569,
+  "pmglobal.updates": 6753,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 1966758,
-  "pmglobal.ws_ticks": 8609,
-  "pmus.rest_updates": 9197,
-  "pmus.sweeps": 273,
-  "pmus.ticks": 1999779,
-  "pmus.updates": 9197,
+  "pmglobal.ws_msgs": 2006746,
+  "pmglobal.ws_ticks": 8969,
+  "pmus.rest_updates": 9255,
+  "pmus.sweeps": 286,
+  "pmus.ticks": 2094887,
+  "pmus.updates": 9255,
   "pmus_x.last_count": 7316,
-  "pmus_x.sweeps": 274,
+  "pmus_x.sweeps": 287,
   "prophetx.ticks": 342,
   "prophetx.updates": 115,
-  "prophetx.ws_errors": 153,
+  "prophetx.ws_errors": 161,
   "px.evt_scanned": 12,
-  "pxboard.sweeps": 272,
-  "supa_errors": 838
+  "pxboard.sweeps": 285,
+  "supa_errors": 877
  },
  "arbitrages": [
   {
@@ -93,11 +93,57 @@
      "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
     ],
     "title": "California vs. Syracuse",
-    "no_cost_cents": 24
+    "no_cost_cents": 28
    },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-09-12T23:11:02.624501+00:00"
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-12T23:12:53.680590+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a496b1ddd98c2208a755970d0649385b"
+    ],
+    "title": "UTSA at Texas State",
+    "ask_cents": 33
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3463e4f8d977830146b8db5ddef78dfb735a142d93970a434c1129913fbd49f1"
+    ],
+    "title": "UTSA vs. Texas State",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-12T23:12:29.699716+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
+    ],
+    "title": "California vs. Syracuse",
+    "ask_cents": 72
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a2eb87c26724597881100e2e8c085731"
+    ],
+    "title": "California at Syracuse",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-12T23:12:53.664744+00:00"
   },
   {
    "buy_yes": {
@@ -107,7 +153,7 @@
      "0x3463e4f8d977830146b8db5ddef78dfb735a142d93970a434c1129913fbd49f1"
     ],
     "title": "UTSA vs. Texas State",
-    "ask_cents": 26
+    "ask_cents": 60
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,32 +164,9 @@
     "title": "UTSA at Texas State",
     "no_cost_cents": 31
    },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-12T23:07:27.915487+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x3463e4f8d977830146b8db5ddef78dfb735a142d93970a434c1129913fbd49f1"
-    ],
-    "title": "UTSA vs. Texas State",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a496b1ddd98c2208a755970d0649385b"
-    ],
-    "title": "UTSA at Texas State",
-    "no_cost_cents": 68
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-12T23:07:27.938024+00:00"
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-12T23:12:29.683341+00:00"
   }
  ]
 }
