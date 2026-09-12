@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-12T01:35:04.838120+00:00",
+ "scanned_at": "2026-09-12T01:37:06.038518+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 171.3,
+ "loop_uptime_min": 173.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 278302,
+   "markets": 280570,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7874,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 5.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 129,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 1.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 285,
-   "last_tick_age_s": 5.3
+   "last_tick_age_s": 3.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 54,
-   "last_tick_age_s": 9972.6
+   "last_tick_age_s": 10093.8
   }
  ],
  "totals": {
-  "markets_tracked": 286644,
+  "markets_tracked": 288912,
   "pairs_married": 17,
   "arbitrages": 17
  },
  "stats": {
-  "commits": 83,
-  "gist_errors": 179,
+  "commits": 84,
+  "gist_errors": 181,
   "hot_errors": 0,
   "kalshi.rest_updates": 9,
-  "kalshi.sweeps": 997,
-  "kalshi.ticks": 12182750,
-  "kalshi.updates": 5473194,
-  "kalshi.ws_ticks": 12182739,
-  "kalshi.ws_trades": 1647829,
-  "live_evals_fired": 4046,
-  "novig.rest_updates": 20840,
-  "novig.sweeps": 996,
-  "novig.ticks": 200776,
-  "novig.updates": 20840,
-  "pairs_blocked_antonym_date": 19936,
-  "pmglobal.rest_updates": 4707,
-  "pmglobal.sweeps": 996,
-  "pmglobal.ticks": 115856,
-  "pmglobal.updates": 9312,
-  "pmglobal.ws_msgs": 2071862,
-  "pmglobal.ws_ticks": 16156,
-  "pmus.rest_updates": 15209,
-  "pmus.sweeps": 997,
-  "pmus.ticks": 7554895,
-  "pmus.updates": 15209,
+  "kalshi.sweeps": 1010,
+  "kalshi.ticks": 12316286,
+  "kalshi.updates": 5529951,
+  "kalshi.ws_ticks": 12316275,
+  "kalshi.ws_trades": 1665905,
+  "live_evals_fired": 4105,
+  "novig.rest_updates": 21087,
+  "novig.sweeps": 1009,
+  "novig.ticks": 203021,
+  "novig.updates": 21087,
+  "pairs_blocked_antonym_date": 20192,
+  "pmglobal.rest_updates": 4779,
+  "pmglobal.sweeps": 1009,
+  "pmglobal.ticks": 117352,
+  "pmglobal.updates": 9442,
+  "pmglobal.ws_msgs": 2103613,
+  "pmglobal.ws_ticks": 16352,
+  "pmus.rest_updates": 15293,
+  "pmus.sweeps": 1009,
+  "pmus.ticks": 7649275,
+  "pmus.updates": 15293,
   "pmus_x.last_count": 7865,
-  "pmus_x.sweeps": 998,
+  "pmus_x.sweeps": 1010,
   "prophetx.ticks": 1449,
   "prophetx.updates": 128,
-  "prophetx.ws_errors": 629,
+  "prophetx.ws_errors": 636,
   "px.evt_scanned": 48,
-  "pxboard.sweeps": 996,
-  "supa_errors": 3048
+  "pxboard.sweeps": 1009,
+  "supa_errors": 3086
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
     ],
     "title": "Los Angeles Angels vs. Washington Nationals",
-    "ask_cents": 2
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +95,9 @@
     "title": "Los Angeles Angels at Washington Nationals",
     "no_cost_cents": 36
    },
-   "total_cost_cents": 38,
-   "edge_bps": 6200,
-   "detected_at": "2026-09-12T01:30:22.767160+00:00"
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-09-12T01:35:14.962565+00:00"
   },
   {
    "buy_yes": {
@@ -107,7 +107,7 @@
      "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
     ],
     "title": "Los Angeles Angels vs. Washington Nationals",
-    "ask_cents": 2
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,9 +118,9 @@
     "title": "Los Angeles Angels at Washington Nationals",
     "no_cost_cents": 39
    },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-12T01:30:22.799458+00:00"
+   "total_cost_cents": 43,
+   "edge_bps": 5700,
+   "detected_at": "2026-09-12T01:35:14.984067+00:00"
   },
   {
    "buy_yes": {
@@ -170,52 +170,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
-    ],
-    "title": "New York Mets vs. New York Yankees",
-    "ask_cents": 7
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a1d88048da639bca97c9107fd560ac18"
-    ],
-    "title": "New York Mets at New York Yankees",
-    "no_cost_cents": 44
-   },
-   "total_cost_cents": 51,
-   "edge_bps": 4900,
-   "detected_at": "2026-09-12T01:34:40.220948+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
-    ],
-    "title": "New York Mets vs. New York Yankees",
-    "ask_cents": 7
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "c9122734af3c76889b5083770d6f9b32"
-    ],
-    "title": "New York Mets at New York Yankees",
-    "no_cost_cents": 46
-   },
-   "total_cost_cents": 53,
-   "edge_bps": 4700,
-   "detected_at": "2026-09-12T01:34:40.136568+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -236,29 +190,6 @@
    "total_cost_cents": 54,
    "edge_bps": 4600,
    "detected_at": "2026-09-12T01:25:26.560224+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
-    ],
-    "title": "New York Mets vs. New York Yankees",
-    "ask_cents": 7
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "34d149a99552d08c1ac1351f2f075402"
-    ],
-    "title": "New York Mets at New York Yankees",
-    "no_cost_cents": 49
-   },
-   "total_cost_cents": 56,
-   "edge_bps": 4400,
-   "detected_at": "2026-09-12T01:34:40.157465+00:00"
   },
   {
    "buy_yes": {
@@ -308,52 +239,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
-    ],
-    "title": "New York Mets vs. New York Yankees",
-    "ask_cents": 7
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "366358c97975cf032cc5cfc6e856dcbc"
-    ],
-    "title": "New York Mets at New York Yankees",
-    "no_cost_cents": 51
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-12T01:34:40.182280+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
-    ],
-    "title": "New York Mets vs. New York Yankees",
-    "ask_cents": 7
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "92e280be7418db4999c96f76b4bbc4ce"
-    ],
-    "title": "New York Mets at New York Yankees",
-    "no_cost_cents": 51
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-12T01:34:40.239474+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -383,20 +268,20 @@
      "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
     ],
     "title": "New York Mets vs. New York Yankees",
-    "ask_cents": 7
+    "ask_cents": 20
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "d22e41546c354a5269864b8d96b03530"
+     "a1d88048da639bca97c9107fd560ac18"
     ],
     "title": "New York Mets at New York Yankees",
-    "no_cost_cents": 55
+    "no_cost_cents": 44
    },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-09-12T01:34:40.201446+00:00"
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-12T01:37:05.130493+00:00"
   },
   {
    "buy_yes": {
@@ -406,7 +291,7 @@
      "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
     ],
     "title": "Los Angeles Angels vs. Washington Nationals",
-    "ask_cents": 2
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -417,9 +302,9 @@
     "title": "Los Angeles Angels at Washington Nationals",
     "no_cost_cents": 60
    },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-09-12T01:30:22.848914+00:00"
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-12T01:35:15.025938+00:00"
   },
   {
    "buy_yes": {
@@ -429,7 +314,7 @@
      "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
     ],
     "title": "Los Angeles Angels vs. Washington Nationals",
-    "ask_cents": 2
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "prophetx",
@@ -440,9 +325,124 @@
     "title": "Los Angeles Angels at Washington Nationals",
     "no_cost_cents": 61
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-09-12T01:30:22.821928+00:00"
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-12T01:35:15.005443+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
+    ],
+    "title": "New York Mets vs. New York Yankees",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c9122734af3c76889b5083770d6f9b32"
+    ],
+    "title": "New York Mets at New York Yankees",
+    "no_cost_cents": 46
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-12T01:37:05.130446+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
+    ],
+    "title": "New York Mets vs. New York Yankees",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "34d149a99552d08c1ac1351f2f075402"
+    ],
+    "title": "New York Mets at New York Yankees",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-12T01:37:05.130466+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
+    ],
+    "title": "New York Mets vs. New York Yankees",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "366358c97975cf032cc5cfc6e856dcbc"
+    ],
+    "title": "New York Mets at New York Yankees",
+    "no_cost_cents": 51
+   },
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-12T01:37:05.130477+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
+    ],
+    "title": "New York Mets vs. New York Yankees",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "92e280be7418db4999c96f76b4bbc4ce"
+    ],
+    "title": "New York Mets at New York Yankees",
+    "no_cost_cents": 51
+   },
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-12T01:37:05.130500+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7b48151d7107991781ab21f0df4e0276822d08003d10ebc88e31636a71340778"
+    ],
+    "title": "New York Mets vs. New York Yankees",
+    "ask_cents": 20
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d22e41546c354a5269864b8d96b03530"
+    ],
+    "title": "New York Mets at New York Yankees",
+    "no_cost_cents": 55
+   },
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-12T01:37:05.130485+00:00"
   },
   {
    "buy_yes": {
@@ -465,7 +465,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-12T01:26:12.443045+00:00"
+   "detected_at": "2026-09-12T01:35:15.173334+00:00"
   }
  ]
 }
