@@ -1,80 +1,240 @@
 {
- "scanned_at": "2026-09-12T17:47:24.472905+00:00",
+ "scanned_at": "2026-09-12T22:30:30.469245+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 245.9,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 504614,
-   "last_tick_age_s": 0.1
+   "markets": 23203,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7874,
-   "last_tick_age_s": 0.1
+   "markets": 7291,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 199,
-   "last_tick_age_s": 0.1
+   "markets": 100,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 335,
-   "last_tick_age_s": 11.8
+   "markets": 175,
+   "last_tick_age_s": 9.8
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 72,
-   "last_tick_age_s": 14448.6
+   "state": "OK",
+   "markets": 14,
+   "last_tick_age_s": 7.7
   }
  ],
  "totals": {
-  "markets_tracked": 513094,
-  "pairs_married": 1,
-  "arbitrages": 0
+  "markets_tracked": 30783,
+  "pairs_married": 9,
+  "arbitrages": 7
  },
  "stats": {
-  "commits": 120,
-  "gist_errors": 256,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 1269,
-  "kalshi.ticks": 17044706,
-  "kalshi.updates": 7312895,
-  "kalshi.ws_ticks": 17044704,
-  "kalshi.ws_trades": 2257187,
-  "live_evals_fired": 971,
-  "novig.rest_updates": 13824,
-  "novig.sweeps": 1268,
-  "novig.ticks": 293643,
-  "novig.updates": 13824,
-  "pairs_blocked_antonym_date": 6306,
-  "pmglobal.rest_updates": 10656,
-  "pmglobal.sweeps": 1268,
-  "pmglobal.ticks": 160090,
-  "pmglobal.updates": 23432,
-  "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 4823384,
-  "pmglobal.ws_ticks": 33190,
-  "pmus.rest_updates": 16537,
-  "pmus.sweeps": 1269,
-  "pmus.ticks": 9471725,
-  "pmus.updates": 16537,
-  "pmus_x.last_count": 7320,
-  "pmus_x.sweeps": 1270,
-  "prophetx.ticks": 1794,
-  "prophetx.updates": 334,
-  "prophetx.ws_errors": 867,
-  "px.evt_scanned": 62,
-  "pxboard.sweeps": 1268,
-  "supa_errors": 4055
+  "kalshi.sweeps": 13,
+  "kalshi.ticks": 143700,
+  "kalshi.updates": 76207,
+  "kalshi.ws_ticks": 143700,
+  "kalshi.ws_trades": 36160,
+  "live_evals_fired": 67,
+  "novig.rest_updates": 436,
+  "novig.sweeps": 12,
+  "novig.ticks": 2137,
+  "novig.updates": 436,
+  "pairs_blocked_antonym_date": 144,
+  "pmglobal.rest_updates": 377,
+  "pmglobal.sweeps": 12,
+  "pmglobal.ticks": 1944,
+  "pmglobal.updates": 760,
+  "pmglobal.ws_errors": 1,
+  "pmglobal.ws_msgs": 127907,
+  "pmglobal.ws_ticks": 644,
+  "pmus.rest_updates": 7393,
+  "pmus.sweeps": 13,
+  "pmus.ticks": 102074,
+  "pmus.updates": 7393,
+  "pmus_x.last_count": 7291,
+  "pmus_x.sweeps": 14,
+  "prophetx.ticks": 170,
+  "prophetx.updates": 58,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 14,
+  "pxboard.sweeps": 12,
+  "supa_errors": 43
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "01286201b8d2b61a7ac6fee641a507ae"
+    ],
+    "title": "Mississippi State at Minnesota",
+    "ask_cents": 5
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x947de29ac16ca1d535d9f9aff43f7b893467824d5bc13f99676293440553828e"
+    ],
+    "title": "Mississippi State vs. Minnesota",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-09-12T22:30:05.844907+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9385fe253dcecdfb5d811ba1fed59c73"
+    ],
+    "title": "Alabama at Kentucky",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x089089349eab28967cdb7b96462d5a55b9a57ad27de5422a25041f8b92b1594c"
+    ],
+    "title": "Alabama vs. Kentucky",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 12,
+   "edge_bps": 8800,
+   "detected_at": "2026-09-12T22:30:05.766113+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
+    ],
+    "title": "California vs. Syracuse",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a2eb87c26724597881100e2e8c085731"
+    ],
+    "title": "California at Syracuse",
+    "no_cost_cents": 29
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-12T22:30:19.341055+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x205ea709d281fbb1078afe771bb401828303213aa46f8ec10c074b23df0218a7"
+    ],
+    "title": "Duke vs. Illinois",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "638930a7910cc70f20b7eb7dbec030ab"
+    ],
+    "title": "Duke at Illinois",
+    "no_cost_cents": 46
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-12T22:30:19.379971+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
+    ],
+    "title": "California vs. Syracuse",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b5219e475fa1e3b4002c7c5308d954ae"
+    ],
+    "title": "California at Syracuse",
+    "no_cost_cents": 69
+   },
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-09-12T22:30:19.361905+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3ee54a8d72c34142ff34af9d03ec4df20f02218e232af90ade8995022514e44e"
+    ],
+    "title": "Utah State vs. Washington",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a0b6f9d90610a58157ab433563a931e5"
+    ],
+    "title": "Utah State at Washington",
+    "no_cost_cents": 95
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-12T22:30:08.643366+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x205ea709d281fbb1078afe771bb401828303213aa46f8ec10c074b23df0218a7"
+    ],
+    "title": "Duke vs. Illinois",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "baa42977b88a99a8eb196b24464bf8a1"
+    ],
+    "title": "Duke at Illinois",
+    "no_cost_cents": 53
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-12T22:30:22.675246+00:00"
+  }
+ ]
 }
