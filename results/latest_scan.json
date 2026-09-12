@@ -1,14 +1,14 @@
 {
- "scanned_at": "2026-09-12T05:12:38.001502+00:00",
+ "scanned_at": "2026-09-12T05:14:39.497456+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 20.5,
+ "loop_uptime_min": 22.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 76106,
-   "last_tick_age_s": 0.0
+   "markets": 78841,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
@@ -25,54 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 240,
-   "last_tick_age_s": 2.2
+   "markets": 241,
+   "last_tick_age_s": 2.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 68,
-   "last_tick_age_s": 896.5
+   "last_tick_age_s": 1018.0
   }
  ],
  "totals": {
-  "markets_tracked": 83840,
+  "markets_tracked": 86576,
   "pairs_married": 3,
-  "arbitrages": 1
+  "arbitrages": 2
  },
  "stats": {
-  "commits": 9,
-  "gist_errors": 22,
+  "commits": 10,
+  "gist_errors": 24,
   "hot_errors": 0,
-  "kalshi.sweeps": 108,
-  "kalshi.ticks": 856703,
-  "kalshi.updates": 382528,
-  "kalshi.ws_ticks": 856703,
-  "kalshi.ws_trades": 166164,
-  "live_evals_fired": 232,
-  "novig.rest_updates": 699,
-  "novig.sweeps": 108,
-  "novig.ticks": 25668,
-  "novig.updates": 699,
-  "pairs_blocked_antonym_date": 680,
-  "pmglobal.rest_updates": 749,
-  "pmglobal.sweeps": 108,
-  "pmglobal.ticks": 13027,
-  "pmglobal.updates": 1443,
-  "pmglobal.ws_msgs": 163329,
-  "pmglobal.ws_ticks": 2127,
-  "pmus.rest_updates": 8128,
-  "pmus.sweeps": 108,
-  "pmus.ticks": 798037,
-  "pmus.updates": 8128,
+  "kalshi.sweeps": 119,
+  "kalshi.ticks": 930946,
+  "kalshi.updates": 414721,
+  "kalshi.ws_ticks": 930946,
+  "kalshi.ws_trades": 190669,
+  "live_evals_fired": 270,
+  "novig.rest_updates": 743,
+  "novig.sweeps": 119,
+  "novig.ticks": 28263,
+  "novig.updates": 743,
+  "pairs_blocked_antonym_date": 745,
+  "pmglobal.rest_updates": 805,
+  "pmglobal.sweeps": 119,
+  "pmglobal.ticks": 14328,
+  "pmglobal.updates": 1564,
+  "pmglobal.ws_msgs": 176386,
+  "pmglobal.ws_ticks": 2328,
+  "pmus.rest_updates": 8206,
+  "pmus.sweeps": 119,
+  "pmus.ticks": 878568,
+  "pmus.updates": 8206,
   "pmus_x.last_count": 7321,
-  "pmus_x.sweeps": 109,
+  "pmus_x.sweeps": 120,
   "prophetx.ticks": 1874,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 73,
+  "prophetx.ws_errors": 80,
   "px.evt_scanned": 66,
-  "pxboard.sweeps": 108,
-  "supa_errors": 356
+  "pxboard.sweeps": 119,
+  "supa_errors": 393
  },
  "arbitrages": [
   {
@@ -92,11 +92,34 @@
      "0x697559f55828ca4928f0dfae421eb21a00b17a2442896305e3ed5d34b0036b29"
     ],
     "title": "San Diego Padres vs. San Francisco Giants",
-    "no_cost_cents": 2
+    "no_cost_cents": 11
    },
-   "total_cost_cents": 7,
-   "edge_bps": 9300,
-   "detected_at": "2026-09-12T05:12:34.513746+00:00"
+   "total_cost_cents": 16,
+   "edge_bps": 8400,
+   "detected_at": "2026-09-12T05:14:38.076316+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x697559f55828ca4928f0dfae421eb21a00b17a2442896305e3ed5d34b0036b29"
+    ],
+    "title": "San Diego Padres vs. San Francisco Giants",
+    "ask_cents": 90
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b49bc0af4764e3a4a6579b704a6178f2"
+    ],
+    "title": "San Diego Padres at San Francisco Giants",
+    "no_cost_cents": 3
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-12T05:14:38.133593+00:00"
   }
  ]
 }
