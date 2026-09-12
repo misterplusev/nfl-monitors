@@ -1,19 +1,19 @@
 {
- "scanned_at": "2026-09-12T23:09:07.667092+00:00",
+ "scanned_at": "2026-09-12T23:11:12.282916+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 40.7,
+ "loop_uptime_min": 42.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 144206,
+   "markets": 148240,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7312,
+   "markets": 7316,
    "last_tick_age_s": 0.1
   },
   {
@@ -25,57 +25,80 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 248,
-   "last_tick_age_s": 5.2
+   "markets": 250,
+   "last_tick_age_s": 11.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 16,
-   "last_tick_age_s": 2193.9
+   "last_tick_age_s": 2318.5
   }
  ],
  "totals": {
-  "markets_tracked": 151898,
+  "markets_tracked": 155938,
   "pairs_married": 5,
-  "arbitrages": 4
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 19,
-  "gist_errors": 43,
+  "commits": 20,
+  "gist_errors": 45,
   "hot_errors": 0,
-  "kalshi.sweeps": 260,
-  "kalshi.ticks": 3221264,
-  "kalshi.updates": 1401721,
-  "kalshi.ws_ticks": 3221264,
-  "kalshi.ws_trades": 565295,
-  "live_evals_fired": 1198,
-  "novig.rest_updates": 4888,
-  "novig.sweeps": 259,
-  "novig.ticks": 44273,
-  "novig.updates": 4888,
-  "pairs_blocked_antonym_date": 2925,
-  "pmglobal.rest_updates": 2632,
-  "pmglobal.sweeps": 259,
-  "pmglobal.ticks": 34177,
-  "pmglobal.updates": 6389,
+  "kalshi.sweeps": 273,
+  "kalshi.ticks": 3386295,
+  "kalshi.updates": 1471526,
+  "kalshi.ws_ticks": 3386295,
+  "kalshi.ws_trades": 592680,
+  "live_evals_fired": 1260,
+  "novig.rest_updates": 5092,
+  "novig.sweeps": 272,
+  "novig.ticks": 46416,
+  "novig.updates": 5092,
+  "pairs_blocked_antonym_date": 3069,
+  "pmglobal.rest_updates": 2713,
+  "pmglobal.sweeps": 272,
+  "pmglobal.ticks": 35909,
+  "pmglobal.updates": 6586,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 1903894,
-  "pmglobal.ws_ticks": 8177,
-  "pmus.rest_updates": 9109,
-  "pmus.sweeps": 260,
-  "pmus.ticks": 1904691,
-  "pmus.updates": 9109,
-  "pmus_x.last_count": 7312,
-  "pmus_x.sweeps": 261,
+  "pmglobal.ws_msgs": 1966758,
+  "pmglobal.ws_ticks": 8609,
+  "pmus.rest_updates": 9197,
+  "pmus.sweeps": 273,
+  "pmus.ticks": 1999779,
+  "pmus.updates": 9197,
+  "pmus_x.last_count": 7316,
+  "pmus_x.sweeps": 274,
   "prophetx.ticks": 342,
   "prophetx.updates": 115,
-  "prophetx.ws_errors": 147,
+  "prophetx.ws_errors": 153,
   "px.evt_scanned": 12,
-  "pxboard.sweeps": 259,
-  "supa_errors": 798
+  "pxboard.sweeps": 272,
+  "supa_errors": 838
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b5219e475fa1e3b4002c7c5308d954ae"
+    ],
+    "title": "California at Syracuse",
+    "ask_cents": 23
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
+    ],
+    "title": "California vs. Syracuse",
+    "no_cost_cents": 24
+   },
+   "total_cost_cents": 47,
+   "edge_bps": 5300,
+   "detected_at": "2026-09-12T23:11:02.624501+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -98,52 +121,6 @@
    "total_cost_cents": 57,
    "edge_bps": 4300,
    "detected_at": "2026-09-12T23:07:27.915487+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
-    ],
-    "title": "California vs. Syracuse",
-    "ask_cents": 43
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a2eb87c26724597881100e2e8c085731"
-    ],
-    "title": "California at Syracuse",
-    "no_cost_cents": 18
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-12T23:09:04.074727+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b5219e475fa1e3b4002c7c5308d954ae"
-    ],
-    "title": "California at Syracuse",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe5b4853f41084d13fcc89869e26ed9c1f45cd4a96837a4b9b097ad4617cb8c4d"
-    ],
-    "title": "California vs. Syracuse",
-    "no_cost_cents": 67
-   },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-12T23:09:04.095292+00:00"
   },
   {
    "buy_yes": {
