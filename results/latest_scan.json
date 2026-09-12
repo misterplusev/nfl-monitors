@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-12T00:03:15.636450+00:00",
+ "scanned_at": "2026-09-12T00:05:20.698641+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 79.4,
+ "loop_uptime_min": 81.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 179543,
+   "markets": 182658,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7497,
+   "markets": 7585,
    "last_tick_age_s": 0.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 122,
-   "last_tick_age_s": 2.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 271,
-   "last_tick_age_s": 5.3
+   "markets": 273,
+   "last_tick_age_s": 8.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 54,
-   "last_tick_age_s": 4463.3
+   "last_tick_age_s": 4588.3
   }
  ],
  "totals": {
-  "markets_tracked": 187487,
-  "pairs_married": 25,
+  "markets_tracked": 190692,
+  "pairs_married": 26,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 38,
-  "gist_errors": 83,
+  "commits": 39,
+  "gist_errors": 85,
   "hot_errors": 0,
   "kalshi.rest_updates": 3,
-  "kalshi.sweeps": 467,
-  "kalshi.ticks": 5437081,
-  "kalshi.updates": 2435838,
-  "kalshi.ws_ticks": 5437077,
-  "kalshi.ws_trades": 764351,
-  "live_evals_fired": 1752,
-  "novig.rest_updates": 7521,
-  "novig.sweeps": 466,
-  "novig.ticks": 101650,
-  "novig.updates": 7521,
-  "pairs_blocked_antonym_date": 9344,
-  "pmglobal.rest_updates": 2225,
-  "pmglobal.sweeps": 466,
-  "pmglobal.ticks": 54160,
-  "pmglobal.updates": 4389,
-  "pmglobal.ws_msgs": 666513,
-  "pmglobal.ws_ticks": 7460,
-  "pmus.rest_updates": 10989,
-  "pmus.sweeps": 467,
-  "pmus.ticks": 3415715,
-  "pmus.updates": 10989,
-  "pmus_x.last_count": 7489,
-  "pmus_x.sweeps": 468,
+  "kalshi.sweeps": 479,
+  "kalshi.ticks": 5615958,
+  "kalshi.updates": 2514933,
+  "kalshi.ws_ticks": 5615954,
+  "kalshi.ws_trades": 781534,
+  "live_evals_fired": 1794,
+  "novig.rest_updates": 7801,
+  "novig.sweeps": 478,
+  "novig.ticks": 104071,
+  "novig.updates": 7801,
+  "pairs_blocked_antonym_date": 9584,
+  "pmglobal.rest_updates": 2278,
+  "pmglobal.sweeps": 478,
+  "pmglobal.ticks": 55524,
+  "pmglobal.updates": 4484,
+  "pmglobal.ws_msgs": 688774,
+  "pmglobal.ws_ticks": 7624,
+  "pmus.rest_updates": 11197,
+  "pmus.sweeps": 479,
+  "pmus.ticks": 3506300,
+  "pmus.updates": 11197,
+  "pmus_x.last_count": 7576,
+  "pmus_x.sweeps": 480,
   "prophetx.ticks": 1449,
   "prophetx.updates": 128,
-  "prophetx.ws_errors": 290,
+  "prophetx.ws_errors": 297,
   "px.evt_scanned": 48,
-  "pxboard.sweeps": 466,
-  "supa_errors": 1448
+  "pxboard.sweeps": 478,
+  "supa_errors": 1485
  },
  "arbitrages": [
   {
@@ -93,34 +93,11 @@
      "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
     ],
     "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 8
+    "no_cost_cents": 10
    },
-   "total_cost_cents": 53,
-   "edge_bps": 4700,
-   "detected_at": "2026-09-11T23:50:01.296761+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1b90222a2a0292125cadeaf0f5f73861"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 8
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-11T23:50:01.342328+00:00"
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-12T00:05:03.375277+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +120,30 @@
    },
    "total_cost_cents": 56,
    "edge_bps": 4400,
-   "detected_at": "2026-09-12T00:02:58.020025+00:00"
+   "detected_at": "2026-09-12T00:04:25.246177+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1b90222a2a0292125cadeaf0f5f73861"
+    ],
+    "title": "Baltimore Orioles at Toronto Blue Jays",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
+    ],
+    "title": "Baltimore Orioles vs. Toronto Blue Jays",
+    "no_cost_cents": 10
+   },
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-09-12T00:05:03.424227+00:00"
   },
   {
    "buy_yes": {
@@ -166,30 +166,53 @@
    },
    "total_cost_cents": 58,
    "edge_bps": 4200,
-   "detected_at": "2026-09-12T00:02:58.020069+00:00"
+   "detected_at": "2026-09-12T00:04:25.350896+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "8a6edf1bb4ace47d45bed907f6ce5b5c"
+     "bcc2f11a20959cf439d0a1b674080ef1"
     ],
     "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 52
+    "ask_cents": 45
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
+     "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
     ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 8
+    "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-12T00:05:03.558602+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1b90222a2a0292125cadeaf0f5f73861"
+    ],
+    "title": "Baltimore Orioles at Toronto Blue Jays",
+    "ask_cents": 46
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
+    ],
+    "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
+    "no_cost_cents": 14
    },
    "total_cost_cents": 60,
    "edge_bps": 4000,
-   "detected_at": "2026-09-11T23:50:01.260675+00:00"
+   "detected_at": "2026-09-12T00:05:03.493608+00:00"
   },
   {
    "buy_yes": {
@@ -212,53 +235,30 @@
    },
    "total_cost_cents": 61,
    "edge_bps": 3900,
-   "detected_at": "2026-09-12T00:02:58.020046+00:00"
+   "detected_at": "2026-09-12T00:04:25.266404+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "bcc2f11a20959cf439d0a1b674080ef1"
+     "8a6edf1bb4ace47d45bed907f6ce5b5c"
     ],
     "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 45
+    "ask_cents": 52
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
+     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
     ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-12T00:00:05.783787+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1b90222a2a0292125cadeaf0f5f73861"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
-    "no_cost_cents": 16
+    "title": "Baltimore Orioles vs. Toronto Blue Jays",
+    "no_cost_cents": 10
    },
    "total_cost_cents": 62,
    "edge_bps": 3800,
-   "detected_at": "2026-09-12T00:00:05.715934+00:00"
+   "detected_at": "2026-09-12T00:05:03.354401+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +281,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-09-12T00:02:58.020055+00:00"
+   "detected_at": "2026-09-12T00:04:25.293460+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +304,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-09-12T00:02:58.020063+00:00"
+   "detected_at": "2026-09-12T00:04:25.320976+00:00"
   },
   {
    "buy_yes": {
@@ -323,11 +323,11 @@
      "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
     ],
     "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 8
+    "no_cost_cents": 10
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-09-11T23:50:01.233870+00:00"
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-12T00:05:03.323056+00:00"
   },
   {
    "buy_yes": {
@@ -346,11 +346,34 @@
      "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
     ],
     "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 8
+    "no_cost_cents": 10
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-09-11T23:50:01.322782+00:00"
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-12T00:05:03.400493+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8a6edf1bb4ace47d45bed907f6ce5b5c"
+    ],
+    "title": "Baltimore Orioles at Toronto Blue Jays",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
+    ],
+    "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-12T00:05:03.540095+00:00"
   },
   {
    "buy_yes": {
@@ -369,11 +392,11 @@
      "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
     ],
     "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 8
+    "no_cost_cents": 10
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-11T23:50:01.369149+00:00"
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-12T00:05:03.474838+00:00"
   },
   {
    "buy_yes": {
@@ -396,53 +419,7 @@
    },
    "total_cost_cents": 67,
    "edge_bps": 3300,
-   "detected_at": "2026-09-12T00:02:58.020075+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8a6edf1bb4ace47d45bed907f6ce5b5c"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-12T00:00:05.765080+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5fb42ea94462e80ef345081e6886c77435130b5555db31dc15ca8c63d7e9deea"
-    ],
-    "title": "Colorado Rockies vs. Detroit Tigers",
-    "ask_cents": 36
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "81850ca8c645445f98639cbec623ae99"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "no_cost_cents": 35
-   },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-12T00:00:05.548892+00:00"
+   "detected_at": "2026-09-12T00:04:25.373220+00:00"
   },
   {
    "buy_yes": {
@@ -461,11 +438,11 @@
      "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
     ],
     "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
-    "no_cost_cents": 16
+    "no_cost_cents": 14
    },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-12T00:00:05.801741+00:00"
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-12T00:05:03.577858+00:00"
   },
   {
    "buy_yes": {
@@ -484,11 +461,11 @@
      "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
     ],
     "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
-    "no_cost_cents": 16
+    "no_cost_cents": 14
    },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-12T00:00:05.819912+00:00"
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-12T00:05:03.602701+00:00"
   },
   {
    "buy_yes": {
@@ -507,11 +484,34 @@
      "0x0782d1614bfd40b76962b0ec6bc431e00b2ba7220d0f1cb09890c4e1d0d05ad2"
     ],
     "title": "Baltimore Orioles vs. Toronto Blue Jays: O/U 8.5",
-    "no_cost_cents": 16
+    "no_cost_cents": 14
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-12T00:00:05.743381+00:00"
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-12T00:05:03.516547+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5fb42ea94462e80ef345081e6886c77435130b5555db31dc15ca8c63d7e9deea"
+    ],
+    "title": "Colorado Rockies vs. Detroit Tigers",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "81850ca8c645445f98639cbec623ae99"
+    ],
+    "title": "Colorado Rockies at Detroit Tigers",
+    "no_cost_cents": 35
+   },
+   "total_cost_cents": 77,
+   "edge_bps": 2300,
+   "detected_at": "2026-09-12T00:05:03.288590+00:00"
   },
   {
    "buy_yes": {
@@ -521,7 +521,7 @@
      "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
     ],
     "title": "Los Angeles Angels vs. Washington Nationals",
-    "ask_cents": 42
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -532,9 +532,9 @@
     "title": "Los Angeles Angels at Washington Nationals",
     "no_cost_cents": 36
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-12T00:00:05.475567+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-12T00:05:03.244566+00:00"
   },
   {
    "buy_yes": {
@@ -544,7 +544,7 @@
      "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
     ],
     "title": "Los Angeles Angels vs. Washington Nationals",
-    "ask_cents": 42
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "prophetx",
@@ -555,9 +555,78 @@
     "title": "Los Angeles Angels at Washington Nationals",
     "no_cost_cents": 39
    },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-09-12T00:00:05.441130+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-12T00:05:03.204588+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "6c45bca3a867ca1dd2f50da6a13167ed"
+    ],
+    "title": "Colorado Rockies at Detroit Tigers",
+    "ask_cents": 35
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5fb42ea94462e80ef345081e6886c77435130b5555db31dc15ca8c63d7e9deea"
+    ],
+    "title": "Colorado Rockies vs. Detroit Tigers",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-12T00:05:03.267204+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "82e765fbb51eb19b395052130f6d14b7"
+    ],
+    "title": "Los Angeles Angels at Washington Nationals",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
+    ],
+    "title": "Los Angeles Angels vs. Washington Nationals",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-12T00:05:03.227507+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0b2aa6c09ccf195c7bd35861cc1ed70a"
+    ],
+    "title": "Los Angeles Angels at Washington Nationals",
+    "ask_cents": 41
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
+    ],
+    "title": "Los Angeles Angels vs. Washington Nationals",
+    "no_cost_cents": 56
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-12T00:05:03.184730+00:00"
   },
   {
    "buy_yes": {
@@ -581,75 +650,6 @@
    "total_cost_cents": 98,
    "edge_bps": 200,
    "detected_at": "2026-09-11T23:50:01.045477+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "82e765fbb51eb19b395052130f6d14b7"
-    ],
-    "title": "Los Angeles Angels at Washington Nationals",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
-    ],
-    "title": "Los Angeles Angels vs. Washington Nationals",
-    "no_cost_cents": 58
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-12T00:00:05.503378+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0b2aa6c09ccf195c7bd35861cc1ed70a"
-    ],
-    "title": "Los Angeles Angels at Washington Nationals",
-    "ask_cents": 41
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x02a121eca49f2f521bc617439ce70fef0fdfc89d6fb1c129f4f7c8297edea423"
-    ],
-    "title": "Los Angeles Angels vs. Washington Nationals",
-    "no_cost_cents": 58
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-12T00:00:05.411831+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6c45bca3a867ca1dd2f50da6a13167ed"
-    ],
-    "title": "Colorado Rockies at Detroit Tigers",
-    "ask_cents": 35
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5fb42ea94462e80ef345081e6886c77435130b5555db31dc15ca8c63d7e9deea"
-    ],
-    "title": "Colorado Rockies vs. Detroit Tigers",
-    "no_cost_cents": 64
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-12T00:00:05.529220+00:00"
   }
  ]
 }
