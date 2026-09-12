@@ -1,78 +1,79 @@
 {
- "scanned_at": "2026-09-12T14:34:56.727396+00:00",
+ "scanned_at": "2026-09-12T14:37:01.068745+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 53.4,
+ "loop_uptime_min": 55.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 144032,
+   "markets": 148765,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7872,
-   "last_tick_age_s": 4.8
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 117,
-   "last_tick_age_s": 0.2
+   "markets": 118,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 284,
-   "last_tick_age_s": 2.5
+   "markets": 285,
+   "last_tick_age_s": 9.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 72,
-   "last_tick_age_s": 2900.7
+   "last_tick_age_s": 3025.1
   }
  ],
  "totals": {
-  "markets_tracked": 152377,
+  "markets_tracked": 157112,
   "pairs_married": 9,
   "arbitrages": 9
  },
  "stats": {
-  "commits": 25,
-  "gist_errors": 56,
+  "commits": 26,
+  "gist_errors": 58,
   "hot_errors": 0,
-  "kalshi.sweeps": 277,
-  "kalshi.ticks": 3166879,
-  "kalshi.updates": 1345210,
-  "kalshi.ws_ticks": 3166879,
-  "kalshi.ws_trades": 406740,
-  "live_evals_fired": 917,
-  "novig.rest_updates": 1784,
-  "novig.sweeps": 277,
-  "novig.ticks": 68174,
-  "novig.updates": 1784,
-  "pairs_blocked_antonym_date": 1041,
-  "pmglobal.rest_updates": 3839,
-  "pmglobal.sweeps": 277,
-  "pmglobal.ticks": 38998,
-  "pmglobal.updates": 9048,
-  "pmglobal.ws_msgs": 2185562,
-  "pmglobal.ws_ticks": 11198,
-  "pmus.rest_updates": 9985,
-  "pmus.sweeps": 277,
-  "pmus.ticks": 2173101,
-  "pmus.updates": 9985,
-  "pmus_x.last_count": 7796,
-  "pmus_x.sweeps": 278,
+  "kalshi.sweeps": 288,
+  "kalshi.ticks": 3289065,
+  "kalshi.updates": 1398438,
+  "kalshi.ws_ticks": 3289065,
+  "kalshi.ws_trades": 421694,
+  "live_evals_fired": 925,
+  "novig.rest_updates": 1846,
+  "novig.sweeps": 287,
+  "novig.ticks": 70608,
+  "novig.updates": 1846,
+  "pairs_blocked_antonym_date": 1080,
+  "pmglobal.rest_updates": 4044,
+  "pmglobal.sweeps": 287,
+  "pmglobal.ticks": 40519,
+  "pmglobal.updates": 9498,
+  "pmglobal.ws_errors": 1,
+  "pmglobal.ws_msgs": 2255036,
+  "pmglobal.ws_ticks": 11719,
+  "pmus.rest_updates": 10024,
+  "pmus.sweeps": 288,
+  "pmus.ticks": 2258887,
+  "pmus.updates": 10024,
+  "pmus_x.last_count": 7800,
+  "pmus_x.sweeps": 289,
   "prophetx.ticks": 1794,
   "prophetx.updates": 334,
-  "prophetx.ws_errors": 191,
+  "prophetx.ws_errors": 198,
   "px.evt_scanned": 62,
-  "pxboard.sweeps": 277,
-  "supa_errors": 926
+  "pxboard.sweeps": 287,
+  "supa_errors": 959
  },
  "arbitrages": [
   {
@@ -92,11 +93,11 @@
      "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
     ],
     "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
-    "no_cost_cents": 32
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-12T14:31:35.797889+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-12T14:36:37.720445+00:00"
   },
   {
    "buy_yes": {
@@ -115,11 +116,11 @@
      "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
     ],
     "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
-    "no_cost_cents": 32
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-12T14:31:35.682456+00:00"
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-12T14:36:37.592003+00:00"
   },
   {
    "buy_yes": {
@@ -138,11 +139,34 @@
      "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
     ],
     "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
-    "no_cost_cents": 32
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-12T14:31:36.008404+00:00"
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-12T14:36:37.895970+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
+    ],
+    "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
+    "ask_cents": 64
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e156eff83d9e7cea247acaabf88ee79a"
+    ],
+    "title": "Frosinone Calcio at Genoa CFC",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-12T14:36:37.846111+00:00"
   },
   {
    "buy_yes": {
@@ -161,11 +185,11 @@
      "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
     ],
     "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
-    "no_cost_cents": 32
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-12T14:31:36.147920+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-12T14:36:38.016318+00:00"
   },
   {
    "buy_yes": {
@@ -184,11 +208,11 @@
      "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
     ],
     "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
-    "no_cost_cents": 32
+    "no_cost_cents": 36
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-12T14:31:36.081011+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-12T14:36:37.944242+00:00"
   },
   {
    "buy_yes": {
@@ -198,30 +222,7 @@
      "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
     ],
     "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
-    "ask_cents": 68
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e156eff83d9e7cea247acaabf88ee79a"
-    ],
-    "title": "Frosinone Calcio at Genoa CFC",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-12T14:31:35.926342+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
-    ],
-    "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
-    "ask_cents": 68
+    "ask_cents": 64
    },
    "buy_no": {
     "venue": "prophetx",
@@ -232,9 +233,9 @@
     "title": "Frosinone Calcio at Genoa CFC",
     "no_cost_cents": 28
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-12T14:31:35.734658+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-12T14:36:37.672027+00:00"
   },
   {
    "buy_yes": {
@@ -244,7 +245,7 @@
      "0x09029625e1e074606d434527305bc6a8a365ec87e3c24922a8d97ca764dcc503"
     ],
     "title": "Genoa CFC vs. Frosinone Calcio: O/U 2.5",
-    "ask_cents": 68
+    "ask_cents": 64
    },
    "buy_no": {
     "venue": "prophetx",
@@ -255,9 +256,9 @@
     "title": "Frosinone Calcio at Genoa CFC",
     "no_cost_cents": 28
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-12T14:31:35.851640+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-12T14:36:37.776460+00:00"
   },
   {
    "buy_yes": {
@@ -280,7 +281,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-12T14:24:26.776241+00:00"
+   "detected_at": "2026-09-12T14:35:17.870385+00:00"
   }
  ]
 }
