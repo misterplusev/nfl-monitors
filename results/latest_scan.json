@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-12T17:45:08.935507+00:00",
+ "scanned_at": "2026-09-12T17:47:09.792400+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 243.6,
+ "loop_uptime_min": 245.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 501417,
+   "markets": 504414,
    "last_tick_age_s": 0.1
   },
   {
@@ -25,80 +25,56 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 333,
-   "last_tick_age_s": 11.6
+   "markets": 335,
+   "last_tick_age_s": 6.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 72,
-   "last_tick_age_s": 14313.1
+   "last_tick_age_s": 14434.0
   }
  ],
  "totals": {
-  "markets_tracked": 509895,
+  "markets_tracked": 512894,
   "pairs_married": 1,
-  "arbitrages": 1
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 118,
-  "gist_errors": 254,
+  "commits": 119,
+  "gist_errors": 256,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 1257,
-  "kalshi.ticks": 16875078,
-  "kalshi.updates": 7237743,
-  "kalshi.ws_ticks": 16875076,
-  "kalshi.ws_trades": 2235872,
+  "kalshi.sweeps": 1268,
+  "kalshi.ticks": 17031797,
+  "kalshi.updates": 7307081,
+  "kalshi.ws_ticks": 17031795,
+  "kalshi.ws_trades": 2255890,
   "live_evals_fired": 971,
-  "novig.rest_updates": 13660,
-  "novig.sweeps": 1256,
-  "novig.ticks": 291299,
-  "novig.updates": 13660,
-  "pairs_blocked_antonym_date": 6231,
-  "pmglobal.rest_updates": 10598,
-  "pmglobal.sweeps": 1256,
-  "pmglobal.ticks": 158713,
-  "pmglobal.updates": 23334,
+  "novig.rest_updates": 13811,
+  "novig.sweeps": 1267,
+  "novig.ticks": 293446,
+  "novig.updates": 13811,
+  "pairs_blocked_antonym_date": 6301,
+  "pmglobal.rest_updates": 10654,
+  "pmglobal.sweeps": 1267,
+  "pmglobal.ticks": 159974,
+  "pmglobal.updates": 23426,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 4809396,
-  "pmglobal.ws_ticks": 33013,
-  "pmus.rest_updates": 16460,
-  "pmus.sweeps": 1257,
-  "pmus.ticks": 9383875,
-  "pmus.updates": 16460,
-  "pmus_x.last_count": 7321,
-  "pmus_x.sweeps": 1258,
+  "pmglobal.ws_msgs": 4821787,
+  "pmglobal.ws_ticks": 33174,
+  "pmus.rest_updates": 16517,
+  "pmus.sweeps": 1268,
+  "pmus.ticks": 9464405,
+  "pmus.updates": 16517,
+  "pmus_x.last_count": 7320,
+  "pmus_x.sweeps": 1269,
   "prophetx.ticks": 1794,
   "prophetx.updates": 334,
-  "prophetx.ws_errors": 859,
+  "prophetx.ws_errors": 866,
   "px.evt_scanned": 62,
-  "pxboard.sweeps": 1256,
-  "supa_errors": 4019
+  "pxboard.sweeps": 1267,
+  "supa_errors": 4052
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "171032"
-    ],
-    "title": "Fed Rate Hike in 2026?",
-    "ask_cents": 86
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x80b3af88cb991980e8da1ce86b9794a0957f96ec98c29319dd7ba65e9744d82b"
-    ],
-    "title": "Fed rate hike in 2026?",
-    "no_cost_cents": 12
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-12T16:52:08.971263+00:00"
-  }
- ]
+ "arbitrages": []
 }
