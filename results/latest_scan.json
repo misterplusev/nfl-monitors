@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-12T02:09:46.323588+00:00",
+ "scanned_at": "2026-09-12T02:11:47.864439+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 206.0,
+ "loop_uptime_min": 208.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 317424,
+   "markets": 320136,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7875,
-   "last_tick_age_s": 5.4
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
@@ -25,195 +25,57 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 307,
-   "last_tick_age_s": 3.4
+   "markets": 314,
+   "last_tick_age_s": 9.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 54,
-   "last_tick_age_s": 12054.1
+   "last_tick_age_s": 12175.6
   }
  ],
  "totals": {
-  "markets_tracked": 325796,
-  "pairs_married": 7,
-  "arbitrages": 7
+  "markets_tracked": 328515,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 100,
-  "gist_errors": 216,
+  "commits": 101,
+  "gist_errors": 218,
   "hot_errors": 0,
   "kalshi.rest_updates": 9,
-  "kalshi.sweeps": 1202,
-  "kalshi.ticks": 14402643,
-  "kalshi.updates": 6462443,
-  "kalshi.ws_ticks": 14402632,
-  "kalshi.ws_trades": 2006151,
+  "kalshi.sweeps": 1213,
+  "kalshi.ticks": 14533639,
+  "kalshi.updates": 6522933,
+  "kalshi.ws_ticks": 14533628,
+  "kalshi.ws_trades": 2023850,
   "live_evals_fired": 4988,
-  "novig.rest_updates": 24252,
-  "novig.sweeps": 1201,
-  "novig.ticks": 236220,
-  "novig.updates": 24252,
-  "pairs_blocked_antonym_date": 24032,
-  "pmglobal.rest_updates": 5674,
-  "pmglobal.sweeps": 1201,
-  "pmglobal.ticks": 139614,
-  "pmglobal.updates": 11233,
-  "pmglobal.ws_msgs": 2593005,
-  "pmglobal.ws_ticks": 19414,
-  "pmus.rest_updates": 16328,
-  "pmus.sweeps": 1201,
-  "pmus.ticks": 9153878,
-  "pmus.updates": 16328,
-  "pmus_x.last_count": 7590,
-  "pmus_x.sweeps": 1202,
+  "novig.rest_updates": 24408,
+  "novig.sweeps": 1212,
+  "novig.ticks": 238166,
+  "novig.updates": 24408,
+  "pairs_blocked_antonym_date": 24256,
+  "pmglobal.rest_updates": 5743,
+  "pmglobal.sweeps": 1212,
+  "pmglobal.ticks": 140923,
+  "pmglobal.updates": 11358,
+  "pmglobal.ws_msgs": 2640184,
+  "pmglobal.ws_ticks": 19623,
+  "pmus.rest_updates": 16416,
+  "pmus.sweeps": 1213,
+  "pmus.ticks": 9244735,
+  "pmus.updates": 16416,
+  "pmus_x.last_count": 7547,
+  "pmus_x.sweeps": 1214,
   "prophetx.ticks": 1449,
   "prophetx.updates": 128,
-  "prophetx.ws_errors": 757,
+  "prophetx.ws_errors": 764,
   "px.evt_scanned": 48,
-  "pxboard.sweeps": 1201,
-  "supa_errors": 3663
+  "pxboard.sweeps": 1212,
+  "supa_errors": 3697
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bcc2f11a20959cf439d0a1b674080ef1"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 45
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-12T02:05:18.460248+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1b90222a2a0292125cadeaf0f5f73861"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-12T02:05:18.504283+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8a6edf1bb4ace47d45bed907f6ce5b5c"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 55,
-   "edge_bps": 4500,
-   "detected_at": "2026-09-12T02:05:18.549470+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "33866458de84898bbf171d9470aa433b"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-12T02:05:18.525832+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0acf34bbdd49d900c91042afa1ae9b01"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-12T02:05:18.574317+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7e48852f6dc9cab531a5e3fb588001a3"
-    ],
-    "title": "Baltimore Orioles at Toronto Blue Jays",
-    "ask_cents": 56
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x12a87cdddaf2f509bbfb760b8a879aa85b5cf3e300592f23a1959fdf56ddac66"
-    ],
-    "title": "Baltimore Orioles vs. Toronto Blue Jays",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-12T02:05:18.482841+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmus",
