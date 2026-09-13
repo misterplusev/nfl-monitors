@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-13T15:09:10.434103+00:00",
+ "scanned_at": "2026-09-13T15:11:21.357528+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 31.1,
+ "loop_uptime_min": 33.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 99862,
+   "markets": 105126,
    "last_tick_age_s": 0.0
   },
   {
@@ -20,60 +20,60 @@
    "venue": "pmglobal",
    "state": "OK",
    "markets": 115,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 255,
-   "last_tick_age_s": 13.8
+   "last_tick_age_s": 14.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 60,
-   "last_tick_age_s": 1529.8
+   "last_tick_age_s": 1660.7
   }
  ],
  "totals": {
-  "markets_tracked": 108231,
+  "markets_tracked": 113495,
   "pairs_married": 23,
   "arbitrages": 23
  },
  "stats": {
-  "commits": 14,
-  "gist_errors": 31,
+  "commits": 15,
+  "gist_errors": 34,
   "hot_errors": 0,
-  "kalshi.sweeps": 165,
-  "kalshi.ticks": 1413347,
-  "kalshi.updates": 633553,
-  "kalshi.ws_ticks": 1413347,
-  "kalshi.ws_trades": 272127,
-  "live_evals_fired": 394,
-  "novig.rest_updates": 808,
-  "novig.sweeps": 164,
-  "novig.ticks": 39402,
-  "novig.updates": 808,
-  "pairs_blocked_antonym_date": 824,
-  "pmglobal.rest_updates": 1695,
-  "pmglobal.sweeps": 164,
-  "pmglobal.ticks": 21306,
-  "pmglobal.updates": 3386,
+  "kalshi.sweeps": 177,
+  "kalshi.ticks": 1523250,
+  "kalshi.updates": 678603,
+  "kalshi.ws_ticks": 1523250,
+  "kalshi.ws_trades": 290910,
+  "live_evals_fired": 436,
+  "novig.rest_updates": 855,
+  "novig.sweeps": 176,
+  "novig.ticks": 42292,
+  "novig.updates": 855,
+  "pairs_blocked_antonym_date": 884,
+  "pmglobal.rest_updates": 1778,
+  "pmglobal.sweeps": 176,
+  "pmglobal.ticks": 22796,
+  "pmglobal.updates": 3552,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 611498,
-  "pmglobal.ws_ticks": 4806,
-  "pmus.rest_updates": 9334,
-  "pmus.sweeps": 165,
-  "pmus.ticks": 1317798,
-  "pmus.updates": 9334,
-  "pmus_x.last_count": 7938,
-  "pmus_x.sweeps": 166,
+  "pmglobal.ws_msgs": 625407,
+  "pmglobal.ws_ticks": 5096,
+  "pmus.rest_updates": 9446,
+  "pmus.sweeps": 177,
+  "pmus.ticks": 1413058,
+  "pmus.updates": 9446,
+  "pmus_x.last_count": 7939,
+  "pmus_x.sweeps": 178,
   "prophetx.ticks": 1653,
   "prophetx.updates": 176,
-  "prophetx.ws_errors": 110,
+  "prophetx.ws_errors": 118,
   "px.evt_scanned": 58,
-  "pxboard.sweeps": 164,
-  "supa_errors": 561
+  "pxboard.sweeps": 176,
+  "supa_errors": 602
  },
  "arbitrages": [
   {
@@ -97,7 +97,7 @@
    },
    "total_cost_cents": 39,
    "edge_bps": 6100,
-   "detected_at": "2026-09-13T15:08:55.491931+00:00"
+   "detected_at": "2026-09-13T15:11:10.388207+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 39,
    "edge_bps": 6100,
-   "detected_at": "2026-09-13T15:09:10.434022+00:00"
+   "detected_at": "2026-09-13T15:11:21.357441+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +143,7 @@
    },
    "total_cost_cents": 39,
    "edge_bps": 6100,
-   "detected_at": "2026-09-13T15:09:10.434044+00:00"
+   "detected_at": "2026-09-13T15:11:21.357464+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +166,7 @@
    },
    "total_cost_cents": 40,
    "edge_bps": 6000,
-   "detected_at": "2026-09-13T15:08:55.305917+00:00"
+   "detected_at": "2026-09-13T15:11:10.306007+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +189,7 @@
    },
    "total_cost_cents": 40,
    "edge_bps": 6000,
-   "detected_at": "2026-09-13T15:08:55.338971+00:00"
+   "detected_at": "2026-09-13T15:11:10.306013+00:00"
   },
   {
    "buy_yes": {
@@ -212,53 +212,7 @@
    },
    "total_cost_cents": 41,
    "edge_bps": 5900,
-   "detected_at": "2026-09-13T15:08:55.256889+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
-    ],
-    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 63
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4a747ce3a9731669aa865c628824aa85"
-    ],
-    "title": "FC Barcelona at Levante UD",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-13T15:08:55.389545+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
-    ],
-    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 63
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "eebf212f924812884961abc0c62b2242"
-    ],
-    "title": "FC Barcelona at Levante UD",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-13T15:08:55.454094+00:00"
+   "detected_at": "2026-09-13T15:11:10.305986+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +235,53 @@
    },
    "total_cost_cents": 66,
    "edge_bps": 3400,
-   "detected_at": "2026-09-13T15:09:10.434047+00:00"
+   "detected_at": "2026-09-13T15:11:21.357467+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
+    ],
+    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
+    "ask_cents": 64
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4a747ce3a9731669aa865c628824aa85"
+    ],
+    "title": "FC Barcelona at Levante UD",
+    "no_cost_cents": 3
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-13T15:11:10.306018+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
+    ],
+    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
+    "ask_cents": 64
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "eebf212f924812884961abc0c62b2242"
+    ],
+    "title": "FC Barcelona at Levante UD",
+    "no_cost_cents": 3
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-13T15:11:10.353784+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +304,7 @@
    },
    "total_cost_cents": 67,
    "edge_bps": 3300,
-   "detected_at": "2026-09-13T15:09:10.434016+00:00"
+   "detected_at": "2026-09-13T15:11:21.357435+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +327,7 @@
    },
    "total_cost_cents": 67,
    "edge_bps": 3300,
-   "detected_at": "2026-09-13T15:09:10.434025+00:00"
+   "detected_at": "2026-09-13T15:11:21.357444+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +350,7 @@
    },
    "total_cost_cents": 68,
    "edge_bps": 3200,
-   "detected_at": "2026-09-13T15:09:10.434010+00:00"
+   "detected_at": "2026-09-13T15:11:21.357429+00:00"
   },
   {
    "buy_yes": {
@@ -373,7 +373,7 @@
    },
    "total_cost_cents": 68,
    "edge_bps": 3200,
-   "detected_at": "2026-09-13T15:09:10.434056+00:00"
+   "detected_at": "2026-09-13T15:11:21.357476+00:00"
   },
   {
    "buy_yes": {
@@ -396,7 +396,7 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-13T15:09:10.433992+00:00"
+   "detected_at": "2026-09-13T15:11:21.357412+00:00"
   },
   {
    "buy_yes": {
@@ -419,7 +419,7 @@
    },
    "total_cost_cents": 75,
    "edge_bps": 2500,
-   "detected_at": "2026-09-13T15:09:10.434035+00:00"
+   "detected_at": "2026-09-13T15:11:21.357454+00:00"
   },
   {
    "buy_yes": {
@@ -442,7 +442,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-13T15:09:10.434041+00:00"
+   "detected_at": "2026-09-13T15:11:21.357461+00:00"
   },
   {
    "buy_yes": {
@@ -465,7 +465,7 @@
    },
    "total_cost_cents": 84,
    "edge_bps": 1600,
-   "detected_at": "2026-09-13T15:09:10.434053+00:00"
+   "detected_at": "2026-09-13T15:11:21.357473+00:00"
   },
   {
    "buy_yes": {
@@ -488,7 +488,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-13T15:09:10.434050+00:00"
+   "detected_at": "2026-09-13T15:11:21.357469+00:00"
   },
   {
    "buy_yes": {
@@ -511,7 +511,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-13T15:09:10.434038+00:00"
+   "detected_at": "2026-09-13T15:11:21.357458+00:00"
   },
   {
    "buy_yes": {
@@ -534,7 +534,7 @@
    },
    "total_cost_cents": 92,
    "edge_bps": 800,
-   "detected_at": "2026-09-13T15:09:10.434020+00:00"
+   "detected_at": "2026-09-13T15:11:21.357438+00:00"
   },
   {
    "buy_yes": {
@@ -580,7 +580,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-13T15:09:10.434029+00:00"
+   "detected_at": "2026-09-13T15:11:21.357448+00:00"
   },
   {
    "buy_yes": {
@@ -603,7 +603,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-13T15:09:10.434031+00:00"
+   "detected_at": "2026-09-13T15:11:21.357451+00:00"
   }
  ]
 }
