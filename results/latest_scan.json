@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-13T23:34:55.265259+00:00",
+ "scanned_at": "2026-09-13T23:36:57.396818+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 61.7,
+ "loop_uptime_min": 63.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 141513,
+   "markets": 145988,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 8051,
-   "last_tick_age_s": 0.8
+   "markets": 8082,
+   "last_tick_age_s": 4.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 116,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 237,
-   "last_tick_age_s": 6.1
+   "markets": 251,
+   "last_tick_age_s": 2.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 55,
-   "last_tick_age_s": 3370.5
+   "last_tick_age_s": 3492.7
   }
  ],
  "totals": {
-  "markets_tracked": 149972,
+  "markets_tracked": 154492,
   "pairs_married": 137,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 29,
-  "gist_errors": 65,
+  "commits": 30,
+  "gist_errors": 67,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 326,
-  "kalshi.ticks": 3001819,
-  "kalshi.updates": 1510280,
-  "kalshi.ws_ticks": 3001816,
-  "kalshi.ws_trades": 981648,
-  "live_evals_fired": 7010,
-  "novig.rest_updates": 13151,
-  "novig.sweeps": 325,
-  "novig.ticks": 46166,
-  "novig.updates": 13151,
-  "pairs_blocked_antonym_date": 3897,
-  "pmglobal.rest_updates": 3066,
-  "pmglobal.sweeps": 325,
-  "pmglobal.ticks": 41494,
-  "pmglobal.updates": 6908,
+  "kalshi.sweeps": 336,
+  "kalshi.ticks": 3087812,
+  "kalshi.updates": 1551873,
+  "kalshi.ws_ticks": 3087809,
+  "kalshi.ws_trades": 1011648,
+  "live_evals_fired": 7078,
+  "novig.rest_updates": 13299,
+  "novig.sweeps": 336,
+  "novig.ticks": 47609,
+  "novig.updates": 13299,
+  "pairs_blocked_antonym_date": 3967,
+  "pmglobal.rest_updates": 3123,
+  "pmglobal.sweeps": 336,
+  "pmglobal.ticks": 42823,
+  "pmglobal.updates": 7030,
   "pmglobal.ws_errors": 7,
-  "pmglobal.ws_msgs": 2348837,
-  "pmglobal.ws_ticks": 8894,
-  "pmus.rest_updates": 17278,
-  "pmus.sweeps": 326,
-  "pmus.ticks": 2451852,
-  "pmus.updates": 17278,
+  "pmglobal.ws_msgs": 2368857,
+  "pmglobal.ws_ticks": 9123,
+  "pmus.rest_updates": 17430,
+  "pmus.sweeps": 336,
+  "pmus.ticks": 2524406,
+  "pmus.updates": 17430,
   "pmus_x.last_count": 7256,
-  "pmus_x.sweeps": 327,
+  "pmus_x.sweeps": 337,
   "prophetx.ticks": 1139,
   "prophetx.updates": 251,
-  "prophetx.ws_errors": 219,
+  "prophetx.ws_errors": 226,
   "px.evt_scanned": 43,
-  "pxboard.sweeps": 325,
-  "supa_errors": 1167
+  "pxboard.sweeps": 336,
+  "supa_errors": 1203
  },
  "arbitrages": [
   {
@@ -447,29 +447,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
-    ],
-    "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4d01d33602d37aecb37e9d66a6a9ae98"
-    ],
-    "title": "New England Revolution at Chicago Fire FC",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 25,
-   "edge_bps": 7500,
-   "detected_at": "2026-09-13T23:34:55.074633+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
@@ -499,7 +476,30 @@
      "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
     ],
     "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
-    "ask_cents": 3
+    "ask_cents": 16
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4d01d33602d37aecb37e9d66a6a9ae98"
+    ],
+    "title": "New England Revolution at Chicago Fire FC",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 38,
+   "edge_bps": 6200,
+   "detected_at": "2026-09-13T23:35:53.411321+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
+    ],
+    "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
+    "ask_cents": 16
    },
    "buy_no": {
     "venue": "prophetx",
@@ -510,9 +510,9 @@
     "title": "New England Revolution at Chicago Fire FC",
     "no_cost_cents": 28
    },
-   "total_cost_cents": 31,
-   "edge_bps": 6900,
-   "detected_at": "2026-09-13T23:34:55.074609+00:00"
+   "total_cost_cents": 44,
+   "edge_bps": 5600,
+   "detected_at": "2026-09-13T23:35:53.273546+00:00"
   },
   {
    "buy_yes": {
@@ -522,7 +522,7 @@
      "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
     ],
     "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
-    "ask_cents": 3
+    "ask_cents": 16
    },
    "buy_no": {
     "venue": "prophetx",
@@ -533,32 +533,9 @@
     "title": "New England Revolution at Chicago Fire FC",
     "no_cost_cents": 30
    },
-   "total_cost_cents": 33,
-   "edge_bps": 6700,
-   "detected_at": "2026-09-13T23:34:55.074617+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x67096d30a0c0aa47368964e176e07c1a63ccac729ce1a1cb265c7a58fe8576f2"
-    ],
-    "title": "Kansas City Royals vs. Boston Red Sox",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bce55d0873c3b6516f276e7fb39e0959"
-    ],
-    "title": "Kansas City Royals at Boston Red Sox",
-    "no_cost_cents": 36
-   },
-   "total_cost_cents": 44,
-   "edge_bps": 5600,
-   "detected_at": "2026-09-13T23:34:48.182328+00:00"
+   "total_cost_cents": 46,
+   "edge_bps": 5400,
+   "detected_at": "2026-09-13T23:35:53.310278+00:00"
   },
   {
    "buy_yes": {
@@ -585,52 +562,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
-    ],
-    "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "812ae0bdaaefe628fdad42cf18838b63"
-    ],
-    "title": "New England Revolution at Chicago Fire FC",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 53,
-   "edge_bps": 4700,
-   "detected_at": "2026-09-13T23:34:55.074623+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
-    ],
-    "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "86f1fdd991ee0e7a6f9aa4a8d6d84d2d"
-    ],
-    "title": "New England Revolution at Chicago Fire FC",
-    "no_cost_cents": 51
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-13T23:34:55.074586+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -651,6 +582,75 @@
    "total_cost_cents": 63,
    "edge_bps": 3700,
    "detected_at": "2026-09-13T23:22:42.215625+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9132cdeb7c0c44e86432e10d7bac57e1"
+    ],
+    "title": "Miami Dolphins at Las Vegas Raiders",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "382649"
+    ],
+    "title": "Will the Miami Dolphins cover -0.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
+    "no_cost_cents": 57
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-13T23:22:42.067645+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
+    ],
+    "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
+    "ask_cents": 16
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "812ae0bdaaefe628fdad42cf18838b63"
+    ],
+    "title": "New England Revolution at Chicago Fire FC",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-13T23:35:53.343368+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
+    ],
+    "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
+    "ask_cents": 16
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "86f1fdd991ee0e7a6f9aa4a8d6d84d2d"
+    ],
+    "title": "New England Revolution at Chicago Fire FC",
+    "no_cost_cents": 51
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-13T23:35:53.227229+00:00"
   }
  ]
 }
