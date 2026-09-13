@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-13T05:25:25.293787+00:00",
+ "scanned_at": "2026-09-13T05:27:25.693026+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 14.2,
+ "loop_uptime_min": 16.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 45629,
+   "markets": 48865,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7396,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
@@ -25,54 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 204,
-   "last_tick_age_s": 6.2
+   "markets": 205,
+   "last_tick_age_s": 4.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 25,
-   "last_tick_age_s": 585.8
+   "last_tick_age_s": 706.2
   }
  ],
  "totals": {
-  "markets_tracked": 53356,
+  "markets_tracked": 56593,
   "pairs_married": 6,
-  "arbitrages": 4
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 6,
-  "gist_errors": 15,
+  "commits": 7,
+  "gist_errors": 18,
   "hot_errors": 0,
-  "kalshi.sweeps": 95,
-  "kalshi.ticks": 535593,
-  "kalshi.updates": 284999,
-  "kalshi.ws_ticks": 535593,
-  "kalshi.ws_trades": 102597,
-  "live_evals_fired": 132,
-  "novig.rest_updates": 448,
-  "novig.sweeps": 94,
-  "novig.ticks": 17986,
-  "novig.updates": 448,
-  "pairs_blocked_antonym_date": 1071,
-  "pmglobal.rest_updates": 632,
-  "pmglobal.sweeps": 94,
-  "pmglobal.ticks": 11103,
-  "pmglobal.updates": 1218,
-  "pmglobal.ws_msgs": 232655,
-  "pmglobal.ws_ticks": 1603,
-  "pmus.rest_updates": 7891,
-  "pmus.sweeps": 95,
-  "pmus.ticks": 709726,
-  "pmus.updates": 7891,
+  "kalshi.sweeps": 109,
+  "kalshi.ticks": 616730,
+  "kalshi.updates": 325861,
+  "kalshi.ws_ticks": 616730,
+  "kalshi.ws_trades": 116375,
+  "live_evals_fired": 155,
+  "novig.rest_updates": 496,
+  "novig.sweeps": 108,
+  "novig.ticks": 20627,
+  "novig.updates": 496,
+  "pairs_blocked_antonym_date": 1224,
+  "pmglobal.rest_updates": 692,
+  "pmglobal.sweeps": 108,
+  "pmglobal.ticks": 12705,
+  "pmglobal.updates": 1338,
+  "pmglobal.ws_msgs": 266655,
+  "pmglobal.ws_ticks": 1805,
+  "pmus.rest_updates": 7979,
+  "pmus.sweeps": 109,
+  "pmus.ticks": 813270,
+  "pmus.updates": 7979,
   "pmus_x.last_count": 7396,
-  "pmus_x.sweeps": 96,
+  "pmus_x.sweeps": 110,
   "prophetx.ticks": 655,
   "prophetx.updates": 47,
-  "prophetx.ws_errors": 50,
+  "prophetx.ws_errors": 58,
   "px.evt_scanned": 24,
-  "pxboard.sweeps": 94,
-  "supa_errors": 302
+  "pxboard.sweeps": 108,
+  "supa_errors": 344
  },
  "arbitrages": [
   {
@@ -96,7 +96,7 @@
    },
    "total_cost_cents": 7,
    "edge_bps": 9300,
-   "detected_at": "2026-09-13T05:25:17.698399+00:00"
+   "detected_at": "2026-09-13T05:26:14.931728+00:00"
   },
   {
    "buy_yes": {
@@ -106,7 +106,7 @@
      "0xf985706bf2b6ed7ca3c997bae5e654f7e12f84a9fd6744408426120c966fa11d"
     ],
     "title": "New Mexico State vs. Hawai'i",
-    "ask_cents": 23
+    "ask_cents": 14
    },
    "buy_no": {
     "venue": "prophetx",
@@ -117,9 +117,9 @@
     "title": "New Mexico State at Hawaii",
     "no_cost_cents": 11
    },
-   "total_cost_cents": 34,
-   "edge_bps": 6600,
-   "detected_at": "2026-09-13T05:25:20.110732+00:00"
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-09-13T05:27:02.369560+00:00"
   },
   {
    "buy_yes": {
@@ -143,29 +143,6 @@
    "total_cost_cents": 65,
    "edge_bps": 3500,
    "detected_at": "2026-09-13T05:22:58.196586+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2f32b019178db9cf7a552d01731b979c"
-    ],
-    "title": "New Mexico State at Hawaii",
-    "ask_cents": 14
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf985706bf2b6ed7ca3c997bae5e654f7e12f84a9fd6744408426120c966fa11d"
-    ],
-    "title": "New Mexico State vs. Hawai'i",
-    "no_cost_cents": 78
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-13T05:25:20.086962+00:00"
   }
  ]
 }
