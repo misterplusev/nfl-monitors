@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-13T23:36:57.396818+00:00",
+ "scanned_at": "2026-09-13T23:39:05.830646+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 63.7,
+ "loop_uptime_min": 65.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 145988,
+   "markets": 150675,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 8082,
-   "last_tick_age_s": 4.6
+   "markets": 8089,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
@@ -25,56 +25,56 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 251,
-   "last_tick_age_s": 2.3
+   "markets": 290,
+   "last_tick_age_s": 14.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 55,
-   "last_tick_age_s": 3492.7
+   "last_tick_age_s": 3621.1
   }
  ],
  "totals": {
-  "markets_tracked": 154492,
+  "markets_tracked": 159225,
   "pairs_married": 137,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 30,
-  "gist_errors": 67,
+  "commits": 31,
+  "gist_errors": 69,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 336,
-  "kalshi.ticks": 3087812,
-  "kalshi.updates": 1551873,
-  "kalshi.ws_ticks": 3087809,
-  "kalshi.ws_trades": 1011648,
-  "live_evals_fired": 7078,
-  "novig.rest_updates": 13299,
-  "novig.sweeps": 336,
-  "novig.ticks": 47609,
-  "novig.updates": 13299,
-  "pairs_blocked_antonym_date": 3967,
-  "pmglobal.rest_updates": 3123,
-  "pmglobal.sweeps": 336,
-  "pmglobal.ticks": 42823,
-  "pmglobal.updates": 7030,
+  "kalshi.sweeps": 348,
+  "kalshi.ticks": 3175998,
+  "kalshi.updates": 1594225,
+  "kalshi.ws_ticks": 3175995,
+  "kalshi.ws_trades": 1040076,
+  "live_evals_fired": 7086,
+  "novig.rest_updates": 13430,
+  "novig.sweeps": 347,
+  "novig.ticks": 49182,
+  "novig.updates": 13430,
+  "pairs_blocked_antonym_date": 4037,
+  "pmglobal.rest_updates": 3168,
+  "pmglobal.sweeps": 347,
+  "pmglobal.ticks": 44107,
+  "pmglobal.updates": 7125,
   "pmglobal.ws_errors": 7,
-  "pmglobal.ws_msgs": 2368857,
-  "pmglobal.ws_ticks": 9123,
-  "pmus.rest_updates": 17430,
-  "pmus.sweeps": 336,
-  "pmus.ticks": 2524406,
-  "pmus.updates": 17430,
-  "pmus_x.last_count": 7256,
-  "pmus_x.sweeps": 337,
+  "pmglobal.ws_msgs": 2386052,
+  "pmglobal.ws_ticks": 9307,
+  "pmus.rest_updates": 17572,
+  "pmus.sweeps": 348,
+  "pmus.ticks": 2611461,
+  "pmus.updates": 17572,
+  "pmus_x.last_count": 7254,
+  "pmus_x.sweeps": 349,
   "prophetx.ticks": 1139,
   "prophetx.updates": 251,
-  "prophetx.ws_errors": 226,
+  "prophetx.ws_errors": 233,
   "px.evt_scanned": 43,
-  "pxboard.sweeps": 336,
-  "supa_errors": 1203
+  "pxboard.sweeps": 347,
+  "supa_errors": 1242
  },
  "arbitrages": [
   {
@@ -539,6 +539,29 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x67096d30a0c0aa47368964e176e07c1a63ccac729ce1a1cb265c7a58fe8576f2"
+    ],
+    "title": "Kansas City Royals vs. Boston Red Sox",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bce55d0873c3b6516f276e7fb39e0959"
+    ],
+    "title": "Kansas City Royals at Boston Red Sox",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 48,
+   "edge_bps": 5200,
+   "detected_at": "2026-09-13T23:38:18.660836+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
@@ -628,29 +651,6 @@
    "total_cost_cents": 66,
    "edge_bps": 3400,
    "detected_at": "2026-09-13T23:35:53.343368+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
-    ],
-    "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "86f1fdd991ee0e7a6f9aa4a8d6d84d2d"
-    ],
-    "title": "New England Revolution at Chicago Fire FC",
-    "no_cost_cents": 51
-   },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-09-13T23:35:53.227229+00:00"
   }
  ]
 }
