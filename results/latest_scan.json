@@ -1,312 +1,82 @@
 {
- "scanned_at": "2026-09-13T17:28:44.751247+00:00",
+ "scanned_at": "2026-09-13T17:30:46.747930+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 170.7,
+ "loop_uptime_min": 172.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 436427,
+   "markets": 439231,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7939,
-   "last_tick_age_s": 2.6
+   "last_tick_age_s": 3.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 169,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 342,
+   "markets": 343,
    "last_tick_age_s": 0.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 60,
-   "last_tick_age_s": 9904.4
+   "last_tick_age_s": 10026.4
   }
  ],
  "totals": {
-  "markets_tracked": 444937,
-  "pairs_married": 11,
-  "arbitrages": 11
+  "markets_tracked": 447742,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 82,
-  "gist_errors": 175,
+  "commits": 83,
+  "gist_errors": 177,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 836,
-  "kalshi.ticks": 10223211,
-  "kalshi.updates": 4692159,
-  "kalshi.ws_ticks": 10223209,
-  "kalshi.ws_trades": 1827503,
+  "kalshi.sweeps": 847,
+  "kalshi.ticks": 10377625,
+  "kalshi.updates": 4769780,
+  "kalshi.ws_ticks": 10377623,
+  "kalshi.ws_trades": 1852256,
   "live_evals_fired": 2164,
-  "novig.rest_updates": 10468,
-  "novig.sweeps": 836,
-  "novig.ticks": 194285,
-  "novig.updates": 10468,
-  "pairs_blocked_antonym_date": 18370,
-  "pmglobal.rest_updates": 7284,
-  "pmglobal.sweeps": 836,
-  "pmglobal.ticks": 109414,
-  "pmglobal.updates": 15484,
+  "novig.rest_updates": 10840,
+  "novig.sweeps": 847,
+  "novig.ticks": 196213,
+  "novig.updates": 10840,
+  "pairs_blocked_antonym_date": 18888,
+  "pmglobal.rest_updates": 7363,
+  "pmglobal.sweeps": 847,
+  "pmglobal.ticks": 110733,
+  "pmglobal.updates": 15614,
   "pmglobal.ws_errors": 7,
-  "pmglobal.ws_msgs": 2664432,
-  "pmglobal.ws_ticks": 25714,
-  "pmus.rest_updates": 20988,
-  "pmus.sweeps": 836,
-  "pmus.ticks": 6593402,
-  "pmus.updates": 20988,
+  "pmglobal.ws_msgs": 2684768,
+  "pmglobal.ws_ticks": 25933,
+  "pmus.rest_updates": 21477,
+  "pmus.sweeps": 847,
+  "pmus.ticks": 6680599,
+  "pmus.updates": 21477,
   "pmus_x.last_count": 7927,
-  "pmus_x.sweeps": 837,
+  "pmus_x.sweeps": 848,
   "prophetx.ticks": 1653,
   "prophetx.updates": 176,
-  "prophetx.ws_errors": 582,
+  "prophetx.ws_errors": 590,
   "px.evt_scanned": 58,
-  "pxboard.sweeps": 835,
-  "supa_errors": 2724
+  "pxboard.sweeps": 846,
+  "supa_errors": 2757
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "63cd967f19280581fc1a27c79e0e0425"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 26
-   },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-09-13T17:24:09.152885+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0e34e8f2db10550970b600995af37871"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 31
-   },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-13T17:24:09.054993+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "02137930689ceacc28b2760568911313"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 33
-   },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-13T17:24:09.244228+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "cf304cbb948e16afb2385c73eff37fb4"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 51,
-   "edge_bps": 4900,
-   "detected_at": "2026-09-13T17:24:09.326496+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8d210377eab5470d637cdd5967350de9"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 55,
-   "edge_bps": 4500,
-   "detected_at": "2026-09-13T17:24:09.017219+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "016213ed00dd5817a0dad39e25f45341"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-09-13T17:24:09.204019+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ba31e51f637b8dea2296c74b5aa31980"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 60
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-13T17:24:09.408077+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "628ab199fc340a26c55c4bbf6d1334f8"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 67
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-13T17:24:09.374484+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2739cbfa36c4e90ad076ba912ca55fd3"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 70
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-13T17:24:09.274834+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9050e9dac70a71da7a956927385682b93646b46227750111be41568751aeec71"
-    ],
-    "title": "Manchester United FC vs. Manchester City FC: O/U 1.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e92b38ca0ced6adb3db93232c0ff407d"
-    ],
-    "title": "Manchester City FC at Manchester United FC",
-    "no_cost_cents": 75
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-13T17:24:09.118441+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmus",
