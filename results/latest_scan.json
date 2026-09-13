@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-13T05:41:34.098905+00:00",
+ "scanned_at": "2026-09-13T05:43:34.313087+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 30.3,
+ "loop_uptime_min": 32.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 67609,
+   "markets": 70004,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7712,
-   "last_tick_age_s": 0.0
+   "markets": 7752,
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
@@ -26,53 +26,53 @@
    "venue": "novig",
    "state": "OK",
    "markets": 211,
-   "last_tick_age_s": 6.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 25,
-   "last_tick_age_s": 1554.6
+   "last_tick_age_s": 1674.9
   }
  ],
  "totals": {
-  "markets_tracked": 75664,
+  "markets_tracked": 78099,
   "pairs_married": 14,
-  "arbitrages": 13
+  "arbitrages": 12
  },
  "stats": {
-  "commits": 14,
-  "gist_errors": 32,
+  "commits": 15,
+  "gist_errors": 35,
   "hot_errors": 0,
-  "kalshi.sweeps": 206,
-  "kalshi.ticks": 1112792,
-  "kalshi.updates": 574596,
-  "kalshi.ws_ticks": 1112792,
-  "kalshi.ws_trades": 204129,
-  "live_evals_fired": 295,
-  "novig.rest_updates": 729,
-  "novig.sweeps": 205,
-  "novig.ticks": 39207,
-  "novig.updates": 729,
-  "pairs_blocked_antonym_date": 2313,
-  "pmglobal.rest_updates": 1091,
-  "pmglobal.sweeps": 205,
-  "pmglobal.ticks": 23720,
-  "pmglobal.updates": 2126,
-  "pmglobal.ws_msgs": 487661,
-  "pmglobal.ws_ticks": 3120,
-  "pmus.rest_updates": 8804,
-  "pmus.sweeps": 206,
-  "pmus.ticks": 1534430,
-  "pmus.updates": 8804,
-  "pmus_x.last_count": 7709,
-  "pmus_x.sweeps": 207,
+  "kalshi.sweeps": 220,
+  "kalshi.ticks": 1176747,
+  "kalshi.updates": 605403,
+  "kalshi.ws_ticks": 1176747,
+  "kalshi.ws_trades": 219259,
+  "live_evals_fired": 305,
+  "novig.rest_updates": 739,
+  "novig.sweeps": 220,
+  "novig.ticks": 42099,
+  "novig.updates": 739,
+  "pairs_blocked_antonym_date": 2475,
+  "pmglobal.rest_updates": 1154,
+  "pmglobal.sweeps": 220,
+  "pmglobal.ticks": 25407,
+  "pmglobal.updates": 2259,
+  "pmglobal.ws_msgs": 524515,
+  "pmglobal.ws_ticks": 3307,
+  "pmus.rest_updates": 8908,
+  "pmus.sweeps": 220,
+  "pmus.ticks": 1642780,
+  "pmus.updates": 8908,
+  "pmus_x.last_count": 7749,
+  "pmus_x.sweeps": 221,
   "prophetx.ticks": 655,
   "prophetx.updates": 47,
-  "prophetx.ws_errors": 109,
+  "prophetx.ws_errors": 117,
   "px.evt_scanned": 24,
-  "pxboard.sweeps": 205,
-  "supa_errors": 640
+  "pxboard.sweeps": 219,
+  "supa_errors": 683
  },
  "arbitrages": [
   {
@@ -92,11 +92,11 @@
      "0x1236cac78c4c7d0425542449efe31730157ca4ea3e79b58f717da1b999ec76e6"
     ],
     "title": "Montana State vs. Nevada",
-    "no_cost_cents": 5
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 10,
-   "edge_bps": 9000,
-   "detected_at": "2026-09-13T05:39:07.833917+00:00"
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-09-13T05:43:01.430295+00:00"
   },
   {
    "buy_yes": {
@@ -119,30 +119,7 @@
    },
    "total_cost_cents": 29,
    "edge_bps": 7100,
-   "detected_at": "2026-09-13T05:41:06.204746+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "71dde9c548415208d8567929ca9e617b"
-    ],
-    "title": "Arkansas at Utah",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xee957b3d217c58c554b44680a17eb5cf74079ada40ebbeff504c3db3e5968977"
-    ],
-    "title": "Arkansas vs. Utah: O/U 55.5",
-    "no_cost_cents": 46
-   },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-13T05:37:57.908631+00:00"
+   "detected_at": "2026-09-13T05:43:33.151996+00:00"
   },
   {
    "buy_yes": {
@@ -165,7 +142,30 @@
    },
    "total_cost_cents": 64,
    "edge_bps": 3600,
-   "detected_at": "2026-09-13T05:41:34.098851+00:00"
+   "detected_at": "2026-09-13T05:43:34.313031+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "71dde9c548415208d8567929ca9e617b"
+    ],
+    "title": "Arkansas at Utah",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xee957b3d217c58c554b44680a17eb5cf74079ada40ebbeff504c3db3e5968977"
+    ],
+    "title": "Arkansas vs. Utah: O/U 55.5",
+    "no_cost_cents": 65
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-13T05:43:01.451113+00:00"
   },
   {
    "buy_yes": {
@@ -188,7 +188,7 @@
    },
    "total_cost_cents": 70,
    "edge_bps": 3000,
-   "detected_at": "2026-09-13T05:41:34.098823+00:00"
+   "detected_at": "2026-09-13T05:43:34.313004+00:00"
   },
   {
    "buy_yes": {
@@ -211,7 +211,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-13T05:41:34.098846+00:00"
+   "detected_at": "2026-09-13T05:43:34.313027+00:00"
   },
   {
    "buy_yes": {
@@ -234,7 +234,7 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-13T05:41:34.098859+00:00"
+   "detected_at": "2026-09-13T05:43:34.313039+00:00"
   },
   {
    "buy_yes": {
@@ -257,7 +257,7 @@
    },
    "total_cost_cents": 78,
    "edge_bps": 2200,
-   "detected_at": "2026-09-13T05:41:34.098841+00:00"
+   "detected_at": "2026-09-13T05:43:34.313023+00:00"
   },
   {
    "buy_yes": {
@@ -280,7 +280,7 @@
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-09-13T05:41:34.098836+00:00"
+   "detected_at": "2026-09-13T05:43:34.313017+00:00"
   },
   {
    "buy_yes": {
@@ -303,7 +303,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-13T05:41:34.098855+00:00"
+   "detected_at": "2026-09-13T05:43:34.313035+00:00"
   },
   {
    "buy_yes": {
@@ -326,30 +326,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-13T05:41:06.185416+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x1236cac78c4c7d0425542449efe31730157ca4ea3e79b58f717da1b999ec76e6"
-    ],
-    "title": "Montana State vs. Nevada",
-    "ask_cents": 95
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4c35fff851f7a6d191952a95c2e59bf1"
-    ],
-    "title": "Montana State at Nevada",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-13T05:39:07.805436+00:00"
+   "detected_at": "2026-09-13T05:43:33.151977+00:00"
   },
   {
    "buy_yes": {
@@ -372,7 +349,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-13T05:41:34.098805+00:00"
+   "detected_at": "2026-09-13T05:43:34.312988+00:00"
   }
  ]
 }
