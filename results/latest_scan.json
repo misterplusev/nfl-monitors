@@ -1,379 +1,216 @@
 {
- "scanned_at": "2026-09-13T10:29:54.783682+00:00",
+ "scanned_at": "2026-09-13T14:40:17.417783+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 318.7,
+ "loop_uptime_min": 2.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 213164,
-   "last_tick_age_s": 0.1
+   "markets": 17696,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7955,
-   "last_tick_age_s": 0.6
+   "markets": 7938,
+   "last_tick_age_s": 5.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 161,
-   "last_tick_age_s": 0.1
+   "markets": 103,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 280,
-   "last_tick_age_s": 4.6
+   "markets": 237,
+   "last_tick_age_s": 2.3
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 25,
-   "last_tick_age_s": 18855.4
+   "state": "OK",
+   "markets": 59,
+   "last_tick_age_s": 0.0
   }
  ],
  "totals": {
-  "markets_tracked": 221585,
-  "pairs_married": 17,
-  "arbitrages": 16
+  "markets_tracked": 26033,
+  "pairs_married": 7,
+  "arbitrages": 7
  },
  "stats": {
-  "commits": 149,
-  "gist_errors": 334,
+  "gist_errors": 2,
   "hot_errors": 0,
-  "kalshi.sweeps": 2143,
-  "kalshi.ticks": 8824967,
-  "kalshi.updates": 3995198,
-  "kalshi.ws_ticks": 8824967,
-  "kalshi.ws_trades": 1519533,
-  "live_evals_fired": 997,
-  "novig.rest_updates": 2083,
-  "novig.sweeps": 2142,
-  "novig.ticks": 474143,
-  "novig.updates": 2083,
-  "pairs_blocked_antonym_date": 26434,
-  "pmglobal.rest_updates": 9082,
-  "pmglobal.sweeps": 2142,
-  "pmglobal.ticks": 244950,
-  "pmglobal.updates": 18539,
-  "pmglobal.ws_msgs": 3199857,
-  "pmglobal.ws_ticks": 30650,
-  "pmus.rest_updates": 16040,
-  "pmus.sweeps": 2143,
-  "pmus.ticks": 16557930,
-  "pmus.updates": 16040,
-  "pmus_x.last_count": 7899,
-  "pmus_x.sweeps": 2144,
-  "prophetx.ticks": 655,
-  "prophetx.updates": 47,
-  "prophetx.ws_errors": 1134,
-  "push_fails": 2,
-  "px.evt_scanned": 24,
-  "pxboard.sweeps": 2142,
-  "supa_errors": 6463
+  "kalshi.sweeps": 11,
+  "kalshi.ticks": 91939,
+  "kalshi.updates": 48470,
+  "kalshi.ws_ticks": 91939,
+  "kalshi.ws_trades": 20248,
+  "live_evals_fired": 63,
+  "novig.rest_updates": 270,
+  "novig.sweeps": 11,
+  "novig.ticks": 2832,
+  "novig.updates": 270,
+  "pairs_blocked_antonym_date": 56,
+  "pmglobal.rest_updates": 295,
+  "pmglobal.sweeps": 11,
+  "pmglobal.ticks": 1608,
+  "pmglobal.updates": 488,
+  "pmglobal.ws_msgs": 53214,
+  "pmglobal.ws_ticks": 408,
+  "pmus.rest_updates": 8046,
+  "pmus.sweeps": 11,
+  "pmus.ticks": 95256,
+  "pmus.updates": 8046,
+  "pmus_x.last_count": 7938,
+  "pmus_x.sweeps": 12,
+  "prophetx.ticks": 689,
+  "prophetx.updates": 101,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 56,
+  "pxboard.sweeps": 11,
+  "supa_errors": 43
  },
  "arbitrages": [
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb4cdcc5933b243a881f10ba0852fd41e8f1ff198bf593797dc53d957906353c4"
-    ],
-    "title": "RC Celta de Vigo vs. M\u00e1laga CF: O/U 2.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "329e0a9c8bfcdbd05bc74680aaf99d93"
+     "75cccbaaf7ce1cab3baca3148a59a1c7"
     ],
-    "title": "M\u00e1laga CF at RC Celta de Vigo",
-    "no_cost_cents": 18
+    "title": "FC Barcelona at Levante UD",
+    "ask_cents": 2
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-13T10:29:54.783616+00:00"
-  },
-  {
-   "buy_yes": {
+   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xb4cdcc5933b243a881f10ba0852fd41e8f1ff198bf593797dc53d957906353c4"
+     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
-    "title": "RC Celta de Vigo vs. M\u00e1laga CF: O/U 2.5",
-    "ask_cents": 46
+    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
+    "no_cost_cents": 20
    },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a046f8e6c435d87e888910d70bdd8643"
-    ],
-    "title": "M\u00e1laga CF at RC Celta de Vigo",
-    "no_cost_cents": 24
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-13T10:29:54.783625+00:00"
+   "total_cost_cents": 22,
+   "edge_bps": 7800,
+   "detected_at": "2026-09-13T14:40:13.664264+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "74dfb71d5218e3288cfaa2b007cd8585"
+     "ce2e93daa661f14e2e83d9969cd28212"
     ],
-    "title": "M\u00e1laga CF at RC Celta de Vigo",
-    "ask_cents": 18
+    "title": "FC Barcelona at Levante UD",
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xb4cdcc5933b243a881f10ba0852fd41e8f1ff198bf593797dc53d957906353c4"
+     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
-    "title": "RC Celta de Vigo vs. M\u00e1laga CF: O/U 2.5",
-    "no_cost_cents": 54
+    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
+    "no_cost_cents": 20
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-13T10:29:54.783612+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb4cdcc5933b243a881f10ba0852fd41e8f1ff198bf593797dc53d957906353c4"
-    ],
-    "title": "RC Celta de Vigo vs. M\u00e1laga CF: O/U 2.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "71e6a5080a0ee98031cfc6e5259f98c8"
-    ],
-    "title": "M\u00e1laga CF at RC Celta de Vigo",
-    "no_cost_cents": 27
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-13T10:29:54.783621+00:00"
+   "total_cost_cents": 23,
+   "edge_bps": 7700,
+   "detected_at": "2026-09-13T14:40:13.526457+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "a5d0d9df568934e3be395b23152b358b"
+     "02089414f873b27f56394695728e3cbb"
     ],
-    "title": "Wolverhampton Wanderers FC at Sheffield United FC",
-    "ask_cents": 26
+    "title": "FC Barcelona at Levante UD",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xa75f43949671db50e06cf4a21c42b37eb46dc16d06cfdcbafb73a493b51ca807"
+     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
-    "title": "Sheffield United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 48
+    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
+    "no_cost_cents": 20
    },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-13T10:18:28.219809+00:00"
+   "total_cost_cents": 24,
+   "edge_bps": 7600,
+   "detected_at": "2026-09-13T14:40:13.427129+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "2ac9378027a8fe7259f99a887e7b69cf"
+     "a298c95b518d8ee5db92a2443666d9b9"
     ],
-    "title": "Wolverhampton Wanderers FC at Sheffield United FC",
-    "ask_cents": 27
+    "title": "FC Barcelona at Levante UD",
+    "ask_cents": 4
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xa75f43949671db50e06cf4a21c42b37eb46dc16d06cfdcbafb73a493b51ca807"
+     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
-    "title": "Sheffield United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 48
+    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
+    "no_cost_cents": 20
    },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-09-13T10:18:28.285575+00:00"
+   "total_cost_cents": 24,
+   "edge_bps": 7600,
+   "detected_at": "2026-09-13T14:40:13.474272+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xa75f43949671db50e06cf4a21c42b37eb46dc16d06cfdcbafb73a493b51ca807"
+     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
-    "title": "Sheffield United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "ask_cents": 52
+    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
+    "ask_cents": 80
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "2b7fdb87a85e45a7309c72eb7c00c9b6"
+     "4a747ce3a9731669aa865c628824aa85"
     ],
-    "title": "Wolverhampton Wanderers FC at Sheffield United FC",
-    "no_cost_cents": 25
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-13T10:18:28.256390+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa75f43949671db50e06cf4a21c42b37eb46dc16d06cfdcbafb73a493b51ca807"
-    ],
-    "title": "Sheffield United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "77aeb3e751c4a9583dac0453fb2913de"
-    ],
-    "title": "Wolverhampton Wanderers FC at Sheffield United FC",
-    "no_cost_cents": 26
-   },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-13T10:18:28.270397+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "182fa942229d541099194ce235112ef6"
-    ],
-    "title": "M\u00e1laga CF at RC Celta de Vigo",
-    "ask_cents": 24
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb4cdcc5933b243a881f10ba0852fd41e8f1ff198bf593797dc53d957906353c4"
-    ],
-    "title": "RC Celta de Vigo vs. M\u00e1laga CF: O/U 2.5",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-13T10:29:54.783606+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "dc2fe22943091975a544709752c1d018"
-    ],
-    "title": "M\u00e1laga CF at RC Celta de Vigo",
-    "ask_cents": 27
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb4cdcc5933b243a881f10ba0852fd41e8f1ff198bf593797dc53d957906353c4"
-    ],
-    "title": "RC Celta de Vigo vs. M\u00e1laga CF: O/U 2.5",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-09-13T10:29:54.783630+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "19e834dad9d1fb2899a5d47293e79089"
-    ],
-    "title": "Wolverhampton Wanderers FC at Sheffield United FC",
-    "ask_cents": 35
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa75f43949671db50e06cf4a21c42b37eb46dc16d06cfdcbafb73a493b51ca807"
-    ],
-    "title": "Sheffield United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 48
+    "title": "FC Barcelona at Levante UD",
+    "no_cost_cents": 3
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-13T10:18:28.239284+00:00"
+   "detected_at": "2026-09-13T14:40:13.568932+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xa75f43949671db50e06cf4a21c42b37eb46dc16d06cfdcbafb73a493b51ca807"
+     "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
-    "title": "Sheffield United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "ask_cents": 52
+    "title": "Levante UD vs. FC Barcelona: O/U 3.5",
+    "ask_cents": 80
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "e46608df9e3601d5882fb879fd542d1e"
+     "eebf212f924812884961abc0c62b2242"
     ],
-    "title": "Wolverhampton Wanderers FC at Sheffield United FC",
-    "no_cost_cents": 34
+    "title": "FC Barcelona at Levante UD",
+    "no_cost_cents": 3
    },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-13T10:18:28.183205+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb4cdcc5933b243a881f10ba0852fd41e8f1ff198bf593797dc53d957906353c4"
-    ],
-    "title": "RC Celta de Vigo vs. M\u00e1laga CF: O/U 2.5",
-    "ask_cents": 46
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "50f72f3c5549cbda28b7563b2dd6f39d"
-    ],
-    "title": "M\u00e1laga CF at RC Celta de Vigo",
-    "no_cost_cents": 44
-   },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-13T10:29:54.783633+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-13T14:40:13.621600+00:00"
   },
   {
    "buy_yes": {
@@ -392,57 +229,11 @@
      "0x80b3af88cb991980e8da1ce86b9794a0957f96ec98c29319dd7ba65e9744d82b"
     ],
     "title": "Fed rate hike in 2026?",
-    "no_cost_cents": 11
+    "no_cost_cents": 10
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-13T08:48:23.341208+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "14c11a40733ba5a693a1d907ad5febe2"
-    ],
-    "title": "Wolverhampton Wanderers FC at Sheffield United FC",
-    "ask_cents": 50
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xa75f43949671db50e06cf4a21c42b37eb46dc16d06cfdcbafb73a493b51ca807"
-    ],
-    "title": "Sheffield United FC vs. Wolverhampton Wanderers FC: O/U 2.5",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-13T10:18:28.204337+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "aa242f7c3fe5cabb7b637884182c35ab"
-    ],
-    "title": "M\u00e1laga CF at RC Celta de Vigo",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb4cdcc5933b243a881f10ba0852fd41e8f1ff198bf593797dc53d957906353c4"
-    ],
-    "title": "RC Celta de Vigo vs. M\u00e1laga CF: O/U 2.5",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-13T10:29:54.783588+00:00"
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-13T14:38:19.992917+00:00"
   }
  ]
 }
