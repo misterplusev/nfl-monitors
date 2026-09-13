@@ -1,80 +1,193 @@
 {
- "scanned_at": "2026-09-13T04:03:20.631735+00:00",
+ "scanned_at": "2026-09-13T05:13:19.147881+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 512650,
-   "last_tick_age_s": 0.1
+   "markets": 13965,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7879,
-   "last_tick_age_s": 5.3
+   "markets": 7388,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 210,
-   "last_tick_age_s": 0.4
+   "markets": 100,
+   "last_tick_age_s": 3.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 466,
-   "last_tick_age_s": 3.2
+   "markets": 194,
+   "last_tick_age_s": 7.3
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 16,
-   "last_tick_age_s": 19847.1
+   "state": "OK",
+   "markets": 24,
+   "last_tick_age_s": 5.2
   }
  ],
  "totals": {
-  "markets_tracked": 521221,
-  "pairs_married": 1,
-  "arbitrages": 0
+  "markets_tracked": 21671,
+  "pairs_married": 7,
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 164,
-  "gist_errors": 345,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.sweeps": 2014,
-  "kalshi.ticks": 22557412,
-  "kalshi.updates": 10844785,
-  "kalshi.ws_ticks": 22557412,
-  "kalshi.ws_trades": 4217079,
-  "live_evals_fired": 1445,
-  "novig.rest_updates": 41218,
-  "novig.sweeps": 2013,
-  "novig.ticks": 303276,
-  "novig.updates": 41218,
-  "pairs_blocked_antonym_date": 22653,
-  "pmglobal.rest_updates": 10553,
-  "pmglobal.sweeps": 2013,
-  "pmglobal.ticks": 237776,
-  "pmglobal.updates": 22634,
-  "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 4539729,
-  "pmglobal.ws_ticks": 36376,
-  "pmus.rest_updates": 21649,
-  "pmus.sweep_errors": 2,
-  "pmus.sweeps": 2011,
-  "pmus.ticks": 14975931,
-  "pmus.updates": 21649,
-  "pmus_x.last_count": 7332,
-  "pmus_x.sweeps": 2012,
-  "prophetx.ticks": 342,
-  "prophetx.updates": 115,
-  "prophetx.ws_errors": 1213,
-  "px.evt_scanned": 12,
-  "pxboard.sweeps": 2013,
-  "supa_errors": 6064
+  "kalshi.sweeps": 14,
+  "kalshi.ticks": 75035,
+  "kalshi.updates": 44700,
+  "kalshi.ws_ticks": 75035,
+  "kalshi.ws_trades": 15280,
+  "live_evals_fired": 37,
+  "novig.rest_updates": 213,
+  "novig.sweeps": 13,
+  "novig.ticks": 2634,
+  "novig.updates": 213,
+  "pairs_blocked_antonym_date": 153,
+  "pmglobal.rest_updates": 235,
+  "pmglobal.sweeps": 13,
+  "pmglobal.ticks": 1664,
+  "pmglobal.updates": 370,
+  "pmglobal.ws_msgs": 27777,
+  "pmglobal.ws_ticks": 264,
+  "pmus.rest_updates": 7466,
+  "pmus.sweeps": 14,
+  "pmus.ticks": 110817,
+  "pmus.updates": 7466,
+  "pmus_x.last_count": 7388,
+  "pmus_x.sweeps": 15,
+  "prophetx.ticks": 332,
+  "prophetx.updates": 37,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 23,
+  "pxboard.sweeps": 13,
+  "supa_errors": 50
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fadaaab100de0095f1e39ba48ac0c2a5"
+    ],
+    "title": "North Dakota State at Air Force",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x0c8fe9d18387c60f3f47b738f6bad5d967150fea770217391b4fd848dd9cccd0"
+    ],
+    "title": "North Dakota State vs. Air Force",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 4,
+   "edge_bps": 9600,
+   "detected_at": "2026-09-13T05:11:20.890922+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "20f0456b13540ddbe65b007fe953b6de"
+    ],
+    "title": "Montana State at Nevada",
+    "ask_cents": 5
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x1236cac78c4c7d0425542449efe31730157ca4ea3e79b58f717da1b999ec76e6"
+    ],
+    "title": "Montana State vs. Nevada",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 7,
+   "edge_bps": 9300,
+   "detected_at": "2026-09-13T05:12:44.037612+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf985706bf2b6ed7ca3c997bae5e654f7e12f84a9fd6744408426120c966fa11d"
+    ],
+    "title": "New Mexico State vs. Hawai'i",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d6f97f42a312f03b99ea1789a3883b3b"
+    ],
+    "title": "New Mexico State at Hawaii",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 24,
+   "edge_bps": 7600,
+   "detected_at": "2026-09-13T05:13:13.754193+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "71dde9c548415208d8567929ca9e617b"
+    ],
+    "title": "Arkansas at Utah",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xee957b3d217c58c554b44680a17eb5cf74079ada40ebbeff504c3db3e5968977"
+    ],
+    "title": "Arkansas vs. Utah: O/U 55.5",
+    "no_cost_cents": 72
+   },
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-13T05:12:55.569395+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf985706bf2b6ed7ca3c997bae5e654f7e12f84a9fd6744408426120c966fa11d"
+    ],
+    "title": "New Mexico State vs. Hawai'i",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2f32b019178db9cf7a552d01731b979c"
+    ],
+    "title": "New Mexico State at Hawaii",
+    "no_cost_cents": 87
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-13T05:13:06.474404+00:00"
+  }
+ ]
 }
