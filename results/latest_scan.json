@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-13T22:51:45.097859+00:00",
+ "scanned_at": "2026-09-13T22:53:45.307052+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 18.5,
+ "loop_uptime_min": 20.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 48144,
+   "markets": 53513,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7897,
-   "last_tick_age_s": 0.0
+   "markets": 7899,
+   "last_tick_age_s": 2.8
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 104,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 176,
-   "last_tick_age_s": 14.2
+   "markets": 178,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 55,
-   "last_tick_age_s": 780.3
+   "last_tick_age_s": 900.5
   }
  ],
  "totals": {
-  "markets_tracked": 56376,
+  "markets_tracked": 61749,
   "pairs_married": 139,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 8,
-  "gist_errors": 20,
+  "commits": 9,
+  "gist_errors": 22,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 96,
-  "kalshi.ticks": 955235,
-  "kalshi.updates": 503947,
-  "kalshi.ws_ticks": 955232,
-  "kalshi.ws_trades": 224026,
-  "live_evals_fired": 2233,
-  "novig.rest_updates": 4822,
-  "novig.sweeps": 95,
-  "novig.ticks": 14708,
-  "novig.updates": 4822,
-  "pairs_blocked_antonym_date": 1440,
-  "pmglobal.rest_updates": 1165,
-  "pmglobal.sweeps": 95,
-  "pmglobal.ticks": 12404,
-  "pmglobal.updates": 2460,
+  "kalshi.sweeps": 107,
+  "kalshi.ticks": 1068390,
+  "kalshi.updates": 560752,
+  "kalshi.ws_ticks": 1068387,
+  "kalshi.ws_trades": 258907,
+  "live_evals_fired": 2372,
+  "novig.rest_updates": 5278,
+  "novig.sweeps": 107,
+  "novig.ticks": 16518,
+  "novig.updates": 5278,
+  "pairs_blocked_antonym_date": 1608,
+  "pmglobal.rest_updates": 1243,
+  "pmglobal.sweeps": 107,
+  "pmglobal.ticks": 13875,
+  "pmglobal.updates": 2636,
   "pmglobal.ws_errors": 3,
-  "pmglobal.ws_msgs": 713000,
-  "pmglobal.ws_ticks": 2804,
-  "pmus.rest_updates": 10677,
-  "pmus.sweeps": 96,
-  "pmus.ticks": 741698,
-  "pmus.updates": 10677,
-  "pmus_x.last_count": 7658,
-  "pmus_x.sweeps": 97,
+  "pmglobal.ws_msgs": 781536,
+  "pmglobal.ws_ticks": 3075,
+  "pmus.rest_updates": 10929,
+  "pmus.sweeps": 107,
+  "pmus.ticks": 826266,
+  "pmus.updates": 10929,
+  "pmus_x.last_count": 7714,
+  "pmus_x.sweeps": 108,
   "prophetx.ticks": 1139,
   "prophetx.updates": 251,
-  "prophetx.ws_errors": 65,
+  "prophetx.ws_errors": 73,
   "px.evt_scanned": 43,
-  "pxboard.sweeps": 95,
-  "supa_errors": 350
+  "pxboard.sweeps": 106,
+  "supa_errors": 391
  },
  "arbitrages": [
   {
@@ -151,29 +151,6 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "382643"
-    ],
-    "title": "Will the Miami Dolphins cover -6.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a892fac56869bd25f29b59885973c6cb"
-    ],
-    "title": "Miami Dolphins at Las Vegas Raiders",
-    "no_cost_cents": 5
-   },
-   "total_cost_cents": 8,
-   "edge_bps": 9200,
-   "detected_at": "2026-09-13T22:38:23.919917+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
      "382644"
     ],
     "title": "Will the Miami Dolphins cover -5.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
@@ -237,6 +214,29 @@
    "total_cost_cents": 8,
    "edge_bps": 9200,
    "detected_at": "2026-09-13T22:47:18.387692+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "382643"
+    ],
+    "title": "Will the Miami Dolphins cover -6.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a892fac56869bd25f29b59885973c6cb"
+    ],
+    "title": "Miami Dolphins at Las Vegas Raiders",
+    "no_cost_cents": 5
+   },
+   "total_cost_cents": 9,
+   "edge_bps": 9100,
+   "detected_at": "2026-09-13T22:53:23.389857+00:00"
   },
   {
    "buy_yes": {
@@ -335,29 +335,6 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "382651"
-    ],
-    "title": "Will the Miami Dolphins cover 1.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
-    "ask_cents": 6
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a892fac56869bd25f29b59885973c6cb"
-    ],
-    "title": "Miami Dolphins at Las Vegas Raiders",
-    "no_cost_cents": 5
-   },
-   "total_cost_cents": 12,
-   "edge_bps": 8800,
-   "detected_at": "2026-09-13T22:51:43.770656+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
      "382655"
     ],
     "title": "Will the Miami Dolphins cover 5.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
@@ -398,29 +375,6 @@
    "total_cost_cents": 13,
    "edge_bps": 8700,
    "detected_at": "2026-09-13T22:47:18.500805+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "382654"
-    ],
-    "title": "Will the Miami Dolphins cover 4.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
-    "ask_cents": 9
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a892fac56869bd25f29b59885973c6cb"
-    ],
-    "title": "Miami Dolphins at Las Vegas Raiders",
-    "no_cost_cents": 5
-   },
-   "total_cost_cents": 15,
-   "edge_bps": 8500,
-   "detected_at": "2026-09-13T22:51:43.839563+00:00"
   },
   {
    "buy_yes": {
@@ -496,10 +450,10 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "382656"
+     "382651"
     ],
-    "title": "Will the Miami Dolphins cover 6.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
-    "ask_cents": 11
+    "title": "Will the Miami Dolphins cover 1.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "prophetx",
@@ -510,9 +464,9 @@
     "title": "Miami Dolphins at Las Vegas Raiders",
     "no_cost_cents": 5
    },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-13T22:50:39.455209+00:00"
+   "total_cost_cents": 18,
+   "edge_bps": 8200,
+   "detected_at": "2026-09-13T22:53:23.621618+00:00"
   },
   {
    "buy_yes": {
@@ -542,10 +496,10 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "382657"
+     "382654"
     ],
-    "title": "Will the Miami Dolphins cover 7.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
-    "ask_cents": 18
+    "title": "Will the Miami Dolphins cover 4.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
+    "ask_cents": 16
    },
    "buy_no": {
     "venue": "prophetx",
@@ -556,9 +510,32 @@
     "title": "Miami Dolphins at Las Vegas Raiders",
     "no_cost_cents": 5
    },
-   "total_cost_cents": 24,
-   "edge_bps": 7600,
-   "detected_at": "2026-09-13T22:46:44.788082+00:00"
+   "total_cost_cents": 22,
+   "edge_bps": 7800,
+   "detected_at": "2026-09-13T22:53:23.656959+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "382656"
+    ],
+    "title": "Will the Miami Dolphins cover 6.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
+    "ask_cents": 21
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a892fac56869bd25f29b59885973c6cb"
+    ],
+    "title": "Miami Dolphins at Las Vegas Raiders",
+    "no_cost_cents": 5
+   },
+   "total_cost_cents": 27,
+   "edge_bps": 7300,
+   "detected_at": "2026-09-13T22:53:24.048237+00:00"
   },
   {
    "buy_yes": {
@@ -588,10 +565,10 @@
     "venue": "pmus",
     "key": [
      "pmus",
-     "382658"
+     "382657"
     ],
-    "title": "Will the Miami Dolphins cover 8.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
-    "ask_cents": 31
+    "title": "Will the Miami Dolphins cover 7.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
+    "ask_cents": 38
    },
    "buy_no": {
     "venue": "prophetx",
@@ -602,9 +579,9 @@
     "title": "Miami Dolphins at Las Vegas Raiders",
     "no_cost_cents": 5
    },
-   "total_cost_cents": 38,
-   "edge_bps": 6200,
-   "detected_at": "2026-09-13T22:51:44.145657+00:00"
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-13T22:53:24.271660+00:00"
   },
   {
    "buy_yes": {
@@ -627,30 +604,53 @@
    },
    "total_cost_cents": 46,
    "edge_bps": 5400,
-   "detected_at": "2026-09-13T22:51:20.492662+00:00"
+   "detected_at": "2026-09-13T22:53:43.872901+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "382658"
+    ],
+    "title": "Will the Miami Dolphins cover 8.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a892fac56869bd25f29b59885973c6cb"
+    ],
+    "title": "Miami Dolphins at Las Vegas Raiders",
+    "no_cost_cents": 5
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-13T22:53:24.488433+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "2bc0402ef45135103ba78aa7a2445a35"
+     "420eee04998412e673db516efa3823bb"
     ],
-    "title": "New England Revolution at Chicago Fire FC",
-    "ask_cents": 22
+    "title": "Miami Dolphins at Las Vegas Raiders",
+    "ask_cents": 4
    },
    "buy_no": {
-    "venue": "pmglobal",
+    "venue": "pmus",
     "key": [
-     "pmglobal",
-     "0x5ad214d22b9a6a14c62a758efc428c00bf8dc4ed7580bd8d25b041767a4fdeaf"
+     "pmus",
+     "382658"
     ],
-    "title": "Chicago Fire FC vs. New England Revolution: O/U 3.5",
-    "no_cost_cents": 45
+    "title": "Will the Miami Dolphins cover 8.5 vs the Las Vegas Raiders in Miami Dolphins vs. Las Vegas Raiders?",
+    "no_cost_cents": 56
    },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-09-13T22:50:42.281960+00:00"
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-09-13T22:53:24.403801+00:00"
   }
  ]
 }
