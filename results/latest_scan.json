@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-13T15:07:07.467642+00:00",
+ "scanned_at": "2026-09-13T15:09:10.434103+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 29.1,
+ "loop_uptime_min": 31.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 95685,
+   "markets": 99862,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,61 +19,61 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 108,
+   "markets": 115,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 254,
-   "last_tick_age_s": 5.5
+   "markets": 255,
+   "last_tick_age_s": 13.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 60,
-   "last_tick_age_s": 1406.8
+   "last_tick_age_s": 1529.8
   }
  ],
  "totals": {
-  "markets_tracked": 104046,
-  "pairs_married": 7,
-  "arbitrages": 7
+  "markets_tracked": 108231,
+  "pairs_married": 23,
+  "arbitrages": 23
  },
  "stats": {
-  "commits": 13,
-  "gist_errors": 29,
+  "commits": 14,
+  "gist_errors": 31,
   "hot_errors": 0,
-  "kalshi.sweeps": 154,
-  "kalshi.ticks": 1317669,
-  "kalshi.updates": 593215,
-  "kalshi.ws_ticks": 1317669,
-  "kalshi.ws_trades": 256425,
-  "live_evals_fired": 368,
-  "novig.rest_updates": 782,
-  "novig.sweeps": 153,
-  "novig.ticks": 36753,
-  "novig.updates": 782,
-  "pairs_blocked_antonym_date": 768,
-  "pmglobal.rest_updates": 1622,
-  "pmglobal.sweeps": 153,
-  "pmglobal.ticks": 19975,
-  "pmglobal.updates": 3252,
+  "kalshi.sweeps": 165,
+  "kalshi.ticks": 1413347,
+  "kalshi.updates": 633553,
+  "kalshi.ws_ticks": 1413347,
+  "kalshi.ws_trades": 272127,
+  "live_evals_fired": 394,
+  "novig.rest_updates": 808,
+  "novig.sweeps": 164,
+  "novig.ticks": 39402,
+  "novig.updates": 808,
+  "pairs_blocked_antonym_date": 824,
+  "pmglobal.rest_updates": 1695,
+  "pmglobal.sweeps": 164,
+  "pmglobal.ticks": 21306,
+  "pmglobal.updates": 3386,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 597043,
-  "pmglobal.ws_ticks": 4575,
-  "pmus.rest_updates": 9209,
-  "pmus.sweeps": 154,
-  "pmus.ticks": 1230470,
-  "pmus.updates": 9209,
-  "pmus_x.last_count": 7939,
-  "pmus_x.sweeps": 155,
+  "pmglobal.ws_msgs": 611498,
+  "pmglobal.ws_ticks": 4806,
+  "pmus.rest_updates": 9334,
+  "pmus.sweeps": 165,
+  "pmus.ticks": 1317798,
+  "pmus.updates": 9334,
+  "pmus_x.last_count": 7938,
+  "pmus_x.sweeps": 166,
   "prophetx.ticks": 1653,
   "prophetx.updates": 176,
-  "prophetx.ws_errors": 103,
+  "prophetx.ws_errors": 110,
   "px.evt_scanned": 58,
-  "pxboard.sweeps": 153,
-  "supa_errors": 524
+  "pxboard.sweeps": 164,
+  "supa_errors": 561
  },
  "arbitrages": [
   {
@@ -93,11 +93,57 @@
      "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
     "title": "Levante UD vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 38
+    "no_cost_cents": 37
    },
-   "total_cost_cents": 40,
-   "edge_bps": 6000,
-   "detected_at": "2026-09-13T15:07:04.267655+00:00"
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-13T15:08:55.491931+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x013bc97abd9c4aabef030738f5e83a490b9653a527ec8dd3a91bc29560ac06f8"
+    ],
+    "title": "Levante UD vs. FC Barcelona: O/U 4.5",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "eebf212f924812884961abc0c62b2242"
+    ],
+    "title": "FC Barcelona at Levante UD",
+    "no_cost_cents": 3
+   },
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-13T15:09:10.434022+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x013bc97abd9c4aabef030738f5e83a490b9653a527ec8dd3a91bc29560ac06f8"
+    ],
+    "title": "Levante UD vs. FC Barcelona: O/U 4.5",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4a747ce3a9731669aa865c628824aa85"
+    ],
+    "title": "FC Barcelona at Levante UD",
+    "no_cost_cents": 3
+   },
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-13T15:09:10.434044+00:00"
   },
   {
    "buy_yes": {
@@ -116,11 +162,11 @@
      "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
     "title": "Levante UD vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 38
+    "no_cost_cents": 37
    },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-13T15:07:04.125807+00:00"
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-09-13T15:08:55.305917+00:00"
   },
   {
    "buy_yes": {
@@ -139,11 +185,11 @@
      "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
     "title": "Levante UD vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 38
+    "no_cost_cents": 37
    },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-13T15:07:04.163929+00:00"
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-09-13T15:08:55.338971+00:00"
   },
   {
    "buy_yes": {
@@ -162,11 +208,11 @@
      "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
     "title": "Levante UD vs. FC Barcelona: O/U 3.5",
-    "no_cost_cents": 38
+    "no_cost_cents": 37
    },
-   "total_cost_cents": 42,
-   "edge_bps": 5800,
-   "detected_at": "2026-09-13T15:07:04.079194+00:00"
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-13T15:08:55.256889+00:00"
   },
   {
    "buy_yes": {
@@ -176,7 +222,7 @@
      "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
     "title": "Levante UD vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 66
+    "ask_cents": 63
    },
    "buy_no": {
     "venue": "prophetx",
@@ -187,9 +233,9 @@
     "title": "FC Barcelona at Levante UD",
     "no_cost_cents": 3
    },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-13T15:07:04.206732+00:00"
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-13T15:08:55.389545+00:00"
   },
   {
    "buy_yes": {
@@ -199,7 +245,7 @@
      "0xd21565daa1eb5d6937cd7b9c8bb8c79a415ada60d97ded08d533eca3c842188c"
     ],
     "title": "Levante UD vs. FC Barcelona: O/U 3.5",
-    "ask_cents": 66
+    "ask_cents": 63
    },
    "buy_no": {
     "venue": "prophetx",
@@ -210,9 +256,285 @@
     "title": "FC Barcelona at Levante UD",
     "no_cost_cents": 3
    },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-13T15:07:04.232706+00:00"
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-13T15:08:55.454094+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "75cccbaaf7ce1cab3baca3148a59a1c7"
+    ],
+    "title": "FC Barcelona at Levante UD",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x013bc97abd9c4aabef030738f5e83a490b9653a527ec8dd3a91bc29560ac06f8"
+    ],
+    "title": "Levante UD vs. FC Barcelona: O/U 4.5",
+    "no_cost_cents": 64
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-13T15:09:10.434047+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a298c95b518d8ee5db92a2443666d9b9"
+    ],
+    "title": "FC Barcelona at Levante UD",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x013bc97abd9c4aabef030738f5e83a490b9653a527ec8dd3a91bc29560ac06f8"
+    ],
+    "title": "Levante UD vs. FC Barcelona: O/U 4.5",
+    "no_cost_cents": 64
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-13T15:09:10.434016+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ce2e93daa661f14e2e83d9969cd28212"
+    ],
+    "title": "FC Barcelona at Levante UD",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x013bc97abd9c4aabef030738f5e83a490b9653a527ec8dd3a91bc29560ac06f8"
+    ],
+    "title": "Levante UD vs. FC Barcelona: O/U 4.5",
+    "no_cost_cents": 64
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-13T15:09:10.434025+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "63cd967f19280581fc1a27c79e0e0425"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "no_cost_cents": 26
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-13T15:09:10.434010+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "02089414f873b27f56394695728e3cbb"
+    ],
+    "title": "FC Barcelona at Levante UD",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x013bc97abd9c4aabef030738f5e83a490b9653a527ec8dd3a91bc29560ac06f8"
+    ],
+    "title": "Levante UD vs. FC Barcelona: O/U 4.5",
+    "no_cost_cents": 64
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-13T15:09:10.434056+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0e34e8f2db10550970b600995af37871"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "no_cost_cents": 31
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-13T15:09:10.433992+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "02137930689ceacc28b2760568911313"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "no_cost_cents": 33
+   },
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-13T15:09:10.434035+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "cf304cbb948e16afb2385c73eff37fb4"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-13T15:09:10.434041+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e92b38ca0ced6adb3db93232c0ff407d"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "ask_cents": 26
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-13T15:09:10.434053+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8d210377eab5470d637cdd5967350de9"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "no_cost_cents": 45
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-13T15:09:10.434050+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2739cbfa36c4e90ad076ba912ca55fd3"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "ask_cents": 31
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-13T15:09:10.434038+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "628ab199fc340a26c55c4bbf6d1334f8"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "ask_cents": 34
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-13T15:09:10.434020+00:00"
   },
   {
    "buy_yes": {
@@ -236,6 +558,52 @@
    "total_cost_cents": 98,
    "edge_bps": 200,
    "detected_at": "2026-09-13T14:58:49.387267+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ba31e51f637b8dea2296c74b5aa31980"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "ask_cents": 41
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-13T15:09:10.434029+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x23942bf4a6698ccf6bf7a229cf4fa3b91b5bbad44e23372af557700e5ff77008"
+    ],
+    "title": "Manchester United FC vs. Manchester City FC: O/U 3.5",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "016213ed00dd5817a0dad39e25f45341"
+    ],
+    "title": "Manchester City FC at Manchester United FC",
+    "no_cost_cents": 57
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-13T15:09:10.434031+00:00"
   }
  ]
 }
