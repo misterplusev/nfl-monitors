@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-14T11:56:05.877938+00:00",
+ "scanned_at": "2026-09-14T11:58:07.153002+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 62.8,
+ "loop_uptime_min": 64.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 51725,
+   "markets": 52420,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 23401,
-   "last_tick_age_s": 0.0
+   "markets": 23412,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 110,
+   "markets": 113,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 260,
-   "last_tick_age_s": 11.1
+   "last_tick_age_s": 8.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 66,
-   "last_tick_age_s": 3571.4
+   "last_tick_age_s": 3692.7
   }
  ],
  "totals": {
-  "markets_tracked": 75562,
-  "pairs_married": 35,
+  "markets_tracked": 76271,
+  "pairs_married": 34,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 30,
-  "gist_errors": 67,
+  "commits": 31,
+  "gist_errors": 69,
   "hot_errors": 0,
   "kalshi.rest_updates": 89,
-  "kalshi.sweeps": 532,
-  "kalshi.ticks": 1852713,
-  "kalshi.updates": 919436,
-  "kalshi.ws_ticks": 1852446,
-  "kalshi.ws_trades": 258069,
+  "kalshi.sweeps": 543,
+  "kalshi.ticks": 1908808,
+  "kalshi.updates": 946053,
+  "kalshi.ws_ticks": 1908541,
+  "kalshi.ws_trades": 270057,
   "live_evals_fired": 3,
-  "novig.rest_updates": 1602,
-  "novig.sweeps": 531,
-  "novig.ticks": 124047,
-  "novig.updates": 1602,
-  "pairs_blocked_antonym_date": 331,
-  "pmglobal.rest_updates": 2278,
-  "pmglobal.sweeps": 531,
-  "pmglobal.ticks": 59585,
-  "pmglobal.updates": 4691,
-  "pmglobal.ws_msgs": 833566,
-  "pmglobal.ws_ticks": 6385,
-  "pmus.rest_updates": 31949,
-  "pmus.sweeps": 532,
-  "pmus.ticks": 690999,
-  "pmus.updates": 31949,
-  "pmus_x.last_count": 6409,
-  "pmus_x.sweeps": 533,
+  "novig.rest_updates": 1617,
+  "novig.sweeps": 542,
+  "novig.ticks": 126619,
+  "novig.updates": 1617,
+  "pairs_blocked_antonym_date": 429,
+  "pmglobal.rest_updates": 2355,
+  "pmglobal.sweeps": 542,
+  "pmglobal.ticks": 60920,
+  "pmglobal.updates": 4840,
+  "pmglobal.ws_msgs": 852390,
+  "pmglobal.ws_ticks": 6620,
+  "pmus.rest_updates": 32918,
+  "pmus.sweeps": 543,
+  "pmus.ticks": 761518,
+  "pmus.updates": 32918,
+  "pmus_x.last_count": 6411,
+  "pmus_x.sweeps": 544,
   "prophetx.ticks": 1954,
   "prophetx.updates": 74,
-  "prophetx.ws_errors": 243,
+  "prophetx.ws_errors": 250,
   "px.evt_scanned": 40,
-  "pxboard.sweeps": 531,
-  "supa_errors": 1563
+  "pxboard.sweeps": 542,
+  "supa_errors": 1597
  },
  "arbitrages": [
   {
@@ -97,7 +97,7 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-09-14T11:56:05.877759+00:00"
+   "detected_at": "2026-09-14T11:58:07.152825+00:00"
   },
   {
    "buy_yes": {
@@ -120,7 +120,7 @@
    },
    "total_cost_cents": 57,
    "edge_bps": 4300,
-   "detected_at": "2026-09-14T11:56:05.877844+00:00"
+   "detected_at": "2026-09-14T11:58:07.152907+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +143,7 @@
    },
    "total_cost_cents": 57,
    "edge_bps": 4300,
-   "detected_at": "2026-09-14T11:56:05.877884+00:00"
+   "detected_at": "2026-09-14T11:58:07.152947+00:00"
   },
   {
    "buy_yes": {
@@ -166,30 +166,7 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-14T11:56:05.877742+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6b006ba6381eb225a65640d5dd523dabb3352c1a9a5695d249cc527a2f040809"
-    ],
-    "title": "Ljubljana: Lola Radivojevic vs Noemi Basiletti",
-    "ask_cents": 25
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "842548"
-    ],
-    "title": "Lola Radivojevic vs. Noemi Basiletti",
-    "no_cost_cents": 37
-   },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-14T11:52:14.521090+00:00"
+   "detected_at": "2026-09-14T11:58:07.152810+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +189,7 @@
    },
    "total_cost_cents": 66,
    "edge_bps": 3400,
-   "detected_at": "2026-09-14T11:56:05.877876+00:00"
+   "detected_at": "2026-09-14T11:58:07.152939+00:00"
   },
   {
    "buy_yes": {
@@ -235,7 +212,7 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-14T11:56:05.877798+00:00"
+   "detected_at": "2026-09-14T11:58:07.152863+00:00"
   },
   {
    "buy_yes": {
@@ -258,7 +235,7 @@
    },
    "total_cost_cents": 71,
    "edge_bps": 2900,
-   "detected_at": "2026-09-14T11:56:05.877794+00:00"
+   "detected_at": "2026-09-14T11:58:07.152859+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +258,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-14T11:56:05.877788+00:00"
+   "detected_at": "2026-09-14T11:58:07.152854+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +281,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-14T11:56:05.877864+00:00"
+   "detected_at": "2026-09-14T11:58:07.152928+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +304,7 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-14T11:56:05.877784+00:00"
+   "detected_at": "2026-09-14T11:58:07.152849+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +327,7 @@
    },
    "total_cost_cents": 76,
    "edge_bps": 2400,
-   "detected_at": "2026-09-14T11:56:05.877767+00:00"
+   "detected_at": "2026-09-14T11:58:07.152833+00:00"
   },
   {
    "buy_yes": {
@@ -373,7 +350,7 @@
    },
    "total_cost_cents": 79,
    "edge_bps": 2100,
-   "detected_at": "2026-09-14T11:56:05.877834+00:00"
+   "detected_at": "2026-09-14T11:58:07.152897+00:00"
   },
   {
    "buy_yes": {
@@ -396,7 +373,7 @@
    },
    "total_cost_cents": 80,
    "edge_bps": 2000,
-   "detected_at": "2026-09-14T11:56:05.877803+00:00"
+   "detected_at": "2026-09-14T11:58:07.152867+00:00"
   },
   {
    "buy_yes": {
@@ -419,7 +396,7 @@
    },
    "total_cost_cents": 80,
    "edge_bps": 2000,
-   "detected_at": "2026-09-14T11:56:05.877860+00:00"
+   "detected_at": "2026-09-14T11:58:07.152923+00:00"
   },
   {
    "buy_yes": {
@@ -465,7 +442,7 @@
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-09-14T11:56:05.877871+00:00"
+   "detected_at": "2026-09-14T11:58:07.152934+00:00"
   },
   {
    "buy_yes": {
@@ -488,7 +465,7 @@
    },
    "total_cost_cents": 84,
    "edge_bps": 1600,
-   "detected_at": "2026-09-14T11:56:05.877753+00:00"
+   "detected_at": "2026-09-14T11:58:07.152820+00:00"
   },
   {
    "buy_yes": {
@@ -511,7 +488,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-14T11:56:05.877721+00:00"
+   "detected_at": "2026-09-14T11:58:07.152789+00:00"
   },
   {
    "buy_yes": {
@@ -534,7 +511,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-14T11:56:05.877810+00:00"
+   "detected_at": "2026-09-14T11:58:07.152874+00:00"
   },
   {
    "buy_yes": {
@@ -557,7 +534,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-14T11:56:05.877779+00:00"
+   "detected_at": "2026-09-14T11:58:07.152844+00:00"
   },
   {
    "buy_yes": {
@@ -580,7 +557,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-14T11:56:05.877817+00:00"
+   "detected_at": "2026-09-14T11:58:07.152880+00:00"
   },
   {
    "buy_yes": {
@@ -603,7 +580,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-14T11:56:05.877824+00:00"
+   "detected_at": "2026-09-14T11:58:07.152888+00:00"
   },
   {
    "buy_yes": {
@@ -626,7 +603,7 @@
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-14T11:56:05.877828+00:00"
+   "detected_at": "2026-09-14T11:58:07.152891+00:00"
   },
   {
    "buy_yes": {
@@ -649,7 +626,30 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-14T11:56:05.877849+00:00"
+   "detected_at": "2026-09-14T11:58:07.152912+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a05419-7a3a-7610-b898-943a3760bec7"
+    ],
+    "title": "Xavier Worthy 35.5 RECEIVING_YARDS (NFL)",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "611111"
+    ],
+    "title": "Will Xavier Worthy record 35+ receiving yards?",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-14T11:58:07.152903+00:00"
   }
  ]
 }
