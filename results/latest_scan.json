@@ -1,126 +1,72 @@
 {
- "scanned_at": "2026-09-14T10:52:31.398538+00:00",
+ "scanned_at": "2026-09-14T10:55:19.763397+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 135172,
-   "last_tick_age_s": 0.1
+   "markets": 8239,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
-   "state": "OK",
-   "markets": 20838,
-   "last_tick_age_s": 2.9
+   "state": "OK_EMPTY",
+   "markets": 0,
+   "last_tick_age_s": 4.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 133,
-   "last_tick_age_s": 0.2
+   "markets": 100,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 278,
-   "last_tick_age_s": 0.4
+   "markets": 233,
+   "last_tick_age_s": 2.0
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
+   "state": "OK",
    "markets": 66,
-   "last_tick_age_s": 19799.7
+   "last_tick_age_s": 0.2
   }
  ],
  "totals": {
-  "markets_tracked": 156487,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 8638,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 163,
-  "gist_errors": 352,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 457,
-  "kalshi.sweeps": 1998,
-  "kalshi.ticks": 8270223,
-  "kalshi.updates": 4033106,
-  "kalshi.ws_ticks": 8268739,
-  "kalshi.ws_trades": 1505901,
-  "live_evals_fired": 57,
-  "novig.rest_updates": 3212,
-  "novig.sweeps": 1998,
-  "novig.ticks": 456321,
-  "novig.updates": 3212,
-  "pairs_blocked_antonym_date": 10894,
-  "pmglobal.rest_updates": 7284,
-  "pmglobal.sweeps": 1998,
-  "pmglobal.ticks": 227380,
-  "pmglobal.updates": 14639,
-  "pmglobal.ws_msgs": 2618511,
-  "pmglobal.ws_ticks": 27480,
-  "pmus.rest_updates": 31435,
-  "pmus.sweeps": 1998,
-  "pmus.ticks": 11303687,
-  "pmus.updates": 31435,
+  "kalshi.sweeps": 18,
+  "kalshi.ticks": 57738,
+  "kalshi.updates": 32323,
+  "kalshi.ws_ticks": 57738,
+  "kalshi.ws_trades": 8401,
+  "novig.rest_updates": 274,
+  "novig.sweeps": 18,
+  "novig.ticks": 4399,
+  "novig.updates": 274,
+  "pmglobal.rest_updates": 245,
+  "pmglobal.sweeps": 18,
+  "pmglobal.ticks": 2226,
+  "pmglobal.updates": 401,
+  "pmglobal.ws_msgs": 36422,
+  "pmglobal.ws_ticks": 326,
+  "pmus.sweeps": 18,
   "pmus_x.last_count": 0,
-  "pmus_x.sweeps": 1999,
-  "prophetx.ticks": 1782,
-  "prophetx.updates": 74,
-  "prophetx.ws_errors": 1222,
+  "pmus_x.sweeps": 19,
+  "prophetx.ticks": 1254,
+  "prophetx.updates": 72,
+  "prophetx.ws_errors": 8,
   "px.evt_scanned": 66,
-  "pxboard.sweeps": 1997,
-  "supa_errors": 6144
+  "pxboard.sweeps": 18,
+  "supa_errors": 54
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "611091"
-    ],
-    "title": "Will Kenneth Walker III record 90+ rushing yards?",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a04bcb-2740-7f82-bd51-4cc735f87f05"
-    ],
-    "title": "Kenneth Walker III 59.5 RUSHING_YARDS (NFL)",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-14T10:49:42.826064+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "171032"
-    ],
-    "title": "Fed Rate Hike in 2026?",
-    "ask_cents": 85
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x80b3af88cb991980e8da1ce86b9794a0957f96ec98c29319dd7ba65e9744d82b"
-    ],
-    "title": "Fed rate hike in 2026?",
-    "no_cost_cents": 12
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-14T10:38:27.588004+00:00"
-  }
- ]
+ "arbitrages": []
 }
