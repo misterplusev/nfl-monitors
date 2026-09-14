@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-14T11:45:46.381334+00:00",
+ "scanned_at": "2026-09-14T11:47:48.657719+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 52.5,
+ "loop_uptime_min": 54.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 47566,
+   "markets": 48454,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 13754,
-   "last_tick_age_s": 0.0
+   "markets": 17048,
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
@@ -25,54 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 258,
-   "last_tick_age_s": 8.5
+   "markets": 259,
+   "last_tick_age_s": 11.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 66,
-   "last_tick_age_s": 2951.9
+   "last_tick_age_s": 3074.2
   }
  ],
  "totals": {
-  "markets_tracked": 61754,
-  "pairs_married": 1,
-  "arbitrages": 1
+  "markets_tracked": 65937,
+  "pairs_married": 11,
+  "arbitrages": 10
  },
  "stats": {
-  "commits": 25,
-  "gist_errors": 56,
+  "commits": 26,
+  "gist_errors": 58,
   "hot_errors": 0,
   "kalshi.rest_updates": 89,
-  "kalshi.sweeps": 476,
-  "kalshi.ticks": 1552134,
-  "kalshi.updates": 770713,
-  "kalshi.ws_ticks": 1551867,
-  "kalshi.ws_trades": 215421,
+  "kalshi.sweeps": 487,
+  "kalshi.ticks": 1608856,
+  "kalshi.updates": 799469,
+  "kalshi.ws_ticks": 1608589,
+  "kalshi.ws_trades": 222294,
   "live_evals_fired": 1,
-  "novig.rest_updates": 1455,
-  "novig.sweeps": 475,
-  "novig.ticks": 110948,
-  "novig.updates": 1455,
-  "pmglobal.rest_updates": 1971,
-  "pmglobal.sweeps": 475,
-  "pmglobal.ticks": 52942,
-  "pmglobal.updates": 4019,
-  "pmglobal.ws_msgs": 729314,
-  "pmglobal.ws_ticks": 5342,
-  "pmus.rest_updates": 18496,
-  "pmus.sweeps": 476,
-  "pmus.ticks": 335326,
-  "pmus.updates": 18496,
-  "pmus_x.last_count": 6198,
-  "pmus_x.sweeps": 477,
+  "novig.rest_updates": 1480,
+  "novig.sweeps": 486,
+  "novig.ticks": 113531,
+  "novig.updates": 1480,
+  "pmglobal.rest_updates": 2030,
+  "pmglobal.sweeps": 486,
+  "pmglobal.ticks": 54261,
+  "pmglobal.updates": 4150,
+  "pmglobal.ws_msgs": 753485,
+  "pmglobal.ws_ticks": 5561,
+  "pmus.rest_updates": 22764,
+  "pmus.sweeps": 487,
+  "pmus.ticks": 405049,
+  "pmus.updates": 22764,
+  "pmus_x.last_count": 6048,
+  "pmus_x.sweeps": 488,
   "prophetx.ticks": 1954,
   "prophetx.updates": 74,
-  "prophetx.ws_errors": 206,
+  "prophetx.ws_errors": 213,
   "px.evt_scanned": 40,
-  "pxboard.sweeps": 475,
-  "supa_errors": 1391
+  "pxboard.sweeps": 486,
+  "supa_errors": 1424
  },
  "arbitrages": [
   {
@@ -97,6 +97,213 @@
    "total_cost_cents": 53,
    "edge_bps": 4700,
    "detected_at": "2026-09-14T11:42:06.001146+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e428472590e39b8a4f1f066478222b0b"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-14T11:47:48.657662+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1ae5c997365762f286f7b06ce7304b6f"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 30
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-14T11:47:48.657631+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fabe2fadda50cf806639c04584a74418"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 69,
+   "edge_bps": 3100,
+   "detected_at": "2026-09-14T11:47:48.657651+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "02a0b8f9442005707cf0546cb1376914"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-14T11:47:48.657646+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d40ee25d2eaccdad6080ef865a146522"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-14T11:47:48.657667+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fbf27877e40d8d5c50360d25c1fc7b48"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 58
+   },
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-14T11:47:48.657607+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9f1bb3ed474f1bff594b6133b2d8b9c0"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 59
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-14T11:47:48.657655+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1f8f7662f9cf55df1b8e6f0edb005d84"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-14T11:47:48.657641+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "94e5556182ca5aaca78c31e31ac0b375"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 70
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-14T11:47:48.657637+00:00"
   }
  ]
 }
