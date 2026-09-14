@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-14T12:41:16.948023+00:00",
+ "scanned_at": "2026-09-14T12:43:17.338149+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 108.0,
+ "loop_uptime_min": 110.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 73917,
-   "last_tick_age_s": 0.1
+   "markets": 74672,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 23935,
-   "last_tick_age_s": 5.0
+   "markets": 23968,
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 121,
-   "last_tick_age_s": 0.9
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 275,
-   "last_tick_age_s": 2.6
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 66,
-   "last_tick_age_s": 6282.5
+   "last_tick_age_s": 6402.9
   }
  ],
  "totals": {
-  "markets_tracked": 98314,
+  "markets_tracked": 99102,
   "pairs_married": 35,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 52,
-  "gist_errors": 114,
+  "commits": 53,
+  "gist_errors": 116,
   "hot_errors": 0,
   "kalshi.rest_updates": 89,
-  "kalshi.sweeps": 769,
-  "kalshi.ticks": 3336893,
-  "kalshi.updates": 1652733,
-  "kalshi.ws_ticks": 3336626,
-  "kalshi.ws_trades": 481360,
-  "live_evals_fired": 12,
-  "novig.rest_updates": 2342,
-  "novig.sweeps": 769,
-  "novig.ticks": 179948,
-  "novig.updates": 2342,
-  "pairs_blocked_antonym_date": 2410,
-  "pmglobal.rest_updates": 3772,
-  "pmglobal.sweeps": 769,
-  "pmglobal.ticks": 89686,
-  "pmglobal.updates": 8426,
-  "pmglobal.ws_msgs": 1385213,
-  "pmglobal.ws_ticks": 12686,
-  "pmus.rest_updates": 49466,
+  "kalshi.sweeps": 780,
+  "kalshi.ticks": 3412694,
+  "kalshi.updates": 1691199,
+  "kalshi.ws_ticks": 3412427,
+  "kalshi.ws_trades": 497103,
+  "live_evals_fired": 19,
+  "novig.rest_updates": 2388,
+  "novig.sweeps": 780,
+  "novig.ticks": 182533,
+  "novig.updates": 2388,
+  "pairs_blocked_antonym_date": 2501,
+  "pmglobal.rest_updates": 3833,
+  "pmglobal.sweeps": 780,
+  "pmglobal.ticks": 90989,
+  "pmglobal.updates": 8545,
+  "pmglobal.ws_msgs": 1400851,
+  "pmglobal.ws_ticks": 12889,
+  "pmus.rest_updates": 49993,
   "pmus.sweep_errors": 1,
-  "pmus.sweeps": 768,
-  "pmus.ticks": 2287716,
-  "pmus.updates": 49466,
-  "pmus_x.last_count": 7009,
-  "pmus_x.sweeps": 769,
+  "pmus.sweeps": 779,
+  "pmus.ticks": 2365089,
+  "pmus.updates": 49993,
+  "pmus_x.last_count": 7046,
+  "pmus_x.sweeps": 780,
   "prophetx.ticks": 1954,
   "prophetx.updates": 74,
-  "prophetx.ws_errors": 402,
+  "prophetx.ws_errors": 409,
   "px.evt_scanned": 40,
-  "pxboard.sweeps": 769,
-  "supa_errors": 2306
+  "pxboard.sweeps": 779,
+  "supa_errors": 2340
  },
  "arbitrages": [
   {
@@ -98,30 +98,7 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-09-14T12:41:16.947809+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "712545"
-    ],
-    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
-    "ask_cents": 27
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e428472590e39b8a4f1f066478222b0b"
-    ],
-    "title": "Newcastle United FC at Leeds United FC",
-    "no_cost_cents": 28
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-14T12:41:16.947914+00:00"
+   "detected_at": "2026-09-14T12:42:34.061134+00:00"
   },
   {
    "buy_yes": {
@@ -144,7 +121,30 @@
    },
    "total_cost_cents": 57,
    "edge_bps": 4300,
-   "detected_at": "2026-09-14T12:41:16.947956+00:00"
+   "detected_at": "2026-09-14T12:42:34.369505+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e428472590e39b8a4f1f066478222b0b"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-14T12:43:17.338067+00:00"
   },
   {
    "buy_yes": {
@@ -167,7 +167,7 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-14T12:41:16.947796+00:00"
+   "detected_at": "2026-09-14T12:43:17.337990+00:00"
   },
   {
    "buy_yes": {
@@ -190,7 +190,7 @@
    },
    "total_cost_cents": 66,
    "edge_bps": 3400,
-   "detected_at": "2026-09-14T12:41:16.947947+00:00"
+   "detected_at": "2026-09-14T12:43:17.338094+00:00"
   },
   {
    "buy_yes": {
@@ -213,7 +213,7 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-14T12:41:16.947851+00:00"
+   "detected_at": "2026-09-14T12:43:17.338027+00:00"
   },
   {
    "buy_yes": {
@@ -259,30 +259,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-14T12:41:16.947845+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8d2e270e17fcaece7d60e222442d75206894fef808b0633cc96ea7ef845870c7"
-    ],
-    "title": "Guangzhou: Elias Ymer vs Semen Pankin",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "812365"
-    ],
-    "title": "Elias Ymer vs. Semen Pankin",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-14T12:41:16.947895+00:00"
+   "detected_at": "2026-09-14T12:43:17.338022+00:00"
   },
   {
    "buy_yes": {
@@ -305,7 +282,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-14T12:41:16.947932+00:00"
+   "detected_at": "2026-09-14T12:43:17.338081+00:00"
   },
   {
    "buy_yes": {
@@ -328,7 +305,30 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-14T12:41:16.947839+00:00"
+   "detected_at": "2026-09-14T12:42:34.125022+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x8d2e270e17fcaece7d60e222442d75206894fef808b0633cc96ea7ef845870c7"
+    ],
+    "title": "Guangzhou: Elias Ymer vs Semen Pankin",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "812365"
+    ],
+    "title": "Elias Ymer vs. Semen Pankin",
+    "no_cost_cents": 30
+   },
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-14T12:42:23.521128+00:00"
   },
   {
    "buy_yes": {
@@ -351,7 +351,7 @@
    },
    "total_cost_cents": 76,
    "edge_bps": 2400,
-   "detected_at": "2026-09-14T12:41:16.947819+00:00"
+   "detected_at": "2026-09-14T12:43:17.338004+00:00"
   },
   {
    "buy_yes": {
@@ -374,7 +374,7 @@
    },
    "total_cost_cents": 79,
    "edge_bps": 2100,
-   "detected_at": "2026-09-14T12:41:16.947901+00:00"
+   "detected_at": "2026-09-14T12:42:34.262688+00:00"
   },
   {
    "buy_yes": {
@@ -397,30 +397,7 @@
    },
    "total_cost_cents": 80,
    "edge_bps": 2000,
-   "detected_at": "2026-09-14T12:41:16.947858+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a04bcb-2740-7f82-bd51-4cc735f87f05"
-    ],
-    "title": "Kenneth Walker III 59.5 RUSHING_YARDS (NFL)",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "611087"
-    ],
-    "title": "Will Kenneth Walker III record 40+ rushing yards?",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-14T12:41:16.947927+00:00"
+   "detected_at": "2026-09-14T12:43:17.338033+00:00"
   },
   {
    "buy_yes": {
@@ -447,6 +424,29 @@
   },
   {
    "buy_yes": {
+    "venue": "novig",
+    "key": [
+     "novig",
+     "01a04bcb-2740-7f82-bd51-4cc735f87f05"
+    ],
+    "title": "Kenneth Walker III 59.5 RUSHING_YARDS (NFL)",
+    "ask_cents": 56
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "611087"
+    ],
+    "title": "Will Kenneth Walker III record 40+ rushing yards?",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-14T12:42:34.323740+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
@@ -466,7 +466,7 @@
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-09-14T12:41:16.947941+00:00"
+   "detected_at": "2026-09-14T12:43:17.338089+00:00"
   },
   {
    "buy_yes": {
@@ -512,7 +512,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-14T12:41:16.947766+00:00"
+   "detected_at": "2026-09-14T12:43:17.337972+00:00"
   },
   {
    "buy_yes": {
@@ -535,7 +535,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-14T12:41:16.947867+00:00"
+   "detected_at": "2026-09-14T12:43:17.338041+00:00"
   },
   {
    "buy_yes": {
@@ -558,7 +558,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-14T12:41:16.947833+00:00"
+   "detected_at": "2026-09-14T12:43:17.338016+00:00"
   },
   {
    "buy_yes": {
@@ -581,7 +581,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-14T12:41:16.947873+00:00"
+   "detected_at": "2026-09-14T12:43:17.338047+00:00"
   },
   {
    "buy_yes": {
@@ -604,7 +604,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-14T12:41:16.947882+00:00"
+   "detected_at": "2026-09-14T12:42:34.202631+00:00"
   },
   {
    "buy_yes": {
@@ -627,7 +627,7 @@
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-14T12:41:16.947887+00:00"
+   "detected_at": "2026-09-14T12:43:17.338055+00:00"
   },
   {
    "buy_yes": {
@@ -650,7 +650,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-14T12:41:16.947920+00:00"
+   "detected_at": "2026-09-14T12:43:17.338073+00:00"
   }
  ]
 }
