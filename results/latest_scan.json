@@ -1,656 +1,446 @@
 {
- "scanned_at": "2026-09-14T16:28:15.305384+00:00",
+ "scanned_at": "2026-09-14T19:56:49.239774+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 237128,
+   "markets": 12728,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 24113,
-   "last_tick_age_s": 0.6
+   "markets": 7365,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 163,
-   "last_tick_age_s": 0.1
+   "markets": 100,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 350,
-   "last_tick_age_s": 12.2
+   "markets": 238,
+   "last_tick_age_s": 8.5
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 66,
-   "last_tick_age_s": 19901.0
+   "state": "OK",
+   "markets": 33,
+   "last_tick_age_s": 6.6
   }
  ],
  "totals": {
-  "markets_tracked": 261820,
-  "pairs_married": 67,
-  "arbitrages": 25
+  "markets_tracked": 20464,
+  "pairs_married": 17,
+  "arbitrages": 16
  },
  "stats": {
-  "commits": 163,
-  "gist_errors": 350,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 89,
-  "kalshi.sweeps": 1895,
-  "kalshi.ticks": 12648538,
-  "kalshi.updates": 6062267,
-  "kalshi.ws_ticks": 12648271,
-  "kalshi.ws_trades": 2113735,
-  "live_evals_fired": 182,
-  "novig.rest_updates": 6916,
-  "novig.sweeps": 1894,
-  "novig.ticks": 446697,
-  "novig.updates": 6916,
-  "pairs_blocked_antonym_date": 13633,
-  "pmglobal.rest_updates": 10477,
-  "pmglobal.sweeps": 1894,
-  "pmglobal.ticks": 224359,
-  "pmglobal.updates": 21781,
-  "pmglobal.ws_msgs": 3058114,
-  "pmglobal.ws_ticks": 34859,
-  "pmus.rest_updates": 91430,
-  "pmus.sweep_errors": 2,
-  "pmus.sweeps": 1893,
-  "pmus.ticks": 10487845,
-  "pmus.updates": 91430,
-  "pmus_x.last_count": 7303,
-  "pmus_x.sweeps": 1894,
-  "prophetx.ticks": 1954,
-  "prophetx.updates": 74,
-  "prophetx.ws_errors": 1185,
-  "px.evt_scanned": 40,
-  "pxboard.sweeps": 1894,
-  "supa_errors": 5797
+  "kalshi.sweeps": 11,
+  "kalshi.ticks": 81167,
+  "kalshi.updates": 47362,
+  "kalshi.ws_ticks": 81167,
+  "kalshi.ws_trades": 19450,
+  "live_evals_fired": 31,
+  "novig.rest_updates": 315,
+  "novig.sweeps": 10,
+  "novig.ticks": 2617,
+  "novig.updates": 315,
+  "pairs_blocked_antonym_date": 14,
+  "pmglobal.rest_updates": 243,
+  "pmglobal.sweeps": 10,
+  "pmglobal.ticks": 1473,
+  "pmglobal.updates": 399,
+  "pmglobal.ws_msgs": 31011,
+  "pmglobal.ws_ticks": 373,
+  "pmus.rest_updates": 7541,
+  "pmus.sweeps": 11,
+  "pmus.ticks": 88380,
+  "pmus.updates": 7541,
+  "pmus_x.last_count": 7365,
+  "pmus_x.sweeps": 12,
+  "prophetx.ticks": 346,
+  "prophetx.updates": 39,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 30,
+  "pxboard.sweeps": 10,
+  "supa_errors": 39
  },
  "arbitrages": [
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5833f5c6ea430742f227f885927c13b67164301ee66603352958ded825d2d238"
-    ],
-    "title": "Detroit Tigers vs. Toronto Blue Jays",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "800718"
-    ],
-    "title": "Will the Detroit Tigers cover 2.5 vs the Toronto Blue Jays in Detroit Tigers vs Toronto Blue Jays?",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-14T16:28:15.305109+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5833f5c6ea430742f227f885927c13b67164301ee66603352958ded825d2d238"
-    ],
-    "title": "Detroit Tigers vs. Toronto Blue Jays",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "800716"
-    ],
-    "title": "Will the Detroit Tigers cover 1.5 vs the Toronto Blue Jays in Detroit Tigers vs Toronto Blue Jays?",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-14T16:28:15.305215+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5833f5c6ea430742f227f885927c13b67164301ee66603352958ded825d2d238"
-    ],
-    "title": "Detroit Tigers vs. Toronto Blue Jays",
-    "ask_cents": 44
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "846953"
-    ],
-    "title": "Will the Detroit Tigers win the first 5 innings vs the Toronto Blue Jays?",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-14T16:28:15.305313+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "611093"
-    ],
-    "title": "Will Kenneth Walker III record 125+ rushing yards?",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a04bcb-2740-7f82-bd51-4cc735f87f05"
-    ],
-    "title": "Kenneth Walker III 59.5 RUSHING_YARDS (NFL)",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 51,
-   "edge_bps": 4900,
-   "detected_at": "2026-09-14T13:32:24.675124+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "611092"
-    ],
-    "title": "Will Kenneth Walker III record 110+ rushing yards?",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a04bcb-2740-7f82-bd51-4cc735f87f05"
-    ],
-    "title": "Kenneth Walker III 59.5 RUSHING_YARDS (NFL)",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-14T13:32:24.724665+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "712545"
-    ],
-    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
-    "ask_cents": 27
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "e428472590e39b8a4f1f066478222b0b"
+     "2c3b640caa60d34a4047cbe11bfdf783"
     ],
-    "title": "Newcastle United FC at Leeds United FC",
-    "no_cost_cents": 28
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 21
    },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-14T16:28:15.305273+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 33,
+   "edge_bps": 6700,
+   "detected_at": "2026-09-14T19:56:39.141379+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "712545"
-    ],
-    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
-    "ask_cents": 27
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "1ae5c997365762f286f7b06ce7304b6f"
+     "07c453935dda84bb785517ba72930a2c"
     ],
-    "title": "Newcastle United FC at Leeds United FC",
-    "no_cost_cents": 30
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-14T19:56:39.141365+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2ef66453d539f95e47afd68c6351ee84"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 29
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-14T19:56:39.141322+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56f9515070d74d33d6dd793210e65a25"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 47
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "no_cost_cents": 12
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-14T16:28:15.305134+00:00"
+   "detected_at": "2026-09-14T19:56:39.141358+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmus",
+    "venue": "prophetx",
     "key": [
-     "pmus",
-     "611098"
+     "prophetx",
+     "2c3b640caa60d34a4047cbe11bfdf783"
     ],
-    "title": "Will Kenneth Walker III record 40+ receiving yards?",
-    "ask_cents": 16
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 21
    },
    "buy_no": {
-    "venue": "novig",
+    "venue": "pmglobal",
     "key": [
-     "novig",
-     "01a0685c-ff16-7ee1-8654-8b31a3ac28b2"
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
     ],
-    "title": "Kenneth Walker III 17.5 RECEIVING_YARDS (NFL)",
-    "no_cost_cents": 48
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-14T19:56:39.301895+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "587a776b38dff854ab20e32c213f324f"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 53
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "no_cost_cents": 12
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-14T13:09:06.312163+00:00"
+   "detected_at": "2026-09-14T19:56:39.141348+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmus",
+    "venue": "prophetx",
     "key": [
-     "pmus",
-     "812946"
+     "prophetx",
+     "07c453935dda84bb785517ba72930a2c"
     ],
-    "title": "Petr Brunclik vs. Filippo Romano",
-    "ask_cents": 60
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xb4a77c9272a8a6b25b06cede4b454186773bdb29a5a4317e2e614d2aacdc2c51"
-    ],
-    "title": "Biella: Petr Brunclik vs Filippo Romano",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-14T16:27:48.703443+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "ask_cents": 66
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "847119"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 9th inning vs the Cincinnati Reds?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-14T16:28:15.305238+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "712545"
-    ],
-    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
     "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 65,
+   "edge_bps": 3500,
+   "detected_at": "2026-09-14T19:56:39.253829+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2ef66453d539f95e47afd68c6351ee84"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 29
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-14T19:56:39.253789+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "ask_cents": 62
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "fabe2fadda50cf806639c04584a74418"
+     "1829bc4248b9cb1445711d6ba288359a"
     ],
-    "title": "Newcastle United FC at Leeds United FC",
-    "no_cost_cents": 40
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 21
    },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-14T16:28:15.305187+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-14T19:56:39.253836+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f9fd294d818486f049f64bef2e5534d3"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 73
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-09-14T19:56:39.141393+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56f9515070d74d33d6dd793210e65a25"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 47
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-09-14T19:56:39.253811+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2f82204812f702148cbe4747227feae9"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 74
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-14T19:56:39.141386+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
     ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "ask_cents": 66
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "846539"
-    ],
-    "title": "Will the Los Angeles Dodgers cover 1.5 vs the Cincinnati Reds in Los Angeles Dodgers vs Cincinnati Reds?",
-    "no_cost_cents": 3
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-14T16:28:15.305308+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "ask_cents": 66
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "846540"
-    ],
-    "title": "Will the Los Angeles Dodgers cover 2.5 vs the Cincinnati Reds in Los Angeles Dodgers vs Cincinnati Reds?",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-14T16:28:15.305197+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "664874"
-    ],
-    "title": "Will Rashee Rice record 2+ touchdowns?",
-    "ask_cents": 6
-   },
-   "buy_no": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a04bd6-d064-7793-bc04-a29a62ddeb5e"
-    ],
-    "title": "Rashee Rice 0.5 TOUCHDOWNS (NFL)",
-    "no_cost_cents": 65
-   },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-14T16:07:39.372285+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "712545"
-    ],
-    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
-    "ask_cents": 27
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "ask_cents": 62
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "02a0b8f9442005707cf0546cb1376914"
+     "2f82204812f702148cbe4747227feae9"
     ],
-    "title": "Newcastle United FC at Leeds United FC",
-    "no_cost_cents": 43
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 27
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-14T16:28:15.305171+00:00"
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-14T19:56:39.141898+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmus",
+    "venue": "pmglobal",
     "key": [
-     "pmus",
-     "712545"
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
     ],
-    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
-    "ask_cents": 27
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "ask_cents": 62
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "d40ee25d2eaccdad6080ef865a146522"
+     "f9fd294d818486f049f64bef2e5534d3"
     ],
-    "title": "Newcastle United FC at Leeds United FC",
-    "no_cost_cents": 43
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 28
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-14T16:28:15.305290+00:00"
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-14T19:56:39.199289+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmus",
+    "venue": "prophetx",
     "key": [
-     "pmus",
-     "611091"
+     "prophetx",
+     "587a776b38dff854ab20e32c213f324f"
     ],
-    "title": "Will Kenneth Walker III record 90+ rushing yards?",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a04bcb-2740-7f82-bd51-4cc735f87f05"
-    ],
-    "title": "Kenneth Walker III 59.5 RUSHING_YARDS (NFL)",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-14T13:32:24.675151+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "ask_cents": 66
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "846905"
-    ],
-    "title": "Will the Los Angeles Dodgers win the first 5 innings vs the Cincinnati Reds?",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-14T16:28:15.305268+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "847074"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 4th inning vs the Cincinnati Reds?",
-    "ask_cents": 40
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 53
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
     ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "no_cost_cents": 34
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "no_cost_cents": 38
    },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-14T16:28:15.305117+00:00"
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-14T19:56:39.253820+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmus",
+    "venue": "prophetx",
     "key": [
-     "pmus",
-     "847055"
+     "prophetx",
+     "1829bc4248b9cb1445711d6ba288359a"
     ],
-    "title": "Will the Los Angeles Dodgers win the 2nd inning vs the Cincinnati Reds?",
-    "ask_cents": 40
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "ask_cents": 80
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
     ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "no_cost_cents": 34
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "no_cost_cents": 12
    },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-14T16:28:15.305177+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "847092"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 6th inning vs the Cincinnati Reds?",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-14T16:28:15.305183+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "847065"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 3rd inning vs the Cincinnati Reds?",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-14T16:28:15.305193+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "847046"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 1st inning vs the Cincinnati Reds?",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-14T16:28:15.305261+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "847083"
-    ],
-    "title": "Will the Los Angeles Dodgers win the 5th inning vs the Cincinnati Reds?",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x0bf1704fe5f702a5ee6ed587fcaebebe07c8397c64c68b256bfc834e2fed7217"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-14T16:28:15.305285+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "novig",
-    "key": [
-     "novig",
-     "01a05794-3eee-7971-8176-859d093e37c3"
-    ],
-    "title": "Courtland Sutton 42.5 RECEIVING_YARDS (NFL)",
-    "ask_cents": 49
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "611057"
-    ],
-    "title": "Will Courtland Sutton record 25+ receiving yards?",
-    "no_cost_cents": 26
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-14T16:09:55.037080+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-14T19:56:39.141372+00:00"
   }
  ]
 }
