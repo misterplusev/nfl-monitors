@@ -1,81 +1,150 @@
 {
- "scanned_at": "2026-09-14T10:00:12.048419+00:00",
+ "scanned_at": "2026-09-14T10:02:13.577303+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 282.7,
+ "loop_uptime_min": 284.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 125008,
+   "markets": 126311,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 19951,
-   "last_tick_age_s": 2.7
+   "markets": 20838,
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 130,
-   "last_tick_age_s": 1.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 263,
-   "last_tick_age_s": 0.5
+   "last_tick_age_s": 6.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 66,
-   "last_tick_age_s": 16660.4
+   "last_tick_age_s": 16781.9
   }
  ],
  "totals": {
-  "markets_tracked": 145418,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 147608,
+  "pairs_married": 5,
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 137,
-  "gist_errors": 296,
+  "commits": 138,
+  "gist_errors": 298,
   "hot_errors": 0,
-  "kalshi.rest_updates": 217,
-  "kalshi.sweeps": 1541,
-  "kalshi.ticks": 6799482,
-  "kalshi.updates": 3314647,
-  "kalshi.ws_ticks": 6798638,
-  "kalshi.ws_trades": 1314025,
+  "kalshi.rest_updates": 457,
+  "kalshi.sweeps": 1555,
+  "kalshi.ticks": 6860226,
+  "kalshi.updates": 3343585,
+  "kalshi.ws_ticks": 6858742,
+  "kalshi.ws_trades": 1320701,
   "live_evals_fired": 27,
-  "novig.rest_updates": 2328,
-  "novig.sweeps": 1541,
-  "novig.ticks": 351342,
-  "novig.updates": 2328,
-  "pairs_blocked_antonym_date": 6897,
-  "pmglobal.rest_updates": 5909,
-  "pmglobal.sweeps": 1541,
-  "pmglobal.ticks": 177116,
-  "pmglobal.updates": 11844,
-  "pmglobal.ws_msgs": 2225475,
-  "pmglobal.ws_ticks": 22916,
-  "pmus.rest_updates": 30548,
-  "pmus.sweeps": 1541,
-  "pmus.ticks": 11187325,
-  "pmus.updates": 30548,
-  "pmus_x.last_count": 7449,
-  "pmus_x.sweeps": 1542,
+  "novig.rest_updates": 2367,
+  "novig.sweeps": 1554,
+  "novig.ticks": 354304,
+  "novig.updates": 2367,
+  "pairs_blocked_antonym_date": 7016,
+  "pmglobal.rest_updates": 5962,
+  "pmglobal.sweeps": 1554,
+  "pmglobal.ticks": 178626,
+  "pmglobal.updates": 11949,
+  "pmglobal.ws_msgs": 2239799,
+  "pmglobal.ws_ticks": 23126,
+  "pmus.rest_updates": 31435,
+  "pmus.sweeps": 1555,
+  "pmus.ticks": 11271311,
+  "pmus.updates": 31435,
+  "pmus_x.last_count": 3749,
+  "pmus_x.sweeps": 1556,
   "prophetx.ticks": 1782,
   "prophetx.updates": 74,
-  "prophetx.ws_errors": 1016,
+  "prophetx.ws_errors": 1023,
   "px.evt_scanned": 66,
-  "pxboard.sweeps": 1540,
-  "supa_errors": 4808
+  "pxboard.sweeps": 1554,
+  "supa_errors": 4849
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "837782"
+    ],
+    "title": "Highest temperature in NYC on September 14?",
+    "ask_cents": 1
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x118959cdb97704ff8ed5d0769cd8a34ec8c54b4e1bcaeb325eb93ab095e96733"
+    ],
+    "title": "Will the highest temperature in Hong Kong be 28\u00b0C on September 14?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 3,
+   "edge_bps": 9700,
+   "detected_at": "2026-09-14T10:02:13.577216+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "837784"
+    ],
+    "title": "Highest temperature in NYC on September 14?",
+    "ask_cents": 31
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x118959cdb97704ff8ed5d0769cd8a34ec8c54b4e1bcaeb325eb93ab095e96733"
+    ],
+    "title": "Will the highest temperature in Hong Kong be 28\u00b0C on September 14?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 34,
+   "edge_bps": 6600,
+   "detected_at": "2026-09-14T10:02:13.577246+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "837783"
+    ],
+    "title": "Highest temperature in NYC on September 14?",
+    "ask_cents": 70
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x118959cdb97704ff8ed5d0769cd8a34ec8c54b4e1bcaeb325eb93ab095e96733"
+    ],
+    "title": "Will the highest temperature in Hong Kong be 28\u00b0C on September 14?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-14T10:02:13.577236+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmus",
@@ -97,7 +166,7 @@
    },
    "total_cost_cents": 74,
    "edge_bps": 2600,
-   "detected_at": "2026-09-14T10:00:12.048353+00:00"
+   "detected_at": "2026-09-14T10:02:13.577254+00:00"
   },
   {
    "buy_yes": {
