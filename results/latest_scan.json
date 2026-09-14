@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-14T12:47:26.650422+00:00",
+ "scanned_at": "2026-09-14T12:49:29.176916+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 114.2,
+ "loop_uptime_min": 116.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 76576,
+   "markets": 77635,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 23990,
-   "last_tick_age_s": 0.0
+   "markets": 23999,
+   "last_tick_age_s": 2.9
   },
   {
    "venue": "pmglobal",
@@ -26,55 +26,55 @@
    "venue": "novig",
    "state": "OK",
    "markets": 277,
-   "last_tick_age_s": 11.3
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 66,
-   "last_tick_age_s": 6652.2
+   "last_tick_age_s": 6774.7
   }
  ],
  "totals": {
-  "markets_tracked": 101030,
+  "markets_tracked": 102098,
   "pairs_married": 35,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 55,
-  "gist_errors": 120,
+  "commits": 56,
+  "gist_errors": 123,
   "hot_errors": 0,
   "kalshi.rest_updates": 89,
-  "kalshi.sweeps": 802,
-  "kalshi.ticks": 3555675,
-  "kalshi.updates": 1762774,
-  "kalshi.ws_ticks": 3555408,
-  "kalshi.ws_trades": 522358,
-  "live_evals_fired": 19,
-  "novig.rest_updates": 2465,
-  "novig.sweeps": 801,
-  "novig.ticks": 187469,
-  "novig.updates": 2465,
-  "pairs_blocked_antonym_date": 2690,
-  "pmglobal.rest_updates": 3932,
-  "pmglobal.sweeps": 801,
-  "pmglobal.ticks": 93495,
-  "pmglobal.updates": 8756,
-  "pmglobal.ws_msgs": 1421615,
-  "pmglobal.ws_ticks": 13295,
-  "pmus.rest_updates": 51433,
+  "kalshi.sweeps": 813,
+  "kalshi.ticks": 3625997,
+  "kalshi.updates": 1798925,
+  "kalshi.ws_ticks": 3625730,
+  "kalshi.ws_trades": 532006,
+  "live_evals_fired": 20,
+  "novig.rest_updates": 2508,
+  "novig.sweeps": 813,
+  "novig.ticks": 190300,
+  "novig.updates": 2508,
+  "pairs_blocked_antonym_date": 2795,
+  "pmglobal.rest_updates": 4004,
+  "pmglobal.sweeps": 813,
+  "pmglobal.ticks": 94896,
+  "pmglobal.updates": 8889,
+  "pmglobal.ws_msgs": 1431087,
+  "pmglobal.ws_ticks": 13496,
+  "pmus.rest_updates": 52545,
   "pmus.sweep_errors": 1,
-  "pmus.sweeps": 801,
-  "pmus.ticks": 2520865,
-  "pmus.updates": 51433,
-  "pmus_x.last_count": 7097,
-  "pmus_x.sweeps": 802,
+  "pmus.sweeps": 812,
+  "pmus.ticks": 2599012,
+  "pmus.updates": 52545,
+  "pmus_x.last_count": 7111,
+  "pmus_x.sweeps": 813,
   "prophetx.ticks": 1954,
   "prophetx.updates": 74,
-  "prophetx.ws_errors": 423,
+  "prophetx.ws_errors": 431,
   "px.evt_scanned": 40,
-  "pxboard.sweeps": 801,
-  "supa_errors": 2413
+  "pxboard.sweeps": 812,
+  "supa_errors": 2447
  },
  "arbitrages": [
   {
@@ -144,7 +144,7 @@
    },
    "total_cost_cents": 57,
    "edge_bps": 4300,
-   "detected_at": "2026-09-14T12:47:26.650344+00:00"
+   "detected_at": "2026-09-14T12:49:29.176834+00:00"
   },
   {
    "buy_yes": {
@@ -167,7 +167,7 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-14T12:47:26.650277+00:00"
+   "detected_at": "2026-09-14T12:49:29.176763+00:00"
   },
   {
    "buy_yes": {
@@ -190,7 +190,30 @@
    },
    "total_cost_cents": 66,
    "edge_bps": 3400,
-   "detected_at": "2026-09-14T12:47:26.650366+00:00"
+   "detected_at": "2026-09-14T12:49:29.176858+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x8d2e270e17fcaece7d60e222442d75206894fef808b0633cc96ea7ef845870c7"
+    ],
+    "title": "Guangzhou: Elias Ymer vs Semen Pankin",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "812365"
+    ],
+    "title": "Elias Ymer vs. Semen Pankin",
+    "no_cost_cents": 30
+   },
+   "total_cost_cents": 68,
+   "edge_bps": 3200,
+   "detected_at": "2026-09-14T12:47:29.227400+00:00"
   },
   {
    "buy_yes": {
@@ -213,7 +236,7 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-14T12:47:26.650310+00:00"
+   "detected_at": "2026-09-14T12:49:29.176797+00:00"
   },
   {
    "buy_yes": {
@@ -259,7 +282,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-14T12:47:26.650306+00:00"
+   "detected_at": "2026-09-14T12:49:29.176793+00:00"
   },
   {
    "buy_yes": {
@@ -282,7 +305,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-14T12:47:26.650355+00:00"
+   "detected_at": "2026-09-14T12:49:29.176846+00:00"
   },
   {
    "buy_yes": {
@@ -309,29 +332,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8d2e270e17fcaece7d60e222442d75206894fef808b0633cc96ea7ef845870c7"
-    ],
-    "title": "Guangzhou: Elias Ymer vs Semen Pankin",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "812365"
-    ],
-    "title": "Elias Ymer vs. Semen Pankin",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-14T12:42:23.521128+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "novig",
     "key": [
      "novig",
@@ -351,7 +351,7 @@
    },
    "total_cost_cents": 76,
    "edge_bps": 2400,
-   "detected_at": "2026-09-14T12:47:26.650290+00:00"
+   "detected_at": "2026-09-14T12:49:29.176776+00:00"
   },
   {
    "buy_yes": {
@@ -397,7 +397,7 @@
    },
    "total_cost_cents": 80,
    "edge_bps": 2000,
-   "detected_at": "2026-09-14T12:47:26.650315+00:00"
+   "detected_at": "2026-09-14T12:49:29.176803+00:00"
   },
   {
    "buy_yes": {
@@ -466,7 +466,7 @@
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-09-14T12:47:26.650362+00:00"
+   "detected_at": "2026-09-14T12:49:29.176853+00:00"
   },
   {
    "buy_yes": {
@@ -512,7 +512,7 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-14T12:47:26.650257+00:00"
+   "detected_at": "2026-09-14T12:49:29.176741+00:00"
   },
   {
    "buy_yes": {
@@ -535,7 +535,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-14T12:47:26.650322+00:00"
+   "detected_at": "2026-09-14T12:49:29.176810+00:00"
   },
   {
    "buy_yes": {
@@ -558,7 +558,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-14T12:47:26.650301+00:00"
+   "detected_at": "2026-09-14T12:49:29.176788+00:00"
   },
   {
    "buy_yes": {
@@ -581,7 +581,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-14T12:47:26.650327+00:00"
+   "detected_at": "2026-09-14T12:49:29.176815+00:00"
   },
   {
    "buy_yes": {
@@ -627,7 +627,7 @@
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-14T12:47:26.650333+00:00"
+   "detected_at": "2026-09-14T12:49:29.176822+00:00"
   },
   {
    "buy_yes": {
@@ -650,7 +650,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-14T12:47:26.650348+00:00"
+   "detected_at": "2026-09-14T12:49:29.176838+00:00"
   }
  ]
 }
