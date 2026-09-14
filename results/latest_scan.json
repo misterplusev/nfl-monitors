@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-14T13:46:27.685847+00:00",
+ "scanned_at": "2026-09-14T13:48:28.535396+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 173.2,
+ "loop_uptime_min": 175.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 112020,
+   "markets": 113347,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 24077,
-   "last_tick_age_s": 0.5
+   "markets": 24080,
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 129,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 290,
-   "last_tick_age_s": 13.1
+   "markets": 292,
+   "last_tick_age_s": 9.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 66,
-   "last_tick_age_s": 10193.2
+   "last_tick_age_s": 10314.1
   }
  ],
  "totals": {
-  "markets_tracked": 136582,
-  "pairs_married": 53,
+  "markets_tracked": 137914,
+  "pairs_married": 52,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 84,
-  "gist_errors": 182,
+  "commits": 85,
+  "gist_errors": 184,
   "hot_errors": 0,
   "kalshi.rest_updates": 89,
-  "kalshi.sweeps": 1111,
-  "kalshi.ticks": 5741085,
-  "kalshi.updates": 2845380,
-  "kalshi.ws_ticks": 5740818,
-  "kalshi.ws_trades": 877758,
-  "live_evals_fired": 53,
-  "novig.rest_updates": 3643,
-  "novig.sweeps": 1110,
-  "novig.ticks": 260331,
-  "novig.updates": 3643,
-  "pairs_blocked_antonym_date": 5460,
-  "pmglobal.rest_updates": 5639,
-  "pmglobal.sweeps": 1110,
-  "pmglobal.ticks": 129956,
-  "pmglobal.updates": 12133,
-  "pmglobal.ws_msgs": 1815966,
-  "pmglobal.ws_ticks": 18856,
-  "pmus.rest_updates": 67569,
+  "kalshi.sweeps": 1122,
+  "kalshi.ticks": 5827761,
+  "kalshi.updates": 2887814,
+  "kalshi.ws_ticks": 5827494,
+  "kalshi.ws_trades": 890720,
+  "live_evals_fired": 57,
+  "novig.rest_updates": 3688,
+  "novig.sweeps": 1121,
+  "novig.ticks": 262927,
+  "novig.updates": 3688,
+  "pairs_blocked_antonym_date": 5572,
+  "pmglobal.rest_updates": 5720,
+  "pmglobal.sweeps": 1122,
+  "pmglobal.ticks": 131352,
+  "pmglobal.updates": 12280,
+  "pmglobal.ws_msgs": 1832911,
+  "pmglobal.ws_ticks": 19052,
+  "pmus.rest_updates": 67861,
   "pmus.sweep_errors": 1,
-  "pmus.sweeps": 1110,
-  "pmus.ticks": 4760070,
-  "pmus.updates": 67569,
-  "pmus_x.last_count": 7295,
-  "pmus_x.sweeps": 1111,
+  "pmus.sweeps": 1121,
+  "pmus.ticks": 4840231,
+  "pmus.updates": 67861,
+  "pmus_x.last_count": 7285,
+  "pmus_x.sweeps": 1122,
   "prophetx.ticks": 1954,
   "prophetx.updates": 74,
-  "prophetx.ws_errors": 631,
+  "prophetx.ws_errors": 639,
   "px.evt_scanned": 40,
-  "pxboard.sweeps": 1110,
-  "supa_errors": 3368
+  "pxboard.sweeps": 1121,
+  "supa_errors": 3405
  },
  "arbitrages": [
   {
@@ -98,7 +98,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-14T13:46:27.685644+00:00"
+   "detected_at": "2026-09-14T13:48:28.535158+00:00"
   },
   {
    "buy_yes": {
@@ -121,7 +121,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-14T13:46:27.685713+00:00"
+   "detected_at": "2026-09-14T13:48:28.535246+00:00"
   },
   {
    "buy_yes": {
@@ -144,7 +144,7 @@
    },
    "total_cost_cents": 49,
    "edge_bps": 5100,
-   "detected_at": "2026-09-14T13:46:27.685774+00:00"
+   "detected_at": "2026-09-14T13:48:28.535321+00:00"
   },
   {
    "buy_yes": {
@@ -213,30 +213,7 @@
    },
    "total_cost_cents": 57,
    "edge_bps": 4300,
-   "detected_at": "2026-09-14T13:46:27.685743+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8d2e270e17fcaece7d60e222442d75206894fef808b0633cc96ea7ef845870c7"
-    ],
-    "title": "Guangzhou: Elias Ymer vs Semen Pankin",
-    "ask_cents": 27
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "812365"
-    ],
-    "title": "Elias Ymer vs. Semen Pankin",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-14T13:42:30.443346+00:00"
+   "detected_at": "2026-09-14T13:48:28.535282+00:00"
   },
   {
    "buy_yes": {
@@ -259,7 +236,30 @@
    },
    "total_cost_cents": 59,
    "edge_bps": 4100,
-   "detected_at": "2026-09-14T13:46:27.685655+00:00"
+   "detected_at": "2026-09-14T13:48:28.535172+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x8d2e270e17fcaece7d60e222442d75206894fef808b0633cc96ea7ef845870c7"
+    ],
+    "title": "Guangzhou: Elias Ymer vs Semen Pankin",
+    "ask_cents": 28
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "812365"
+    ],
+    "title": "Elias Ymer vs. Semen Pankin",
+    "no_cost_cents": 30
+   },
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-14T13:47:35.949245+00:00"
   },
   {
    "buy_yes": {
@@ -286,29 +286,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x76f33d5abb2b4224dc96abbcbdbdde23d761a2f4f6954dffe2d8d9e20031e201"
-    ],
-    "title": "Biella: Jay Clarke vs Jonas Forejtek",
-    "ask_cents": 30
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "812950"
-    ],
-    "title": "Jay Clarke vs. Jonas Forejtek",
-    "no_cost_cents": 37
-   },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-14T13:42:30.523757+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmus",
     "key": [
      "pmus",
@@ -328,7 +305,7 @@
    },
    "total_cost_cents": 69,
    "edge_bps": 3100,
-   "detected_at": "2026-09-14T13:46:27.685694+00:00"
+   "detected_at": "2026-09-14T13:48:28.535222+00:00"
   },
   {
    "buy_yes": {
@@ -374,7 +351,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-14T13:46:27.685689+00:00"
+   "detected_at": "2026-09-14T13:48:28.535215+00:00"
   },
   {
    "buy_yes": {
@@ -397,7 +374,7 @@
    },
    "total_cost_cents": 72,
    "edge_bps": 2800,
-   "detected_at": "2026-09-14T13:46:27.685757+00:00"
+   "detected_at": "2026-09-14T13:48:28.535300+00:00"
   },
   {
    "buy_yes": {
@@ -424,26 +401,49 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x76f33d5abb2b4224dc96abbcbdbdde23d761a2f4f6954dffe2d8d9e20031e201"
+    ],
+    "title": "Biella: Jay Clarke vs Jonas Forejtek",
+    "ask_cents": 38
+   },
+   "buy_no": {
     "venue": "pmus",
     "key": [
      "pmus",
-     "842551"
+     "812950"
     ],
-    "title": "Barbora Palicova vs. Gina Feistel",
-    "ask_cents": 73
+    "title": "Jay Clarke vs. Jonas Forejtek",
+    "no_cost_cents": 37
+   },
+   "total_cost_cents": 77,
+   "edge_bps": 2300,
+   "detected_at": "2026-09-14T13:47:36.006920+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "812363"
+    ],
+    "title": "Kaichi Uchida vs. Rio Noguchi",
+    "ask_cents": 18
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xea7431f4b003efe127578c25e155c06cfcd64e76ef185749272b83e4cbd3156f"
+     "0x21381f8ad69280d14e49104d57311fcda79aebd03b15340e97066222cbaddbd4"
     ],
-    "title": "Ljubljana: Barbora Palicova vs Gina Feistel",
-    "no_cost_cents": 1
+    "title": "Guangzhou: Kaichi Uchida vs Rio Noguchi",
+    "no_cost_cents": 59
    },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-14T13:42:30.584713+00:00"
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-14T13:47:36.066875+00:00"
   },
   {
    "buy_yes": {
@@ -467,29 +467,6 @@
    "total_cost_cents": 79,
    "edge_bps": 2100,
    "detected_at": "2026-09-14T13:32:24.675167+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "812363"
-    ],
-    "title": "Kaichi Uchida vs. Rio Noguchi",
-    "ask_cents": 18
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x21381f8ad69280d14e49104d57311fcda79aebd03b15340e97066222cbaddbd4"
-    ],
-    "title": "Guangzhou: Kaichi Uchida vs Rio Noguchi",
-    "no_cost_cents": 60
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-14T13:17:26.828835+00:00"
   },
   {
    "buy_yes": {
@@ -650,7 +627,30 @@
    },
    "total_cost_cents": 87,
    "edge_bps": 1300,
-   "detected_at": "2026-09-14T13:46:27.685650+00:00"
+   "detected_at": "2026-09-14T13:48:28.535165+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "712545"
+    ],
+    "title": "Will Newcastle United FC lead Leeds United FC at halftime?",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9f1bb3ed474f1bff594b6133b2d8b9c0"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "no_cost_cents": 59
+   },
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-14T13:48:28.535233+00:00"
   }
  ]
 }
