@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-14T10:36:34.570393+00:00",
+ "scanned_at": "2026-09-14T10:38:35.356792+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 319.0,
+ "loop_uptime_min": 321.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 132396,
-   "last_tick_age_s": 0.1
+   "markets": 132718,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 20838,
-   "last_tick_age_s": 2.9
+   "last_tick_age_s": 2.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 133,
-   "last_tick_age_s": 0.5
+   "last_tick_age_s": 0.8
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 266,
-   "last_tick_age_s": 0.3
+   "markets": 267,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 66,
-   "last_tick_age_s": 18842.9
+   "last_tick_age_s": 18963.7
   }
  ],
  "totals": {
-  "markets_tracked": 153699,
-  "pairs_married": 12,
-  "arbitrages": 12
+  "markets_tracked": 154022,
+  "pairs_married": 5,
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 155,
-  "gist_errors": 335,
+  "commits": 156,
+  "gist_errors": 337,
   "hot_errors": 0,
   "kalshi.rest_updates": 457,
-  "kalshi.sweeps": 1858,
-  "kalshi.ticks": 7829766,
-  "kalshi.updates": 3820301,
-  "kalshi.ws_ticks": 7828282,
-  "kalshi.ws_trades": 1440512,
+  "kalshi.sweeps": 1876,
+  "kalshi.ticks": 7882234,
+  "kalshi.updates": 3845185,
+  "kalshi.ws_ticks": 7880750,
+  "kalshi.ws_trades": 1447244,
   "live_evals_fired": 56,
-  "novig.rest_updates": 2952,
-  "novig.sweeps": 1858,
-  "novig.ticks": 423997,
-  "novig.updates": 2952,
-  "pairs_blocked_antonym_date": 9669,
-  "pmglobal.rest_updates": 6898,
-  "pmglobal.sweeps": 1858,
-  "pmglobal.ticks": 212045,
-  "pmglobal.updates": 13886,
-  "pmglobal.ws_msgs": 2508222,
-  "pmglobal.ws_ticks": 26145,
+  "novig.rest_updates": 2989,
+  "novig.sweeps": 1876,
+  "novig.ticks": 428155,
+  "novig.updates": 2989,
+  "pairs_blocked_antonym_date": 9823,
+  "pmglobal.rest_updates": 6967,
+  "pmglobal.sweeps": 1876,
+  "pmglobal.ticks": 214026,
+  "pmglobal.updates": 14015,
+  "pmglobal.ws_msgs": 2521697,
+  "pmglobal.ws_ticks": 26326,
   "pmus.rest_updates": 31435,
-  "pmus.sweeps": 1858,
+  "pmus.sweeps": 1876,
   "pmus.ticks": 11303687,
   "pmus.updates": 31435,
   "pmus_x.last_count": 0,
-  "pmus_x.sweeps": 1859,
+  "pmus_x.sweeps": 1877,
   "prophetx.ticks": 1782,
   "prophetx.updates": 74,
-  "prophetx.ws_errors": 1159,
+  "prophetx.ws_errors": 1167,
   "px.evt_scanned": 66,
-  "pxboard.sweeps": 1857,
-  "supa_errors": 5737
+  "pxboard.sweeps": 1875,
+  "supa_errors": 5789
  },
  "arbitrages": [
   {
@@ -97,168 +97,7 @@
    },
    "total_cost_cents": 3,
    "edge_bps": 9700,
-   "detected_at": "2026-09-14T10:36:34.570281+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x52bc88438c6d0123b8ebf4c79ab0d8dda65567abb3cad8f910156802829a4a6d"
-    ],
-    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 3 Winner",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "835560"
-    ],
-    "title": "Will the total in Dplus KIA Challengers vs. KT Rolster Challengers - Game 3 be more than 32.5?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-14T10:31:56.141094+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x52bc88438c6d0123b8ebf4c79ab0d8dda65567abb3cad8f910156802829a4a6d"
-    ],
-    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 3 Winner",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "844871"
-    ],
-    "title": "Will the total in Dplus KIA Challengers vs. KT Rolster Challengers - Game 4 be more than 28.5?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-14T10:31:56.193871+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x52bc88438c6d0123b8ebf4c79ab0d8dda65567abb3cad8f910156802829a4a6d"
-    ],
-    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 3 Winner",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "835550"
-    ],
-    "title": "Will the total in Dplus KIA Challengers vs. KT Rolster Challengers - Game 2 be more than 32.5?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-14T10:31:56.232282+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x52bc88438c6d0123b8ebf4c79ab0d8dda65567abb3cad8f910156802829a4a6d"
-    ],
-    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 3 Winner",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "842324"
-    ],
-    "title": "Will the total in Dplus KIA Challengers vs. KT Rolster Challengers - Game 3 be more than 30.5?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-14T10:31:56.279275+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x52bc88438c6d0123b8ebf4c79ab0d8dda65567abb3cad8f910156802829a4a6d"
-    ],
-    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 3 Winner",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "835548"
-    ],
-    "title": "Will the total in Dplus KIA Challengers vs. KT Rolster Challengers - Game 2 be more than 31.5?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-14T10:31:56.328710+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x52bc88438c6d0123b8ebf4c79ab0d8dda65567abb3cad8f910156802829a4a6d"
-    ],
-    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 3 Winner",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "835558"
-    ],
-    "title": "Will the total in Dplus KIA Challengers vs. KT Rolster Challengers - Game 3 be more than 31.5?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-14T10:31:56.366605+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x52bc88438c6d0123b8ebf4c79ab0d8dda65567abb3cad8f910156802829a4a6d"
-    ],
-    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 3 Winner",
-    "ask_cents": 15
-   },
-   "buy_no": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "835552"
-    ],
-    "title": "Will the total in Dplus KIA Challengers vs. KT Rolster Challengers - Game 2 be more than 33.5?",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 17,
-   "edge_bps": 8300,
-   "detected_at": "2026-09-14T10:31:56.426210+00:00"
+   "detected_at": "2026-09-14T10:38:35.356707+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +120,7 @@
    },
    "total_cost_cents": 34,
    "edge_bps": 6600,
-   "detected_at": "2026-09-14T10:36:34.570325+00:00"
+   "detected_at": "2026-09-14T10:38:35.356740+00:00"
   },
   {
    "buy_yes": {
@@ -304,7 +143,7 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-14T10:36:34.570311+00:00"
+   "detected_at": "2026-09-14T10:38:35.356728+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +189,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-14T10:11:37.497828+00:00"
+   "detected_at": "2026-09-14T10:38:27.588004+00:00"
   }
  ]
 }
