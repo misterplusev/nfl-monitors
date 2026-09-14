@@ -1,128 +1,82 @@
 {
- "scanned_at": "2026-09-14T20:43:56.586077+00:00",
+ "scanned_at": "2026-09-14T20:45:58.589902+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 49.2,
+ "loop_uptime_min": 51.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 105144,
+   "markets": 107724,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7365,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 4.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 113,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 3.3
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 259,
-   "last_tick_age_s": 15.9
+   "last_tick_age_s": 1.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 33,
-   "last_tick_age_s": 2634.2
+   "last_tick_age_s": 2756.2
   }
  ],
  "totals": {
-  "markets_tracked": 112914,
+  "markets_tracked": 115494,
   "pairs_married": 22,
-  "arbitrages": 22
+  "arbitrages": 21
  },
  "stats": {
-  "commits": 23,
-  "gist_errors": 52,
+  "commits": 24,
+  "gist_errors": 54,
   "hot_errors": 0,
-  "kalshi.sweeps": 253,
-  "kalshi.ticks": 1999142,
-  "kalshi.updates": 1033748,
-  "kalshi.ws_ticks": 1999142,
-  "kalshi.ws_trades": 418992,
-  "live_evals_fired": 3120,
-  "novig.rest_updates": 1825,
-  "novig.sweeps": 252,
-  "novig.ticks": 59792,
-  "novig.updates": 1825,
-  "pairs_blocked_antonym_date": 316,
-  "pmglobal.rest_updates": 2700,
-  "pmglobal.sweeps": 252,
-  "pmglobal.ticks": 32736,
-  "pmglobal.updates": 5780,
-  "pmglobal.ws_errors": 4,
-  "pmglobal.ws_msgs": 984182,
-  "pmglobal.ws_ticks": 7436,
-  "pmus.rest_updates": 11253,
+  "kalshi.sweeps": 262,
+  "kalshi.ticks": 2080947,
+  "kalshi.updates": 1073677,
+  "kalshi.ws_ticks": 2080947,
+  "kalshi.ws_trades": 435905,
+  "live_evals_fired": 3325,
+  "novig.rest_updates": 1875,
+  "novig.sweeps": 262,
+  "novig.ticks": 62189,
+  "novig.updates": 1875,
+  "pairs_blocked_antonym_date": 328,
+  "pmglobal.rest_updates": 2782,
+  "pmglobal.sweeps": 262,
+  "pmglobal.ticks": 33987,
+  "pmglobal.updates": 5958,
+  "pmglobal.ws_errors": 5,
+  "pmglobal.ws_msgs": 1019017,
+  "pmglobal.ws_ticks": 7687,
+  "pmus.rest_updates": 11345,
   "pmus.sweep_errors": 1,
-  "pmus.sweeps": 252,
-  "pmus.ticks": 1866302,
-  "pmus.updates": 11253,
+  "pmus.sweeps": 261,
+  "pmus.ticks": 1932587,
+  "pmus.updates": 11345,
   "pmus_x.last_count": 7365,
-  "pmus_x.sweeps": 253,
+  "pmus_x.sweeps": 262,
   "prophetx.ticks": 875,
   "prophetx.updates": 89,
-  "prophetx.ws_errors": 170,
+  "prophetx.ws_errors": 177,
   "px.evt_scanned": 31,
-  "pxboard.sweeps": 252,
-  "supa_errors": 847
+  "pxboard.sweeps": 262,
+  "supa_errors": 879
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1829bc4248b9cb1445711d6ba288359a"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 42,
-   "edge_bps": 5800,
-   "detected_at": "2026-09-14T20:40:42.522535+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2f82204812f702148cbe4747227feae9"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "no_cost_cents": 27
-   },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-09-14T20:40:42.318658+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -131,7 +85,7 @@
      "0xf4bb4d6286157c0c388d0a2a6875f5fdca5ec5a7834f8c912f9c1ae3fcba4904"
     ],
     "title": "Leeds United FC vs. Newcastle United FC: O/U 4.5",
-    "ask_cents": 46
+    "ask_cents": 30
    },
    "buy_no": {
     "venue": "prophetx",
@@ -142,9 +96,9 @@
     "title": "Newcastle United FC at Leeds United FC",
     "no_cost_cents": 3
    },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-14T20:38:49.739820+00:00"
+   "total_cost_cents": 33,
+   "edge_bps": 6700,
+   "detected_at": "2026-09-14T20:43:59.314228+00:00"
   },
   {
    "buy_yes": {
@@ -154,7 +108,7 @@
      "0xf4bb4d6286157c0c388d0a2a6875f5fdca5ec5a7834f8c912f9c1ae3fcba4904"
     ],
     "title": "Leeds United FC vs. Newcastle United FC: O/U 4.5",
-    "ask_cents": 46
+    "ask_cents": 30
    },
    "buy_no": {
     "venue": "prophetx",
@@ -165,9 +119,9 @@
     "title": "Newcastle United FC at Leeds United FC",
     "no_cost_cents": 3
    },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-14T20:38:49.572305+00:00"
+   "total_cost_cents": 33,
+   "edge_bps": 6700,
+   "detected_at": "2026-09-14T20:43:59.138201+00:00"
   },
   {
    "buy_yes": {
@@ -177,7 +131,53 @@
      "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
     ],
     "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
-    "ask_cents": 20
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1829bc4248b9cb1445711d6ba288359a"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 34,
+   "edge_bps": 6600,
+   "detected_at": "2026-09-14T20:44:54.661820+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2f82204812f702148cbe4747227feae9"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-14T20:44:54.446077+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "prophetx",
@@ -188,9 +188,78 @@
     "title": "Real Betis Balompi\u00e9 at Villarreal CF",
     "no_cost_cents": 30
    },
-   "total_cost_cents": 50,
-   "edge_bps": 5000,
-   "detected_at": "2026-09-14T20:40:42.152700+00:00"
+   "total_cost_cents": 42,
+   "edge_bps": 5800,
+   "detected_at": "2026-09-14T20:44:54.287905+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "587a776b38dff854ab20e32c213f324f"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-14T20:44:54.340687+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56f9515070d74d33d6dd793210e65a25"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 52
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-14T20:44:54.561170+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1829bc4248b9cb1445711d6ba288359a"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-14T20:45:45.865260+00:00"
   },
   {
    "buy_yes": {
@@ -209,11 +278,11 @@
      "0xf4bb4d6286157c0c388d0a2a6875f5fdca5ec5a7834f8c912f9c1ae3fcba4904"
     ],
     "title": "Leeds United FC vs. Newcastle United FC: O/U 4.5",
-    "no_cost_cents": 54
+    "no_cost_cents": 70
    },
-   "total_cost_cents": 55,
-   "edge_bps": 4500,
-   "detected_at": "2026-09-14T20:38:49.689339+00:00"
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-14T20:43:59.253753+00:00"
   },
   {
    "buy_yes": {
@@ -232,34 +301,11 @@
      "0xf4bb4d6286157c0c388d0a2a6875f5fdca5ec5a7834f8c912f9c1ae3fcba4904"
     ],
     "title": "Leeds United FC vs. Newcastle United FC: O/U 4.5",
-    "no_cost_cents": 54
+    "no_cost_cents": 70
    },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-14T20:38:49.636581+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "02a0b8f9442005707cf0546cb1376914"
-    ],
-    "title": "Newcastle United FC at Leeds United FC",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf4bb4d6286157c0c388d0a2a6875f5fdca5ec5a7834f8c912f9c1ae3fcba4904"
-    ],
-    "title": "Leeds United FC vs. Newcastle United FC: O/U 4.5",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-14T20:38:49.527497+00:00"
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-14T20:43:59.201356+00:00"
   },
   {
    "buy_yes": {
@@ -278,11 +324,80 @@
      "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
     ],
     "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
-    "no_cost_cents": 42
+    "no_cost_cents": 52
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-14T20:43:39.294721+00:00"
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-14T20:45:45.819172+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "02a0b8f9442005707cf0546cb1376914"
+    ],
+    "title": "Newcastle United FC at Leeds United FC",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf4bb4d6286157c0c388d0a2a6875f5fdca5ec5a7834f8c912f9c1ae3fcba4904"
+    ],
+    "title": "Leeds United FC vs. Newcastle United FC: O/U 4.5",
+    "no_cost_cents": 70
+   },
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-14T20:43:59.083414+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2f82204812f702148cbe4747227feae9"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-14T20:45:46.003527+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f9fd294d818486f049f64bef2e5534d3"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 30
+   },
+   "total_cost_cents": 78,
+   "edge_bps": 2200,
+   "detected_at": "2026-09-14T20:45:45.912193+00:00"
   },
   {
    "buy_yes": {
@@ -301,57 +416,34 @@
      "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
     ],
     "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-14T20:43:39.459413+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "587a776b38dff854ab20e32c213f324f"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "no_cost_cents": 49
-   },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-14T20:40:42.198207+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "56f9515070d74d33d6dd793210e65a25"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
     "no_cost_cents": 52
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-14T20:40:42.417748+00:00"
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-14T20:45:45.963532+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2ef66453d539f95e47afd68c6351ee84"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 70
+   },
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-14T20:44:54.509341+00:00"
   },
   {
    "buy_yes": {
@@ -370,80 +462,11 @@
      "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
     ],
     "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
-    "no_cost_cents": 42
+    "no_cost_cents": 52
    },
-   "total_cost_cents": 73,
-   "edge_bps": 2700,
-   "detected_at": "2026-09-14T20:43:39.547305+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
-    "ask_cents": 58
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1829bc4248b9cb1445711d6ba288359a"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-14T20:43:39.352427+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
-    "ask_cents": 58
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2f82204812f702148cbe4747227feae9"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "no_cost_cents": 27
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-14T20:43:39.508969+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
-    "ask_cents": 58
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f9fd294d818486f049f64bef2e5534d3"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-14T20:43:39.409817+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-14T20:45:46.051931+00:00"
   },
   {
    "buy_yes": {
@@ -453,53 +476,7 @@
      "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
     ],
     "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2ef66453d539f95e47afd68c6351ee84"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "no_cost_cents": 70
-   },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-14T20:40:42.367664+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "56f9515070d74d33d6dd793210e65a25"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "ask_cents": 49
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-14T20:43:39.597318+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
-    "ask_cents": 20
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "prophetx",
@@ -510,32 +487,9 @@
     "title": "Real Betis Balompi\u00e9 at Villarreal CF",
     "no_cost_cents": 74
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-14T20:40:42.264486+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "587a776b38dff854ab20e32c213f324f"
-    ],
-    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
-    ],
-    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-14T20:43:39.294695+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-14T20:44:54.387600+00:00"
   },
   {
    "buy_yes": {
@@ -545,7 +499,7 @@
      "0xdd3a28d741c0dbb7a3af9ccc430a6f964a445c9ce5a10b2faef8fe1199a17579"
     ],
     "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 4.5",
-    "ask_cents": 20
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "prophetx",
@@ -556,9 +510,32 @@
     "title": "Real Betis Balompi\u00e9 at Villarreal CF",
     "no_cost_cents": 79
    },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-14T20:40:42.466995+00:00"
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-14T20:44:54.602488+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9f2db9609b71bc47a5b1676fc4f68e9d016b6caa7215eea9ab679edd4c762601"
+    ],
+    "title": "Villarreal CF vs. Real Betis Balompi\u00e9: O/U 3.5",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "587a776b38dff854ab20e32c213f324f"
+    ],
+    "title": "Real Betis Balompi\u00e9 at Villarreal CF",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-14T20:45:45.771223+00:00"
   },
   {
    "buy_yes": {
