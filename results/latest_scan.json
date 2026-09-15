@@ -1,103 +1,80 @@
 {
- "scanned_at": "2026-09-15T23:28:35.021913+00:00",
+ "scanned_at": "2026-09-15T23:30:36.932233+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 24.5,
+ "loop_uptime_min": 26.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 67786,
-   "last_tick_age_s": 0.0
+   "markets": 70135,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7367,
-   "last_tick_age_s": 4.5
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 104,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 233,
-   "last_tick_age_s": 1.9
+   "last_tick_age_s": 11.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 19,
-   "last_tick_age_s": 1117.9
+   "last_tick_age_s": 1239.8
   }
  ],
  "totals": {
-  "markets_tracked": 75509,
+  "markets_tracked": 77858,
   "pairs_married": 13,
-  "arbitrages": 13
+  "arbitrages": 12
  },
  "stats": {
-  "commits": 11,
-  "gist_errors": 26,
+  "commits": 12,
+  "gist_errors": 28,
   "hot_errors": 0,
-  "kalshi.sweeps": 127,
-  "kalshi.ticks": 1473536,
-  "kalshi.updates": 794833,
-  "kalshi.ws_ticks": 1473536,
-  "kalshi.ws_trades": 233984,
-  "live_evals_fired": 1002,
-  "novig.rest_updates": 3309,
-  "novig.sweeps": 127,
-  "novig.ticks": 28429,
-  "novig.updates": 3309,
-  "pairs_blocked_antonym_date": 6168,
-  "pmglobal.rest_updates": 927,
-  "pmglobal.sweeps": 127,
-  "pmglobal.ticks": 15481,
-  "pmglobal.updates": 1840,
-  "pmglobal.ws_msgs": 425203,
-  "pmglobal.ws_ticks": 2681,
-  "pmus.rest_updates": 8066,
-  "pmus.sweeps": 127,
-  "pmus.ticks": 941382,
-  "pmus.updates": 8066,
-  "pmus_x.last_count": 7362,
-  "pmus_x.sweeps": 128,
+  "kalshi.sweeps": 138,
+  "kalshi.ticks": 1592431,
+  "kalshi.updates": 855634,
+  "kalshi.ws_ticks": 1592431,
+  "kalshi.ws_trades": 256769,
+  "live_evals_fired": 1062,
+  "novig.rest_updates": 3594,
+  "novig.sweeps": 137,
+  "novig.ticks": 30642,
+  "novig.updates": 3594,
+  "pairs_blocked_antonym_date": 6675,
+  "pmglobal.rest_updates": 985,
+  "pmglobal.sweeps": 137,
+  "pmglobal.ticks": 16721,
+  "pmglobal.updates": 1980,
+  "pmglobal.ws_msgs": 465210,
+  "pmglobal.ws_ticks": 2921,
+  "pmus.rest_updates": 8121,
+  "pmus.sweeps": 138,
+  "pmus.ticks": 1022354,
+  "pmus.updates": 8121,
+  "pmus_x.last_count": 7361,
+  "pmus_x.sweeps": 139,
   "prophetx.ticks": 570,
   "prophetx.updates": 161,
-  "prophetx.ws_errors": 85,
+  "prophetx.ws_errors": 92,
   "px.evt_scanned": 19,
-  "pxboard.sweeps": 127,
-  "supa_errors": 471
+  "pxboard.sweeps": 137,
+  "supa_errors": 509
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6996d1a97656687858a8e99edec98314451a844f5574efc40a094ebaf91ff7d2"
-    ],
-    "title": "Chicago White Sox vs. Cleveland Guardians",
-    "ask_cents": 14
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "fdc80af700b554ae71c617dbe58d422b"
-    ],
-    "title": "Chicago White Sox at Cleveland Guardians",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 30,
-   "edge_bps": 7000,
-   "detected_at": "2026-09-15T23:28:31.927599+00:00"
-  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -115,11 +92,34 @@
      "0xcaa3bf3f03adbd574e74476d20656908131f203fa7ade91791fe1e672cabfb96"
     ],
     "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "no_cost_cents": 10
+    "no_cost_cents": 9
    },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-09-15T23:27:58.016532+00:00"
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-09-15T23:30:36.855917+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6996d1a97656687858a8e99edec98314451a844f5574efc40a094ebaf91ff7d2"
+    ],
+    "title": "Chicago White Sox vs. Cleveland Guardians",
+    "ask_cents": 15
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "fdc80af700b554ae71c617dbe58d422b"
+    ],
+    "title": "Chicago White Sox at Cleveland Guardians",
+    "no_cost_cents": 16
+   },
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-09-15T23:30:29.682376+00:00"
   },
   {
    "buy_yes": {
@@ -142,7 +142,7 @@
    },
    "total_cost_cents": 47,
    "edge_bps": 5300,
-   "detected_at": "2026-09-15T23:28:31.792511+00:00"
+   "detected_at": "2026-09-15T23:30:24.533896+00:00"
   },
   {
    "buy_yes": {
@@ -165,7 +165,7 @@
    },
    "total_cost_cents": 54,
    "edge_bps": 4600,
-   "detected_at": "2026-09-15T23:28:21.158951+00:00"
+   "detected_at": "2026-09-15T23:30:27.563891+00:00"
   },
   {
    "buy_yes": {
@@ -188,7 +188,30 @@
    },
    "total_cost_cents": 84,
    "edge_bps": 1600,
-   "detected_at": "2026-09-15T23:28:06.896750+00:00"
+   "detected_at": "2026-09-15T23:30:15.440575+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "3cf2857b21b8e4af2f7f0efe56dc4670"
+    ],
+    "title": "Los Angeles Dodgers at Cincinnati Reds",
+    "ask_cents": 81
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xcaa3bf3f03adbd574e74476d20656908131f203fa7ade91791fe1e672cabfb96"
+    ],
+    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-15T23:30:36.795181+00:00"
   },
   {
    "buy_yes": {
@@ -211,7 +234,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-15T23:28:06.837454+00:00"
+   "detected_at": "2026-09-15T23:30:15.382532+00:00"
   },
   {
    "buy_yes": {
@@ -221,7 +244,7 @@
      "0x22ba2f7612bbac08df8577aebb848eeef342e32e12785595bdea626877e4d633"
     ],
     "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
-    "ask_cents": 74
+    "ask_cents": 75
    },
    "buy_no": {
     "venue": "prophetx",
@@ -232,78 +255,32 @@
     "title": "Milwaukee Brewers at Pittsburgh Pirates",
     "no_cost_cents": 17
    },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-15T23:28:21.158962+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-15T23:30:27.563905+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "3cf2857b21b8e4af2f7f0efe56dc4670"
+     "b744e86b51bd5de7f9a8fb36c63e17aa"
     ],
-    "title": "Los Angeles Dodgers at Cincinnati Reds",
-    "ask_cents": 81
+    "title": "Philadelphia Phillies at Washington Nationals",
+    "ask_cents": 49
    },
    "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xcaa3bf3f03adbd574e74476d20656908131f203fa7ade91791fe1e672cabfb96"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "no_cost_cents": 10
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-15T23:27:58.016520+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x4110b1b862e90d79a1e4d3605ec7f18650280974f88180617437f5d435b9f88d"
     ],
     "title": "Philadelphia Phillies vs. Washington Nationals",
-    "ask_cents": 51
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a7ca153f4d9c141ad6c6da83ac6b7c7d"
-    ],
-    "title": "Philadelphia Phillies at Washington Nationals",
     "no_cost_cents": 46
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-15T23:28:34.822585+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6996d1a97656687858a8e99edec98314451a844f5574efc40a094ebaf91ff7d2"
-    ],
-    "title": "Chicago White Sox vs. Cleveland Guardians",
-    "ask_cents": 14
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7248170572c2bb0ed9d91d099222ebcc"
-    ],
-    "title": "Chicago White Sox at Cleveland Guardians",
-    "no_cost_cents": 84
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-15T23:28:31.927610+00:00"
+   "total_cost_cents": 95,
+   "edge_bps": 500,
+   "detected_at": "2026-09-15T23:30:15.502625+00:00"
   },
   {
    "buy_yes": {
@@ -330,26 +307,26 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b744e86b51bd5de7f9a8fb36c63e17aa"
-    ],
-    "title": "Philadelphia Phillies at Washington Nationals",
-    "ask_cents": 49
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x4110b1b862e90d79a1e4d3605ec7f18650280974f88180617437f5d435b9f88d"
+     "0x6996d1a97656687858a8e99edec98314451a844f5574efc40a094ebaf91ff7d2"
     ],
-    "title": "Philadelphia Phillies vs. Washington Nationals",
-    "no_cost_cents": 50
+    "title": "Chicago White Sox vs. Cleveland Guardians",
+    "ask_cents": 15
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7248170572c2bb0ed9d91d099222ebcc"
+    ],
+    "title": "Chicago White Sox at Cleveland Guardians",
+    "no_cost_cents": 84
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-15T23:28:34.890319+00:00"
+   "detected_at": "2026-09-15T23:30:29.739754+00:00"
   },
   {
    "buy_yes": {
@@ -372,7 +349,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-15T23:28:31.860980+00:00"
+   "detected_at": "2026-09-15T23:30:24.585148+00:00"
   }
  ]
 }
