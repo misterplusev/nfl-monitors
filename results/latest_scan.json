@@ -1,265 +1,81 @@
 {
- "scanned_at": "2026-09-15T18:15:18.786872+00:00",
+ "scanned_at": "2026-09-15T18:17:19.875788+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 183.7,
+ "loop_uptime_min": 185.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 221825,
+   "markets": 223525,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7526,
-   "last_tick_age_s": 2.4
+   "last_tick_age_s": 4.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 159,
-   "last_tick_age_s": 1.0
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 294,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 2.7
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 24,
-   "last_tick_age_s": 10781.4
+   "last_tick_age_s": 10902.4
   }
  ],
  "totals": {
-  "markets_tracked": 229828,
-  "pairs_married": 9,
-  "arbitrages": 9
+  "markets_tracked": 231528,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 89,
-  "gist_errors": 194,
+  "commits": 90,
+  "gist_errors": 196,
   "hot_errors": 0,
   "kalshi.rest_updates": 40,
-  "kalshi.sweeps": 1232,
-  "kalshi.ticks": 7705364,
-  "kalshi.updates": 3617120,
-  "kalshi.ws_ticks": 7705204,
-  "kalshi.ws_trades": 1498385,
+  "kalshi.sweeps": 1246,
+  "kalshi.ticks": 7793155,
+  "kalshi.updates": 3657606,
+  "kalshi.ws_ticks": 7792995,
+  "kalshi.ws_trades": 1517363,
   "live_evals_fired": 84,
-  "novig.rest_updates": 7195,
-  "novig.sweeps": 1232,
-  "novig.ticks": 296285,
-  "novig.updates": 7195,
-  "pairs_blocked_antonym_date": 10786,
-  "pmglobal.rest_updates": 7994,
-  "pmglobal.sweeps": 1232,
-  "pmglobal.ticks": 145326,
-  "pmglobal.updates": 16298,
-  "pmglobal.ws_msgs": 2379375,
-  "pmglobal.ws_ticks": 22026,
-  "pmus.rest_updates": 12161,
-  "pmus.sweeps": 1232,
-  "pmus.ticks": 9071130,
-  "pmus.updates": 12161,
-  "pmus_x.last_count": 7336,
-  "pmus_x.sweeps": 1233,
+  "novig.rest_updates": 7263,
+  "novig.sweeps": 1245,
+  "novig.ticks": 299405,
+  "novig.updates": 7263,
+  "pairs_blocked_antonym_date": 10905,
+  "pmglobal.rest_updates": 8085,
+  "pmglobal.sweeps": 1245,
+  "pmglobal.ticks": 146894,
+  "pmglobal.updates": 16486,
+  "pmglobal.ws_msgs": 2427251,
+  "pmglobal.ws_ticks": 22294,
+  "pmus.rest_updates": 12228,
+  "pmus.sweeps": 1245,
+  "pmus.ticks": 9166491,
+  "pmus.updates": 12228,
+  "pmus_x.last_count": 7335,
+  "pmus_x.sweeps": 1246,
   "prophetx.ticks": 626,
   "prophetx.updates": 85,
-  "prophetx.ws_errors": 652,
+  "prophetx.ws_errors": 659,
   "px.evt_scanned": 22,
-  "pxboard.sweeps": 1231,
-  "supa_errors": 3699
+  "pxboard.sweeps": 1245,
+  "supa_errors": 3739
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b1328cc83a9429f4e34b67f55b0c5088"
-    ],
-    "title": "RCD Espanyol de Barcelona at Rayo Vallecano de Madrid",
-    "ask_cents": 29
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x97c2974a74c582cf890309751f48f209290292ddeeeebf51b2ffe6249abed34e"
-    ],
-    "title": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona: O/U 2.5",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 51,
-   "edge_bps": 4900,
-   "detected_at": "2026-09-15T17:51:55.910166+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2f6f1d963890cf7d6a9fa1e039611af8"
-    ],
-    "title": "RCD Espanyol de Barcelona at Rayo Vallecano de Madrid",
-    "ask_cents": 32
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x97c2974a74c582cf890309751f48f209290292ddeeeebf51b2ffe6249abed34e"
-    ],
-    "title": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona: O/U 2.5",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-15T17:51:56.067722+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a10a14f943f0eecd590faa75d5ba1fc9"
-    ],
-    "title": "RCD Espanyol de Barcelona at Rayo Vallecano de Madrid",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x97c2974a74c582cf890309751f48f209290292ddeeeebf51b2ffe6249abed34e"
-    ],
-    "title": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona: O/U 2.5",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-09-15T17:51:56.006990+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "bbc9344b8b73ae9763f06c95f052f276"
-    ],
-    "title": "RCD Espanyol de Barcelona at Rayo Vallecano de Madrid",
-    "ask_cents": 45
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x97c2974a74c582cf890309751f48f209290292ddeeeebf51b2ffe6249abed34e"
-    ],
-    "title": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona: O/U 2.5",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-09-15T17:51:55.971794+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "fa641df3428f6e7741caef9e84114fe4"
-    ],
-    "title": "RCD Espanyol de Barcelona at Rayo Vallecano de Madrid",
-    "ask_cents": 57
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x97c2974a74c582cf890309751f48f209290292ddeeeebf51b2ffe6249abed34e"
-    ],
-    "title": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona: O/U 2.5",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-15T17:51:56.034617+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d633c93d9d1133b8bd396befa775e0b3"
-    ],
-    "title": "RCD Espanyol de Barcelona at Rayo Vallecano de Madrid",
-    "ask_cents": 60
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x97c2974a74c582cf890309751f48f209290292ddeeeebf51b2ffe6249abed34e"
-    ],
-    "title": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona: O/U 2.5",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-15T17:51:55.887421+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "16884c56ca544e6dfbf8220019b0cabd"
-    ],
-    "title": "RCD Espanyol de Barcelona at Rayo Vallecano de Madrid",
-    "ask_cents": 69
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x97c2974a74c582cf890309751f48f209290292ddeeeebf51b2ffe6249abed34e"
-    ],
-    "title": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona: O/U 2.5",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-15T17:51:55.945418+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b187db0e572a43118f71c03419cbedab"
-    ],
-    "title": "RCD Espanyol de Barcelona at Rayo Vallecano de Madrid",
-    "ask_cents": 72
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x97c2974a74c582cf890309751f48f209290292ddeeeebf51b2ffe6249abed34e"
-    ],
-    "title": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona: O/U 2.5",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-15T17:51:56.098971+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmus",
