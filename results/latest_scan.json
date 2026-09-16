@@ -1,77 +1,78 @@
 {
- "scanned_at": "2026-09-16T05:07:08.574550+00:00",
+ "scanned_at": "2026-09-16T05:09:10.044399+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.1,
+ "loop_uptime_min": 4.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 13792,
+   "markets": 20327,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7793,
-   "last_tick_age_s": 4.6
+   "markets": 7831,
+   "last_tick_age_s": 2.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 100,
-   "last_tick_age_s": 0.2
+   "markets": 101,
+   "last_tick_age_s": 0.7
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 237,
-   "last_tick_age_s": 2.2
+   "last_tick_age_s": 12.3
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 31,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 10.1
   }
  ],
  "totals": {
-  "markets_tracked": 21953,
+  "markets_tracked": 28527,
   "pairs_married": 3,
-  "arbitrages": 3
+  "arbitrages": 2
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 11,
-  "kalshi.ticks": 72351,
-  "kalshi.updates": 38172,
-  "kalshi.ws_ticks": 72351,
-  "kalshi.ws_trades": 16658,
-  "live_evals_fired": 24,
-  "novig.rest_updates": 316,
-  "novig.sweeps": 11,
-  "novig.ticks": 2842,
-  "novig.updates": 316,
-  "pairs_blocked_antonym_date": 84,
-  "pmglobal.rest_updates": 234,
-  "pmglobal.sweeps": 11,
-  "pmglobal.ticks": 1600,
-  "pmglobal.updates": 409,
-  "pmglobal.ws_msgs": 45256,
-  "pmglobal.ws_ticks": 400,
-  "pmus.rest_updates": 7852,
-  "pmus.sweeps": 11,
-  "pmus.ticks": 93311,
-  "pmus.updates": 7852,
-  "pmus_x.last_count": 7790,
-  "pmus_x.sweeps": 12,
-  "prophetx.ticks": 372,
-  "prophetx.updates": 32,
-  "prophetx.ws_errors": 8,
+  "kalshi.sweeps": 22,
+  "kalshi.ticks": 143751,
+  "kalshi.updates": 73548,
+  "kalshi.ws_ticks": 143751,
+  "kalshi.ws_trades": 31173,
+  "live_evals_fired": 52,
+  "novig.rest_updates": 387,
+  "novig.sweeps": 21,
+  "novig.ticks": 5209,
+  "novig.updates": 387,
+  "pairs_blocked_antonym_date": 168,
+  "pmglobal.rest_updates": 302,
+  "pmglobal.sweeps": 22,
+  "pmglobal.ticks": 2952,
+  "pmglobal.updates": 570,
+  "pmglobal.ws_msgs": 94355,
+  "pmglobal.ws_ticks": 652,
+  "pmus.rest_updates": 7949,
+  "pmus.sweeps": 22,
+  "pmus.ticks": 179240,
+  "pmus.updates": 7949,
+  "pmus_x.last_count": 7824,
+  "pmus_x.sweeps": 23,
+  "prophetx.ticks": 682,
+  "prophetx.updates": 35,
+  "prophetx.ws_errors": 15,
   "px.evt_scanned": 31,
-  "pxboard.sweeps": 11,
-  "supa_errors": 41
+  "pxboard.sweeps": 21,
+  "supa_errors": 82
  },
  "arbitrages": [
   {
@@ -91,34 +92,11 @@
      "0xfa68058758833e98592b947c244ee5f71c3ecb1ed06a776baba0dd2f9384d396"
     ],
     "title": "Miami Marlins vs. Arizona Diamondbacks",
-    "no_cost_cents": 12
+    "no_cost_cents": 8
    },
-   "total_cost_cents": 22,
-   "edge_bps": 7800,
-   "detected_at": "2026-09-16T05:06:52.881785+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5e30721ed3707f42bdd2219164dd1077"
-    ],
-    "title": "Miami Marlins at Arizona Diamondbacks",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x53911b8c09e375ebc0416916fb74fc8fb709208784694370248b0010f0492edd"
-    ],
-    "title": "Miami Marlins vs. Arizona Diamondbacks: O/U 8.5",
-    "no_cost_cents": 69
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-16T05:06:09.079683+00:00"
+   "total_cost_cents": 18,
+   "edge_bps": 8200,
+   "detected_at": "2026-09-16T05:09:09.263614+00:00"
   },
   {
    "buy_yes": {
@@ -141,7 +119,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-16T05:06:41.636260+00:00"
+   "detected_at": "2026-09-16T05:07:27.538503+00:00"
   }
  ]
 }
