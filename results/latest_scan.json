@@ -1,83 +1,424 @@
 {
- "scanned_at": "2026-09-16T19:00:23.483940+00:00",
+ "scanned_at": "2026-09-16T23:12:28.628862+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 231.6,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 323185,
+   "markets": 15313,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7923,
-   "last_tick_age_s": 2.7
+   "markets": 7918,
+   "last_tick_age_s": 2.8
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 172,
-   "last_tick_age_s": 1.0
+   "markets": 101,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 311,
-   "last_tick_age_s": 0.4
+   "markets": 229,
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 37,
-   "last_tick_age_s": 13570.2
+   "state": "OK",
+   "markets": 29,
+   "last_tick_age_s": 6.3
   }
  ],
  "totals": {
-  "markets_tracked": 331628,
-  "pairs_married": 1,
-  "arbitrages": 1
+  "markets_tracked": 23590,
+  "pairs_married": 17,
+  "arbitrages": 17
  },
  "stats": {
-  "commits": 113,
-  "gist_errors": 244,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 4,
-  "kalshi.sweeps": 1209,
-  "kalshi.ticks": 12395623,
-  "kalshi.updates": 5937008,
-  "kalshi.ws_ticks": 12395607,
-  "kalshi.ws_trades": 2087447,
-  "live_evals_fired": 34,
-  "novig.rest_updates": 10707,
-  "novig.sweeps": 1209,
-  "novig.ticks": 290089,
-  "novig.updates": 10707,
-  "pairs_blocked_antonym_date": 9100,
-  "pmglobal.rest_updates": 8204,
-  "pmglobal.sweeps": 1209,
-  "pmglobal.ticks": 149232,
-  "pmglobal.updates": 16781,
-  "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1890564,
-  "pmglobal.ws_ticks": 28232,
-  "pmus.rest_updates": 15379,
-  "pmus.sweep_errors": 1,
-  "pmus.sweeps": 1208,
-  "pmus.ticks": 9434468,
-  "pmus.updates": 15379,
-  "pmus_x.last_count": 7369,
-  "pmus_x.sweeps": 1209,
-  "prophetx.ticks": 973,
-  "prophetx.updates": 105,
-  "prophetx.ws_errors": 810,
-  "px.evt_scanned": 36,
-  "pxboard.sweeps": 1208,
-  "supa_errors": 4060
+  "kalshi.sweeps": 13,
+  "kalshi.ticks": 104106,
+  "kalshi.updates": 60306,
+  "kalshi.ws_ticks": 104106,
+  "kalshi.ws_trades": 19051,
+  "live_evals_fired": 259,
+  "novig.rest_updates": 528,
+  "novig.sweeps": 13,
+  "novig.ticks": 3126,
+  "novig.updates": 528,
+  "pairs_blocked_antonym_date": 34,
+  "pmglobal.rest_updates": 257,
+  "pmglobal.sweeps": 13,
+  "pmglobal.ticks": 1784,
+  "pmglobal.updates": 445,
+  "pmglobal.ws_msgs": 53207,
+  "pmglobal.ws_ticks": 384,
+  "pmus.rest_updates": 7953,
+  "pmus.sweeps": 13,
+  "pmus.ticks": 110843,
+  "pmus.updates": 7953,
+  "pmus_x.last_count": 7918,
+  "pmus_x.sweeps": 14,
+  "prophetx.ticks": 323,
+  "prophetx.updates": 100,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 25,
+  "pxboard.sweeps": 12,
+  "supa_errors": 45
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa40f21341b860295697bdd09286baca85518701c07c57cd7cbb544dd30412597"
+    ],
+    "title": "Athletics vs. Tampa Bay Rays",
+    "ask_cents": 16
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4772b7747449b7269030e0514a4ca6e8"
+    ],
+    "title": "Athletics at Tampa Bay Rays",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-09-16T23:12:09.327550+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9d93e19dfa051aef7a26a24ab8103028"
+    ],
+    "title": "Philadelphia Phillies at Washington Nationals",
+    "ask_cents": 21
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xd2ea541d659fcc5495d39eba35d014a460245ae33f0f1a53573bbc46d178d71b"
+    ],
+    "title": "Philadelphia Phillies vs. Washington Nationals",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-16T23:12:21.949731+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9d93e19dfa051aef7a26a24ab8103028"
+    ],
+    "title": "Philadelphia Phillies at Washington Nationals",
+    "ask_cents": 21
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6502e036a0a6ad75cedac1d09b4899d895b19a6738b22858404690bc266f5969"
+    ],
+    "title": "Philadelphia Phillies vs. Washington Nationals: O/U 8.5",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-16T23:12:21.972338+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7f7a45b70afd9d907e8a897a23dad91cc170aa07b14003ff2088757e0942d111"
+    ],
+    "title": "Milwaukee Brewers vs. Pittsburgh Pirates: O/U 7.5",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4a4ac42873f5b9407a101ca0d92a751e"
+    ],
+    "title": "Milwaukee Brewers at Pittsburgh Pirates",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-16T23:12:26.922049+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56f2f294e769c4abc5eb4aa71ecaea34"
+    ],
+    "title": "Milwaukee Brewers at Pittsburgh Pirates",
+    "ask_cents": 24
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a"
+    ],
+    "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-16T23:12:26.885717+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a"
+    ],
+    "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4a4ac42873f5b9407a101ca0d92a751e"
+    ],
+    "title": "Milwaukee Brewers at Pittsburgh Pirates",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-16T23:12:26.861493+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x46c98f8cc2264d79af270a41109017d4f2366b4b2a9daed636c465ca63578868"
+    ],
+    "title": "Los Angeles Dodgers vs. Cincinnati Reds: O/U 8.5",
+    "ask_cents": 41
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7af2583088989b27eb875379294db455"
+    ],
+    "title": "Los Angeles Dodgers at Cincinnati Reds",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-16T23:12:28.586701+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6502e036a0a6ad75cedac1d09b4899d895b19a6738b22858404690bc266f5969"
+    ],
+    "title": "Philadelphia Phillies vs. Washington Nationals: O/U 8.5",
+    "ask_cents": 64
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "717743fef94c054c411d6ea594cca2b7"
+    ],
+    "title": "Philadelphia Phillies at Washington Nationals",
+    "no_cost_cents": 20
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-16T23:12:12.345674+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56f2f294e769c4abc5eb4aa71ecaea34"
+    ],
+    "title": "Milwaukee Brewers at Pittsburgh Pirates",
+    "ask_cents": 24
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7f7a45b70afd9d907e8a897a23dad91cc170aa07b14003ff2088757e0942d111"
+    ],
+    "title": "Milwaukee Brewers vs. Pittsburgh Pirates: O/U 7.5",
+    "no_cost_cents": 61
+   },
+   "total_cost_cents": 85,
+   "edge_bps": 1500,
+   "detected_at": "2026-09-16T23:12:26.907497+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e8bd91b4e3763cd5c8e4f5a78be5d8eb"
+    ],
+    "title": "Los Angeles Dodgers at Cincinnati Reds",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
+    ],
+    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-16T23:12:21.644924+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x46c98f8cc2264d79af270a41109017d4f2366b4b2a9daed636c465ca63578868"
+    ],
+    "title": "Los Angeles Dodgers vs. Cincinnati Reds: O/U 8.5",
+    "ask_cents": 41
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e8bd91b4e3763cd5c8e4f5a78be5d8eb"
+    ],
+    "title": "Los Angeles Dodgers at Cincinnati Reds",
+    "no_cost_cents": 53
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-16T23:12:28.605813+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f440f003f5eaa7ad4e20825af079341e"
+    ],
+    "title": "Athletics at Tampa Bay Rays",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xa40f21341b860295697bdd09286baca85518701c07c57cd7cbb544dd30412597"
+    ],
+    "title": "Athletics vs. Tampa Bay Rays",
+    "no_cost_cents": 84
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-16T23:12:21.530028+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xeb93a532e0ed0b1366722e18927cc107ff95a35f3e7bba0881f5265b8c8b5aae"
+    ],
+    "title": "Baltimore Orioles vs. New York Mets",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2b251f80e1d0d45d6cd0dc11bcad0b7d"
+    ],
+    "title": "Baltimore Orioles at New York Mets",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-16T23:12:27.836409+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7af2583088989b27eb875379294db455"
+    ],
+    "title": "Los Angeles Dodgers at Cincinnati Reds",
+    "ask_cents": 59
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
+    ],
+    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
+    "no_cost_cents": 38
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-16T23:12:12.054871+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xeb93a532e0ed0b1366722e18927cc107ff95a35f3e7bba0881f5265b8c8b5aae"
+    ],
+    "title": "Baltimore Orioles vs. New York Mets",
+    "ask_cents": 48
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c8f76ede71e2503490dc928df5cdae17"
+    ],
+    "title": "Baltimore Orioles at New York Mets",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-16T23:12:27.856749+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -95,11 +436,34 @@
      "171031"
     ],
     "title": "Fed Rate Cut in 2026?",
-    "no_cost_cents": 93
+    "no_cost_cents": 95
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-16T18:40:39.726553+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-16T23:12:28.628813+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "717743fef94c054c411d6ea594cca2b7"
+    ],
+    "title": "Philadelphia Phillies at Washington Nationals",
+    "ask_cents": 81
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xd2ea541d659fcc5495d39eba35d014a460245ae33f0f1a53573bbc46d178d71b"
+    ],
+    "title": "Philadelphia Phillies vs. Washington Nationals",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-16T23:12:18.802285+00:00"
   }
  ]
 }
