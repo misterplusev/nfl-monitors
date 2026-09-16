@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-16T01:32:13.713749+00:00",
+ "scanned_at": "2026-09-16T01:34:15.383090+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 148.2,
+ "loop_uptime_min": 150.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 209846,
+   "markets": 211837,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7915,
-   "last_tick_age_s": 4.5
+   "last_tick_age_s": 4.7
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 122,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 276,
-   "last_tick_age_s": 2.0
+   "markets": 277,
+   "last_tick_age_s": 2.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 19,
-   "last_tick_age_s": 8536.6
+   "last_tick_age_s": 8658.3
   }
  ],
  "totals": {
-  "markets_tracked": 218178,
-  "pairs_married": 3,
-  "arbitrages": 3
+  "markets_tracked": 220170,
+  "pairs_married": 5,
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 72,
-  "gist_errors": 156,
+  "commits": 73,
+  "gist_errors": 158,
   "hot_errors": 0,
   "kalshi.rest_updates": 23,
-  "kalshi.sweeps": 772,
-  "kalshi.ticks": 9137179,
-  "kalshi.updates": 4688924,
-  "kalshi.ws_ticks": 9137149,
-  "kalshi.ws_trades": 1590968,
-  "live_evals_fired": 5529,
-  "novig.rest_updates": 26697,
-  "novig.sweeps": 772,
-  "novig.ticks": 157437,
-  "novig.updates": 26697,
-  "pairs_blocked_antonym_date": 31536,
-  "pmglobal.rest_updates": 5472,
-  "pmglobal.sweeps": 772,
-  "pmglobal.ticks": 94732,
-  "pmglobal.updates": 11768,
+  "kalshi.sweeps": 783,
+  "kalshi.ticks": 9245364,
+  "kalshi.updates": 4743125,
+  "kalshi.ws_ticks": 9245334,
+  "kalshi.ws_trades": 1612782,
+  "live_evals_fired": 5549,
+  "novig.rest_updates": 27019,
+  "novig.sweeps": 783,
+  "novig.ticks": 159501,
+  "novig.updates": 27019,
+  "pairs_blocked_antonym_date": 31614,
+  "pmglobal.rest_updates": 5540,
+  "pmglobal.sweeps": 783,
+  "pmglobal.ticks": 96052,
+  "pmglobal.updates": 11908,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 3280218,
-  "pmglobal.ws_ticks": 17432,
-  "pmus.rest_updates": 12641,
-  "pmus.sweeps": 772,
-  "pmus.ticks": 5789598,
-  "pmus.updates": 12641,
-  "pmus_x.last_count": 7907,
-  "pmus_x.sweeps": 773,
+  "pmglobal.ws_msgs": 3314765,
+  "pmglobal.ws_ticks": 17652,
+  "pmus.rest_updates": 12691,
+  "pmus.sweeps": 783,
+  "pmus.ticks": 5876572,
+  "pmus.updates": 12691,
+  "pmus_x.last_count": 7908,
+  "pmus_x.sweeps": 784,
   "prophetx.ticks": 570,
   "prophetx.updates": 161,
-  "prophetx.ws_errors": 517,
+  "prophetx.ws_errors": 525,
   "px.evt_scanned": 19,
-  "pxboard.sweeps": 772,
-  "supa_errors": 2820
+  "pxboard.sweeps": 783,
+  "supa_errors": 2856
  },
  "arbitrages": [
   {
@@ -94,11 +94,34 @@
      "0x22ba2f7612bbac08df8577aebb848eeef342e32e12785595bdea626877e4d633"
     ],
     "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
-    "no_cost_cents": 1
+    "no_cost_cents": 5
    },
-   "total_cost_cents": 29,
-   "edge_bps": 7100,
-   "detected_at": "2026-09-16T01:32:10.341512+00:00"
+   "total_cost_cents": 33,
+   "edge_bps": 6700,
+   "detected_at": "2026-09-16T01:33:19.227563+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7248170572c2bb0ed9d91d099222ebcc"
+    ],
+    "title": "Chicago White Sox at Cleveland Guardians",
+    "ask_cents": 17
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6996d1a97656687858a8e99edec98314451a844f5574efc40a094ebaf91ff7d2"
+    ],
+    "title": "Chicago White Sox vs. Cleveland Guardians",
+    "no_cost_cents": 16
+   },
+   "total_cost_cents": 33,
+   "edge_bps": 6700,
+   "detected_at": "2026-09-16T01:34:12.001639+00:00"
   },
   {
    "buy_yes": {
@@ -117,11 +140,11 @@
      "0x22ba2f7612bbac08df8577aebb848eeef342e32e12785595bdea626877e4d633"
     ],
     "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
-    "no_cost_cents": 1
+    "no_cost_cents": 5
    },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-16T01:32:10.406420+00:00"
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-16T01:33:19.295691+00:00"
   },
   {
    "buy_yes": {
