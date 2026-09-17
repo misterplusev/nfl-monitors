@@ -1,243 +1,82 @@
 {
- "scanned_at": "2026-09-17T02:26:00.234329+00:00",
+ "scanned_at": "2026-09-17T02:28:00.760970+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 195.7,
+ "loop_uptime_min": 197.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 235857,
+   "markets": 237431,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7922,
-   "last_tick_age_s": 5.5
+   "last_tick_age_s": 2.7
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 134,
-   "last_tick_age_s": 0.9
+   "markets": 135,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 300,
-   "last_tick_age_s": 3.0
+   "markets": 303,
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 11446.2
+   "last_tick_age_s": 11566.7
   }
  ],
  "totals": {
-  "markets_tracked": 244242,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 245820,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 95,
-  "gist_errors": 205,
+  "commits": 96,
+  "gist_errors": 207,
   "hot_errors": 0,
   "kalshi.rest_updates": 2,
-  "kalshi.sweeps": 1216,
-  "kalshi.ticks": 10107150,
-  "kalshi.updates": 4899179,
-  "kalshi.ws_ticks": 10107147,
-  "kalshi.ws_trades": 1869392,
+  "kalshi.sweeps": 1227,
+  "kalshi.ticks": 10194211,
+  "kalshi.updates": 4940072,
+  "kalshi.ws_ticks": 10194208,
+  "kalshi.ws_trades": 1895413,
   "live_evals_fired": 7884,
-  "novig.rest_updates": 30058,
-  "novig.sweeps": 1215,
-  "novig.ticks": 263164,
-  "novig.updates": 30058,
-  "pairs_blocked_antonym_date": 3040,
-  "pmglobal.rest_updates": 6064,
-  "pmglobal.sweeps": 1215,
-  "pmglobal.ticks": 143050,
-  "pmglobal.updates": 13350,
+  "novig.rest_updates": 30307,
+  "novig.sweeps": 1227,
+  "novig.ticks": 265766,
+  "novig.updates": 30307,
+  "pairs_blocked_antonym_date": 3068,
+  "pmglobal.rest_updates": 6123,
+  "pmglobal.sweeps": 1227,
+  "pmglobal.ticks": 144442,
+  "pmglobal.updates": 13464,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 4047240,
-  "pmglobal.ws_ticks": 21450,
-  "pmus.rest_updates": 12310,
-  "pmus.sweeps": 1215,
-  "pmus.ticks": 9174922,
-  "pmus.updates": 12310,
+  "pmglobal.ws_msgs": 4062134,
+  "pmglobal.ws_ticks": 21642,
+  "pmus.rest_updates": 12361,
+  "pmus.sweeps": 1227,
+  "pmus.ticks": 9263434,
+  "pmus.updates": 12361,
   "pmus_x.last_count": 7376,
-  "pmus_x.sweeps": 1216,
+  "pmus_x.sweeps": 1228,
   "prophetx.ticks": 734,
   "prophetx.updates": 191,
-  "prophetx.ws_errors": 711,
+  "prophetx.ws_errors": 718,
   "px.evt_scanned": 26,
-  "pxboard.sweeps": 1215,
-  "supa_errors": 3724
+  "pxboard.sweeps": 1226,
+  "supa_errors": 3759
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
-    ],
-    "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "98c375b9dfdc7f7a47270169fb4de111"
-    ],
-    "title": "Atlanta Braves at Chicago Cubs",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 5,
-   "edge_bps": 9500,
-   "detected_at": "2026-09-17T02:26:00.234265+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
-    ],
-    "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "66fccb33acfe1044f9563ceb3a84c7c9"
-    ],
-    "title": "Atlanta Braves at Chicago Cubs",
-    "no_cost_cents": 37
-   },
-   "total_cost_cents": 40,
-   "edge_bps": 6000,
-   "detected_at": "2026-09-17T02:26:00.234245+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
-    ],
-    "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "87385b6d52f6f8d549d450b0a7eab142"
-    ],
-    "title": "Atlanta Braves at Chicago Cubs",
-    "no_cost_cents": 39
-   },
-   "total_cost_cents": 42,
-   "edge_bps": 5800,
-   "detected_at": "2026-09-17T02:26:00.234258+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
-    ],
-    "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "baeb1dfb49b2e4393fe526875dc29e5f"
-    ],
-    "title": "Atlanta Braves at Chicago Cubs",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 44,
-   "edge_bps": 5600,
-   "detected_at": "2026-09-17T02:26:00.234252+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
-    ],
-    "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b24d435e43904340709fe152f58dddff"
-    ],
-    "title": "Atlanta Braves at Chicago Cubs",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-17T02:26:00.234275+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
-    ],
-    "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f65c236a7564876f508094a4bfec5e06"
-    ],
-    "title": "Atlanta Braves at Chicago Cubs",
-    "no_cost_cents": 61
-   },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-17T02:26:00.234222+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
-    ],
-    "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "60becaf8c04bb3690478acad5f2ec1aa"
-    ],
-    "title": "Atlanta Braves at Chicago Cubs",
-    "no_cost_cents": 61
-   },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-17T02:26:00.234270+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
