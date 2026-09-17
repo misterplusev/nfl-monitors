@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-17T01:47:20.948943+00:00",
+ "scanned_at": "2026-09-17T01:49:23.169457+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 157.0,
+ "loop_uptime_min": 159.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 203916,
+   "markets": 205391,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7922,
-   "last_tick_age_s": 0.4
+   "last_tick_age_s": 2.7
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 129,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 270,
-   "last_tick_age_s": 11.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 9126.8
+   "last_tick_age_s": 9249.0
   }
  ],
  "totals": {
-  "markets_tracked": 212266,
+  "markets_tracked": 213741,
   "pairs_married": 14,
-  "arbitrages": 12
+  "arbitrages": 14
  },
  "stats": {
-  "commits": 76,
-  "gist_errors": 165,
+  "commits": 77,
+  "gist_errors": 167,
   "hot_errors": 0,
-  "kalshi.sweeps": 979,
-  "kalshi.ticks": 8237505,
-  "kalshi.updates": 4009782,
-  "kalshi.ws_ticks": 8237505,
-  "kalshi.ws_trades": 1508456,
-  "live_evals_fired": 7795,
-  "novig.rest_updates": 24621,
-  "novig.sweeps": 978,
-  "novig.ticks": 212607,
-  "novig.updates": 24621,
-  "pairs_blocked_antonym_date": 2448,
-  "pmglobal.rest_updates": 5206,
-  "pmglobal.sweeps": 978,
-  "pmglobal.ticks": 115841,
-  "pmglobal.updates": 11503,
+  "kalshi.sweeps": 991,
+  "kalshi.ticks": 8348207,
+  "kalshi.updates": 4061502,
+  "kalshi.ws_ticks": 8348207,
+  "kalshi.ws_trades": 1528341,
+  "live_evals_fired": 7859,
+  "novig.rest_updates": 24968,
+  "novig.sweeps": 991,
+  "novig.ticks": 215209,
+  "novig.updates": 24968,
+  "pairs_blocked_antonym_date": 2478,
+  "pmglobal.rest_updates": 5268,
+  "pmglobal.sweeps": 991,
+  "pmglobal.ticks": 117359,
+  "pmglobal.updates": 11651,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 3603398,
-  "pmglobal.ws_ticks": 17941,
-  "pmus.rest_updates": 11448,
-  "pmus.sweeps": 979,
-  "pmus.ticks": 7427855,
-  "pmus.updates": 11448,
-  "pmus_x.last_count": 7545,
-  "pmus_x.sweeps": 980,
+  "pmglobal.ws_msgs": 3638615,
+  "pmglobal.ws_ticks": 18159,
+  "pmus.rest_updates": 11505,
+  "pmus.sweeps": 991,
+  "pmus.ticks": 7518196,
+  "pmus.updates": 11505,
+  "pmus_x.last_count": 7517,
+  "pmus_x.sweeps": 992,
   "prophetx.ticks": 734,
   "prophetx.updates": 191,
-  "prophetx.ws_errors": 569,
+  "prophetx.ws_errors": 577,
   "px.evt_scanned": 26,
-  "pxboard.sweeps": 978,
-  "supa_errors": 3013
+  "pxboard.sweeps": 990,
+  "supa_errors": 3050
  },
  "arbitrages": [
   {
@@ -101,6 +101,29 @@
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56f2f294e769c4abc5eb4aa71ecaea34"
+    ],
+    "title": "Milwaukee Brewers at Pittsburgh Pirates",
+    "ask_cents": 27
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a"
+    ],
+    "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-09-17T01:49:23.146265+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -121,29 +144,6 @@
    "total_cost_cents": 39,
    "edge_bps": 6100,
    "detected_at": "2026-09-17T01:41:23.781474+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "56f2f294e769c4abc5eb4aa71ecaea34"
-    ],
-    "title": "Milwaukee Brewers at Pittsburgh Pirates",
-    "ask_cents": 27
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a"
-    ],
-    "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
-    "no_cost_cents": 14
-   },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-17T01:47:20.944924+00:00"
   },
   {
    "buy_yes": {
@@ -196,6 +196,29 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
+     "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
+    ],
+    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
+    "ask_cents": 1
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7af2583088989b27eb875379294db455"
+    ],
+    "title": "Los Angeles Dodgers at Cincinnati Reds",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 43,
+   "edge_bps": 5700,
+   "detected_at": "2026-09-17T01:48:57.605955+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
      "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
     ],
     "title": "Atlanta Braves vs. Chicago Cubs",
@@ -213,6 +236,29 @@
    "total_cost_cents": 58,
    "edge_bps": 4200,
    "detected_at": "2026-09-17T01:41:23.926939+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
+    ],
+    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
+    "ask_cents": 1
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e8bd91b4e3763cd5c8e4f5a78be5d8eb"
+    ],
+    "title": "Los Angeles Dodgers at Cincinnati Reds",
+    "no_cost_cents": 57
+   },
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-17T01:48:57.627425+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +327,30 @@
    },
    "total_cost_cents": 68,
    "edge_bps": 3200,
-   "detected_at": "2026-09-17T01:46:50.676246+00:00"
+   "detected_at": "2026-09-17T01:48:04.622978+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4a4ac42873f5b9407a101ca0d92a751e"
+    ],
+    "title": "Milwaukee Brewers at Pittsburgh Pirates",
+    "ask_cents": 75
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a"
+    ],
+    "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
+    "no_cost_cents": 4
+   },
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-17T01:49:23.107344+00:00"
   },
   {
    "buy_yes": {
@@ -304,30 +373,7 @@
    },
    "total_cost_cents": 83,
    "edge_bps": 1700,
-   "detected_at": "2026-09-17T01:46:50.695688+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4a4ac42873f5b9407a101ca0d92a751e"
-    ],
-    "title": "Milwaukee Brewers at Pittsburgh Pirates",
-    "ask_cents": 75
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a"
-    ],
-    "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
-    "no_cost_cents": 14
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-17T01:47:20.944904+00:00"
+   "detected_at": "2026-09-17T01:48:04.648427+00:00"
   },
   {
    "buy_yes": {
