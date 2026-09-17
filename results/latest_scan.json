@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-17T01:49:23.169457+00:00",
+ "scanned_at": "2026-09-17T01:51:24.013232+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 159.1,
+ "loop_uptime_min": 161.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 205391,
-   "last_tick_age_s": 0.1
+   "markets": 206897,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7922,
-   "last_tick_age_s": 2.7
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 129,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 270,
+   "markets": 278,
    "last_tick_age_s": 0.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 9249.0
+   "last_tick_age_s": 9369.9
   }
  ],
  "totals": {
-  "markets_tracked": 213741,
+  "markets_tracked": 215255,
   "pairs_married": 14,
-  "arbitrages": 14
+  "arbitrages": 8
  },
  "stats": {
-  "commits": 77,
-  "gist_errors": 167,
+  "commits": 78,
+  "gist_errors": 169,
   "hot_errors": 0,
-  "kalshi.sweeps": 991,
-  "kalshi.ticks": 8348207,
-  "kalshi.updates": 4061502,
-  "kalshi.ws_ticks": 8348207,
-  "kalshi.ws_trades": 1528341,
-  "live_evals_fired": 7859,
-  "novig.rest_updates": 24968,
-  "novig.sweeps": 991,
-  "novig.ticks": 215209,
-  "novig.updates": 24968,
-  "pairs_blocked_antonym_date": 2478,
-  "pmglobal.rest_updates": 5268,
-  "pmglobal.sweeps": 991,
-  "pmglobal.ticks": 117359,
-  "pmglobal.updates": 11651,
+  "kalshi.sweeps": 1004,
+  "kalshi.ticks": 8451587,
+  "kalshi.updates": 4110801,
+  "kalshi.ws_ticks": 8451587,
+  "kalshi.ws_trades": 1544792,
+  "live_evals_fired": 7884,
+  "novig.rest_updates": 25276,
+  "novig.sweeps": 1004,
+  "novig.ticks": 217868,
+  "novig.updates": 25276,
+  "pairs_blocked_antonym_date": 2510,
+  "pmglobal.rest_updates": 5326,
+  "pmglobal.sweeps": 1004,
+  "pmglobal.ticks": 118843,
+  "pmglobal.updates": 11770,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 3638615,
-  "pmglobal.ws_ticks": 18159,
-  "pmus.rest_updates": 11505,
-  "pmus.sweeps": 991,
-  "pmus.ticks": 7518196,
-  "pmus.updates": 11505,
-  "pmus_x.last_count": 7517,
-  "pmus_x.sweeps": 992,
+  "pmglobal.ws_msgs": 3665904,
+  "pmglobal.ws_ticks": 18343,
+  "pmus.rest_updates": 11555,
+  "pmus.sweeps": 1004,
+  "pmus.ticks": 7615614,
+  "pmus.updates": 11555,
+  "pmus_x.last_count": 7478,
+  "pmus_x.sweeps": 1005,
   "prophetx.ticks": 734,
   "prophetx.updates": 191,
-  "prophetx.ws_errors": 577,
+  "prophetx.ws_errors": 585,
   "px.evt_scanned": 26,
-  "pxboard.sweeps": 990,
-  "supa_errors": 3050
+  "pxboard.sweeps": 1003,
+  "supa_errors": 3089
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
     ],
     "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 2
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,32 +95,9 @@
     "title": "Atlanta Braves at Chicago Cubs",
     "no_cost_cents": 2
    },
-   "total_cost_cents": 4,
-   "edge_bps": 9600,
-   "detected_at": "2026-09-17T01:41:23.877666+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "56f2f294e769c4abc5eb4aa71ecaea34"
-    ],
-    "title": "Milwaukee Brewers at Pittsburgh Pirates",
-    "ask_cents": 27
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a"
-    ],
-    "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 31,
-   "edge_bps": 6900,
-   "detected_at": "2026-09-17T01:49:23.146265+00:00"
+   "total_cost_cents": 3,
+   "edge_bps": 9700,
+   "detected_at": "2026-09-17T01:51:22.743716+00:00"
   },
   {
    "buy_yes": {
@@ -130,7 +107,7 @@
      "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
     ],
     "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 2
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -141,9 +118,9 @@
     "title": "Atlanta Braves at Chicago Cubs",
     "no_cost_cents": 37
    },
-   "total_cost_cents": 39,
-   "edge_bps": 6100,
-   "detected_at": "2026-09-17T01:41:23.781474+00:00"
+   "total_cost_cents": 38,
+   "edge_bps": 6200,
+   "detected_at": "2026-09-17T01:51:22.668176+00:00"
   },
   {
    "buy_yes": {
@@ -153,7 +130,7 @@
      "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
     ],
     "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 2
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -164,9 +141,9 @@
     "title": "Atlanta Braves at Chicago Cubs",
     "no_cost_cents": 39
    },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-17T01:41:23.853012+00:00"
+   "total_cost_cents": 40,
+   "edge_bps": 6000,
+   "detected_at": "2026-09-17T01:51:22.723561+00:00"
   },
   {
    "buy_yes": {
@@ -176,7 +153,7 @@
      "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
     ],
     "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 2
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -187,32 +164,9 @@
     "title": "Atlanta Braves at Chicago Cubs",
     "no_cost_cents": 41
    },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-17T01:41:23.826612+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7af2583088989b27eb875379294db455"
-    ],
-    "title": "Los Angeles Dodgers at Cincinnati Reds",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-17T01:48:57.605955+00:00"
+   "total_cost_cents": 42,
+   "edge_bps": 5800,
+   "detected_at": "2026-09-17T01:51:22.698153+00:00"
   },
   {
    "buy_yes": {
@@ -222,7 +176,7 @@
      "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
     ],
     "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 2
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -233,32 +187,9 @@
     "title": "Atlanta Braves at Chicago Cubs",
     "no_cost_cents": 56
    },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-17T01:41:23.926939+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e8bd91b4e3763cd5c8e4f5a78be5d8eb"
-    ],
-    "title": "Los Angeles Dodgers at Cincinnati Reds",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 58,
-   "edge_bps": 4200,
-   "detected_at": "2026-09-17T01:48:57.627425+00:00"
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-17T01:51:22.784199+00:00"
   },
   {
    "buy_yes": {
@@ -268,7 +199,7 @@
      "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
     ],
     "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 2
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -279,9 +210,9 @@
     "title": "Atlanta Braves at Chicago Cubs",
     "no_cost_cents": 61
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-09-17T01:41:23.764434+00:00"
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-09-17T01:51:22.643890+00:00"
   },
   {
    "buy_yes": {
@@ -291,7 +222,7 @@
      "0x8670003719f234dabcca91cf962e205c76c2ae0b7cc2bb1b835b0378fa5ff45a"
     ],
     "title": "Atlanta Braves vs. Chicago Cubs",
-    "ask_cents": 2
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -302,78 +233,9 @@
     "title": "Atlanta Braves at Chicago Cubs",
     "no_cost_cents": 61
    },
-   "total_cost_cents": 63,
-   "edge_bps": 3700,
-   "detected_at": "2026-09-17T01:41:23.899914+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x46c98f8cc2264d79af270a41109017d4f2366b4b2a9daed636c465ca63578868"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds: O/U 8.5",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7af2583088989b27eb875379294db455"
-    ],
-    "title": "Los Angeles Dodgers at Cincinnati Reds",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-17T01:48:04.622978+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4a4ac42873f5b9407a101ca0d92a751e"
-    ],
-    "title": "Milwaukee Brewers at Pittsburgh Pirates",
-    "ask_cents": 75
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a"
-    ],
-    "title": "Milwaukee Brewers vs. Pittsburgh Pirates",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-17T01:49:23.107344+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x46c98f8cc2264d79af270a41109017d4f2366b4b2a9daed636c465ca63578868"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds: O/U 8.5",
-    "ask_cents": 26
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e8bd91b4e3763cd5c8e4f5a78be5d8eb"
-    ],
-    "title": "Los Angeles Dodgers at Cincinnati Reds",
-    "no_cost_cents": 57
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-17T01:48:04.648427+00:00"
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-09-17T01:51:22.762281+00:00"
   },
   {
    "buy_yes": {
