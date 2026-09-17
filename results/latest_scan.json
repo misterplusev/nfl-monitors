@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-17T01:26:51.369387+00:00",
+ "scanned_at": "2026-09-17T01:28:51.799684+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 136.5,
+ "loop_uptime_min": 138.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 186138,
-   "last_tick_age_s": 0.0
+   "markets": 188422,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7920,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 4.8
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 126,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 262,
-   "last_tick_age_s": 7.6
+   "markets": 264,
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 29,
-   "last_tick_age_s": 7897.2
+   "last_tick_age_s": 8017.6
   }
  ],
  "totals": {
-  "markets_tracked": 194475,
+  "markets_tracked": 196761,
   "pairs_married": 20,
   "arbitrages": 20
  },
  "stats": {
-  "commits": 66,
-  "gist_errors": 143,
+  "commits": 67,
+  "gist_errors": 145,
   "hot_errors": 0,
-  "kalshi.sweeps": 857,
-  "kalshi.ticks": 7177435,
-  "kalshi.updates": 3515335,
-  "kalshi.ws_ticks": 7177435,
-  "kalshi.ws_trades": 1297112,
-  "live_evals_fired": 7193,
-  "novig.rest_updates": 21229,
-  "novig.sweeps": 856,
-  "novig.ticks": 187107,
-  "novig.updates": 21229,
-  "pairs_blocked_antonym_date": 2142,
-  "pmglobal.rest_updates": 4607,
-  "pmglobal.sweeps": 856,
-  "pmglobal.ticks": 101454,
-  "pmglobal.updates": 10180,
+  "kalshi.sweeps": 869,
+  "kalshi.ticks": 7285348,
+  "kalshi.updates": 3563700,
+  "kalshi.ws_ticks": 7285348,
+  "kalshi.ws_trades": 1313026,
+  "live_evals_fired": 7247,
+  "novig.rest_updates": 21659,
+  "novig.sweeps": 869,
+  "novig.ticks": 189900,
+  "novig.updates": 21659,
+  "pairs_blocked_antonym_date": 2174,
+  "pmglobal.rest_updates": 4669,
+  "pmglobal.sweeps": 869,
+  "pmglobal.ticks": 102980,
+  "pmglobal.updates": 10318,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 3232273,
-  "pmglobal.ws_ticks": 15754,
-  "pmus.rest_updates": 10708,
-  "pmus.sweeps": 857,
-  "pmus.ticks": 6498847,
-  "pmus.updates": 10708,
+  "pmglobal.ws_msgs": 3276452,
+  "pmglobal.ws_ticks": 15980,
+  "pmus.rest_updates": 10762,
+  "pmus.sweeps": 869,
+  "pmus.ticks": 6587359,
+  "pmus.updates": 10762,
   "pmus_x.last_count": 7376,
-  "pmus_x.sweeps": 858,
+  "pmus_x.sweeps": 870,
   "prophetx.ticks": 734,
   "prophetx.updates": 191,
-  "prophetx.ws_errors": 494,
+  "prophetx.ws_errors": 502,
   "px.evt_scanned": 26,
-  "pxboard.sweeps": 856,
-  "supa_errors": 2645
+  "pxboard.sweeps": 869,
+  "supa_errors": 2683
  },
  "arbitrages": [
   {
@@ -216,29 +216,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
-    ],
-    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7af2583088989b27eb875379294db455"
-    ],
-    "title": "Los Angeles Dodgers at Cincinnati Reds",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 46,
-   "edge_bps": 5400,
-   "detected_at": "2026-09-17T01:26:45.642368+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -258,7 +235,30 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-17T01:25:01.893622+00:00"
+   "detected_at": "2026-09-17T01:27:56.404472+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
+    ],
+    "title": "Los Angeles Dodgers vs. Cincinnati Reds",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7af2583088989b27eb875379294db455"
+    ],
+    "title": "Los Angeles Dodgers at Cincinnati Reds",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 48,
+   "edge_bps": 5200,
+   "detected_at": "2026-09-17T01:28:37.622460+00:00"
   },
   {
    "buy_yes": {
@@ -281,7 +281,7 @@
    },
    "total_cost_cents": 51,
    "edge_bps": 4900,
-   "detected_at": "2026-09-17T01:26:32.071521+00:00"
+   "detected_at": "2026-09-17T01:28:48.127880+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +327,7 @@
    },
    "total_cost_cents": 61,
    "edge_bps": 3900,
-   "detected_at": "2026-09-17T01:25:01.852653+00:00"
+   "detected_at": "2026-09-17T01:27:56.380259+00:00"
   },
   {
    "buy_yes": {
@@ -337,7 +337,7 @@
      "0xc4e9b031555847e8b4edc34b81f2d3b736ee55cfe1a83ec0f3ee216e543b50e0"
     ],
     "title": "Los Angeles Dodgers vs. Cincinnati Reds",
-    "ask_cents": 4
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -348,9 +348,9 @@
     "title": "Los Angeles Dodgers at Cincinnati Reds",
     "no_cost_cents": 57
    },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-17T01:26:45.670332+00:00"
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-17T01:28:37.637832+00:00"
   },
   {
    "buy_yes": {
@@ -419,7 +419,7 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-17T01:26:32.107851+00:00"
+   "detected_at": "2026-09-17T01:28:28.147379+00:00"
   },
   {
    "buy_yes": {
@@ -488,7 +488,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-17T01:26:32.071709+00:00"
+   "detected_at": "2026-09-17T01:28:28.113771+00:00"
   },
   {
    "buy_yes": {
@@ -534,7 +534,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-17T01:26:32.071502+00:00"
+   "detected_at": "2026-09-17T01:28:48.106403+00:00"
   }
  ]
 }
