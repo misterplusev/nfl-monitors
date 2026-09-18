@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-18T00:53:55.933323+00:00",
+ "scanned_at": "2026-09-18T00:55:58.127020+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 114.8,
+ "loop_uptime_min": 116.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 279825,
+   "markets": 282123,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7915,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 2.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 128,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.9
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 277,
-   "last_tick_age_s": 13.0
+   "last_tick_age_s": 9.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 65,
-   "last_tick_age_s": 6553.4
+   "last_tick_age_s": 6675.5
   }
  ],
  "totals": {
-  "markets_tracked": 288210,
+  "markets_tracked": 290508,
   "pairs_married": 60,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 55,
-  "gist_errors": 120,
+  "commits": 56,
+  "gist_errors": 122,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 582,
-  "kalshi.ticks": 7505607,
-  "kalshi.updates": 3708515,
-  "kalshi.ws_ticks": 7505604,
-  "kalshi.ws_trades": 1273375,
-  "live_evals_fired": 8339,
-  "novig.rest_updates": 9865,
+  "kalshi.sweeps": 592,
+  "kalshi.ticks": 7657543,
+  "kalshi.updates": 3786661,
+  "kalshi.ws_ticks": 7657540,
+  "kalshi.ws_trades": 1301229,
+  "live_evals_fired": 8510,
+  "novig.rest_updates": 10195,
   "novig.sweep_errors": 1,
-  "novig.sweeps": 580,
-  "novig.ticks": 129177,
-  "novig.updates": 9865,
-  "pairs_blocked_antonym_date": 7997,
-  "pmglobal.rest_updates": 3164,
-  "pmglobal.sweeps": 581,
-  "pmglobal.ticks": 70668,
-  "pmglobal.updates": 6674,
-  "pmglobal.ws_msgs": 1630015,
-  "pmglobal.ws_ticks": 12468,
-  "pmus.rest_updates": 10545,
-  "pmus.sweeps": 582,
-  "pmus.ticks": 4408607,
-  "pmus.updates": 10545,
-  "pmus_x.last_count": 7884,
-  "pmus_x.sweeps": 583,
+  "novig.sweeps": 590,
+  "novig.ticks": 131003,
+  "novig.updates": 10195,
+  "pairs_blocked_antonym_date": 8140,
+  "pmglobal.rest_updates": 3233,
+  "pmglobal.sweeps": 592,
+  "pmglobal.ticks": 71980,
+  "pmglobal.updates": 6814,
+  "pmglobal.ws_msgs": 1686838,
+  "pmglobal.ws_ticks": 12680,
+  "pmus.rest_updates": 10586,
+  "pmus.sweeps": 592,
+  "pmus.ticks": 4487443,
+  "pmus.updates": 10586,
+  "pmus_x.last_count": 7882,
+  "pmus_x.sweeps": 593,
   "prophetx.ticks": 1778,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 391,
+  "prophetx.ws_errors": 398,
   "px.evt_scanned": 63,
-  "pxboard.sweeps": 581,
-  "supa_errors": 1931
+  "pxboard.sweeps": 591,
+  "supa_errors": 1964
  },
  "arbitrages": [
   {
@@ -108,7 +108,7 @@
      "0xf1c72fc2a509b84024dd914150e8dd1647f41bdc388d8c7953b210c8ed3bdda6"
     ],
     "title": "Connecticut Sun vs. Atlanta Dream: O/U 168.5",
-    "ask_cents": 14
+    "ask_cents": 16
    },
    "buy_no": {
     "venue": "prophetx",
@@ -119,9 +119,9 @@
     "title": "Connecticut Sun at Atlanta Dream",
     "no_cost_cents": 8
    },
-   "total_cost_cents": 22,
-   "edge_bps": 7800,
-   "detected_at": "2026-09-18T00:49:14.513704+00:00"
+   "total_cost_cents": 24,
+   "edge_bps": 7600,
+   "detected_at": "2026-09-18T00:54:08.597881+00:00"
   },
   {
    "buy_yes": {
@@ -131,7 +131,7 @@
      "0xf1c72fc2a509b84024dd914150e8dd1647f41bdc388d8c7953b210c8ed3bdda6"
     ],
     "title": "Connecticut Sun vs. Atlanta Dream: O/U 168.5",
-    "ask_cents": 14
+    "ask_cents": 16
    },
    "buy_no": {
     "venue": "prophetx",
@@ -142,9 +142,9 @@
     "title": "Connecticut Sun at Atlanta Dream",
     "no_cost_cents": 11
    },
-   "total_cost_cents": 25,
-   "edge_bps": 7500,
-   "detected_at": "2026-09-18T00:49:14.697158+00:00"
+   "total_cost_cents": 27,
+   "edge_bps": 7300,
+   "detected_at": "2026-09-18T00:54:08.763976+00:00"
   },
   {
    "buy_yes": {
@@ -404,6 +404,75 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
+     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
+    ],
+    "title": "Kansas City Royals vs. Houston Astros",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8e8d639f9c56d451e6d5d302c33bed51"
+    ],
+    "title": "Kansas City Royals at Houston Astros",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-18T00:55:47.494530+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
+    ],
+    "title": "Kansas City Royals vs. Houston Astros",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "56ef6809cbaf612e334b35ff69c660b1"
+    ],
+    "title": "Kansas City Royals at Houston Astros",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 46,
+   "edge_bps": 5400,
+   "detected_at": "2026-09-18T00:55:47.494513+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
+    ],
+    "title": "Kansas City Royals vs. Houston Astros",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5105336f236d956df478601df3d19dcd"
+    ],
+    "title": "Kansas City Royals at Houston Astros",
+    "no_cost_cents": 43
+   },
+   "total_cost_cents": 46,
+   "edge_bps": 5400,
+   "detected_at": "2026-09-18T00:55:47.494490+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
      "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
     ],
     "title": "Syracuse vs. Pittsburgh",
@@ -421,75 +490,6 @@
    "total_cost_cents": 46,
    "edge_bps": 5400,
    "detected_at": "2026-09-18T00:49:14.269754+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
-    ],
-    "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 5
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8e8d639f9c56d451e6d5d302c33bed51"
-    ],
-    "title": "Kansas City Royals at Houston Astros",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-09-18T00:52:49.403597+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
-    ],
-    "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 5
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "56ef6809cbaf612e334b35ff69c660b1"
-    ],
-    "title": "Kansas City Royals at Houston Astros",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-18T00:52:49.403581+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
-    ],
-    "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 5
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5105336f236d956df478601df3d19dcd"
-    ],
-    "title": "Kansas City Royals at Houston Astros",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-18T00:52:49.403563+00:00"
   },
   {
    "buy_yes": {
@@ -568,7 +568,7 @@
      "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
     ],
     "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 5
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "prophetx",
@@ -579,9 +579,9 @@
     "title": "Kansas City Royals at Houston Astros",
     "no_cost_cents": 55
    },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-18T00:52:49.403601+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-18T00:55:47.494534+00:00"
   },
   {
    "buy_yes": {
@@ -591,7 +591,7 @@
      "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
     ],
     "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 5
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "prophetx",
@@ -602,9 +602,9 @@
     "title": "Kansas City Royals at Houston Astros",
     "no_cost_cents": 56
    },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-18T00:52:49.403587+00:00"
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-18T00:55:47.494519+00:00"
   },
   {
    "buy_yes": {
@@ -634,23 +634,23 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
+     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
     ],
-    "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 16
+    "title": "Kansas City Royals vs. Houston Astros",
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "524cd3c5d115ebec8ad654770b644102"
+     "69886cf6818ccb503784fd8063d4bf75"
     ],
-    "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 48
+    "title": "Kansas City Royals at Houston Astros",
+    "no_cost_cents": 59
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-18T00:52:30.341002+00:00"
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-09-18T00:55:47.494525+00:00"
   }
  ]
 }
