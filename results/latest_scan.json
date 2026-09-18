@@ -1,14 +1,14 @@
 {
- "scanned_at": "2026-09-18T23:20:10.489098+00:00",
+ "scanned_at": "2026-09-18T23:22:41.690209+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 35.4,
+ "loop_uptime_min": 37.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 20996,
-   "last_tick_age_s": 36.2
+   "markets": 21547,
+   "last_tick_age_s": 31.3
   },
   {
    "venue": "pmus",
@@ -20,83 +20,60 @@
    "venue": "pmglobal",
    "state": "OK",
    "markets": 106,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 36.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 248,
-   "last_tick_age_s": 39.9
+   "markets": 250,
+   "last_tick_age_s": 34.9
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 19,
-   "last_tick_age_s": 38.2
+   "last_tick_age_s": 33.4
   }
  ],
  "totals": {
-  "markets_tracked": 28149,
+  "markets_tracked": 28702,
   "pairs_married": 6,
-  "arbitrages": 6
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 15,
-  "gist_errors": 26,
+  "commits": 16,
+  "gist_errors": 28,
   "hot_errors": 0,
-  "kalshi.sweeps": 51,
-  "kalshi.ticks": 61943,
-  "kalshi.updates": 41434,
-  "kalshi.ws_ticks": 61943,
-  "kalshi.ws_trades": 21506,
-  "live_evals_fired": 520,
-  "novig.rest_updates": 1018,
-  "novig.sweeps": 50,
-  "novig.ticks": 12308,
-  "novig.updates": 1018,
-  "pairs_blocked_antonym_date": 68,
-  "pmglobal.rest_updates": 1959,
-  "pmglobal.sweeps": 50,
-  "pmglobal.ticks": 8877,
-  "pmglobal.updates": 4040,
-  "pmglobal.ws_errors": 22,
-  "pmglobal.ws_msgs": 234166,
-  "pmglobal.ws_ticks": 3777,
-  "pmus.rest_updates": 7561,
-  "pmus.sweep_errors": 51,
-  "pmus.ticks": 352560,
-  "pmus.updates": 7561,
-  "prophetx.ticks": 499,
-  "prophetx.updates": 366,
-  "prophetx.ws_errors": 51,
+  "kalshi.sweeps": 55,
+  "kalshi.ticks": 63769,
+  "kalshi.updates": 42768,
+  "kalshi.ws_ticks": 63769,
+  "kalshi.ws_trades": 22108,
+  "live_evals_fired": 554,
+  "novig.rest_updates": 1105,
+  "novig.sweeps": 54,
+  "novig.ticks": 13262,
+  "novig.updates": 1105,
+  "pairs_blocked_antonym_date": 73,
+  "pmglobal.rest_updates": 2114,
+  "pmglobal.sweeps": 54,
+  "pmglobal.ticks": 9615,
+  "pmglobal.updates": 4372,
+  "pmglobal.ws_errors": 25,
+  "pmglobal.ws_msgs": 254250,
+  "pmglobal.ws_ticks": 4115,
+  "pmus.rest_updates": 7597,
+  "pmus.sweep_errors": 55,
+  "pmus.ticks": 379680,
+  "pmus.updates": 7597,
+  "prophetx.ticks": 550,
+  "prophetx.updates": 405,
+  "prophetx.ws_errors": 55,
   "px.evt_scanned": 13,
-  "pxboard.sweeps": 50,
-  "supa_errors": 174
+  "pxboard.sweeps": 54,
+  "supa_errors": 187
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x31a6c37918fcb05ca2d2d9efbfb4cca41c5a2c6c1d34babde020a0f909238b44"
-    ],
-    "title": "Kansas City Royals vs. Pittsburgh Pirates: O/U 8.5",
-    "ask_cents": 36
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "437246c1c6a9ef659bbb22eee0bc5c5c"
-    ],
-    "title": "Kansas City Royals at Pittsburgh Pirates",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 77,
-   "edge_bps": 2300,
-   "detected_at": "2026-09-18T23:19:32.100875+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -114,11 +91,34 @@
      "4bc950b8c644d159a95c2ba9495974dc"
     ],
     "title": "Kansas City Royals at Pittsburgh Pirates",
-    "no_cost_cents": 47
+    "no_cost_cents": 50
    },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-18T23:19:32.076841+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-18T23:22:05.553570+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x31a6c37918fcb05ca2d2d9efbfb4cca41c5a2c6c1d34babde020a0f909238b44"
+    ],
+    "title": "Kansas City Royals vs. Pittsburgh Pirates: O/U 8.5",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "437246c1c6a9ef659bbb22eee0bc5c5c"
+    ],
+    "title": "Kansas City Royals at Pittsburgh Pirates",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-18T23:22:08.174831+00:00"
   },
   {
    "buy_yes": {
@@ -137,57 +137,11 @@
      "d804fcdeda92a95f81884c903640fd31"
     ],
     "title": "Chicago Cubs at Cincinnati Reds",
-    "no_cost_cents": 45
+    "no_cost_cents": 48
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-18T23:19:31.992818+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf938c0630476a73cd51b8350920cc20a47346b24e611ae1bf2d575fd2d829a1c"
-    ],
-    "title": "Kansas City Royals vs. Pittsburgh Pirates",
-    "ask_cents": 50
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "437246c1c6a9ef659bbb22eee0bc5c5c"
-    ],
-    "title": "Kansas City Royals at Pittsburgh Pirates",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-18T23:19:32.121871+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf938c0630476a73cd51b8350920cc20a47346b24e611ae1bf2d575fd2d829a1c"
-    ],
-    "title": "Kansas City Royals vs. Pittsburgh Pirates",
-    "ask_cents": 50
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4bc950b8c644d159a95c2ba9495974dc"
-    ],
-    "title": "Kansas City Royals at Pittsburgh Pirates",
-    "no_cost_cents": 47
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-18T23:19:32.054583+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-18T23:22:05.487669+00:00"
   },
   {
    "buy_yes": {
@@ -206,11 +160,11 @@
      "b382b97f4aff8f6337b810499c93405e"
     ],
     "title": "Chicago Cubs at Cincinnati Reds",
-    "no_cost_cents": 55
+    "no_cost_cents": 54
    },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-18T23:19:32.016638+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-18T23:22:05.440874+00:00"
   }
  ]
 }
