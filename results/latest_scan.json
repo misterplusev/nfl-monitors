@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-18T02:01:12.918714+00:00",
+ "scanned_at": "2026-09-18T02:03:13.301428+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 182.1,
+ "loop_uptime_min": 184.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 361114,
+   "markets": 363606,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7915,
-   "last_tick_age_s": 2.5
+   "last_tick_age_s": 5.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 136,
-   "last_tick_age_s": 0.5
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 284,
-   "last_tick_age_s": 11.5
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 65,
-   "last_tick_age_s": 10590.4
+   "last_tick_age_s": 10710.8
   }
  ],
  "totals": {
-  "markets_tracked": 369514,
+  "markets_tracked": 372006,
   "pairs_married": 49,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 88,
-  "gist_errors": 189,
+  "commits": 89,
+  "gist_errors": 191,
   "hot_errors": 0,
   "kalshi.rest_updates": 3,
-  "kalshi.sweeps": 920,
-  "kalshi.ticks": 11735634,
-  "kalshi.updates": 5877606,
-  "kalshi.ws_ticks": 11735628,
-  "kalshi.ws_trades": 2104780,
-  "live_evals_fired": 13095,
-  "novig.rest_updates": 19267,
+  "kalshi.sweeps": 930,
+  "kalshi.ticks": 11838277,
+  "kalshi.updates": 5931860,
+  "kalshi.ws_ticks": 11838271,
+  "kalshi.ws_trades": 2127938,
+  "live_evals_fired": 13143,
+  "novig.rest_updates": 19437,
   "novig.sweep_errors": 1,
-  "novig.sweeps": 918,
-  "novig.ticks": 191240,
-  "novig.updates": 19267,
-  "pairs_blocked_antonym_date": 12695,
-  "pmglobal.rest_updates": 5039,
-  "pmglobal.sweeps": 920,
-  "pmglobal.ticks": 111586,
-  "pmglobal.updates": 10715,
-  "pmglobal.ws_msgs": 3087742,
-  "pmglobal.ws_ticks": 19486,
-  "pmus.rest_updates": 11628,
-  "pmus.sweeps": 920,
-  "pmus.ticks": 6910968,
-  "pmus.updates": 11628,
+  "novig.sweeps": 929,
+  "novig.ticks": 193201,
+  "novig.updates": 19437,
+  "pairs_blocked_antonym_date": 12851,
+  "pmglobal.rest_updates": 5089,
+  "pmglobal.sweeps": 930,
+  "pmglobal.ticks": 112812,
+  "pmglobal.updates": 10835,
+  "pmglobal.ws_msgs": 3116255,
+  "pmglobal.ws_ticks": 19712,
+  "pmus.rest_updates": 11660,
+  "pmus.sweeps": 930,
+  "pmus.ticks": 6984168,
+  "pmus.updates": 11660,
   "pmus_x.last_count": 7320,
-  "pmus_x.sweeps": 921,
+  "pmus_x.sweeps": 931,
   "prophetx.ticks": 1778,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 626,
+  "prophetx.ws_errors": 633,
   "px.evt_scanned": 63,
-  "pxboard.sweeps": 919,
-  "supa_errors": 2996
+  "pxboard.sweeps": 930,
+  "supa_errors": 3028
  },
  "arbitrages": [
   {
@@ -374,7 +374,7 @@
    },
    "total_cost_cents": 44,
    "edge_bps": 5600,
-   "detected_at": "2026-09-18T02:00:38.478063+00:00"
+   "detected_at": "2026-09-18T02:03:13.301311+00:00"
   },
   {
    "buy_yes": {
@@ -420,7 +420,7 @@
    },
    "total_cost_cents": 47,
    "edge_bps": 5300,
-   "detected_at": "2026-09-18T02:00:38.634259+00:00"
+   "detected_at": "2026-09-18T02:03:13.301347+00:00"
   },
   {
    "buy_yes": {
@@ -443,7 +443,7 @@
    },
    "total_cost_cents": 48,
    "edge_bps": 5200,
-   "detected_at": "2026-09-18T02:00:38.583643+00:00"
+   "detected_at": "2026-09-18T02:03:13.301341+00:00"
   },
   {
    "buy_yes": {
@@ -516,6 +516,52 @@
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
+    ],
+    "title": "Detroit Tigers vs. Chicago White Sox",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "524cd3c5d115ebec8ad654770b644102"
+    ],
+    "title": "Detroit Tigers at Chicago White Sox",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-18T02:03:12.010456+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
+    ],
+    "title": "Detroit Tigers vs. Chicago White Sox",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "26545cba2b94409d02e0e59e7fbfb53b"
+    ],
+    "title": "Detroit Tigers at Chicago White Sox",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-18T02:03:12.054016+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -535,30 +581,7 @@
    },
    "total_cost_cents": 55,
    "edge_bps": 4500,
-   "detected_at": "2026-09-18T02:00:38.744156+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "762c9ebab85cd0437fd2bfeb1e55ff53"
-    ],
-    "title": "Philadelphia Phillies at New York Mets",
-    "ask_cents": 58
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
-    ],
-    "title": "Philadelphia Phillies vs. New York Mets",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-18T02:00:38.691967+00:00"
+   "detected_at": "2026-09-18T02:03:13.301362+00:00"
   },
   {
    "buy_yes": {
@@ -568,76 +591,7 @@
      "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
     ],
     "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 12
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "524cd3c5d115ebec8ad654770b644102"
-    ],
-    "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-18T02:01:11.808545+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
-    ],
-    "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 12
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "26545cba2b94409d02e0e59e7fbfb53b"
-    ],
-    "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-18T02:01:11.875608+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9155bc2e336880677b9c8968388bda00"
-    ],
-    "title": "Philadelphia Phillies at New York Mets",
-    "ask_cents": 59
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
-    ],
-    "title": "Philadelphia Phillies vs. New York Mets",
-    "no_cost_cents": 1
-   },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-18T02:00:38.538263+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
-    ],
-    "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 12
+    "ask_cents": 7
    },
    "buy_no": {
     "venue": "prophetx",
@@ -648,9 +602,55 @@
     "title": "Detroit Tigers at Chicago White Sox",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-18T02:01:11.649206+00:00"
+   "total_cost_cents": 56,
+   "edge_bps": 4400,
+   "detected_at": "2026-09-18T02:03:11.818923+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
+    ],
+    "title": "Detroit Tigers vs. Chicago White Sox",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "88abf3bf49aab95ba0d76172cfcdbcad"
+    ],
+    "title": "Detroit Tigers at Chicago White Sox",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-18T02:03:11.891100+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
+    ],
+    "title": "Detroit Tigers vs. Chicago White Sox",
+    "ask_cents": 7
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "88314448624d7988cd22fc9347f267c8"
+    ],
+    "title": "Detroit Tigers at Chicago White Sox",
+    "no_cost_cents": 50
+   },
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-18T02:03:11.948277+00:00"
   }
  ]
 }
