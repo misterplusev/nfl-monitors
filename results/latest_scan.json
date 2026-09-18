@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-18T01:20:38.324657+00:00",
+ "scanned_at": "2026-09-18T01:22:43.374770+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 141.5,
+ "loop_uptime_min": 143.6,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 316309,
+   "markets": 318502,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7915,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "pmglobal",
@@ -26,55 +26,55 @@
    "venue": "novig",
    "state": "OK",
    "markets": 279,
-   "last_tick_age_s": 9.0
+   "last_tick_age_s": 8.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 65,
-   "last_tick_age_s": 8155.8
+   "last_tick_age_s": 8280.8
   }
  ],
  "totals": {
-  "markets_tracked": 324696,
+  "markets_tracked": 326889,
   "pairs_married": 60,
   "arbitrages": 25
  },
  "stats": {
-  "commits": 68,
-  "gist_errors": 148,
+  "commits": 69,
+  "gist_errors": 150,
   "hot_errors": 0,
   "kalshi.rest_updates": 3,
-  "kalshi.sweeps": 712,
-  "kalshi.ticks": 9300770,
-  "kalshi.updates": 4618232,
-  "kalshi.ws_ticks": 9300764,
-  "kalshi.ws_trades": 1612790,
-  "live_evals_fired": 10648,
-  "novig.rest_updates": 13578,
+  "kalshi.sweeps": 723,
+  "kalshi.ticks": 9425985,
+  "kalshi.updates": 4682241,
+  "kalshi.ws_ticks": 9425979,
+  "kalshi.ws_trades": 1638683,
+  "live_evals_fired": 10750,
+  "novig.rest_updates": 13868,
   "novig.sweep_errors": 1,
-  "novig.sweeps": 710,
-  "novig.ticks": 152677,
-  "novig.updates": 13578,
-  "pairs_blocked_antonym_date": 9790,
-  "pmglobal.rest_updates": 3893,
-  "pmglobal.sweeps": 711,
-  "pmglobal.ticks": 86378,
-  "pmglobal.updates": 8220,
-  "pmglobal.ws_msgs": 2247123,
-  "pmglobal.ws_ticks": 15178,
-  "pmus.rest_updates": 11168,
-  "pmus.sweeps": 712,
-  "pmus.ticks": 5387560,
-  "pmus.updates": 11168,
-  "pmus_x.last_count": 7339,
-  "pmus_x.sweeps": 713,
+  "novig.sweeps": 721,
+  "novig.ticks": 154782,
+  "novig.updates": 13868,
+  "pairs_blocked_antonym_date": 9944,
+  "pmglobal.rest_updates": 3936,
+  "pmglobal.sweeps": 722,
+  "pmglobal.ticks": 87703,
+  "pmglobal.updates": 8314,
+  "pmglobal.ws_msgs": 2276670,
+  "pmglobal.ws_ticks": 15403,
+  "pmus.rest_updates": 11195,
+  "pmus.sweeps": 723,
+  "pmus.ticks": 5468249,
+  "pmus.updates": 11195,
+  "pmus_x.last_count": 7334,
+  "pmus_x.sweeps": 724,
   "prophetx.ticks": 1778,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 484,
+  "prophetx.ws_errors": 492,
   "px.evt_scanned": 63,
-  "pxboard.sweeps": 711,
-  "supa_errors": 2350
+  "pxboard.sweeps": 722,
+  "supa_errors": 2384
  },
  "arbitrages": [
   {
@@ -485,11 +485,11 @@
      "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
     ],
     "title": "Philadelphia Phillies vs. New York Mets",
-    "no_cost_cents": 10
+    "no_cost_cents": 9
    },
-   "total_cost_cents": 53,
-   "edge_bps": 4700,
-   "detected_at": "2026-09-18T01:20:29.132126+00:00"
+   "total_cost_cents": 52,
+   "edge_bps": 4800,
+   "detected_at": "2026-09-18T01:22:38.354524+00:00"
   },
   {
    "buy_yes": {
@@ -531,11 +531,34 @@
      "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
     ],
     "title": "Philadelphia Phillies vs. New York Mets",
-    "no_cost_cents": 10
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 55,
+   "edge_bps": 4500,
+   "detected_at": "2026-09-18T01:22:38.520247+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5b1d40d99b717c00f3a858e3d2e64bf8"
+    ],
+    "title": "Philadelphia Phillies at New York Mets",
+    "ask_cents": 47
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
+    ],
+    "title": "Philadelphia Phillies vs. New York Mets",
+    "no_cost_cents": 9
    },
    "total_cost_cents": 56,
    "edge_bps": 4400,
-   "detected_at": "2026-09-18T01:20:29.132162+00:00"
+   "detected_at": "2026-09-18T01:22:38.475400+00:00"
   },
   {
    "buy_yes": {
@@ -559,29 +582,6 @@
    "total_cost_cents": 57,
    "edge_bps": 4300,
    "detected_at": "2026-09-18T01:19:07.323201+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5b1d40d99b717c00f3a858e3d2e64bf8"
-    ],
-    "title": "Philadelphia Phillies at New York Mets",
-    "ask_cents": 47
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
-    ],
-    "title": "Philadelphia Phillies vs. New York Mets",
-    "no_cost_cents": 10
-   },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-18T01:20:29.132156+00:00"
   },
   {
    "buy_yes": {
@@ -627,7 +627,7 @@
    },
    "total_cost_cents": 60,
    "edge_bps": 4000,
-   "detected_at": "2026-09-18T01:20:28.417111+00:00"
+   "detected_at": "2026-09-18T01:21:12.524821+00:00"
   },
   {
    "buy_yes": {
@@ -650,7 +650,7 @@
    },
    "total_cost_cents": 60,
    "edge_bps": 4000,
-   "detected_at": "2026-09-18T01:20:28.417115+00:00"
+   "detected_at": "2026-09-18T01:21:12.595670+00:00"
   }
  ]
 }
