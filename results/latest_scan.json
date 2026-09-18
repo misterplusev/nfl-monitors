@@ -1,14 +1,14 @@
 {
- "scanned_at": "2026-09-18T22:56:40.527331+00:00",
+ "scanned_at": "2026-09-18T22:58:52.007029+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 11.9,
+ "loop_uptime_min": 14.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 5276,
-   "last_tick_age_s": 34.4
+   "markets": 6393,
+   "last_tick_age_s": 36.8
   },
   {
    "venue": "pmus",
@@ -19,61 +19,84 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 101,
+   "markets": 105,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 246,
-   "last_tick_age_s": 38.3
+   "last_tick_age_s": 40.6
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 11,
-   "last_tick_age_s": 36.7
+   "last_tick_age_s": 39.1
   }
  ],
  "totals": {
-  "markets_tracked": 12414,
+  "markets_tracked": 13535,
   "pairs_married": 6,
-  "arbitrages": 6
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 4,
-  "gist_errors": 9,
+  "commits": 5,
+  "gist_errors": 10,
   "hot_errors": 0,
-  "kalshi.sweeps": 17,
-  "kalshi.ticks": 9041,
-  "kalshi.updates": 7399,
-  "kalshi.ws_ticks": 9041,
-  "kalshi.ws_trades": 3632,
-  "live_evals_fired": 152,
-  "novig.rest_updates": 445,
-  "novig.sweeps": 16,
-  "novig.ticks": 4116,
-  "novig.updates": 445,
-  "pairs_blocked_antonym_date": 23,
-  "pmglobal.rest_updates": 786,
-  "pmglobal.sweeps": 16,
-  "pmglobal.ticks": 2918,
-  "pmglobal.updates": 1555,
-  "pmglobal.ws_errors": 8,
-  "pmglobal.ws_msgs": 60798,
-  "pmglobal.ws_ticks": 1218,
-  "pmus.rest_updates": 7079,
-  "pmus.sweep_errors": 17,
-  "pmus.ticks": 122040,
-  "pmus.updates": 7079,
-  "prophetx.ticks": 155,
-  "prophetx.updates": 113,
-  "prophetx.ws_errors": 17,
-  "px.evt_scanned": 7,
-  "pxboard.sweeps": 16,
-  "supa_errors": 57
+  "kalshi.sweeps": 20,
+  "kalshi.ticks": 11738,
+  "kalshi.updates": 9354,
+  "kalshi.ws_ticks": 11738,
+  "kalshi.ws_trades": 4488,
+  "live_evals_fired": 181,
+  "novig.rest_updates": 489,
+  "novig.sweeps": 19,
+  "novig.ticks": 4845,
+  "novig.updates": 489,
+  "pairs_blocked_antonym_date": 27,
+  "pmglobal.rest_updates": 937,
+  "pmglobal.sweeps": 19,
+  "pmglobal.ticks": 3473,
+  "pmglobal.updates": 1872,
+  "pmglobal.ws_errors": 10,
+  "pmglobal.ws_msgs": 69843,
+  "pmglobal.ws_ticks": 1473,
+  "pmus.rest_updates": 7118,
+  "pmus.sweep_errors": 20,
+  "pmus.ticks": 142380,
+  "pmus.updates": 7118,
+  "prophetx.ticks": 183,
+  "prophetx.updates": 135,
+  "prophetx.ws_errors": 20,
+  "px.evt_scanned": 10,
+  "pxboard.sweeps": 19,
+  "supa_errors": 68
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe09e54a08669bc9d1bdddf390da30838efa387cc4a57e2e910cd70ee6229db53"
+    ],
+    "title": "Chicago Cubs vs. Cincinnati Reds",
+    "ask_cents": 33
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d804fcdeda92a95f81884c903640fd31"
+    ],
+    "title": "Chicago Cubs at Cincinnati Reds",
+    "no_cost_cents": 31
+   },
+   "total_cost_cents": 64,
+   "edge_bps": 3600,
+   "detected_at": "2026-09-18T22:58:14.936707+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -82,7 +105,7 @@
      "0xf938c0630476a73cd51b8350920cc20a47346b24e611ae1bf2d575fd2d829a1c"
     ],
     "title": "Kansas City Royals vs. Pittsburgh Pirates",
-    "ask_cents": 36
+    "ask_cents": 48
    },
    "buy_no": {
     "venue": "prophetx",
@@ -93,9 +116,32 @@
     "title": "Kansas City Royals at Pittsburgh Pirates",
     "no_cost_cents": 49
    },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-18T22:56:01.038691+00:00"
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-18T22:58:10.098468+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x31a6c37918fcb05ca2d2d9efbfb4cca41c5a2c6c1d34babde020a0f909238b44"
+    ],
+    "title": "Kansas City Royals vs. Pittsburgh Pirates: O/U 8.5",
+    "ask_cents": 50
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4bc950b8c644d159a95c2ba9495974dc"
+    ],
+    "title": "Kansas City Royals at Pittsburgh Pirates",
+    "no_cost_cents": 49
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-18T22:58:10.159759+00:00"
   },
   {
    "buy_yes": {
@@ -114,103 +160,11 @@
      "0x31a6c37918fcb05ca2d2d9efbfb4cca41c5a2c6c1d34babde020a0f909238b44"
     ],
     "title": "Kansas City Royals vs. Pittsburgh Pirates: O/U 8.5",
-    "no_cost_cents": 39
+    "no_cost_cents": 50
    },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-18T22:56:00.984512+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf938c0630476a73cd51b8350920cc20a47346b24e611ae1bf2d575fd2d829a1c"
-    ],
-    "title": "Kansas City Royals vs. Pittsburgh Pirates",
-    "ask_cents": 36
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "437246c1c6a9ef659bbb22eee0bc5c5c"
-    ],
-    "title": "Kansas City Royals at Pittsburgh Pirates",
-    "no_cost_cents": 52
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-18T22:56:01.060464+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b382b97f4aff8f6337b810499c93405e"
-    ],
-    "title": "Chicago Cubs at Cincinnati Reds",
-    "ask_cents": 41
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe09e54a08669bc9d1bdddf390da30838efa387cc4a57e2e910cd70ee6229db53"
-    ],
-    "title": "Chicago Cubs vs. Cincinnati Reds",
-    "no_cost_cents": 48
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-18T22:56:00.937793+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4bc950b8c644d159a95c2ba9495974dc"
-    ],
-    "title": "Kansas City Royals at Pittsburgh Pirates",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x31a6c37918fcb05ca2d2d9efbfb4cca41c5a2c6c1d34babde020a0f909238b44"
-    ],
-    "title": "Kansas City Royals vs. Pittsburgh Pirates: O/U 8.5",
-    "no_cost_cents": 39
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-18T22:56:01.006326+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe09e54a08669bc9d1bdddf390da30838efa387cc4a57e2e910cd70ee6229db53"
-    ],
-    "title": "Chicago Cubs vs. Cincinnati Reds",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d804fcdeda92a95f81884c903640fd31"
-    ],
-    "title": "Chicago Cubs at Cincinnati Reds",
-    "no_cost_cents": 40
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-18T22:56:00.959590+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-18T22:58:12.838138+00:00"
   }
  ]
 }
