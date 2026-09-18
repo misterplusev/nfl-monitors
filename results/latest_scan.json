@@ -1,81 +1,357 @@
 {
- "scanned_at": "2026-09-18T00:08:45.842717+00:00",
+ "scanned_at": "2026-09-18T00:10:45.873756+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 69.7,
+ "loop_uptime_min": 71.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 212406,
+   "markets": 217259,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7793,
-   "last_tick_age_s": 0.1
+   "markets": 7841,
+   "last_tick_age_s": 2.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 122,
-   "last_tick_age_s": 0.1
+   "markets": 124,
+   "last_tick_age_s": 0.7
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 271,
-   "last_tick_age_s": 5.6
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 65,
-   "last_tick_age_s": 3843.2
+   "last_tick_age_s": 3963.2
   }
  ],
  "totals": {
-  "markets_tracked": 220657,
-  "pairs_married": 23,
-  "arbitrages": 22
+  "markets_tracked": 225560,
+  "pairs_married": 60,
+  "arbitrages": 25
  },
  "stats": {
-  "commits": 33,
-  "gist_errors": 73,
+  "commits": 34,
+  "gist_errors": 75,
   "hot_errors": 0,
-  "kalshi.sweeps": 358,
-  "kalshi.ticks": 4229046,
-  "kalshi.updates": 2013917,
-  "kalshi.ws_ticks": 4229046,
-  "kalshi.ws_trades": 711227,
-  "live_evals_fired": 3811,
-  "novig.rest_updates": 3559,
+  "kalshi.sweeps": 368,
+  "kalshi.ticks": 4379360,
+  "kalshi.updates": 2086566,
+  "kalshi.ws_ticks": 4379360,
+  "kalshi.ws_trades": 736350,
+  "live_evals_fired": 3876,
+  "novig.rest_updates": 3726,
   "novig.sweep_errors": 1,
-  "novig.sweeps": 356,
-  "novig.ticks": 86422,
-  "novig.updates": 3559,
-  "pairs_blocked_antonym_date": 4917,
-  "pmglobal.rest_updates": 1742,
-  "pmglobal.sweeps": 357,
-  "pmglobal.ticks": 42757,
-  "pmglobal.updates": 3522,
-  "pmglobal.ws_msgs": 556439,
-  "pmglobal.ws_ticks": 6957,
-  "pmus.rest_updates": 9287,
-  "pmus.sweeps": 358,
-  "pmus.ticks": 2645566,
-  "pmus.updates": 9287,
-  "pmus_x.last_count": 7752,
-  "pmus_x.sweeps": 359,
+  "novig.sweeps": 367,
+  "novig.ticks": 88980,
+  "novig.updates": 3726,
+  "pairs_blocked_antonym_date": 5060,
+  "pmglobal.rest_updates": 1804,
+  "pmglobal.sweeps": 368,
+  "pmglobal.ticks": 44054,
+  "pmglobal.updates": 3640,
+  "pmglobal.ws_msgs": 586196,
+  "pmglobal.ws_ticks": 7154,
+  "pmus.rest_updates": 9386,
+  "pmus.sweeps": 368,
+  "pmus.ticks": 2723403,
+  "pmus.updates": 9386,
+  "pmus_x.last_count": 7814,
+  "pmus_x.sweeps": 369,
   "prophetx.ticks": 1778,
   "prophetx.updates": 102,
-  "prophetx.ws_errors": 241,
+  "prophetx.ws_errors": 248,
   "px.evt_scanned": 63,
-  "pxboard.sweeps": 357,
-  "supa_errors": 1194
+  "pxboard.sweeps": 367,
+  "supa_errors": 1226
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c74ceee82207dd9ab21fcc04d788e976"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 13
+   },
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-09-18T00:10:45.873604+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "90961484452300ee462a4fbf1d0b3b3e"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 34,
+   "edge_bps": 6600,
+   "detected_at": "2026-09-18T00:10:45.873614+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0829847e56b169e72e924541e5c17c0a"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 34,
+   "edge_bps": 6600,
+   "detected_at": "2026-09-18T00:10:45.873618+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4ad4f14f92b0b6e489c87214776cf449"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 22
+   },
+   "total_cost_cents": 34,
+   "edge_bps": 6600,
+   "detected_at": "2026-09-18T00:10:45.873675+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0524ce050016868d5f1cc12c262e5234"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 23
+   },
+   "total_cost_cents": 35,
+   "edge_bps": 6500,
+   "detected_at": "2026-09-18T00:10:45.873654+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ee0bb05375d87d8884653a4e88856821"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-18T00:10:45.873678+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c2577826377db883966a6c6308128eab"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 27
+   },
+   "total_cost_cents": 39,
+   "edge_bps": 6100,
+   "detected_at": "2026-09-18T00:10:45.873681+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a0115d1e13bc5ebaea5cf557ee795298"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 29
+   },
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-18T00:10:45.873663+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b534e8fa41e312851fc1c60611bc0493"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 31
+   },
+   "total_cost_cents": 43,
+   "edge_bps": 5700,
+   "detected_at": "2026-09-18T00:10:45.873666+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "ef89abd0386f428832b51599cf8659e4"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 32
+   },
+   "total_cost_cents": 44,
+   "edge_bps": 5600,
+   "detected_at": "2026-09-18T00:10:45.873593+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9c0999493f445cfc8ad59cb123ee872b"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 33
+   },
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-18T00:10:45.873626+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "660a1dc809944d1842125ed7a6f2e583"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 34
+   },
+   "total_cost_cents": 46,
+   "edge_bps": 5400,
+   "detected_at": "2026-09-18T00:10:45.873657+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -84,7 +360,7 @@
      "0xf1c72fc2a509b84024dd914150e8dd1647f41bdc388d8c7953b210c8ed3bdda6"
     ],
     "title": "Connecticut Sun vs. Atlanta Dream: O/U 168.5",
-    "ask_cents": 39
+    "ask_cents": 41
    },
    "buy_no": {
     "venue": "prophetx",
@@ -95,9 +371,9 @@
     "title": "Connecticut Sun at Atlanta Dream",
     "no_cost_cents": 8
    },
-   "total_cost_cents": 47,
-   "edge_bps": 5300,
-   "detected_at": "2026-09-18T00:03:59.448673+00:00"
+   "total_cost_cents": 49,
+   "edge_bps": 5100,
+   "detected_at": "2026-09-18T00:09:02.621236+00:00"
   },
   {
    "buy_yes": {
@@ -107,7 +383,7 @@
      "0xf1c72fc2a509b84024dd914150e8dd1647f41bdc388d8c7953b210c8ed3bdda6"
     ],
     "title": "Connecticut Sun vs. Atlanta Dream: O/U 168.5",
-    "ask_cents": 39
+    "ask_cents": 41
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,9 +394,101 @@
     "title": "Connecticut Sun at Atlanta Dream",
     "no_cost_cents": 11
    },
-   "total_cost_cents": 50,
-   "edge_bps": 5000,
-   "detected_at": "2026-09-18T00:03:59.601070+00:00"
+   "total_cost_cents": 52,
+   "edge_bps": 4800,
+   "detected_at": "2026-09-18T00:09:02.784088+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "af5f83c09107bbcb23c905efc29c9926"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-18T00:10:45.873705+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "bd8da0aa3e9eb76c1844ac4cc8d6cd63"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 46
+   },
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-18T00:10:45.873648+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c4164ee52827977c9214d723faffb182"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-18T00:10:45.873669+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc6fa2773bafad80d5c0962572457196edca84e18ae38e7ba8201cf17be060965"
+    ],
+    "title": "Syracuse vs. Pittsburgh",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "893c1a60507fb7b641f9414927b0380f"
+    ],
+    "title": "Syracuse at Pittsburgh",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 60,
+   "edge_bps": 4000,
+   "detected_at": "2026-09-18T00:10:45.873630+00:00"
   },
   {
    "buy_yes": {
@@ -143,7 +511,7 @@
    },
    "total_cost_cents": 64,
    "edge_bps": 3600,
-   "detected_at": "2026-09-18T00:08:03.370072+00:00"
+   "detected_at": "2026-09-18T00:10:11.262967+00:00"
   },
   {
    "buy_yes": {
@@ -166,7 +534,7 @@
    },
    "total_cost_cents": 64,
    "edge_bps": 3600,
-   "detected_at": "2026-09-18T00:08:03.414892+00:00"
+   "detected_at": "2026-09-18T00:10:11.319376+00:00"
   },
   {
    "buy_yes": {
@@ -189,7 +557,30 @@
    },
    "total_cost_cents": 65,
    "edge_bps": 3500,
-   "detected_at": "2026-09-18T00:08:03.213500+00:00"
+   "detected_at": "2026-09-18T00:10:11.099974+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
+    ],
+    "title": "Kansas City Royals vs. Houston Astros",
+    "ask_cents": 24
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "8e8d639f9c56d451e6d5d302c33bed51"
+    ],
+    "title": "Kansas City Royals at Houston Astros",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-18T00:10:10.990133+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +603,7 @@
    },
    "total_cost_cents": 66,
    "edge_bps": 3400,
-   "detected_at": "2026-09-18T00:08:03.261317+00:00"
+   "detected_at": "2026-09-18T00:10:11.164644+00:00"
   },
   {
    "buy_yes": {
@@ -235,53 +626,7 @@
    },
    "total_cost_cents": 66,
    "edge_bps": 3400,
-   "detected_at": "2026-09-18T00:08:03.311344+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x06375ff8ab2f9c0c2fc3436b4620c8db7bebe19d7f85ecfec5aaa03f2d689cca"
-    ],
-    "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 16
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7ee3996f60a39c46e350b09dff5990e0"
-    ],
-    "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 52
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-18T00:08:03.477773+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e81fde17067f83f8ee5a6a30b8d2661e"
-    ],
-    "title": "Connecticut Sun at Atlanta Dream",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf1c72fc2a509b84024dd914150e8dd1647f41bdc388d8c7953b210c8ed3bdda6"
-    ],
-    "title": "Connecticut Sun vs. Atlanta Dream: O/U 168.5",
-    "no_cost_cents": 61
-   },
-   "total_cost_cents": 69,
-   "edge_bps": 3100,
-   "detected_at": "2026-09-18T00:03:59.546923+00:00"
+   "detected_at": "2026-09-18T00:10:11.216759+00:00"
   },
   {
    "buy_yes": {
@@ -291,30 +636,7 @@
      "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
     ],
     "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 29
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "8e8d639f9c56d451e6d5d302c33bed51"
-    ],
-    "title": "Kansas City Royals at Houston Astros",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-18T00:08:38.593226+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
-    ],
-    "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 29
+    "ask_cents": 24
    },
    "buy_no": {
     "venue": "prophetx",
@@ -325,262 +647,9 @@
     "title": "Kansas City Royals at Houston Astros",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-18T00:08:38.409373+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
-    ],
-    "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 29
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5105336f236d956df478601df3d19dcd"
-    ],
-    "title": "Kansas City Royals at Houston Astros",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-18T00:08:38.351240+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "077cf38c8b9028430a15a8ab4c7396ac"
-    ],
-    "title": "Connecticut Sun at Atlanta Dream",
-    "ask_cents": 20
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf1c72fc2a509b84024dd914150e8dd1647f41bdc388d8c7953b210c8ed3bdda6"
-    ],
-    "title": "Connecticut Sun vs. Atlanta Dream: O/U 168.5",
-    "no_cost_cents": 61
-   },
-   "total_cost_cents": 81,
-   "edge_bps": 1900,
-   "detected_at": "2026-09-18T00:03:59.381025+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
-    ],
-    "title": "Philadelphia Phillies vs. New York Mets",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9155bc2e336880677b9c8968388bda00"
-    ],
-    "title": "Philadelphia Phillies at New York Mets",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-18T00:08:02.910510+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
-    ],
-    "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 29
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "160217a397599f2144b64ef5979d5822"
-    ],
-    "title": "Kansas City Royals at Houston Astros",
-    "no_cost_cents": 55
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-18T00:08:38.663064+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
-    ],
-    "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 29
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e216c44699dde17375da386fa05be6ee"
-    ],
-    "title": "Kansas City Royals at Houston Astros",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-18T00:08:38.476202+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
-    ],
-    "title": "Philadelphia Phillies vs. New York Mets",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "762c9ebab85cd0437fd2bfeb1e55ff53"
-    ],
-    "title": "Philadelphia Phillies at New York Mets",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-18T00:08:03.091644+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xebb137cc297595b66b04af7fecd79078fe4eaf1920d9fd26125dabec544a8134"
-    ],
-    "title": "Kansas City Royals vs. Houston Astros",
-    "ask_cents": 29
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "69886cf6818ccb503784fd8063d4bf75"
-    ],
-    "title": "Kansas City Royals at Houston Astros",
-    "no_cost_cents": 59
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-18T00:08:38.534153+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
-    ],
-    "title": "Philadelphia Phillies vs. New York Mets",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "be10afa6e26aa1f6287be349ca61e4ea"
-    ],
-    "title": "Philadelphia Phillies at New York Mets",
-    "no_cost_cents": 47
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-18T00:08:03.153244+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf1c72fc2a509b84024dd914150e8dd1647f41bdc388d8c7953b210c8ed3bdda6"
-    ],
-    "title": "Connecticut Sun vs. Atlanta Dream: O/U 168.5",
-    "ask_cents": 39
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "93b901a7913841651f821a76301bbe61"
-    ],
-    "title": "Connecticut Sun at Atlanta Dream",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-18T00:03:59.498219+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
-    ],
-    "title": "Philadelphia Phillies vs. New York Mets",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5b1d40d99b717c00f3a858e3d2e64bf8"
-    ],
-    "title": "Philadelphia Phillies at New York Mets",
-    "no_cost_cents": 54
-   },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-18T00:08:02.971892+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9278efc8d5ff06b4c45f205bfd5a9aacbbede6aaa734d63fcecdace137913b52"
-    ],
-    "title": "Philadelphia Phillies vs. New York Mets",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "3c472b6663d751b5d5156a4e1f2ef7bc"
-    ],
-    "title": "Philadelphia Phillies at New York Mets",
-    "no_cost_cents": 55
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-18T00:08:03.031393+00:00"
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-18T00:10:10.824515+00:00"
   }
  ]
 }
