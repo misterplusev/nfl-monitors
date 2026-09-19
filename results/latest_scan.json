@@ -1,79 +1,79 @@
 {
- "scanned_at": "2026-09-19T23:11:25.226958+00:00",
+ "scanned_at": "2026-09-19T23:13:27.594459+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 47.1,
+ "loop_uptime_min": 49.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 202783,
+   "markets": 208934,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7283,
-   "last_tick_age_s": 4.6
+   "last_tick_age_s": 3.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 113,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 0.9
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 264,
-   "last_tick_age_s": 0.3
+   "markets": 265,
+   "last_tick_age_s": 15.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 2429.3
+   "last_tick_age_s": 2551.6
   }
  ],
  "totals": {
-  "markets_tracked": 210501,
+  "markets_tracked": 216653,
   "pairs_married": 4,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 22,
-  "gist_errors": 49,
+  "commits": 23,
+  "gist_errors": 52,
   "hot_errors": 0,
-  "kalshi.sweeps": 210,
-  "kalshi.ticks": 4463215,
-  "kalshi.updates": 2598411,
-  "kalshi.ws_ticks": 4463215,
-  "kalshi.ws_trades": 659804,
-  "live_evals_fired": 1056,
-  "novig.rest_updates": 7384,
-  "novig.sweeps": 210,
-  "novig.ticks": 42706,
-  "novig.updates": 7384,
-  "pairs_blocked_antonym_date": 21,
-  "pmglobal.rest_updates": 2521,
-  "pmglobal.sweeps": 210,
-  "pmglobal.ticks": 29695,
-  "pmglobal.updates": 6191,
-  "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 2011982,
-  "pmglobal.ws_ticks": 8595,
-  "pmus.rest_updates": 8110,
-  "pmus.sweeps": 210,
-  "pmus.ticks": 1536643,
-  "pmus.updates": 8110,
+  "kalshi.sweeps": 219,
+  "kalshi.ticks": 4688460,
+  "kalshi.updates": 2728262,
+  "kalshi.ws_ticks": 4688460,
+  "kalshi.ws_trades": 700402,
+  "live_evals_fired": 1096,
+  "novig.rest_updates": 7652,
+  "novig.sweeps": 218,
+  "novig.ticks": 44277,
+  "novig.updates": 7652,
+  "pairs_blocked_antonym_date": 32,
+  "pmglobal.rest_updates": 2672,
+  "pmglobal.sweeps": 219,
+  "pmglobal.ticks": 30925,
+  "pmglobal.updates": 6504,
+  "pmglobal.ws_errors": 2,
+  "pmglobal.ws_msgs": 2060690,
+  "pmglobal.ws_ticks": 8925,
+  "pmus.rest_updates": 8142,
+  "pmus.sweeps": 219,
+  "pmus.ticks": 1602190,
+  "pmus.updates": 8142,
   "pmus_x.last_count": 7283,
-  "pmus_x.sweeps": 211,
+  "pmus_x.sweeps": 220,
   "prophetx.ticks": 1421,
   "prophetx.updates": 130,
-  "prophetx.ws_errors": 166,
+  "prophetx.ws_errors": 173,
   "px.evt_scanned": 56,
-  "pxboard.sweeps": 209,
-  "supa_errors": 771
+  "pxboard.sweeps": 218,
+  "supa_errors": 803
  },
  "arbitrages": [
   {
@@ -93,11 +93,11 @@
      "0x5f0c572a4cf1facef94b8c03b0ce2db5911447a885a02d5cd01382f9794ede77"
     ],
     "title": "USC vs. Rutgers",
-    "no_cost_cents": 3
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 13,
-   "edge_bps": 8700,
-   "detected_at": "2026-09-19T23:11:07.933280+00:00"
+   "total_cost_cents": 14,
+   "edge_bps": 8600,
+   "detected_at": "2026-09-19T23:13:26.534464+00:00"
   },
   {
    "buy_yes": {
@@ -107,7 +107,7 @@
      "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
     ],
     "title": "SMU vs. Louisville",
-    "ask_cents": 3
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
@@ -118,9 +118,9 @@
     "title": "SMU at Louisville",
     "no_cost_cents": 40
    },
-   "total_cost_cents": 43,
-   "edge_bps": 5700,
-   "detected_at": "2026-09-19T23:11:22.226133+00:00"
+   "total_cost_cents": 42,
+   "edge_bps": 5800,
+   "detected_at": "2026-09-19T23:13:26.448104+00:00"
   },
   {
    "buy_yes": {
@@ -130,7 +130,7 @@
      "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
     ],
     "title": "SMU vs. Louisville",
-    "ask_cents": 3
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "prophetx",
@@ -141,9 +141,9 @@
     "title": "SMU at Louisville",
     "no_cost_cents": 61
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-19T23:11:22.132881+00:00"
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-19T23:13:26.358316+00:00"
   },
   {
    "buy_yes": {
@@ -162,11 +162,11 @@
      "0x5f0c572a4cf1facef94b8c03b0ce2db5911447a885a02d5cd01382f9794ede77"
     ],
     "title": "USC vs. Rutgers",
-    "no_cost_cents": 3
+    "no_cost_cents": 4
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-19T23:11:08.002016+00:00"
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-19T23:13:26.628195+00:00"
   }
  ]
 }
