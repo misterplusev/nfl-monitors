@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-19T22:51:03.654906+00:00",
+ "scanned_at": "2026-09-19T22:53:08.478323+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 26.8,
+ "loop_uptime_min": 28.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 129174,
+   "markets": 136039,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7283,
-   "last_tick_age_s": 4.4
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 102,
+   "markets": 109,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 238,
-   "last_tick_age_s": 1.8
+   "markets": 239,
+   "last_tick_age_s": 8.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 1207.6
+   "last_tick_age_s": 1332.5
   }
  ],
  "totals": {
-  "markets_tracked": 136855,
-  "pairs_married": 6,
-  "arbitrages": 6
+  "markets_tracked": 143728,
+  "pairs_married": 4,
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 12,
-  "gist_errors": 28,
+  "commits": 13,
+  "gist_errors": 31,
   "hot_errors": 0,
-  "kalshi.sweeps": 118,
-  "kalshi.ticks": 2344425,
-  "kalshi.updates": 1347764,
-  "kalshi.ws_ticks": 2344425,
-  "kalshi.ws_trades": 354717,
-  "live_evals_fired": 811,
-  "novig.rest_updates": 4437,
-  "novig.sweeps": 118,
-  "novig.ticks": 24467,
-  "novig.updates": 4437,
-  "pmglobal.rest_updates": 1595,
-  "pmglobal.sweeps": 118,
-  "pmglobal.ticks": 17424,
-  "pmglobal.updates": 4071,
+  "kalshi.sweeps": 128,
+  "kalshi.ticks": 2532321,
+  "kalshi.updates": 1459704,
+  "kalshi.ws_ticks": 2532321,
+  "kalshi.ws_trades": 384041,
+  "live_evals_fired": 835,
+  "novig.rest_updates": 4727,
+  "novig.sweeps": 127,
+  "novig.ticks": 26263,
+  "novig.updates": 4727,
+  "pmglobal.rest_updates": 1702,
+  "pmglobal.sweeps": 127,
+  "pmglobal.ticks": 18747,
+  "pmglobal.updates": 4379,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1316790,
-  "pmglobal.ws_ticks": 5524,
-  "pmus.rest_updates": 7816,
-  "pmus.sweeps": 118,
-  "pmus.ticks": 866631,
-  "pmus.updates": 7816,
+  "pmglobal.ws_msgs": 1416997,
+  "pmglobal.ws_ticks": 5947,
+  "pmus.rest_updates": 7856,
+  "pmus.sweeps": 128,
+  "pmus.ticks": 939451,
+  "pmus.updates": 7856,
   "pmus_x.last_count": 7282,
-  "pmus_x.sweeps": 119,
+  "pmus_x.sweeps": 129,
   "prophetx.ticks": 1421,
   "prophetx.updates": 130,
-  "prophetx.ws_errors": 94,
+  "prophetx.ws_errors": 101,
   "px.evt_scanned": 56,
-  "pxboard.sweeps": 118,
-  "supa_errors": 444
+  "pxboard.sweeps": 127,
+  "supa_errors": 478
  },
  "arbitrages": [
   {
@@ -92,57 +92,11 @@
      "0x5f0c572a4cf1facef94b8c03b0ce2db5911447a885a02d5cd01382f9794ede77"
     ],
     "title": "USC vs. Rutgers",
-    "no_cost_cents": 5
+    "no_cost_cents": 3
    },
-   "total_cost_cents": 15,
-   "edge_bps": 8500,
-   "detected_at": "2026-09-19T22:47:45.836188+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xad09e889a26ccaecde3b38d09e854803e65ec800a0d532e0cf698bcc4daecd13"
-    ],
-    "title": "Temple vs. Toledo",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "34ee588243b501ff56be966dc1cf3f37"
-    ],
-    "title": "Temple at Toledo",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 44,
-   "edge_bps": 5600,
-   "detected_at": "2026-09-19T22:50:12.446729+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xad09e889a26ccaecde3b38d09e854803e65ec800a0d532e0cf698bcc4daecd13"
-    ],
-    "title": "Temple vs. Toledo",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2cc08292f2b091d8a8c84047aa0631a9"
-    ],
-    "title": "Temple at Toledo",
-    "no_cost_cents": 59
-   },
-   "total_cost_cents": 60,
-   "edge_bps": 4000,
-   "detected_at": "2026-09-19T22:50:12.533723+00:00"
+   "total_cost_cents": 13,
+   "edge_bps": 8700,
+   "detected_at": "2026-09-19T22:52:45.802799+00:00"
   },
   {
    "buy_yes": {
@@ -152,7 +106,7 @@
      "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
     ],
     "title": "SMU vs. Louisville",
-    "ask_cents": 42
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -163,9 +117,32 @@
     "title": "SMU at Louisville",
     "no_cost_cents": 40
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-19T22:50:49.951753+00:00"
+   "total_cost_cents": 46,
+   "edge_bps": 5400,
+   "detected_at": "2026-09-19T22:52:59.242996+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
+    ],
+    "title": "SMU vs. Louisville",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1c233dc12c04c0309b695f16815f8cf4"
+    ],
+    "title": "SMU at Louisville",
+    "no_cost_cents": 61
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-19T22:52:59.242967+00:00"
   },
   {
    "buy_yes": {
@@ -184,34 +161,11 @@
      "0x5f0c572a4cf1facef94b8c03b0ce2db5911447a885a02d5cd01382f9794ede77"
     ],
     "title": "USC vs. Rutgers",
-    "no_cost_cents": 5
+    "no_cost_cents": 3
    },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-19T22:47:45.902305+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1c233dc12c04c0309b695f16815f8cf4"
-    ],
-    "title": "SMU at Louisville",
-    "ask_cents": 40
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
-    ],
-    "title": "SMU vs. Louisville",
-    "no_cost_cents": 58
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-19T22:50:49.861528+00:00"
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-19T22:52:45.891918+00:00"
   }
  ]
 }
