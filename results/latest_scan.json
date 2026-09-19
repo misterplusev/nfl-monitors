@@ -1,107 +1,84 @@
 {
- "scanned_at": "2026-09-19T01:38:51.567021+00:00",
+ "scanned_at": "2026-09-19T01:40:53.391410+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 174.1,
+ "loop_uptime_min": 176.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 156185,
+   "markets": 159988,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7735,
-   "last_tick_age_s": 4.4
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 131,
-   "last_tick_age_s": 0.5
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 272,
-   "last_tick_age_s": 1.8
+   "markets": 274,
+   "last_tick_age_s": 7.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 28,
-   "last_tick_age_s": 1987.3
+   "last_tick_age_s": 2109.1
   }
  ],
  "totals": {
-  "markets_tracked": 164351,
+  "markets_tracked": 168156,
   "pairs_married": 14,
   "arbitrages": 13
  },
  "stats": {
-  "commits": 81,
-  "gist_errors": 141,
+  "commits": 82,
+  "gist_errors": 143,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 446,
-  "kalshi.ticks": 3811514,
-  "kalshi.updates": 2328363,
+  "kalshi.sweeps": 460,
+  "kalshi.ticks": 3982873,
+  "kalshi.updates": 2428705,
   "kalshi.ws_errors": 4,
-  "kalshi.ws_ticks": 3811513,
-  "kalshi.ws_trades": 542259,
-  "live_evals_fired": 5938,
-  "novig.rest_updates": 12412,
-  "novig.sweeps": 446,
-  "novig.ticks": 101726,
-  "novig.updates": 12412,
-  "pairs_blocked_antonym_date": 576,
-  "pmglobal.rest_updates": 8990,
-  "pmglobal.sweeps": 446,
-  "pmglobal.ticks": 63944,
-  "pmglobal.updates": 18456,
+  "kalshi.ws_ticks": 3982872,
+  "kalshi.ws_trades": 563832,
+  "live_evals_fired": 5997,
+  "novig.rest_updates": 12815,
+  "novig.sweeps": 459,
+  "novig.ticks": 104723,
+  "novig.updates": 12815,
+  "pairs_blocked_antonym_date": 593,
+  "pmglobal.rest_updates": 9042,
+  "pmglobal.sweeps": 459,
+  "pmglobal.ticks": 65424,
+  "pmglobal.updates": 18568,
   "pmglobal.ws_errors": 101,
-  "pmglobal.ws_msgs": 1611850,
-  "pmglobal.ws_ticks": 19244,
-  "pmus.rest_updates": 12150,
+  "pmglobal.ws_msgs": 1636675,
+  "pmglobal.ws_ticks": 19424,
+  "pmus.rest_updates": 12234,
   "pmus.sweep_errors": 204,
-  "pmus.sweeps": 242,
-  "pmus.ticks": 3257186,
-  "pmus.updates": 12150,
+  "pmus.sweeps": 256,
+  "pmus.ticks": 3365476,
+  "pmus.updates": 12234,
   "pmus_x.last_count": 7735,
-  "pmus_x.sweeps": 242,
+  "pmus_x.sweeps": 256,
   "prophetx.ticks": 2928,
   "prophetx.updates": 1944,
-  "prophetx.ws_errors": 331,
+  "prophetx.ws_errors": 338,
   "px.evt_scanned": 17,
-  "pxboard.sweeps": 446,
-  "supa_errors": 1465
+  "pxboard.sweeps": 459,
+  "supa_errors": 1505
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
-    ],
-    "title": "Athletics vs. Cleveland Guardians",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "34ef0b5529e8c3738bed6d052efa3d13"
-    ],
-    "title": "Athletics at Cleveland Guardians",
-    "no_cost_cents": 9
-   },
-   "total_cost_cents": 13,
-   "edge_bps": 8700,
-   "detected_at": "2026-09-19T01:38:03.800905+00:00"
-  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -123,7 +100,30 @@
    },
    "total_cost_cents": 14,
    "edge_bps": 8600,
-   "detected_at": "2026-09-19T01:38:48.293234+00:00"
+   "detected_at": "2026-09-19T01:40:37.444395+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
+    ],
+    "title": "Athletics vs. Cleveland Guardians",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "34ef0b5529e8c3738bed6d052efa3d13"
+    ],
+    "title": "Athletics at Cleveland Guardians",
+    "no_cost_cents": 9
+   },
+   "total_cost_cents": 15,
+   "edge_bps": 8500,
+   "detected_at": "2026-09-19T01:40:46.103770+00:00"
   },
   {
    "buy_yes": {
@@ -169,7 +169,7 @@
    },
    "total_cost_cents": 22,
    "edge_bps": 7800,
-   "detected_at": "2026-09-19T01:38:30.583125+00:00"
+   "detected_at": "2026-09-19T01:40:47.744382+00:00"
   },
   {
    "buy_yes": {
@@ -215,7 +215,7 @@
    },
    "total_cost_cents": 78,
    "edge_bps": 2200,
-   "detected_at": "2026-09-19T01:38:30.583136+00:00"
+   "detected_at": "2026-09-19T01:40:47.744401+00:00"
   },
   {
    "buy_yes": {
@@ -238,7 +238,7 @@
    },
    "total_cost_cents": 89,
    "edge_bps": 1100,
-   "detected_at": "2026-09-19T01:38:20.212180+00:00"
+   "detected_at": "2026-09-19T01:40:45.120399+00:00"
   },
   {
    "buy_yes": {
@@ -261,7 +261,7 @@
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-09-19T01:38:40.570209+00:00"
+   "detected_at": "2026-09-19T01:40:45.039773+00:00"
   },
   {
    "buy_yes": {
@@ -284,30 +284,7 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-19T01:38:48.273068+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
-    ],
-    "title": "Athletics vs. Cleveland Guardians",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "394d80438b4795d8dd63b6b53551e562"
-    ],
-    "title": "Athletics at Cleveland Guardians",
-    "no_cost_cents": 90
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-19T01:38:03.823134+00:00"
+   "detected_at": "2026-09-19T01:40:37.423217+00:00"
   },
   {
    "buy_yes": {
@@ -331,6 +308,29 @@
    "total_cost_cents": 96,
    "edge_bps": 400,
    "detected_at": "2026-09-19T01:37:45.284291+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
+    ],
+    "title": "Athletics vs. Cleveland Guardians",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "394d80438b4795d8dd63b6b53551e562"
+    ],
+    "title": "Athletics at Cleveland Guardians",
+    "no_cost_cents": 90
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-19T01:40:46.127421+00:00"
   },
   {
    "buy_yes": {
@@ -376,7 +376,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-19T01:38:20.234121+00:00"
+   "detected_at": "2026-09-19T01:40:45.138979+00:00"
   }
  ]
 }
