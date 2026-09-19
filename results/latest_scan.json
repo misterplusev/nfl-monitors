@@ -1,129 +1,82 @@
 {
- "scanned_at": "2026-09-19T02:52:04.455105+00:00",
+ "scanned_at": "2026-09-19T02:54:04.794477+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 247.3,
+ "loop_uptime_min": 249.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 262611,
+   "markets": 264850,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7961,
-   "last_tick_age_s": 4.6
+   "last_tick_age_s": 2.7
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 145,
-   "last_tick_age_s": 0.9
+   "markets": 146,
+   "last_tick_age_s": 0.7
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 293,
-   "last_tick_age_s": 2.5
+   "last_tick_age_s": 7.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 28,
-   "last_tick_age_s": 6380.2
+   "last_tick_age_s": 6500.6
   }
  ],
  "totals": {
-  "markets_tracked": 271038,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 273278,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 117,
-  "gist_errors": 218,
+  "commits": 118,
+  "gist_errors": 221,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 944,
-  "kalshi.ticks": 10218703,
-  "kalshi.updates": 6196020,
+  "kalshi.sweeps": 958,
+  "kalshi.ticks": 10378073,
+  "kalshi.updates": 6289727,
   "kalshi.ws_errors": 4,
-  "kalshi.ws_ticks": 10218702,
-  "kalshi.ws_trades": 1408377,
-  "live_evals_fired": 7861,
-  "novig.rest_updates": 27106,
-  "novig.sweeps": 944,
-  "novig.ticks": 212483,
-  "novig.updates": 27106,
-  "pairs_blocked_antonym_date": 1200,
-  "pmglobal.rest_updates": 11067,
-  "pmglobal.sweeps": 944,
-  "pmglobal.ticks": 120889,
-  "pmglobal.updates": 22805,
+  "kalshi.ws_ticks": 10378072,
+  "kalshi.ws_trades": 1431656,
+  "live_evals_fired": 7863,
+  "novig.rest_updates": 27478,
+  "novig.sweeps": 957,
+  "novig.ticks": 215208,
+  "novig.updates": 27478,
+  "pairs_blocked_antonym_date": 1217,
+  "pmglobal.rest_updates": 11120,
+  "pmglobal.sweeps": 958,
+  "pmglobal.ticks": 122442,
+  "pmglobal.updates": 22897,
   "pmglobal.ws_errors": 101,
-  "pmglobal.ws_msgs": 2750549,
-  "pmglobal.ws_ticks": 26389,
-  "pmus.rest_updates": 15826,
+  "pmglobal.ws_msgs": 2767666,
+  "pmglobal.ws_ticks": 26542,
+  "pmus.rest_updates": 15842,
   "pmus.sweep_errors": 204,
-  "pmus.sweeps": 740,
-  "pmus.ticks": 7131409,
-  "pmus.updates": 15826,
+  "pmus.sweeps": 754,
+  "pmus.ticks": 7239727,
+  "pmus.updates": 15842,
   "pmus_x.last_count": 7737,
-  "pmus_x.sweeps": 740,
+  "pmus_x.sweeps": 754,
   "prophetx.ticks": 2928,
   "prophetx.updates": 1944,
-  "prophetx.ws_errors": 600,
+  "prophetx.ws_errors": 608,
   "px.evt_scanned": 17,
-  "pxboard.sweeps": 944,
-  "supa_errors": 2964
+  "pxboard.sweeps": 957,
+  "supa_errors": 3005
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "45828b22dba27c3135ba981e0aefca78"
-    ],
-    "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 51
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
-    ],
-    "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-19T02:51:51.843616+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "3e586f5512c6ac4228bd7fa60520e673"
-    ],
-    "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 60
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
-    ],
-    "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "no_cost_cents": 38
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-19T02:51:51.861944+00:00"
-  }
- ]
+ "arbitrages": []
 }
