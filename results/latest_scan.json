@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-19T22:28:32.443975+00:00",
+ "scanned_at": "2026-09-19T22:30:32.763206+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 4.2,
+ "loop_uptime_min": 6.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 39109,
+   "markets": 50409,
    "last_tick_age_s": 0.0
   },
   {
@@ -20,59 +20,59 @@
    "venue": "pmglobal",
    "state": "OK",
    "markets": 100,
-   "last_tick_age_s": 12.4
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 228,
-   "last_tick_age_s": 17.2
+   "markets": 230,
+   "last_tick_age_s": 10.8
   },
   {
    "venue": "prophetx",
    "state": "OK",
-   "markets": 57,
-   "last_tick_age_s": 14.8
+   "markets": 58,
+   "last_tick_age_s": 8.2
   }
  ],
  "totals": {
-  "markets_tracked": 46777,
+  "markets_tracked": 58080,
   "pairs_married": 6,
   "arbitrages": 5
  },
  "stats": {
-  "commits": 1,
-  "gist_errors": 5,
+  "commits": 2,
+  "gist_errors": 7,
   "hot_errors": 0,
-  "kalshi.sweeps": 17,
-  "kalshi.ticks": 345301,
-  "kalshi.updates": 206226,
-  "kalshi.ws_ticks": 345301,
-  "kalshi.ws_trades": 51819,
-  "live_evals_fired": 121,
-  "novig.rest_updates": 850,
-  "novig.sweeps": 16,
-  "novig.ticks": 3619,
-  "novig.updates": 850,
-  "pmglobal.rest_updates": 452,
-  "pmglobal.sweeps": 16,
-  "pmglobal.ticks": 2643,
-  "pmglobal.updates": 931,
+  "kalshi.sweeps": 25,
+  "kalshi.ticks": 530588,
+  "kalshi.updates": 314278,
+  "kalshi.ws_ticks": 530588,
+  "kalshi.ws_trades": 80020,
+  "live_evals_fired": 203,
+  "novig.rest_updates": 1195,
+  "novig.sweeps": 24,
+  "novig.ticks": 5293,
+  "novig.updates": 1195,
+  "pmglobal.rest_updates": 552,
+  "pmglobal.sweeps": 24,
+  "pmglobal.ticks": 3805,
+  "pmglobal.updates": 1196,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 212606,
-  "pmglobal.ws_ticks": 943,
-  "pmus.rest_updates": 7353,
-  "pmus.sweeps": 17,
-  "pmus.ticks": 131084,
-  "pmus.updates": 7353,
+  "pmglobal.ws_msgs": 340315,
+  "pmglobal.ws_ticks": 1305,
+  "pmus.rest_updates": 7435,
+  "pmus.sweeps": 25,
+  "pmus.ticks": 189344,
+  "pmus.updates": 7435,
   "pmus_x.last_count": 7283,
-  "pmus_x.sweeps": 18,
-  "prophetx.ticks": 872,
-  "prophetx.updates": 95,
-  "prophetx.ws_errors": 14,
-  "px.evt_scanned": 56,
-  "pxboard.sweeps": 16,
-  "supa_errors": 65
+  "pmus_x.sweeps": 26,
+  "prophetx.ticks": 1309,
+  "prophetx.updates": 124,
+  "prophetx.ws_errors": 22,
+  "px.evt_scanned": 54,
+  "pxboard.sweeps": 24,
+  "supa_errors": 97
  },
  "arbitrages": [
   {
@@ -83,7 +83,7 @@
      "a897a323133c5a9b20ebedb114ee0984"
     ],
     "title": "USC at Rutgers",
-    "ask_cents": 9
+    "ask_cents": 13
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -94,9 +94,9 @@
     "title": "USC vs. Rutgers",
     "no_cost_cents": 6
    },
-   "total_cost_cents": 15,
-   "edge_bps": 8500,
-   "detected_at": "2026-09-19T22:28:17.301177+00:00"
+   "total_cost_cents": 19,
+   "edge_bps": 8100,
+   "detected_at": "2026-09-19T22:30:23.869645+00:00"
   },
   {
    "buy_yes": {
@@ -106,7 +106,7 @@
      "2cc08292f2b091d8a8c84047aa0631a9"
     ],
     "title": "Temple at Toledo",
-    "ask_cents": 12
+    "ask_cents": 40
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -115,11 +115,34 @@
      "0xad09e889a26ccaecde3b38d09e854803e65ec800a0d532e0cf698bcc4daecd13"
     ],
     "title": "Temple vs. Toledo",
-    "no_cost_cents": 54
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-19T22:28:16.832168+00:00"
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-19T22:30:12.393580+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "34ee588243b501ff56be966dc1cf3f37"
+    ],
+    "title": "Temple at Toledo",
+    "ask_cents": 58
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xad09e889a26ccaecde3b38d09e854803e65ec800a0d532e0cf698bcc4daecd13"
+    ],
+    "title": "Temple vs. Toledo",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 59,
+   "edge_bps": 4100,
+   "detected_at": "2026-09-19T22:30:09.251098+00:00"
   },
   {
    "buy_yes": {
@@ -129,7 +152,30 @@
      "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
     ],
     "title": "SMU vs. Louisville",
-    "ask_cents": 38
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "1c233dc12c04c0309b695f16815f8cf4"
+    ],
+    "title": "SMU at Louisville",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-19T22:30:24.921385+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
+    ],
+    "title": "SMU vs. Louisville",
+    "ask_cents": 40
    },
    "buy_no": {
     "venue": "prophetx",
@@ -138,57 +184,11 @@
      "5a4d3cc71c7bd5547f0e82ffc77e2e0e"
     ],
     "title": "SMU at Louisville",
-    "no_cost_cents": 38
+    "no_cost_cents": 40
    },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-19T22:28:16.078540+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xad09e889a26ccaecde3b38d09e854803e65ec800a0d532e0cf698bcc4daecd13"
-    ],
-    "title": "Temple vs. Toledo",
-    "ask_cents": 52
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "34ee588243b501ff56be966dc1cf3f37"
-    ],
-    "title": "Temple at Toledo",
-    "no_cost_cents": 31
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-19T22:28:16.901914+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d0efef6be2b02ac00feafbb010a6132d"
-    ],
-    "title": "USC at Rutgers",
-    "ask_cents": 92
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5f0c572a4cf1facef94b8c03b0ce2db5911447a885a02d5cd01382f9794ede77"
-    ],
-    "title": "USC vs. Rutgers",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-19T22:28:13.767560+00:00"
+   "total_cost_cents": 80,
+   "edge_bps": 2000,
+   "detected_at": "2026-09-19T22:30:25.010790+00:00"
   }
  ]
 }
