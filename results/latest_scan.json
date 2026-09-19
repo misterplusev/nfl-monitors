@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-19T00:40:45.454505+00:00",
+ "scanned_at": "2026-09-19T00:42:46.157507+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 116.0,
+ "loop_uptime_min": 118.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 63240,
-   "last_tick_age_s": 30.8
+   "markets": 63441,
+   "last_tick_age_s": 31.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 6780,
-   "last_tick_age_s": 30.1
+   "last_tick_age_s": 30.3
   },
   {
    "venue": "pmglobal",
@@ -26,7 +26,7 @@
    "venue": "novig",
    "state": "OK",
    "markets": 264,
-   "last_tick_age_s": 34.8
+   "last_tick_age_s": 34.7
   },
   {
    "venue": "prophetx",
@@ -36,44 +36,44 @@
   }
  ],
  "totals": {
-  "markets_tracked": 70434,
+  "markets_tracked": 70635,
   "pairs_married": 16,
-  "arbitrages": 16
+  "arbitrages": 15
  },
  "stats": {
-  "commits": 53,
-  "gist_errors": 87,
+  "commits": 54,
+  "gist_errors": 88,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 172,
-  "kalshi.ticks": 364202,
-  "kalshi.updates": 240823,
+  "kalshi.sweeps": 175,
+  "kalshi.ticks": 366699,
+  "kalshi.updates": 242752,
   "kalshi.ws_errors": 3,
-  "kalshi.ws_ticks": 364201,
-  "kalshi.ws_trades": 86550,
-  "live_evals_fired": 3049,
-  "novig.rest_updates": 5181,
-  "novig.sweeps": 171,
-  "novig.ticks": 40592,
-  "novig.updates": 5181,
-  "pairs_blocked_antonym_date": 231,
-  "pmglobal.rest_updates": 6577,
-  "pmglobal.sweeps": 171,
-  "pmglobal.ticks": 30227,
-  "pmglobal.updates": 13539,
-  "pmglobal.ws_errors": 85,
-  "pmglobal.ws_msgs": 816916,
-  "pmglobal.ws_ticks": 13027,
-  "pmus.rest_updates": 9510,
-  "pmus.sweep_errors": 172,
-  "pmus.ticks": 1168658,
-  "pmus.updates": 9510,
-  "prophetx.ticks": 2219,
-  "prophetx.updates": 1522,
-  "prophetx.ws_errors": 172,
-  "px.evt_scanned": 13,
-  "pxboard.sweeps": 171,
-  "supa_errors": 607
+  "kalshi.ws_ticks": 366698,
+  "kalshi.ws_trades": 87556,
+  "live_evals_fired": 3084,
+  "novig.rest_updates": 5296,
+  "novig.sweeps": 174,
+  "novig.ticks": 41261,
+  "novig.updates": 5296,
+  "pairs_blocked_antonym_date": 235,
+  "pmglobal.rest_updates": 6636,
+  "pmglobal.sweeps": 174,
+  "pmglobal.ticks": 30660,
+  "pmglobal.updates": 13664,
+  "pmglobal.ws_errors": 86,
+  "pmglobal.ws_msgs": 821896,
+  "pmglobal.ws_ticks": 13160,
+  "pmus.rest_updates": 9583,
+  "pmus.sweep_errors": 175,
+  "pmus.ticks": 1188998,
+  "pmus.updates": 9583,
+  "prophetx.ticks": 2254,
+  "prophetx.updates": 1536,
+  "prophetx.ws_errors": 175,
+  "px.evt_scanned": 12,
+  "pxboard.sweeps": 174,
+  "supa_errors": 617
  },
  "arbitrages": [
   {
@@ -97,7 +97,7 @@
    },
    "total_cost_cents": 37,
    "edge_bps": 6300,
-   "detected_at": "2026-09-19T00:40:09.354701+00:00"
+   "detected_at": "2026-09-19T00:41:27.504678+00:00"
   },
   {
    "buy_yes": {
@@ -120,30 +120,30 @@
    },
    "total_cost_cents": 39,
    "edge_bps": 6100,
-   "detected_at": "2026-09-19T00:40:09.478848+00:00"
+   "detected_at": "2026-09-19T00:41:27.612946+00:00"
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "45828b22dba27c3135ba981e0aefca78"
-    ],
-    "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 43
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x7928212d2de12deb2a928a2a70517b1d7549b957674217491d9385022549b644"
+     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
     ],
-    "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
-    "no_cost_cents": 23
+    "title": "Athletics vs. Cleveland Guardians",
+    "ask_cents": 36
    },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-19T00:40:09.455370+00:00"
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "34ef0b5529e8c3738bed6d052efa3d13"
+    ],
+    "title": "Athletics at Cleveland Guardians",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 54,
+   "edge_bps": 4600,
+   "detected_at": "2026-09-19T00:41:30.715223+00:00"
   },
   {
    "buy_yes": {
@@ -170,26 +170,26 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
-    ],
-    "title": "Athletics vs. Cleveland Guardians",
-    "ask_cents": 36
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "34ef0b5529e8c3738bed6d052efa3d13"
+     "45828b22dba27c3135ba981e0aefca78"
     ],
-    "title": "Athletics at Cleveland Guardians",
-    "no_cost_cents": 31
+    "title": "Milwaukee Brewers at Baltimore Orioles",
+    "ask_cents": 44
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7928212d2de12deb2a928a2a70517b1d7549b957674217491d9385022549b644"
+    ],
+    "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
+    "no_cost_cents": 23
    },
    "total_cost_cents": 67,
    "edge_bps": 3300,
-   "detected_at": "2026-09-19T00:40:09.385785+00:00"
+   "detected_at": "2026-09-19T00:41:30.641300+00:00"
   },
   {
    "buy_yes": {
@@ -212,7 +212,7 @@
    },
    "total_cost_cents": 71,
    "edge_bps": 2900,
-   "detected_at": "2026-09-19T00:40:12.138135+00:00"
+   "detected_at": "2026-09-19T00:41:27.391799+00:00"
   },
   {
    "buy_yes": {
@@ -222,7 +222,7 @@
      "b382b97f4aff8f6337b810499c93405e"
     ],
     "title": "Chicago Cubs at Cincinnati Reds",
-    "ask_cents": 21
+    "ask_cents": 24
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -233,9 +233,9 @@
     "title": "Chicago Cubs vs. Cincinnati Reds",
     "no_cost_cents": 50
    },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-19T00:40:12.160913+00:00"
+   "total_cost_cents": 74,
+   "edge_bps": 2600,
+   "detected_at": "2026-09-19T00:41:30.384557+00:00"
   },
   {
    "buy_yes": {
@@ -268,7 +268,7 @@
      "3e586f5512c6ac4228bd7fa60520e673"
     ],
     "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 59
+    "ask_cents": 58
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -279,9 +279,32 @@
     "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
     "no_cost_cents": 23
    },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-19T00:40:09.429850+00:00"
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-19T00:41:27.571690+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "394d80438b4795d8dd63b6b53551e562"
+    ],
+    "title": "Athletics at Cleveland Guardians",
+    "ask_cents": 19
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
+    ],
+    "title": "Athletics vs. Cleveland Guardians",
+    "no_cost_cents": 64
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-19T00:41:30.736440+00:00"
   },
   {
    "buy_yes": {
@@ -291,7 +314,7 @@
      "45828b22dba27c3135ba981e0aefca78"
     ],
     "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 43
+    "ask_cents": 44
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -302,9 +325,9 @@
     "title": "Milwaukee Brewers vs. Baltimore Orioles",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-19T00:40:09.298484+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-19T00:41:30.623263+00:00"
   },
   {
    "buy_yes": {
@@ -327,7 +350,7 @@
    },
    "total_cost_cents": 90,
    "edge_bps": 1000,
-   "detected_at": "2026-09-19T00:40:12.077568+00:00"
+   "detected_at": "2026-09-19T00:41:27.435657+00:00"
   },
   {
    "buy_yes": {
@@ -350,7 +373,7 @@
    },
    "total_cost_cents": 93,
    "edge_bps": 700,
-   "detected_at": "2026-09-19T00:40:09.321550+00:00"
+   "detected_at": "2026-09-19T00:41:27.475199+00:00"
   },
   {
    "buy_yes": {
@@ -373,30 +396,7 @@
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-19T00:40:09.496532+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "394d80438b4795d8dd63b6b53551e562"
-    ],
-    "title": "Athletics at Cleveland Guardians",
-    "ask_cents": 31
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
-    ],
-    "title": "Athletics vs. Cleveland Guardians",
-    "no_cost_cents": 64
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-19T00:40:09.409309+00:00"
+   "detected_at": "2026-09-19T00:41:27.632472+00:00"
   },
   {
    "buy_yes": {
@@ -406,7 +406,7 @@
      "4bc950b8c644d159a95c2ba9495974dc"
     ],
     "title": "Kansas City Royals at Pittsburgh Pirates",
-    "ask_cents": 54
+    "ask_cents": 55
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -417,32 +417,9 @@
     "title": "Kansas City Royals vs. Pittsburgh Pirates",
     "no_cost_cents": 43
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-19T00:40:12.055269+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
-    ],
-    "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "ask_cents": 57
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "3e586f5512c6ac4228bd7fa60520e673"
-    ],
-    "title": "Milwaukee Brewers at Baltimore Orioles",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-19T00:40:09.298500+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-19T00:42:12.795564+00:00"
   }
  ]
 }
