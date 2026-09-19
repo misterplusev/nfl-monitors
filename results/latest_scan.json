@@ -1,80 +1,80 @@
 {
- "scanned_at": "2026-09-19T15:40:12.139203+00:00",
+ "scanned_at": "2026-09-19T15:42:20.364881+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 102.1,
+ "loop_uptime_min": 104.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 359407,
+   "markets": 364601,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7286,
-   "last_tick_age_s": 4.9
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 144,
+   "markets": 154,
    "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 285,
-   "last_tick_age_s": 2.7
+   "markets": 288,
+   "last_tick_age_s": 11.6
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 63,
-   "last_tick_age_s": 5815.1
+   "last_tick_age_s": 5943.4
   }
  ],
  "totals": {
-  "markets_tracked": 367185,
+  "markets_tracked": 372392,
   "pairs_married": 2,
   "arbitrages": 2
  },
  "stats": {
-  "commits": 49,
-  "gist_errors": 108,
+  "commits": 50,
+  "gist_errors": 110,
   "hot_errors": 0,
   "kalshi.rest_updates": 2,
-  "kalshi.sweeps": 536,
-  "kalshi.ticks": 6051399,
-  "kalshi.updates": 3002525,
-  "kalshi.ws_ticks": 6051394,
-  "kalshi.ws_trades": 953021,
-  "live_evals_fired": 22,
-  "novig.rest_updates": 3627,
-  "novig.sweeps": 536,
-  "novig.ticks": 130538,
-  "novig.updates": 3627,
-  "pairs_blocked_antonym_date": 673,
-  "pmglobal.rest_updates": 5786,
-  "pmglobal.sweeps": 536,
-  "pmglobal.ticks": 72512,
-  "pmglobal.updates": 13311,
+  "kalshi.sweeps": 547,
+  "kalshi.ticks": 6172852,
+  "kalshi.updates": 3058763,
+  "kalshi.ws_ticks": 6172847,
+  "kalshi.ws_trades": 981911,
+  "live_evals_fired": 24,
+  "novig.rest_updates": 3724,
+  "novig.sweeps": 546,
+  "novig.ticks": 132957,
+  "novig.updates": 3724,
+  "pairs_blocked_antonym_date": 686,
+  "pmglobal.rest_updates": 5886,
+  "pmglobal.sweeps": 546,
+  "pmglobal.ticks": 73833,
+  "pmglobal.updates": 13533,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 2627781,
-  "pmglobal.ws_ticks": 18812,
-  "pmus.rest_updates": 8930,
-  "pmus.sweeps": 536,
-  "pmus.ticks": 3911261,
-  "pmus.updates": 8930,
+  "pmglobal.ws_msgs": 2683574,
+  "pmglobal.ws_ticks": 19133,
+  "pmus.rest_updates": 8984,
+  "pmus.sweeps": 547,
+  "pmus.ticks": 3991396,
+  "pmus.updates": 8984,
   "pmus_x.last_count": 7285,
-  "pmus_x.sweeps": 537,
+  "pmus_x.sweeps": 548,
   "prophetx.ticks": 1371,
   "prophetx.updates": 152,
-  "prophetx.ws_errors": 358,
+  "prophetx.ws_errors": 365,
   "px.evt_scanned": 54,
-  "pxboard.sweeps": 536,
-  "supa_errors": 1720
+  "pxboard.sweeps": 546,
+  "supa_errors": 1751
  },
  "arbitrages": [
   {
@@ -94,34 +94,34 @@
      "0x51668d6934edf8bbd31a9a53fea760d9204d1e7ed804ee4300807603ae477a44"
     ],
     "title": "Biella: Alejandro Moro Canas vs Jay Clarke",
-    "no_cost_cents": 10
+    "no_cost_cents": 24
    },
-   "total_cost_cents": 31,
-   "edge_bps": 6900,
-   "detected_at": "2026-09-19T15:36:46.747765+00:00"
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-19T15:41:46.589312+00:00"
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b0d344b6fa99877b221edfc121c959ef"
-    ],
-    "title": "Jay Clarke at Alejandro Moro Canas",
-    "ask_cents": 83
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x51668d6934edf8bbd31a9a53fea760d9204d1e7ed804ee4300807603ae477a44"
     ],
     "title": "Biella: Alejandro Moro Canas vs Jay Clarke",
-    "no_cost_cents": 10
+    "ask_cents": 76
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-19T15:36:46.803276+00:00"
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b0d344b6fa99877b221edfc121c959ef"
+    ],
+    "title": "Jay Clarke at Alejandro Moro Canas",
+    "no_cost_cents": 18
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-19T15:41:46.644177+00:00"
   }
  ]
 }
