@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-19T23:01:15.723088+00:00",
+ "scanned_at": "2026-09-19T23:03:17.875891+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 37.0,
+ "loop_uptime_min": 39.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 168127,
+   "markets": 175519,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7283,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 109,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.6
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 249,
-   "last_tick_age_s": 8.2
+   "markets": 255,
+   "last_tick_age_s": 10.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 1819.7
+   "last_tick_age_s": 1941.9
   }
  ],
  "totals": {
-  "markets_tracked": 175826,
+  "markets_tracked": 183224,
   "pairs_married": 4,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 17,
-  "gist_errors": 39,
+  "commits": 18,
+  "gist_errors": 41,
   "hot_errors": 0,
-  "kalshi.sweeps": 165,
-  "kalshi.ticks": 3356981,
-  "kalshi.updates": 1953616,
-  "kalshi.ws_ticks": 3356981,
-  "kalshi.ws_trades": 516633,
-  "live_evals_fired": 929,
-  "novig.rest_updates": 5845,
-  "novig.sweeps": 164,
-  "novig.ticks": 33646,
-  "novig.updates": 5845,
-  "pmglobal.rest_updates": 2074,
-  "pmglobal.sweeps": 164,
-  "pmglobal.ticks": 23693,
-  "pmglobal.updates": 5230,
+  "kalshi.sweeps": 174,
+  "kalshi.ticks": 3572635,
+  "kalshi.updates": 2081800,
+  "kalshi.ws_ticks": 3572635,
+  "kalshi.ws_trades": 543992,
+  "live_evals_fired": 955,
+  "novig.rest_updates": 6132,
+  "novig.sweeps": 173,
+  "novig.ticks": 35423,
+  "novig.updates": 6132,
+  "pmglobal.rest_updates": 2168,
+  "pmglobal.sweeps": 174,
+  "pmglobal.ticks": 24944,
+  "pmglobal.updates": 5411,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1690514,
-  "pmglobal.ws_ticks": 7193,
-  "pmus.rest_updates": 7975,
-  "pmus.sweeps": 165,
-  "pmus.ticks": 1208908,
-  "pmus.updates": 7975,
+  "pmglobal.ws_msgs": 1745784,
+  "pmglobal.ws_ticks": 7444,
+  "pmus.rest_updates": 8006,
+  "pmus.sweeps": 174,
+  "pmus.ticks": 1274455,
+  "pmus.updates": 8006,
   "pmus_x.last_count": 7283,
-  "pmus_x.sweeps": 166,
+  "pmus_x.sweeps": 175,
   "prophetx.ticks": 1421,
   "prophetx.updates": 130,
-  "prophetx.ws_errors": 131,
+  "prophetx.ws_errors": 139,
   "px.evt_scanned": 56,
-  "pxboard.sweeps": 164,
-  "supa_errors": 609
+  "pxboard.sweeps": 173,
+  "supa_errors": 641
  },
  "arbitrages": [
   {
@@ -96,7 +96,7 @@
    },
    "total_cost_cents": 12,
    "edge_bps": 8800,
-   "detected_at": "2026-09-19T22:59:11.864447+00:00"
+   "detected_at": "2026-09-19T23:03:17.078615+00:00"
   },
   {
    "buy_yes": {
@@ -106,7 +106,7 @@
      "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
     ],
     "title": "SMU vs. Louisville",
-    "ask_cents": 4
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -117,9 +117,9 @@
     "title": "SMU at Louisville",
     "no_cost_cents": 40
    },
-   "total_cost_cents": 44,
-   "edge_bps": 5600,
-   "detected_at": "2026-09-19T23:00:53.966192+00:00"
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-19T23:02:55.459031+00:00"
   },
   {
    "buy_yes": {
@@ -129,7 +129,7 @@
      "0x1ce9135d28a063a4af67da81fc73db7cfe2f4082b9e92ad8904fd388c15dc086"
     ],
     "title": "SMU vs. Louisville",
-    "ask_cents": 4
+    "ask_cents": 1
    },
    "buy_no": {
     "venue": "prophetx",
@@ -140,9 +140,9 @@
     "title": "SMU at Louisville",
     "no_cost_cents": 61
    },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-19T23:00:53.881480+00:00"
+   "total_cost_cents": 62,
+   "edge_bps": 3800,
+   "detected_at": "2026-09-19T23:02:55.373148+00:00"
   },
   {
    "buy_yes": {
@@ -165,7 +165,7 @@
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-19T22:59:11.933403+00:00"
+   "detected_at": "2026-09-19T23:03:17.145711+00:00"
   }
  ]
 }
