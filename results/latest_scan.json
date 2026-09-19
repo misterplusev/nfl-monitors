@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-19T01:59:11.914595+00:00",
+ "scanned_at": "2026-09-19T02:01:12.006526+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 194.4,
+ "loop_uptime_min": 196.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 190531,
+   "markets": 195955,
    "last_tick_age_s": 0.0
   },
   {
@@ -25,58 +25,58 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 277,
-   "last_tick_age_s": 8.9
+   "markets": 278,
+   "last_tick_age_s": 5.3
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 28,
-   "last_tick_age_s": 3207.7
+   "last_tick_age_s": 3327.8
   }
  ],
  "totals": {
-  "markets_tracked": 198708,
+  "markets_tracked": 204133,
   "pairs_married": 10,
-  "arbitrages": 8
+  "arbitrages": 9
  },
  "stats": {
-  "commits": 91,
-  "gist_errors": 162,
+  "commits": 92,
+  "gist_errors": 165,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 584,
-  "kalshi.ticks": 5612000,
-  "kalshi.updates": 3418006,
+  "kalshi.sweeps": 598,
+  "kalshi.ticks": 5794453,
+  "kalshi.updates": 3527641,
   "kalshi.ws_errors": 4,
-  "kalshi.ws_ticks": 5611999,
-  "kalshi.ws_trades": 790622,
-  "live_evals_fired": 6806,
-  "novig.rest_updates": 16403,
-  "novig.sweeps": 583,
-  "novig.ticks": 132674,
-  "novig.updates": 16403,
-  "pairs_blocked_antonym_date": 748,
-  "pmglobal.rest_updates": 9670,
-  "pmglobal.sweeps": 583,
-  "pmglobal.ticks": 79896,
-  "pmglobal.updates": 19924,
+  "kalshi.ws_ticks": 5794452,
+  "kalshi.ws_trades": 810294,
+  "live_evals_fired": 6835,
+  "novig.rest_updates": 16802,
+  "novig.sweeps": 597,
+  "novig.ticks": 135824,
+  "novig.updates": 16802,
+  "pairs_blocked_antonym_date": 765,
+  "pmglobal.rest_updates": 9709,
+  "pmglobal.sweeps": 597,
+  "pmglobal.ticks": 81458,
+  "pmglobal.updates": 20008,
   "pmglobal.ws_errors": 101,
-  "pmglobal.ws_msgs": 2020261,
-  "pmglobal.ws_ticks": 21496,
-  "pmus.rest_updates": 12792,
+  "pmglobal.ws_msgs": 2051901,
+  "pmglobal.ws_ticks": 21658,
+  "pmus.rest_updates": 12837,
   "pmus.sweep_errors": 204,
-  "pmus.sweeps": 380,
-  "pmus.ticks": 4324682,
-  "pmus.updates": 12792,
+  "pmus.sweeps": 394,
+  "pmus.ticks": 4432986,
+  "pmus.updates": 12837,
   "pmus_x.last_count": 7736,
-  "pmus_x.sweeps": 380,
+  "pmus_x.sweeps": 394,
   "prophetx.ticks": 2928,
   "prophetx.updates": 1944,
-  "prophetx.ws_errors": 403,
+  "prophetx.ws_errors": 411,
   "px.evt_scanned": 17,
-  "pxboard.sweeps": 583,
-  "supa_errors": 1880
+  "pxboard.sweeps": 597,
+  "supa_errors": 1922
  },
  "arbitrages": [
   {
@@ -100,7 +100,7 @@
    },
    "total_cost_cents": 22,
    "edge_bps": 7800,
-   "detected_at": "2026-09-19T01:58:52.502799+00:00"
+   "detected_at": "2026-09-19T02:01:12.006468+00:00"
   },
   {
    "buy_yes": {
@@ -225,7 +225,7 @@
      "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
     ],
     "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "ask_cents": 50
+    "ask_cents": 53
    },
    "buy_no": {
     "venue": "prophetx",
@@ -236,9 +236,9 @@
     "title": "Milwaukee Brewers at Baltimore Orioles",
     "no_cost_cents": 41
    },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-19T01:59:06.261959+00:00"
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-19T02:01:08.679926+00:00"
   },
   {
    "buy_yes": {
@@ -262,6 +262,29 @@
    "total_cost_cents": 97,
    "edge_bps": 300,
    "detected_at": "2026-09-19T01:57:54.257804+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "45828b22dba27c3135ba981e0aefca78"
+    ],
+    "title": "Milwaukee Brewers at Baltimore Orioles",
+    "ask_cents": 51
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
+    ],
+    "title": "Milwaukee Brewers vs. Baltimore Orioles",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-19T02:01:08.650911+00:00"
   }
  ]
 }
