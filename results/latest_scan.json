@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-19T00:42:46.157507+00:00",
+ "scanned_at": "2026-09-19T00:45:01.035978+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 118.0,
+ "loop_uptime_min": 120.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 63441,
-   "last_tick_age_s": 31.0
+   "markets": 64070,
+   "last_tick_age_s": 38.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 6780,
-   "last_tick_age_s": 30.3
+   "last_tick_age_s": 30.1
   },
   {
    "venue": "pmglobal",
@@ -26,54 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 264,
-   "last_tick_age_s": 34.7
+   "last_tick_age_s": 42.3
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 26,
-   "last_tick_age_s": 33.1
+   "last_tick_age_s": 40.2
   }
  ],
  "totals": {
-  "markets_tracked": 70635,
+  "markets_tracked": 71264,
   "pairs_married": 16,
-  "arbitrages": 15
+  "arbitrages": 11
  },
  "stats": {
-  "commits": 54,
-  "gist_errors": 88,
+  "commits": 55,
+  "gist_errors": 90,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 175,
-  "kalshi.ticks": 366699,
-  "kalshi.updates": 242752,
+  "kalshi.sweeps": 178,
+  "kalshi.ticks": 372266,
+  "kalshi.updates": 246789,
   "kalshi.ws_errors": 3,
-  "kalshi.ws_ticks": 366698,
-  "kalshi.ws_trades": 87556,
-  "live_evals_fired": 3084,
-  "novig.rest_updates": 5296,
-  "novig.sweeps": 174,
-  "novig.ticks": 41261,
-  "novig.updates": 5296,
-  "pairs_blocked_antonym_date": 235,
-  "pmglobal.rest_updates": 6636,
-  "pmglobal.sweeps": 174,
-  "pmglobal.ticks": 30660,
-  "pmglobal.updates": 13664,
-  "pmglobal.ws_errors": 86,
-  "pmglobal.ws_msgs": 821896,
-  "pmglobal.ws_ticks": 13160,
-  "pmus.rest_updates": 9583,
-  "pmus.sweep_errors": 175,
-  "pmus.ticks": 1188998,
-  "pmus.updates": 9583,
-  "prophetx.ticks": 2254,
-  "prophetx.updates": 1536,
-  "prophetx.ws_errors": 175,
+  "kalshi.ws_ticks": 372265,
+  "kalshi.ws_trades": 88304,
+  "live_evals_fired": 3166,
+  "novig.rest_updates": 5396,
+  "novig.sweeps": 177,
+  "novig.ticks": 41912,
+  "novig.updates": 5396,
+  "pairs_blocked_antonym_date": 238,
+  "pmglobal.rest_updates": 6730,
+  "pmglobal.sweeps": 177,
+  "pmglobal.ticks": 31193,
+  "pmglobal.updates": 13887,
+  "pmglobal.ws_errors": 88,
+  "pmglobal.ws_msgs": 828811,
+  "pmglobal.ws_ticks": 13393,
+  "pmus.rest_updates": 9629,
+  "pmus.sweep_errors": 178,
+  "pmus.ticks": 1209338,
+  "pmus.updates": 9629,
+  "prophetx.ticks": 2293,
+  "prophetx.updates": 1562,
+  "prophetx.ws_errors": 178,
   "px.evt_scanned": 12,
-  "pxboard.sweeps": 174,
-  "supa_errors": 617
+  "pxboard.sweeps": 177,
+  "supa_errors": 628
  },
  "arbitrages": [
   {
@@ -84,7 +84,7 @@
      "f3c877e0b763aef3d2a3a29ba5cce5f9"
     ],
     "title": "Boston Red Sox at Tampa Bay Rays",
-    "ask_cents": 23
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -93,34 +93,11 @@
      "0x2cdcceec8023a609a77d8aedba047864307f7c964f5d1a45b0469e8a16954e53"
     ],
     "title": "Boston Red Sox vs. Tampa Bay Rays",
-    "no_cost_cents": 14
+    "no_cost_cents": 13
    },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-09-19T00:41:27.504678+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f3c877e0b763aef3d2a3a29ba5cce5f9"
-    ],
-    "title": "Boston Red Sox at Tampa Bay Rays",
-    "ask_cents": 23
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9a7ed39c85d7ec6de8f52cf90eb94b025eb9a0f1615515b96dd11c4ad16c8013"
-    ],
-    "title": "Boston Red Sox vs. Tampa Bay Rays: O/U 6.5",
-    "no_cost_cents": 16
-   },
-   "total_cost_cents": 39,
-   "edge_bps": 6100,
-   "detected_at": "2026-09-19T00:41:27.612946+00:00"
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-09-19T00:44:22.714320+00:00"
   },
   {
    "buy_yes": {
@@ -130,7 +107,7 @@
      "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
     ],
     "title": "Athletics vs. Cleveland Guardians",
-    "ask_cents": 36
+    "ask_cents": 19
    },
    "buy_no": {
     "venue": "prophetx",
@@ -139,11 +116,11 @@
      "34ef0b5529e8c3738bed6d052efa3d13"
     ],
     "title": "Athletics at Cleveland Guardians",
-    "no_cost_cents": 18
+    "no_cost_cents": 19
    },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-19T00:41:30.715223+00:00"
+   "total_cost_cents": 38,
+   "edge_bps": 6200,
+   "detected_at": "2026-09-19T00:44:22.640756+00:00"
   },
   {
    "buy_yes": {
@@ -153,7 +130,53 @@
      "f3c877e0b763aef3d2a3a29ba5cce5f9"
     ],
     "title": "Boston Red Sox at Tampa Bay Rays",
-    "ask_cents": 23
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9a7ed39c85d7ec6de8f52cf90eb94b025eb9a0f1615515b96dd11c4ad16c8013"
+    ],
+    "title": "Boston Red Sox vs. Tampa Bay Rays: O/U 6.5",
+    "no_cost_cents": 33
+   },
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-19T00:44:22.783046+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe09e54a08669bc9d1bdddf390da30838efa387cc4a57e2e910cd70ee6229db53"
+    ],
+    "title": "Chicago Cubs vs. Cincinnati Reds",
+    "ask_cents": 25
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "d804fcdeda92a95f81884c903640fd31"
+    ],
+    "title": "Chicago Cubs at Cincinnati Reds",
+    "no_cost_cents": 26
+   },
+   "total_cost_cents": 51,
+   "edge_bps": 4900,
+   "detected_at": "2026-09-19T00:44:22.807363+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "f3c877e0b763aef3d2a3a29ba5cce5f9"
+    ],
+    "title": "Boston Red Sox at Tampa Bay Rays",
+    "ask_cents": 12
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -162,11 +185,57 @@
      "0x04195c4222c838829c4001509b5f02e23516d99558f82847b8c6f7b799a45442"
     ],
     "title": "Boston Red Sox vs. Tampa Bay Rays: O/U 7.5",
-    "no_cost_cents": 43
+    "no_cost_cents": 46
    },
-   "total_cost_cents": 66,
-   "edge_bps": 3400,
-   "detected_at": "2026-09-19T00:37:59.540781+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-19T00:43:35.919432+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x04195c4222c838829c4001509b5f02e23516d99558f82847b8c6f7b799a45442"
+    ],
+    "title": "Boston Red Sox vs. Tampa Bay Rays: O/U 7.5",
+    "ask_cents": 54
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "5fe74402a44140998ec1c43c150b0fed"
+    ],
+    "title": "Boston Red Sox at Tampa Bay Rays",
+    "no_cost_cents": 13
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-19T00:43:35.944304+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf938c0630476a73cd51b8350920cc20a47346b24e611ae1bf2d575fd2d829a1c"
+    ],
+    "title": "Kansas City Royals vs. Pittsburgh Pirates",
+    "ask_cents": 37
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "4bc950b8c644d159a95c2ba9495974dc"
+    ],
+    "title": "Kansas City Royals at Pittsburgh Pirates",
+    "no_cost_cents": 36
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-19T00:44:22.740539+00:00"
   },
   {
    "buy_yes": {
@@ -176,7 +245,7 @@
      "45828b22dba27c3135ba981e0aefca78"
     ],
     "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 44
+    "ask_cents": 47
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -185,80 +254,11 @@
      "0x7928212d2de12deb2a928a2a70517b1d7549b957674217491d9385022549b644"
     ],
     "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
-    "no_cost_cents": 23
+    "no_cost_cents": 28
    },
-   "total_cost_cents": 67,
-   "edge_bps": 3300,
-   "detected_at": "2026-09-19T00:41:30.641300+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe09e54a08669bc9d1bdddf390da30838efa387cc4a57e2e910cd70ee6229db53"
-    ],
-    "title": "Chicago Cubs vs. Cincinnati Reds",
-    "ask_cents": 50
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "d804fcdeda92a95f81884c903640fd31"
-    ],
-    "title": "Chicago Cubs at Cincinnati Reds",
-    "no_cost_cents": 21
-   },
-   "total_cost_cents": 71,
-   "edge_bps": 2900,
-   "detected_at": "2026-09-19T00:41:27.391799+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b382b97f4aff8f6337b810499c93405e"
-    ],
-    "title": "Chicago Cubs at Cincinnati Reds",
-    "ask_cents": 24
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe09e54a08669bc9d1bdddf390da30838efa387cc4a57e2e910cd70ee6229db53"
-    ],
-    "title": "Chicago Cubs vs. Cincinnati Reds",
-    "no_cost_cents": 50
-   },
-   "total_cost_cents": 74,
-   "edge_bps": 2600,
-   "detected_at": "2026-09-19T00:41:30.384557+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x04195c4222c838829c4001509b5f02e23516d99558f82847b8c6f7b799a45442"
-    ],
-    "title": "Boston Red Sox vs. Tampa Bay Rays: O/U 7.5",
-    "ask_cents": 57
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5fe74402a44140998ec1c43c150b0fed"
-    ],
-    "title": "Boston Red Sox at Tampa Bay Rays",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 79,
-   "edge_bps": 2100,
-   "detected_at": "2026-09-19T00:37:59.517668+00:00"
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-19T00:44:22.692614+00:00"
   },
   {
    "buy_yes": {
@@ -268,7 +268,7 @@
      "3e586f5512c6ac4228bd7fa60520e673"
     ],
     "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 58
+    "ask_cents": 53
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -277,34 +277,11 @@
      "0x7928212d2de12deb2a928a2a70517b1d7549b957674217491d9385022549b644"
     ],
     "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
-    "no_cost_cents": 23
+    "no_cost_cents": 28
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-09-19T00:41:27.571690+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "394d80438b4795d8dd63b6b53551e562"
-    ],
-    "title": "Athletics at Cleveland Guardians",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
-    ],
-    "title": "Athletics vs. Cleveland Guardians",
-    "no_cost_cents": 64
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-19T00:41:30.736440+00:00"
+   "detected_at": "2026-09-19T00:44:22.665593+00:00"
   },
   {
    "buy_yes": {
@@ -314,7 +291,7 @@
      "45828b22dba27c3135ba981e0aefca78"
     ],
     "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 44
+    "ask_cents": 47
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -323,103 +300,34 @@
      "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
     ],
     "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "no_cost_cents": 43
+    "no_cost_cents": 47
    },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-09-19T00:41:30.623263+00:00"
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-19T00:44:22.835747+00:00"
   },
   {
    "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf938c0630476a73cd51b8350920cc20a47346b24e611ae1bf2d575fd2d829a1c"
+    ],
+    "title": "Kansas City Royals vs. Pittsburgh Pirates",
+    "ask_cents": 37
+   },
+   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "437246c1c6a9ef659bbb22eee0bc5c5c"
     ],
     "title": "Kansas City Royals at Pittsburgh Pirates",
-    "ask_cents": 47
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf938c0630476a73cd51b8350920cc20a47346b24e611ae1bf2d575fd2d829a1c"
-    ],
-    "title": "Kansas City Royals vs. Pittsburgh Pirates",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-19T00:41:27.435657+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5fe74402a44140998ec1c43c150b0fed"
-    ],
-    "title": "Boston Red Sox at Tampa Bay Rays",
-    "ask_cents": 79
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2cdcceec8023a609a77d8aedba047864307f7c964f5d1a45b0469e8a16954e53"
-    ],
-    "title": "Boston Red Sox vs. Tampa Bay Rays",
-    "no_cost_cents": 14
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-19T00:41:27.475199+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5fe74402a44140998ec1c43c150b0fed"
-    ],
-    "title": "Boston Red Sox at Tampa Bay Rays",
-    "ask_cents": 79
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9a7ed39c85d7ec6de8f52cf90eb94b025eb9a0f1615515b96dd11c4ad16c8013"
-    ],
-    "title": "Boston Red Sox vs. Tampa Bay Rays: O/U 6.5",
-    "no_cost_cents": 16
+    "no_cost_cents": 58
    },
    "total_cost_cents": 95,
    "edge_bps": 500,
-   "detected_at": "2026-09-19T00:41:27.632472+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "4bc950b8c644d159a95c2ba9495974dc"
-    ],
-    "title": "Kansas City Royals at Pittsburgh Pirates",
-    "ask_cents": 55
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf938c0630476a73cd51b8350920cc20a47346b24e611ae1bf2d575fd2d829a1c"
-    ],
-    "title": "Kansas City Royals vs. Pittsburgh Pirates",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-19T00:42:12.795564+00:00"
+   "detected_at": "2026-09-19T00:44:22.765295+00:00"
   }
  ]
 }
