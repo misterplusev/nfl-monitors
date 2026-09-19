@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-19T01:42:54.355215+00:00",
+ "scanned_at": "2026-09-19T01:44:54.523006+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 178.1,
+ "loop_uptime_min": 180.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 163763,
+   "markets": 166888,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7735,
-   "last_tick_age_s": 4.6
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "pmglobal",
@@ -26,57 +26,57 @@
    "venue": "novig",
    "state": "OK",
    "markets": 274,
-   "last_tick_age_s": 2.2
+   "last_tick_age_s": 5.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 28,
-   "last_tick_age_s": 2230.1
+   "last_tick_age_s": 2350.2
   }
  ],
  "totals": {
-  "markets_tracked": 171932,
+  "markets_tracked": 175057,
   "pairs_married": 14,
-  "arbitrages": 14
+  "arbitrages": 13
  },
  "stats": {
-  "commits": 83,
-  "gist_errors": 145,
+  "commits": 84,
+  "gist_errors": 147,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 473,
-  "kalshi.ticks": 4159056,
-  "kalshi.updates": 2532500,
+  "kalshi.sweeps": 487,
+  "kalshi.ticks": 4346042,
+  "kalshi.updates": 2647254,
   "kalshi.ws_errors": 4,
-  "kalshi.ws_ticks": 4159055,
-  "kalshi.ws_trades": 588868,
-  "live_evals_fired": 6060,
-  "novig.rest_updates": 13270,
-  "novig.sweeps": 473,
-  "novig.ticks": 107930,
-  "novig.updates": 13270,
-  "pairs_blocked_antonym_date": 610,
-  "pmglobal.rest_updates": 9120,
-  "pmglobal.sweeps": 473,
-  "pmglobal.ticks": 67010,
-  "pmglobal.updates": 18703,
+  "kalshi.ws_ticks": 4346041,
+  "kalshi.ws_trades": 619005,
+  "live_evals_fired": 6170,
+  "novig.rest_updates": 13695,
+  "novig.sweeps": 486,
+  "novig.ticks": 110850,
+  "novig.updates": 13695,
+  "pairs_blocked_antonym_date": 627,
+  "pmglobal.rest_updates": 9188,
+  "pmglobal.sweeps": 486,
+  "pmglobal.ticks": 68564,
+  "pmglobal.updates": 18873,
   "pmglobal.ws_errors": 101,
-  "pmglobal.ws_msgs": 1670016,
-  "pmglobal.ws_ticks": 19610,
-  "pmus.rest_updates": 12284,
+  "pmglobal.ws_msgs": 1715192,
+  "pmglobal.ws_ticks": 19864,
+  "pmus.rest_updates": 12335,
   "pmus.sweep_errors": 204,
-  "pmus.sweeps": 269,
-  "pmus.ticks": 3466031,
-  "pmus.updates": 12284,
+  "pmus.sweeps": 283,
+  "pmus.ticks": 3574321,
+  "pmus.updates": 12335,
   "pmus_x.last_count": 7735,
-  "pmus_x.sweeps": 269,
+  "pmus_x.sweeps": 283,
   "prophetx.ticks": 2928,
   "prophetx.updates": 1944,
-  "prophetx.ws_errors": 346,
+  "prophetx.ws_errors": 353,
   "px.evt_scanned": 17,
-  "pxboard.sweeps": 473,
-  "supa_errors": 1547
+  "pxboard.sweeps": 486,
+  "supa_errors": 1588
  },
  "arbitrages": [
   {
@@ -87,7 +87,7 @@
      "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
     ],
     "title": "Athletics vs. Cleveland Guardians",
-    "ask_cents": 3
+    "ask_cents": 6
    },
    "buy_no": {
     "venue": "prophetx",
@@ -98,9 +98,9 @@
     "title": "Athletics at Cleveland Guardians",
     "no_cost_cents": 9
    },
-   "total_cost_cents": 12,
-   "edge_bps": 8800,
-   "detected_at": "2026-09-19T01:42:53.540715+00:00"
+   "total_cost_cents": 15,
+   "edge_bps": 8500,
+   "detected_at": "2026-09-19T01:44:40.124390+00:00"
   },
   {
    "buy_yes": {
@@ -119,11 +119,11 @@
      "0x2cdcceec8023a609a77d8aedba047864307f7c964f5d1a45b0469e8a16954e53"
     ],
     "title": "Boston Red Sox vs. Tampa Bay Rays",
-    "no_cost_cents": 4
+    "no_cost_cents": 7
    },
-   "total_cost_cents": 15,
-   "edge_bps": 8500,
-   "detected_at": "2026-09-19T01:42:50.936653+00:00"
+   "total_cost_cents": 18,
+   "edge_bps": 8200,
+   "detected_at": "2026-09-19T01:44:49.448258+00:00"
   },
   {
    "buy_yes": {
@@ -169,7 +169,7 @@
    },
    "total_cost_cents": 21,
    "edge_bps": 7900,
-   "detected_at": "2026-09-19T01:42:51.004496+00:00"
+   "detected_at": "2026-09-19T01:44:48.041864+00:00"
   },
   {
    "buy_yes": {
@@ -215,7 +215,7 @@
    },
    "total_cost_cents": 77,
    "edge_bps": 2300,
-   "detected_at": "2026-09-19T01:42:51.036913+00:00"
+   "detected_at": "2026-09-19T01:44:48.060616+00:00"
   },
   {
    "buy_yes": {
@@ -268,52 +268,6 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
-    ],
-    "title": "Athletics vs. Cleveland Guardians",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "394d80438b4795d8dd63b6b53551e562"
-    ],
-    "title": "Athletics at Cleveland Guardians",
-    "no_cost_cents": 90
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-19T01:42:53.559376+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "5fe74402a44140998ec1c43c150b0fed"
-    ],
-    "title": "Boston Red Sox at Tampa Bay Rays",
-    "ask_cents": 90
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2cdcceec8023a609a77d8aedba047864307f7c964f5d1a45b0469e8a16954e53"
-    ],
-    "title": "Boston Red Sox vs. Tampa Bay Rays",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-19T01:42:50.915649+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
      "0x7928212d2de12deb2a928a2a70517b1d7549b957674217491d9385022549b644"
     ],
     "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
@@ -334,49 +288,49 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "45828b22dba27c3135ba981e0aefca78"
-    ],
-    "title": "Milwaukee Brewers at Baltimore Orioles",
-    "ask_cents": 51
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
+     "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095"
     ],
-    "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "no_cost_cents": 44
+    "title": "Athletics vs. Cleveland Guardians",
+    "ask_cents": 6
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-19T01:42:50.876786+00:00"
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "394d80438b4795d8dd63b6b53551e562"
+    ],
+    "title": "Athletics at Cleveland Guardians",
+    "no_cost_cents": 90
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-19T01:44:40.145254+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
-    ],
-    "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "ask_cents": 56
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "3e586f5512c6ac4228bd7fa60520e673"
+     "5fe74402a44140998ec1c43c150b0fed"
     ],
-    "title": "Milwaukee Brewers at Baltimore Orioles",
-    "no_cost_cents": 41
+    "title": "Boston Red Sox at Tampa Bay Rays",
+    "ask_cents": 90
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x2cdcceec8023a609a77d8aedba047864307f7c964f5d1a45b0469e8a16954e53"
+    ],
+    "title": "Boston Red Sox vs. Tampa Bay Rays",
+    "no_cost_cents": 7
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-19T01:42:50.895465+00:00"
+   "detected_at": "2026-09-19T01:44:49.429417+00:00"
   },
   {
    "buy_yes": {
@@ -400,6 +354,29 @@
    "total_cost_cents": 98,
    "edge_bps": 200,
    "detected_at": "2026-09-19T01:42:51.113987+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "45828b22dba27c3135ba981e0aefca78"
+    ],
+    "title": "Milwaukee Brewers at Baltimore Orioles",
+    "ask_cents": 51
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
+    ],
+    "title": "Milwaukee Brewers vs. Baltimore Orioles",
+    "no_cost_cents": 48
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-19T01:44:50.557922+00:00"
   }
  ]
 }
