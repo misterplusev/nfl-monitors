@@ -1,82 +1,82 @@
 {
- "scanned_at": "2026-09-19T02:21:40.902569+00:00",
+ "scanned_at": "2026-09-19T02:23:42.739545+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 216.9,
+ "loop_uptime_min": 218.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 225379,
+   "markets": 228122,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7945,
-   "last_tick_age_s": 4.8
+   "markets": 7955,
+   "last_tick_age_s": 4.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 139,
-   "last_tick_age_s": 0.2
+   "markets": 143,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 284,
-   "last_tick_age_s": 2.3
+   "markets": 286,
+   "last_tick_age_s": 2.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 28,
-   "last_tick_age_s": 4556.7
+   "last_tick_age_s": 4678.5
   }
  ],
  "totals": {
-  "markets_tracked": 233775,
+  "markets_tracked": 236534,
   "pairs_married": 4,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 102,
-  "gist_errors": 186,
+  "commits": 103,
+  "gist_errors": 188,
   "hot_errors": 0,
   "kalshi.rest_updates": 1,
-  "kalshi.sweeps": 735,
-  "kalshi.ticks": 7576225,
-  "kalshi.updates": 4594256,
+  "kalshi.sweeps": 750,
+  "kalshi.ticks": 7747369,
+  "kalshi.updates": 4701822,
   "kalshi.ws_errors": 4,
-  "kalshi.ws_ticks": 7576224,
-  "kalshi.ws_trades": 1032231,
-  "live_evals_fired": 7179,
-  "novig.rest_updates": 20807,
-  "novig.sweeps": 735,
-  "novig.ticks": 166822,
-  "novig.updates": 20807,
-  "pairs_blocked_antonym_date": 938,
-  "pmglobal.rest_updates": 10256,
-  "pmglobal.sweeps": 735,
-  "pmglobal.ticks": 97116,
-  "pmglobal.updates": 21103,
+  "kalshi.ws_ticks": 7747368,
+  "kalshi.ws_trades": 1055454,
+  "live_evals_fired": 7201,
+  "novig.rest_updates": 21198,
+  "novig.sweeps": 749,
+  "novig.ticks": 169908,
+  "novig.updates": 21198,
+  "pairs_blocked_antonym_date": 956,
+  "pmglobal.rest_updates": 10332,
+  "pmglobal.sweeps": 749,
+  "pmglobal.ticks": 98714,
+  "pmglobal.updates": 21241,
   "pmglobal.ws_errors": 101,
-  "pmglobal.ws_msgs": 2319381,
-  "pmglobal.ws_ticks": 23516,
-  "pmus.rest_updates": 14398,
+  "pmglobal.ws_msgs": 2355322,
+  "pmglobal.ws_ticks": 23714,
+  "pmus.rest_updates": 14553,
   "pmus.sweep_errors": 204,
-  "pmus.sweeps": 531,
-  "pmus.ticks": 5503301,
-  "pmus.updates": 14398,
-  "pmus_x.last_count": 7942,
-  "pmus_x.sweeps": 531,
+  "pmus.sweeps": 545,
+  "pmus.ticks": 5614583,
+  "pmus.updates": 14553,
+  "pmus_x.last_count": 7950,
+  "pmus_x.sweeps": 545,
   "prophetx.ticks": 2928,
   "prophetx.updates": 1944,
-  "prophetx.ws_errors": 486,
+  "prophetx.ws_errors": 493,
   "px.evt_scanned": 17,
-  "pxboard.sweeps": 735,
-  "supa_errors": 2337
+  "pxboard.sweeps": 749,
+  "supa_errors": 2379
  },
  "arbitrages": [
   {
@@ -96,11 +96,34 @@
      "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
     ],
     "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "no_cost_cents": 10
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-19T02:21:37.562342+00:00"
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-19T02:23:40.483274+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x7928212d2de12deb2a928a2a70517b1d7549b957674217491d9385022549b644"
+    ],
+    "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
+    "ask_cents": 22
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "3e586f5512c6ac4228bd7fa60520e673"
+    ],
+    "title": "Milwaukee Brewers at Baltimore Orioles",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-19T02:22:57.573224+00:00"
   },
   {
    "buy_yes": {
@@ -119,11 +142,11 @@
      "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b"
     ],
     "title": "Milwaukee Brewers vs. Baltimore Orioles",
-    "no_cost_cents": 10
+    "no_cost_cents": 6
    },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-19T02:21:37.581479+00:00"
+   "total_cost_cents": 66,
+   "edge_bps": 3400,
+   "detected_at": "2026-09-19T02:23:40.505396+00:00"
   },
   {
    "buy_yes": {
@@ -133,30 +156,7 @@
      "0x7928212d2de12deb2a928a2a70517b1d7549b957674217491d9385022549b644"
     ],
     "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
-    "ask_cents": 34
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "3e586f5512c6ac4228bd7fa60520e673"
-    ],
-    "title": "Milwaukee Brewers at Baltimore Orioles",
-    "no_cost_cents": 41
-   },
-   "total_cost_cents": 75,
-   "edge_bps": 2500,
-   "detected_at": "2026-09-19T02:20:33.822377+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x7928212d2de12deb2a928a2a70517b1d7549b957674217491d9385022549b644"
-    ],
-    "title": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5",
-    "ask_cents": 34
+    "ask_cents": 22
    },
    "buy_no": {
     "venue": "prophetx",
@@ -167,9 +167,9 @@
     "title": "Milwaukee Brewers at Baltimore Orioles",
     "no_cost_cents": 50
    },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-19T02:20:33.846554+00:00"
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-19T02:22:57.593183+00:00"
   }
  ]
 }
