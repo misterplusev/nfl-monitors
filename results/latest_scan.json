@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-19T22:34:43.056646+00:00",
+ "scanned_at": "2026-09-19T22:36:45.085545+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 10.4,
+ "loop_uptime_min": 12.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 68120,
+   "markets": 77514,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7283,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 4.5
   },
   {
    "venue": "pmglobal",
@@ -25,54 +25,54 @@
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 231,
-   "last_tick_age_s": 13.9
+   "markets": 233,
+   "last_tick_age_s": 2.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 58,
-   "last_tick_age_s": 227.0
+   "last_tick_age_s": 349.0
   }
  ],
  "totals": {
-  "markets_tracked": 75792,
+  "markets_tracked": 85188,
   "pairs_married": 6,
-  "arbitrages": 5
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 4,
-  "gist_errors": 11,
+  "commits": 5,
+  "gist_errors": 13,
   "hot_errors": 0,
-  "kalshi.sweeps": 43,
-  "kalshi.ticks": 883096,
-  "kalshi.updates": 510944,
-  "kalshi.ws_ticks": 883096,
-  "kalshi.ws_trades": 129226,
-  "live_evals_fired": 363,
-  "novig.rest_updates": 1912,
-  "novig.sweeps": 42,
-  "novig.ticks": 9059,
-  "novig.updates": 1912,
-  "pmglobal.rest_updates": 772,
-  "pmglobal.sweeps": 42,
-  "pmglobal.ticks": 6431,
-  "pmglobal.updates": 1765,
+  "kalshi.sweeps": 52,
+  "kalshi.ticks": 1073038,
+  "kalshi.updates": 616816,
+  "kalshi.ws_ticks": 1073038,
+  "kalshi.ws_trades": 156776,
+  "live_evals_fired": 387,
+  "novig.rest_updates": 2273,
+  "novig.sweeps": 52,
+  "novig.ticks": 11166,
+  "novig.updates": 2273,
+  "pmglobal.rest_updates": 865,
+  "pmglobal.sweeps": 52,
+  "pmglobal.ticks": 7773,
+  "pmglobal.updates": 2003,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 579437,
-  "pmglobal.ws_ticks": 2131,
-  "pmus.rest_updates": 7526,
-  "pmus.sweeps": 43,
-  "pmus.ticks": 320438,
-  "pmus.updates": 7526,
+  "pmglobal.ws_msgs": 669411,
+  "pmglobal.ws_ticks": 2473,
+  "pmus.rest_updates": 7573,
+  "pmus.sweeps": 52,
+  "pmus.ticks": 385985,
+  "pmus.updates": 7573,
   "pmus_x.last_count": 7283,
-  "pmus_x.sweeps": 44,
+  "pmus_x.sweeps": 53,
   "prophetx.ticks": 1421,
   "prophetx.updates": 130,
-  "prophetx.ws_errors": 37,
+  "prophetx.ws_errors": 45,
   "px.evt_scanned": 56,
-  "pxboard.sweeps": 42,
-  "supa_errors": 166
+  "pxboard.sweeps": 52,
+  "supa_errors": 201
  },
  "arbitrages": [
   {
@@ -100,6 +100,29 @@
   },
   {
    "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2cc08292f2b091d8a8c84047aa0631a9"
+    ],
+    "title": "Temple at Toledo",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xad09e889a26ccaecde3b38d09e854803e65ec800a0d532e0cf698bcc4daecd13"
+    ],
+    "title": "Temple vs. Toledo",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-19T22:35:23.442960+00:00"
+  },
+  {
+   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -119,7 +142,7 @@
    },
    "total_cost_cents": 88,
    "edge_bps": 1200,
-   "detected_at": "2026-09-19T22:34:27.639769+00:00"
+   "detected_at": "2026-09-19T22:36:16.967554+00:00"
   },
   {
    "buy_yes": {
@@ -142,53 +165,7 @@
    },
    "total_cost_cents": 92,
    "edge_bps": 800,
-   "detected_at": "2026-09-19T22:34:27.569955+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xad09e889a26ccaecde3b38d09e854803e65ec800a0d532e0cf698bcc4daecd13"
-    ],
-    "title": "Temple vs. Toledo",
-    "ask_cents": 50
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "34ee588243b501ff56be966dc1cf3f37"
-    ],
-    "title": "Temple at Toledo",
-    "no_cost_cents": 43
-   },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-19T22:34:30.081561+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2cc08292f2b091d8a8c84047aa0631a9"
-    ],
-    "title": "Temple at Toledo",
-    "ask_cents": 42
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xad09e889a26ccaecde3b38d09e854803e65ec800a0d532e0cf698bcc4daecd13"
-    ],
-    "title": "Temple vs. Toledo",
-    "no_cost_cents": 53
-   },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-19T22:34:30.151492+00:00"
+   "detected_at": "2026-09-19T22:36:16.878029+00:00"
   }
  ]
 }
