@@ -1,128 +1,81 @@
 {
- "scanned_at": "2026-09-19T16:00:46.343939+00:00",
+ "scanned_at": "2026-09-19T16:02:56.379300+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 122.6,
+ "loop_uptime_min": 124.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 421222,
+   "markets": 426218,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7286,
-   "last_tick_age_s": 3.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 159,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 298,
-   "last_tick_age_s": 0.4
+   "markets": 300,
+   "last_tick_age_s": 14.8
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 63,
-   "last_tick_age_s": 7049.5
+   "last_tick_age_s": 7179.4
   }
  ],
  "totals": {
-  "markets_tracked": 429028,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 434026,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 59,
-  "gist_errors": 130,
+  "commits": 60,
+  "gist_errors": 132,
   "hot_errors": 0,
   "kalshi.rest_updates": 2,
-  "kalshi.sweeps": 639,
-  "kalshi.ticks": 7405203,
-  "kalshi.updates": 3627017,
-  "kalshi.ws_ticks": 7405198,
-  "kalshi.ws_trades": 1201630,
+  "kalshi.sweeps": 650,
+  "kalshi.ticks": 7528396,
+  "kalshi.updates": 3683566,
+  "kalshi.ws_ticks": 7528391,
+  "kalshi.ws_trades": 1222960,
   "live_evals_fired": 30,
-  "novig.rest_updates": 4619,
+  "novig.rest_updates": 4789,
   "novig.sweep_errors": 1,
-  "novig.sweeps": 638,
-  "novig.ticks": 155321,
-  "novig.updates": 4619,
-  "pairs_blocked_antonym_date": 801,
-  "pmglobal.rest_updates": 6779,
-  "pmglobal.sweeps": 639,
-  "pmglobal.ticks": 86160,
-  "pmglobal.updates": 15564,
+  "novig.sweeps": 648,
+  "novig.ticks": 157756,
+  "novig.updates": 4789,
+  "pairs_blocked_antonym_date": 814,
+  "pmglobal.rest_updates": 6871,
+  "pmglobal.sweeps": 649,
+  "pmglobal.ticks": 87408,
+  "pmglobal.updates": 15733,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 3121664,
-  "pmglobal.ws_ticks": 22160,
-  "pmus.rest_updates": 9288,
-  "pmus.sweeps": 639,
-  "pmus.ticks": 4661608,
-  "pmus.updates": 9288,
+  "pmglobal.ws_msgs": 3155475,
+  "pmglobal.ws_ticks": 22408,
+  "pmus.rest_updates": 9323,
+  "pmus.sweeps": 650,
+  "pmus.ticks": 4741732,
+  "pmus.updates": 9323,
   "pmus_x.last_count": 7284,
-  "pmus_x.sweeps": 640,
+  "pmus_x.sweeps": 651,
   "prophetx.ticks": 1371,
   "prophetx.updates": 152,
-  "prophetx.ws_errors": 428,
+  "prophetx.ws_errors": 435,
   "px.evt_scanned": 54,
-  "pxboard.sweeps": 638,
-  "supa_errors": 2031
+  "pxboard.sweeps": 649,
+  "supa_errors": 2063
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "472186219cde95400bbb2390f57cf34d"
-    ],
-    "title": "Jay Clarke at Alejandro Moro Canas",
-    "ask_cents": 21
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x51668d6934edf8bbd31a9a53fea760d9204d1e7ed804ee4300807603ae477a44"
-    ],
-    "title": "Biella: Alejandro Moro Canas vs Jay Clarke",
-    "no_cost_cents": 8
-   },
-   "total_cost_cents": 29,
-   "edge_bps": 7100,
-   "detected_at": "2026-09-19T15:57:00.591965+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "b0d344b6fa99877b221edfc121c959ef"
-    ],
-    "title": "Jay Clarke at Alejandro Moro Canas",
-    "ask_cents": 83
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x51668d6934edf8bbd31a9a53fea760d9204d1e7ed804ee4300807603ae477a44"
-    ],
-    "title": "Biella: Alejandro Moro Canas vs Jay Clarke",
-    "no_cost_cents": 8
-   },
-   "total_cost_cents": 91,
-   "edge_bps": 900,
-   "detected_at": "2026-09-19T15:57:00.651898+00:00"
-  }
- ]
+ "arbitrages": []
 }
