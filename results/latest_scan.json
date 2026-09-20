@@ -1,150 +1,81 @@
 {
- "scanned_at": "2026-09-20T14:47:04.762757+00:00",
+ "scanned_at": "2026-09-20T14:49:06.233881+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 28.5,
+ "loop_uptime_min": 30.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 119024,
+   "markets": 124737,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7265,
-   "last_tick_age_s": 2.4
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 109,
-   "last_tick_age_s": 0.0
+   "markets": 110,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 262,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 11.2
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 59,
-   "last_tick_age_s": 1472.5
+   "last_tick_age_s": 1594.0
   }
  ],
  "totals": {
-  "markets_tracked": 126719,
+  "markets_tracked": 132433,
   "pairs_married": 14,
-  "arbitrages": 13
+  "arbitrages": 8
  },
  "stats": {
-  "commits": 13,
-  "gist_errors": 30,
+  "commits": 14,
+  "gist_errors": 33,
   "hot_errors": 0,
-  "kalshi.sweeps": 197,
-  "kalshi.ticks": 1575725,
-  "kalshi.updates": 758164,
-  "kalshi.ws_ticks": 1575725,
-  "kalshi.ws_trades": 262433,
-  "live_evals_fired": 466,
-  "novig.rest_updates": 2003,
-  "novig.sweeps": 197,
-  "novig.ticks": 47506,
-  "novig.updates": 2003,
-  "pairs_blocked_antonym_date": 1235,
-  "pmglobal.rest_updates": 2385,
-  "pmglobal.sweeps": 197,
-  "pmglobal.ticks": 25438,
-  "pmglobal.updates": 5184,
+  "kalshi.sweeps": 211,
+  "kalshi.ticks": 1685163,
+  "kalshi.updates": 809504,
+  "kalshi.ws_ticks": 1685163,
+  "kalshi.ws_trades": 281619,
+  "live_evals_fired": 474,
+  "novig.rest_updates": 2109,
+  "novig.sweeps": 210,
+  "novig.ticks": 50627,
+  "novig.updates": 2109,
+  "pairs_blocked_antonym_date": 1320,
+  "pmglobal.rest_updates": 2546,
+  "pmglobal.sweeps": 211,
+  "pmglobal.ticks": 27294,
+  "pmglobal.updates": 5547,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 885725,
-  "pmglobal.ws_ticks": 5638,
-  "pmus.rest_updates": 7696,
-  "pmus.sweeps": 197,
-  "pmus.ticks": 1438438,
-  "pmus.updates": 7696,
+  "pmglobal.ws_msgs": 950793,
+  "pmglobal.ws_ticks": 6094,
+  "pmus.rest_updates": 7720,
+  "pmus.sweeps": 211,
+  "pmus.ticks": 1540148,
+  "pmus.updates": 7720,
   "pmus_x.last_count": 7265,
-  "pmus_x.sweeps": 198,
+  "pmus_x.sweeps": 212,
   "prophetx.ticks": 1203,
   "prophetx.updates": 310,
-  "prophetx.ws_errors": 102,
+  "prophetx.ws_errors": 109,
   "px.evt_scanned": 42,
-  "pxboard.sweeps": 196,
-  "supa_errors": 595
+  "pxboard.sweeps": 210,
+  "supa_errors": 637
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf0ab1b6a47a3f4a42d741bf73f0aff3c3313a21082de5a9cc5c1b55400fd84bc"
-    ],
-    "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "14136ae7a5d331ba81673f25a780782c"
-    ],
-    "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 6
-   },
-   "total_cost_cents": 7,
-   "edge_bps": 9300,
-   "detected_at": "2026-09-20T14:45:53.950748+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf0ab1b6a47a3f4a42d741bf73f0aff3c3313a21082de5a9cc5c1b55400fd84bc"
-    ],
-    "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "857a96d108430f62bcdcf766627a2e22"
-    ],
-    "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 21
-   },
-   "total_cost_cents": 22,
-   "edge_bps": 7800,
-   "detected_at": "2026-09-20T14:45:54.023623+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf0ab1b6a47a3f4a42d741bf73f0aff3c3313a21082de5a9cc5c1b55400fd84bc"
-    ],
-    "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "dedd3bb9267a129ccead13ebcf3fc6f1"
-    ],
-    "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 28
-   },
-   "total_cost_cents": 29,
-   "edge_bps": 7100,
-   "detected_at": "2026-09-20T14:45:54.068696+00:00"
-  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -162,11 +93,11 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 30
+    "no_cost_cents": 42
    },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-20T14:44:06.821010+00:00"
+   "total_cost_cents": 53,
+   "edge_bps": 4700,
+   "detected_at": "2026-09-20T14:49:05.144719+00:00"
   },
   {
    "buy_yes": {
@@ -185,11 +116,11 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 30
+    "no_cost_cents": 42
    },
-   "total_cost_cents": 45,
-   "edge_bps": 5500,
-   "detected_at": "2026-09-20T14:44:06.936824+00:00"
+   "total_cost_cents": 57,
+   "edge_bps": 4300,
+   "detected_at": "2026-09-20T14:49:05.286461+00:00"
   },
   {
    "buy_yes": {
@@ -208,11 +139,57 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 30
+    "no_cost_cents": 42
    },
-   "total_cost_cents": 49,
-   "edge_bps": 5100,
-   "detected_at": "2026-09-20T14:44:06.959601+00:00"
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-20T14:49:05.309825+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
+    ],
+    "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
+    "ask_cents": 58
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "e89a9c073c6ba2b252dadbd00102cb3b"
+    ],
+    "title": "Como 1907 at Frosinone Calcio",
+    "no_cost_cents": 12
+   },
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-20T14:49:05.210657+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
+    ],
+    "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
+    "ask_cents": 58
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "a273b50197de9e4cebc3506e22647af4"
+    ],
+    "title": "Como 1907 at Frosinone Calcio",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-20T14:49:05.256709+00:00"
   },
   {
    "buy_yes": {
@@ -231,57 +208,11 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 30
-   },
-   "total_cost_cents": 61,
-   "edge_bps": 3900,
-   "detected_at": "2026-09-20T14:44:06.848534+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf0ab1b6a47a3f4a42d741bf73f0aff3c3313a21082de5a9cc5c1b55400fd84bc"
-    ],
-    "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f07171fbfb2ad0555ace6f6017b12c21"
-    ],
-    "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 72
+    "no_cost_cents": 42
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-20T14:45:54.001843+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf0ab1b6a47a3f4a42d741bf73f0aff3c3313a21082de5a9cc5c1b55400fd84bc"
-    ],
-    "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "96b516b40ea971678210d782055342fe"
-    ],
-    "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 77
-   },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-20T14:45:54.046739+00:00"
+   "detected_at": "2026-09-20T14:49:05.182275+00:00"
   },
   {
    "buy_yes": {
@@ -291,53 +222,7 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "ask_cents": 70
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "e89a9c073c6ba2b252dadbd00102cb3b"
-    ],
-    "title": "Como 1907 at Frosinone Calcio",
-    "no_cost_cents": 12
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-20T14:44:06.873154+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
-    ],
-    "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "ask_cents": 70
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a273b50197de9e4cebc3506e22647af4"
-    ],
-    "title": "Como 1907 at Frosinone Calcio",
-    "no_cost_cents": 14
-   },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-20T14:44:06.900292+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
-    ],
-    "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "ask_cents": 70
+    "ask_cents": 58
    },
    "buy_no": {
     "venue": "prophetx",
@@ -348,32 +233,32 @@
     "title": "Como 1907 at Frosinone Calcio",
     "no_cost_cents": 19
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-20T14:44:06.792371+00:00"
+   "total_cost_cents": 77,
+   "edge_bps": 2300,
+   "detected_at": "2026-09-20T14:49:05.119734+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xf0ab1b6a47a3f4a42d741bf73f0aff3c3313a21082de5a9cc5c1b55400fd84bc"
+     "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
-    "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
-    "ask_cents": 1
+    "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
+    "ask_cents": 58
    },
    "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "e5aa9b77715fdf424d3cc71e1d1530ff"
+     "f12edf5d3b2432cd5657394a29c4cbc7"
     ],
-    "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 94
+    "title": "Como 1907 at Frosinone Calcio",
+    "no_cost_cents": 30
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-20T14:45:53.978428+00:00"
+   "total_cost_cents": 88,
+   "edge_bps": 1200,
+   "detected_at": "2026-09-20T14:49:05.234396+00:00"
   }
  ]
 }
