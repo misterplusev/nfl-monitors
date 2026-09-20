@@ -1,77 +1,78 @@
 {
- "scanned_at": "2026-09-20T14:20:42.177527+00:00",
+ "scanned_at": "2026-09-20T14:22:43.326713+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.1,
+ "loop_uptime_min": 4.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 22172,
+   "markets": 35044,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7264,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 4.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 101,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 241,
-   "last_tick_age_s": 6.2
+   "markets": 242,
+   "last_tick_age_s": 2.1
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 59,
-   "last_tick_age_s": 4.7
+   "last_tick_age_s": 11.1
   }
  ],
  "totals": {
-  "markets_tracked": 29837,
+  "markets_tracked": 42710,
   "pairs_married": 14,
   "arbitrages": 14
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 15,
-  "kalshi.ticks": 110719,
-  "kalshi.updates": 60294,
-  "kalshi.ws_ticks": 110719,
-  "kalshi.ws_trades": 19662,
-  "live_evals_fired": 104,
-  "novig.rest_updates": 339,
-  "novig.sweeps": 14,
-  "novig.ticks": 3583,
-  "novig.updates": 339,
-  "pairs_blocked_antonym_date": 95,
-  "pmglobal.rest_updates": 343,
-  "pmglobal.sweeps": 14,
-  "pmglobal.ticks": 2124,
-  "pmglobal.updates": 690,
-  "pmglobal.ws_msgs": 85948,
-  "pmglobal.ws_ticks": 624,
-  "pmus.rest_updates": 7315,
-  "pmus.sweeps": 15,
-  "pmus.ticks": 116224,
-  "pmus.updates": 7315,
+  "kalshi.sweeps": 28,
+  "kalshi.ticks": 224047,
+  "kalshi.updates": 118286,
+  "kalshi.ws_ticks": 224047,
+  "kalshi.ws_trades": 38968,
+  "live_evals_fired": 173,
+  "novig.rest_updates": 468,
+  "novig.sweeps": 28,
+  "novig.ticks": 6928,
+  "novig.updates": 468,
+  "pairs_blocked_antonym_date": 180,
+  "pmglobal.rest_updates": 517,
+  "pmglobal.sweeps": 28,
+  "pmglobal.ticks": 4029,
+  "pmglobal.updates": 1142,
+  "pmglobal.ws_msgs": 176511,
+  "pmglobal.ws_ticks": 1129,
+  "pmus.rest_updates": 7349,
+  "pmus.sweeps": 28,
+  "pmus.ticks": 210656,
+  "pmus.updates": 7349,
   "pmus_x.last_count": 7264,
-  "pmus_x.sweeps": 16,
-  "prophetx.ticks": 638,
-  "prophetx.updates": 190,
-  "prophetx.ws_errors": 8,
-  "px.evt_scanned": 47,
-  "pxboard.sweeps": 14,
-  "supa_errors": 44
+  "pmus_x.sweeps": 29,
+  "prophetx.ticks": 1203,
+  "prophetx.updates": 310,
+  "prophetx.ws_errors": 15,
+  "px.evt_scanned": 42,
+  "pxboard.sweeps": 28,
+  "supa_errors": 87
  },
  "arbitrages": [
   {
@@ -95,30 +96,7 @@
    },
    "total_cost_cents": 16,
    "edge_bps": 8400,
-   "detected_at": "2026-09-20T14:19:14.759132+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf0ab1b6a47a3f4a42d741bf73f0aff3c3313a21082de5a9cc5c1b55400fd84bc"
-    ],
-    "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
-    "ask_cents": 10
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "857a96d108430f62bcdcf766627a2e22"
-    ],
-    "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 20
-   },
-   "total_cost_cents": 30,
-   "edge_bps": 7000,
-   "detected_at": "2026-09-20T14:20:37.405971+00:00"
+   "detected_at": "2026-09-20T14:22:12.596599+00:00"
   },
   {
    "buy_yes": {
@@ -141,7 +119,30 @@
    },
    "total_cost_cents": 30,
    "edge_bps": 7000,
-   "detected_at": "2026-09-20T14:20:26.848945+00:00"
+   "detected_at": "2026-09-20T14:21:53.924912+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xf0ab1b6a47a3f4a42d741bf73f0aff3c3313a21082de5a9cc5c1b55400fd84bc"
+    ],
+    "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
+    "ask_cents": 10
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "857a96d108430f62bcdcf766627a2e22"
+    ],
+    "title": "Liverpool FC at AFC Bournemouth",
+    "no_cost_cents": 21
+   },
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-09-20T14:22:12.667396+00:00"
   },
   {
    "buy_yes": {
@@ -160,11 +161,11 @@
      "dedd3bb9267a129ccead13ebcf3fc6f1"
     ],
     "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 27
+    "no_cost_cents": 28
    },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-09-20T14:19:55.164517+00:00"
+   "total_cost_cents": 38,
+   "edge_bps": 6200,
+   "detected_at": "2026-09-20T14:22:32.174367+00:00"
   },
   {
    "buy_yes": {
@@ -187,7 +188,7 @@
    },
    "total_cost_cents": 44,
    "edge_bps": 5600,
-   "detected_at": "2026-09-20T14:20:37.292473+00:00"
+   "detected_at": "2026-09-20T14:22:32.073103+00:00"
   },
   {
    "buy_yes": {
@@ -210,7 +211,7 @@
    },
    "total_cost_cents": 46,
    "edge_bps": 5400,
-   "detected_at": "2026-09-20T14:20:26.907449+00:00"
+   "detected_at": "2026-09-20T14:22:24.560644+00:00"
   },
   {
    "buy_yes": {
@@ -229,11 +230,11 @@
      "32639625164ce0d473835b9fe46fe09e"
     ],
     "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 46
+    "no_cost_cents": 48
    },
-   "total_cost_cents": 56,
-   "edge_bps": 4400,
-   "detected_at": "2026-09-20T14:20:26.826078+00:00"
+   "total_cost_cents": 58,
+   "edge_bps": 4200,
+   "detected_at": "2026-09-20T14:22:07.652629+00:00"
   },
   {
    "buy_yes": {
@@ -252,11 +253,11 @@
      "ab51ee55d16d27cee9fa94991a8b376a"
     ],
     "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 55
+    "no_cost_cents": 53
    },
-   "total_cost_cents": 65,
-   "edge_bps": 3500,
-   "detected_at": "2026-09-20T14:20:26.867877+00:00"
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-20T14:22:07.670742+00:00"
   },
   {
    "buy_yes": {
@@ -279,7 +280,7 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-20T14:20:37.269916+00:00"
+   "detected_at": "2026-09-20T14:22:24.593844+00:00"
   },
   {
    "buy_yes": {
@@ -298,11 +299,11 @@
      "385f8b63b3e8302d0fe433140b1afe4a"
     ],
     "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 66
+    "no_cost_cents": 67
    },
-   "total_cost_cents": 76,
-   "edge_bps": 2400,
-   "detected_at": "2026-09-20T14:20:26.803533+00:00"
+   "total_cost_cents": 77,
+   "edge_bps": 2300,
+   "detected_at": "2026-09-20T14:21:53.880520+00:00"
   },
   {
    "buy_yes": {
@@ -321,11 +322,11 @@
      "f07171fbfb2ad0555ace6f6017b12c21"
     ],
     "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 74
+    "no_cost_cents": 72
    },
-   "total_cost_cents": 84,
-   "edge_bps": 1600,
-   "detected_at": "2026-09-20T14:19:12.101047+00:00"
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-20T14:22:15.428554+00:00"
   },
   {
    "buy_yes": {
@@ -344,11 +345,11 @@
      "96b516b40ea971678210d782055342fe"
     ],
     "title": "Liverpool FC at AFC Bournemouth",
-    "no_cost_cents": 80
+    "no_cost_cents": 77
    },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-20T14:19:12.141890+00:00"
+   "total_cost_cents": 87,
+   "edge_bps": 1300,
+   "detected_at": "2026-09-20T14:22:15.456685+00:00"
   },
   {
    "buy_yes": {
@@ -371,7 +372,7 @@
    },
    "total_cost_cents": 91,
    "edge_bps": 900,
-   "detected_at": "2026-09-20T14:20:37.317060+00:00"
+   "detected_at": "2026-09-20T14:22:15.330427+00:00"
   },
   {
    "buy_yes": {
@@ -381,7 +382,7 @@
      "e5aa9b77715fdf424d3cc71e1d1530ff"
     ],
     "title": "Liverpool FC at AFC Bournemouth",
-    "ask_cents": 6
+    "ask_cents": 7
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -392,9 +393,9 @@
     "title": "AFC Bournemouth vs. Liverpool FC: O/U 3.5",
     "no_cost_cents": 90
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-20T14:19:12.037844+00:00"
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-20T14:22:32.149004+00:00"
   }
  ]
 }
