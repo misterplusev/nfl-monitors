@@ -1,103 +1,79 @@
 {
- "scanned_at": "2026-09-20T06:26:32.985619+00:00",
+ "scanned_at": "2026-09-20T06:28:34.548853+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 73.8,
+ "loop_uptime_min": 75.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 139250,
+   "markets": 141143,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7918,
-   "last_tick_age_s": 2.6
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 109,
-   "last_tick_age_s": 0.9
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 261,
-   "last_tick_age_s": 0.1
+   "markets": 262,
+   "last_tick_age_s": 6.4
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 3,
-   "last_tick_age_s": 4116.4
+   "last_tick_age_s": 4238.0
   }
  ],
  "totals": {
-  "markets_tracked": 147541,
-  "pairs_married": 1,
-  "arbitrages": 1
+  "markets_tracked": 149435,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 35,
-  "gist_errors": 77,
+  "commits": 36,
+  "gist_errors": 79,
   "hot_errors": 0,
-  "kalshi.sweeps": 387,
-  "kalshi.ticks": 2871977,
-  "kalshi.updates": 1440432,
-  "kalshi.ws_ticks": 2871977,
-  "kalshi.ws_trades": 577913,
-  "live_evals_fired": 452,
-  "novig.rest_updates": 4211,
-  "novig.sweeps": 387,
-  "novig.ticks": 83953,
-  "novig.updates": 4211,
-  "pairs_blocked_antonym_date": 2803,
-  "pmglobal.rest_updates": 1868,
-  "pmglobal.sweeps": 387,
-  "pmglobal.ticks": 45906,
-  "pmglobal.updates": 3855,
+  "kalshi.sweeps": 398,
+  "kalshi.ticks": 2940828,
+  "kalshi.updates": 1472791,
+  "kalshi.ws_ticks": 2940828,
+  "kalshi.ws_trades": 592761,
+  "live_evals_fired": 454,
+  "novig.rest_updates": 4265,
+  "novig.sweeps": 397,
+  "novig.ticks": 86263,
+  "novig.updates": 4265,
+  "pairs_blocked_antonym_date": 2881,
+  "pmglobal.rest_updates": 1899,
+  "pmglobal.sweeps": 397,
+  "pmglobal.ticks": 47047,
+  "pmglobal.updates": 3908,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 1331998,
-  "pmglobal.ws_ticks": 7106,
-  "pmus.rest_updates": 9195,
-  "pmus.sweeps": 387,
-  "pmus.ticks": 2857127,
-  "pmus.updates": 9195,
+  "pmglobal.ws_msgs": 1348080,
+  "pmglobal.ws_ticks": 7247,
+  "pmus.rest_updates": 9231,
+  "pmus.sweeps": 398,
+  "pmus.ticks": 2937075,
+  "pmus.updates": 9231,
   "pmus_x.last_count": 7268,
-  "pmus_x.sweeps": 388,
+  "pmus_x.sweeps": 399,
   "prophetx.ticks": 75,
   "prophetx.updates": 4,
-  "prophetx.ws_errors": 259,
+  "prophetx.ws_errors": 266,
   "px.evt_scanned": 0,
-  "pxboard.sweeps": 386,
-  "supa_errors": 1287
+  "pxboard.sweeps": 397,
+  "supa_errors": 1319
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "1504e378cf1874c179f37a714468cbb4"
-    ],
-    "title": "Fresno State at San Jose State",
-    "ask_cents": 19
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf62e88b42bc13b8e2da7133caf5d89d9dff4b86ab7b153f09c5ae2cca0ad4f61"
-    ],
-    "title": "Fresno State vs. San Jose State",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 23,
-   "edge_bps": 7700,
-   "detected_at": "2026-09-20T06:26:07.452067+00:00"
-  }
- ]
+ "arbitrages": []
 }
