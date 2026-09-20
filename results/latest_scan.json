@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-20T05:14:53.849512+00:00",
+ "scanned_at": "2026-09-20T05:16:56.846174+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.1,
+ "loop_uptime_min": 4.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 14930,
+   "markets": 22762,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7431,
-   "last_tick_age_s": 0.1
+   "markets": 7432,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
@@ -26,53 +26,54 @@
    "venue": "novig",
    "state": "OK",
    "markets": 220,
-   "last_tick_age_s": 6.6
+   "last_tick_age_s": 15.7
   },
   {
    "venue": "prophetx",
    "state": "OK",
    "markets": 3,
-   "last_tick_age_s": 4.6
+   "last_tick_age_s": 13.7
   }
  ],
  "totals": {
-  "markets_tracked": 22684,
+  "markets_tracked": 30517,
   "pairs_married": 3,
-  "arbitrages": 3
+  "arbitrages": 1
  },
  "stats": {
-  "gist_errors": 2,
+  "commits": 1,
+  "gist_errors": 4,
   "hot_errors": 0,
-  "kalshi.sweeps": 11,
-  "kalshi.ticks": 90714,
-  "kalshi.updates": 55571,
-  "kalshi.ws_ticks": 90714,
-  "kalshi.ws_trades": 19877,
-  "live_evals_fired": 30,
-  "novig.rest_updates": 398,
-  "novig.sweeps": 10,
-  "novig.ticks": 2385,
-  "novig.updates": 398,
-  "pairs_blocked_antonym_date": 70,
-  "pmglobal.rest_updates": 320,
-  "pmglobal.sweeps": 10,
-  "pmglobal.ticks": 1531,
-  "pmglobal.updates": 558,
+  "kalshi.sweeps": 21,
+  "kalshi.ticks": 177789,
+  "kalshi.updates": 104585,
+  "kalshi.ws_ticks": 177789,
+  "kalshi.ws_trades": 39523,
+  "live_evals_fired": 66,
+  "novig.rest_updates": 608,
+  "novig.sweeps": 20,
+  "novig.ticks": 4544,
+  "novig.updates": 608,
+  "pairs_blocked_antonym_date": 130,
+  "pmglobal.rest_updates": 386,
+  "pmglobal.sweeps": 20,
+  "pmglobal.ticks": 2816,
+  "pmglobal.updates": 738,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 75017,
-  "pmglobal.ws_ticks": 431,
-  "pmus.rest_updates": 7457,
-  "pmus.sweeps": 11,
-  "pmus.ticks": 88875,
-  "pmus.updates": 7457,
-  "pmus_x.last_count": 7379,
-  "pmus_x.sweeps": 12,
-  "prophetx.ticks": 33,
+  "pmglobal.ws_msgs": 155036,
+  "pmglobal.ws_ticks": 716,
+  "pmus.rest_updates": 7505,
+  "pmus.sweeps": 21,
+  "pmus.ticks": 162378,
+  "pmus.updates": 7505,
+  "pmus_x.last_count": 7326,
+  "pmus_x.sweeps": 22,
+  "prophetx.ticks": 63,
   "prophetx.updates": 4,
-  "prophetx.ws_errors": 8,
+  "prophetx.ws_errors": 14,
   "px.evt_scanned": 3,
-  "pxboard.sweeps": 10,
-  "supa_errors": 41
+  "pxboard.sweeps": 20,
+  "supa_errors": 80
  },
  "arbitrages": [
   {
@@ -96,53 +97,7 @@
    },
    "total_cost_cents": 31,
    "edge_bps": 6900,
-   "detected_at": "2026-09-20T05:14:36.887686+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x31507678b813cbec2b9202fb5502c25c32b75f3502a5521980f82504d3ed083f"
-    ],
-    "title": "Minnesota Twins vs. Los Angeles Angels",
-    "ask_cents": 39
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9a96bb0476d173ca2ee04b42dbfb72e4"
-    ],
-    "title": "Minnesota Twins at Los Angeles Angels",
-    "no_cost_cents": 20
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-20T05:14:49.445740+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2a760693be1a0c56d30caed28ec5ff78"
-    ],
-    "title": "Minnesota Twins at Los Angeles Angels",
-    "ask_cents": 22
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x31507678b813cbec2b9202fb5502c25c32b75f3502a5521980f82504d3ed083f"
-    ],
-    "title": "Minnesota Twins vs. Los Angeles Angels",
-    "no_cost_cents": 72
-   },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-20T05:14:49.386658+00:00"
+   "detected_at": "2026-09-20T05:16:39.834915+00:00"
   }
  ]
 }
