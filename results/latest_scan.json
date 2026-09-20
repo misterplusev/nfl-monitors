@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-20T14:42:57.573447+00:00",
+ "scanned_at": "2026-09-20T14:45:04.254778+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 24.4,
+ "loop_uptime_min": 26.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 106703,
+   "markets": 112666,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7265,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 109,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 260,
-   "last_tick_age_s": 5.3
+   "markets": 262,
+   "last_tick_age_s": 8.9
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 59,
-   "last_tick_age_s": 1225.4
+   "last_tick_age_s": 1352.0
   }
  ],
  "totals": {
-  "markets_tracked": 114396,
-  "pairs_married": 22,
-  "arbitrages": 22
+  "markets_tracked": 120361,
+  "pairs_married": 14,
+  "arbitrages": 13
  },
  "stats": {
-  "commits": 11,
-  "gist_errors": 26,
+  "commits": 12,
+  "gist_errors": 28,
   "hot_errors": 0,
-  "kalshi.sweeps": 168,
-  "kalshi.ticks": 1345308,
-  "kalshi.updates": 651635,
-  "kalshi.ws_ticks": 1345308,
-  "kalshi.ws_trades": 223259,
-  "live_evals_fired": 453,
-  "novig.rest_updates": 1684,
-  "novig.sweeps": 167,
-  "novig.ticks": 40294,
-  "novig.updates": 1684,
-  "pairs_blocked_antonym_date": 1050,
-  "pmglobal.rest_updates": 2032,
-  "pmglobal.sweeps": 167,
-  "pmglobal.ticks": 21564,
-  "pmglobal.updates": 4412,
-  "pmglobal.ws_msgs": 780097,
-  "pmglobal.ws_ticks": 4764,
-  "pmus.rest_updates": 7669,
-  "pmus.sweeps": 168,
-  "pmus.ticks": 1227753,
-  "pmus.updates": 7669,
+  "kalshi.sweeps": 183,
+  "kalshi.ticks": 1456502,
+  "kalshi.updates": 703558,
+  "kalshi.ws_ticks": 1456502,
+  "kalshi.ws_trades": 241898,
+  "live_evals_fired": 460,
+  "novig.rest_updates": 1845,
+  "novig.sweeps": 182,
+  "novig.ticks": 43898,
+  "novig.updates": 1845,
+  "pairs_blocked_antonym_date": 1145,
+  "pmglobal.rest_updates": 2205,
+  "pmglobal.sweeps": 182,
+  "pmglobal.ticks": 23562,
+  "pmglobal.updates": 4795,
+  "pmglobal.ws_msgs": 844642,
+  "pmglobal.ws_ticks": 5262,
+  "pmus.rest_updates": 7683,
+  "pmus.sweeps": 183,
+  "pmus.ticks": 1336728,
+  "pmus.updates": 7683,
   "pmus_x.last_count": 7265,
-  "pmus_x.sweeps": 169,
+  "pmus_x.sweeps": 184,
   "prophetx.ticks": 1203,
   "prophetx.updates": 310,
-  "prophetx.ws_errors": 87,
+  "prophetx.ws_errors": 94,
   "px.evt_scanned": 42,
-  "pxboard.sweeps": 167,
-  "supa_errors": 507
+  "pxboard.sweeps": 182,
+  "supa_errors": 552
  },
  "arbitrages": [
   {
@@ -97,29 +97,6 @@
    "total_cost_cents": 7,
    "edge_bps": 9300,
    "detected_at": "2026-09-20T14:39:10.007932+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf50baf971717078a3c70d88b41e84ccf41a9a341e8fb72e3bffebb36bf8399cd"
-    ],
-    "title": "Leeds United FC vs. Crystal Palace FC: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "770f06c1d738f1b180483441b3a09f33"
-    ],
-    "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 20
-   },
-   "total_cost_cents": 21,
-   "edge_bps": 7900,
-   "detected_at": "2026-09-20T14:42:18.401714+00:00"
   },
   {
    "buy_yes": {
@@ -169,52 +146,6 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf50baf971717078a3c70d88b41e84ccf41a9a341e8fb72e3bffebb36bf8399cd"
-    ],
-    "title": "Leeds United FC vs. Crystal Palace FC: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f9bfa983f4a8e3923bd02cd8defed68f"
-    ],
-    "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 35,
-   "edge_bps": 6500,
-   "detected_at": "2026-09-20T14:42:18.322959+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf50baf971717078a3c70d88b41e84ccf41a9a341e8fb72e3bffebb36bf8399cd"
-    ],
-    "title": "Leeds United FC vs. Crystal Palace FC: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2ae4059a15c69a865e93a991f6777baf"
-    ],
-    "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 36
-   },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-09-20T14:42:18.478663+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -230,11 +161,11 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 26
+    "no_cost_cents": 30
    },
-   "total_cost_cents": 37,
-   "edge_bps": 6300,
-   "detected_at": "2026-09-20T14:42:57.573379+00:00"
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-20T14:44:06.821010+00:00"
   },
   {
    "buy_yes": {
@@ -253,11 +184,11 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 26
+    "no_cost_cents": 30
    },
-   "total_cost_cents": 41,
-   "edge_bps": 5900,
-   "detected_at": "2026-09-20T14:42:57.573406+00:00"
+   "total_cost_cents": 45,
+   "edge_bps": 5500,
+   "detected_at": "2026-09-20T14:44:06.936824+00:00"
   },
   {
    "buy_yes": {
@@ -276,57 +207,11 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 26
-   },
-   "total_cost_cents": 45,
-   "edge_bps": 5500,
-   "detected_at": "2026-09-20T14:42:57.573412+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf50baf971717078a3c70d88b41e84ccf41a9a341e8fb72e3bffebb36bf8399cd"
-    ],
-    "title": "Leeds United FC vs. Crystal Palace FC: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "32639625164ce0d473835b9fe46fe09e"
-    ],
-    "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 48
+    "no_cost_cents": 30
    },
    "total_cost_cents": 49,
    "edge_bps": 5100,
-   "detected_at": "2026-09-20T14:42:18.370063+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf50baf971717078a3c70d88b41e84ccf41a9a341e8fb72e3bffebb36bf8399cd"
-    ],
-    "title": "Leeds United FC vs. Crystal Palace FC: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "ab51ee55d16d27cee9fa94991a8b376a"
-    ],
-    "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 53
-   },
-   "total_cost_cents": 54,
-   "edge_bps": 4600,
-   "detected_at": "2026-09-20T14:42:18.436895+00:00"
+   "detected_at": "2026-09-20T14:44:06.959601+00:00"
   },
   {
    "buy_yes": {
@@ -345,57 +230,11 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 26
+    "no_cost_cents": 30
    },
-   "total_cost_cents": 57,
-   "edge_bps": 4300,
-   "detected_at": "2026-09-20T14:42:57.573386+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf50baf971717078a3c70d88b41e84ccf41a9a341e8fb72e3bffebb36bf8399cd"
-    ],
-    "title": "Leeds United FC vs. Crystal Palace FC: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "3e493f1b3c3fbfca0be6ae5a7fc56b5b"
-    ],
-    "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 63
-   },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-20T14:42:18.300506+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xf50baf971717078a3c70d88b41e84ccf41a9a341e8fb72e3bffebb36bf8399cd"
-    ],
-    "title": "Leeds United FC vs. Crystal Palace FC: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "385f8b63b3e8302d0fe433140b1afe4a"
-    ],
-    "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 67
-   },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-20T14:42:18.346620+00:00"
+   "total_cost_cents": 61,
+   "edge_bps": 3900,
+   "detected_at": "2026-09-20T14:44:06.848534+00:00"
   },
   {
    "buy_yes": {
@@ -448,33 +287,10 @@
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0xf50baf971717078a3c70d88b41e84ccf41a9a341e8fb72e3bffebb36bf8399cd"
-    ],
-    "title": "Leeds United FC vs. Crystal Palace FC: O/U 2.5",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a4cb0c32b09b2572195d4d5efd61c57f"
-    ],
-    "title": "Crystal Palace FC at Leeds United FC",
-    "no_cost_cents": 81
-   },
-   "total_cost_cents": 82,
-   "edge_bps": 1800,
-   "detected_at": "2026-09-20T14:42:18.455464+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "ask_cents": 74
+    "ask_cents": 70
    },
    "buy_no": {
     "venue": "prophetx",
@@ -485,9 +301,9 @@
     "title": "Como 1907 at Frosinone Calcio",
     "no_cost_cents": 12
    },
-   "total_cost_cents": 86,
-   "edge_bps": 1400,
-   "detected_at": "2026-09-20T14:42:57.573392+00:00"
+   "total_cost_cents": 82,
+   "edge_bps": 1800,
+   "detected_at": "2026-09-20T14:44:06.873154+00:00"
   },
   {
    "buy_yes": {
@@ -497,7 +313,7 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "ask_cents": 74
+    "ask_cents": 70
    },
    "buy_no": {
     "venue": "prophetx",
@@ -508,9 +324,9 @@
     "title": "Como 1907 at Frosinone Calcio",
     "no_cost_cents": 14
    },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-20T14:42:57.573401+00:00"
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-20T14:44:06.900292+00:00"
   },
   {
    "buy_yes": {
@@ -520,7 +336,7 @@
      "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
     ],
     "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "ask_cents": 74
+    "ask_cents": 70
    },
    "buy_no": {
     "venue": "prophetx",
@@ -531,9 +347,9 @@
     "title": "Como 1907 at Frosinone Calcio",
     "no_cost_cents": 19
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-20T14:42:57.573361+00:00"
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-20T14:44:06.792371+00:00"
   },
   {
    "buy_yes": {
@@ -557,29 +373,6 @@
    "total_cost_cents": 95,
    "edge_bps": 500,
    "detected_at": "2026-09-20T14:39:10.047277+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "f12edf5d3b2432cd5657394a29c4cbc7"
-    ],
-    "title": "Como 1907 at Frosinone Calcio",
-    "ask_cents": 71
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x6718b921c9ecca8518dd33804be445eaa9b5809f55ca51559eb9071b3e53ae5a"
-    ],
-    "title": "Frosinone Calcio vs. Como 1907: O/U 2.5",
-    "no_cost_cents": 26
-   },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-20T14:42:57.573397+00:00"
   }
  ]
 }
