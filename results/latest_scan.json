@@ -1,79 +1,103 @@
 {
- "scanned_at": "2026-09-20T22:39:50.120791+00:00",
+ "scanned_at": "2026-09-20T22:41:50.930167+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.2,
+ "loop_uptime_min": 4.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 15481,
+   "markets": 22795,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7262,
-   "last_tick_age_s": 5.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 100,
-   "last_tick_age_s": 2.1
+   "markets": 104,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 190,
-   "last_tick_age_s": 2.5
+   "last_tick_age_s": 9.4
   },
   {
    "venue": "prophetx",
    "state": "OK",
-   "markets": 56,
-   "last_tick_age_s": 0.0
+   "markets": 74,
+   "last_tick_age_s": 7.2
   }
  ],
  "totals": {
-  "markets_tracked": 23089,
+  "markets_tracked": 30425,
   "pairs_married": 6,
   "arbitrages": 5
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 11,
-  "kalshi.ticks": 155600,
-  "kalshi.updates": 99219,
-  "kalshi.ws_ticks": 155600,
-  "kalshi.ws_trades": 27851,
-  "live_evals_fired": 49,
-  "novig.rest_updates": 969,
-  "novig.sweeps": 11,
-  "novig.ticks": 2120,
-  "novig.updates": 969,
-  "pairs_blocked_antonym_date": 14,
-  "pmglobal.rest_updates": 255,
-  "pmglobal.sweeps": 11,
-  "pmglobal.ticks": 1578,
-  "pmglobal.updates": 431,
-  "pmglobal.ws_msgs": 134557,
-  "pmglobal.ws_ticks": 378,
-  "pmus.rest_updates": 7298,
-  "pmus.sweeps": 11,
-  "pmus.ticks": 87144,
-  "pmus.updates": 7298,
+  "kalshi.sweeps": 22,
+  "kalshi.ticks": 309532,
+  "kalshi.updates": 191356,
+  "kalshi.ws_ticks": 309532,
+  "kalshi.ws_trades": 56997,
+  "live_evals_fired": 100,
+  "novig.rest_updates": 1707,
+  "novig.sweeps": 21,
+  "novig.ticks": 3799,
+  "novig.updates": 1707,
+  "pairs_blocked_antonym_date": 27,
+  "pmglobal.rest_updates": 353,
+  "pmglobal.sweeps": 21,
+  "pmglobal.ticks": 2837,
+  "pmglobal.updates": 632,
+  "pmglobal.ws_msgs": 260363,
+  "pmglobal.ws_ticks": 637,
+  "pmus.rest_updates": 7362,
+  "pmus.sweeps": 22,
+  "pmus.ticks": 167026,
+  "pmus.updates": 7362,
   "pmus_x.last_count": 7262,
-  "pmus_x.sweeps": 12,
-  "prophetx.ticks": 335,
-  "prophetx.updates": 139,
-  "prophetx.ws_errors": 7,
-  "px.evt_scanned": 33,
-  "pxboard.sweeps": 11,
-  "supa_errors": 43
+  "pmus_x.sweeps": 23,
+  "prophetx.ticks": 706,
+  "prophetx.updates": 254,
+  "prophetx.ws_errors": 14,
+  "px.evt_scanned": 38,
+  "pxboard.sweeps": 21,
+  "supa_errors": 83
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x17bc451b1e042dba0789cab98f9eff6ca66c6eef550c2ca0de3e89a045e28d59"
+    ],
+    "title": "San Francisco Giants vs. Los Angeles Dodgers",
+    "ask_cents": 1
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "cad9b4c3d5278aed68b27c9320d4b6b3"
+    ],
+    "title": "San Francisco Giants at Los Angeles Dodgers",
+    "no_cost_cents": 5
+   },
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-09-20T22:41:43.771786+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -95,30 +119,7 @@
    },
    "total_cost_cents": 6,
    "edge_bps": 9400,
-   "detected_at": "2026-09-20T22:38:25.319066+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x17bc451b1e042dba0789cab98f9eff6ca66c6eef550c2ca0de3e89a045e28d59"
-    ],
-    "title": "San Francisco Giants vs. Los Angeles Dodgers",
-    "ask_cents": 4
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "cad9b4c3d5278aed68b27c9320d4b6b3"
-    ],
-    "title": "San Francisco Giants at Los Angeles Dodgers",
-    "no_cost_cents": 4
-   },
-   "total_cost_cents": 8,
-   "edge_bps": 9200,
-   "detected_at": "2026-09-20T22:39:04.064600+00:00"
+   "detected_at": "2026-09-20T22:41:19.669925+00:00"
   },
   {
    "buy_yes": {
@@ -128,7 +129,7 @@
      "0x63c3d6b4c70f998126fd4a33afa8efdcdb5ca94bb658936c8fa03eec0ac3795f"
     ],
     "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 33
+    "ask_cents": 40
    },
    "buy_no": {
     "venue": "prophetx",
@@ -137,34 +138,34 @@
      "6b531910ff62a31cf22568d4f49d512c"
     ],
     "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 31
+    "no_cost_cents": 32
    },
-   "total_cost_cents": 64,
-   "edge_bps": 3600,
-   "detected_at": "2026-09-20T22:39:49.084256+00:00"
+   "total_cost_cents": 72,
+   "edge_bps": 2800,
+   "detected_at": "2026-09-20T22:41:22.444678+00:00"
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x63c3d6b4c70f998126fd4a33afa8efdcdb5ca94bb658936c8fa03eec0ac3795f"
-    ],
-    "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 33
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "10bb6954e05ea8f52a4882db0fb72143"
     ],
     "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 63
+    "ask_cents": 33
    },
-   "total_cost_cents": 96,
-   "edge_bps": 400,
-   "detected_at": "2026-09-20T22:39:49.147887+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x63c3d6b4c70f998126fd4a33afa8efdcdb5ca94bb658936c8fa03eec0ac3795f"
+    ],
+    "title": "Detroit Tigers vs. Chicago White Sox",
+    "no_cost_cents": 60
+   },
+   "total_cost_cents": 93,
+   "edge_bps": 700,
+   "detected_at": "2026-09-20T22:41:42.964907+00:00"
   },
   {
    "buy_yes": {
@@ -174,7 +175,7 @@
      "3721c64b831cc0efdc003f10ce73c748"
     ],
     "title": "New York Yankees at Arizona Diamondbacks",
-    "ask_cents": 3
+    "ask_cents": 2
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -185,9 +186,9 @@
     "title": "New York Yankees vs. Arizona Diamondbacks",
     "no_cost_cents": 96
    },
-   "total_cost_cents": 99,
-   "edge_bps": 100,
-   "detected_at": "2026-09-20T22:39:39.404755+00:00"
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-20T22:41:22.977341+00:00"
   }
  ]
 }
