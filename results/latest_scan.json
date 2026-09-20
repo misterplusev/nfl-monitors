@@ -1,78 +1,78 @@
 {
- "scanned_at": "2026-09-20T22:48:00.458884+00:00",
+ "scanned_at": "2026-09-20T22:50:02.562138+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 10.3,
+ "loop_uptime_min": 12.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 42210,
+   "markets": 47902,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7262,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 2.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 104,
-   "last_tick_age_s": 0.0
+   "markets": 105,
+   "last_tick_age_s": 0.9
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 194,
-   "last_tick_age_s": 12.6
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 75,
-   "last_tick_age_s": 310.1
+   "last_tick_age_s": 432.2
   }
  ],
  "totals": {
-  "markets_tracked": 49845,
-  "pairs_married": 6,
-  "arbitrages": 3
+  "markets_tracked": 55538,
+  "pairs_married": 4,
+  "arbitrages": 2
  },
  "stats": {
-  "commits": 4,
-  "gist_errors": 11,
+  "commits": 5,
+  "gist_errors": 13,
   "hot_errors": 0,
-  "kalshi.sweeps": 56,
-  "kalshi.ticks": 749514,
-  "kalshi.updates": 454818,
-  "kalshi.ws_ticks": 749514,
-  "kalshi.ws_trades": 153163,
-  "live_evals_fired": 167,
-  "novig.rest_updates": 3923,
-  "novig.sweeps": 55,
-  "novig.ticks": 9641,
-  "novig.updates": 3923,
-  "pairs_blocked_antonym_date": 70,
-  "pmglobal.rest_updates": 595,
-  "pmglobal.sweeps": 55,
-  "pmglobal.ticks": 7008,
-  "pmglobal.updates": 1176,
-  "pmglobal.ws_msgs": 596958,
-  "pmglobal.ws_ticks": 1408,
-  "pmus.rest_updates": 7485,
-  "pmus.sweeps": 56,
-  "pmus.ticks": 413934,
-  "pmus.updates": 7485,
-  "pmus_x.last_count": 7262,
-  "pmus_x.sweeps": 57,
+  "kalshi.sweeps": 67,
+  "kalshi.ticks": 899545,
+  "kalshi.updates": 542249,
+  "kalshi.ws_ticks": 899545,
+  "kalshi.ws_trades": 188499,
+  "live_evals_fired": 190,
+  "novig.rest_updates": 4646,
+  "novig.sweeps": 67,
+  "novig.ticks": 11697,
+  "novig.updates": 4646,
+  "pairs_blocked_antonym_date": 84,
+  "pmglobal.rest_updates": 711,
+  "pmglobal.sweeps": 67,
+  "pmglobal.ticks": 8492,
+  "pmglobal.updates": 1404,
+  "pmglobal.ws_msgs": 684778,
+  "pmglobal.ws_ticks": 1692,
+  "pmus.rest_updates": 7515,
+  "pmus.sweeps": 67,
+  "pmus.ticks": 493810,
+  "pmus.updates": 7515,
+  "pmus_x.last_count": 7260,
+  "pmus_x.sweeps": 68,
   "prophetx.ticks": 947,
   "prophetx.updates": 296,
-  "prophetx.ws_errors": 37,
+  "prophetx.ws_errors": 45,
   "px.evt_scanned": 37,
-  "pxboard.sweeps": 55,
-  "supa_errors": 198
+  "pxboard.sweeps": 66,
+  "supa_errors": 233
  },
  "arbitrages": [
   {
@@ -83,7 +83,7 @@
      "0x72b816c5315e1601e1786bf6bd9da9e63982cf32157cdbb2675d12ee936dae66"
     ],
     "title": "New York Yankees vs. Arizona Diamondbacks",
-    "ask_cents": 4
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "prophetx",
@@ -94,32 +94,9 @@
     "title": "New York Yankees at Arizona Diamondbacks",
     "no_cost_cents": 2
    },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-09-20T22:47:49.610376+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x17bc451b1e042dba0789cab98f9eff6ca66c6eef550c2ca0de3e89a045e28d59"
-    ],
-    "title": "San Francisco Giants vs. Los Angeles Dodgers",
-    "ask_cents": 2
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "cad9b4c3d5278aed68b27c9320d4b6b3"
-    ],
-    "title": "San Francisco Giants at Los Angeles Dodgers",
-    "no_cost_cents": 5
-   },
-   "total_cost_cents": 7,
-   "edge_bps": 9300,
-   "detected_at": "2026-09-20T22:47:37.615847+00:00"
+   "total_cost_cents": 5,
+   "edge_bps": 9500,
+   "detected_at": "2026-09-20T22:50:01.351283+00:00"
   },
   {
    "buy_yes": {
@@ -142,7 +119,7 @@
    },
    "total_cost_cents": 63,
    "edge_bps": 3700,
-   "detected_at": "2026-09-20T22:46:22.121424+00:00"
+   "detected_at": "2026-09-20T22:49:53.014661+00:00"
   }
  ]
 }
