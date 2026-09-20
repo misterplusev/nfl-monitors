@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-20T22:41:50.930167+00:00",
+ "scanned_at": "2026-09-20T22:43:52.417442+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 4.2,
+ "loop_uptime_min": 6.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 22795,
+   "markets": 29463,
    "last_tick_age_s": 0.0
   },
   {
@@ -20,84 +20,61 @@
    "venue": "pmglobal",
    "state": "OK",
    "markets": 104,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 3.9
   },
   {
    "venue": "novig",
    "state": "OK",
    "markets": 190,
-   "last_tick_age_s": 9.4
+   "last_tick_age_s": 7.8
   },
   {
    "venue": "prophetx",
    "state": "OK",
-   "markets": 74,
-   "last_tick_age_s": 7.2
+   "markets": 75,
+   "last_tick_age_s": 62.1
   }
  ],
  "totals": {
-  "markets_tracked": 30425,
+  "markets_tracked": 37094,
   "pairs_married": 6,
-  "arbitrages": 5
+  "arbitrages": 6
  },
  "stats": {
-  "commits": 1,
-  "gist_errors": 5,
+  "commits": 2,
+  "gist_errors": 7,
   "hot_errors": 0,
-  "kalshi.sweeps": 22,
-  "kalshi.ticks": 309532,
-  "kalshi.updates": 191356,
-  "kalshi.ws_ticks": 309532,
-  "kalshi.ws_trades": 56997,
-  "live_evals_fired": 100,
-  "novig.rest_updates": 1707,
-  "novig.sweeps": 21,
-  "novig.ticks": 3799,
-  "novig.updates": 1707,
-  "pairs_blocked_antonym_date": 27,
-  "pmglobal.rest_updates": 353,
-  "pmglobal.sweeps": 21,
-  "pmglobal.ticks": 2837,
-  "pmglobal.updates": 632,
-  "pmglobal.ws_msgs": 260363,
-  "pmglobal.ws_ticks": 637,
-  "pmus.rest_updates": 7362,
-  "pmus.sweeps": 22,
-  "pmus.ticks": 167026,
-  "pmus.updates": 7362,
+  "kalshi.sweeps": 33,
+  "kalshi.ticks": 456775,
+  "kalshi.updates": 278428,
+  "kalshi.ws_ticks": 456775,
+  "kalshi.ws_trades": 89843,
+  "live_evals_fired": 128,
+  "novig.rest_updates": 2383,
+  "novig.sweeps": 32,
+  "novig.ticks": 5701,
+  "novig.updates": 2383,
+  "pairs_blocked_antonym_date": 41,
+  "pmglobal.rest_updates": 420,
+  "pmglobal.sweeps": 32,
+  "pmglobal.ticks": 4173,
+  "pmglobal.updates": 783,
+  "pmglobal.ws_msgs": 378331,
+  "pmglobal.ws_ticks": 873,
+  "pmus.rest_updates": 7409,
+  "pmus.sweeps": 33,
+  "pmus.ticks": 246908,
+  "pmus.updates": 7409,
   "pmus_x.last_count": 7262,
-  "pmus_x.sweeps": 23,
-  "prophetx.ticks": 706,
-  "prophetx.updates": 254,
-  "prophetx.ws_errors": 14,
-  "px.evt_scanned": 38,
-  "pxboard.sweeps": 21,
-  "supa_errors": 83
+  "pmus_x.sweeps": 34,
+  "prophetx.ticks": 947,
+  "prophetx.updates": 296,
+  "prophetx.ws_errors": 22,
+  "px.evt_scanned": 37,
+  "pxboard.sweeps": 32,
+  "supa_errors": 122
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x17bc451b1e042dba0789cab98f9eff6ca66c6eef550c2ca0de3e89a045e28d59"
-    ],
-    "title": "San Francisco Giants vs. Los Angeles Dodgers",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "cad9b4c3d5278aed68b27c9320d4b6b3"
-    ],
-    "title": "San Francisco Giants at Los Angeles Dodgers",
-    "no_cost_cents": 5
-   },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-09-20T22:41:43.771786+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -119,7 +96,30 @@
    },
    "total_cost_cents": 6,
    "edge_bps": 9400,
-   "detected_at": "2026-09-20T22:41:19.669925+00:00"
+   "detected_at": "2026-09-20T22:43:34.156481+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x17bc451b1e042dba0789cab98f9eff6ca66c6eef550c2ca0de3e89a045e28d59"
+    ],
+    "title": "San Francisco Giants vs. Los Angeles Dodgers",
+    "ask_cents": 5
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "cad9b4c3d5278aed68b27c9320d4b6b3"
+    ],
+    "title": "San Francisco Giants at Los Angeles Dodgers",
+    "no_cost_cents": 5
+   },
+   "total_cost_cents": 10,
+   "edge_bps": 9000,
+   "detected_at": "2026-09-20T22:43:19.442456+00:00"
   },
   {
    "buy_yes": {
@@ -138,11 +138,11 @@
      "6b531910ff62a31cf22568d4f49d512c"
     ],
     "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 32
+    "no_cost_cents": 31
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-20T22:41:22.444678+00:00"
+   "total_cost_cents": 71,
+   "edge_bps": 2900,
+   "detected_at": "2026-09-20T22:42:47.044845+00:00"
   },
   {
    "buy_yes": {
@@ -152,7 +152,7 @@
      "10bb6954e05ea8f52a4882db0fb72143"
     ],
     "title": "Detroit Tigers at Chicago White Sox",
-    "ask_cents": 33
+    "ask_cents": 32
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -163,9 +163,32 @@
     "title": "Detroit Tigers vs. Chicago White Sox",
     "no_cost_cents": 60
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-20T22:41:42.964907+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-20T22:42:47.113687+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "47508b5b558973afcb88d176f9576dc4"
+    ],
+    "title": "San Francisco Giants at Los Angeles Dodgers",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x17bc451b1e042dba0789cab98f9eff6ca66c6eef550c2ca0de3e89a045e28d59"
+    ],
+    "title": "San Francisco Giants vs. Los Angeles Dodgers",
+    "no_cost_cents": 95
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-20T22:43:19.395157+00:00"
   },
   {
    "buy_yes": {
@@ -175,7 +198,7 @@
      "3721c64b831cc0efdc003f10ce73c748"
     ],
     "title": "New York Yankees at Arizona Diamondbacks",
-    "ask_cents": 2
+    "ask_cents": 3
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -186,9 +209,9 @@
     "title": "New York Yankees vs. Arizona Diamondbacks",
     "no_cost_cents": 96
    },
-   "total_cost_cents": 98,
-   "edge_bps": 200,
-   "detected_at": "2026-09-20T22:41:22.977341+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-20T22:43:34.089386+00:00"
   }
  ]
 }
