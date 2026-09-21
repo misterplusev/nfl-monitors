@@ -1,126 +1,79 @@
 {
- "scanned_at": "2026-09-21T00:34:36.319146+00:00",
+ "scanned_at": "2026-09-21T00:36:37.520682+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 116.9,
+ "loop_uptime_min": 119.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 268037,
+   "markets": 269874,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7263,
-   "last_tick_age_s": 0.4
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 148,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
    "state": "OK",
-   "markets": 417,
-   "last_tick_age_s": 6.5
+   "markets": 418,
+   "last_tick_age_s": 14.5
   },
   {
    "venue": "prophetx",
    "state": "STALE",
    "markets": 75,
-   "last_tick_age_s": 6706.2
+   "last_tick_age_s": 6827.5
   }
  ],
  "totals": {
-  "markets_tracked": 275940,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 277778,
+  "pairs_married": 0,
+  "arbitrages": 0
  },
  "stats": {
-  "commits": 56,
-  "gist_errors": 123,
+  "commits": 57,
+  "gist_errors": 125,
   "hot_errors": 0,
-  "kalshi.sweeps": 607,
-  "kalshi.ticks": 6948764,
-  "kalshi.updates": 3778305,
-  "kalshi.ws_ticks": 6948764,
-  "kalshi.ws_trades": 1710986,
+  "kalshi.sweeps": 617,
+  "kalshi.ticks": 7057929,
+  "kalshi.updates": 3838236,
+  "kalshi.ws_ticks": 7057929,
+  "kalshi.ws_trades": 1731824,
   "live_evals_fired": 891,
-  "novig.rest_updates": 21910,
+  "novig.rest_updates": 22337,
   "novig.sweep_errors": 4,
-  "novig.sweeps": 602,
-  "novig.ticks": 114688,
-  "novig.updates": 21910,
-  "pairs_blocked_antonym_date": 763,
-  "pmglobal.rest_updates": 3286,
-  "pmglobal.sweeps": 606,
-  "pmglobal.ticks": 72931,
-  "pmglobal.updates": 6574,
-  "pmglobal.ws_msgs": 2495977,
-  "pmglobal.ws_ticks": 12231,
-  "pmus.rest_updates": 10301,
-  "pmus.sweeps": 607,
-  "pmus.ticks": 4406842,
-  "pmus.updates": 10301,
+  "novig.sweeps": 612,
+  "novig.ticks": 116207,
+  "novig.updates": 22337,
+  "pairs_blocked_antonym_date": 775,
+  "pmglobal.rest_updates": 3337,
+  "pmglobal.sweeps": 616,
+  "pmglobal.ticks": 74097,
+  "pmglobal.updates": 6663,
+  "pmglobal.ws_msgs": 2520878,
+  "pmglobal.ws_ticks": 12397,
+  "pmus.rest_updates": 10369,
+  "pmus.sweeps": 617,
+  "pmus.ticks": 4479312,
+  "pmus.updates": 10369,
   "pmus_x.last_count": 7247,
-  "pmus_x.sweeps": 608,
+  "pmus_x.sweeps": 618,
   "prophetx.ticks": 947,
   "prophetx.updates": 296,
-  "prophetx.ws_errors": 411,
+  "prophetx.ws_errors": 417,
   "px.evt_scanned": 37,
-  "pxboard.sweeps": 606,
-  "supa_errors": 1920
+  "pxboard.sweeps": 616,
+  "supa_errors": 1950
  },
- "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x63c3d6b4c70f998126fd4a33afa8efdcdb5ca94bb658936c8fa03eec0ac3795f"
-    ],
-    "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "6b531910ff62a31cf22568d4f49d512c"
-    ],
-    "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 31
-   },
-   "total_cost_cents": 32,
-   "edge_bps": 6800,
-   "detected_at": "2026-09-21T00:29:16.359557+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x63c3d6b4c70f998126fd4a33afa8efdcdb5ca94bb658936c8fa03eec0ac3795f"
-    ],
-    "title": "Detroit Tigers vs. Chicago White Sox",
-    "ask_cents": 1
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "10bb6954e05ea8f52a4882db0fb72143"
-    ],
-    "title": "Detroit Tigers at Chicago White Sox",
-    "no_cost_cents": 69
-   },
-   "total_cost_cents": 70,
-   "edge_bps": 3000,
-   "detected_at": "2026-09-21T00:29:16.301373+00:00"
-  }
- ]
+ "arbitrages": []
 }
