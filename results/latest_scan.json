@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-24T05:25:30.181196+00:00",
+ "scanned_at": "2026-09-24T05:27:31.266174+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 14.3,
+ "loop_uptime_min": 16.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 44274,
-   "last_tick_age_s": 0.0
+   "markets": 46973,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7825,
-   "last_tick_age_s": 2.1
+   "markets": 7827,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 100,
-   "last_tick_age_s": 0.5
+   "markets": 102,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
@@ -32,46 +32,69 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 8,
-   "last_tick_age_s": 551.5
+   "last_tick_age_s": 672.6
   }
  ],
  "totals": {
-  "markets_tracked": 52207,
+  "markets_tracked": 54910,
   "pairs_married": 2,
   "arbitrages": 2
  },
  "stats": {
-  "commits": 6,
-  "gist_errors": 15,
+  "commits": 7,
+  "gist_errors": 17,
   "hot_errors": 0,
-  "kalshi.sweeps": 78,
-  "kalshi.ticks": 522941,
-  "kalshi.updates": 285723,
-  "kalshi.ws_ticks": 522941,
-  "kalshi.ws_trades": 92851,
-  "live_evals_fired": 412,
-  "novig.sweep_errors": 77,
-  "pairs_blocked_antonym_date": 690,
-  "pmglobal.rest_updates": 536,
-  "pmglobal.sweeps": 78,
-  "pmglobal.ticks": 9567,
-  "pmglobal.updates": 1104,
-  "pmglobal.ws_msgs": 212569,
-  "pmglobal.ws_ticks": 1667,
-  "pmus.rest_updates": 8658,
-  "pmus.sweeps": 78,
-  "pmus.ticks": 616380,
-  "pmus.updates": 8658,
-  "pmus_x.last_count": 7791,
-  "pmus_x.sweeps": 79,
+  "kalshi.sweeps": 89,
+  "kalshi.ticks": 591120,
+  "kalshi.updates": 319318,
+  "kalshi.ws_ticks": 591120,
+  "kalshi.ws_trades": 108967,
+  "live_evals_fired": 482,
+  "novig.sweep_errors": 88,
+  "pairs_blocked_antonym_date": 781,
+  "pmglobal.rest_updates": 588,
+  "pmglobal.sweeps": 88,
+  "pmglobal.ticks": 10790,
+  "pmglobal.updates": 1229,
+  "pmglobal.ws_msgs": 243947,
+  "pmglobal.ws_ticks": 1890,
+  "pmus.rest_updates": 8822,
+  "pmus.sweeps": 89,
+  "pmus.ticks": 702088,
+  "pmus.updates": 8822,
+  "pmus_x.last_count": 7792,
+  "pmus_x.sweeps": 90,
   "prophetx.ticks": 141,
   "prophetx.updates": 81,
-  "prophetx.ws_errors": 53,
+  "prophetx.ws_errors": 60,
   "px.evt_scanned": 6,
-  "pxboard.sweeps": 77,
-  "supa_errors": 266
+  "pxboard.sweeps": 88,
+  "supa_errors": 299
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x057bdb7ed25fe981d389ea6c8222f173cc92db7c5a7aefe6d08fc438a13a2383"
+    ],
+    "title": "Houston Astros vs. Seattle Mariners",
+    "ask_cents": 52
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9e6406d8ed3585495133f176f32226e0"
+    ],
+    "title": "Houston Astros at Seattle Mariners",
+    "no_cost_cents": 21
+   },
+   "total_cost_cents": 73,
+   "edge_bps": 2700,
+   "detected_at": "2026-09-24T05:27:31.196339+00:00"
+  },
   {
    "buy_yes": {
     "venue": "prophetx",
@@ -89,34 +112,11 @@
      "0x057bdb7ed25fe981d389ea6c8222f173cc92db7c5a7aefe6d08fc438a13a2383"
     ],
     "title": "Houston Astros vs. Seattle Mariners",
-    "no_cost_cents": 38
+    "no_cost_cents": 50
    },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-24T05:25:29.265865+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x057bdb7ed25fe981d389ea6c8222f173cc92db7c5a7aefe6d08fc438a13a2383"
-    ],
-    "title": "Houston Astros vs. Seattle Mariners",
-    "ask_cents": 62
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9e6406d8ed3585495133f176f32226e0"
-    ],
-    "title": "Houston Astros at Seattle Mariners",
-    "no_cost_cents": 21
-   },
-   "total_cost_cents": 83,
-   "edge_bps": 1700,
-   "detected_at": "2026-09-24T05:25:29.189227+00:00"
+   "total_cost_cents": 84,
+   "edge_bps": 1600,
+   "detected_at": "2026-09-24T05:27:31.196358+00:00"
   }
  ]
 }
