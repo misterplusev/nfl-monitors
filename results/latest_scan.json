@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-24T04:38:26.102100+00:00",
+ "scanned_at": "2026-09-24T05:13:17.793744+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 420261,
-   "last_tick_age_s": 0.1
+   "markets": 12092,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7921,
-   "last_tick_age_s": 2.3
+   "markets": 7818,
+   "last_tick_age_s": 2.2
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 148,
-   "last_tick_age_s": 0.6
+   "markets": 100,
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "novig",
@@ -30,44 +30,69 @@
   },
   {
    "venue": "prophetx",
-   "state": "SKIPPED_NO_CREDENTIALS",
-   "markets": 0,
-   "last_tick_age_s": null
+   "state": "OK",
+   "markets": 7,
+   "last_tick_age_s": 6.9
   }
  ],
  "totals": {
-  "markets_tracked": 428330,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 20017,
+  "pairs_married": 3,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 163,
-  "gist_errors": 351,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.rest_updates": 4,
-  "kalshi.sweeps": 1792,
-  "kalshi.ticks": 18949336,
-  "kalshi.updates": 9931628,
-  "kalshi.ws_ticks": 18949330,
-  "kalshi.ws_trades": 3393960,
-  "novig.sweep_errors": 1792,
-  "pairs_blocked_antonym_date": 14532,
-  "pmglobal.rest_updates": 9539,
-  "pmglobal.sweeps": 1792,
-  "pmglobal.ticks": 212824,
-  "pmglobal.updates": 19811,
-  "pmglobal.ws_msgs": 4835472,
-  "pmglobal.ws_ticks": 33524,
-  "pmus.rest_updates": 26554,
-  "pmus.sweeps": 1792,
-  "pmus.ticks": 14068101,
-  "pmus.updates": 26554,
-  "pmus_x.last_count": 7806,
-  "pmus_x.sweeps": 1793,
-  "prophetx.ws_errors": 1195,
-  "px.evt_scanned": 0,
-  "pxboard.sweeps": 1791,
-  "supa_errors": 5836
+  "kalshi.sweeps": 11,
+  "kalshi.ticks": 69661,
+  "kalshi.updates": 40224,
+  "kalshi.ws_ticks": 69661,
+  "kalshi.ws_trades": 11944,
+  "live_evals_fired": 34,
+  "novig.sweep_errors": 10,
+  "pairs_blocked_antonym_date": 98,
+  "pmglobal.rest_updates": 222,
+  "pmglobal.sweeps": 11,
+  "pmglobal.ticks": 1504,
+  "pmglobal.updates": 358,
+  "pmglobal.ws_msgs": 32069,
+  "pmglobal.ws_ticks": 304,
+  "pmus.rest_updates": 7953,
+  "pmus.sweeps": 11,
+  "pmus.ticks": 93746,
+  "pmus.updates": 7953,
+  "pmus_x.last_count": 7811,
+  "pmus_x.sweeps": 12,
+  "prophetx.ticks": 54,
+  "prophetx.updates": 30,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 5,
+  "pxboard.sweeps": 10,
+  "supa_errors": 42
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x057bdb7ed25fe981d389ea6c8222f173cc92db7c5a7aefe6d08fc438a13a2383"
+    ],
+    "title": "Houston Astros vs. Seattle Mariners",
+    "ask_cents": 40
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "08c4bbedefbfea60d144e7588a4a7823"
+    ],
+    "title": "Houston Astros at Seattle Mariners",
+    "no_cost_cents": 41
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-24T05:13:16.911009+00:00"
+  }
+ ]
 }
