@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-24T19:25:05.895774+00:00",
+ "scanned_at": "2026-09-24T23:22:01.192384+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 240.2,
+ "loop_uptime_min": 2.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 443428,
-   "last_tick_age_s": 0.1
+   "markets": 21891,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7946,
-   "last_tick_age_s": 5.0
+   "markets": 7944,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 173,
-   "last_tick_age_s": 0.3
+   "markets": 100,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
@@ -30,45 +30,252 @@
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 14,
-   "last_tick_age_s": 14052.8
+   "state": "OK",
+   "markets": 4,
+   "last_tick_age_s": 5.2
   }
  ],
  "totals": {
-  "markets_tracked": 451561,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 29939,
+  "pairs_married": 9,
+  "arbitrages": 9
  },
  "stats": {
-  "commits": 116,
-  "gist_errors": 249,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.sweeps": 1106,
-  "kalshi.ticks": 14938398,
-  "kalshi.updates": 7568305,
-  "kalshi.ws_ticks": 14938398,
-  "kalshi.ws_trades": 2282935,
-  "novig.sweep_errors": 1106,
-  "pmglobal.rest_updates": 8455,
-  "pmglobal.sweeps": 1106,
-  "pmglobal.ticks": 137375,
-  "pmglobal.updates": 17065,
-  "pmglobal.ws_errors": 7,
-  "pmglobal.ws_msgs": 2978500,
-  "pmglobal.ws_ticks": 26675,
-  "pmus.rest_updates": 28713,
-  "pmus.sweeps": 1106,
-  "pmus.ticks": 8693427,
-  "pmus.updates": 28713,
-  "pmus_x.last_count": 7941,
-  "pmus_x.sweeps": 1107,
-  "prophetx.ticks": 378,
-  "prophetx.updates": 145,
-  "prophetx.ws_errors": 821,
-  "px.evt_scanned": 11,
-  "pxboard.sweeps": 1106,
-  "supa_errors": 3824
+  "kalshi.sweeps": 12,
+  "kalshi.ticks": 121890,
+  "kalshi.updates": 74370,
+  "kalshi.ws_ticks": 121890,
+  "kalshi.ws_trades": 20524,
+  "live_evals_fired": 66,
+  "novig.sweep_errors": 11,
+  "pmglobal.rest_updates": 240,
+  "pmglobal.sweeps": 11,
+  "pmglobal.ticks": 1610,
+  "pmglobal.updates": 421,
+  "pmglobal.ws_msgs": 41065,
+  "pmglobal.ws_ticks": 410,
+  "pmus.rest_updates": 8001,
+  "pmus.sweeps": 12,
+  "pmus.ticks": 103272,
+  "pmus.updates": 8001,
+  "pmus_x.last_count": 7944,
+  "pmus_x.sweeps": 13,
+  "prophetx.ticks": 48,
+  "prophetx.updates": 21,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 4,
+  "pxboard.sweeps": 11,
+  "supa_errors": 43
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0534bb842267be6f656279155c39cef5"
+    ],
+    "title": "Cleveland Guardians at Boston Red Sox",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xaaba03e832b1e2c7a65fd0e292898b69bc70b5241f6c95850d96b9d758661733"
+    ],
+    "title": "Cleveland Guardians vs. Boston Red Sox",
+    "no_cost_cents": 40
+   },
+   "total_cost_cents": 79,
+   "edge_bps": 2100,
+   "detected_at": "2026-09-24T23:21:13.240633+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe33f9bbe0a2e2dcdaf5e447a3bccc3b242633c9051ffd2d95087e1cede1c0b6e"
+    ],
+    "title": "Milwaukee Brewers vs. Philadelphia Phillies: O/U 7.5",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "68a3980fc3857f4d1c36f95b5be11249"
+    ],
+    "title": "Milwaukee Brewers at Philadelphia Phillies",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-24T23:21:31.414897+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3183c297a36aeeb71d3d004be049c49fe6afbab4d79eba63a3e803cd5c6e3611"
+    ],
+    "title": "Cleveland Guardians vs. Boston Red Sox: O/U 6.5",
+    "ask_cents": 47
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "741599b4034084baf2be96ccb70512b3"
+    ],
+    "title": "Cleveland Guardians at Boston Red Sox",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-24T23:20:15.558186+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xcb169452dc1771cc194ad61634b529c6df933c76b99fd28782f1c77f71f94955"
+    ],
+    "title": "Milwaukee Brewers vs. Philadelphia Phillies",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "68a3980fc3857f4d1c36f95b5be11249"
+    ],
+    "title": "Milwaukee Brewers at Philadelphia Phillies",
+    "no_cost_cents": 47
+   },
+   "total_cost_cents": 89,
+   "edge_bps": 1100,
+   "detected_at": "2026-09-24T23:21:31.470711+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xe33f9bbe0a2e2dcdaf5e447a3bccc3b242633c9051ffd2d95087e1cede1c0b6e"
+    ],
+    "title": "Milwaukee Brewers vs. Philadelphia Phillies: O/U 7.5",
+    "ask_cents": 36
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "74c9b5e7261c0bdabc4e29e1ba2dda20"
+    ],
+    "title": "Milwaukee Brewers at Philadelphia Phillies",
+    "no_cost_cents": 54
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-24T23:21:22.204548+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0534bb842267be6f656279155c39cef5"
+    ],
+    "title": "Cleveland Guardians at Boston Red Sox",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x3183c297a36aeeb71d3d004be049c49fe6afbab4d79eba63a3e803cd5c6e3611"
+    ],
+    "title": "Cleveland Guardians vs. Boston Red Sox: O/U 6.5",
+    "no_cost_cents": 53
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-24T23:21:13.312452+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xcb169452dc1771cc194ad61634b529c6df933c76b99fd28782f1c77f71f94955"
+    ],
+    "title": "Milwaukee Brewers vs. Philadelphia Phillies",
+    "ask_cents": 42
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "74c9b5e7261c0bdabc4e29e1ba2dda20"
+    ],
+    "title": "Milwaukee Brewers at Philadelphia Phillies",
+    "no_cost_cents": 54
+   },
+   "total_cost_cents": 96,
+   "edge_bps": 400,
+   "detected_at": "2026-09-24T23:21:22.163403+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5e082f0b57f47a29044aa35b4c5658393122e659d5feae521c06b57cdd7f905c"
+    ],
+    "title": "Will 1 Fed rate cut happen in 2026?",
+    "ask_cents": 2
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "171031"
+    ],
+    "title": "Fed Rate Cut in 2026?",
+    "no_cost_cents": 94
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-09-24T23:22:01.192309+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xaaba03e832b1e2c7a65fd0e292898b69bc70b5241f6c95850d96b9d758661733"
+    ],
+    "title": "Cleveland Guardians vs. Boston Red Sox",
+    "ask_cents": 60
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "741599b4034084baf2be96ccb70512b3"
+    ],
+    "title": "Cleveland Guardians at Boston Red Sox",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-24T23:20:45.960000+00:00"
+  }
+ ]
 }
