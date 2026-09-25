@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-25T00:20:43.297744+00:00",
+ "scanned_at": "2026-09-25T00:22:45.124042+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 60.9,
+ "loop_uptime_min": 63.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 209625,
+   "markets": 213499,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7944,
-   "last_tick_age_s": 0.3
+   "last_tick_age_s": 4.8
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 109,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.5
   },
   {
    "venue": "novig",
@@ -32,43 +32,43 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 4,
-   "last_tick_age_s": 3320.3
+   "last_tick_age_s": 3442.2
   }
  ],
  "totals": {
-  "markets_tracked": 217682,
+  "markets_tracked": 221556,
   "pairs_married": 9,
   "arbitrages": 9
  },
  "stats": {
-  "commits": 29,
-  "gist_errors": 64,
+  "commits": 30,
+  "gist_errors": 66,
   "hot_errors": 0,
-  "kalshi.sweeps": 327,
-  "kalshi.ticks": 4220164,
-  "kalshi.updates": 2327648,
-  "kalshi.ws_ticks": 4220164,
-  "kalshi.ws_trades": 742706,
-  "live_evals_fired": 1307,
-  "novig.sweep_errors": 326,
-  "pmglobal.rest_updates": 2698,
-  "pmglobal.sweeps": 326,
-  "pmglobal.ticks": 41218,
-  "pmglobal.updates": 5814,
-  "pmglobal.ws_msgs": 1409898,
-  "pmglobal.ws_ticks": 8518,
-  "pmus.rest_updates": 10068,
-  "pmus.sweeps": 327,
-  "pmus.ticks": 2605533,
-  "pmus.updates": 10068,
+  "kalshi.sweeps": 337,
+  "kalshi.ticks": 4368876,
+  "kalshi.updates": 2408872,
+  "kalshi.ws_ticks": 4368876,
+  "kalshi.ws_trades": 767375,
+  "live_evals_fired": 1390,
+  "novig.sweep_errors": 337,
+  "pmglobal.rest_updates": 2772,
+  "pmglobal.sweeps": 337,
+  "pmglobal.ticks": 42631,
+  "pmglobal.updates": 6001,
+  "pmglobal.ws_msgs": 1501206,
+  "pmglobal.ws_ticks": 8831,
+  "pmus.rest_updates": 10133,
+  "pmus.sweeps": 337,
+  "pmus.ticks": 2684973,
+  "pmus.updates": 10133,
   "pmus_x.last_count": 7944,
-  "pmus_x.sweeps": 328,
+  "pmus_x.sweeps": 338,
   "prophetx.ticks": 120,
   "prophetx.updates": 47,
-  "prophetx.ws_errors": 218,
+  "prophetx.ws_errors": 225,
   "px.evt_scanned": 4,
-  "pxboard.sweeps": 326,
-  "supa_errors": 1086
+  "pxboard.sweeps": 337,
+  "supa_errors": 1123
  },
  "arbitrages": [
   {
@@ -115,7 +115,7 @@
    },
    "total_cost_cents": 73,
    "edge_bps": 2700,
-   "detected_at": "2026-09-25T00:19:27.796662+00:00"
+   "detected_at": "2026-09-25T00:22:26.416065+00:00"
   },
   {
    "buy_yes": {
@@ -161,30 +161,7 @@
    },
    "total_cost_cents": 82,
    "edge_bps": 1800,
-   "detected_at": "2026-09-25T00:18:44.970966+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xcb169452dc1771cc194ad61634b529c6df933c76b99fd28782f1c77f71f94955"
-    ],
-    "title": "Milwaukee Brewers vs. Philadelphia Phillies",
-    "ask_cents": 50
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "68a3980fc3857f4d1c36f95b5be11249"
-    ],
-    "title": "Milwaukee Brewers at Philadelphia Phillies",
-    "no_cost_cents": 42
-   },
-   "total_cost_cents": 92,
-   "edge_bps": 800,
-   "detected_at": "2026-09-25T00:20:34.335097+00:00"
+   "detected_at": "2026-09-25T00:21:34.760817+00:00"
   },
   {
    "buy_yes": {
@@ -207,7 +184,30 @@
    },
    "total_cost_cents": 92,
    "edge_bps": 800,
-   "detected_at": "2026-09-25T00:20:34.406039+00:00"
+   "detected_at": "2026-09-25T00:22:41.534195+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xcb169452dc1771cc194ad61634b529c6df933c76b99fd28782f1c77f71f94955"
+    ],
+    "title": "Milwaukee Brewers vs. Philadelphia Phillies",
+    "ask_cents": 50
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "68a3980fc3857f4d1c36f95b5be11249"
+    ],
+    "title": "Milwaukee Brewers at Philadelphia Phillies",
+    "no_cost_cents": 42
+   },
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-25T00:22:41.481714+00:00"
   },
   {
    "buy_yes": {
@@ -230,7 +230,7 @@
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-25T00:19:27.842705+00:00"
+   "detected_at": "2026-09-25T00:22:26.488499+00:00"
   },
   {
    "buy_yes": {
@@ -253,7 +253,7 @@
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-25T00:20:43.297679+00:00"
+   "detected_at": "2026-09-25T00:22:45.123956+00:00"
   },
   {
    "buy_yes": {
@@ -276,7 +276,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-25T00:18:44.922417+00:00"
+   "detected_at": "2026-09-25T00:21:34.713378+00:00"
   }
  ]
 }
