@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-25T23:36:46.186281+00:00",
+ "scanned_at": "2026-09-25T23:38:47.620268+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 12.2,
+ "loop_uptime_min": 14.2,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 59575,
+   "markets": 65980,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7925,
-   "last_tick_age_s": 2.3
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 105,
-   "last_tick_age_s": 0.1
+   "markets": 106,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
@@ -32,44 +32,44 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 6,
-   "last_tick_age_s": 426.1
+   "last_tick_age_s": 547.5
   }
  ],
  "totals": {
-  "markets_tracked": 67611,
+  "markets_tracked": 74017,
   "pairs_married": 6,
-  "arbitrages": 4
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 5,
-  "gist_errors": 13,
+  "commits": 6,
+  "gist_errors": 15,
   "hot_errors": 0,
-  "kalshi.sweeps": 67,
-  "kalshi.ticks": 1241715,
-  "kalshi.updates": 657980,
-  "kalshi.ws_ticks": 1241715,
-  "kalshi.ws_trades": 135660,
-  "live_evals_fired": 216,
-  "novig.sweep_errors": 67,
-  "pairs_blocked_antonym_date": 504,
-  "pmglobal.rest_updates": 546,
-  "pmglobal.sweeps": 67,
-  "pmglobal.ticks": 8600,
-  "pmglobal.updates": 1156,
-  "pmglobal.ws_msgs": 242223,
-  "pmglobal.ws_ticks": 1800,
-  "pmus.rest_updates": 8215,
-  "pmus.sweeps": 67,
-  "pmus.ticks": 538718,
-  "pmus.updates": 8215,
+  "kalshi.sweeps": 78,
+  "kalshi.ticks": 1448304,
+  "kalshi.updates": 764336,
+  "kalshi.ws_ticks": 1448304,
+  "kalshi.ws_trades": 152678,
+  "live_evals_fired": 230,
+  "novig.sweep_errors": 77,
+  "pairs_blocked_antonym_date": 582,
+  "pmglobal.rest_updates": 599,
+  "pmglobal.sweeps": 77,
+  "pmglobal.ticks": 9871,
+  "pmglobal.updates": 1297,
+  "pmglobal.ws_msgs": 287353,
+  "pmglobal.ws_ticks": 2071,
+  "pmus.rest_updates": 8283,
+  "pmus.sweeps": 78,
+  "pmus.ticks": 625882,
+  "pmus.updates": 8283,
   "pmus_x.last_count": 7924,
-  "pmus_x.sweeps": 68,
+  "pmus_x.sweeps": 79,
   "prophetx.ticks": 147,
   "prophetx.updates": 78,
-  "prophetx.ws_errors": 44,
+  "prophetx.ws_errors": 51,
   "px.evt_scanned": 5,
-  "pxboard.sweeps": 66,
-  "supa_errors": 226
+  "pxboard.sweeps": 77,
+  "supa_errors": 260
  },
  "arbitrages": [
   {
@@ -139,7 +139,7 @@
    },
    "total_cost_cents": 68,
    "edge_bps": 3200,
-   "detected_at": "2026-09-25T23:36:11.950355+00:00"
+   "detected_at": "2026-09-25T23:38:39.886301+00:00"
   },
   {
    "buy_yes": {
@@ -149,7 +149,7 @@
      "0xbfa58160762354b2f56734ee8f0aa22d413b52f6f8fdb599457c13e375d88eb4"
     ],
     "title": "Chicago Cubs vs. Boston Red Sox",
-    "ask_cents": 44
+    "ask_cents": 47
    },
    "buy_no": {
     "venue": "prophetx",
@@ -160,9 +160,32 @@
     "title": "Chicago Cubs at Boston Red Sox",
     "no_cost_cents": 45
    },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-25T23:35:53.544672+00:00"
+   "total_cost_cents": 92,
+   "edge_bps": 800,
+   "detected_at": "2026-09-25T23:37:20.039205+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "2656f25998c5fa55e10a4d1b051cb02c"
+    ],
+    "title": "Chicago Cubs at Boston Red Sox",
+    "ask_cents": 45
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xbfa58160762354b2f56734ee8f0aa22d413b52f6f8fdb599457c13e375d88eb4"
+    ],
+    "title": "Chicago Cubs vs. Boston Red Sox",
+    "no_cost_cents": 53
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-25T23:37:20.111927+00:00"
   }
  ]
 }
