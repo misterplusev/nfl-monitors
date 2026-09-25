@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-25T00:14:38.663684+00:00",
+ "scanned_at": "2026-09-25T00:16:39.745642+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 54.9,
+ "loop_uptime_min": 56.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 194139,
+   "markets": 199370,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7944,
-   "last_tick_age_s": 6.8
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 109,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
@@ -32,43 +32,43 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 4,
-   "last_tick_age_s": 2955.7
+   "last_tick_age_s": 3076.8
   }
  ],
  "totals": {
-  "markets_tracked": 202196,
+  "markets_tracked": 207427,
   "pairs_married": 9,
   "arbitrages": 9
  },
  "stats": {
-  "commits": 26,
-  "gist_errors": 58,
+  "commits": 27,
+  "gist_errors": 60,
   "hot_errors": 0,
-  "kalshi.sweeps": 295,
-  "kalshi.ticks": 3758396,
-  "kalshi.updates": 2075598,
-  "kalshi.ws_ticks": 3758396,
-  "kalshi.ws_trades": 658706,
-  "live_evals_fired": 1205,
-  "novig.sweep_errors": 294,
-  "pmglobal.rest_updates": 2416,
-  "pmglobal.sweeps": 294,
-  "pmglobal.ticks": 37017,
-  "pmglobal.updates": 5140,
-  "pmglobal.ws_msgs": 1127827,
-  "pmglobal.ws_ticks": 7517,
-  "pmus.rest_updates": 9854,
-  "pmus.sweeps": 294,
-  "pmus.ticks": 2343405,
-  "pmus.updates": 9854,
+  "kalshi.sweeps": 305,
+  "kalshi.ticks": 3912551,
+  "kalshi.updates": 2159180,
+  "kalshi.ws_ticks": 3912551,
+  "kalshi.ws_trades": 687391,
+  "live_evals_fired": 1239,
+  "novig.sweep_errors": 304,
+  "pmglobal.rest_updates": 2491,
+  "pmglobal.sweeps": 304,
+  "pmglobal.ticks": 38324,
+  "pmglobal.updates": 5313,
+  "pmglobal.ws_msgs": 1191146,
+  "pmglobal.ws_ticks": 7824,
+  "pmus.rest_updates": 9935,
+  "pmus.sweeps": 305,
+  "pmus.ticks": 2430778,
+  "pmus.updates": 9935,
   "pmus_x.last_count": 7943,
-  "pmus_x.sweeps": 295,
+  "pmus_x.sweeps": 306,
   "prophetx.ticks": 120,
   "prophetx.updates": 47,
-  "prophetx.ws_errors": 196,
+  "prophetx.ws_errors": 203,
   "px.evt_scanned": 4,
-  "pxboard.sweeps": 294,
-  "supa_errors": 980
+  "pxboard.sweeps": 304,
+  "supa_errors": 1015
  },
  "arbitrages": [
   {
@@ -92,30 +92,7 @@
    },
    "total_cost_cents": 50,
    "edge_bps": 5000,
-   "detected_at": "2026-09-25T00:13:45.626358+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "0534bb842267be6f656279155c39cef5"
-    ],
-    "title": "Cleveland Guardians at Boston Red Sox",
-    "ask_cents": 39
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xaaba03e832b1e2c7a65fd0e292898b69bc70b5241f6c95850d96b9d758661733"
-    ],
-    "title": "Cleveland Guardians vs. Boston Red Sox",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 62,
-   "edge_bps": 3800,
-   "detected_at": "2026-09-25T00:14:36.499918+00:00"
+   "detected_at": "2026-09-25T00:16:31.801473+00:00"
   },
   {
    "buy_yes": {
@@ -138,7 +115,30 @@
    },
    "total_cost_cents": 67,
    "edge_bps": 3300,
-   "detected_at": "2026-09-25T00:13:45.564474+00:00"
+   "detected_at": "2026-09-25T00:16:31.737874+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "0534bb842267be6f656279155c39cef5"
+    ],
+    "title": "Cleveland Guardians at Boston Red Sox",
+    "ask_cents": 39
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xaaba03e832b1e2c7a65fd0e292898b69bc70b5241f6c95850d96b9d758661733"
+    ],
+    "title": "Cleveland Guardians vs. Boston Red Sox",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 67,
+   "edge_bps": 3300,
+   "detected_at": "2026-09-25T00:16:31.864756+00:00"
   },
   {
    "buy_yes": {
@@ -165,29 +165,6 @@
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "741599b4034084baf2be96ccb70512b3"
-    ],
-    "title": "Cleveland Guardians at Boston Red Sox",
-    "ask_cents": 62
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xaaba03e832b1e2c7a65fd0e292898b69bc70b5241f6c95850d96b9d758661733"
-    ],
-    "title": "Cleveland Guardians vs. Boston Red Sox",
-    "no_cost_cents": 23
-   },
-   "total_cost_cents": 85,
-   "edge_bps": 1500,
-   "detected_at": "2026-09-25T00:14:36.560118+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
@@ -207,7 +184,30 @@
    },
    "total_cost_cents": 86,
    "edge_bps": 1400,
-   "detected_at": "2026-09-25T00:14:21.851334+00:00"
+   "detected_at": "2026-09-25T00:16:31.610564+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "741599b4034084baf2be96ccb70512b3"
+    ],
+    "title": "Cleveland Guardians at Boston Red Sox",
+    "ask_cents": 62
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xaaba03e832b1e2c7a65fd0e292898b69bc70b5241f6c95850d96b9d758661733"
+    ],
+    "title": "Cleveland Guardians vs. Boston Red Sox",
+    "no_cost_cents": 28
+   },
+   "total_cost_cents": 90,
+   "edge_bps": 1000,
+   "detected_at": "2026-09-25T00:16:31.921718+00:00"
   },
   {
    "buy_yes": {
@@ -253,7 +253,7 @@
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-25T00:14:38.663622+00:00"
+   "detected_at": "2026-09-25T00:16:39.745577+00:00"
   },
   {
    "buy_yes": {
@@ -276,7 +276,7 @@
    },
    "total_cost_cents": 98,
    "edge_bps": 200,
-   "detected_at": "2026-09-25T00:14:21.912224+00:00"
+   "detected_at": "2026-09-25T00:16:31.662645+00:00"
   }
  ]
 }
