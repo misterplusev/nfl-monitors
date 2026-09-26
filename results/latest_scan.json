@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-26T00:17:19.719474+00:00",
+ "scanned_at": "2026-09-26T00:19:22.464257+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 52.8,
+ "loop_uptime_min": 54.8,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 155682,
+   "markets": 159015,
    "last_tick_age_s": 0.0
   },
   {
@@ -20,7 +20,7 @@
    "venue": "pmglobal",
    "state": "OK",
    "markets": 119,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
@@ -32,163 +32,48 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 6,
-   "last_tick_age_s": 2859.6
+   "last_tick_age_s": 2982.4
   }
  ],
  "totals": {
-  "markets_tracked": 163732,
-  "pairs_married": 8,
-  "arbitrages": 8
+  "markets_tracked": 167065,
+  "pairs_married": 4,
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 25,
-  "gist_errors": 56,
+  "commits": 26,
+  "gist_errors": 58,
   "hot_errors": 0,
-  "kalshi.sweeps": 289,
-  "kalshi.ticks": 5104123,
-  "kalshi.updates": 2719709,
-  "kalshi.ws_ticks": 5104123,
-  "kalshi.ws_trades": 608049,
-  "live_evals_fired": 941,
-  "novig.sweep_errors": 288,
-  "pairs_blocked_antonym_date": 2166,
-  "pmglobal.rest_updates": 1888,
-  "pmglobal.sweeps": 288,
-  "pmglobal.ticks": 36236,
-  "pmglobal.updates": 4453,
-  "pmglobal.ws_msgs": 1168653,
-  "pmglobal.ws_ticks": 7336,
-  "pmus.rest_updates": 9205,
-  "pmus.sweeps": 289,
-  "pmus.ticks": 2297356,
-  "pmus.updates": 9205,
+  "kalshi.sweeps": 300,
+  "kalshi.ticks": 5266325,
+  "kalshi.updates": 2811839,
+  "kalshi.ws_ticks": 5266325,
+  "kalshi.ws_trades": 628055,
+  "live_evals_fired": 974,
+  "novig.sweep_errors": 299,
+  "pairs_blocked_antonym_date": 2250,
+  "pmglobal.rest_updates": 1945,
+  "pmglobal.sweeps": 299,
+  "pmglobal.ticks": 37512,
+  "pmglobal.updates": 4564,
+  "pmglobal.ws_msgs": 1196113,
+  "pmglobal.ws_ticks": 7512,
+  "pmus.rest_updates": 9237,
+  "pmus.sweeps": 300,
+  "pmus.ticks": 2384432,
+  "pmus.updates": 9237,
   "pmus_x.last_count": 7916,
-  "pmus_x.sweeps": 290,
+  "pmus_x.sweeps": 301,
   "prophetx.ticks": 147,
   "prophetx.updates": 78,
-  "prophetx.ws_errors": 191,
+  "prophetx.ws_errors": 198,
   "px.evt_scanned": 5,
-  "pxboard.sweeps": 288,
-  "supa_errors": 936
+  "pxboard.sweeps": 299,
+  "supa_errors": 971
  },
  "arbitrages": [
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xbfa58160762354b2f56734ee8f0aa22d413b52f6f8fdb599457c13e375d88eb4"
-    ],
-    "title": "Chicago Cubs vs. Boston Red Sox",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a381504053892c9952b25c936b2b2fcf"
-    ],
-    "title": "Chicago Cubs at Boston Red Sox",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-26T00:16:02.841512+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe11904633241d2b4a89b1c8382997c728a524335aa15067cec3b6b23d4720468"
-    ],
-    "title": "Chicago Cubs vs. Boston Red Sox: O/U 6.5",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "a381504053892c9952b25c936b2b2fcf"
-    ],
-    "title": "Chicago Cubs at Boston Red Sox",
-    "no_cost_cents": 45
-   },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-26T00:16:21.982609+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xbfa58160762354b2f56734ee8f0aa22d413b52f6f8fdb599457c13e375d88eb4"
-    ],
-    "title": "Chicago Cubs vs. Boston Red Sox",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2656f25998c5fa55e10a4d1b051cb02c"
-    ],
-    "title": "Chicago Cubs at Boston Red Sox",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-26T00:16:02.894814+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xe11904633241d2b4a89b1c8382997c728a524335aa15067cec3b6b23d4720468"
-    ],
-    "title": "Chicago Cubs vs. Boston Red Sox: O/U 6.5",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "2656f25998c5fa55e10a4d1b051cb02c"
-    ],
-    "title": "Chicago Cubs at Boston Red Sox",
-    "no_cost_cents": 56
-   },
-   "total_cost_cents": 59,
-   "edge_bps": 4100,
-   "detected_at": "2026-09-26T00:16:22.040643+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x5f87443887e48664e53f77a0cf4639cfc4999a6401189f75f78fb40ae536655b"
-    ],
-    "title": "Tampa Bay Rays vs. Philadelphia Phillies: O/U 6.5",
-    "ask_cents": 38
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "990fa4a25c831189bf3e8d6916edaee4"
-    ],
-    "title": "Tampa Bay Rays at Philadelphia Phillies",
-    "no_cost_cents": 34
-   },
-   "total_cost_cents": 72,
-   "edge_bps": 2800,
-   "detected_at": "2026-09-26T00:12:29.943871+00:00"
-  },
-  {
-   "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
@@ -204,21 +89,21 @@
      "0x2ceeb57608aac6f5ec5cbb76137e9bb00789fea3b2049efde9c723b64c5194fb"
     ],
     "title": "Tampa Bay Rays vs. Philadelphia Phillies",
-    "no_cost_cents": 44
+    "no_cost_cents": 29
    },
-   "total_cost_cents": 78,
-   "edge_bps": 2200,
-   "detected_at": "2026-09-26T00:17:10.027775+00:00"
+   "total_cost_cents": 63,
+   "edge_bps": 3700,
+   "detected_at": "2026-09-26T00:19:09.899249+00:00"
   },
   {
    "buy_yes": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x2ceeb57608aac6f5ec5cbb76137e9bb00789fea3b2049efde9c723b64c5194fb"
+     "0x5f87443887e48664e53f77a0cf4639cfc4999a6401189f75f78fb40ae536655b"
     ],
-    "title": "Tampa Bay Rays vs. Philadelphia Phillies",
-    "ask_cents": 56
+    "title": "Tampa Bay Rays vs. Philadelphia Phillies: O/U 6.5",
+    "ask_cents": 36
    },
    "buy_no": {
     "venue": "prophetx",
@@ -229,32 +114,55 @@
     "title": "Tampa Bay Rays at Philadelphia Phillies",
     "no_cost_cents": 34
    },
-   "total_cost_cents": 90,
-   "edge_bps": 1000,
-   "detected_at": "2026-09-26T00:17:09.962542+00:00"
+   "total_cost_cents": 70,
+   "edge_bps": 3000,
+   "detected_at": "2026-09-26T00:17:30.560133+00:00"
   },
   {
    "buy_yes": {
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "c14356ff8fdb4f5c31c498c96d21b1ee"
+     "990fa4a25c831189bf3e8d6916edaee4"
     ],
     "title": "Tampa Bay Rays at Philadelphia Phillies",
-    "ask_cents": 34
+    "ask_cents": 67
    },
    "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
-     "0x5f87443887e48664e53f77a0cf4639cfc4999a6401189f75f78fb40ae536655b"
+     "0x2ceeb57608aac6f5ec5cbb76137e9bb00789fea3b2049efde9c723b64c5194fb"
     ],
-    "title": "Tampa Bay Rays vs. Philadelphia Phillies: O/U 6.5",
-    "no_cost_cents": 62
+    "title": "Tampa Bay Rays vs. Philadelphia Phillies",
+    "no_cost_cents": 29
    },
    "total_cost_cents": 96,
    "edge_bps": 400,
-   "detected_at": "2026-09-26T00:12:30.010433+00:00"
+   "detected_at": "2026-09-26T00:19:09.840931+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c14356ff8fdb4f5c31c498c96d21b1ee"
+    ],
+    "title": "Tampa Bay Rays at Philadelphia Phillies",
+    "ask_cents": 34
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x5f87443887e48664e53f77a0cf4639cfc4999a6401189f75f78fb40ae536655b"
+    ],
+    "title": "Tampa Bay Rays vs. Philadelphia Phillies: O/U 6.5",
+    "no_cost_cents": 64
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-26T00:17:30.612301+00:00"
   }
  ]
 }
