@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-26T04:59:31.834661+00:00",
+ "scanned_at": "2026-09-26T05:20:12.557426+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 525308,
-   "last_tick_age_s": 0.1
+   "markets": 14612,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7930,
-   "last_tick_age_s": 2.9
+   "markets": 7929,
+   "last_tick_age_s": 4.5
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 166,
-   "last_tick_age_s": 0.7
+   "markets": 100,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
@@ -30,50 +30,93 @@
   },
   {
    "venue": "prophetx",
-   "state": "STALE",
-   "markets": 6,
-   "last_tick_age_s": 19791.9
+   "state": "OK",
+   "markets": 2,
+   "last_tick_age_s": 0.3
   }
  ],
  "totals": {
-  "markets_tracked": 533410,
-  "pairs_married": 2,
-  "arbitrages": 2
+  "markets_tracked": 22643,
+  "pairs_married": 6,
+  "arbitrages": 5
  },
  "stats": {
-  "commits": 164,
-  "gist_errors": 347,
+  "gist_errors": 2,
   "hot_errors": 0,
-  "kalshi.rest_updates": 5,
-  "kalshi.sweeps": 1835,
-  "kalshi.ticks": 25691010,
-  "kalshi.updates": 13908200,
-  "kalshi.ws_ticks": 25691004,
-  "kalshi.ws_trades": 3622532,
-  "live_evals_fired": 1436,
-  "novig.sweep_errors": 1835,
-  "pairs_blocked_antonym_date": 14046,
-  "pmglobal.rest_updates": 7691,
-  "pmglobal.sweeps": 1835,
-  "pmglobal.ticks": 215181,
-  "pmglobal.updates": 16401,
-  "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 4041360,
-  "pmglobal.ws_ticks": 31581,
-  "pmus.rest_updates": 17019,
-  "pmus.sweeps": 1835,
-  "pmus.ticks": 14549870,
-  "pmus.updates": 17019,
+  "kalshi.sweeps": 11,
+  "kalshi.ticks": 111521,
+  "kalshi.updates": 62935,
+  "kalshi.ws_ticks": 111521,
+  "kalshi.ws_trades": 20447,
+  "live_evals_fired": 65,
+  "novig.sweep_errors": 11,
+  "pairs_blocked_antonym_date": 168,
+  "pmglobal.rest_updates": 227,
+  "pmglobal.sweeps": 11,
+  "pmglobal.ticks": 1484,
+  "pmglobal.updates": 372,
+  "pmglobal.ws_msgs": 42115,
+  "pmglobal.ws_ticks": 284,
+  "pmus.rest_updates": 7967,
+  "pmus.sweeps": 11,
+  "pmus.ticks": 95148,
+  "pmus.updates": 7967,
   "pmus_x.last_count": 7929,
-  "pmus_x.sweeps": 1836,
-  "prophetx.ticks": 147,
-  "prophetx.updates": 78,
-  "prophetx.ws_errors": 1215,
-  "px.evt_scanned": 5,
-  "pxboard.sweeps": 1834,
-  "supa_errors": 5679
+  "pmus_x.sweeps": 12,
+  "prophetx.ticks": 24,
+  "prophetx.updates": 11,
+  "prophetx.ws_errors": 8,
+  "px.evt_scanned": 2,
+  "pxboard.sweeps": 11,
+  "supa_errors": 42
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x39a2069bccfc68ef79a1fb063844083c46277e99d118cffe48401c43db45e113"
+    ],
+    "title": "Clemson vs. California: O/U 50.5",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "b4cdd153afe570865ce0515ba191bbd0"
+    ],
+    "title": "Clemson at California",
+    "no_cost_cents": 13
+   },
+   "total_cost_cents": 25,
+   "edge_bps": 7500,
+   "detected_at": "2026-09-26T05:20:12.240269+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "548f15a0f51faeacc652d364608cc2ac"
+    ],
+    "title": "Clemson at California",
+    "ask_cents": 15
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x2d78fac17419d35a9d61c82afc1f9714b1e66008deda354e39a9912aeb9e727c"
+    ],
+    "title": "Clemson vs. California",
+    "no_cost_cents": 13
+   },
+   "total_cost_cents": 28,
+   "edge_bps": 7200,
+   "detected_at": "2026-09-26T05:20:12.491914+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -95,7 +138,30 @@
    },
    "total_cost_cents": 81,
    "edge_bps": 1900,
-   "detected_at": "2026-09-26T04:59:31.834596+00:00"
+   "detected_at": "2026-09-26T05:18:17.313057+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x39a2069bccfc68ef79a1fb063844083c46277e99d118cffe48401c43db45e113"
+    ],
+    "title": "Clemson vs. California: O/U 50.5",
+    "ask_cents": 12
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "548f15a0f51faeacc652d364608cc2ac"
+    ],
+    "title": "Clemson at California",
+    "no_cost_cents": 86
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-26T05:20:03.597305+00:00"
   },
   {
    "buy_yes": {
@@ -118,7 +184,7 @@
    },
    "total_cost_cents": 99,
    "edge_bps": 100,
-   "detected_at": "2026-09-26T04:59:31.834617+00:00"
+   "detected_at": "2026-09-26T05:18:17.249200+00:00"
   }
  ]
 }
