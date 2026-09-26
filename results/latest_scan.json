@@ -1,20 +1,20 @@
 {
- "scanned_at": "2026-09-26T05:30:24.302637+00:00",
+ "scanned_at": "2026-09-26T05:32:34.216799+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 12.3,
+ "loop_uptime_min": 14.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 38903,
+   "markets": 42698,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7929,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
@@ -32,44 +32,44 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 2,
-   "last_tick_age_s": 405.0
+   "last_tick_age_s": 534.9
   }
  ],
  "totals": {
-  "markets_tracked": 46936,
+  "markets_tracked": 50731,
   "pairs_married": 6,
   "arbitrages": 6
  },
  "stats": {
-  "commits": 5,
-  "gist_errors": 13,
+  "commits": 6,
+  "gist_errors": 15,
   "hot_errors": 0,
-  "kalshi.sweeps": 67,
-  "kalshi.ticks": 666487,
-  "kalshi.updates": 342554,
-  "kalshi.ws_ticks": 666487,
-  "kalshi.ws_trades": 108051,
-  "live_evals_fired": 282,
-  "novig.sweep_errors": 66,
-  "pairs_blocked_antonym_date": 1008,
-  "pmglobal.rest_updates": 415,
-  "pmglobal.sweeps": 66,
-  "pmglobal.ticks": 7926,
-  "pmglobal.updates": 784,
-  "pmglobal.ws_msgs": 197325,
-  "pmglobal.ws_ticks": 1226,
-  "pmus.rest_updates": 8250,
-  "pmus.sweeps": 67,
-  "pmus.ticks": 539162,
-  "pmus.updates": 8250,
+  "kalshi.sweeps": 79,
+  "kalshi.ticks": 785788,
+  "kalshi.updates": 399948,
+  "kalshi.ws_ticks": 785788,
+  "kalshi.ws_trades": 121981,
+  "live_evals_fired": 321,
+  "novig.sweep_errors": 78,
+  "pairs_blocked_antonym_date": 1188,
+  "pmglobal.rest_updates": 461,
+  "pmglobal.sweeps": 78,
+  "pmglobal.ticks": 9308,
+  "pmglobal.updates": 887,
+  "pmglobal.ws_msgs": 232705,
+  "pmglobal.ws_ticks": 1408,
+  "pmus.rest_updates": 8299,
+  "pmus.sweeps": 79,
+  "pmus.ticks": 634298,
+  "pmus.updates": 8299,
   "pmus_x.last_count": 7928,
-  "pmus_x.sweeps": 68,
+  "pmus_x.sweeps": 80,
   "prophetx.ticks": 60,
   "prophetx.updates": 35,
-  "prophetx.ws_errors": 44,
+  "prophetx.ws_errors": 52,
   "px.evt_scanned": 2,
-  "pxboard.sweeps": 66,
-  "supa_errors": 222
+  "pxboard.sweeps": 78,
+  "supa_errors": 260
  },
  "arbitrages": [
   {
@@ -112,11 +112,11 @@
      "0x2d78fac17419d35a9d61c82afc1f9714b1e66008deda354e39a9912aeb9e727c"
     ],
     "title": "Clemson vs. California",
-    "no_cost_cents": 26
+    "no_cost_cents": 15
    },
-   "total_cost_cents": 48,
-   "edge_bps": 5200,
-   "detected_at": "2026-09-26T05:30:12.169073+00:00"
+   "total_cost_cents": 37,
+   "edge_bps": 6300,
+   "detected_at": "2026-09-26T05:32:34.124743+00:00"
   },
   {
    "buy_yes": {
@@ -166,26 +166,26 @@
   },
   {
    "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2d78fac17419d35a9d61c82afc1f9714b1e66008deda354e39a9912aeb9e727c"
-    ],
-    "title": "Clemson vs. California",
-    "ask_cents": 75
-   },
-   "buy_no": {
     "venue": "prophetx",
     "key": [
      "prophetx",
      "b4cdd153afe570865ce0515ba191bbd0"
     ],
     "title": "Clemson at California",
-    "no_cost_cents": 18
+    "ask_cents": 83
    },
-   "total_cost_cents": 93,
-   "edge_bps": 700,
-   "detected_at": "2026-09-26T05:30:12.225754+00:00"
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x2d78fac17419d35a9d61c82afc1f9714b1e66008deda354e39a9912aeb9e727c"
+    ],
+    "title": "Clemson vs. California",
+    "no_cost_cents": 15
+   },
+   "total_cost_cents": 98,
+   "edge_bps": 200,
+   "detected_at": "2026-09-26T05:32:34.178581+00:00"
   },
   {
    "buy_yes": {
