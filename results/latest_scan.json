@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-26T04:56:24.167954+00:00",
+ "scanned_at": "2026-09-26T04:58:26.350847+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 331.9,
+ "loop_uptime_min": 333.9,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 522989,
+   "markets": 524524,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7930,
-   "last_tick_age_s": 4.7
+   "last_tick_age_s": 5.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 164,
-   "last_tick_age_s": 0.3
+   "markets": 166,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
@@ -32,46 +32,93 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 6,
-   "last_tick_age_s": 19604.3
+   "last_tick_age_s": 19726.4
   }
  ],
  "totals": {
-  "markets_tracked": 531089,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 532626,
+  "pairs_married": 2,
+  "arbitrages": 2
  },
  "stats": {
-  "commits": 162,
-  "gist_errors": 343,
+  "commits": 163,
+  "gist_errors": 346,
   "hot_errors": 0,
   "kalshi.rest_updates": 5,
-  "kalshi.sweeps": 1818,
-  "kalshi.ticks": 25516343,
-  "kalshi.updates": 13822265,
-  "kalshi.ws_ticks": 25516337,
-  "kalshi.ws_trades": 3585076,
+  "kalshi.sweeps": 1829,
+  "kalshi.ticks": 25631012,
+  "kalshi.updates": 13878955,
+  "kalshi.ws_ticks": 25631006,
+  "kalshi.ws_trades": 3605598,
   "live_evals_fired": 1436,
-  "novig.sweep_errors": 1818,
-  "pairs_blocked_antonym_date": 13794,
-  "pmglobal.rest_updates": 7654,
-  "pmglobal.sweeps": 1818,
-  "pmglobal.ticks": 213252,
-  "pmglobal.updates": 16327,
+  "novig.sweep_errors": 1829,
+  "pairs_blocked_antonym_date": 13962,
+  "pmglobal.rest_updates": 7682,
+  "pmglobal.sweeps": 1829,
+  "pmglobal.ticks": 214502,
+  "pmglobal.updates": 16378,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 4028974,
-  "pmglobal.ws_ticks": 31352,
-  "pmus.rest_updates": 16917,
-  "pmus.sweeps": 1818,
-  "pmus.ticks": 14415077,
-  "pmus.updates": 16917,
+  "pmglobal.ws_msgs": 4037371,
+  "pmglobal.ws_ticks": 31502,
+  "pmus.rest_updates": 16985,
+  "pmus.sweeps": 1829,
+  "pmus.ticks": 14502296,
+  "pmus.updates": 16985,
   "pmus_x.last_count": 7929,
-  "pmus_x.sweeps": 1819,
+  "pmus_x.sweeps": 1830,
   "prophetx.ticks": 147,
   "prophetx.updates": 78,
-  "prophetx.ws_errors": 1204,
+  "prophetx.ws_errors": 1211,
   "px.evt_scanned": 5,
-  "pxboard.sweeps": 1818,
-  "supa_errors": 5629
+  "pxboard.sweeps": 1829,
+  "supa_errors": 5662
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x51f624dbbf14f9edb575fef1be6f7a303751de70783fa144fce27b957452c803"
+    ],
+    "title": "Zelenskyy out as Ukraine president by end of 2026?",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "228395"
+    ],
+    "title": "Zelenskyy Officially Out as Ukraine President?",
+    "no_cost_cents": 71
+   },
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-26T04:58:26.350769+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "228396"
+    ],
+    "title": "Zelenskyy Officially Out as Ukraine President?",
+    "ask_cents": 6
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x51f624dbbf14f9edb575fef1be6f7a303751de70783fa144fce27b957452c803"
+    ],
+    "title": "Zelenskyy out as Ukraine president by end of 2026?",
+    "no_cost_cents": 92
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-26T04:58:26.350791+00:00"
+  }
+ ]
 }
