@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-26T00:35:29.305893+00:00",
+ "scanned_at": "2026-09-26T00:37:32.285679+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 70.9,
+ "loop_uptime_min": 73.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 183228,
+   "markets": 186177,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7925,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.3
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 123,
-   "last_tick_age_s": 0.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
@@ -32,46 +32,69 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 6,
-   "last_tick_age_s": 3949.2
+   "last_tick_age_s": 4072.2
   }
  ],
  "totals": {
-  "markets_tracked": 191282,
+  "markets_tracked": 194231,
   "pairs_married": 4,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 34,
-  "gist_errors": 75,
+  "commits": 35,
+  "gist_errors": 77,
   "hot_errors": 0,
-  "kalshi.sweeps": 388,
-  "kalshi.ticks": 6683092,
-  "kalshi.updates": 3608340,
-  "kalshi.ws_ticks": 6683092,
-  "kalshi.ws_trades": 827034,
-  "live_evals_fired": 1134,
-  "novig.sweep_errors": 387,
-  "pairs_blocked_antonym_date": 2910,
-  "pmglobal.rest_updates": 2411,
-  "pmglobal.sweeps": 387,
-  "pmglobal.ticks": 47987,
-  "pmglobal.updates": 5574,
-  "pmglobal.ws_msgs": 1464621,
-  "pmglobal.ws_ticks": 9187,
-  "pmus.rest_updates": 9646,
-  "pmus.sweeps": 388,
-  "pmus.ticks": 3081040,
-  "pmus.updates": 9646,
+  "kalshi.sweeps": 399,
+  "kalshi.ticks": 6854639,
+  "kalshi.updates": 3705789,
+  "kalshi.ws_ticks": 6854639,
+  "kalshi.ws_trades": 848389,
+  "live_evals_fired": 1168,
+  "novig.sweep_errors": 398,
+  "pairs_blocked_antonym_date": 2994,
+  "pmglobal.rest_updates": 2473,
+  "pmglobal.sweeps": 398,
+  "pmglobal.ticks": 49287,
+  "pmglobal.updates": 5705,
+  "pmglobal.ws_msgs": 1495623,
+  "pmglobal.ws_ticks": 9387,
+  "pmus.rest_updates": 9693,
+  "pmus.sweeps": 399,
+  "pmus.ticks": 3168116,
+  "pmus.updates": 9693,
   "pmus_x.last_count": 7916,
-  "pmus_x.sweeps": 389,
+  "pmus_x.sweeps": 400,
   "prophetx.ticks": 147,
   "prophetx.updates": 78,
-  "prophetx.ws_errors": 257,
+  "prophetx.ws_errors": 264,
   "px.evt_scanned": 5,
-  "pxboard.sweeps": 387,
-  "supa_errors": 1247
+  "pxboard.sweeps": 398,
+  "supa_errors": 1281
  },
  "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "c14356ff8fdb4f5c31c498c96d21b1ee"
+    ],
+    "title": "Tampa Bay Rays at Philadelphia Phillies",
+    "ask_cents": 34
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x2ceeb57608aac6f5ec5cbb76137e9bb00789fea3b2049efde9c723b64c5194fb"
+    ],
+    "title": "Tampa Bay Rays vs. Philadelphia Phillies",
+    "no_cost_cents": 14
+   },
+   "total_cost_cents": 48,
+   "edge_bps": 5200,
+   "detected_at": "2026-09-26T00:37:19.542153+00:00"
+  },
   {
    "buy_yes": {
     "venue": "pmglobal",
@@ -100,10 +123,10 @@
     "venue": "prophetx",
     "key": [
      "prophetx",
-     "c14356ff8fdb4f5c31c498c96d21b1ee"
+     "990fa4a25c831189bf3e8d6916edaee4"
     ],
     "title": "Tampa Bay Rays at Philadelphia Phillies",
-    "ask_cents": 34
+    "ask_cents": 67
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -112,11 +135,11 @@
      "0x2ceeb57608aac6f5ec5cbb76137e9bb00789fea3b2049efde9c723b64c5194fb"
     ],
     "title": "Tampa Bay Rays vs. Philadelphia Phillies",
-    "no_cost_cents": 22
+    "no_cost_cents": 14
    },
-   "total_cost_cents": 56,
-   "edge_bps": 4400,
-   "detected_at": "2026-09-26T00:35:05.693172+00:00"
+   "total_cost_cents": 81,
+   "edge_bps": 1900,
+   "detected_at": "2026-09-26T00:37:19.478907+00:00"
   },
   {
    "buy_yes": {
@@ -140,29 +163,6 @@
    "total_cost_cents": 82,
    "edge_bps": 1800,
    "detected_at": "2026-09-26T00:32:35.419317+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "990fa4a25c831189bf3e8d6916edaee4"
-    ],
-    "title": "Tampa Bay Rays at Philadelphia Phillies",
-    "ask_cents": 67
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x2ceeb57608aac6f5ec5cbb76137e9bb00789fea3b2049efde9c723b64c5194fb"
-    ],
-    "title": "Tampa Bay Rays vs. Philadelphia Phillies",
-    "no_cost_cents": 22
-   },
-   "total_cost_cents": 89,
-   "edge_bps": 1100,
-   "detected_at": "2026-09-26T00:35:05.630992+00:00"
   }
  ]
 }
