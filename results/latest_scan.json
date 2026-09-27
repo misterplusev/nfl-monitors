@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-27T05:51:40.591039+00:00",
+ "scanned_at": "2026-09-27T05:53:41.155583+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 16.4,
+ "loop_uptime_min": 18.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 47260,
+   "markets": 50384,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7910,
-   "last_tick_age_s": 6.7
+   "last_tick_age_s": 2.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 103,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "novig",
@@ -32,44 +32,44 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 5,
-   "last_tick_age_s": 641.6
+   "last_tick_age_s": 762.2
   }
  ],
  "totals": {
-  "markets_tracked": 55278,
+  "markets_tracked": 58402,
   "pairs_married": 4,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 7,
-  "gist_errors": 17,
+  "commits": 8,
+  "gist_errors": 20,
   "hot_errors": 0,
-  "kalshi.sweeps": 82,
-  "kalshi.ticks": 506515,
-  "kalshi.updates": 265515,
-  "kalshi.ws_ticks": 506515,
-  "kalshi.ws_trades": 123066,
-  "live_evals_fired": 453,
-  "novig.sweep_errors": 81,
-  "pairs_blocked_antonym_date": 714,
-  "pmglobal.rest_updates": 565,
-  "pmglobal.sweeps": 81,
-  "pmglobal.ticks": 9823,
-  "pmglobal.updates": 1115,
-  "pmglobal.ws_msgs": 229594,
-  "pmglobal.ws_ticks": 1623,
-  "pmus.rest_updates": 8316,
-  "pmus.sweeps": 81,
-  "pmus.ticks": 648620,
-  "pmus.updates": 8316,
+  "kalshi.sweeps": 91,
+  "kalshi.ticks": 563903,
+  "kalshi.updates": 294177,
+  "kalshi.ws_ticks": 563903,
+  "kalshi.ws_trades": 136959,
+  "live_evals_fired": 497,
+  "novig.sweep_errors": 91,
+  "pairs_blocked_antonym_date": 798,
+  "pmglobal.rest_updates": 612,
+  "pmglobal.sweeps": 91,
+  "pmglobal.ticks": 11011,
+  "pmglobal.updates": 1225,
+  "pmglobal.ws_msgs": 268072,
+  "pmglobal.ws_ticks": 1811,
+  "pmus.rest_updates": 8367,
+  "pmus.sweeps": 91,
+  "pmus.ticks": 727720,
+  "pmus.updates": 8367,
   "pmus_x.last_count": 7910,
-  "pmus_x.sweeps": 82,
+  "pmus_x.sweeps": 92,
   "prophetx.ticks": 129,
   "prophetx.updates": 85,
-  "prophetx.ws_errors": 56,
+  "prophetx.ws_errors": 63,
   "px.evt_scanned": 5,
-  "pxboard.sweeps": 81,
-  "supa_errors": 306
+  "pxboard.sweeps": 90,
+  "supa_errors": 343
  },
  "arbitrages": [
   {
@@ -80,7 +80,7 @@
      "0x513bdd6493cd63d45dc3d206684222ccd5bb7e5849ad18c46bcce9fae04afa4b"
     ],
     "title": "Georgia Tech vs. Stanford",
-    "ask_cents": 15
+    "ask_cents": 14
    },
    "buy_no": {
     "venue": "prophetx",
@@ -91,32 +91,9 @@
     "title": "Georgia Tech at Stanford",
     "no_cost_cents": 21
    },
-   "total_cost_cents": 36,
-   "edge_bps": 6400,
-   "detected_at": "2026-09-27T05:51:39.147124+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0xc27a629633653148fe93e55556346407e7130f1500b265409985588f3f5564f0"
-    ],
-    "title": "Air Force vs. Nevada",
-    "ask_cents": 48
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "9a670e39e34e756c18fcf1245e6b3154"
-    ],
-    "title": "Air Force at Nevada",
-    "no_cost_cents": 32
-   },
-   "total_cost_cents": 80,
-   "edge_bps": 2000,
-   "detected_at": "2026-09-27T05:51:35.382823+00:00"
+   "total_cost_cents": 35,
+   "edge_bps": 6500,
+   "detected_at": "2026-09-27T05:53:39.889321+00:00"
   },
   {
    "buy_yes": {
@@ -135,11 +112,34 @@
      "0xc27a629633653148fe93e55556346407e7130f1500b265409985588f3f5564f0"
     ],
     "title": "Air Force vs. Nevada",
-    "no_cost_cents": 52
+    "no_cost_cents": 41
    },
-   "total_cost_cents": 94,
-   "edge_bps": 600,
-   "detected_at": "2026-09-27T05:51:35.289340+00:00"
+   "total_cost_cents": 83,
+   "edge_bps": 1700,
+   "detected_at": "2026-09-27T05:53:39.889402+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc27a629633653148fe93e55556346407e7130f1500b265409985588f3f5564f0"
+    ],
+    "title": "Air Force vs. Nevada",
+    "ask_cents": 59
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9a670e39e34e756c18fcf1245e6b3154"
+    ],
+    "title": "Air Force at Nevada",
+    "no_cost_cents": 32
+   },
+   "total_cost_cents": 91,
+   "edge_bps": 900,
+   "detected_at": "2026-09-27T05:53:39.975104+00:00"
   },
   {
    "buy_yes": {
@@ -149,7 +149,7 @@
      "0x513bdd6493cd63d45dc3d206684222ccd5bb7e5849ad18c46bcce9fae04afa4b"
     ],
     "title": "Georgia Tech vs. Stanford",
-    "ask_cents": 15
+    "ask_cents": 14
    },
    "buy_no": {
     "venue": "prophetx",
@@ -160,9 +160,9 @@
     "title": "Georgia Tech at Stanford",
     "no_cost_cents": 80
    },
-   "total_cost_cents": 95,
-   "edge_bps": 500,
-   "detected_at": "2026-09-27T05:51:39.077264+00:00"
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-27T05:53:39.889292+00:00"
   }
  ]
 }
