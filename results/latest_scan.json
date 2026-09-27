@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-27T05:37:26.149028+00:00",
+ "scanned_at": "2026-09-27T05:39:32.405898+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 2.2,
+ "loop_uptime_min": 4.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 12123,
+   "markets": 18797,
    "last_tick_age_s": 0.0
   },
   {
@@ -32,43 +32,44 @@
    "venue": "prophetx",
    "state": "OK",
    "markets": 5,
-   "last_tick_age_s": 6.3
+   "last_tick_age_s": 12.6
   }
  ],
  "totals": {
-  "markets_tracked": 20138,
+  "markets_tracked": 26812,
   "pairs_married": 4,
-  "arbitrages": 2
+  "arbitrages": 4
  },
  "stats": {
-  "gist_errors": 3,
+  "commits": 1,
+  "gist_errors": 5,
   "hot_errors": 0,
-  "kalshi.sweeps": 10,
-  "kalshi.ticks": 63877,
-  "kalshi.updates": 37818,
-  "kalshi.ws_ticks": 63877,
-  "kalshi.ws_trades": 20873,
-  "live_evals_fired": 79,
-  "novig.sweep_errors": 9,
-  "pairs_blocked_antonym_date": 84,
-  "pmglobal.rest_updates": 218,
-  "pmglobal.sweeps": 9,
-  "pmglobal.ticks": 1276,
-  "pmglobal.updates": 346,
-  "pmglobal.ws_msgs": 20393,
-  "pmglobal.ws_ticks": 276,
-  "pmus.rest_updates": 7947,
-  "pmus.sweeps": 10,
-  "pmus.ticks": 87010,
-  "pmus.updates": 7947,
+  "kalshi.sweeps": 20,
+  "kalshi.ticks": 129073,
+  "kalshi.updates": 73185,
+  "kalshi.ws_ticks": 129073,
+  "kalshi.ws_trades": 37932,
+  "live_evals_fired": 136,
+  "novig.sweep_errors": 19,
+  "pairs_blocked_antonym_date": 175,
+  "pmglobal.rest_updates": 270,
+  "pmglobal.sweeps": 19,
+  "pmglobal.ticks": 2457,
+  "pmglobal.updates": 459,
+  "pmglobal.ws_msgs": 46607,
+  "pmglobal.ws_ticks": 457,
+  "pmus.rest_updates": 8026,
+  "pmus.sweeps": 20,
+  "pmus.ticks": 166110,
+  "pmus.updates": 8026,
   "pmus_x.last_count": 7910,
-  "pmus_x.sweeps": 11,
-  "prophetx.ticks": 47,
-  "prophetx.updates": 36,
-  "prophetx.ws_errors": 7,
+  "pmus_x.sweeps": 21,
+  "prophetx.ticks": 93,
+  "prophetx.updates": 60,
+  "prophetx.ws_errors": 13,
   "px.evt_scanned": 5,
-  "pxboard.sweeps": 9,
-  "supa_errors": 36
+  "pxboard.sweeps": 19,
+  "supa_errors": 76
  },
  "arbitrages": [
   {
@@ -88,11 +89,11 @@
      "8ab1ddeccba26d75661692098a5dbc26"
     ],
     "title": "Georgia Tech at Stanford",
-    "no_cost_cents": 8
+    "no_cost_cents": 23
    },
-   "total_cost_cents": 16,
-   "edge_bps": 8400,
-   "detected_at": "2026-09-27T05:37:19.530366+00:00"
+   "total_cost_cents": 31,
+   "edge_bps": 6900,
+   "detected_at": "2026-09-27T05:39:08.117063+00:00"
   },
   {
    "buy_yes": {
@@ -102,7 +103,7 @@
      "51f3ec007c43adff6120b09dfd2f6ecc"
     ],
     "title": "Air Force at Nevada",
-    "ask_cents": 34
+    "ask_cents": 41
    },
    "buy_no": {
     "venue": "pmglobal",
@@ -111,11 +112,57 @@
      "0xc27a629633653148fe93e55556346407e7130f1500b265409985588f3f5564f0"
     ],
     "title": "Air Force vs. Nevada",
-    "no_cost_cents": 34
+    "no_cost_cents": 45
    },
-   "total_cost_cents": 68,
-   "edge_bps": 3200,
-   "detected_at": "2026-09-27T05:37:21.267288+00:00"
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-27T05:39:04.584184+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x513bdd6493cd63d45dc3d206684222ccd5bb7e5849ad18c46bcce9fae04afa4b"
+    ],
+    "title": "Georgia Tech vs. Stanford",
+    "ask_cents": 8
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7468481cc8c1cb3681161c78c5a0d7bc"
+    ],
+    "title": "Georgia Tech at Stanford",
+    "no_cost_cents": 78
+   },
+   "total_cost_cents": 86,
+   "edge_bps": 1400,
+   "detected_at": "2026-09-27T05:38:57.703112+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0xc27a629633653148fe93e55556346407e7130f1500b265409985588f3f5564f0"
+    ],
+    "title": "Air Force vs. Nevada",
+    "ask_cents": 55
+   },
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "9a670e39e34e756c18fcf1245e6b3154"
+    ],
+    "title": "Air Force at Nevada",
+    "no_cost_cents": 39
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-27T05:39:04.669724+00:00"
   }
  ]
 }
