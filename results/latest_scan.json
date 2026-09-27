@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-09-27T05:57:41.685540+00:00",
+ "scanned_at": "2026-09-27T05:59:42.356989+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 22.5,
+ "loop_uptime_min": 24.5,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 56401,
+   "markets": 61192,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7910,
-   "last_tick_age_s": 4.7
+   "last_tick_age_s": 6.6
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 104,
-   "last_tick_age_s": 0.2
+   "last_tick_age_s": 0.8
   },
   {
    "venue": "novig",
@@ -32,44 +32,44 @@
    "venue": "prophetx",
    "state": "STALE",
    "markets": 5,
-   "last_tick_age_s": 1002.7
+   "last_tick_age_s": 1123.4
   }
  ],
  "totals": {
-  "markets_tracked": 64420,
+  "markets_tracked": 69211,
   "pairs_married": 4,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 10,
-  "gist_errors": 24,
+  "commits": 11,
+  "gist_errors": 26,
   "hot_errors": 0,
-  "kalshi.sweeps": 111,
-  "kalshi.ticks": 675162,
-  "kalshi.updates": 350735,
-  "kalshi.ws_ticks": 675162,
-  "kalshi.ws_trades": 169953,
-  "live_evals_fired": 598,
-  "novig.sweep_errors": 111,
-  "pairs_blocked_antonym_date": 973,
-  "pmglobal.rest_updates": 717,
-  "pmglobal.sweeps": 111,
-  "pmglobal.ticks": 13398,
-  "pmglobal.updates": 1456,
-  "pmglobal.ws_msgs": 347481,
-  "pmglobal.ws_ticks": 2198,
-  "pmus.rest_updates": 8481,
-  "pmus.sweeps": 111,
-  "pmus.ticks": 885920,
-  "pmus.updates": 8481,
+  "kalshi.sweeps": 122,
+  "kalshi.ticks": 734917,
+  "kalshi.updates": 381129,
+  "kalshi.ws_ticks": 734917,
+  "kalshi.ws_trades": 186296,
+  "live_evals_fired": 647,
+  "novig.sweep_errors": 121,
+  "pairs_blocked_antonym_date": 1064,
+  "pmglobal.rest_updates": 753,
+  "pmglobal.sweeps": 121,
+  "pmglobal.ticks": 14591,
+  "pmglobal.updates": 1539,
+  "pmglobal.ws_msgs": 386102,
+  "pmglobal.ws_ticks": 2391,
+  "pmus.rest_updates": 8536,
+  "pmus.sweeps": 121,
+  "pmus.ticks": 965020,
+  "pmus.updates": 8536,
   "pmus_x.last_count": 7910,
-  "pmus_x.sweeps": 112,
+  "pmus_x.sweeps": 122,
   "prophetx.ticks": 129,
   "prophetx.updates": 85,
-  "prophetx.ws_errors": 77,
+  "prophetx.ws_errors": 84,
   "px.evt_scanned": 5,
-  "pxboard.sweeps": 111,
-  "supa_errors": 418
+  "pxboard.sweeps": 121,
+  "supa_errors": 454
  },
  "arbitrages": [
   {
@@ -80,7 +80,7 @@
      "0x513bdd6493cd63d45dc3d206684222ccd5bb7e5849ad18c46bcce9fae04afa4b"
     ],
     "title": "Georgia Tech vs. Stanford",
-    "ask_cents": 25
+    "ask_cents": 14
    },
    "buy_no": {
     "venue": "prophetx",
@@ -91,9 +91,9 @@
     "title": "Georgia Tech at Stanford",
     "no_cost_cents": 21
    },
-   "total_cost_cents": 46,
-   "edge_bps": 5400,
-   "detected_at": "2026-09-27T05:57:39.139546+00:00"
+   "total_cost_cents": 35,
+   "edge_bps": 6500,
+   "detected_at": "2026-09-27T05:59:36.987652+00:00"
   },
   {
    "buy_yes": {
@@ -116,30 +116,30 @@
    },
    "total_cost_cents": 70,
    "edge_bps": 3000,
-   "detected_at": "2026-09-27T05:57:38.594060+00:00"
+   "detected_at": "2026-09-27T05:58:48.079807+00:00"
   },
   {
    "buy_yes": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7468481cc8c1cb3681161c78c5a0d7bc"
-    ],
-    "title": "Georgia Tech at Stanford",
-    "ask_cents": 21
-   },
-   "buy_no": {
     "venue": "pmglobal",
     "key": [
      "pmglobal",
      "0x513bdd6493cd63d45dc3d206684222ccd5bb7e5849ad18c46bcce9fae04afa4b"
     ],
     "title": "Georgia Tech vs. Stanford",
-    "no_cost_cents": 76
+    "ask_cents": 14
    },
-   "total_cost_cents": 97,
-   "edge_bps": 300,
-   "detected_at": "2026-09-27T05:57:39.076036+00:00"
+   "buy_no": {
+    "venue": "prophetx",
+    "key": [
+     "prophetx",
+     "7468481cc8c1cb3681161c78c5a0d7bc"
+    ],
+    "title": "Georgia Tech at Stanford",
+    "no_cost_cents": 80
+   },
+   "total_cost_cents": 94,
+   "edge_bps": 600,
+   "detected_at": "2026-09-27T05:59:36.921949+00:00"
   },
   {
    "buy_yes": {
@@ -162,7 +162,7 @@
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-09-27T05:57:38.499616+00:00"
+   "detected_at": "2026-09-27T05:58:48.013076+00:00"
   }
  ]
 }
