@@ -1,13 +1,13 @@
 {
- "scanned_at": "2026-09-27T05:41:32.988251+00:00",
+ "scanned_at": "2026-09-27T05:43:34.790938+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 6.3,
+ "loop_uptime_min": 8.3,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 24584,
+   "markets": 29274,
    "last_tick_age_s": 0.0
   },
   {
@@ -19,8 +19,8 @@
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 100,
-   "last_tick_age_s": 0.8
+   "markets": 101,
+   "last_tick_age_s": 0.2
   },
   {
    "venue": "novig",
@@ -30,46 +30,46 @@
   },
   {
    "venue": "prophetx",
-   "state": "OK",
+   "state": "STALE",
    "markets": 5,
-   "last_tick_age_s": 34.0
+   "last_tick_age_s": 155.8
   }
  ],
  "totals": {
-  "markets_tracked": 32599,
+  "markets_tracked": 37290,
   "pairs_married": 4,
-  "arbitrages": 4
+  "arbitrages": 3
  },
  "stats": {
-  "commits": 2,
-  "gist_errors": 7,
+  "commits": 3,
+  "gist_errors": 9,
   "hot_errors": 0,
-  "kalshi.sweeps": 31,
-  "kalshi.ticks": 196465,
-  "kalshi.updates": 108360,
-  "kalshi.ws_ticks": 196465,
-  "kalshi.ws_trades": 55194,
-  "live_evals_fired": 210,
-  "novig.sweep_errors": 30,
-  "pairs_blocked_antonym_date": 266,
-  "pmglobal.rest_updates": 328,
-  "pmglobal.sweeps": 30,
-  "pmglobal.ticks": 3804,
-  "pmglobal.updates": 586,
-  "pmglobal.ws_msgs": 79384,
-  "pmglobal.ws_ticks": 704,
-  "pmus.rest_updates": 8079,
-  "pmus.sweeps": 30,
-  "pmus.ticks": 245210,
-  "pmus.updates": 8079,
+  "kalshi.sweeps": 41,
+  "kalshi.ticks": 256220,
+  "kalshi.updates": 139130,
+  "kalshi.ws_ticks": 256220,
+  "kalshi.ws_trades": 69770,
+  "live_evals_fired": 261,
+  "novig.sweep_errors": 40,
+  "pairs_blocked_antonym_date": 357,
+  "pmglobal.rest_updates": 379,
+  "pmglobal.sweeps": 40,
+  "pmglobal.ticks": 4997,
+  "pmglobal.updates": 704,
+  "pmglobal.ws_msgs": 114027,
+  "pmglobal.ws_ticks": 897,
+  "pmus.rest_updates": 8125,
+  "pmus.sweeps": 40,
+  "pmus.ticks": 324310,
+  "pmus.updates": 8125,
   "pmus_x.last_count": 7910,
-  "pmus_x.sweeps": 31,
+  "pmus_x.sweeps": 41,
   "prophetx.ticks": 129,
   "prophetx.updates": 85,
-  "prophetx.ws_errors": 21,
+  "prophetx.ws_errors": 27,
   "px.evt_scanned": 5,
-  "pxboard.sweeps": 30,
-  "supa_errors": 118
+  "pxboard.sweeps": 40,
+  "supa_errors": 156
  },
  "arbitrages": [
   {
@@ -80,7 +80,7 @@
      "0x513bdd6493cd63d45dc3d206684222ccd5bb7e5849ad18c46bcce9fae04afa4b"
     ],
     "title": "Georgia Tech vs. Stanford",
-    "ask_cents": 8
+    "ask_cents": 20
    },
    "buy_no": {
     "venue": "prophetx",
@@ -91,9 +91,9 @@
     "title": "Georgia Tech at Stanford",
     "no_cost_cents": 21
    },
-   "total_cost_cents": 29,
-   "edge_bps": 7100,
-   "detected_at": "2026-09-27T05:41:27.743983+00:00"
+   "total_cost_cents": 41,
+   "edge_bps": 5900,
+   "detected_at": "2026-09-27T05:43:19.931182+00:00"
   },
   {
    "buy_yes": {
@@ -112,11 +112,11 @@
      "0xc27a629633653148fe93e55556346407e7130f1500b265409985588f3f5564f0"
     ],
     "title": "Air Force vs. Nevada",
-    "no_cost_cents": 45
+    "no_cost_cents": 33
    },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-09-27T05:40:58.932276+00:00"
+   "total_cost_cents": 75,
+   "edge_bps": 2500,
+   "detected_at": "2026-09-27T05:43:07.562237+00:00"
   },
   {
    "buy_yes": {
@@ -126,7 +126,7 @@
      "0xc27a629633653148fe93e55556346407e7130f1500b265409985588f3f5564f0"
     ],
     "title": "Air Force vs. Nevada",
-    "ask_cents": 55
+    "ask_cents": 67
    },
    "buy_no": {
     "venue": "prophetx",
@@ -137,32 +137,9 @@
     "title": "Air Force at Nevada",
     "no_cost_cents": 32
    },
-   "total_cost_cents": 87,
-   "edge_bps": 1300,
-   "detected_at": "2026-09-27T05:40:59.020137+00:00"
-  },
-  {
-   "buy_yes": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x513bdd6493cd63d45dc3d206684222ccd5bb7e5849ad18c46bcce9fae04afa4b"
-    ],
-    "title": "Georgia Tech vs. Stanford",
-    "ask_cents": 8
-   },
-   "buy_no": {
-    "venue": "prophetx",
-    "key": [
-     "prophetx",
-     "7468481cc8c1cb3681161c78c5a0d7bc"
-    ],
-    "title": "Georgia Tech at Stanford",
-    "no_cost_cents": 80
-   },
-   "total_cost_cents": 88,
-   "edge_bps": 1200,
-   "detected_at": "2026-09-27T05:41:27.809666+00:00"
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-09-27T05:43:07.695724+00:00"
   }
  ]
 }
