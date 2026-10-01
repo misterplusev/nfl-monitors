@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-10-01T19:07:19.160544+00:00",
+ "scanned_at": "2026-10-01T19:09:19.540903+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 121.4,
+ "loop_uptime_min": 123.4,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 303704,
+   "markets": 306422,
    "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7999,
-   "last_tick_age_s": 2.9
+   "last_tick_age_s": 7.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 133,
-   "last_tick_age_s": 0.3
+   "markets": 135,
+   "last_tick_age_s": 0.4
   },
   {
    "venue": "novig",
@@ -36,38 +36,131 @@
   }
  ],
  "totals": {
-  "markets_tracked": 311836,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 314556,
+  "pairs_married": 4,
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 58,
-  "gist_errors": 127,
+  "commits": 59,
+  "gist_errors": 129,
   "hot_errors": 0,
-  "kalshi.sweeps": 566,
-  "kalshi.ticks": 6448103,
-  "kalshi.updates": 3313405,
-  "kalshi.ws_ticks": 6448103,
-  "kalshi.ws_trades": 1273319,
-  "novig.sweep_errors": 566,
-  "pairs_blocked_antonym_date": 96996,
-  "pmglobal.rest_updates": 5564,
-  "pmglobal.sweeps": 566,
-  "pmglobal.ticks": 79164,
-  "pmglobal.updates": 14080,
+  "kalshi.sweeps": 576,
+  "kalshi.ticks": 6544642,
+  "kalshi.updates": 3361014,
+  "kalshi.ws_ticks": 6544642,
+  "kalshi.ws_trades": 1294781,
+  "novig.sweep_errors": 575,
+  "pairs_blocked_antonym_date": 98640,
+  "pmglobal.rest_updates": 5647,
+  "pmglobal.sweeps": 575,
+  "pmglobal.ticks": 80373,
+  "pmglobal.updates": 14273,
   "pmglobal.ws_errors": 1,
-  "pmglobal.ws_msgs": 4252683,
-  "pmglobal.ws_ticks": 22464,
-  "pmus.rest_updates": 18658,
-  "pmus.sweeps": 566,
-  "pmus.ticks": 4535433,
-  "pmus.updates": 18658,
+  "pmglobal.ws_msgs": 4303613,
+  "pmglobal.ws_ticks": 22773,
+  "pmus.rest_updates": 18718,
+  "pmus.sweeps": 575,
+  "pmus.ticks": 4607424,
+  "pmus.updates": 18718,
   "pmus_x.last_count": 7999,
-  "pmus_x.sweeps": 567,
-  "prophetx.ws_errors": 414,
+  "pmus_x.sweeps": 576,
+  "prophetx.ws_errors": 420,
   "px.evt_scanned": 0,
-  "pxboard.sweeps": 565,
-  "supa_errors": 2092
+  "pxboard.sweeps": 575,
+  "supa_errors": 2124
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "41780"
+    ],
+    "title": "F1 Constructors Champion",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
+    ],
+    "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-10-01T19:09:19.540841+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "41794"
+    ],
+    "title": "F1 Constructors Champion",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
+    ],
+    "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-10-01T19:09:19.540854+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "41792"
+    ],
+    "title": "F1 Constructors Champion",
+    "ask_cents": 5
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
+    ],
+    "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 8,
+   "edge_bps": 9200,
+   "detected_at": "2026-10-01T19:09:19.540849+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "41796"
+    ],
+    "title": "F1 Constructors Champion",
+    "ask_cents": 94
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
+    ],
+    "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 97,
+   "edge_bps": 300,
+   "detected_at": "2026-10-01T19:09:19.540823+00:00"
+  }
+ ]
 }
