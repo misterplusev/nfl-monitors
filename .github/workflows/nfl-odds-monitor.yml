@@ -39,6 +39,8 @@ jobs:
           POLL_COST: ${{ vars.POLL_COST || '3' }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          ABET_STATE_REPO: ${{ vars.ABET_STATE_REPO || 'abetco/mlb-monitors-state' }}
 
       - name: Run odds monitor (single iteration)
         if: steps.gate.outcome == 'success'
@@ -58,6 +60,8 @@ jobs:
           DISCORD_WEBHOOK_NFL_TOTALS: ${{ secrets.DISCORD_WEBHOOK_NFL_TOTALS }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          ABET_STATE_REPO: ${{ vars.ABET_STATE_REPO || 'abetco/mlb-monitors-state' }}
 
       - name: Skipped by quota gate
         if: steps.gate.outcome != 'success'
