@@ -1584,6 +1584,45 @@ def restore_odds_history() -> int:
                 pass
 
 
+def snapshot_odds_history() -> int:
+    """Persist games + odds_history to the snapshot. Never raises.
+
+    The write-side twin of restore_odds_history. Rows are stored as plain
+    sequences (sqlite fetchall tuples, serialized as JSON arrays) because the
+    restore path replays them straight into executemany — dicts would break
+    that round-trip. Called once at the END of every --once cycle so history
+    accumulates across CI runs, mirroring the restore-at-start/snapshot-at-end
+    contract in the comment block above.
+    """
+    if not _HAS_DURABLE or not durable_state.enabled():
+        return 0
+    conn = None
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        games = c.execute(
+            "SELECT game_id, sport_key, commence_time, "
+            "home_team, away_team, last_update FROM games").fetchall()
+        odds = c.execute(
+            "SELECT game_id, fetch_timestamp, bookmaker_key, bookmaker_title, "
+            "market_key, outcome_name, price_decimal, price_american, point, "
+            "is_live_game FROM odds_history").fetchall()
+        snap = {"games": games, "odds_history": odds}
+        ok = durable_state.save_gz_json(HISTORY_SNAPSHOT, snap)
+        log_info(f"Snapshotted NFL odds history: "
+                 f"{len(snap['odds_history'])} rows (pushed={ok})")
+        return len(snap["odds_history"])
+    except Exception as e:
+        log_warn(f"NFL odds history snapshot failed: {e}")
+        return 0
+    finally:
+        if conn is not None:
+            try:
+                conn.close()
+            except Exception:
+                pass
+
+
 def run_iteration() -> int:
     """Run one complete fetch→store→chart→post cycle."""
     try:
