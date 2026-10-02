@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-10-02T17:55:36.687476+00:00",
+ "scanned_at": "2026-10-02T17:57:41.279697+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 95.6,
+ "loop_uptime_min": 97.7,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 185369,
+   "markets": 188134,
    "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
    "markets": 7998,
-   "last_tick_age_s": 5.0
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 120,
-   "last_tick_age_s": 0.5
+   "markets": 125,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "novig",
@@ -36,39 +36,39 @@
   }
  ],
  "totals": {
-  "markets_tracked": 193487,
+  "markets_tracked": 196257,
   "pairs_married": 4,
-  "arbitrages": 3
+  "arbitrages": 4
  },
  "stats": {
-  "commits": 46,
-  "gist_errors": 101,
+  "commits": 47,
+  "gist_errors": 103,
   "hot_errors": 0,
-  "kalshi.sweeps": 635,
-  "kalshi.ticks": 6100405,
-  "kalshi.updates": 2826689,
-  "kalshi.ws_ticks": 6100405,
-  "kalshi.ws_trades": 1079382,
-  "live_evals_fired": 42,
-  "novig.sweep_errors": 634,
-  "pairs_blocked_antonym_date": 54717,
-  "pmglobal.rest_updates": 3657,
-  "pmglobal.sweeps": 634,
-  "pmglobal.ticks": 77778,
-  "pmglobal.updates": 8339,
+  "kalshi.sweeps": 648,
+  "kalshi.ticks": 6239991,
+  "kalshi.updates": 2887534,
+  "kalshi.ws_ticks": 6239991,
+  "kalshi.ws_trades": 1103920,
+  "live_evals_fired": 46,
+  "novig.sweep_errors": 647,
+  "pairs_blocked_antonym_date": 55890,
+  "pmglobal.rest_updates": 3764,
+  "pmglobal.sweeps": 647,
+  "pmglobal.ticks": 79284,
+  "pmglobal.updates": 8512,
   "pmglobal.ws_errors": 4,
-  "pmglobal.ws_msgs": 2045778,
-  "pmglobal.ws_ticks": 14278,
-  "pmus.rest_updates": 10915,
-  "pmus.sweeps": 634,
-  "pmus.ticks": 5078730,
-  "pmus.updates": 10915,
+  "pmglobal.ws_msgs": 2078433,
+  "pmglobal.ws_ticks": 14484,
+  "pmus.rest_updates": 10995,
+  "pmus.sweeps": 648,
+  "pmus.ticks": 5190702,
+  "pmus.updates": 10995,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 635,
-  "prophetx.ws_errors": 335,
+  "pmus_x.sweeps": 649,
+  "prophetx.ws_errors": 342,
   "px.evt_scanned": 0,
-  "pxboard.sweeps": 634,
-  "supa_errors": 1916
+  "pxboard.sweeps": 647,
+  "supa_errors": 1956
  },
  "arbitrages": [
   {
@@ -88,11 +88,11 @@
      "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
     ],
     "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
-    "no_cost_cents": 2
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 5,
-   "edge_bps": 9500,
-   "detected_at": "2026-10-02T17:55:33.201729+00:00"
+   "total_cost_cents": 4,
+   "edge_bps": 9600,
+   "detected_at": "2026-10-02T17:55:43.554933+00:00"
   },
   {
    "buy_yes": {
@@ -111,11 +111,11 @@
      "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
     ],
     "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
-    "no_cost_cents": 2
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 5,
-   "edge_bps": 9500,
-   "detected_at": "2026-10-02T17:55:33.233343+00:00"
+   "total_cost_cents": 4,
+   "edge_bps": 9600,
+   "detected_at": "2026-10-02T17:55:43.593575+00:00"
   },
   {
    "buy_yes": {
@@ -134,11 +134,34 @@
      "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
     ],
     "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
-    "no_cost_cents": 2
+    "no_cost_cents": 1
    },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-10-02T17:55:33.180270+00:00"
+   "total_cost_cents": 5,
+   "edge_bps": 9500,
+   "detected_at": "2026-10-02T17:55:43.535416+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "41796"
+    ],
+    "title": "F1 Constructors Champion",
+    "ask_cents": 97
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
+    ],
+    "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 99,
+   "edge_bps": 100,
+   "detected_at": "2026-10-02T17:55:43.572092+00:00"
   }
  ]
 }
