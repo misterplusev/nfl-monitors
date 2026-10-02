@@ -1,25 +1,25 @@
 {
- "scanned_at": "2026-10-01T22:40:56.488858+00:00",
+ "scanned_at": "2026-10-02T00:04:16.009481+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 335.0,
+ "loop_uptime_min": 2.1,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 598925,
-   "last_tick_age_s": 0.1
+   "markets": 22236,
+   "last_tick_age_s": 0.0
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 7999,
-   "last_tick_age_s": 0.3
+   "markets": 7998,
+   "last_tick_age_s": 4.4
   },
   {
    "venue": "pmglobal",
    "state": "OK",
-   "markets": 171,
+   "markets": 100,
    "last_tick_age_s": 0.3
   },
   {
@@ -36,65 +36,39 @@
   }
  ],
  "totals": {
-  "markets_tracked": 607095,
+  "markets_tracked": 30334,
   "pairs_married": 4,
   "arbitrages": 4
  },
  "stats": {
-  "commits": 162,
-  "gist_errors": 346,
+  "gist_errors": 3,
   "hot_errors": 0,
-  "kalshi.sweeps": 1524,
-  "kalshi.ticks": 15965462,
-  "kalshi.updates": 8063773,
-  "kalshi.ws_ticks": 15965462,
-  "kalshi.ws_trades": 3549479,
-  "live_evals_fired": 1,
-  "novig.sweep_errors": 1523,
-  "pairs_blocked_antonym_date": 260985,
-  "pmglobal.rest_updates": 10492,
-  "pmglobal.sweeps": 1523,
-  "pmglobal.ticks": 197507,
-  "pmglobal.updates": 24892,
-  "pmglobal.ws_errors": 5,
-  "pmglobal.ws_msgs": 6747489,
-  "pmglobal.ws_ticks": 45107,
-  "pmus.rest_updates": 32679,
-  "pmus.sweep_errors": 1,
-  "pmus.sweeps": 1523,
-  "pmus.ticks": 12193149,
-  "pmus.updates": 32679,
+  "kalshi.sweeps": 13,
+  "kalshi.ticks": 103280,
+  "kalshi.updates": 61541,
+  "kalshi.ws_ticks": 103280,
+  "kalshi.ws_trades": 23073,
+  "live_evals_fired": 8,
+  "novig.sweep_errors": 13,
+  "pairs_blocked_antonym_date": 1173,
+  "pmglobal.rest_updates": 283,
+  "pmglobal.sweeps": 13,
+  "pmglobal.ticks": 1857,
+  "pmglobal.updates": 487,
+  "pmglobal.ws_msgs": 18053,
+  "pmglobal.ws_ticks": 457,
+  "pmus.rest_updates": 8101,
+  "pmus.sweeps": 13,
+  "pmus.ticks": 111972,
+  "pmus.updates": 8101,
   "pmus_x.last_count": 7998,
-  "pmus_x.sweeps": 1524,
-  "prophetx.ws_errors": 1135,
+  "pmus_x.sweeps": 14,
+  "prophetx.ws_errors": 8,
   "px.evt_scanned": 0,
-  "pxboard.sweeps": 1523,
-  "supa_errors": 5008
+  "pxboard.sweeps": 13,
+  "supa_errors": 45
  },
  "arbitrages": [
-  {
-   "buy_yes": {
-    "venue": "pmus",
-    "key": [
-     "pmus",
-     "41780"
-    ],
-    "title": "F1 Constructors Champion",
-    "ask_cents": 3
-   },
-   "buy_no": {
-    "venue": "pmglobal",
-    "key": [
-     "pmglobal",
-     "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
-    ],
-    "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
-    "no_cost_cents": 2
-   },
-   "total_cost_cents": 6,
-   "edge_bps": 9400,
-   "detected_at": "2026-10-01T22:40:56.488803+00:00"
-  },
   {
    "buy_yes": {
     "venue": "pmus",
@@ -116,7 +90,30 @@
    },
    "total_cost_cents": 6,
    "edge_bps": 9400,
-   "detected_at": "2026-10-01T22:40:56.488810+00:00"
+   "detected_at": "2026-10-02T00:02:25.609315+00:00"
+  },
+  {
+   "buy_yes": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "41780"
+    ],
+    "title": "F1 Constructors Champion",
+    "ask_cents": 3
+   },
+   "buy_no": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9c4459a70fd67a346075c22a6b010b454794204f2f28d128983b9056fe8d64b5"
+    ],
+    "title": "Will Mercedes be the 2026 F1 Constructors' Champion?",
+    "no_cost_cents": 2
+   },
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-10-02T00:02:25.628465+00:00"
   },
   {
    "buy_yes": {
@@ -139,7 +136,7 @@
    },
    "total_cost_cents": 9,
    "edge_bps": 9100,
-   "detected_at": "2026-10-01T19:40:08.772074+00:00"
+   "detected_at": "2026-10-02T00:02:25.559807+00:00"
   },
   {
    "buy_yes": {
@@ -162,7 +159,7 @@
    },
    "total_cost_cents": 97,
    "edge_bps": 300,
-   "detected_at": "2026-10-01T22:40:56.488784+00:00"
+   "detected_at": "2026-10-02T00:02:25.585741+00:00"
   }
  ]
 }
