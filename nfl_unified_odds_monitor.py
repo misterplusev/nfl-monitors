@@ -1184,8 +1184,8 @@ def _add_logo_title(fig, away_team: str, home_team: str, title_text: str, game_t
     try:
         from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 
-        away_logo = _get_team_logo_for_chart(away_team, size=36)
-        home_logo = _get_team_logo_for_chart(home_team, size=36)
+        away_logo = _get_team_logo_for_chart(away_team, size=48)
+        home_logo = _get_team_logo_for_chart(home_team, size=48)
 
         if away_logo is None and home_logo is None:
             fig.suptitle(title_text, fontsize=14, color='white', fontweight='bold')
@@ -1202,16 +1202,16 @@ def _add_logo_title(fig, away_team: str, home_team: str, title_text: str, game_t
         ax_title.text(0.5, 0.5,
                       f"  {away_abbr}  @  {home_abbr}  — {game_time}  ",
                       transform=ax_title.transAxes,
-                      fontsize=14, color='white', fontweight='bold',
+                      fontsize=16, color='white', fontweight='bold',
                       ha='center', va='center')
 
         if away_logo is not None:
             ax_title.add_artist(AnnotationBbox(
-                OffsetImage(away_logo, zoom=0.8), (0.32, 0.5),
+                OffsetImage(away_logo, zoom=1.1), (0.32, 0.5),
                 frameon=False, xycoords='axes fraction'))
         if home_logo is not None:
             ax_title.add_artist(AnnotationBbox(
-                OffsetImage(home_logo, zoom=0.8), (0.68, 0.5),
+                OffsetImage(home_logo, zoom=1.1), (0.68, 0.5),
                 frameon=False, xycoords='axes fraction'))
     except Exception as e:
         # Any failure falls back to the plain title rather than losing the chart.
