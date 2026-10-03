@@ -19,6 +19,30 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Env doctor (diagnose Supabase URL - no secret values printed)
+        if: steps.gate.outcome == 'success'
+        run: |
+          python -c "
+          import os, socket
+          u = os.environ.get('SUPABASE_URL', '')
+          k = os.environ.get('SUPABASE_KEY', '')
+          print('SUPABASE_URL present:', bool(u.strip()), '| raw len:', len(u))
+          print('SUPABASE_KEY present:', bool(k.strip()), '| raw len:', len(k))
+          if u.strip():
+              host = u.split('//')[-1].split('/')[0].strip()
+              print('URL hostname:', repr(host))
+              try:
+                  socket.gethostbyname(host)
+                  print('DNS: RESOLVES OK')
+              except Exception as e:
+                  print('DNS: FAILS -', e)
+          else:
+              print('SUPABASE_URL is empty or whitespace only')
+          "
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+
       - name: Quota gate (sustain governor)
         id: gate
         continue-on-error: true
