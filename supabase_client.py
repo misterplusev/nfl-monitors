@@ -126,7 +126,10 @@ class SupabaseClient:
           fetched_at=gte.<iso>      only rows since the cutoff (column is
                                     fetched_at in the restored table; the old
                                     fetched_at_pt name does not exist -> 400)
-          order=fetched_at.asc      chronological, so the replay is ordered
+          order=fetched_at.desc     paginated newest-first (PostgREST caps a
+                                    single request at 1000 rows); pages are
+                                    reversed before return so the replay is
+                                    chronological
           limit                     bounded so a long outage cannot OOM a runner
         """
         if not self.connected:
@@ -134,13 +137,23 @@ class SupabaseClient:
         try:
             from urllib.parse import quote
             since_enc = quote(str(since_iso), safe="")
-            path = (f"nfl_odds_history"
-                    f"?fetched_at=gte.{since_enc}"
-                    f"&order=fetched_at.asc"
-                    f"&limit={int(limit)}")
-            rows = self._get(path)
-            if not isinstance(rows, list):
-                return []
+            rows = []
+            page_size = 1000            # PostgREST caps a single request at 1000
+            max_rows = int(limit)
+            offset = 0
+            while len(rows) < max_rows:
+                path = (f"nfl_odds_history"
+                        f"?fetched_at=gte.{since_enc}"
+                        f"&order=fetched_at.desc"
+                        f"&limit={page_size}&offset={offset}")
+                batch = self._get(path)
+                if not isinstance(batch, list) or not batch:
+                    break
+                rows.extend(batch)
+                if len(batch) < page_size:
+                    break
+                offset += page_size
+            rows.reverse()  # chronological (oldest first) for the replay
             print(f"[SUPABASE] Read {len(rows)} odds history rows since {since_iso}")
             return rows
         except Exception as e:
