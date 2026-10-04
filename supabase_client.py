@@ -123,16 +123,20 @@ class SupabaseClient:
         degrade the chart to fewer points, never kill the run.
 
         PostgREST params:
-          fetched_at_pt=gte.<iso>   only rows since the cutoff
-          order=fetched_at_pt.asc   chronological, so the replay is ordered
+          fetched_at=gte.<iso>      only rows since the cutoff (column is
+                                    fetched_at in the restored table; the old
+                                    fetched_at_pt name does not exist -> 400)
+          order=fetched_at.asc      chronological, so the replay is ordered
           limit                     bounded so a long outage cannot OOM a runner
         """
         if not self.connected:
             return []
         try:
+            from urllib.parse import quote
+            since_enc = quote(str(since_iso), safe="")
             path = (f"nfl_odds_history"
-                    f"?fetched_at_pt=gte.{since_iso}"
-                    f"&order=fetched_at_pt.asc"
+                    f"?fetched_at=gte.{since_enc}"
+                    f"&order=fetched_at.asc"
                     f"&limit={int(limit)}")
             rows = self._get(path)
             if not isinstance(rows, list):
