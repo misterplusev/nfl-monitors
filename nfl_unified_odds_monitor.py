@@ -1505,7 +1505,7 @@ def restore_from_supabase() -> int:
             am = r.get("price")
             payload.append((
                 r.get("game_id"),
-                r.get("fetched_at_pt") or r.get("created_at"),
+                r.get("fetched_at"),          # table column (server default now())
                 r.get("bookmaker"),
                 r.get("bookmaker"),          # no title column upstream
                 r.get("market"),
