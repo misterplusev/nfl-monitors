@@ -1501,8 +1501,22 @@ def restore_from_supabase() -> int:
             return a / 100.0 + 1.0 if a > 0 else 100.0 / abs(a) + 1.0
 
         payload = []
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        seen = set(c.execute(
+            "SELECT game_id, fetch_timestamp, bookmaker_key, market_key, "
+            "outcome_name, point FROM odds_history").fetchall())
         for r in rows:
             am = r.get("price")
+            row_key = (r.get("game_id"),
+                       r.get("fetched_at"),
+                       r.get("bookmaker"),
+                       r.get("market"),
+                       r.get("outcome"),
+                       r.get("point"))
+            if row_key in seen:
+                continue
+            seen.add(row_key)
             payload.append((
                 r.get("game_id"),
                 r.get("fetched_at"),          # table column (server default now())
@@ -1515,8 +1529,6 @@ def restore_from_supabase() -> int:
                 r.get("point"),
                 0,
             ))
-        conn = sqlite3.connect(DB_PATH)
-        c = conn.cursor()
         c.executemany(
             "INSERT OR IGNORE INTO odds_history (game_id, fetch_timestamp, "
             "bookmaker_key, bookmaker_title, market_key, outcome_name, "
