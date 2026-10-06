@@ -1289,7 +1289,9 @@ def generate_moneyline_charts() -> List[Tuple[Path, dict]]:
                 'commence_time': row['commence_time'],
             }
             charts.append((path, game_info))
-            log_ok(f"ML: {row['away_team']} @ {row['home_team']}")
+            n_ts = bdf['created_at'].nunique() if not bdf.empty else 0
+            log_ok(f"ML: {row['away_team']} @ {row['home_team']} "
+                   f"({len(bdf)} rows, {n_ts} distinct ts)")
 
         conn.close()
     except Exception as e:
@@ -1376,7 +1378,9 @@ def generate_spread_charts() -> List[Tuple[Path, dict]]:
                 'commence_time': row['commence_time'],
             }
             charts.append((path, game_info))
-            log_ok(f"SP: {row['away_team']} @ {row['home_team']} {label}")
+            n_ts = bdf['created_at'].nunique() if not bdf.empty else 0
+            log_ok(f"SP: {row['away_team']} @ {row['home_team']} {label} "
+                   f"({len(bdf)} rows, {n_ts} distinct ts)")
 
         conn.close()
     except Exception as e:
@@ -1455,7 +1459,9 @@ def generate_totals_charts() -> List[Tuple[Path, dict]]:
                 'commence_time': row['commence_time'],
             }
             charts.append((path, game_info))
-            log_ok(f"TO: {row['away_team']} @ {row['home_team']} O/U {total}")
+            n_ts = bdf['created_at'].nunique() if not bdf.empty else 0
+            log_ok(f"TO: {row['away_team']} @ {row['home_team']} O/U {total} "
+                   f"({len(bdf)} rows, {n_ts} distinct ts)")
 
         conn.close()
     except Exception as e:
