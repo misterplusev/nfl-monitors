@@ -1278,7 +1278,7 @@ def generate_moneyline_charts() -> List[Tuple[Path, dict]]:
             ax2.set_xlabel('Time', fontsize=10, color='#CCCCCC')
             for lbl in ax2.xaxis.get_ticklabels():
                 lbl.set_rotation(45); lbl.set_ha('right'); lbl.set_color('#CCCCCC')
-            plt.tight_layout()
+            plt.tight_layout(rect=[0, 0, 1, 0.88])
 
             path = CHARTS_DIR / f"{gid[:8]}_ml_{datetime.now().strftime('%H%M%S')}.png"
             plt.savefig(path, dpi=130, facecolor='#0F1419', bbox_inches='tight')
@@ -1364,7 +1364,7 @@ def generate_spread_charts() -> List[Tuple[Path, dict]]:
             ax2.set_xlabel('Time', fontsize=10, color='#CCCCCC')
             for lbl in ax2.xaxis.get_ticklabels():
                 lbl.set_rotation(45); lbl.set_ha('right'); lbl.set_color('#CCCCCC')
-            plt.tight_layout()
+            plt.tight_layout(rect=[0, 0, 1, 0.88])
 
             hs_s = str(hs).replace('.', '_').replace('-', 'neg')
             path = CHARTS_DIR / f"{gid[:8]}_sp_{hs_s}_{datetime.now().strftime('%H%M%S')}.png"
@@ -1443,7 +1443,7 @@ def generate_totals_charts() -> List[Tuple[Path, dict]]:
             ax2.set_xlabel('Time', fontsize=10, color='#CCCCCC')
             for lbl in ax2.xaxis.get_ticklabels():
                 lbl.set_rotation(45); lbl.set_ha('right'); lbl.set_color('#CCCCCC')
-            plt.tight_layout()
+            plt.tight_layout(rect=[0, 0, 1, 0.88])
 
             ts = str(total).replace('.', '_')
             path = CHARTS_DIR / f"{gid[:8]}_tot_{ts}_{datetime.now().strftime('%H%M%S')}.png"
@@ -1528,12 +1528,17 @@ def restore_from_supabase() -> int:
                 am,
                 r.get("point"),
                 0,
+                r.get("fetched_at"),          # created_at: the row's REAL fetch time.
+                                              # Without this, DEFAULT CURRENT_TIMESTAMP
+                                              # stamps ALL restored rows with the restore
+                                              # instant, collapsing hours of history into
+                                              # one x position on the created_at chart axis.
             ))
         c.executemany(
             "INSERT OR IGNORE INTO odds_history (game_id, fetch_timestamp, "
             "bookmaker_key, bookmaker_title, market_key, outcome_name, "
-            "price_decimal, price_american, point, is_live_game) "
-            "VALUES (?,?,?,?,?,?,?,?,?,?)", payload)
+            "price_decimal, price_american, point, is_live_game, created_at) "
+            "VALUES (?,?,?,?,?,?,?,?,?,?,?)", payload)
         conn.commit()
         n = c.execute("SELECT COUNT(*) FROM odds_history").fetchone()[0]
         log_info(f"Restored {len(payload)} rows from Supabase "
