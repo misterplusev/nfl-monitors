@@ -1517,6 +1517,17 @@ def restore_from_supabase() -> int:
             if row_key in seen:
                 continue
             seen.add(row_key)
+            ca = r.get("fetched_at")
+            if ca:
+                try:
+                    # Normalize to SQLite CURRENT_TIMESTAMP format ("YYYY-MM-DD
+                    # HH:MM:SS") so the created_at column holds ONE consistent
+                    # format — pd.to_datetime infers a single format from the
+                    # first element and raises on a mix of ISO8601 + space form.
+                    ca = datetime.fromisoformat(
+                        str(ca).replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M:%S")
+                except (ValueError, TypeError):
+                    pass
             payload.append((
                 r.get("game_id"),
                 r.get("fetched_at"),          # table column (server default now())
@@ -1528,7 +1539,7 @@ def restore_from_supabase() -> int:
                 am,
                 r.get("point"),
                 0,
-                r.get("fetched_at"),          # created_at: the row's REAL fetch time.
+                ca,                           # created_at: the row's REAL fetch time.
                                               # Without this, DEFAULT CURRENT_TIMESTAMP
                                               # stamps ALL restored rows with the restore
                                               # instant, collapsing hours of history into
