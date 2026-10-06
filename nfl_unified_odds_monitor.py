@@ -1242,6 +1242,13 @@ def generate_moneyline_charts() -> List[Tuple[Path, dict]]:
 
         for _, row in games.iterrows():
             gid = row['game_id']
+            ts_counts = pd.read_sql_query(
+                "SELECT outcome_name, COUNT(DISTINCT created_at) AS n FROM odds_history "
+                "WHERE game_id=? AND market_key='h2h' AND bookmaker_key!='_average' "
+                "GROUP BY outcome_name", conn, params=(gid,))
+            if len(ts_counts) < 2 or (ts_counts['n'] < 2).any():
+                log_info(f"ML skip {row['away_team']} @ {row['home_team']}: <2 snapshots")
+                continue
             fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 9), sharex=True)
             fig.patch.set_facecolor('#0F1419')
 
@@ -1292,7 +1299,6 @@ def generate_moneyline_charts() -> List[Tuple[Path, dict]]:
             n_ts = bdf['created_at'].nunique() if not bdf.empty else 0
             log_ok(f"ML: {row['away_team']} @ {row['home_team']} "
                    f"({len(bdf)} rows, {n_ts} distinct ts)")
-
         conn.close()
     except Exception as e:
         log_error("Moneyline chart generation failed", e)
@@ -1326,6 +1332,19 @@ def generate_spread_charts() -> List[Tuple[Path, dict]]:
 
         for _, row in games.iterrows():
             gid = row['game_id']
+            # Skip charts whose series has < 2 distinct fetch snapshots: a single
+            # dot adds no history and reads as "dropped odds history" in Discord.
+            # Happens for alternative/edge lines offered by few books sporadically
+            # and for games that just entered the feed (one cycle so far).
+            ts_counts = pd.read_sql_query(
+                "SELECT outcome_name, COUNT(DISTINCT created_at) AS n FROM odds_history "
+                "WHERE game_id=? AND outcome_name=? AND point=? AND market_key='spreads' "
+                "AND bookmaker_key!='_average' GROUP BY outcome_name",
+                conn, params=(gid, row['home_team'], row['home_spread']))
+            if len(ts_counts) < 1 or (ts_counts['n'] < 2).any():
+                log_info(f"SP skip {row['away_team']} @ {row['home_team']} "
+                         f"{row['home_spread']}: <2 snapshots")
+                continue
             fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 9), sharex=True)
             fig.patch.set_facecolor('#0F1419')
 
@@ -1411,6 +1430,15 @@ def generate_totals_charts() -> List[Tuple[Path, dict]]:
 
         for _, row in games.iterrows():
             gid = row['game_id']
+            ts_counts = pd.read_sql_query(
+                "SELECT outcome_name, COUNT(DISTINCT created_at) AS n FROM odds_history "
+                "WHERE game_id=? AND outcome_name=? AND point=? AND market_key='totals' "
+                "AND bookmaker_key!='_average' GROUP BY outcome_name",
+                conn, params=(gid, 'Over', row['total_line']))
+            if len(ts_counts) < 1 or (ts_counts['n'] < 2).any():
+                log_info(f"TO skip {row['away_team']} @ {row['home_team']} "
+                         f"O/U {row['total_line']}: <2 snapshots")
+                continue
             total = row['total_line']
             fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 9), sharex=True)
             fig.patch.set_facecolor('#0F1419')
