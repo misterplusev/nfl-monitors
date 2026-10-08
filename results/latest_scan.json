@@ -1,26 +1,26 @@
 {
- "scanned_at": "2026-10-08T10:36:39.232731+00:00",
+ "scanned_at": "2026-10-08T10:38:41.348156+00:00",
  "engine": "desk_daemon (persistent loop)",
- "loop_uptime_min": 247.9,
+ "loop_uptime_min": 250.0,
  "min_edge_bps": 30,
  "venues": [
   {
    "venue": "kalshi",
    "state": "OK",
-   "markets": 161725,
-   "last_tick_age_s": 0.0
+   "markets": 162178,
+   "last_tick_age_s": 0.1
   },
   {
    "venue": "pmus",
    "state": "OK",
-   "markets": 15139,
-   "last_tick_age_s": 5.0
+   "markets": 18347,
+   "last_tick_age_s": 5.9
   },
   {
    "venue": "pmglobal",
    "state": "OK",
    "markets": 134,
-   "last_tick_age_s": 0.1
+   "last_tick_age_s": 1.0
   },
   {
    "venue": "novig",
@@ -36,38 +36,62 @@
   }
  ],
  "totals": {
-  "markets_tracked": 176998,
-  "pairs_married": 0,
-  "arbitrages": 0
+  "markets_tracked": 180659,
+  "pairs_married": 1,
+  "arbitrages": 1
  },
  "stats": {
-  "commits": 121,
-  "gist_errors": 262,
+  "commits": 122,
+  "gist_errors": 264,
   "kalshi.rest_updates": 103,
-  "kalshi.sweeps": 1721,
-  "kalshi.ticks": 5087330,
-  "kalshi.updates": 2669569,
-  "kalshi.ws_ticks": 5086924,
-  "kalshi.ws_trades": 606606,
-  "novig.sweep_errors": 1720,
-  "pairs_blocked_antonym_date": 198,
-  "pmglobal.rest_updates": 6775,
-  "pmglobal.sweeps": 1720,
-  "pmglobal.ticks": 195335,
-  "pmglobal.updates": 13740,
+  "kalshi.sweeps": 1736,
+  "kalshi.ticks": 5163541,
+  "kalshi.updates": 2708110,
+  "kalshi.ws_ticks": 5163135,
+  "kalshi.ws_trades": 616311,
+  "novig.sweep_errors": 1735,
+  "pairs_blocked_antonym_date": 217,
+  "pmglobal.rest_updates": 6842,
+  "pmglobal.sweeps": 1735,
+  "pmglobal.ticks": 197046,
+  "pmglobal.updates": 13885,
   "pmglobal.ws_errors": 2,
-  "pmglobal.ws_msgs": 2874363,
-  "pmglobal.ws_ticks": 23235,
-  "pmus.rest_updates": 24828,
-  "pmus.sweeps": 1720,
-  "pmus.ticks": 13765950,
-  "pmus.updates": 24828,
-  "pmus_x.last_count": 7980,
-  "pmus_x.sweeps": 1721,
-  "prophetx.ws_errors": 874,
+  "pmglobal.ws_msgs": 2924246,
+  "pmglobal.ws_ticks": 23446,
+  "pmus.rest_updates": 28036,
+  "pmus.sweeps": 1735,
+  "pmus.ticks": 13877493,
+  "pmus.updates": 28036,
+  "pmus_x.last_count": 5968,
+  "pmus_x.sweeps": 1736,
+  "prophetx.ws_errors": 882,
   "px.evt_scanned": 0,
-  "pxboard.sweeps": 1720,
-  "supa_pushes": 5142
+  "pxboard.sweeps": 1735,
+  "supa_pushes": 5187
  },
- "arbitrages": []
+ "arbitrages": [
+  {
+   "buy_yes": {
+    "venue": "pmglobal",
+    "key": [
+     "pmglobal",
+     "0x9b5ff439175bd0bd854e0f7ea3a9c370ca9316d46c016d879b2d702300a84764"
+    ],
+    "title": "Plague pandemic in 2026?",
+    "ask_cents": 4
+   },
+   "buy_no": {
+    "venue": "pmus",
+    "key": [
+     "pmus",
+     "1279211"
+    ],
+    "title": "Plague Pandemic?",
+    "no_cost_cents": 1
+   },
+   "total_cost_cents": 6,
+   "edge_bps": 9400,
+   "detected_at": "2026-10-08T10:38:41.348073+00:00"
+  }
+ ]
 }
